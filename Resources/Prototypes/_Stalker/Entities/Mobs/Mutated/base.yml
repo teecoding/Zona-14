@@ -128,7 +128,6 @@
       normalState: Generic_mob_burning
     - type: Actions
     - type: DoAfter
-    - type: Flashable
     - type: Polymorphable
     - type: Pullable
     - type: Body

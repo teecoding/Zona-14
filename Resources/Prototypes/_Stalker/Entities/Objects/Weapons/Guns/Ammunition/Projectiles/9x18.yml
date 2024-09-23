@@ -104,8 +104,6 @@
 #     solution: ammo
 #   - type: DrainableSolution
 #     solution: ammo
-#   - type: SolutionInjectOnCollide
-#     transferAmount: 15
 #     blockSlots: NONE #tranquillizer darts shouldn't be blocked by a mask
 #   - type: InjectableSolution
 #     solution: ammo
@@ -118,8 +116,6 @@
 #   - type: CartridgeAmmo
 #     proto: Bullet918Tranquilizer
 #     count: 1
-#   - type: SolutionInjectOnCollide
-#     transferAmount: 7
 #   - type: ChemicalAmmo
 #   - type: SolutionContainerManager
 #     solutions:
@@ -151,8 +147,6 @@
 #     solution: ammo
 #   - type: DrainableSolution
 #     solution: ammo
-#   - type: SolutionInjectOnCollide
-#     transferAmount: 150
 #     blockSlots: NONE #tranquillizer darts shouldn't be blocked by a mask
 #   - type: InjectableSolution
 #     solution: ammo
@@ -165,8 +159,6 @@
 #   - type: CartridgeAmmo
 #     proto: Bullet918Tranquilizer
 #     count: 1
-#   - type: SolutionInjectOnCollide
-#     transferAmount: 70
 #   - type: ChemicalAmmo
 #   - type: SolutionContainerManager
 #     solutions:

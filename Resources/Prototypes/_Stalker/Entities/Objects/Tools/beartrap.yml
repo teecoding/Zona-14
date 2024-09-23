@@ -67,4 +67,3 @@
   components:
     - type: Mousetrap
       isActive: false
-    - type: ShoesRequiredStepTrigger

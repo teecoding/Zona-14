@@ -128,9 +128,6 @@
     solution: melee
   - type: InjectableSolution
     solution: melee
-  - type: SolutionInjectOnCollide
-    transferAmount: 2
-    blockSlots: NONE
   - type: SolutionTransfer
     maxTransferAmount: 5
   - type: SolutionRegeneration
