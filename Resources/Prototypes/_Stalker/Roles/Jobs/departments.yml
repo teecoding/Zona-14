@@ -1,7 +1,8 @@
 - type: department
   id: Stalker
   color: "#9FED58"
-  description: "department-Stalker-description"
+  name: department-Stalker
+  description: department-Stalker-description
   roles:
   - Stalker
 
@@ -27,7 +28,8 @@
 
 - type: department
   id: StalkerAdvanced
-  description: "department-StalkerAdvanced-description"
+  name: department-StalkerAdvanced
+  description: department-StalkerAdvanced-description
   color: "#9FED58"
   roles:
   - StalkerDolg
@@ -45,7 +47,8 @@
 
 - type: department
   id: StalkerBrigands
-  description: "department-StalkerBrigands-description"
+  name: department-StalkerBrigands
+  description: department-StalkerBrigands-description
   color: "#111111"
   roles:
   - StalkerBandit
@@ -58,7 +61,8 @@
 
 - type: department
   id: StalkerOfficials
-  description: "department-StalkerOfficials-description"
+  name: department-StalkerOfficials
+  description: department-StalkerOfficials-description
   color: "#0000FF"
   roles:
   - Military
@@ -69,7 +73,8 @@
 
 - type: department
   id: StalkerReligius
-  description: "department-StalkerReligius-description"
+  name: department-StalkerReligius
+  description: department-StalkerReligius-description
   color: "#C0C0C0"
   roles:
   - StalkerPostulant
@@ -80,6 +85,7 @@
 
 # - type: department
 #   id: StalkerAnomalists
+#   name: "department-StalkerAnomalists"
 #   description: "department-StalkerAnomalists-description"
 #   color: "#9FED58"
 #   roles:
