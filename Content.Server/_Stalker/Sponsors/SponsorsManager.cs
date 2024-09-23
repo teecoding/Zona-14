@@ -1,4 +1,4 @@
-﻿using System.Diagnostics.CodeAnalysis;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
@@ -17,7 +17,7 @@ using Robust.Shared.Prototypes;
 
 namespace Content.Server._Stalker.Sponsors;
 
-public sealed class SponsorsManager
+public sealed class SponsorsManager : EntitySystem
 {
     [Dependency] private readonly IConfigurationManager _cfg = default!;
     [Dependency] private readonly DiscordAuthManager _discordAuthManager = default!;

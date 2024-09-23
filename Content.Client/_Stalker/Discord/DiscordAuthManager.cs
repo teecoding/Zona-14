@@ -1,10 +1,10 @@
-﻿using Content.Shared._Stalker.Discord.Messages;
+using Content.Shared._Stalker.Discord.Messages;
 using Robust.Client.State;
 using Robust.Shared.Network;
 
 namespace Content.Client._Stalker.Discord;
 
-public sealed class DiscordAuthManager
+public sealed class DiscordAuthManager : EntitySystem
 {
     [Dependency] private readonly INetManager _net = default!;
     [Dependency] private readonly IStateManager _state = default!;
