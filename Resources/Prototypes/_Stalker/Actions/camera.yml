@@ -1,15 +1,4 @@
 - type: entity
-  id: ActionToggleCamera # Do not change me!
-  name: Переключить камеру
-  description: Переключает камеру следующую за мышкой.
-  noSpawn: true
-  components:
-  - type: InstantAction
-    checkCanInteract: false
-    icon: _Stalker/Icons/binoculars.png
-    event: !type:ToggleCameraEvent
-
-- type: entity
   id: CTActionToggleScope
   name: Toggle Optics
   description: Scope in or out with your optics.

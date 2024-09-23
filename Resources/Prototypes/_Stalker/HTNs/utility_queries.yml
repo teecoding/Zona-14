@@ -3,9 +3,6 @@
   query:
     - !type:NearbyHostilesQuery
   considerations:
-    - !type:TargetIsNotDeadCon
-      curve: !type:BoolCurve
-
     - !type:TargetDistanceCon
       curve: !type:PresetCurve
         preset: TargetDistance

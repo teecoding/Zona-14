@@ -61,7 +61,7 @@
       oreChance: 1.0
       currentOre: StalkerOreBerries1
     - type: Gatherable
-      whitelist:
+      toolWhitelist:
         components:
           - Hands
     - type: Damageable
@@ -139,7 +139,7 @@
       oreChance: 1.0
       currentOre: StalkerOreBerries2
     - type: Gatherable
-      whitelist:
+      toolWhitelist:
         components:
           - Hands
     - type: Damageable
@@ -217,7 +217,7 @@
       oreChance: 1.0
       currentOre: StalkerOreBerries3
     - type: Gatherable
-      whitelist:
+      toolWhitelist:
         components:
           - Hands
     - type: Damageable
@@ -295,7 +295,7 @@
       oreChance: 1.0
       currentOre: StalkerOreBerries4
     - type: Gatherable
-      whitelist:
+      toolWhitelist:
         components:
           - Hands
     - type: Damageable
@@ -373,7 +373,7 @@
       oreChance: 1.0
       currentOre: StalkerOreBerries5
     - type: Gatherable
-      whitelist:
+      toolWhitelist:
         components:
           - Hands
     - type: Damageable
@@ -451,7 +451,7 @@
       oreChance: 1.0
       currentOre: StalkerOreBerries6
     - type: Gatherable
-      whitelist:
+      toolWhitelist:
         components:
           - Hands
     - type: Damageable
@@ -529,7 +529,7 @@
       oreChance: 1.0
       currentOre: StalkerOreBerries7
     - type: Gatherable
-      whitelist:
+      toolWhitelist:
         components:
           - Hands
     - type: Damageable
@@ -607,7 +607,7 @@
       oreChance: 1.0
       currentOre: StalkerOreBerries8
     - type: Gatherable
-      whitelist:
+      toolWhitelist:
         components:
           - Hands
     - type: Damageable
@@ -685,7 +685,7 @@
       oreChance: 1.0
       currentOre: StalkerOreBerries9
     - type: Gatherable
-      whitelist:
+      toolWhitelist:
         components:
           - Hands
     - type: Damageable
@@ -763,7 +763,7 @@
       oreChance: 1.0
       currentOre: StalkerOreBerries10
     - type: Gatherable
-      whitelist:
+      toolWhitelist:
         components:
           - Hands
     - type: Damageable
@@ -841,7 +841,7 @@
       oreChance: 1.0
       currentOre: StalkerOreBerries11
     - type: Gatherable
-      whitelist:
+      toolWhitelist:
         components:
           - Hands
     - type: Damageable
@@ -919,7 +919,7 @@
       oreChance: 1.0
       currentOre: StalkerOreBerries12
     - type: Gatherable
-      whitelist:
+      toolWhitelist:
         components:
           - Hands
     - type: Damageable
@@ -997,7 +997,7 @@
       oreChance: 1.0
       currentOre: StalkerOreBerries13
     - type: Gatherable
-      whitelist:
+      toolWhitelist:
         components:
           - Hands
     - type: Damageable
@@ -1075,7 +1075,7 @@
       oreChance: 1.0
       currentOre: StalkerOreBerries14
     - type: Gatherable
-      whitelist:
+      toolWhitelist:
         components:
           - Hands
     - type: Damageable
@@ -1153,7 +1153,7 @@
       oreChance: 1.0
       currentOre: StalkerOreBerries15
     - type: Gatherable
-      whitelist:
+      toolWhitelist:
         components:
           - Hands
     - type: Damageable
@@ -1231,7 +1231,7 @@
       oreChance: 1.0
       currentOre: StalkerOreBerries16
     - type: Gatherable
-      whitelist:
+      toolWhitelist:
         components:
           - Hands
     - type: Damageable
@@ -1307,7 +1307,7 @@
       oreChance: 1.0
       currentOre: StalkerOreBerries17
     - type: Gatherable
-      whitelist:
+      toolWhitelist:
         components:
           - Hands
     - type: Damageable
@@ -1383,7 +1383,7 @@
       oreChance: 1.0
       currentOre: StalkerOreBerries18
     - type: Gatherable
-      whitelist:
+      toolWhitelist:
         components:
           - Hands
     - type: Damageable
@@ -1459,7 +1459,7 @@
       oreChance: 1.0
       currentOre: StalkerOreBerries19
     - type: Gatherable
-      whitelist:
+      toolWhitelist:
         components:
           - Hands
     - type: Damageable
@@ -1537,7 +1537,7 @@
       oreChance: 1.0
       currentOre: StalkerOreBerries20
     - type: Gatherable
-      whitelist:
+      toolWhitelist:
         components:
           - Hands
     - type: Damageable
@@ -1615,7 +1615,7 @@
       oreChance: 1.0
       currentOre: StalkerOreBerries21
     - type: Gatherable
-      whitelist:
+      toolWhitelist:
         components:
           - Hands
     - type: Damageable
@@ -1693,7 +1693,7 @@
       oreChance: 1.0
       currentOre: StalkerOreBerries22
     - type: Gatherable
-      whitelist:
+      toolWhitelist:
         components:
           - Hands
     - type: Damageable
@@ -1771,7 +1771,7 @@
       oreChance: 1.0
       currentOre: StalkerOreBerries23
     - type: Gatherable
-      whitelist:
+      toolWhitelist:
         components:
           - Hands
     - type: Damageable
@@ -1849,7 +1849,7 @@
       oreChance: 1.0
       currentOre: StalkerOreBerries24
     - type: Gatherable
-      whitelist:
+      toolWhitelist:
         components:
           - Hands
     - type: Damageable
