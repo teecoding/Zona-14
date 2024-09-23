@@ -101,7 +101,6 @@
           Toxin: -100
           Airloss: -100
           Brute: -1
-          Anomaly: -100
     - type: ApproachEmitter
       range: 0
       useMinRange: false

@@ -16,7 +16,6 @@
         Burn: -0.5
         Airloss: -0.5
         Toxin: -0.5
-        Anomaly: -0.5
 
 - type: entity
   parent: STMatrassBedBase

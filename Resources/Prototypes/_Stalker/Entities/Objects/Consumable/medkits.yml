@@ -143,7 +143,6 @@
         Burn: -500
         Airloss: -200
         Toxin: -500
-        Anomaly: -300
       types:
         Compression: -300
         Psy: -200
@@ -190,7 +189,6 @@
         Burn: -800
         Airloss: -300
         Toxin: 5
-        Anomaly: 15
     ModifyBloodLevel: 50
     bloodlossModifier: -50
     healingBeginSound:

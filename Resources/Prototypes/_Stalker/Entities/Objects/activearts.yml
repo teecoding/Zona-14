@@ -24,7 +24,6 @@
           Burn: -10
           Airloss: -10
           Toxin: -10
-          Anomaly: -10
       range: 2
 
 - type: entity
