@@ -1,4 +1,4 @@
-﻿- type: statusIcon
+﻿- type: jobIcon
   id: band
   locationPreference: Left
   icon:
@@ -6,7 +6,7 @@
     hideOnStealth: true
     state: band
 
-- type: statusIcon
+- type: jobIcon
   id: sci
   locationPreference: Left
   icon:
@@ -14,7 +14,7 @@
     hideOnStealth: true
     state: sci
 
-- type: statusIcon
+- type: jobIcon
   id: army
   locationPreference: Left
   icon:
@@ -22,7 +22,7 @@
     hideOnStealth: true
     state: army
 
-- type: statusIcon
+- type: jobIcon
   id: stalker
   locationPreference: Left
   icon:
@@ -30,7 +30,7 @@
     hideOnStealth: true
     state: stalker
 
-- type: statusIcon
+- type: jobIcon
   id: seraphim
   locationPreference: Left
   icon:
@@ -38,7 +38,7 @@
     hideOnStealth: true
     state: seraph
 
-- type: statusIcon
+- type: jobIcon
   id: tec
   locationPreference: Left
   icon:
@@ -46,7 +46,7 @@
     hideOnStealth: true
     state: tec
 
-- type: statusIcon
+- type: jobIcon
   id: journalist
   locationPreference: Left
   icon:
@@ -54,7 +54,7 @@
     hideOnStealth: true
     state: journalist
 
-- type: statusIcon
+- type: jobIcon
   id: un
   locationPreference: Left
   icon:
@@ -62,7 +62,7 @@
     hideOnStealth: true
     state: un
 
-- type: statusIcon
+- type: jobIcon
   id: Dolg
   locationPreference: Left
   icon:
@@ -70,7 +70,7 @@
     hideOnStealth: true
     state: dolg
 
-- type: statusIcon
+- type: jobIcon
   id: monolith
   locationPreference: Left
   icon:
@@ -78,7 +78,7 @@
     hideOnStealth: true
     state: monolith
 
-- type: statusIcon
+- type: jobIcon
   id: cn
   locationPreference: Left
   icon:
@@ -86,7 +86,7 @@
     hideOnStealth: true
     state: cn
 
-- type: statusIcon
+- type: jobIcon
   id: ecologists
   locationPreference: Left
   icon:
@@ -94,7 +94,7 @@
     hideOnStealth: true
     state: ecologist
 
-- type: statusIcon
+- type: jobIcon
   id: freedom
   locationPreference: Left
   icon:
@@ -102,7 +102,7 @@
     hideOnStealth: true
     state: freedom
 
-- type: statusIcon
+- type: jobIcon
   id: sbu
   locationPreference: Left
   icon:
@@ -110,7 +110,7 @@
     hideOnStealth: true
     state: sbu
 
-- type: statusIcon
+- type: jobIcon
   id: rene
   forbidHide: false
   locationPreference: Left
@@ -119,7 +119,7 @@
     hideOnStealth: true
     state: rene
 
-- type: statusIcon
+- type: jobIcon
   id: mechanic
   forbidHide: false
   locationPreference: Left
@@ -128,7 +128,7 @@
     hideOnStealth: true
     state: mechanic
 
-- type: statusIcon
+- type: jobIcon
   id: trader
   forbidHide: false
   locationPreference: Left
@@ -137,7 +137,7 @@
     hideOnStealth: true
     state: trader
 
-- type: statusIcon
+- type: jobIcon
   id: zavet
   forbidHide: false
   locationPreference: Left
@@ -146,7 +146,7 @@
     hideOnStealth: true
     state: zavet
 
-- type: statusIcon
+- type: jobIcon
   id: clowns
   forbidHide: false
   locationPreference: Left
@@ -155,7 +155,7 @@
     hideOnStealth: true
     state: clowns
 
-- type: statusIcon
+- type: jobIcon
   id: merc
   locationPreference: Left
   icon:
@@ -163,7 +163,7 @@
     hideOnStealth: true
     state: merc
 
-- type: statusIcon
+- type: jobIcon
   id: greh
   locationPreference: Left
   icon:
@@ -171,7 +171,7 @@
     hideOnStealth: true
     state: greh
 
-- type: statusIcon
+- type: jobIcon
   id: deserter
   locationPreference: Left
   icon:
@@ -179,7 +179,7 @@
     hideOnStealth: true
     state: deserter
 
-- type: statusIcon
+- type: jobIcon
   id: police
   locationPreference: Left
   icon:
@@ -187,7 +187,7 @@
     hideOnStealth: true
     state: police
 
-- type: statusIcon
+- type: jobIcon
   id: jaba
   locationPreference: Left
   icon:
@@ -195,7 +195,7 @@
     hideOnStealth: true
     state: jaba
 
-- type: statusIcon
+- type: jobIcon
   id: voen
   locationPreference: Left
   icon:
@@ -203,7 +203,7 @@
     hideOnStealth: true
     state: voen
 
-- type: statusIcon
+- type: jobIcon
   id: project-1
   locationPreference: Left
   icon:
@@ -211,7 +211,7 @@
     hideOnStealth: true
     state: project-1
 
-- type: statusIcon
+- type: jobIcon
   id: project-2
   locationPreference: Left
   icon:
@@ -219,7 +219,7 @@
     hideOnStealth: true
     state: project-2
 
-- type: statusIcon
+- type: jobIcon
   id: project-3
   locationPreference: Left
   icon:
@@ -227,7 +227,7 @@
     hideOnStealth: true
     state: project-3
 
-- type: statusIcon
+- type: jobIcon
   id: project-4
   locationPreference: Left
   icon:
@@ -235,7 +235,7 @@
     hideOnStealth: true
     state: project-4
 
-- type: statusIcon
+- type: jobIcon
   id: zombie
   locationPreference: Left
   icon:
@@ -243,7 +243,7 @@
     hideOnStealth: true
     state: zombie
 
-- type: statusIcon
+- type: jobIcon
   id: ne
   locationPreference: Left
   icon:
@@ -251,7 +251,7 @@
     hideOnStealth: true
     state: ne
 
-- type: statusIcon
+- type: jobIcon
   id: poisk
   locationPreference: Left
   icon:
@@ -259,7 +259,7 @@
     hideOnStealth: true
     state: poisk
 
-- type: statusIcon
+- type: jobIcon
   id: pilgrim
   locationPreference: Left
   icon:
