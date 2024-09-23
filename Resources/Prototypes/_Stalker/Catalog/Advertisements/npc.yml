@@ -1,92 +1,59 @@
-- type: advertisementsPack
+- type: localizedDataset
   id: NPCStalkerSidorAds
-  advertisements:
-  - advertisement-sidor-1
-  - advertisement-sidor-2
-  - advertisement-sidor-3
-  - advertisement-sidor-4
-  - advertisement-sidor-5
-  - advertisement-sidor-6
-  - advertisement-sidor-7
-  - advertisement-sidor-8
+  values:
+    prefix: advertisement-sidor-
+    count: 8
 
-- type: advertisementsPack
+- type: localizedDataset
   id: NPCStalkerTraderAds
-  advertisements:
-  - advertisement-trader-1
-  - advertisement-trader-2
-  - advertisement-trader-3
-  - advertisement-trader-4
-  - advertisement-trader-5
-  - advertisement-trader-6
-  - advertisement-trader-7
-  - advertisement-trader-8
+  values:
+    prefix: advertisement-trader-
+    count: 8
 
-- type: advertisementsPack
+- type: localizedDataset
   id: NPCStalkerPharmacistAds
-  advertisements:
-  - advertisement-pharmacist-1
-  - advertisement-pharmacist-2
-  - advertisement-pharmacist-3
-  - advertisement-pharmacist-4
-  - advertisement-pharmacist-5
-  - advertisement-pharmacist-6
-  - advertisement-pharmacist-7
-  - advertisement-pharmacist-8
+  values:
+    prefix: advertisement-pharmacist-
+    count: 8
 
-- type: advertisementsPack
+- type: localizedDataset
   id: NPCStalkerSecurityAds
-  advertisements:
-  - advertisement-security-1
-  - advertisement-security-2
-  - advertisement-security-3
-  - advertisement-security-4
-  - advertisement-security-5
-  - advertisement-security-6
-  - advertisement-security-7
-  - advertisement-security-8
+  values:
+    prefix: advertisement-security-
+    count: 8
 
-- type: advertisementsPack
+- type: localizedDataset
   id: NPCStalkerCatPet
-  advertisements:
-  - advertisement-cat-pet-1
-  - advertisement-cat-pet-2
-  - advertisement-cat-pet-3
-  - advertisement-cat-pet-4
-  - advertisement-cat-pet-5
-  - advertisement-cat-pet-6
-  - advertisement-cat-pet-7
-  - advertisement-cat-pet-8
+  values:
+    prefix: advertisement-cat-pet-
+    count: 8
 
-- type: advertisementsPack
+- type: localizedDataset
   id: NPCStalkerAlkashAds
-  advertisements:
-  - advertisement-alkash-1
-  - advertisement-alkash-2
-  - advertisement-alkash-3
-  - advertisement-alkash-4
-  - advertisement-alkash-5
-  - advertisement-alkash-6
-  - advertisement-alkash-7
-  - advertisement-alkash-8
+  values:
+    prefix: advertisement-alkash-
+    count: 8
 
-- type: advertisementsPack
+- type: localizedDataset
   id: NpcCeremoniemeesterAds
-  advertisements:
-  - advertisement-ceremoniemeester-1
-  - advertisement-ceremoniemeester-2
-  - advertisement-ceremoniemeester-3
-  - advertisement-ceremoniemeester-4
-  - advertisement-ceremoniemeester-5
+  values:
+    prefix: advertisement-ceremoniemeester-
+    count: 5
 
-- type: advertisementsPack
+- type: localizedDataset
   id: STNPCStalkerBarmenAds
-  advertisements:
-  - advertisement-barmen-1
-  - advertisement-barmen-2
-  - advertisement-barmen-3
-  - advertisement-barmen-4
-  - advertisement-barmen-5
-  - advertisement-barmen-6
-  - advertisement-barmen-7
-  - advertisement-barmen-8
+  values:
+    prefix: advertisement-barmen-
+    count: 8
+
+- type: localizedDataset
+  id: RadiolaStalkerAds
+  values:
+    prefix: advertisement-radiola-
+    count: 8
+
+- type: localizedDataset
+  id: SayStalkerZombie
+  values:
+    prefix: advertisement-zombie-
+    count: 60
