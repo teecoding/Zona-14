@@ -12,7 +12,6 @@ department-Specific = На определённых станциях
 department-Stalker = Вольные Сталкеры
 department-StalkerAdvanced = Огранизованные группировки
 
-department-Stalker = Сталкеры
 department-StalkerAnomalists = Аномалисты
 department-StalkerReligius = Религиозные объединения
 department-StalkerBrigands = бандитские формирования

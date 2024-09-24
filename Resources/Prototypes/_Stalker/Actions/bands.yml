@@ -6,7 +6,7 @@
   components:
   - type: InstantAction
     checkCanInteract: false
-    icon: Interface/Actions/r_patch.png
+    icon: _Stalker/Interface/Actions/patch.rsi/r_patch.png
     event: !type:ToggleBandsEvent
 
 - type: entity
@@ -17,5 +17,5 @@
   components:
     - type: InstantAction
       checkCanInteract: false
-      icon: Interface/Actions/r_patch.png
+      icon: _Stalker/Interface/Actions/patch.rsi/switch_patch.png
       event: !type:ChangeBandEvent
