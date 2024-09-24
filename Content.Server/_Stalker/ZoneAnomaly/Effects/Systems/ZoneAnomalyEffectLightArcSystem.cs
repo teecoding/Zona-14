@@ -5,6 +5,7 @@ using Content.Shared._Stalker.ZoneAnomaly.Components;
 using Content.Shared._Stalker.ZoneAnomaly.Effects.Components;
 using Content.Shared.Damage;
 using Content.Shared.Mobs;
+using Content.Shared.Mobs.Components;
 using Content.Shared.Mobs.Systems;
 using Content.Shared.Whitelist;
 using Robust.Shared.Map.Components;
@@ -56,6 +57,8 @@ public sealed class ZoneAnomalyEffectLightArcSystem : EntitySystem
     private void TryChangeState(Entity<ZoneAnomalyEffectLightArcComponent> effect, EntityUid target)
     {
         if (!TryComp<DamageableComponent>(target, out var damageable))
+            return;
+        if (!TryComp<MobThresholdsComponent>(target, out var mobThresholds))
             return;
 
         if (!_mobThreshold.TryGetThresholdForState(target, MobState.Dead, out var threshold))
