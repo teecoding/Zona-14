@@ -173,3 +173,22 @@
   heatCapacity: 10000
   weather: true
   indestructible: true
+
+# Wasteland
+- type: tile
+  id: StalkerFloorSnowDug
+  name: Грязный снег
+  sprite: /Textures/_Stalker/Tiles/snow.rsi/snow13.png
+  edgeSpritePriority: 1
+  edgeSprites:
+    South: /Textures/Tiles/Planet/Snow/snow_dug_double_edge_south.png
+    East: /Textures/Tiles/Planet/Snow/snow_dug_double_edge_east.png
+    North: /Textures/Tiles/Planet/Snow/snow_dug_double_edge_north.png
+    West: /Textures/Tiles/Planet/Snow/snow_dug_double_edge_west.png
+  isSubfloor: true
+  canCrowbar: false
+  footstepSounds:
+    collection: FootstepSnow
+  heatCapacity: 10000
+  weather: true
+  indestructible: true

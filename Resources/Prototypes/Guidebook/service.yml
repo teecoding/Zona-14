@@ -10,7 +10,7 @@
   - Janitorial
 
 - type: guideEntry
-  id: STBartender
+  id: Bartender
   name: guide-entry-bartender
   text: "/ServerInfo/Guidebook/Service/Bartender.xml"
   filterEnabled: True

@@ -10,7 +10,7 @@
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: stalkerhorse
-      sprite: Mobs/Animals/stalkerhorse.rsi
+      sprite: _Stalker/Mobs/Peacefuls/stalkerhorse.rsi
   - type: Fixtures
     fixtures:
       fix1:

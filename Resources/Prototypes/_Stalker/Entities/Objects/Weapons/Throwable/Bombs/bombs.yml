@@ -98,12 +98,12 @@
         - Belt
     - type: SpaceGarbage
     - type: Sprite
-      sprite: Objects/Weapons/Bombs/dynamite2.rsi
+      sprite: _Stalker/Objects/Weapons/Bombs/dynamite2.rsi
       scale: 0.7, 0.7
       layers:
         - state: icon_unlit
     - type: FireVisuals
-      sprite: Objects/Weapons/Bombs/dynamite2.rsi
+      sprite: _Stalker/Objects/Weapons/Bombs/dynamite2.rsi
       scale: 0.7, 0.7
       normalState: icon_lit
     - type: ContainerContainer
@@ -321,7 +321,7 @@
     shape:
       - 0,0,1,1
   - type: Sprite
-    sprite: Objects/Weapons/Bombs/distbomb.rsi
+    sprite: _Stalker/Objects/Weapons/Bombs/distbomb.rsi
     state: icon
     layers:
     - state: icon

@@ -182,6 +182,6 @@
   description: Смотря в него, вы видите весь алгоритм которому следуете..., но работает лишь если у вас в голове встроен сам-же чип.
   components:
   - type: Sprite
-    sprite: Clothing/Eyes/Hud/project.rsi
+    sprite: _Stalker/Clothing/Goggles/project_hud.rsi
   - type: Clothing
-    sprite: Clothing/Eyes/Hud/project.rsi
+    sprite: _Stalker/Clothing/Goggles/project_hud.rsi

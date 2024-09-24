@@ -10,10 +10,10 @@
         - GrehCanTakeOnly
     - type: Sharp
     - type: Sprite
-      sprite: Objects/Weapons/Melee/battle_scythe.rsi
+      sprite: _Stalker/Objects/Weapons/Melee/lgbt_knife.rsi
       state: icon
     - type: Clothing
-      sprite: Objects/Weapons/Melee/battle_scythe.rsi
+      sprite: _Stalker/Objects/Weapons/Melee/lgbt_knife.rsi
       slots:
         - Back
     - type: MeleeWeapon
@@ -145,10 +145,10 @@
   description: Средний вариант для нарезания неверных.
   components:
   - type: Sprite
-    sprite: Objects/Weapons/Melee/g_sword.rsi
+    sprite: _Stalker/Objects/Weapons/Melee/g_sword.rsi
     state: icon
   - type: Item
-    sprite: Objects/Weapons/Melee/g_sword.rsi
+    sprite: _Stalker/Objects/Weapons/Melee/g_sword.rsi
   - type: MeleeWeapon
     attackRate: 1.2
     range: 1.6
