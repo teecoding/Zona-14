@@ -17180,7 +17180,7 @@ entities:
         - -35,119
         - -34,119
         - -33,119
-      template: Grasslands
+      template: STGrasslands
       layers:
       - !type:BiomeTileLayer
         threshold: -1

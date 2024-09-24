@@ -330,3 +330,50 @@
       entities:
         - FloorWaterEntityStalker1
     # Lakes end
+
+# Grass
+- type: biomeTemplate
+  id: STGrasslands
+  layers:
+    # Fill remainder with dirt.
+    - !type:BiomeTileLayer
+      threshold: -1.0
+      tile: FloorPlanetDirt
+    - !type:BiomeTileLayer
+      threshold: -0.90
+      tile: FloorPlanetGrass
+      noise:
+        seed: 0
+        frequency: 1
+        fractalType: None
+
+# Grass
+- type: biomeTemplate
+  id: STBoloto
+  layers:
+    # Fill remainder with dirt.
+    - !type:BiomeTileLayer
+      threshold: -1.0
+      tile: FloorPlanetDirt
+    - !type:BiomeTileLayer
+      threshold: -0.90
+      tile: FloorPlanetGrass
+      noise:
+        seed: 0
+        frequency: 1
+        fractalType: None
+# Grass
+- type: biomeTemplate
+  id: STSvalka
+  layers:
+    # Fill remainder with dirt.
+    - !type:BiomeTileLayer
+      threshold: -1.0
+      tile: FloorPlanetDirt
+    - !type:BiomeTileLayer
+      threshold: -0.90
+      tile: FloorPlanetGrass
+      noise:
+        seed: 0
+        frequency: 1
+        fractalType: None

@@ -21,6 +21,17 @@
     sprite: _Stalker/Objects/Devices/mp3player.rsi
     state: base
 
+- type: entity
+  id: RadioStandStalkerIgorIvanovichTheme
+  parent: RadioBaseStalker
+  suffix: Stalker, IgorIvanovichTheme
+  components:
+  - type: AmbientSound
+    volume: 1
+    enabled: true
+    sound:
+      path: /Audio/_Stalker/Music/Radio/wolf_hunt.ogg
+
 # КАССЕТЫ
 
 - type: entity
