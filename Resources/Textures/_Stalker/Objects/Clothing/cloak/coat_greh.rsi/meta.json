@@ -1,22 +1,22 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "by vladimir.s for corvax stalker",
-  "size": {
-    "x": 32,
-    "y": 32
-  },
-  "states": [
-    {
-      "name": "icon"
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "by vladimir.s for corvax stalker",
+    "size": {
+        "x": 32,
+        "y": 32
     },
-    {
-      "name": "equipped-OUTERCLOTHING",
-      "directions": 4
-    },
-    {
-      "name": "equipped-NECK",
-      "directions": 4
-    }
-  ]
+    "states": [
+        {
+            "name": "icon"
+        },
+        {
+            "name": "equipped-OUTERCLOTHING",
+            "directions": 4
+        },
+        {
+            "name": "equipped-CLOAK",
+            "directions": 4
+        }
+    ]
 }

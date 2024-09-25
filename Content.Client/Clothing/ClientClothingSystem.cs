@@ -47,6 +47,12 @@ public sealed class ClientClothingSystem : ClothingSystem
         {"pocket1", "POCKET1"},
         {"pocket2", "POCKET2"},
         {"suitstorage", "SUITSTORAGE"},
+        // stalke-changes
+        {"legs", "LEGS"},
+        {"cloak", "CLOAK"},
+        {"torso", "TORSO" },
+        {"dopweapon", "BACKPACK"}
+        // stalke-changes-ends
     };
 
     [Dependency] private readonly IResourceCache _cache = default!;

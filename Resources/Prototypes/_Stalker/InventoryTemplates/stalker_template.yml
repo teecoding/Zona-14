@@ -158,7 +158,7 @@
       strippingWindowPos: 2,0
       displayName: Ears
     - name: cloak  # Stalker-Changes-UI-Start
-      slotTexture: neck
+      slotTexture: cloak
       slotFlags: CLOAK
       stripTime: 5
       uiWindowPos: 3,0

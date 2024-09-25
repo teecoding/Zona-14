@@ -24,7 +24,7 @@ public enum SlotFlags
     GLOVES = 1 << 11,
     IDCARD = 1 << 12,
     POCKET = 1 << 13,
-    LEGS = 1 << 14,
+    LEGS = 1 << 14, // Stalker-Changes-UI
     FEET = 1 << 15,
     SUITSTORAGE = 1 << 16,
     ARTIFACT = 1 << 17, // Stalker-Changes-UI

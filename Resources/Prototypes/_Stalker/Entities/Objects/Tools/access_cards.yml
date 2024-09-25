@@ -1,0 +1,17 @@
+- type: entity
+  parent: IDCardStandard
+  id: STJobMilitaryIDCard
+  name: Ключ-карта для доступа
+  description: Утеря данной карты будет считаться военным преступлением.
+  components:
+    - type: Sprite
+      layers:
+        - state: default
+          color: "#32CD32"
+    - type: PresetIdCard
+      job: JobMilitary
+    - type: Access
+      groups:
+        - Military
+        - MilitaryOfficer
+        - MilitaryHead

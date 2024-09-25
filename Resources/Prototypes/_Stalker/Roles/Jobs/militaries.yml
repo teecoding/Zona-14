@@ -119,6 +119,17 @@
     head: STClothingHeadTinfoil
 
 - type: startingGear
+  id: MilitaryGearHead
+  equipment:
+    id: MilitaryPDA
+    belt: ClothingBeltAssault
+    legs: ClothingLegsJeansGreenCargo
+    torso: ClothingTorsoTurtlenecksMilitary
+    shoes: ClothingShoesPortyanki
+    head: STClothingHeadTinfoil
+    pocket1: STJobMilitaryIDCard
+
+- type: startingGear
   id: MilitarySpecGear
   equipment:
     id: MilitaryPDA
