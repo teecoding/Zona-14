@@ -1,6 +1,22 @@
+All rights reserved.
+
+Copyright (c) 2024 Stalker
+
+This source code is the exclusive of TornadoTech (Maltsev Daniil), JerryImMouse, LordVladimer (Valdis Fedorov), PilgrimViis (Konstantin Bormotov) and is protected by copyright law.
+You granted no rights or permissions to use, modify, distribute,  sublicense,
+or reproduce this source code in any form, in whole or in part,
+without the express written consent of TornadoTech (Maltsev Daniil), JerryImMouse, LordVladimer (Valdis Fedorov), PilgrimViis (Konstantin Bormotov).
+
+Any unauthorized use or reproduction of this source code
+is strictly prohibited and may result in legal action.
+
+For inquiries or licensing requests,
+please contact TornadoTech (Maltsev Daniil), JerryImMouse, LordVladimer (Valdis Fedorov), PilgrimViis (Konstantin Bormotov) at Discord (https://discord.gg/GXzurVkWYX).
+
 MIT License
 
 Copyright (c) 2017-2024 Space Wizards Federation
+Copyright (c) 2021-2024 Corvax
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
