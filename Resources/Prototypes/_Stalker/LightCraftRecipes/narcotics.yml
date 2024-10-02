@@ -4,7 +4,7 @@
     - LeavesCannabisDried
   steps:
     firstIngredient: LeavesCannabis
-    secondIngredient: Bonfire
+    secondIngredient: STBonfire
     keepSecond: true
     exactSecond: false
     time: 5

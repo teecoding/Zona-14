@@ -6,7 +6,7 @@
     - FoodMeatBoarCooked
   steps:
     firstIngredient: FoodMeatBoar
-    secondIngredient: Bonfire
+    secondIngredient: STBonfire
     keepSecond: true
     exactSecond: false
     time: 20
@@ -17,7 +17,7 @@
     - FoodMeatDogCooked
   steps:
     firstIngredient: FoodMeatDog
-    secondIngredient: Bonfire
+    secondIngredient: STBonfire
     keepSecond: true
     exactSecond: false
     time: 10
@@ -28,7 +28,7 @@
     - STFoodMeatSpiderCooked
   steps:
     firstIngredient: STFoodMeatSpider
-    secondIngredient: Bonfire
+    secondIngredient: STBonfire
     keepSecond: true
     exactSecond: false
     time: 10
@@ -39,7 +39,7 @@
     - FoodMeatCooked
   steps:
     firstIngredient: FoodMeat
-    secondIngredient: Bonfire
+    secondIngredient: STBonfire
     keepSecond: true
     exactSecond: false
     time: 10
@@ -50,7 +50,7 @@
     - FoodMeatCutletCooked
   steps:
     firstIngredient: FoodMeatCutlet
-    secondIngredient: Bonfire
+    secondIngredient: STBonfire
     keepSecond: true
     exactSecond: false
     time: 5
@@ -61,7 +61,7 @@
     - FoodPotatoCooked
   steps:
     firstIngredient: FoodPotato
-    secondIngredient: Bonfire
+    secondIngredient: STBonfire
     keepSecond: true
     exactSecond: false
     time: 5
@@ -74,7 +74,7 @@
     - Ash
   steps:
     firstIngredient: FoodMeatBoarCooked
-    secondIngredient: Bonfire
+    secondIngredient: STBonfire
     keepSecond: true
     exactSecond: false
     time: 3
@@ -85,7 +85,7 @@
     - Ash
   steps:
     firstIngredient: FoodMeatDogCooked
-    secondIngredient: Bonfire
+    secondIngredient: STBonfire
     keepSecond: true
     exactSecond: false
     time: 3
@@ -96,7 +96,7 @@
     - Ash
   steps:
     firstIngredient: FoodMeatCooked
-    secondIngredient: Bonfire
+    secondIngredient: STBonfire
     keepSecond: true
     exactSecond: false
     time: 4
@@ -107,7 +107,7 @@
     - Ash
   steps:
     firstIngredient: FoodMeatCutletCooked
-    secondIngredient: Bonfire
+    secondIngredient: STBonfire
     keepSecond: true
     exactSecond: false
     time: 2
@@ -118,7 +118,7 @@
     - Ash
   steps:
     firstIngredient: FoodPotatoCooked
-    secondIngredient: Bonfire
+    secondIngredient: STBonfire
     keepSecond: true
     exactSecond: false
     time: 3

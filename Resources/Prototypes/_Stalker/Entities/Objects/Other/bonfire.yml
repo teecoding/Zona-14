@@ -1,6 +1,14 @@
 - type: entity
-  id: BonfireOff
+  id: STBonfire
   parent: Bonfire
+  name: Костёр
+  description: Что может быть лучше чем сидеть под костёр под песни?
+  components:
+  - type: Craftable
+
+- type: entity
+  id: BonfireOff
+  parent: STBonfire
   name: основа костра
   description: Основа для костра.
   components:
