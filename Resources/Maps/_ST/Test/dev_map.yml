@@ -580,7 +580,7 @@ entities:
     - type: Transform
       pos: 0.47728053,-2.7539496
       parent: 179
-- proto: AAAAStalkerTeleport
+- proto: STPredbannikTeleport
   entities:
   - uid: 160
     components:

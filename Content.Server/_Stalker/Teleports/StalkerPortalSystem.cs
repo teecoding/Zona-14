@@ -121,7 +121,6 @@ public sealed class StalkerPortalSystem : SharedTeleportSystem
     // Создание сталкер арены и её первичная настройка если она ещё не была создана, в конце возвращает координаты сталкер индивидуальной арены для игрока
     public (EntityUid Map, EntityUid? Grid) StalkerAssertArenaLoaded(ICommonSession admin, string teleportName, EntityUid? returnTeleportEntityUid)
     {
-
         if (InStalkerTeleportDataList(admin.Name) == true)
         {
             var stalkerTeleportData = GetFromStalkerTeleportDataList(admin.Name);

@@ -47394,7 +47394,7 @@ entities:
       - '#E2D2B711'
     - type: RadiationGridResistance
     - type: LoadedMap
-- proto: AAAAStalkerTeleport
+- proto: STPredbannikTeleport
   entities:
   - uid: 2
     components:

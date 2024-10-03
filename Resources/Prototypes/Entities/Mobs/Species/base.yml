@@ -297,6 +297,15 @@
   - type: PsyonicsLightVisuals
     sprite: _Stalker/Effects/psyonic_light.rsi
     state: base
+  - type: Stamina
+    decay: 14
+    cooldown: 5
+    critThreshold: 200
+  - type: STWeight
+    self: 70
+  - type: StaminaActive
+  - type: StaminaDecayModifier
+  - type: StaminaCritThresholdModifier
     # stalker-changes-end
 
 - type: entity

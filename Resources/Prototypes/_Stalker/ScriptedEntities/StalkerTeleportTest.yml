@@ -1,7 +1,7 @@
 - type: entity
   parent: StalkerDuplicateTeleportBase
-  id: AAAAStalkerTeleport
-  name: Подвал в логово
+  id: STPredbannikTeleport
+  name: Подвал в логово Предбанника
   description: С помощью этого подвала вы можете попасть в своё логово.
   components:
     - type: STAnomalyGeneratorSpawnBlocker
@@ -28,8 +28,12 @@
           layer:
             - TableLayer
           hard: false
-    - type: StalkerPortal
-      PortalName: "Bandit TEST"
+    # - type: StalkerPortal
+    #   PortalName: "Bandit TEST"
+    - type: DuplicateTeleport
+      prefix: PB
+      maxWeight: 0.5
+      mapPath: /Maps/_ST/PersonalStalkerArena/StalkerMap.yml
     - type: PointLight
       color: OrangeRed
       radius: 3
@@ -40,7 +44,7 @@
 
 - type: entity
   id: StalkerTeleportMilitary
-  parent: AAAAStalkerTeleport
+  parent: STPredbannikTeleport
   name: Подвал в логово
   description: С помощью этого подвала вы можете попасть в своё логово.
   suffix: Cache, Military
@@ -50,7 +54,7 @@
 
 - type: entity
   id: StalkerTeleportSci
-  parent: AAAAStalkerTeleport
+  parent: STPredbannikTeleport
   name: Подвал в логово
   description: С помощью этого подвала вы можете попасть в своё логово.
   suffix: Cache, Sci
@@ -60,7 +64,7 @@
 
 - type: entity
   id: StalkerTeleportBandit
-  parent: AAAAStalkerTeleport
+  parent: STPredbannikTeleport
   name: Подвал в логово
   description: С помощью этого подвала вы можете попасть в своё логово.
   suffix: Cache, Bandit
@@ -70,7 +74,7 @@
 
 - type: entity
   id: StalkerTeleportSeraphims
-  parent: AAAAStalkerTeleport
+  parent: STPredbannikTeleport
   name: Подвал в логово
   description: С помощью этого подвала вы можете попасть в своё логово.
   suffix: Cache, Seraphims
@@ -80,7 +84,7 @@
 
 - type: entity
   id: StalkerTeleportDolg
-  parent: AAAAStalkerTeleport
+  parent: STPredbannikTeleport
   name: Подвал в логово
   description: С помощью этого подвала вы можете попасть в своё логово.
   suffix: Cache, Dolg
@@ -90,7 +94,7 @@
 
 - type: entity
   id: StalkerTeleportFreedom
-  parent: AAAAStalkerTeleport
+  parent: STPredbannikTeleport
   name: Подвал в логово
   description: С помощью этого подвала вы можете попасть в своё логово.
   suffix: Cache, Freedom
@@ -100,7 +104,7 @@
 
 - type: entity
   id: StalkerTeleportRenegats
-  parent: AAAAStalkerTeleport
+  parent: STPredbannikTeleport
   name: Подвал в логово
   description: С помощью этого подвала вы можете попасть в своё логово.
   suffix: Cache, Renegat
@@ -110,7 +114,7 @@
 
 - type: entity
   id: StalkerTeleportDeserters
-  parent: AAAAStalkerTeleport
+  parent: STPredbannikTeleport
   name: Подвал в логово
   description: С помощью этого подвала вы можете попасть в своё логово.
   suffix: Cache, Deserter
@@ -120,7 +124,7 @@
 
 - type: entity
   id: StalkerTeleportCovenant
-  parent: AAAAStalkerTeleport
+  parent: STPredbannikTeleport
   name: Подвал в логово
   description: С помощью этого подвала вы можете попасть в своё логово.
   suffix: Cache, Covenant
@@ -130,7 +134,7 @@
 
 - type: entity
   id: StalkerTeleportAnomalists
-  parent: AAAAStalkerTeleport
+  parent: STPredbannikTeleport
   name: Подвал в логово
   description: С помощью этого подвала вы можете попасть в своё логово.
   suffix: Cache, Anomalist
@@ -140,7 +144,7 @@
 
 - type: entity
   id: StalkerTeleportMerc
-  parent: AAAAStalkerTeleport
+  parent: STPredbannikTeleport
   name: Подвал в логово
   description: С помощью этого подвала вы можете попасть в своё логово.
   suffix: Cache, Mercenary
@@ -150,7 +154,7 @@
 
 - type: entity
   id: StalkerTeleportGreh
-  parent: AAAAStalkerTeleport
+  parent: STPredbannikTeleport
   name: Подвал в логово
   description: С помощью этого подвала вы можете попасть в своё логово.
   suffix: Cache, Greh
@@ -160,7 +164,7 @@
 
 - type: entity
   id: StalkerTeleportClearSky
-  parent: AAAAStalkerTeleport
+  parent: STPredbannikTeleport
   name: Подвал в логово
   description: С помощью этого подвала вы можете попасть в своё логово.
   suffix: Cache, Clear Sky
@@ -170,9 +174,9 @@
 
   ###########################################################
 - type: entity
-  id: AAAAStalkerTeleportPersonal
-  name: Подвал в логово
-  description: С помощью этого подвала вы можете попасть в своё логово.
+  id: STTeleportReturnPersonal
+  name: выход из логова
+  description: С помощью этой лестницы вы можете выйти из логова
   suffix: персональный
   components:
     - type: Transform

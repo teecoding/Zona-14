@@ -1,4 +1,5 @@
-﻿using Content.Server.Temperature.Systems;
+using Content.Server.Temperature.Components;
+using Content.Server.Temperature.Systems;
 using Content.Shared._Stalker.ZoneAnomaly;
 using Content.Shared._Stalker.ZoneAnomaly.Components;
 using Content.Shared._Stalker.ZoneAnomaly.Effects.Components;
@@ -55,6 +56,7 @@ public sealed class ZoneAnomalyEffectHeatSystem : EntitySystem
 
     private void Heat(Entity<ZoneAnomalyEffectHeatComponent> effect, EntityUid target)
     {
-        _temperature.ChangeHeat(target, 12500 * effect.Comp.Heat, effect.Comp.IgnoreResistance);
+        if (TryComp<TemperatureComponent>(target, out _))
+            _temperature.ChangeHeat(target, 12500 * effect.Comp.Heat, effect.Comp.IgnoreResistance);
     }
 }

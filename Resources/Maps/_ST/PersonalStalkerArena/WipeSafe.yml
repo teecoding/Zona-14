@@ -319,7 +319,7 @@ entities:
     - type: GravityShake
       shakeTimes: 10
     - type: GasTileOverlay
-- proto: AAAAStalkerTeleportPersonal
+- proto: STTeleportReturnPersonal
   entities:
   - uid: 37
     components:
