@@ -1,11 +1,10 @@
 using System.Diagnostics.CodeAnalysis;
-using Content.Corvax.Interfaces.Client;
 using Content.Shared._Stalker.Sponsors;
 using Robust.Shared.Network;
 
 namespace Content.Client._Stalker.Sponsors;
 
-public sealed class SponsorsManager : IClientSponsorsManager
+public sealed class SponsorsManager
 {
     [Dependency] private readonly IClientNetManager _netMgr = default!;
     private SponsorInfo? _info;
