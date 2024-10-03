@@ -1,6 +1,3 @@
-using Content.Server._Stalker.Discord.DiscordAuth;
-using Content.Server._Stalker.JoinQueue;
-using Content.Server._Stalker.Sponsors;
 using Content.Server.Acz;
 using Content.Server.Administration;
 using Content.Server.Administration.Logs;
@@ -109,12 +106,6 @@ namespace Content.Server.Entry
                 IoCManager.Resolve<GhostKickManager>().Initialize();
                 IoCManager.Resolve<ServerInfoManager>().Initialize();
                 IoCManager.Resolve<ServerApi>().Initialize();
-
-                // Stalker-Changes-Start
-                IoCManager.Resolve<DiscordAuthManager>().Initialize(); // Stalker-Changes-Auth
-                IoCManager.Resolve<JoinQueueManager>().Initialize(); // Stalker-Changes - Corvax Queue Adaptation
-                IoCManager.Resolve<SponsorsManager>().Initialize(); // Stalker-Changes-Sponsors
-                // Stalker-Changes-End
 
                 _voteManager.Initialize();
                 _updateManager.Initialize();

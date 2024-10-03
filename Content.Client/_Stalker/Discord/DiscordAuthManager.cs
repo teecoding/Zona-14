@@ -4,7 +4,7 @@ using Robust.Shared.Network;
 
 namespace Content.Client._Stalker.Discord;
 
-public sealed class DiscordAuthManager
+public sealed class DiscordAuthManager : EntitySystem
 {
     [Dependency] private readonly INetManager _net = default!;
     [Dependency] private readonly IStateManager _state = default!;
@@ -12,8 +12,9 @@ public sealed class DiscordAuthManager
     public string AuthLink = default!;
     public const string DiscordServerLink = "https://discord.gg/pBFv9pDuqK";
 
-    public void Initialize()
+    public override void Initialize()
     {
+        base.Initialize();
         _net.RegisterNetMessage<MsgDiscordAuthRequired>(OnDiscordAuthRequired);
     }
 
