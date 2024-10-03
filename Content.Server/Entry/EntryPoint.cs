@@ -114,6 +114,7 @@ namespace Content.Server.Entry
                 IoCManager.Resolve<DiscordAuthManager>().Initialize(); // Stalker-Changes-Auth
                 IoCManager.Resolve<JoinQueueManager>().Initialize(); // Stalker-Changes - Corvax Queue Adaptation
                 IoCManager.Resolve<SponsorsManager>().Initialize(); // Stalker-Changes-Sponsors
+                // Stalker-Changes-End
 
                 _voteManager.Initialize();
                 _updateManager.Initialize();
