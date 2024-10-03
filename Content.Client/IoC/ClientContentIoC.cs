@@ -1,3 +1,5 @@
+using Content.Client._Stalker.Discord;
+using Content.Client._Stalker.JoinQueue;
 using Content.Client.Administration.Managers;
 using Content.Client.Changelog;
 using Content.Client.Chat.Managers;
@@ -52,7 +54,9 @@ namespace Content.Client.IoC
             collection.Register<ISharedPlaytimeManager, JobRequirementsManager>();
             collection.Register<MappingManager>();
             collection.Register<DebugMonitorManager>();
-            collection.Register<SponsorsManager>(); // Stalker-Changes
+            collection.Register<DiscordAuthManager>(); // Stalker-Changes-Auth
+            collection.Register<JoinQueueManager>(); // Stalker-Changes - Corvax Queue Adaptation
+            collection.Register<SponsorsManager>(); // Stalker-Changes-Sponsors
         }
     }
 }

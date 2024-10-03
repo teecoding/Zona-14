@@ -1,3 +1,5 @@
+using Content.Client._Stalker.Discord;
+using Content.Client._Stalker.JoinQueue;
 using Content.Client._Stalker.Overlays;
 using Content.Client._Stalker.Sponsors;
 using Content.Client.Administration.Managers;
@@ -72,6 +74,8 @@ namespace Content.Client.Entry
         [Dependency] private readonly IReplayLoadManager _replayLoad = default!;
         [Dependency] private readonly ILogManager _logManager = default!;
         [Dependency] private readonly DebugMonitorManager _debugMonitorManager = default!;
+        [Dependency] private readonly DiscordAuthManager _discordAuthManager = default!; // Corvax-Auth
+        [Dependency] private readonly JoinQueueManager _joinQueueManager = default!; // Corvax-Queue
         [Dependency] private readonly SponsorsManager _sponsors = default!; // Stalker-Changes-Sponsors
 
         public override void Init()
@@ -163,6 +167,8 @@ namespace Content.Client.Entry
             _userInterfaceManager.SetDefaultTheme("SS14DefaultTheme");
             _userInterfaceManager.SetActiveTheme(_configManager.GetCVar(CVars.InterfaceTheme));
             _documentParsingManager.Initialize();
+            _discordAuthManager.Initialize(); // Stalker-Changes-Auth
+            _joinQueueManager.Initialize(); // Stalker-Changes - Corvax Queue Adaptation
             _sponsors.Initialize(); // Stalker-Changes-Sponsors
 
             _baseClient.RunLevelChanged += (_, args) =>

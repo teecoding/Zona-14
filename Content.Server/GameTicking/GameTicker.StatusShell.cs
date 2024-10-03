@@ -1,4 +1,5 @@
 using System.Text.Json.Nodes;
+using Content.Server._Stalker.JoinQueue;
 using Content.Shared.CCVar;
 using Content.Shared.GameTicking;
 using Robust.Server.ServerStatus;
@@ -28,6 +29,13 @@ namespace Content.Server.GameTicking
         /// </summary>
         [Dependency] private readonly SharedGameTicker _gameTicker = default!;
 
+        // Stalker-Changes-Start
+        /// <summary>
+        ///     For getting actual players count
+        /// </summary>
+        [Dependency] private readonly JoinQueueManager _joinQueue = default!;
+        // Stalker-Changes-End
+
         private void InitializeStatusShell()
         {
             IoCManager.Resolve<IStatusHost>().OnStatusRequest += GetStatusResponse;
@@ -43,7 +51,7 @@ namespace Content.Server.GameTicking
                 jObject["name"] = _baseServer.ServerName;
                 jObject["map"] = _gameMapManager.GetSelectedMap()?.MapName;
                 jObject["round_id"] = _gameTicker.RoundId;
-                jObject["players"] = _playerManager.PlayerCount;
+                jObject["players"] = _joinQueue.ActualPlayersCount; // Stalker-Changes - Corvax Queue Adaptation
                 jObject["soft_max_players"] = _cfg.GetCVar(CCVars.SoftMaxPlayers);
                 jObject["panic_bunker"] = _cfg.GetCVar(CCVars.PanicBunkerEnabled);
 
