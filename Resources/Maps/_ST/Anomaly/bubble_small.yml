@@ -264,7 +264,7 @@ entities:
         - node:
             cleanable: True
             color: '#FFFFFFFF'
-            id: Busha1
+            id: STBusha1
           decals:
             150: -29.414225,-3.4898963
             175: -23.884018,-2.362527
@@ -439,7 +439,7 @@ entities:
             3642: -4.665411,41.592346
         - node:
             color: '#FFFFFFFF'
-            id: Busha2
+            id: STBusha2
           decals:
             8862: -9.131141,18.222317
             8863: -7.9123907,17.753567
@@ -468,12 +468,12 @@ entities:
             8886: 18.537334,16.262526
         - node:
             color: '#FFFFFFFF'
-            id: Bushb1
+            id: STBushb1
           decals:
             0: 5.5640674,8.491345
         - node:
             color: '#FFFFFFFF'
-            id: Bushc3
+            id: STBushc3
           decals:
             1: 5.9859424,7.9132204
             8911: -9.461438,17.821161
@@ -512,12 +512,12 @@ entities:
             8944: 9.123782,12.899286
         - node:
             color: '#FFFFFFFF'
-            id: Bushf1
+            id: STBushf1
           decals:
             3: 4.7203174,8.06947
         - node:
             color: '#FFFFFFFF'
-            id: Bushf2
+            id: STBushf2
           decals:
             8945: 1.2019072,14.516474
             8946: 0.70971966,14.352411
@@ -541,7 +541,7 @@ entities:
             8964: 5.139407,17.399286
         - node:
             color: '#FFFFFFFF'
-            id: Bushh3
+            id: STBushh3
           decals:
             196: -28.087143,-0.5031519
             197: -26.399643,-3.768777
@@ -550,7 +550,7 @@ entities:
             200: -23.852768,-2.768777
         - node:
             color: '#FFFFFFFF'
-            id: Bushi1
+            id: STBushi1
           decals:
             8858: 2.9639137,18.012125
             8859: 1.3936012,19.793375
@@ -558,14 +558,14 @@ entities:
             8861: -1.2079613,15.5980625
         - node:
             color: '#FFFFFFFF'
-            id: Bushk1
+            id: STBushk1
           decals:
             193: -26.977768,-1.7375269
             194: -27.649643,-2.003152
             195: -25.712143,-3.081277
         - node:
             color: '#FFFFFFFF'
-            id: Bushl4
+            id: STBushl4
           decals:
             3692: -10.194268,20.645168
             3693: -13.273261,19.181705
@@ -586,7 +586,7 @@ entities:
             8857: 18.45861,15.274764
         - node:
             color: '#FFFFFFFF'
-            id: Grassa1
+            id: STGrassa1
           decals:
             8965: 1.0957851,15.353175
             8966: 1.1730762,14.378549
@@ -617,7 +617,7 @@ entities:
         - node:
             cleanable: True
             color: '#FFFFFFFF'
-            id: Grassa2
+            id: STGrassa2
           decals:
             130: -23.468107,-1.7679739
             131: -27.353216,-3.6130865
@@ -1501,7 +1501,7 @@ entities:
         - node:
             cleanable: True
             color: '#FFFFFFFF'
-            id: Grassa5
+            id: STGrassa5
           decals:
             3714: -22.89768,10.253666
             3722: -15.286073,10.456982
@@ -2274,7 +2274,7 @@ entities:
         - node:
             cleanable: True
             color: '#FFFFFFFF'
-            id: Grassb1
+            id: STGrassb1
           decals:
             134: -24.353216,-3.6130865
             135: -27.353216,-2.6130865
@@ -3519,7 +3519,7 @@ entities:
         - node:
             cleanable: True
             color: '#FFFFFFFF'
-            id: Grassb5
+            id: STGrassb5
           decals:
             3704: -23.235508,9.434511
             3709: -18.08263,9.055611
@@ -4294,7 +4294,7 @@ entities:
         - node:
             cleanable: True
             color: '#FFFFFFFF'
-            id: Grassd1
+            id: STGrassd1
           decals:
             3711: -16.064774,9.177676
             3712: -15.293996,9.650539
@@ -5337,7 +5337,7 @@ entities:
         - node:
             cleanable: True
             color: '#FFFFFFFF'
-            id: Grassd2
+            id: STGrassd2
           decals:
             3703: -23.946648,9.271981
             3705: -22.185472,9.303701
@@ -6634,7 +6634,7 @@ entities:
         - node:
             cleanable: True
             color: '#FFFFFFFF'
-            id: Grasse2
+            id: STGrasse2
           decals:
             136: -26.353216,-2.6130865
             140: -27.353216,-1.6130865
@@ -8999,7 +8999,7 @@ entities:
         - node:
             cleanable: True
             color: '#FFFFFFFF'
-            id: Rock01
+            id: STRock01
           decals:
             146: -28.414225,-4.4898963
             182: -27.884018,-3.362527
