@@ -120,7 +120,6 @@ namespace Content.Server.Database
 
             await db.DbContext.SaveChangesAsync();
         }
-
         private static async Task DeleteCharacterSlot(ServerDbContext db, NetUserId userId, int slot)
         {
             var profile = await db.Profile.Include(p => p.Preference)
@@ -262,7 +261,8 @@ namespace Content.Server.Database
                 (PreferenceUnavailableMode) profile.PreferenceUnavailable,
                 antags.ToHashSet(),
                 traits.ToHashSet(),
-                loadouts
+                loadouts,
+                profile.Changeable
             );
         }
 
@@ -293,6 +293,7 @@ namespace Content.Server.Database
             profile.Markings = markings;
             profile.Slot = slot;
             profile.PreferenceUnavailable = (DbPreferenceUnavailableMode) humanoid.PreferenceUnavailable;
+            profile.Changeable = humanoid.Changeable; // stalker-changes
 
             profile.Jobs.Clear();
             profile.Jobs.AddRange(
@@ -1619,6 +1620,20 @@ INSERT INTO player_round (players_id, rounds_id) VALUES ({players[player]}, {id}
         #endregion
         #region Stalker-Changes
 
+        public async Task SaveCharacterChangeable(NetUserId userId, bool changeable, int slot)
+        {
+            await using var db = await GetDb();
+
+            var character = db.DbContext.Profile
+                .Where(p => p.Preference.UserId == userId.UserId)
+                .SingleOrDefault(h => h.Slot == slot);
+
+            if (character is null)
+                return;
+
+            character.Changeable = changeable;
+            await db.DbContext.SaveChangesAsync();
+        }
         public async Task<bool> EnsureStalkerRecordCreated(string login, string defaultValue)
         {
             await using var db = await GetDb();

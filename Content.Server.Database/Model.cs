@@ -381,6 +381,7 @@ namespace Content.Server.Database
 
         public int PreferenceId { get; set; }
         public Preference Preference { get; set; } = null!;
+        public bool Changeable { get; set; } = true; // stalker-changes
     }
 
     public class Job

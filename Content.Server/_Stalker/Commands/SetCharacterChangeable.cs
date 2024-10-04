@@ -43,7 +43,7 @@ public sealed class SetCharacterChangeable : IConsoleCommand
         }
 
         var dbMan = IoCManager.Resolve<IServerDbManager>();
-        //dbMan.SaveCharacterChangeable(netUserId, changeable, slot); ST-TODO: No such field in database
+        dbMan.SaveCharacterChangeable(netUserId, changeable, slot);
 
         // TODO: Update the cached preference
         var prefManager = IoCManager.Resolve<IServerPreferencesManager>();
@@ -51,6 +51,6 @@ public sealed class SetCharacterChangeable : IConsoleCommand
         var profile = prefs.Characters[slot];
         if (profile is not HumanoidCharacterProfile prof)
             return;
-        //prof.Changeable = changeable; ST-TODO: No such field in database
+        prof.Changeable = changeable;
     }
 }

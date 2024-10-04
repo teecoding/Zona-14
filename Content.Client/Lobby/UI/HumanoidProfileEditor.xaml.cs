@@ -155,6 +155,7 @@ namespace Content.Client.Lobby.UI
 
             SaveButton.OnPressed += args =>
             {
+                SetChangeable(false); // stalker-changes
                 Save?.Invoke();
             };
 
@@ -1631,5 +1632,19 @@ namespace Content.Client.Lobby.UI
             ImportButton.Disabled = false;
             ExportButton.Disabled = false;
         }
+
+        // stalker-changes-start
+        private void SetChangeable(bool value)
+        {
+            if (Profile is null)
+                return;
+            if (CharacterSlot is null)
+                return;
+
+            Profile = Profile.WithCharacterChangeable(value);
+            UpdateSaveButton();
+            _preferencesManager.UpdateCharacter(Profile, CharacterSlot.Value);
+        }
+        // stalker-changes-end
     }
 }
