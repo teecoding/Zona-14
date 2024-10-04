@@ -54,16 +54,16 @@
       loop: true
       volume: -6
 
-#- type: weather
-#  id: Rain
-#  sprite:
-#    sprite: /Textures/Effects/weather.rsi
-#    state: rain
-#  sound:
-#    collection: Rain
-#    params:
-#      loop: true
-#      volume: -6
+- type: weather
+  id: Rain
+  sprite:
+    sprite: /Textures/Effects/weather.rsi
+    state: rain
+  sound:
+    collection: Rain
+    params:
+      loop: true
+      volume: -6
 
 - type: soundCollection
   id: Rain
@@ -126,13 +126,13 @@
       loop: true
       volume: -6
 
-#- type: weather
-#  id: Storm
-#  sprite:
-#    sprite: /Textures/Effects/weather.rsi
-#    state: storm
-#  sound:
-#    path: /Audio/Effects/Weather/rain_heavy.ogg
-#    params:
-#      loop: true
-#      volume: -6
+- type: weather
+  id: Storm
+  sprite:
+    sprite: /Textures/Effects/weather.rsi
+    state: storm
+  sound:
+    path: /Audio/Effects/Weather/rain_heavy.ogg
+    params:
+      loop: true
+      volume: -6
