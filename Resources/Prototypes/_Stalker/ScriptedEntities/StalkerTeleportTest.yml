@@ -32,7 +32,7 @@
     #   PortalName: "Bandit TEST"
     - type: DuplicateTeleport
       prefix: PB
-      maxWeight: 0.5
+      maxWeight: 100
       mapPath: /Maps/_ST/PersonalStalkerArena/StalkerMap.yml
     - type: PointLight
       color: OrangeRed
