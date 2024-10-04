@@ -24,6 +24,9 @@
         },
         {
             "name": "express"
+        },
+        {
+            "name": "base-spent"
         }
     ]
 }

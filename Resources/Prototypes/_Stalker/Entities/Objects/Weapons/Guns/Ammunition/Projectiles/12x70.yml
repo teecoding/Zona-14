@@ -1,31 +1,89 @@
 #12x70
-
 - type: entity
-  id: Bullet7mmBuckshot
-  name: bullet (7mm buckshot)
+  abstract: True
+  id: STBasePellet
+  categories: [ HideSpawnMenu ]
   parent: BaseBullet
-  noSpawn: true
   components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    state: buckshot
+  - type: StaminaDamageOnCollide
+    damage: 0.1
   - type: TimedDespawn
     lifetime: 1
+
+# 7mm
+- type: entity
+  id: STPellet7mm
+  name: pellet 7mm
+  parent: STBasePellet
+  components:
   - type: Projectile
     damage:
       types:
         Piercing: 10
-  - type: StaminaDamageOnCollide
-    damage: 0.1
 
 - type: entity
-  id: Bullet6mmBuckshot
-  name: bullet (6.5mm buckshot)
-  parent: Bullet7mmBuckshot
+  id: Bullet7mmBuckshot
+  name: bullet (7mm buckshot)
+  parent: STPellet7mm
   noSpawn: true
+  components:
+  - type: ProjectileSpread
+    proto: STPellet7mm
+    count: 6
+    spread: 15
+
+# 6.5mm
+
+- type: entity
+  id: STPellet65mm
+  name: pellet 6.5mm
+  parent: STBasePellet
   components:
   - type: Projectile
     projectileClass: 1
     damage:
       types:
         Piercing: 17
+
+- type: entity
+  id: Bullet6mmBuckshot
+  name: bullet (6.5mm buckshot)
+  parent: STPellet65mm
+  noSpawn: true
+  components:
+  - type: ProjectileSpread
+    proto: STPellet65mm
+    count: 6
+    spread: 12
+
+# 8.5 mm
+
+- type: entity
+  id: STPellet85mm
+  name: pellet 8.5mm
+  parent: STBasePellet
+  components:
+  - type: Projectile
+    projectileClass: 2
+    damage:
+      types:
+        Piercing: 25
+
+- type: entity
+  id: Bullet8mmBuckshot
+  name: bullet (8.5mm buckshot)
+  parent: STPellet85mm
+  noSpawn: true
+  components:
+  - type: ProjectileSpread
+    proto: STPellet85mm
+    count: 7
+    spread: 12
+
+# bullets
 
 - type: entity
   id: BulletShotgunBullet
@@ -88,17 +146,6 @@
     - type: StaminaDamageOnCollide
       damage: 80 # 3 hits to stun
 
-- type: entity
-  id: Bullet8mmBuckshot
-  name: bullet (8.5mm buckshot)
-  parent: Bullet7mmBuckshot
-  noSpawn: true
-  components:
-  - type: Projectile
-    projectileClass: 2
-    damage:
-      types:
-        Piercing: 25
 
 - type: entity
   id: BulletShotgunFlechette
