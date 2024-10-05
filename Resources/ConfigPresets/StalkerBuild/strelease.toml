@@ -9,6 +9,7 @@ map_rotation = false
 role_timers = true
 peaceful_end = false
 # lobbyduration = 1
+contraband_examine = false
 [rules]
 time = 10.0
 

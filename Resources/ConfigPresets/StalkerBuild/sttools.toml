@@ -11,6 +11,7 @@ soft_max_players = 60
 
 role_timers = true
 peaceful_end = false
+contraband_examine = false
 
 [rules]
 time = 10.0
