@@ -127,8 +127,8 @@
         ratio: 5
       - id: ZoneArtifactSpring
         tier: 5
-        ratio: 5    
-    
+        ratio: 5
+
 - type: entity
   id: ZoneAnomalySpringboard
   parent: ZoneAnomalyBaseGravity

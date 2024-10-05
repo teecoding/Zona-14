@@ -39,16 +39,12 @@ public sealed class ZoneAnomalyEffectGravityWellSystem : EntitySystem
 
     private void GravPulse(Entity<ZoneAnomalyEffectGravityWellComponent> effect)
     {
-        var targets = _lookup.GetEntitiesInRange(_transform.GetMapCoordinates(effect), effect.Comp.Distance);
-        var radial = effect.Comp.Radial;
-        var tangential = effect.Comp.Tangential;
-
-        var baseMatrixDeltaV = new Matrix3x2(radial, tangential, 0.0f, -tangential, radial, 0.0f);
-        var epicenter = _transform.GetMapCoordinates(effect).Position;
+        var epicenter = _transform.GetMapCoordinates(effect);
+        var targets = _lookup.GetEntitiesInRange(epicenter, effect.Comp.Distance);
         var bodyQuery = GetEntityQuery<PhysicsComponent>();
         var xformQuery = GetEntityQuery<TransformComponent>();
 
-        foreach(var entity in targets)
+        foreach (var entity in targets)
         {
             if (effect.Comp.Whitelist is { } whitelist && !_whitelistSystem.IsWhitelistPass(whitelist, entity))
                 continue;
@@ -56,21 +52,55 @@ public sealed class ZoneAnomalyEffectGravityWellSystem : EntitySystem
             if (!bodyQuery.TryGetComponent(entity, out var physics) || physics.BodyType == BodyType.Static)
                 continue;
 
-            var displacement = epicenter - _transform.GetWorldPosition(entity, xformQuery);
-            var scaling = GetScaling(effect, displacement.LengthSquared()) * physics.Mass;
+            var entityPosition = _transform.GetWorldPosition(entity, xformQuery);
+            var displacement = epicenter.Position - entityPosition;
+            var distance = displacement.Length();
 
-            //_physics.ApplyLinearImpulse(entity, displacement.Normalized() * baseMatrixDeltaV * scaling, body: physics); // ST-TODO: needs to check math
+            if (distance == 0)
+                continue; // Avoid division by zero
+
+            // Normalized vector pointing towards the epicenter
+            var radialDirection = displacement / distance;
+
+            // Perpendicular vector for tangential force (rotating around the center)
+            var tangentialDirection = new Vector2(-radialDirection.Y, radialDirection.X);
+
+            // Calculate scaling factor based on distance and gradient
+            var scaling = GetScaling(effect, distance);
+
+            // Calculate radial and tangential forces
+            var radialForce = radialDirection * effect.Comp.Radial * scaling;
+            var tangentialForce = tangentialDirection * effect.Comp.Tangential * scaling;
+
+            // Total force
+            var totalForce = (radialForce + tangentialForce) * physics.Mass;
+
+            // Apply the impulse to the entity
+            _physics.ApplyLinearImpulse(entity, totalForce, body: physics);
         }
     }
 
+
+
     private float GetScaling(Entity<ZoneAnomalyEffectGravityWellComponent> effect, float distance)
     {
-        return effect.Comp.Gradient switch
+        var maxDistance = effect.Comp.Distance;
+
+        // Clamp distance to maxDistance to prevent scaling beyond the effect's range
+        distance = Math.Min(distance, maxDistance);
+
+        switch (effect.Comp.Gradient)
         {
-            ZoneAnomalyEffectGravityWellGradient.Default => 1 / distance,
-            ZoneAnomalyEffectGravityWellGradient.Liner => distance / effect.Comp.Distance,
-            ZoneAnomalyEffectGravityWellGradient.ReversedLiner => 1f / (distance / effect.Comp.Distance),
-            _ => throw new ArgumentOutOfRangeException()
-        };
+            case ZoneAnomalyEffectGravityWellGradient.Liner:
+                // Scaling increases linearly with distance
+                return distance / maxDistance;
+            case ZoneAnomalyEffectGravityWellGradient.ReversedLiner:
+                // Scaling decreases linearly with distance
+                return 1f - (distance / maxDistance);
+            default:
+                // Default to constant scaling
+                return 1f;
+        }
     }
+
 }
