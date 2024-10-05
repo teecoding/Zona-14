@@ -7,6 +7,6 @@ using System.Threading.Tasks;
 namespace Content.Server._Stalker.Mind;
 
 [RegisterComponent]
-public sealed partial class RespawnOnGibComponent : Component
+public sealed partial class RespawnOnDeathComponent : Component
 {
 }

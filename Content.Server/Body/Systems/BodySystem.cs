@@ -45,7 +45,7 @@ public sealed class BodySystem : SharedBodySystem
         if (_mobState.IsDead(ent) && _mindSystem.TryGetMind(ent, out var mindId, out var mind))
         {
             mind.TimeOfDeath ??= _gameTiming.RealTime;
-            //_ghostSystem.OnGhostAttempt(mindId, canReturnGlobal: true, mind: mind); Stalker-Changes forbid going ghost
+            _ghostSystem.OnGhostAttempt(mindId, canReturnGlobal: true, mind: mind);
         }
     }
 
@@ -120,12 +120,11 @@ public sealed class BodySystem : SharedBodySystem
         var xform = Transform(bodyId);
         if (xform.MapUid is null)
             return new HashSet<EntityUid>();
-        TryComp<ActorComponent>(bodyId, out var actor); // stalker-changes
-        var session = actor?.PlayerSession; // stalker-changes
+
         var gibs = base.GibBody(bodyId, gibOrgans, body, launchGibs: launchGibs,
             splatDirection: splatDirection, splatModifier: splatModifier, splatCone:splatCone);
 
-        var ev = new BeingGibbedEvent(gibs, session); // stalker-changes
+        var ev = new BeingGibbedEvent(gibs);
         RaiseLocalEvent(bodyId, ref ev);
 
         QueueDel(bodyId);

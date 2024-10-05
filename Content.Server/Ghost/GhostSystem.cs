@@ -1,8 +1,10 @@
+using Content.Server._Stalker.Mind;
 using Content.Server.Administration.Logs;
 using Content.Server.Chat.Managers;
 using Content.Server.GameTicking;
 using Content.Server.Ghost.Components;
 using Content.Server.Mind;
+using Content.Server.Respawn;
 using Content.Server.Roles.Jobs;
 using Content.Server.Warps;
 using Content.Shared.Actions;
@@ -23,6 +25,7 @@ using Content.Shared.Mobs.Systems;
 using Content.Shared.Movement.Events;
 using Content.Shared.Movement.Systems;
 using Content.Shared.Storage.Components;
+using Robust.Server.Console;
 using Robust.Server.GameObjects;
 using Robust.Server.Player;
 using Robust.Shared.Configuration;
@@ -60,6 +63,7 @@ namespace Content.Server.Ghost
         [Dependency] private readonly SharedMindSystem _mind = default!;
         [Dependency] private readonly GameTicker _gameTicker = default!;
         [Dependency] private readonly DamageableSystem _damageable = default!;
+        [Dependency] private readonly IServerConsoleHost _consoleHost = default!;
 
         private EntityQuery<GhostComponent> _ghostQuery;
         private EntityQuery<PhysicsComponent> _physicsQuery;
@@ -160,7 +164,7 @@ namespace Content.Server.Ghost
             if (component.MustBeDead && (_mobState.IsAlive(uid) || _mobState.IsCritical(uid)))
                 return;
 
-            //OnGhostAttempt(mindId, component.CanReturn, mind: mind);  Stalker-Changes forbid going ghost
+            OnGhostAttempt(mindId, component.CanReturn, mind: mind);
         }
 
         private void OnGhostStartup(EntityUid uid, GhostComponent component, ComponentStartup args)
@@ -445,6 +449,14 @@ namespace Content.Server.Ghost
         public EntityUid? SpawnGhost(Entity<MindComponent?> mind, EntityCoordinates? spawnPosition = null,
             bool canReturn = false)
         {
+            // stalker-changes-start Сталкер воскресе из мертвых, смертью смерть поправ.
+            if (mind.Comp?.Session != null && !HasComp<RespawnOnDeathComponent>(mind))
+            {
+                _gameTicker.Respawn(mind.Comp.Session);
+                return null;
+            }
+
+            // stalker-changes-end
             if (!Resolve(mind, ref mind.Comp))
                 return null;
 

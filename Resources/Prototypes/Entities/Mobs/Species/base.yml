@@ -307,7 +307,7 @@
   - type: StaminaDecayModifier
   - type: StaminaCritThresholdModifier
   - type: STLay
-  - type: RespawnOnGib
+  - type: RespawnOnDeath
     # stalker-changes-end
 
 - type: entity

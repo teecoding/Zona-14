@@ -97,7 +97,7 @@ public sealed class MaterialReclaimerSystem : SharedMaterialReclaimerSystem
         if (TryComp(victim, out ActorComponent? actor) &&
             _mind.TryGetMind(actor.PlayerSession, out var mindId, out var mind))
         {
-            // _ghostSystem.OnGhostAttempt(mindId, false, mind: mind); // Stalker-Changes
+            _ghostSystem.OnGhostAttempt(mindId, false, mind: mind);
             if (mind.OwnedEntity is { Valid: true } suicider)
             {
                 _popup.PopupEntity(Loc.GetString("recycler-component-suicide-message"), suicider);
