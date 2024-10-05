@@ -57,7 +57,7 @@
 
 - type: entity
   name: broken plate
-  parent: BaseItem
+  parent: STTrashBaseItem # stalker-changes
   id: FoodPlateTrash
   description: A broken plate. Useless.
   components:

@@ -3,7 +3,7 @@
 - type: entity
   id: HermoDverTypeOne
   name: гермодверь
-  parent: BaseMaterialDoor
+  parent: STBaseMaterialDoor
   description: Защитно-герметические и герметические устройства, которые используются для охраны защитных сооружений гражданской обороны от вредных воздействий различного характера.
   suffix: Stalker
   components:
@@ -16,7 +16,7 @@
 - type: entity
   id: HermoDverTypeTwo
   name: гермодверь
-  parent: BaseMaterialDoor
+  parent: STBaseMaterialDoor
   description: Защитно-герметические и герметические устройства, которые используются для охраны защитных сооружений гражданской обороны от вредных воздействий различного характера.
   suffix: Stalker
   components:
@@ -29,7 +29,7 @@
 - type: entity
   id: LatticeDoor
   name: решётчатая дверь
-  parent: BaseMaterialDoor
+  parent: STBaseMaterialDoor
   description: Это один из видов конструкций для установки в разные виды помещений с целью повышения безопасности.
   suffix: Stalker
   components:
@@ -52,7 +52,7 @@
 - type: entity
   id: StalkerGate
   name: Створка ворот
-  parent: BaseMaterialDoor
+  parent: STBaseMaterialDoor
   description: Жёсткая рама, которую изготавливают из трубы квадратного сечения. Облицовкой служит металлический профнастил, покрытый полимерным покрытием. Неплохо сохранилась для своих лет.
   suffix: Stalker, левая
   components:
@@ -77,7 +77,7 @@
 - type: entity
   id: StalkerGater
   name: Створка ворот
-  parent: BaseMaterialDoor
+  parent: STBaseMaterialDoor
   description: Жёсткая рама, которую изготавливают из трубы квадратного сечения. Облицовкой служит металлический профнастил, покрытый полимерным покрытием. Неплохо сохранилась для своих лет.
   suffix: Stalker, правая
   components:
@@ -139,7 +139,7 @@
 - type: entity
   id: MilitaryDoor2
   name: военные ворота
-  parent: BaseMaterialDoor
+  parent: STBaseMaterialDoor
   description: Проезд в стене или ограде, запираемый створами.
   suffix: Stalker
   components:

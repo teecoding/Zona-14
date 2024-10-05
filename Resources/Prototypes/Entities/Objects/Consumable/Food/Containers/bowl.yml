@@ -60,9 +60,10 @@
     tags:
     - Trash
 
+
 - type: entity
   name: broken bowl
-  parent: BaseItem
+  parent: STTrashBaseItem # stalker-changes
   id: FoodBowlBigTrash
   description: A simple bowl, broken and useless.
   components:

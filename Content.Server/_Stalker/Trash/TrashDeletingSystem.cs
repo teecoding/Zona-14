@@ -1,4 +1,4 @@
-﻿using Content.Server.Chat.Managers;
+using Content.Server.Chat.Managers;
 using Robust.Shared.Map;
 using Robust.Shared.Timing;
 
@@ -11,7 +11,7 @@ public sealed class TrashDeletingSystem : EntitySystem
     [Dependency] private readonly IChatManager _chat = default!;
 
     private TimeSpan _nextTimeUpdate = TimeSpan.Zero;
-    private readonly int _updateTime = 30;
+    private readonly int _updateTime = 15;
 
     public override void Initialize()
     {
