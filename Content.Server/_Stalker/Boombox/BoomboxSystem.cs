@@ -115,8 +115,8 @@ public sealed class BoomboxSystem : EntitySystem
                 : Loc.GetString("Повтор \u2713"),
 
             Icon = ent.Comp.RepeatOn
-                ? new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/refresh-slased.svg.192dpi.png"))
-                : new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/refresh.svg.192dpi.png")),
+                ? new SpriteSpecifier.Texture(new("/Textures/_Stalker/Interface/VerbIcons/refresh-slased.svg.192dpi.png"))
+                : new SpriteSpecifier.Texture(new("/Textures/_Stalker/Interface/VerbIcons/refresh.svg.192dpi.png")),
 
             Act = () => ent.Comp.RepeatOn = !ent.Comp.RepeatOn
         };

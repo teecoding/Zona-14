@@ -1,7 +1,7 @@
 - type: alert
   id: StalkerSafeZone
   icons:
-  - sprite: /Textures/Interface/Alerts/pacified.rsi
+  - sprite: /Textures/_Stalker/Interface/Alerts/safezone.rsi
     state: icon
   name: StalkerSafeZone
   description: StalkerSafeZone
