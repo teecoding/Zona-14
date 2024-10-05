@@ -5,6 +5,8 @@
   components:
   - type: Item
     size: Tiny
+  - type: STWeight
+    self: 0.2
 
 - type: entity
   parent: STBaseHealingItem
@@ -12,8 +14,6 @@
   suffix: Stalker
   abstract: true
   components:
-  - type: STWeight
-    self: 0.2
   - type: Tag
     tags:
       - Medkit
