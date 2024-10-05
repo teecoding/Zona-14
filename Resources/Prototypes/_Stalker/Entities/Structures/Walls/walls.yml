@@ -313,23 +313,9 @@
     sprite: _Stalker/Structures/Walls/concrete.rsi
   - type: Icon
     sprite: _Stalker/Structures/Walls/concrete.rsi
-  - type: Damageable
-    damageContainer: Inorganic
-    damageModifierSet: Metallic
   - type: IconSmooth
     key: walls
     base: concrete
-  - type: Destructible
-    thresholds:
-      - trigger:
-          !type:DamageTrigger
-          damage: 100
-        behaviors:
-          - !type:DoActsBehavior
-            acts: [ "Destruction" ]
-          - !type:PlaySoundBehavior
-            sound:
-              path: /Audio/Effects/metalbreak.ogg
 
 - type: entity
   id: WallRockBasaltDestructible
