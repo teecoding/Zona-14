@@ -2,7 +2,7 @@
 # КОЛЮЧАЯ ПРОВОЛОКА
 - type: entity
   parent: BaseStructure
-  id: BaseFenceMetal
+  id: STBaseFenceMetal
   name: chain link fence
   description: A metal piece of fencing cordoning off something likely very important.
   abstract: true
@@ -22,34 +22,6 @@
   - type: Damageable
     damageContainer: StructuralInorganic
     damageModifierSet: FlimsyMetallic
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 200
-      behaviors:
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-    - trigger:
-        !type:DamageTrigger
-        damage: 150
-      behaviors:
-      - !type:PlaySoundBehavior
-        sound:
-          collection: MetalBreak
-      - !type:SpawnEntitiesBehavior
-        spawn:
-          PartRodMetal1:
-            min: 3
-            max: 5
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-  - type: Climbable
-    delay: 5.0
-    startClimbSound:
-      collection: FenceRattle
-    finishClimbSound:
-      collection: FenceRattle
   - type: PowerConsumer
     showInMonitor: false
   - type: Electrified
@@ -97,6 +69,9 @@
   - type: Icon
     sprite: _Stalker/Structures/Walls/fencerazor.rsi
     state: icon_broken
+  - type: Destructible
+    thresholds: []
+
 
 - type: entity
   parent: FenceMetalStraight
@@ -112,6 +87,8 @@
     sprite: _Stalker/Structures/Walls/fencerazor.rsi
     layers:
     - state: straight
+  - type: Destructible
+    thresholds: []
 
 - type: entity
   parent: FenceMetalStraightConst
@@ -127,9 +104,11 @@
     sprite: _Stalker/Structures/Walls/fencerazor.rsi
     layers:
     - state: straight
+  - type: Destructible
+    thresholds: []
 
 - type: entity
-  parent: BaseFenceMetal
+  parent: STBaseFenceMetal
   id: StalkerFenceRazorMetalCorner
   name: Колючая проволока
   description: Материал, который используется для ограждения и защиты территории от несанкционированного проникновения.
@@ -139,6 +118,8 @@
     sprite: _Stalker/Structures/Walls/fencerazor.rsi
     layers:
     - state: corner
+  - type: Destructible
+    thresholds: []
 
 - type: entity
   parent: FenceMetalEnd
@@ -154,3 +135,5 @@
     sprite: _Stalker/Structures/Walls/fencerazor.rsi
     layers:
     - state: end
+  - type: Destructible
+    thresholds: []
