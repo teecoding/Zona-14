@@ -73,6 +73,7 @@
     isBoss: false
   - type: Speech
     speechVerb: SmallMob
+  - type: Inventory # for polimorph
 
 - type: entity
   parent: BaseMobMutant
