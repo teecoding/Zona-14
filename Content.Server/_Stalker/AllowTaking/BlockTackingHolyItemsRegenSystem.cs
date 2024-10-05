@@ -13,7 +13,7 @@ public sealed class BlockTackingHolyItemsSystem : EntitySystem
         base.Initialize();
         SubscribeLocalEvent<BlockTackingHolyItemsComponent, InteractionAttemptEvent>(OnInteractionAttempt);
     }
-    private void OnInteractionAttempt(EntityUid uid, BlockTackingHolyItemsComponent component, InteractionAttemptEvent args)
+    private void OnInteractionAttempt(EntityUid uid, BlockTackingHolyItemsComponent component, ref InteractionAttemptEvent args)
     {
         if (!HasComp<ItemComponent>(args.Target) || HasComp<UnremoveableComponent>(args.Target) || args.Target == null)
             return;
