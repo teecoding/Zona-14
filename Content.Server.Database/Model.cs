@@ -1236,10 +1236,10 @@ namespace Content.Server.Database
         public int Id { get; set; }
 
         [Required]
-        public string Login { get; set; }
+        public string Login { get; set; } = default!;
 
         [Required]
-        public string Characteristic { get; set; }
+        public string Characteristic { get; set; } = default!;
 
         [Required]
         public float Value { get; set; }
