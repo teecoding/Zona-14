@@ -149,9 +149,8 @@
   suffix: ST
   sprite: /Textures/_Stalker/Tiles/wood_broken.png
   baseTurf: STFloorPlanetDirt
-  isSubfloor: true
+  isSubfloor: false
   weather: false
-  deconstructTools: [ Prying ]
   footstepSounds:
     collection: FootstepWood
   barestepSounds:
@@ -173,7 +172,6 @@
   - 1.0
   baseTurf: STFloorPlanetDirt
   isSubfloor: false
-  deconstructTools: [ Prying ]
   footstepSounds:
     collection: FootstepWood
   barestepSounds:
@@ -201,7 +199,7 @@
   - 1.0
   - 1.0
   baseTurf: STFloorPlanetDirt
-  isSubfloor: true
+  isSubfloor: false
   footstepSounds:
     collection: FootstepTile
   heatCapacity: 10000
