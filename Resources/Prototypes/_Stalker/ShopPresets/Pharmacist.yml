@@ -37,8 +37,8 @@
     - name: Аптечки
       priority: 1
       items:
-        MedkitAI2: 70
-        MedkitMilitary: 225
+        MedkitAI2: 150
+        MedkitMilitary: 300
         MedkitCMSStalker: 650
         MedkitGrizzlyStalker: 1000
 
@@ -48,12 +48,12 @@
         radioprotectpill: 90
         antiradpill: 160
 
-    # - name: Стимуляторы
-    #   priority: 3
-    #   items:
-    #     STEnergyDrink: 125
-    #     SelfSteampack: 300
-    #     MilitarySteampack: 800
+    - name: Стимуляторы
+      priority: 3
+      items:
+        STEnergyDrink: 125
+        SelfSteampack: 300
+        MilitarySteampack: 800
 
     - name: Разное
       priority: 5
@@ -61,7 +61,10 @@
         StalkerPillCanisterAquatabs: 100
         Defibrillator: 750
         PillDexalin: 10
+        STOintment: 15
+        STGauze: 20
         DrinkVodkaBottleFull: 25
         PillDexalinPlusStalker: 30
+        STBrutepack: 50
         Tourniquet: 80
         Bloodpack: 120

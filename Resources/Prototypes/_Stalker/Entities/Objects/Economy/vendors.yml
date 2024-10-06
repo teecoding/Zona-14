@@ -51,12 +51,16 @@
     PillDexalin: 50
     radioprotectpill: 5
     psyblock: 5
-    MedkitAI2: 50
-    MedkitMilitary: 20
+    SelfSteampack: 10
+    MedkitAI2: 25
+    STBrutepack: 50
+    STGauze: 50
+    MilitarySteampack: 5
+    MedkitMilitary: 10
     antiradpill: 5
-    STTourniquet: 15
-    STEnergyDrink: 10
+    STEnergyDrink: 5
     FoodBreadPlain: 100
+    STOintment: 50
     DrinkFlaskOld: 50
     DrinkWaterBottleFull: 50
     FoodTinMRE: 50

@@ -141,7 +141,10 @@
         MedkitMilitary: 100
         MedkitScience: 200
         # Pack
-        STTourniquet: 50
+        STOintment: 10
+        STGauze: 10
+        STBrutepack: 25
+        Tourniquet: 50
         Bloodpack: 80
         # Back
         MedkitCMSStalker: 200
@@ -153,6 +156,9 @@
         SaviorCrate: 1500
         PolevoyVrachCrate: 1740
         #Stimul
+        SelfSteampack: 30
+        MilitarySteampack: 200
+        SciSteampack: 500
 
     - name: Кастомизация
       priority: 8

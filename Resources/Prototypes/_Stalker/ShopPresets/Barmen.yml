@@ -167,10 +167,13 @@
         PillDexalinPlusStalker: 30
         radioprotectpill: 250
         psyblock: 550
-        MedkitAI2: 150
-        STTourniquet: 80
+        MedkitAI2: 350
+        STOintment: 50
+        STGauze: 30
+        STBrutepack: 50
+        Tourniquet: 80
         Bloodpack: 300
-        MedkitMilitary: 250
+        MedkitMilitary: 400
         antiradpill: 50
         MedkitCMSStalker: 750
         MedkitGrizzlyStalker: 1050

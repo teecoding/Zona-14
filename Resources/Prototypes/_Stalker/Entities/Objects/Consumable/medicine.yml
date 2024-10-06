@@ -23,14 +23,14 @@
       path: "/Audio/Items/Medical/brutepack_end.ogg"
   - type: Stack
     stackType: psyblock
-    count: 5
+    count: 2
 
 - type: stack
   id: psyblock
   name: пси-блокада
   icon: { sprite: "_Stalker/Objects/medicine.rsi", state: medkit-1 }
   spawn: psyblock
-  maxCount: 5
+  maxCount: 2
   itemSize: 5
 
 - type: entity
