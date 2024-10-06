@@ -12,10 +12,10 @@
         - GrehCanTakeOnly
     - type: Sharp
     - type: Sprite
-      sprite: Objects/Weapons/Melee/battle_scythe.rsi
+      sprite: _Stalker/Objects/Weapons/Melee/battle_scythe.rsi
       state: icon
     - type: Clothing
-      sprite: Objects/Weapons/Melee/battle_scythe.rsi
+      sprite: _Stalker/Objects/Weapons/Melee/battle_scythe.rsi
       slots:
         - Back
     - type: MeleeWeapon
