@@ -127,7 +127,7 @@
   heatCapacity: 10000
   weather: true
   baseTurf: STFloorPlanetDirt
-
+  indestructible: true
 
 - type: tile
   id: STFloorDirt
@@ -140,6 +140,7 @@
   heatCapacity: 10000
   weather: true
   baseTurf: STFloorPlanetDirt
+  indestructible: true
 
 - type: tile
   id: STFloorBrokenWood
@@ -156,6 +157,7 @@
   barestepSounds:
     collection: BarestepWood
   heatCapacity: 10000
+  indestructible: true
 
 - type: tile
   id: STFloorWood
@@ -179,6 +181,7 @@
   itemDrop: FloorTileItemWood
   heatCapacity: 10000
   weather: false
+  indestructible: true
 
 - type: tile
   id: STFloorAsphalt
@@ -203,6 +206,7 @@
     collection: FootstepTile
   heatCapacity: 10000
   weather: true
+  indestructible: true
 
 - type: tile
   id: STFloorConcrete
@@ -221,6 +225,7 @@
     collection: FootstepTile
   itemDrop: FloorTileItemConcrete
   heatCapacity: 10000
+  indestructible: true
 
 - type: tile
   id: STFloorConcreteMono
@@ -239,6 +244,7 @@
     collection: FootstepTile
   itemDrop: FloorTileItemConcreteMono
   heatCapacity: 10000
+  indestructible: true
 
 - type: tile
   id: STFloorConcreteSmooth
@@ -257,6 +263,7 @@
     collection: FootstepTile
   itemDrop: FloorTileItemConcreteSmooth
   heatCapacity: 10000
+  indestructible: true
 
 - type: tile
   id: STFloorGrayConcrete
@@ -275,6 +282,7 @@
     collection: FootstepTile
   itemDrop: FloorTileItemGrayConcrete
   heatCapacity: 10000
+  indestructible: true
 
 - type: tile
   id: STFloorGrayConcreteMono
@@ -293,6 +301,7 @@
     collection: FootstepTile
   itemDrop: FloorTileItemGrayConcreteMono
   heatCapacity: 10000
+  indestructible: true
 
 - type: tile
   id: STFloorGrayConcreteSmooth
@@ -311,6 +320,7 @@
     collection: FootstepTile
   itemDrop: FloorTileItemGrayConcreteSmooth
   heatCapacity: 10000
+  indestructible: true
 
 - type: tile
   id: STFloorOldConcrete
@@ -329,6 +339,7 @@
     collection: FootstepTile
   itemDrop: FloorTileItemOldConcrete
   heatCapacity: 10000
+  indestructible: true
 
 - type: tile
   id: STFloorOldConcreteMono
@@ -347,6 +358,7 @@
     collection: FootstepTile
   itemDrop: FloorTileItemOldConcreteMono
   heatCapacity: 10000
+  indestructible: true
 
 - type: tile
   id: STFloorOldConcreteSmooth
@@ -365,3 +377,5 @@
     collection: FootstepTile
   itemDrop: FloorTileItemOldConcreteSmooth
   heatCapacity: 10000
+  indestructible: true
+
