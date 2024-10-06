@@ -65497,7 +65497,7 @@ entities:
             1234: -48.93484,-57.918983
         - node:
             color: '#FFFFFFFF'
-            id: Rock06
+            id: STRock06
           decals:
             42: 18.061022,8.85883
             44: 14.997976,12.117116
@@ -65555,7 +65555,7 @@ entities:
             2085: -64.07277,-69.97006
         - node:
             color: '#FFFFFFFF'
-            id: Rock07
+            id: STRock07
           decals:
             41: 19.985577,11.521362
             43: 17.645498,9.516239

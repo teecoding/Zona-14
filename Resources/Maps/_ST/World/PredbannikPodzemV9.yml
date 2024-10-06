@@ -3868,7 +3868,7 @@ entities:
             1772: 10.063273,-29.339352
         - node:
             color: '#FFFFFFFF'
-            id: Busha2
+            id: STBusha2
           decals:
             1767: 9.7509,-30.148245
             1768: 8.075443,-32.574924
@@ -3877,7 +3877,7 @@ entities:
             1771: 8.529804,-30.275965
         - node:
             color: '#FFFFFFFF'
-            id: Bushb3
+            id: STBushb3
           decals:
             346: 28.032713,-2.9328184
             347: 29.041737,-6.1250043
@@ -3890,12 +3890,12 @@ entities:
             809: 83.73504,19.0825
         - node:
             color: '#FFFFFFFF'
-            id: Bushe2
+            id: STBushe2
           decals:
             1773: 9.225818,-33.85102
         - node:
             color: '#FFFFFFFF'
-            id: Bushe3
+            id: STBushe3
           decals:
             272: 41.511997,-22.09553
             273: 43.933655,-20.84801
@@ -4513,18 +4513,18 @@ entities:
             3107: -39.44144,-47.331955
         - node:
             color: '#FFFFFFFF'
-            id: Rock01
+            id: STRock01
           decals:
             3053: 131.97963,-73.733765
             3079: 14.060462,19.724827
         - node:
             color: '#FFFFFFFF'
-            id: Rock02
+            id: STRock02
           decals:
             3052: 130.4426,-78.442245
         - node:
             color: '#FFFFFFFF'
-            id: Rock04
+            id: STRock04
           decals:
             3116: 176,-69
             3117: 174,-62
@@ -4532,7 +4532,7 @@ entities:
             3119: 181,-51
         - node:
             color: '#FFFFFFFF'
-            id: Rock06
+            id: STRock06
           decals:
             3054: 134.08722,-73.64862
             3112: 175,-45
@@ -4541,7 +4541,7 @@ entities:
             3115: 173,-68
         - node:
             color: '#FFFFFFFF'
-            id: Rock07
+            id: STRock07
           decals:
             3056: 132.44727,-76.7139
             3106: 178,-60
