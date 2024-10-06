@@ -54,3 +54,5 @@
 - type: Tag
   id: GrehCanTakeOnly
 
+- type: Tag
+  id: STCombatKnife
