@@ -8,7 +8,8 @@ using Robust.Shared.Player;
 
 namespace Content.Server._Stalker.Commands;
 
-[AdminCommand(AdminFlags.Admin)]
+//[AdminCommand(AdminFlags.Admin)]
+[AnyCommand]
 public sealed class SetCharacterChangeable : IConsoleCommand
 {
     public string Command => "st_set_character_changeable";

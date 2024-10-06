@@ -100,7 +100,7 @@ namespace Content.Shared.Preferences
         /// <summary>
         /// Is the chacacter allowed to be changed
         /// </summary>
-        public bool Changeable { get; set; } // stalker-changes
+        public bool Changeable { get; set; } = true; // stalker-changes
         /// <summary>
         /// When spawning into a round what's the preferred spot to spawn.
         /// </summary>
