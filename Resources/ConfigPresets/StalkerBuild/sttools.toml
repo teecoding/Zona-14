@@ -28,7 +28,6 @@ camera_rotation_locked = true
 [ic]
 flavor_text = true
 punctuation = false
-restricted_names = false
 
 [queue]
 enabled = true
