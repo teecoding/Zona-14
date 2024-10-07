@@ -26,6 +26,7 @@ using Content.Server.Preferences.Managers;
 using Content.Server.ServerInfo;
 using Content.Server.ServerUpdates;
 using Content.Server.Voting.Managers;
+using Content.Shared._Stalker.CCCCVars;
 using Content.Shared.CCVar;
 using Content.Shared.Kitchen;
 using Content.Shared.Localizations;
@@ -210,7 +211,6 @@ namespace Content.Server.Entry
 
         private static void LoadBuildConfigPresets(IConfigurationManager cfg, IResourceManager res, ISawmill sawmill)
         {
-
             // stalker-changes. Taking configs from Stalker folder
 #if TOOLS
             Load(CCVars.ConfigPresetDevelopment, "sttools");

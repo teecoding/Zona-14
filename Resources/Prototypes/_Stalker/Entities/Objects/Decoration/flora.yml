@@ -756,7 +756,8 @@
   description: Yep, it's a tree.
   parent: BaseTree
   suffix: ST
-  abstract: true
+  noSpawn: true
+  # abstract: true
   components:
   - type: Sprite
     noRot: true

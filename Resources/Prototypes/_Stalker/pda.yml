@@ -1,5 +1,6 @@
 - type: entity
-  abstract: true
+  noSpawn: true
+  # abstract: true
   parent: BaseItem
   id: BaseStalkerPDA
   name: PDA

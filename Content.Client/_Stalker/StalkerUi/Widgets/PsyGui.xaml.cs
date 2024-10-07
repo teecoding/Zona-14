@@ -13,7 +13,7 @@ public sealed partial class PsyGui : UIWidget
         var hotbarController = UserInterfaceManager.GetUIController<PsyUiController>();
 
         LayoutContainer.SetGrowVertical(this, LayoutContainer.GrowDirection.Begin);
-        PsyTexture.TexturePath = "/Textures/_Stalker/Interface/Icons/psy_ball.rsi/psy.png";
+        PsyTexture.TexturePath = "/Textures/_Stalker/Interface/Icons/psy_ball/psy.png";
     }
 
     public void UpdatePanelEntity(int currentPsy, int maxPsy)

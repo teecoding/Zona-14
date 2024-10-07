@@ -57,27 +57,27 @@ public sealed class StorageContainer : BaseWindow
     private record ConnectionState(bool Top, bool Bottom, bool Left, bool Right);
     public event Action? OnCraftButtonPressed;
     public event Action? OnDisassembleButtonPressed;
-    private readonly string _addTexturePath = "Storage/tile_empty_add";
+    private readonly string _addTexturePath = "/Textures/_Stalker/Interface/STDefault/Storage/tile_empty_add";
     private Texture? _addEmptyTexture;
-    private readonly string _bottomLeftTexturePath = "Storage/tile_empty_bottom_left";
+    private readonly string _bottomLeftTexturePath = "/Textures/_Stalker/Interface/STDefault/Storage/tile_empty_bottom_left";
     private Texture? _bottomLeftEmptyTexture;
-    private readonly string _topLeftTexturePath = "Storage/tile_empty_top_left";
+    private readonly string _topLeftTexturePath = "/Textures/_Stalker/Interface/STDefault/Storage/tile_empty_top_left";
     private Texture? _topLeftEmptyTexture;
-    private readonly string _bottomRightTexturePath = "Storage/tile_empty_bottom_right";
+    private readonly string _bottomRightTexturePath = "/Textures/_Stalker/Interface/STDefault/Storage/tile_empty_bottom_right";
     private Texture? _bottomRightEmptyTexture;
-    private readonly string _topRightTexturePath = "Storage/tile_empty_top_right";
+    private readonly string _topRightTexturePath = "/Textures/_Stalker/Interface/STDefault/Storage/tile_empty_top_right";
     private Texture? _topRightEmptyTexture;
-    private readonly string _leftBoundaryTexturePath = "Storage/tile_empty_boundary_left";
+    private readonly string _leftBoundaryTexturePath = "/Textures/_Stalker/Interface/STDefault/Storage/tile_empty_boundary_left";
     private Texture? _leftBoundaryEmptyTexture;
-    private readonly string _rightBoundaryTexturePath = "Storage/tile_empty_boundary_right";
+    private readonly string _rightBoundaryTexturePath = "/Textures/_Stalker/Interface/STDefault/Storage/tile_empty_boundary_right";
     private Texture? _rightBoundaryEmptyTexture;
-    private readonly string _bottomBoundaryTexturePath = "Storage/tile_empty_boundary_bottom";
+    private readonly string _bottomBoundaryTexturePath = "/Textures/_Stalker/Interface/STDefault/Storage/tile_empty_boundary_bottom";
     private Texture? _bottomBoundaryEmptyTexture;
-    private readonly string _topBoundaryTexturePath = "Storage/tile_empty_boundary_top";
+    private readonly string _topBoundaryTexturePath = "/Textures/_Stalker/Interface/STDefault/Storage/tile_empty_boundary_top";
     private Texture? _topBoundaryEmptyTexture;
-    private readonly string _craftTexturePath = "Storage/craft";
+    private readonly string _craftTexturePath = "/Textures/_Stalker/Interface/STDefault/Storage/craft";
     private Texture? _craftTexture;
-    private readonly string _disassebleTexturePath = "Storage/disasseble";
+    private readonly string _disassebleTexturePath = "/Textures/_Stalker/Interface/STDefault/Storage/disasseble";
     private Texture? _disassembleTexture;
     // Stalker-Changes-End
     public StorageContainer()

@@ -27,13 +27,7 @@ camera_rotation_locked = true
 flavor_text = true
 punctuation = false
 
-[queue]
-enabled = true
-
 [tts]
-enabled = false
-
-[discord_auth]
 enabled = false
 
 [infolinks]
@@ -55,10 +49,10 @@ tags = "lang:ru,lang:en,rp:high,region:eu_e"
 # Annoying
 enabled = false
 
-[worldgen]
-enabled = false
-[procgen]
-preload = false
+#[worldgen]
+#enabled = false
+#[procgen]
+#preload = false
 
 [crewmanifest]
 no_entity = false

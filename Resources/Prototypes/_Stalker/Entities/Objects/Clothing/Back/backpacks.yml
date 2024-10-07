@@ -192,7 +192,8 @@
 
 - type: entity
   id: ClothingBackpackTacticBase
-  abstract: true
+  noSpawn: true
+  # abstract: true
   parent: ClothingBackpackDuffelGreenStalker
   suffix: ST
   components:
