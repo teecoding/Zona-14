@@ -39,7 +39,7 @@
           map: ["enum.ZoneAnomalyDetectorVisuals.Layer"]
           shader: unshaded
     - type: ZoneAnomalyDetector
-      beepSound: /Audio/Items/Detectors/Anomaly/da_beep2.ogg
+      beepSound: /Audio/_Stalker/Items/Detectors/Anomaly/da_beep2.ogg
       maxBeepInterval: 4.5
       minBeepInterval: 0.5
       level: 0
@@ -61,7 +61,7 @@
           map: ["enum.ZoneAnomalyDetectorVisuals.Layer"]
           shader: unshaded
     - type: ZoneAnomalyDetector
-      beepSound: /Audio/Items/Detectors/Anomaly/da_beep2.ogg
+      beepSound: /Audio/_Stalker/Items/Detectors/Anomaly/da_beep2.ogg
       maxBeepInterval: 4.5
       minBeepInterval: 0.5
       level: 0
@@ -83,7 +83,7 @@
           shader: unshaded
     - type: ZoneAnomalyDetector
       level: 1
-      beepSound: /Audio/Items/Detectors/Anomaly/da_beep2.ogg
+      beepSound: /Audio/_Stalker/Items/Detectors/Anomaly/da_beep2.ogg
       maxBeepInterval: 2.5
       minBeepInterval: 0.5
       distance: 10
@@ -105,7 +105,7 @@
           shader: unshaded
     - type: ZoneAnomalyDetector
       level: 1
-      beepSound: /Audio/Items/Detectors/Anomaly/da_beep2.ogg
+      beepSound: /Audio/_Stalker/Items/Detectors/Anomaly/da_beep2.ogg
       distance: 5
       maxBeepInterval: 0.5
       minBeepInterval: 0.001
