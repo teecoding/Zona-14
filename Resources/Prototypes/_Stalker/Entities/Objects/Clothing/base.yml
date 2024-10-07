@@ -42,7 +42,7 @@
   name: база бронекостюмов с подсумками
   suffix: ST
   noSpawn: true
-  abstract: true
+  # abstract: true
   components:
   - type: Tag
     tags:

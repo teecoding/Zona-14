@@ -57,7 +57,7 @@
     - LogStalker
   steps:
     firstIngredient: HatchetStalker
-    secondIngredient: BaseTree
+    secondIngredient: STBaseTree
     keepFirst: true
     exactSecond: false
     time: 10

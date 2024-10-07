@@ -448,7 +448,7 @@
         - ReagentId: Vitamin
           Quantity: 1
   - type: Sprite
-    sprite: Objects/Specific/Hydroponics/potato.rsi
+    sprite: _Stalker/Objects/Specific/Hydroponics/potato.rsi
     state: potato_cut
     size: Small
   - type: Tag

@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using Content.Shared.Tag;
 using Content.Shared.Crafting.Prototypes;
+using System.Diagnostics;
 
 namespace Content.Server.Crafting;
 /// <summary>
@@ -17,6 +18,7 @@ public sealed class STBlueprintSystem : EntitySystem
     [Dependency] private readonly IPrototypeManager _proto = default!;
     [Dependency] private readonly TagSystem _tagSystem = default!;
     [Dependency] private readonly ILogManager _logManager = default!;
+    [Dependency] private readonly IComponentFactory _componentFactory = default!;
 
     private ISawmill _sawmill = default!;
     private Dictionary<string, string> _descriptionsByBlueprint = new();
@@ -29,9 +31,8 @@ public sealed class STBlueprintSystem : EntitySystem
         base.Initialize();
         _sawmill = _logManager.GetSawmill("Blueprint");
         _workbenchNamesById = _proto.EnumeratePrototypes<EntityPrototype>().Where(entity =>
-        {
-            return entity.TryGetComponent<TagComponent>(out var tag) && _tagSystem.HasTag(tag.Owner, WORKBENCH_TAG);
-        }).ToDictionary(entity => entity.ID, entity => entity.Name);
+            entity.TryGetComponent<TagComponent>(out var tag, _componentFactory) && _tagSystem.HasTag(tag, WORKBENCH_TAG)
+        ).ToDictionary(entity => entity.ID, entity => entity.Name);
 
         if (_workbenchNamesById.Count == 0)
         {
