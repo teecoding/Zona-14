@@ -506,7 +506,14 @@ namespace Content.Server.Ghost
         {
             if (!Resolve(mindId, ref mind))
                 return false;
+            // stalker-changes-start
+            if (mind.Session != null)
+            {
+                _gameTicker.Respawn(mind.Session);
+                return false;
+            }
 
+            // stalker-changes-end
             var playerEntity = mind.CurrentEntity;
 
             if (playerEntity != null && viaCommand)

@@ -6,6 +6,5 @@
     - type: Sprite
       layers:
         - state: silver
-        - state: idiaa
     - type: PresetIdCard
       job: IAA

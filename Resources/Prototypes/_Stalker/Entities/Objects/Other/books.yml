@@ -6,11 +6,11 @@
   description: Ботанический справочник, здесь описаны все растения которые содержат в себе полезные масла.
   components:
   - type: Sprite
-    sprite: Objects/Misc/books.rsi
+    sprite: _Stalker/Objects/Misc/books.rsi
     layers:
     - state: book_hydroponics_pod_people
   - type: Paper
-    content: 'Ботанический справочник. 
+    content: 'Ботанический справочник.
 В справочнике описаны свойства масел получаемых из растений.
 
 1) От кровотечения:

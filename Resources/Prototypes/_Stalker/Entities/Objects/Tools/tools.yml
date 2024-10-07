@@ -478,7 +478,7 @@
       path: /Audio/Items/crowbar_drop.ogg
   - type: Sprite
     sprite: Objects/Tools/crowbar.rsi
-    state: red-icon
+    state: red-storage
   - type: Tag
     tags:
     - Crowbar
