@@ -24,3 +24,16 @@
   - type: Clothing
     sprite: _Stalker/Objects/Clothing/gloves/hands_jaba.rsi
   - type: Insulated
+
+- type: entity
+  parent: [ ClothingHandsGlovesColorBlack, BaseSecurityEngineeringContraband ]
+  id: STClothingHandsGlovesCombat
+  name: combat gloves
+  description: These tactical gloves are fireproof
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/combat.rsi
+  - type: Clothing
+    sprite: Clothing/Hands/Gloves/combat.rsi
+  - type: Fiber
+    fiberMaterial: fibers-insulative

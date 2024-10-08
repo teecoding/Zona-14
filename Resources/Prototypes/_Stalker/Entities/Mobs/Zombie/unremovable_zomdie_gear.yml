@@ -165,7 +165,7 @@
     legs: ClothingLegsJeansGreyCargo
     torso: ClothingTorsoTurtlenecksMercenary
     shoes: ClothingShoesSwat
-    gloves: ClothingHandsGlovesCombat
+    gloves: STClothingHandsGlovesCombat
     outerClothing: ClothingOuterArmorMercZ
     head: ClothingHeadMercLightZ
     mask: ClothingMaskGasM40
@@ -281,7 +281,7 @@
     outerClothing: ClothingOuterArmorCN1Z
     mask: ClothingMaskGasChN
     head: ClothingHeadHelmetInfantryZ
-    gloves: ClothingHandsGlovesCombat
+    gloves: STClothingHandsGlovesCombat
   inhand:
     - WeaponZombieM16Carabine
 
