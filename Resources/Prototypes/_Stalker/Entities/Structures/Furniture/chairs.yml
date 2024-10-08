@@ -111,6 +111,16 @@
     anchored: true
 
 - type: entity
+  name: chair
+  id: STOfficeChairBase
+  parent: STUnanchoredChairBase
+  suffix: ST
+  abstract: true
+  components:
+  - type: Rotatable
+    rotateWhileAnchored: true
+
+- type: entity
   name: comfy chair
   id: STComfyChair
   parent: STChairBase
@@ -134,6 +144,8 @@
     tags:
     - Wooden
 
+
+
 - type: entity
   name: wooden bench
   id: STWoodenBench
@@ -145,3 +157,19 @@
   - type: Construction
     graph: Seat
     node: chairWoodBench
+
+- type: entity
+  name: white office chair
+  id: STChairOfficeLight
+  parent: STOfficeChairBase
+  components:
+  - type: Sprite
+    state: office-white
+
+- type: entity
+  name: dark office chair
+  id: STChairOfficeDark
+  parent: STChairOfficeLight
+  components:
+  - type: Sprite
+    state: office-dark

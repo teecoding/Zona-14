@@ -3,7 +3,7 @@
   parent: TableBase
   name: старый деревянный стол
   description: Некогда этот стол был гордостью, но сейчас предмет, который занимает много места.
-  suffix: Stalker
+  suffix: ST
   components:
   - type: SpriteFade
   - type: Sprite
@@ -29,22 +29,6 @@
     key: state
     base: state_
   - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 100
-      behaviors:
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-    - trigger:
-        !type:DamageTrigger
-        damage: 15
-      behaviors:
-      - !type:PlaySoundBehavior
-        sound:
-          collection: WoodDestroy
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
 
 - type: entity
   id: OldBlackTable
@@ -86,17 +70,6 @@
   - type: Damageable
     damageModifierSet: Metallic
     damageContainer: Inorganic
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 250
-      behaviors:
-      - !type:PlaySoundBehavior
-        sound:
-          collection: WoodDestroy
-      - !type:DoActsBehavior
-        acts: ["Destruction"]
 
 - type: entity
   id: OldWoodTable3
