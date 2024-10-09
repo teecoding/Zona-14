@@ -150,14 +150,16 @@ namespace Content.Server.GameTicking
 
         public void ToggleReadyAll(bool ready)
         {
-            var status = ready ? PlayerGameStatus.ReadyToPlay : PlayerGameStatus.NotReadyToPlay;
-            foreach (var playerUserId in _playerGameStatuses.Keys)
-            {
-                _playerGameStatuses[playerUserId] = status;
-                if (!_playerManager.TryGetSessionById(playerUserId, out var playerSession))
-                    continue;
-                RaiseNetworkEvent(GetStatusMsg(playerSession), playerSession.Channel);
-            }
+            // Stalker14 Changes start
+            //var status = ready ? PlayerGameStatus.ReadyToPlay : PlayerGameStatus.NotReadyToPlay;
+            //foreach (var playerUserId in _playerGameStatuses.Keys)
+            //{
+            //    _playerGameStatuses[playerUserId] = status;
+            //    if (!_playerManager.TryGetSessionById(playerUserId, out var playerSession))
+            //        continue;
+            //    RaiseNetworkEvent(GetStatusMsg(playerSession), playerSession.Channel);
+            //}
+            // Stalker14 Changes end
         }
 
         public void ToggleReady(ICommonSession player, bool ready)
@@ -174,8 +176,8 @@ namespace Content.Server.GameTicking
             }
 
             var status = ready ? PlayerGameStatus.ReadyToPlay : PlayerGameStatus.NotReadyToPlay;
-            _playerGameStatuses[player.UserId] = ready ? PlayerGameStatus.ReadyToPlay : PlayerGameStatus.NotReadyToPlay;
-            RaiseNetworkEvent(GetStatusMsg(player), player.Channel);
+            //_playerGameStatuses[player.UserId] = ready ? PlayerGameStatus.ReadyToPlay : PlayerGameStatus.NotReadyToPlay; Stalker14 Changes
+            //RaiseNetworkEvent(GetStatusMsg(player), player.Channel); Stalker14 Changes
             // update server info to reflect new ready count
             UpdateInfoText();
         }
