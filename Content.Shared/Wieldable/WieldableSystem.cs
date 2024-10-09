@@ -110,8 +110,8 @@ public sealed class WieldableSystem : EntitySystem
         if (TryComp(bonus, out WieldableComponent? wield) &&
             wield.Wielded)
         {
-            args.MinAngle += bonus.Comp.MinAngle;
-            args.MaxAngle += bonus.Comp.MaxAngle;
+            args.MinAngle = Math.Max(bonus.Comp.MinAngle + args.MinAngle, 0); // stalker-changes
+            args.MaxAngle = Math.Max(bonus.Comp.MaxAngle + args.MaxAngle, 0); // stalker-changes
             args.AngleDecay += bonus.Comp.AngleDecay;
             args.AngleIncrease += bonus.Comp.AngleIncrease;
         }
