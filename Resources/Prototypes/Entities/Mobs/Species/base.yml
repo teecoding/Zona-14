@@ -25,6 +25,7 @@
     - map: [ "enum.HumanoidVisualLayers.LLeg" ]
     - map: ["jumpsuit"]
     - map: [ "torso" ] # stalker-changes
+    - map: [ "legs" ] # stalker-changes
     - map: ["enum.HumanoidVisualLayers.LFoot"]
     - map: ["enum.HumanoidVisualLayers.RFoot"]
     - map: ["enum.HumanoidVisualLayers.LHand"]
