@@ -259,14 +259,16 @@ public sealed partial class StaminaSystem : EntitySystem
                 component.NextUpdate = nextUpdate;
         }
 
-        var slowdownThreshold = component.CritThreshold / 2f;
+        // Stalker14 changes start
+        //var slowdownThreshold = component.CritThreshold / 2f;
 
-        // If we go above n% then apply slowdown
-        if (oldDamage < slowdownThreshold &&
-            component.StaminaDamage > slowdownThreshold)
-        {
-            _stunSystem.TrySlowdown(uid, TimeSpan.FromSeconds(3), true, 0.8f, 0.8f);
-        }
+        //// If we go above n% then apply slowdown
+        //if (oldDamage < slowdownThreshold &&
+        //    component.StaminaDamage > slowdownThreshold)
+        //{
+        //    _stunSystem.TrySlowdown(uid, TimeSpan.FromSeconds(3), true, 0.8f, 0.8f);
+        //}
+        // Stalker14 changes end
 
         SetStaminaAlert(uid, component);
 
