@@ -25,6 +25,7 @@
     - map: [ "enum.HumanoidVisualLayers.LLeg" ]
     - map: ["jumpsuit"]
     - map: [ "torso" ] # stalker-changes
+    - map: [ "legs" ] # stalker-changes
     - map: ["enum.HumanoidVisualLayers.LFoot"]
     - map: ["enum.HumanoidVisualLayers.RFoot"]
     - map: ["enum.HumanoidVisualLayers.LHand"]
@@ -287,6 +288,7 @@
   - type: FireVisuals
     alternateState: Standing
     # stalker-changes-start
+  - type: Stagger
   - type: Inventory
     templateId: stalkerhuman
   - type: PsyonicsShieldVisuals
@@ -302,6 +304,7 @@
     decay: 14
     cooldown: 5
     critThreshold: 200
+    slowdownThreshold: 190
   - type: STWeight
     self: 70
   - type: StaminaActive
