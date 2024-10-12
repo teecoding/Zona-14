@@ -2,7 +2,7 @@
   abstract: true
   parent: BaseStructure
   id: STFitnessBase
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: CharacteristicTraining
     increase: 2
@@ -15,7 +15,7 @@
   id: STBenchPressNovice
   name: Штанга с небольшим весом (новичок)
   description: Необходимый элемент любой качалочки
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Furniture/bench_press.rsi
@@ -28,6 +28,7 @@
 - type: entity
   parent: STFitnessBase
   id: STBenchPressExpirienced
+  suffix: ST, Mapping
   name: Штанга со средним весом (опытный)
   description: выглядит солидно
   components:
@@ -42,6 +43,7 @@
 - type: entity
   parent: STFitnessBase
   id: STBenchPressExpert
+  suffix: ST, Mapping
   name: Штанга чемпиона (эксперт)
   description: а ты точно человек?
   components:
@@ -58,6 +60,7 @@
 - type: entity
   parent: STFitnessBase
   id: STPunchingBagNovice
+  suffix: ST, Mapping
   name: Груша с ветошью (новичок)
   description: первый шаг к победе
   components:
@@ -72,6 +75,7 @@
 - type: entity
   parent: STFitnessBase
   id: STPunchingBagExpirienced
+  suffix: ST, Mapping
   name: Груша с резиновой крошкой (опытный)
   description: второй шаг к победе
   components:
@@ -88,6 +92,7 @@
 - type: entity
   parent: STFitnessBase
   id: STTreadmillNovice
+  suffix: ST, Mapping
   name: Обычная беговая дорожка (новичок)
   description: не упади
   components:

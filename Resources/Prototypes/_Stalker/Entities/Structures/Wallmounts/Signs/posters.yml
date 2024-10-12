@@ -33,7 +33,7 @@
   id: PosterContrabandLogo
   name: "Старый плакат про радиацию"
   description: "Довольно таки старый плакат. Из всего, что там написано, можно разобрать: И помните, никто не застрахован от радиации."
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: poster1_contraband
@@ -43,7 +43,7 @@
   id: PosterContrabandStalkerClown
   name: "Шуты"
   description: "Бандиты ничего из себя не представляют, Всего-то кучка быдла. Поэтому не стоит их воспринимать всерьёз. Это всего лишь шуты Зоны."
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: poster3_contraband
@@ -53,7 +53,7 @@
   id: PosterContrabandTeam
   name: "Набор в долг"
   description: "Свободные сталкеры, ветераны и охотники — вливайтесь в ряды «Долга»! Защитить мир от заразы Зоны — наша общая цель и задача!"
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: poster5_contraband
@@ -63,7 +63,7 @@
   id: PosterContrabandJoJo
   name: "JoJo"
   description: "Теперь только самые брутальные и зрелищные битвы!"
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: poster8_contraband
@@ -73,7 +73,7 @@
   id: PosterContrabandStalkerOld
   name: "Старое объявление"
   description: "Потерялся пистолет. Нашедшему вернуть за вознаграждение. Я буду в квадрате... **Дальше текст обрывается**"
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: poster9_contraband
@@ -83,7 +83,7 @@
   id: PosterContrabandDanger
   name: "Опасность"
   description: "Осторожно! Дальше опасность! - Что-то внутри вас подсказывает, что дальше ходить не стоит."
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: poster10_contraband
@@ -93,7 +93,7 @@
   id: PosterContrabandDeadSociety
   name: "Мёртвое общество"
   description: "Выбирай, либо ты их, либо они тебя... **Дальше текст обрывается**"
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: poster11_contraband
@@ -103,7 +103,7 @@
   id: PosterContrabanDontTalk
   name: "Не болтай!"
   description: "Не болтай, а занимайся делом."
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: poster12_contraband
@@ -113,7 +113,7 @@
   id: PosterWorldWorkMay
   name: "Мир труд май!"
   description: "Праздник, связанный с темой труда, отмечаемый под различными названиями во многих государствах и территориях 1 мая или в первый понедельник мая."
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: poster13_contraband
@@ -123,7 +123,7 @@
   id: PosterContrabandSandwich
   name: "Не забывай есть!"
   description: "Колбаса и хлеб помогут тебе в трудную минуту! Не забывай вовремя перекусывать!"
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: poster14_contraband
@@ -133,7 +133,7 @@
   id: PosterPositiveStalker
   name: "Позитив"
   description: "Это именно, то, что вызывает положительные эмоции, заслуживает одобрения, положительной оценки"
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: poster15_contraband
@@ -143,7 +143,7 @@
   id: PosterContrabandSmile
   name: "Смайл"
   description: "Вы не знаете, что может означать этот плакат."
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: poster16_contraband
@@ -153,7 +153,7 @@
   id: PosterContrabandIcon
   name: "Икона"
   description: "Неплохо различимое изображение святого лика."
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: poster17_contraband
@@ -163,7 +163,7 @@
   id: PosterContrabandUSSR
   name: "СССР"
   description: "Историческое федеративное государство, существовавшее с 1922 по 1991 год."
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: poster18_contraband
@@ -173,7 +173,7 @@
   id: PosterContrabandIcon2
   name: "Икона Богородицы"
   description: "На изображении Богоматерь склоняется к Младенцу."
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: poster19_contraband
@@ -183,7 +183,7 @@
   id: PosterBilly
   name: "Билли"
   description: "Билли Херрингтон 14 июля 1969 — 2 марта 2018 — американский актёр, наиболее известный по съёмкам в порнофильмах 1990-х годов."
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: poster20_contraband
@@ -193,7 +193,7 @@
   id: PosterContrabandPin
   name: "Болт сила"
   description: "Нет силы величественней, чем Болт! Только он отделяет грань аномалии от грани твоей жизни, Только из-за него ты сейчас читаешь этот текст!"
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: poster21_contraband
@@ -203,7 +203,7 @@
   id: PosterContrabandDirtySky
   name: "Миру грязное небо!"
   description: "Чистое небо - вот главная угроза! Искореним чистое небо! Долой его. Слава грязному небу!"
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: poster23_contraband
@@ -213,7 +213,7 @@
   id: PosterPeacefulAtomStalker
   name: "Мирный атом"
   description: "Ядерную энергия, которая используется ТОЛЬКО в мирных целях."
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: poster24_contraband
@@ -223,7 +223,7 @@
   id: PosterContrabandNoSpeak
   name: "Нет хабара - нет базара!"
   description: "Без хабара не получится побазарить. Иди отсюда и без хабара не приходи!"
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: poster25_contraband
@@ -233,7 +233,7 @@
   id: PosterCNPP
   name: "ЧАЭС"
   description: "В этом плакате можно разобрать только одну надпись - Авария на Чернобыльской АЭС."
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: poster27_contraband
@@ -243,7 +243,7 @@
   id: PosterEveryoneOffStalker
   name: "Мочи всех!"
   description: "Даёшь кровь! Никто не уйдёт живым!"
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: poster32_contraband
@@ -253,7 +253,7 @@
   id: PosterBloodyPrint
   name: "Кровавый отпечаток"
   description: "Отпечаток крови, который оставили совсем недавно."
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: poster38_contraband
@@ -263,7 +263,7 @@
   id: PosterBloodyPrint2
   name: "Кровавая надпись"
   description: "Надпись, написанная кровью. К сожалению, непонятно, почему стоит бежать."
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: poster39_contraband
@@ -273,7 +273,7 @@
   id: PosterContrabandFreebie
   name: "Халява направо"
   description: "Если пойдёшь направо, то будет тебе халява."
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: poster46_contraband
@@ -283,7 +283,7 @@
   id: PosterContrabandKoroliShut
   name: "Плакат Король и Шут"
   description: "Советская и российская хоррор-панк-группа. Выделяется своим необычным для классического панк-рока стилем. Песни группы представляют собой небольшие законченные истории, часто в фэнтезийном, мистическом, а также историческом и ужасающем ключе"
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: poster47_contraband
@@ -293,7 +293,7 @@
   id: PosterContrabandCultGreh1
   name: "Культ греха"
   description: "Защита оазиса - первая цель данного культа. АД - Зона, Кровь - Деньги, Грех - Боги зоны."
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: poster48_contraband
@@ -303,7 +303,7 @@
   id: PosterContrabandCultGreh2
   name: "Сатанический Культ"
   description: "Известные фанатики как некий Грех основатели этого культа, на постере изображена пентаграмма."
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: poster49_contraband
@@ -313,7 +313,7 @@
   id: PosterContrabandStalin
   name: "Сталин"
   description: "Постер представляет собой запоминающийся портрет одного из самых влиятельных политических деятелей XX века - Иосифа Сталина."
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: poster50_contraband
@@ -323,7 +323,7 @@
   id: PosterContrabandWantedBand
   name: "Розыск Бандита"
   description: "Имя: Ванька Воздух. Награда: 50000 Рублей."
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: poster51_contraband
@@ -333,7 +333,7 @@
   id: PosterContrabandAdolfHitler
   name: "Adolf Hitler"
   description: "Вандализированный портрет диктатора. Люди никогда не забудут сколько зла и ненависти в этот мир принесло это чудовище."
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: poster52_contraband
@@ -343,7 +343,7 @@
   id: PosterContrabandLenin
   name: "Ленин"
   description: "Постер представляет собой иконическое изображение Владимира Ленина, выдающегося революционера и лидера Октябрьской революции."
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: poster53_contraband
@@ -354,7 +354,7 @@
   id: PosterLegitDolg
   name: "Долг - закон"
   description: "Смертельные аномалии, опасные мутанты, анархисты и бандиты не остановят Долг, победоносной поступью идущий на помощь мирным гражданам всей планеты!"
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: poster1_legit
@@ -364,7 +364,7 @@
   id: PosterLegitLogo
   name: "Плакат про радиацию"
   description: "Радиация — это совокупность излучений, способных ионизировать вещество, тем самым вызывая в нем спонтанный распад атомов."
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: poster2_legit
@@ -374,7 +374,7 @@
   id: PosterLegitStalkerHands
   name: "Мой руки!"
   description: "Чтобы не болеть, руки надо мыть. Старайся чаще мыть руки. 70 людей болеют, потому что не моют руки!"
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: poster3_legit
@@ -384,7 +384,7 @@
   id: PosterLegitStalkerHelp
   name: "Помогай окружающим!"
   description: "Помогать другим - важная часть жизни; это дает вам ощущение цели и повышает уровень вашего счастья!"
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: poster4_legit
@@ -394,7 +394,7 @@
   id: PosterLegitBreakIt
   name: "Ломай всё, что видишь"
   description: "Давай, ломай, Люди еще сделают. Главное, чтобы ТЕБЕ было хорошо."
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: poster5_legit
@@ -404,7 +404,7 @@
   id: PosterContrabandGodSave
   name: "Боже зону храни!"
   description: "Чтобы ходки были удачные. выбросов меньше, артефактов больше. Воистину, Боже, Зону храни!"
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: poster6_legit
@@ -414,7 +414,7 @@
   id: PosterLegitStalkerScience
   name: "Советская наука"
   description: "Советсвие учёные были первыми, кто смог покорить «мирный атом» и подарить планете новый вид энергетики — неиссякаемой, мощной и экологически безопасной."
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: poster7_legit
@@ -424,7 +424,7 @@
   id: PosterLegitD10
   name: "D10"
   description: "Что-то неизвестное изображено на это плакате. Может, это абстракция?"
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: poster8_legit
@@ -434,7 +434,7 @@
   id: PosterLegitMonolit
   name: "Подчинись ему!"
   description: "Слава ему! Только он может говорить тебе, что делать! Слава Великому Монолиту!"
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: poster9_legit
@@ -444,7 +444,7 @@
   id: PosterLegitFreedom
   name: "Набор"
   description: "Крутые и подкрученные перцы, только в Свободе вас оценят и примут как родных, никакого обязалово и идеологической пурги."
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: poster11_legit
@@ -454,7 +454,7 @@
   id: PosterLegitZona
   name: "Зона - мать зовёт!"
   description: "Шуточный плакат, высмеивающий плакат: Родина - мать зовёт! А также этот плакат нарушает все нормы морали. Но кому это надо в зоне?"
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: poster12_legit
@@ -464,7 +464,7 @@
   id: PosterLegitDontShit
   name: "Не срать!"
   description: "Я серьёзно! Кто ещё тут насрёт, получит пи#ды!"
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: poster13_legit
@@ -474,7 +474,7 @@
   id: PosterLegitStalkerDrinkVodka
   name: "Пей до дна!"
   description: "За водкой будущее. Интересный факт: водка на 40% состоит из спирта и на 60% - из воды."
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: poster14_legit
@@ -484,7 +484,7 @@
   id: PosterContrabandGigaChad
   name: "Гигачад"
   description: "Персонаж и интернет-мем, представляющий собой чёрно-белые фото мускулистого мужчины."
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: poster15_legit
@@ -494,7 +494,7 @@
   id: PosterLegitStalkerDontAsk
   name: "Не спрашивай лишнего"
   description: "Только держа язык за зубами. Ты можешь продлить своё пребывание в зоне."
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: poster16_legit
@@ -504,7 +504,7 @@
   id: PosterLegitStalkerWorkOnThePast
   name: "Работа на прошлое"
   description: "Работая на прошлое, ты сможешь изменить будущее!"
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: poster17_legit
@@ -514,7 +514,7 @@
   id: PosterLegitStalkerUSSR
   name: "Старый плакат СССР"
   description: "***половина плаката плохо различима*** Союз Советских Социалистических Республик крепок, как гранит, и он развалится."
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: poster18_legit
@@ -524,7 +524,7 @@
   id: PosterShotaAshot
   name: "Шота у Ашота"
   description: "Вывеска, указывающая на магазин Ашота. Человека, у которого можно купить свежие патроны."
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: poster20_legit
@@ -534,7 +534,7 @@
   id: PosterLegitStalkerStalcraft
   name: "Stalcraft"
   description: "За нами будущее!"
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: poster21_legit
@@ -544,7 +544,7 @@
   id: PosterLegitClearSky
   name: "Миру чистое небо!"
   description: "Советский антивоенный плакат."
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: poster22_legit
@@ -554,7 +554,7 @@
   id: PosterLegitShineBoulder
   name: "Не свети валыну!"
   description: "Иногда лучше убрать пушку, а то можно получить пулю в лоб."
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: poster23_legit
@@ -564,7 +564,7 @@
   id: PosterLegitFreedomTogether
   name: "Свобода вместе!"
   description: "Только вместе с ТОБОЙ мы сможем стать поистине свободными."
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: poster24_legit
@@ -574,7 +574,7 @@
   id: PosterLegitElections
   name: "Голосуй"
   description: "Выборы - особенный момент в жизни каждого!"
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: poster25_legit
@@ -584,7 +584,7 @@
   id: PosterLegitScienceUSSR
   name: "Старый плакат советская наука"
   description: "Благодаря высокоразвитой науке на достаточно высоком уровне находятся образование и здравоохранение!"
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: poster26_legit
@@ -594,7 +594,7 @@
   id: PosterLegitCareYourself
   name: "Береги себя, сталкер!"
   description: "Никто тебя не сможет защитить, только ты сам! Поэтому смотри чаще под ноги."
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: poster28_legit
@@ -604,7 +604,7 @@
   id: PosterLegitDontShit2
   name: "Не срать!"
   description: "Да за#бали, я же сказал с#ка не срать!"
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: poster31_legit
@@ -614,7 +614,7 @@
   id: PosterLegitSteelPower
   name: "Стальная держава"
   description: "Страна стала железной, металлической, армаду лошадей «заменила стальная конница»."
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: poster37_legit
@@ -624,7 +624,7 @@
   id: PosterLegitBloodPrintFake
   name: "Кровавый отпечаток"
   description: "Кровавый отпечаток. Похоже, он сделан недав... Погодитека, Да он не настоящий."
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: poster38_legit
@@ -634,7 +634,7 @@
   id: PosterLegitZelensky
   name: "Голосуй"
   description: "Выборы - особенный момент в жизни каждого!"
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: poster39_legit
@@ -644,7 +644,7 @@
   id: PosterLegitAnatomyHand
   name: "Анатомия руки"
   description: "Человеческая рука, одного из самых сложных и функциональных органов нашего тела."
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: poster40_legit
@@ -654,7 +654,7 @@
   id: PosterLegitAnatomyIntestines
   name: "Анатомия кишечника"
   description: "Кишечник - это важный орган пищеварительной системы, ответственный за поглощение питательных веществ из пищи и удаление отходов из организма. Этот постер предоставляет детальное описание структуры и функций кишечника, помогая лучше понять его роль в поддержании здоровья человека."
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: poster41_legit
@@ -664,7 +664,7 @@
   id: PosterLegitAnatomyHeart
   name: "Анатомия сердца"
   description: "Величественный орган, который является центром нашей жизненной силы и обеспечивает постоянное кровообращение по всему организму."
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: poster42_legit
@@ -674,7 +674,7 @@
   id: PosterLegitAnatomyLeather
   name: "Анатомия кожы"
   description: "Кожа - это удивительный орган, который является самым большим в организме человека и выполняет множество важных функций. Этот постер подробно описывает структуру кожи и ее функции, предлагая уникальный взгляд на то, как она защищает наш организм и поддерживает его внутреннюю среду."
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: poster43_legit
@@ -684,7 +684,7 @@
   id: PosterLegitAnatomyHuman
   name: "Анатомия Человека"
   description: "Человеческое тело - это удивительная система, состоящая из различных органов и тканей, каждый из которых играет свою уникальную роль в поддержании жизнедеятельности. Этот постер предоставляет всесторонний обзор анатомии человека, помогая лучше понять его строение и функции."
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: poster44_legit
@@ -694,7 +694,7 @@
   id: PosterLegitCar1
   name: "Неизвестная картина"
   description: "Неизвестная картина покрытая тайнами, кто её рисовал уже заыбли..."
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: poster45_legit
@@ -704,7 +704,7 @@
   id: PosterLegitCar2
   name: "Звездная ночь"
   description: "Одно из самых известных произведений великого художника Винсента Ван Гога. Которое стало одной из самых узнаваемых и популярных работ Ван Гога."
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: poster46_legit
@@ -714,7 +714,7 @@
   id: PosterLegitCar3
   name: "Неизвестная картина"
   description: "Неизвестная картина покрытая тайнами, кто её рисовал уже заыбли..."
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: poster47_legit
@@ -725,7 +725,7 @@
   id: PosterPawnShop
   name: "Скупка"
   description: "Выкуп дракоценностей по лучшим ценам в Зоне!"
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: poster64_pawnshop
@@ -737,7 +737,7 @@
   id: Kover1
   name: "советский ковёр"
   description: "Наличие такого ковра в доме указывало на хороший уровень жизни домочадцев. Для современного человека такой шерстяной ковер считается пережитком прошлого."
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Wallmounts/carpets.rsi
@@ -748,7 +748,7 @@
   id: Kover2
   name: "советский ковёр"
   description: "Наличие такого ковра в доме указывало на хороший уровень жизни домочадцев. Для современного человека такой шерстяной ковер считается пережитком прошлого."
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Wallmounts/carpets.rsi
@@ -759,7 +759,7 @@
   id: Kover3
   name: "советский ковёр"
   description: "Наличие такого ковра в доме указывало на хороший уровень жизни домочадцев. Для современного человека такой шерстяной ковер считается пережитком прошлого."
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Wallmounts/carpets.rsi
@@ -770,7 +770,7 @@
   id: Kover4
   name: "советский ковёр"
   description: "Наличие такого ковра в доме указывало на хороший уровень жизни домочадцев. Для современного человека такой шерстяной ковер считается пережитком прошлого."
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Wallmounts/carpets.rsi
@@ -781,7 +781,7 @@
   id: Kover5
   name: "советский ковёр"
   description: "Наличие такого ковра в доме указывало на хороший уровень жизни домочадцев. Для современного человека такой шерстяной ковер считается пережитком прошлого."
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Wallmounts/carpets64.rsi
@@ -792,7 +792,7 @@
   id: Kover6
   name: "советский ковёр"
   description: "Наличие такого ковра в доме указывало на хороший уровень жизни домочадцев. Для современного человека такой шерстяной ковер считается пережитком прошлого."
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Wallmounts/carpets64.rsi
@@ -803,7 +803,7 @@
   id: Kover7
   name: "советский ковёр"
   description: "Наличие такого ковра в доме указывало на хороший уровень жизни домочадцев. Для современного человека такой шерстяной ковер считается пережитком прошлого."
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Wallmounts/carpets96.rsi
@@ -814,7 +814,7 @@
   id: Kover8
   name: "советский ковёр"
   description: "Наличие такого ковра в доме указывало на хороший уровень жизни домочадцев. Для современного человека такой шерстяной ковер считается пережитком прошлого."
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Wallmounts/carpets96.rsi
@@ -825,7 +825,7 @@
   id: Kover9
   name: "советский ковёр"
   description: "Наличие такого ковра в доме указывало на хороший уровень жизни домочадцев. Для современного человека такой шерстяной ковер считается пережитком прошлого."
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Wallmounts/carpets96.rsi

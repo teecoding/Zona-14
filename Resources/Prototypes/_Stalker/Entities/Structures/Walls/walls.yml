@@ -2,7 +2,7 @@
   parent: BaseWall
   id: WallWoodFallout
   name: Деревянная стена
-  suffix: Wall, KMIN
+  suffix: ST, Mapping, wall, KMIN
   components:
   - type: Tag
     tags:
@@ -22,7 +22,7 @@
   parent: BaseWall
   id: WallSidingFallout
   name: ПВХ стена
-  suffix: Wall, KMIN
+  suffix: ST, Mapping, wall, KMIN
   components:
   - type: Tag
     tags:
@@ -42,7 +42,7 @@
   parent: BaseWall
   id: WallBrickFallout
   name: Кирпичная стена
-  suffix: Wall, KMIN
+  suffix: ST, Mapping, wall, KMIN
   components:
   - type: Tag
     tags:
@@ -62,7 +62,7 @@
   parent: BaseWall
   id: WallBunkerFallout
   name: Бункерная стена
-  suffix: Wall, KMIN
+  suffix: ST, Mapping, wall, KMIN
   components:
   - type: Tag
     tags:
@@ -82,7 +82,7 @@
   parent: BaseWall
   id: WallDungeonFallout
   name: Укрепленная стена
-  suffix: Wall, KMIN
+  suffix: ST, Mapping, wall, KMIN
   components:
   - type: Tag
     tags:
@@ -102,7 +102,7 @@
   parent: BaseWall
   id: WallMetalFallout
   name: Стальная стена
-  suffix: Wall, KMIN
+  suffix: ST, Mapping, wall, KMIN
   components:
   - type: Tag
     tags:
@@ -122,7 +122,7 @@
   parent: BaseWall
   id: WallRustMetalFallout
   name: Ржавая стена
-  suffix: Wall, KMIN
+  suffix: ST, Mapping, wall, KMIN
   components:
   - type: Tag
     tags:
@@ -142,7 +142,7 @@
   parent: BaseWall
   id: WallScrapFallout
   name: Профнастиловая стена
-  suffix: Wall, KMIN
+  suffix: ST, Mapping, wall, KMIN
   components:
   - type: Tag
     tags:
@@ -162,7 +162,7 @@
   parent: BaseWall
   id: WallSewerFallout
   name: Канализационная стена
-  suffix: Wall, KMIN
+  suffix: ST, Mapping, wall, KMIN
   components:
   - type: Tag
     tags:
@@ -182,7 +182,7 @@
   parent: BaseWall
   id: WallReinfMetalFallout
   name: Бронированная стена
-  suffix: Wall, KMIN
+  suffix: ST, Mapping, wall, KMIN
   components:
   - type: Tag
     tags:
@@ -202,7 +202,7 @@
   parent: BaseWall
   id: WallRustReinfMetalFallout
   name: Ржавая бронированная стена
-  suffix: Wall, KMIN
+  suffix: ST, Mapping, wall, KMIN
   components:
   - type: Tag
     tags:
@@ -222,7 +222,7 @@
   parent: BaseWall
   id: WallVaultFallout
   name: Стена убежища
-  suffix: Wall, KMIN
+  suffix: ST, Mapping, wall, KMIN
   components:
   - type: Tag
     tags:
@@ -242,7 +242,7 @@
   parent: BaseWall
   id: WallConcreteFallout
   name: Бетонная стена
-  suffix: Wall, KMIN
+  suffix: ST, Mapping, wall, KMIN
   description: Стена, для создания которой устраивается опалубка с железной арматурой внутри, в которую заливается жидкий бетон.
   components:
   - type: Tag
@@ -263,7 +263,7 @@
   parent: BaseWall
   id: WallRockFallout
   name: Каменная стена
-  suffix: Wall, KMIN
+  suffix: ST, Mapping, wall, KMIN
   components:
   - type: Tag
     tags:
@@ -283,7 +283,7 @@
   parent: BaseWall
   id: WallPrisonFallout
   name: Тюремная стена
-  suffix: Wall, KMIN
+  suffix: ST, Mapping, wall, KMIN
   components:
   - type: Tag
     tags:
@@ -304,7 +304,7 @@
   id: WallConcreteFalloutDestructible
   name: Ветхая бетонная стена
   description: Вот-вот разрушится, если по ней постучать.
-  suffix: Wall, KMIN, разрушимое
+  suffix: ST, Mapping, wall, KMIN, разрушимое
   components:
   - type: Tag
     tags:
@@ -319,6 +319,7 @@
 
 - type: entity
   id: WallRockBasaltDestructible
+  suffix: ST, Mapping, wall, Destructible
   name: Хрупкий базальт
   description: Вот-вот разрушится, если по нему постучать.
   parent: WallRock
@@ -350,6 +351,7 @@
 - type: entity
   parent: BaseWall
   id: STWallNecropolis
+  suffix: ST, Mapping, wall
   name: стена чистилища
   components:
   - type: Tag

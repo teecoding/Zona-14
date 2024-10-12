@@ -2,7 +2,7 @@
   name: старый деревянный стул
   id: OldWoodChairStalker
   parent: STSeatBase
-  suffix: Stalker
+  suffix: ST, Mapping
   description: Некогда этот стул был гордостью, но сейчас предмет, который занимает много места.
   components:
     - type: Transform
@@ -18,7 +18,7 @@
 - type: entity
   id: OldWoodChairStalker2
   parent: OldWoodChairStalker
-  suffix: Stalker
+  suffix: ST, Mapping
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Furniture/Chairs/old_chairs.rsi
@@ -27,7 +27,7 @@
 - type: entity
   id: OldWoodChairStalker3
   parent: OldWoodChairStalker
-  suffix: Stalker
+  suffix: ST, Mapping
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Furniture/Chairs/old_chairs.rsi
@@ -37,7 +37,7 @@
   name: деревянный стул
   id: ChairWoodStalker
   parent: ChairBase
-  suffix: Stalker
+  suffix: ST, Mapping
   placement:
     mode: SnapgridCenter
   components:
@@ -56,7 +56,7 @@
 - type: entity
   name: chair
   id: STSeatBase
-  suffix: ST
+  suffix: ST, Mapping
   abstract: true
   description: You sit in this. Either by will or force.
   placement:
@@ -90,7 +90,7 @@
   name: chair
   id: STUnanchoredChairBase
   parent: STSeatBase
-  suffix: ST
+  suffix: ST, Mapping
   abstract: true
   components:
   - type: Anchorable
@@ -99,7 +99,7 @@
 - type: entity
   name: chair
   id: STChairBase
-  suffix: ST
+  suffix: ST, Mapping
   abstract: true
   parent: STUnanchoredChairBase
   placement:
@@ -114,7 +114,7 @@
   name: chair
   id: STOfficeChairBase
   parent: STUnanchoredChairBase
-  suffix: ST
+  suffix: ST, Mapping
   abstract: true
   components:
   - type: Rotatable
@@ -124,7 +124,7 @@
   name: comfy chair
   id: STComfyChair
   parent: STChairBase
-  suffix: ST
+  suffix: ST, Mapping
   description: It looks comfy.
   components:
   - type: Sprite
@@ -134,7 +134,7 @@
   name: wooden chair
   id: STChairWood
   parent: STUnanchoredChairBase
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: wooden
@@ -149,6 +149,7 @@
 - type: entity
   name: wooden bench
   id: STWoodenBench
+  suffix: ST, Mapping
   parent: STChairBase
   description: Did you get a splinter? Well, at least it’s eco friendly.
   components:
@@ -161,6 +162,7 @@
 - type: entity
   name: white office chair
   id: STChairOfficeLight
+  suffix: ST, Mapping
   parent: STOfficeChairBase
   components:
   - type: Sprite
@@ -169,6 +171,7 @@
 - type: entity
   name: dark office chair
   id: STChairOfficeDark
+  suffix: ST, Mapping
   parent: STChairOfficeLight
   components:
   - type: Sprite

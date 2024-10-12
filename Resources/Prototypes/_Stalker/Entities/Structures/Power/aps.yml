@@ -3,7 +3,7 @@
   id: BaseElectroShieldStalker
   name: Электрощиток
   description: Устройство, которое используется для распределения электричества в жилых и общественных зданиях, а также на промышленных объектах.
-  suffix: Stalker
+  suffix: ST, Mapping
   parent: BaseAPC
   placement:
     mode: SnapgridCenter
@@ -109,7 +109,7 @@
 - type: entity
   parent: BaseElectroShieldStalker
   id: ElectroShieldBasic
-  suffix: Stalker, 50кВ
+  suffix: ST, Mapping, 50кВ
   components:
   - type: Battery
     maxCharge: 50000
@@ -118,7 +118,7 @@
 - type: entity
   parent: BaseElectroShieldStalker
   id: ElectroShieldHigh
-  suffix: Stalker, 100кВ
+  suffix: ST, Mapping, 100кВ
   components:
   - type: Battery
     maxCharge: 100000
@@ -127,7 +127,7 @@
 - type: entity
   parent: BaseElectroShieldStalker
   id: ElectroShieldSuper
-  suffix: Stalker, 150кВ
+  suffix: ST, Mapping, 150кВ
   components:
   - type: Battery
     maxCharge: 150000
@@ -136,7 +136,7 @@
 - type: entity
   parent: BaseElectroShieldStalker
   id: ElectroShieldHyper
-  suffix: Stalker, 200кВ
+  suffix: ST, Mapping, 200кВ
   components:
   - type: Battery
     maxCharge: 200000

@@ -23,7 +23,7 @@
   parent: BaseFenceWooden
   id: FenceWoodenBroken
   name: сломанный деревянный забор
-  suffix: Stalker
+  suffix: ST, Mapping
   description: Старый деревянный забор - доски да гвозди. Интересно, кто же умудрился его сломать?
   components:
   - type: Sprite
@@ -70,7 +70,7 @@
 - type: entity
   parent: BaseFenceWooden
   id: FenceWoodenStraight
-  suffix: Stalker, straight
+  suffix: ST, Mapping, straight
   components:
   - type: Icon
     sprite: _Stalker/Structures/Walls/zabor_wooden.rsi
@@ -93,7 +93,7 @@
 - type: entity
   parent: BaseFenceWooden
   id: FenceWoodenCorner
-  suffix: Stalker, corner
+  suffix: ST, Mapping, corner
   components:
   - type: Sprite
     layers:
@@ -124,7 +124,7 @@
 - type: entity
   parent: BaseFenceWooden
   id: FenceWoodenEnd
-  suffix: Stalker, end
+  suffix: ST, Mapping, end
   components:
   - type: Icon
     sprite: _Stalker/Structures/Walls/zabor_wooden.rsi
@@ -149,7 +149,7 @@
   parent: BaseFenceMetal
   id: FenceMetalStraightConst
   name: сетка-рабица
-  suffix: Salker, разбираемый
+  suffix: ST, Mapping, разбираемый
   components:
   - type: Icon
     sprite: Structures/Walls/fence.rsi

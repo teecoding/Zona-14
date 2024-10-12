@@ -2,7 +2,7 @@
 - type: entity
   id: WoodenFloorBasicFallout
   name: База деревянного пола
-  suffix: Wood floor, KMIN
+  suffix: ST, Mapping, KMIN
   description: Самый деревянный каркас пола из существующих.
   abstract: true
   placement:
@@ -44,7 +44,7 @@
   id: WoodenFloorFoundationFallout
   parent: WoodenFloorBasicFallout
   name: Деревянный каркас
-  suffix: Wood floor, KMIN
+  suffix: ST, Mapping, KMIN
   description: Самый деревянный каркас пола из существующих.
   components:
     - type: Sprite
@@ -76,7 +76,7 @@
   id: WoodenFloorFoundationBrokenFallout
   parent: WoodenFloorBasicFallout
   name: Деревянный каркас (сломанный)
-  suffix: Wood floor, KMIN
+  suffix: ST, Mapping, KMIN
   description: Самый деревянный каркас пола из существующих.
   components:
     - type: Sprite
@@ -162,7 +162,7 @@
   id: WoodenFloorCommonFallout
   parent: WoodenFloorBasicFallout
   name: Деревянный пол
-  suffix: Wood floor, KMIN
+  suffix: ST, Mapping, KMIN
   description: Самый деревянный пол из существующих.
   components:
     - type: Sprite
@@ -213,7 +213,7 @@
   id: WoodenFloorCommonBrokenFallout
   parent: WoodenFloorBasicFallout
   name: Деревянный пол (сломанный)
-  suffix: Wood floor, KMIN
+  suffix: ST, Mapping, KMIN
   description: Самый деревянный пол из существующих.
   components:
     - type: Sprite
@@ -317,7 +317,7 @@
   id: WoodenFloorFancyFallout
   parent: WoodenFloorBasicFallout
   name: Деревянный пол ёлочкой
-  suffix: Wood floor, KMIN
+  suffix: ST, Mapping, KMIN
   description: Самый деревянный пол из существующих.
   components:
     - type: Sprite
@@ -368,7 +368,7 @@
   id: WoodenFloorFancyBrokenFallout
   parent: WoodenFloorBasicFallout
   name: Деревянный пол ёлочкой(сломанный)
-  suffix: Wood floor, KMIN
+  suffix: ST, Mapping, KMIN
   description: Самый деревянный пол из существующих.
   placement:
     mode: SnapgridCenter
@@ -482,7 +482,7 @@
   id: WoodenFloorMosaicFallout
   parent: WoodenFloorBasicFallout
   name: Деревянный узорчатый пол
-  suffix: Wood floor, KMIN
+  suffix: ST, Mapping, KMIN
   description: Самый деревянный пол из существующих.
   components:
     - type: Sprite
@@ -533,7 +533,7 @@
   id: WoodenFloorMosaicBrokenFallout
   parent: WoodenFloorBasicFallout
   name: Деревянный узорчатый пол (сломанный)
-  suffix: Wood floor, KMIN
+  suffix: ST, Mapping, KMIN
   description: Самый деревянный пол из существующих.
   components:
     - type: Sprite
@@ -646,7 +646,7 @@
   id: WoodenFloorWideFallout
   parent: WoodenFloorBasicFallout
   name: Деревянный широкоплиточный пол
-  suffix: Wood floor, KMIN
+  suffix: ST, Mapping, KMIN
   description: Самый деревянный пол из существующих.
   components:
     - type: Sprite
@@ -697,7 +697,7 @@
   id: WoodenFloorWideBrokenFallout
   parent: WoodenFloorBasicFallout
   name: Деревянный широкоплиточный пол (сломанный)
-  suffix: Wood floor, KMIN
+  suffix: ST, Mapping, KMIN
   description: Самый деревянный пол из существующих.
   components:
     - type: Sprite
@@ -809,7 +809,7 @@
 - type: entity
   id: BrickFloorBasicFallout
   name: База каменного пола
-  suffix: Brick floor, KMIN
+  suffix: ST, Mapping, KMIN
   description: Самый каменный пол из существующих.
   abstract: true
   placement:
@@ -852,7 +852,7 @@
   id: BrickSmallFloorFallout
   parent: BrickFloorBasicFallout
   name: Кирпичный пол
-  suffix: Brick floor, KMIN
+  suffix: ST, Mapping, KMIN
   description: Самый кирпичный пол из существующих.
   components:
     - type: Sprite
@@ -903,7 +903,7 @@
   id: BrickSmallFloorBrokenFallout
   parent: BrickFloorBasicFallout
   name: Кирпичный пол (сломанный)
-  suffix: Brick floor, KMIN
+  suffix: ST, Mapping, KMIN
   description: Самый кирпичный пол из существующих.
   components:
     - type: Sprite
@@ -999,7 +999,7 @@
   id: BrickFloorBrokenFallout
   parent: BrickFloorBasicFallout
   name: Каменный пол (сломанный)
-  suffix: Brick floor, KMIN
+  suffix: ST, Mapping, KMIN
   description: Самый каменный пол из существующих.
   components:
     - type: Sprite
@@ -1029,7 +1029,7 @@
   id: BrickFullBlackFloorFallout
   parent: BrickFloorBasicFallout
   name: Каменный пол (черный, плитка, полный)
-  suffix: Brick floor, KMIN
+  suffix: ST, Mapping, KMIN
   description: Самый каменный пол из существующих.
   components:
     - type: Sprite
@@ -1080,7 +1080,7 @@
   id: BrickFullGreenFloorFallout
   parent: BrickFloorBasicFallout
   name: Каменный пол (зеленый, плитка, полный)
-  suffix: Brick floor, KMIN
+  suffix: ST, Mapping, KMIN
   description: Самый каменный пол из существующих.
   components:
     - type: Sprite
@@ -1131,7 +1131,7 @@
   id: BrickFullNavyFloorFallout
   parent: BrickFloorBasicFallout
   name: Каменный пол (голубой, плитка, полный)
-  suffix: Brick floor, KMIN
+  suffix: ST, Mapping, KMIN
   description: Самый каменный пол из существующих.
   components:
     - type: Sprite
@@ -1182,7 +1182,7 @@
   id: BrickFullWhiteFloorFallout
   parent: BrickFloorBasicFallout
   name: Каменный пол (белый, плитка, полный)
-  suffix: Brick floor, KMIN
+  suffix: ST, Mapping, KMIN
   description: Самый каменный пол из существующих.
   components:
     - type: Sprite
@@ -1233,7 +1233,7 @@
   id: BrickLargeBlackFloorFallout
   parent: BrickFloorBasicFallout
   name: Каменный пол (черный, плитка, большой)
-  suffix: Brick floor, KMIN
+  suffix: ST, Mapping, KMIN
   description: Самый плиточный пол из существующих.
   components:
     - type: Sprite
@@ -1284,7 +1284,7 @@
   id: BrickLargeCafeFloorFallout
   parent: BrickFloorBasicFallout
   name: Каменный пол (кафе, плитка, большой)
-  suffix: Brick floor, KMIN
+  suffix: ST, Mapping, KMIN
   description: Самый плиточный пол из существующих.
   components:
     - type: Sprite
@@ -1335,7 +1335,7 @@
   id: BrickLargeCheckerFloorFallout
   parent: BrickFloorBasicFallout
   name: Каменный пол (шашочный, плитка, большой)
-  suffix: Brick floor, KMIN
+  suffix: ST, Mapping, KMIN
   description: Самый плиточный пол из существующих.
   components:
     - type: Sprite
@@ -1386,7 +1386,7 @@
   id: BrickLargeGreenFloorFallout
   parent: BrickFloorBasicFallout
   name: Каменный пол (зеленый, плитка, большой)
-  suffix: Brick floor, KMIN
+  suffix: ST, Mapping, KMIN
   description: Самый плиточный пол из существующих.
   components:
     - type: Sprite
@@ -1437,7 +1437,7 @@
   id: BrickLargeGreyFloorFallout
   parent: BrickFloorBasicFallout
   name: Каменный пол (серый, плитка, большой)
-  suffix: Brick floor, KMIN
+  suffix: ST, Mapping, KMIN
   description: Самый плиточный пол из существующих.
   components:
     - type: Sprite
@@ -1488,7 +1488,7 @@
   id: BrickLargeNavyFloorFallout
   parent: BrickFloorBasicFallout
   name: Каменный пол (голубой, плитка, большой)
-  suffix: Brick floor, KMIN
+  suffix: ST, Mapping, KMIN
   description: Самый плиточный пол из существующих.
   components:
     - type: Sprite
@@ -1537,7 +1537,7 @@
   id: BrickLargeWhiteFloorFallout
   parent: BrickFloorBasicFallout
   name: Каменный пол (белый, плитка, большой)
-  suffix: Brick floor, KMIN
+  suffix: ST, Mapping, KMIN
   description: Самый плиточный пол из существующих.
   components:
     - type: Sprite
@@ -1588,7 +1588,7 @@
   id: BrickLongBlueFloorFallout
   parent: BrickFloorBasicFallout
   name: Каменный пол (голубой, плитка, длинный)
-  suffix: Brick floor, KMIN
+  suffix: ST, Mapping, KMIN
   description: Самый плиточный пол из существующих.
   components:
     - type: Sprite
@@ -1639,7 +1639,7 @@
   id: BrickLongGreyFloorFallout
   parent: BrickFloorBasicFallout
   name: Каменный пол (серый, плитка, длинный)
-  suffix: Brick floor, KMIN
+  suffix: ST, Mapping, KMIN
   description: Самый плиточный пол из существующих.
   components:
     - type: Sprite
@@ -1690,7 +1690,7 @@
   id: BrickMediumBlackFloorFallout
   parent: BrickFloorBasicFallout
   name: Каменный пол (черный, плитка, средний)
-  suffix: Brick floor, KMIN
+  suffix: ST, Mapping, KMIN
   description: Самый плиточный пол из существующих.
   components:
     - type: Sprite
@@ -1741,7 +1741,7 @@
   id: BrickMediumBrownFloorFallout
   parent: BrickFloorBasicFallout
   name: Каменный пол (коричневый, плитка, средний)
-  suffix: Brick floor, KMIN
+  suffix: ST, Mapping, KMIN
   description: Самый плиточный пол из существующих.
   components:
     - type: Sprite
@@ -1792,7 +1792,7 @@
   id: BrickMediumGreyFloorFallout
   parent: BrickFloorBasicFallout
   name: Каменный пол (серый, плитка, средний)
-  suffix: Brick floor, KMIN
+  suffix: ST, Mapping, KMIN
   description: Самый плиточный пол из существующих.
   components:
     - type: Sprite
@@ -1843,7 +1843,7 @@
   id: BrickMediumNavyFloorFallout
   parent: BrickFloorBasicFallout
   name: Каменный пол (голубой, плитка, средний)
-  suffix: Brick floor, KMIN
+  suffix: ST, Mapping, KMIN
   description: Самый плиточный пол из существующих.
   components:
     - type: Sprite
@@ -1894,7 +1894,7 @@
 - type: entity
   id: SteelFloorBasicFallout
   name: База стального пола
-  suffix: Steel floor, KMIN
+  suffix: ST, Mapping, KMIN
   description: Самый стальной пол из существующих.
   abstract: true
   placement:
@@ -1949,7 +1949,7 @@
   id: SteelGrateFloorFallout
   parent: SteelFloorBasicFallout
   name: Стальной пол (решетчатый, плитка)
-  suffix: Steel floor, KMIN
+  suffix: ST, Mapping, KMIN
   description: Самый стальной пол из существующих.
   components:
     - type: Sprite
@@ -1981,7 +1981,7 @@
   id: SteelIndustrialFloorFallout
   parent: SteelFloorBasicFallout
   name: Стальной пол (ребристый, полный)
-  suffix: Steel floor, KMIN
+  suffix: ST, Mapping, KMIN
   description: Самый стальной пол из существующих.
   components:
     - type: Sprite
@@ -2013,7 +2013,7 @@
   id: SteelSolidFloorFallout
   parent: SteelFloorBasicFallout
   name: Стальной пол (решетчатый, полный)
-  suffix: Steel floor, KMIN
+  suffix: ST, Mapping, KMIN
   description: Самый стальной пол из существующих.
   components:
     - type: Sprite
@@ -2037,7 +2037,7 @@
   id: SteelTileFloorFallout
   parent: SteelFloorBasicFallout
   name: Стальной пол (плиточный)
-  suffix: Steel floor, KMIN
+  suffix: ST, Mapping, KMIN
   description: Самый стальной пол из существующих.
   components:
     - type: Sprite

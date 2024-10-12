@@ -3,7 +3,7 @@
   id: StalkerFenceMetalStraightPerimetr
   name: Колючая проволока Периметра
   description: Материал, который используется для ограждения и защиты территории от несанкционированного проникновения. Эту колючку можно перекусить болторезом.
-  suffix: Stalker, traight
+  suffix: ST, Mapping, traight
   components:
   - type: Craftable
 
@@ -12,6 +12,6 @@
   id: StalkerFenceMetalBrokenPerimetr
   name: Колючая проволока
   description: Материал, который используется для ограждения и защиты территории от несанкционированного проникновения. Эту часть перекусили болторезом, её можно восстановить.
-  suffix: Stalker
+  suffix: ST, Mapping
   components:
   - type: Craftable

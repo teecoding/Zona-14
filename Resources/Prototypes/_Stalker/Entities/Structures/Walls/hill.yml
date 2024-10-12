@@ -3,7 +3,7 @@
   id: HolmIndestructible
   name: холм
   description: Небольшая возвышенность, в плане округлой или овальной формы, с пологими склонами и слабо выраженным подножием.
-  suffix: Stalker, indestructible
+  suffix: ST, Mapping, indestructible
   components:
     - type: Tag
       tags:

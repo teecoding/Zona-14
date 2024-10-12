@@ -1,6 +1,7 @@
 
 - type: entity
   id: CatwalkRusty
+  suffix: ST, Mapping
   name: ржавый мостик
   placement:
     mode: SnapgridCenter
@@ -31,6 +32,7 @@
 
 - type: entity
   id: CatwalkSteel
+  suffix: ST, Mapping
   name: стальной мостик
   placement:
     mode: SnapgridCenter
@@ -58,6 +60,7 @@
 
 - type: entity
   id: CatwalkOld
+  suffix: ST, Mapping
   name: старый мостик
   placement:
     mode: SnapgridCenter

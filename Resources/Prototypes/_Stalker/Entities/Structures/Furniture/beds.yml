@@ -62,7 +62,7 @@
 - type: entity
   name: bed
   id: STOldBed
-  suffix: ST
+  suffix: ST, Mapping
   parent: Bed
   description: This is used to lie in, sleep in or strap on. Resting here provides extremely slow healing.
   components:
@@ -82,7 +82,7 @@
 - type: entity
   parent: STOldBed
   id: STOldMedicalBed
-  suffix: ST
+  suffix: ST, Mapping
   name: medical bed
   description: A hospital bed for patients to recover in. Resting here provides fairly slow healing.
   components:
@@ -99,7 +99,7 @@
 - type: entity
   parent: STOldBed
   id: STOldMattress
-  suffix: ST
+  suffix: ST, Mapping
   name: mattress
   description: Better sleep in that then on the floor i guess.
   components:

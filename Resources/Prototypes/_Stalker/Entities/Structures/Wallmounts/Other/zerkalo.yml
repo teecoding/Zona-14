@@ -1,5 +1,6 @@
 ﻿- type: entity
   id: Zerkalo
+  suffix: ST, Mapping
   name: Зеркало
   description: Вы видите отражение себя, а вы стильный сталкер...
   components:

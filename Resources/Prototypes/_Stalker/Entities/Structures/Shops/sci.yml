@@ -4,7 +4,7 @@
   id: StalkerShopSci
   name: Торгомат, учёные
   description: Теперь ещё и покупает!
-  suffix: Stalker, учёные
+  suffix: ST, Mapping, учёные
   components:
     - type: Sprite
       drawdepth: Objects

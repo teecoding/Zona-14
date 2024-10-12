@@ -4,7 +4,7 @@
   id: StalkerShopDolg
   name: Торгомат, Долг
   description: Как торговец туда поместился?
-  suffix: Stalker, Долг
+  suffix: ST, Mapping, Долг
   components:
     - type: Sprite
       drawdepth: Objects
@@ -22,7 +22,7 @@
   id: StalkerDollarShopDolg
   name: Торгомат, Долг
   description: Как торговец туда поместился?
-  suffix: Stalker, Долг Т4
+  suffix: ST, Mapping, Долг Т4
   components:
     - type: Sprite
       drawdepth: Objects

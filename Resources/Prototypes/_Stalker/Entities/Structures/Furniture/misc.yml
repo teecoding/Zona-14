@@ -2,7 +2,7 @@
   id: Pit
   parent: BaseStructure
   name: Колодец
-  suffix: Stalker
+  suffix: ST, Mapping
   description: Глубокая шахта опускающаяся на многие метры вниз, до самых грунтовых вод.
   components:
   - type: Sprite
@@ -36,7 +36,7 @@
   id: MoonshineStill
   parent: BaseStructure
   name: Самогонный аппарат
-  suffix: Stalker
+  suffix: ST, Mapping
   description: Большое устройство, предназначенное для фильтрации спирта и преобразования его в самогон.
   components:
   - type: Sprite

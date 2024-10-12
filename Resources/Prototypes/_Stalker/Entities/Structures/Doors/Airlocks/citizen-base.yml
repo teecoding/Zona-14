@@ -4,7 +4,7 @@
   name: укрепленная решетчатая дверь
   parent: MetalGrateDoorFallout
   description: Крепкая решётчатая дверь с надёжным замком.
-  suffix: Stalker, Мэр
+  suffix: ST, mapping, Мэр
   components:
   - type: AccessReader
     access: [["MayorCity"]]
@@ -14,7 +14,7 @@
   name: стальная дверь
   parent: MetalDoorFallout
   description: Крепкая стальная дверь с надёжным замком.
-  suffix: Stalker, Мэр
+  suffix: ST, mapping, Мэр
   components:
   - type: AccessReader
     access: [["MayorCity"]]
@@ -24,7 +24,7 @@
   name: стальная дверь
   parent: MetalWindowDoorFallout
   description: Крепкая стальная дверь, с окном и надёжным замком.
-  suffix: Stalker, Мэр
+  suffix: ST, mapping, Мэр
   components:
   - type: AccessReader
     access: [["MayorCity"]]
@@ -35,7 +35,7 @@
   name: укрепленная решетчатая дверь
   parent: MetalGrateDoorFallout
   description: Крепкая решётчатая дверь с надёжным замком.
-  suffix: Stalker, Прокурор
+  suffix: ST, mapping, Прокурор
   components:
   - type: AccessReader
     access: [["Prokuror"]]
@@ -45,7 +45,7 @@
   name: стальная дверь
   parent: MetalDoorFallout
   description: Крепкая стальная дверь с надёжным замком.
-  suffix: Stalker, Прокурор
+  suffix: ST, mapping, Прокурор
   components:
   - type: AccessReader
     access: [["Prokuror"]]
@@ -55,7 +55,7 @@
   name: стальная дверь
   parent: MetalWindowDoorFallout
   description: Крепкая стальная дверь, с окном и надёжным замком.
-  suffix: Stalker, Прокурор
+  suffix: ST, mapping, Прокурор
   components:
   - type: AccessReader
     access: [["Prokuror"]]
@@ -66,7 +66,7 @@
   name: укрепленная решетчатая дверь
   parent: MetalGrateDoorFallout
   description: Крепкая решётчатая дверь с надёжным замком.
-  suffix: Stalker, Судья
+  suffix: ST, mapping, Судья
   components:
   - type: AccessReader
     access: [["Magistrate"]]
@@ -76,7 +76,7 @@
   name: стальная дверь
   parent: MetalDoorFallout
   description: Крепкая стальная дверь с надёжным замком.
-  suffix: Stalker, Судья
+  suffix: ST, mapping, Судья
   components:
   - type: AccessReader
     access: [["Magistrate"]]
@@ -86,7 +86,7 @@
   name: стальная дверь
   parent: MetalWindowDoorFallout
   description: Крепкая стальная дверь, с окном и надёжным замком.
-  suffix: Stalker, Судья
+  suffix: ST, mapping, Судья
   components:
   - type: AccessReader
     access: [["Magistrate"]]
@@ -97,7 +97,7 @@
   name: укрепленная решетчатая дверь
   parent: MetalGrateDoorFallout
   description: Крепкая решётчатая дверь с надёжным замком.
-  suffix: Stalker, Священик
+  suffix: ST, mapping, Священик
   components:
   - type: AccessReader
     access: [["Priest"]]
@@ -107,7 +107,7 @@
   name: стальная дверь
   parent: MetalDoorFallout
   description: Крепкая стальная дверь с надёжным замком.
-  suffix: Stalker, Священик
+  suffix: ST, mapping, Священик
   components:
   - type: AccessReader
     access: [["Priest"]]
@@ -117,7 +117,7 @@
   name: стальная дверь
   parent: MetalWindowDoorFallout
   description: Крепкая стальная дверь, с окном и надёжным замком.
-  suffix: Stalker, Священик
+  suffix: ST, mapping, Священик
   components:
   - type: AccessReader
     access: [["Priest"]]
@@ -128,7 +128,7 @@
   name: укрепленная решетчатая дверь
   parent: MetalGrateDoorFallout
   description: Крепкая решётчатая дверь с надёжным замком.
-  suffix: Stalker, Бармен
+  suffix: ST, mapping, Бармен
   components:
   - type: AccessReader
     access: [["Barthender"]]
@@ -138,7 +138,7 @@
   name: стальная дверь
   parent: MetalDoorFallout
   description: Крепкая стальная дверь с надёжным замком.
-  suffix: Stalker, Бармен
+  suffix: ST, mapping, Бармен
   components:
   - type: AccessReader
     access: [["Barthender"]]
@@ -148,7 +148,7 @@
   name: стальная дверь
   parent: MetalWindowDoorFallout
   description: Крепкая стальная дверь, с окном и надёжным замком.
-  suffix: Stalker, Бармен
+  suffix: ST, mapping, Бармен
   components:
   - type: AccessReader
     access: [["Barthender"]]
@@ -159,7 +159,7 @@
   name: укрепленная решетчатая дверь
   parent: MetalGrateDoorFallout
   description: Крепкая решётчатая дверь с надёжным замком.
-  suffix: Stalker, Врач
+  suffix: ST, mapping, Врач
   components:
   - type: AccessReader
     access: [["Doctor"]]
@@ -169,7 +169,7 @@
   name: стальная дверь
   parent: MetalDoorFallout
   description: Крепкая стальная дверь с надёжным замком.
-  suffix: Stalker, Врач
+  suffix: ST, mapping, Врач
   components:
   - type: AccessReader
     access: [["Doctor"]]
@@ -179,7 +179,7 @@
   name: стальная дверь
   parent: MetalWindowDoorFallout
   description: Крепкая стальная дверь, с окном и надёжным замком.
-  suffix: Stalker, Врач
+  suffix: ST, mapping, Врач
   components:
   - type: AccessReader
     access: [["Doctor"]]
@@ -190,7 +190,7 @@
   name: укрепленная решетчатая дверь
   parent: MetalGrateDoorFallout
   description: Крепкая решётчатая дверь с надёжным замком.
-  suffix: Stalker, Главный врач
+  suffix: ST, mapping, Главный врач
   components:
   - type: AccessReader
     access: [["HeadDoctor"]]
@@ -200,7 +200,7 @@
   name: стальная дверь
   parent: MetalDoorFallout
   description: Крепкая стальная дверь с надёжным замком.
-  suffix: Stalker, Главный врач
+  suffix: ST, mapping, Главный врач
   components:
   - type: AccessReader
     access: [["HeadDoctor"]]
@@ -210,7 +210,7 @@
   name: стальная дверь
   parent: MetalWindowDoorFallout
   description: Крепкая стальная дверь, с окном и надёжным замком.
-  suffix: Stalker, Главный врач
+  suffix: ST, mapping, Главный врач
   components:
   - type: AccessReader
     access: [["HeadDoctor"]]

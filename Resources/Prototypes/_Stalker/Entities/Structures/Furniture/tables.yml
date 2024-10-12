@@ -3,7 +3,7 @@
   parent: TableBase
   name: старый деревянный стол
   description: Некогда этот стол был гордостью, но сейчас предмет, который занимает много места.
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: SpriteFade
   - type: Sprite
@@ -34,7 +34,7 @@
   id: OldBlackTable
   parent: OldWoodTable
   name: старый чёрный стол
-  suffix: Stalker
+  suffix: ST, Mapping
   components:
   - type: SpriteFade
   - type: Sprite
@@ -46,7 +46,7 @@
 - type: entity
   id: OldWoodTable2
   parent: OldWoodTable
-  suffix: Stalker
+  suffix: ST, Mapping
   components:
   - type: SpriteFade
   - type: Sprite
@@ -59,7 +59,7 @@
   id: OldStoneTable
   parent: OldWoodTable
   name: старый стальной стол
-  suffix: Stalker
+  suffix: ST, Mapping
   components:
   - type: SpriteFade
   - type: Sprite
@@ -74,7 +74,7 @@
 - type: entity
   id: OldWoodTable3
   parent: OldWoodTable
-  suffix: Stalker
+  suffix: ST, Mapping
   components:
   - type: SpriteFade
   - type: Sprite
@@ -86,7 +86,7 @@
 - type: entity
   id: OldWoodTable4
   parent: OldWoodTable
-  suffix: Stalker
+  suffix: ST, Mapping
   components:
   - type: SpriteFade
   - type: Sprite
@@ -98,7 +98,7 @@
 - type: entity
   id: OldWoodTable5
   parent: OldWoodTable
-  suffix: Stalker
+  suffix: ST, Mapping
   components:
   - type: SpriteFade
   - type: Sprite
@@ -110,7 +110,7 @@
 - type: entity
   id: OldWoodTable6
   parent: OldWoodTable
-  suffix: Stalker
+  suffix: ST, Mapping
   components:
   - type: SpriteFade
   - type: Sprite
@@ -125,7 +125,7 @@
   id: BiliardTableStalker
   parent: BaseStructure
   name: бильярдный стол
-  suffix: Stalker
+  suffix: ST, Mapping
   description: Состоит из рамы, столешницы, основания игровой поверхности, опор, бортов и луз. Предназначен для игры в бильярд.
   components:
   - type: Sprite
@@ -150,7 +150,7 @@
   id: TableOneStalker
   parent: BaseStructure
   name: большой стол
-  suffix: Stalker
+  suffix: ST, Mapping
   description: Некогда этот стол был гордостью, но сейчас предмет, который занимает много места.
   components:
   - type: Sprite

@@ -90,7 +90,7 @@
   description: Хозяйственный металлический шкафчик неплохо сохранился для своих лет, а также достаточно вместителен.
   id: LockerBig
   parent: ClosetStalkerBase
-  suffix: Stalker
+  suffix: ST, Mapping
   components:
   - type: Appearance
   - type: EntityStorageVisuals
@@ -103,7 +103,7 @@
   description: Хозяйственный металлический шкафчик неплохо сохранился для своих лет, а также достаточно вместителен.
   id: LockerBigOne
   parent: ClosetStalkerBase
-  suffix: Stalker
+  suffix: ST, Mapping
   components:
   - type: Appearance
   - type: EntityStorageVisuals

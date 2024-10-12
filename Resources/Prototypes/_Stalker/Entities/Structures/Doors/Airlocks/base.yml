@@ -3,7 +3,7 @@
   name: гермодверь Правительства
   parent: HermoDverTypeOne
   description: Защитно-герметические и герметические устройства, которые используются для охраны защитных сооружений гражданской обороны от вредных воздействий различного характера.
-  suffix: Stalker, Офицалы
+  suffix: ST, mapping, Офицалы
   components:
   - type: AccessReader
     access: [["Military"]]
@@ -13,7 +13,7 @@
   name: стальная дверь Правительства
   parent: MetalAltDoorFallout
   description: Крепкая стальная дверь с надёжным замком.
-  suffix: Stalker, Офицалы
+  suffix: ST, mapping, Офицалы
   components:
     - type: AccessReader
       access: [["Military"]]
@@ -23,7 +23,7 @@
   name: стальная дверь ОКСОП
   parent: MetalAltDoorFallout
   description: Крепкая стальная дверь с надёжным замком.
-  suffix: Stalker, Военные
+  suffix: ST, mapping, Военные
   components:
     - type: AccessReader
       access: [["MilitaryBarraks"]]
@@ -33,7 +33,7 @@
   name: стальная дверь Военсталов
   parent: MetalAltDoorFallout
   description: Крепкая стальная дверь с надёжным замком.
-  suffix: Stalker, Военсталы
+  suffix: ST, mapping, Военсталы
   components:
     - type: AccessReader
       access: [["MilitaryStalker"]]
@@ -43,7 +43,7 @@
   name: стальная дверь ОКСОП
   parent: MetalAltDoorFallout
   description: Крепкая стальная дверь с надёжным замком.
-  suffix: Stalker, Военные, Офицер
+  suffix: ST, mapping, Военные, Офицер
   components:
     - type: AccessReader
       access: [["MilitaryOfficer"]]
@@ -53,7 +53,7 @@
   name: стальная дверь Миротворцев
   parent: MetalAltDoorFallout
   description: Крепкая стальная дверь с надёжным замком.
-  suffix: Stalker, ООН
+  suffix: ST, mapping, ООН
   components:
     - type: AccessReader
       access: [["UN"]]
@@ -63,7 +63,7 @@
   name: стальная дверь бандитов
   parent: MetalAltDoorFallout
   description: Крепкая стальная дверь с надёжным замком.
-  suffix: Stalker, Военные
+  suffix: ST, mapping, Военные
   components:
   - type: AccessReader
     access: [["Bandit"]]
@@ -73,7 +73,7 @@
   name: дверь КПЗ военных
   parent: MetalGrateDoorFallout
   description: Крепкая решётчатая дверь с надёжным замком.
-  suffix: Stalker, Военные
+  suffix: ST, mapping, Военные
   components:
     - type: AccessReader
       access: [["MilitaryBarraks"]]
@@ -83,7 +83,7 @@
   name: стальная дверь НИИ ЧАЗ
   parent: MetalAltDoorFallout
   description: Крепкая стальная дверь с надёжным замком.
-  suffix: Stalker, Учёные
+  suffix: ST, mapping, Учёные
   components:
     - type: AccessReader
       access: [["SciBase"]]
@@ -93,7 +93,7 @@
   name: ворота
   parent: StalkerGate
   description: Высокие стальные ворота, через которые вряд-ли получится перемехануть.
-  suffix: Stalker, Офицалы, Левая
+  suffix: ST, mapping, Офицалы, Левая
   components:
     - type: AccessReader
       access: [["Military"]]
@@ -103,7 +103,7 @@
   name: ворота
   parent: StalkerGater
   description: Высокие стальные ворота, через которые вряд-ли получится перемехануть.
-  suffix: Stalker, Офицалы, Правая
+  suffix: ST, mapping, Офицалы, Правая
   components:
     - type: AccessReader
       access: [["Military"]]
@@ -113,7 +113,7 @@
   name: гермодверь
   parent: HermoDverTypeOne
   description: Защитно-герметические и герметические устройства, которые используются для охраны защитных сооружений гражданской обороны от вредных воздействий различного характера.
-  suffix: Stalker, Бандиты
+  suffix: ST, mapping, Бандиты
   components:
   - type: AccessReader
     access: [["Bandit"]]
@@ -123,7 +123,7 @@
   name: гермодверь
   parent: HermoDverTypeOne
   description: Защитно-герметические и герметические устройства, которые используются для охраны защитных сооружений гражданской обороны от вредных воздействий различного характера.
-  suffix: Stalker, Бандиты
+  suffix: ST, mapping, Бандиты
   components:
   - type: AccessReader
     access: [["Journalist"]]
@@ -133,7 +133,7 @@
   name: гермодверь
   parent: HermoDverTypeOne
   description: Защитно-герметические и герметические устройства, которые используются для охраны защитных сооружений гражданской обороны от вредных воздействий различного характера.
-  suffix: Stalker, Долг
+  suffix: ST, mapping, Долг
   components:
   - type: AccessReader
     access: [["Dolg"]]
@@ -143,7 +143,7 @@
   name: стальная дверь
   parent: MetalAltDoorFallout
   description: Крепкая стальная дверь с надёжным замком.
-  suffix: Stalker, Долг
+  suffix: ST, mapping, Долг
   components:
     - type: AccessReader
       access: [["Dolg"]]
@@ -153,7 +153,7 @@
   name: гермодверь
   parent: HermoDverTypeOne
   description: Защитно-герметические и герметические устройства, которые используются для охраны защитных сооружений гражданской обороны от вредных воздействий различного характера.
-  suffix: Stalker, Свобода
+  suffix: ST, mapping, Свобода
   components:
   - type: AccessReader
     access: [["Freedom"]]
@@ -163,7 +163,7 @@
   name: стальная дверь
   parent: MetalAltDoorFallout
   description: Крепкая стальная дверь с надёжным замком.
-  suffix: Stalker, Свобода
+  suffix: ST, mapping, Свобода
   components:
     - type: AccessReader
       access: [["Freedom"]]
@@ -173,7 +173,7 @@
   name: гермодверь
   parent: HermoDverTypeOne
   description: Защитно-герметические и герметические устройства, которые используются для охраны защитных сооружений гражданской обороны от вредных воздействий различного характера.
-  suffix: Stalker, ЧН
+  suffix: ST, mapping, ЧН
   components:
     - type: AccessReader
       access: [["CN"]]
@@ -183,7 +183,7 @@
   name: гермодверь
   parent: HermoDverTypeOne
   description: Защитно-герметические и герметические устройства, которые используются для охраны защитных сооружений гражданской обороны от вредных воздействий различного характера.
-  suffix: Stalker, Серафимы
+  suffix: ST, mapping, Серафимы
   components:
     - type: AccessReader
       access: [["Seraphims"]]
@@ -193,7 +193,7 @@
   name: стальная дверь
   parent: MetalAltDoorFallout
   description: Крепкая стальная дверь с надёжным замком.
-  suffix: Stalker, Ренегаты
+  suffix: ST, mapping, Ренегаты
   components:
     - type: AccessReader
       access: [["Renegat"]]
@@ -203,7 +203,7 @@
   name: стальная дверь
   parent: MetalAltDoorFallout
   description: Крепкая стальная дверь с надёжным замком.
-  suffix: Stalker, Отступники
+  suffix: ST, mapping, Отступники
   components:
     - type: AccessReader
       access: [["Deserter"]]
@@ -213,7 +213,7 @@
   name: гермодверь
   parent: HermoDverTypeOne
   description: Защитно-герметические и герметические устройства, которые используются для охраны защитных сооружений гражданской обороны от вредных воздействий различного характера.
-  suffix: Stalker, Наёмники
+  suffix: ST, mapping, Наёмники
   components:
   - type: AccessReader
     access: [["Merc"]]
@@ -223,7 +223,7 @@
   name: гермодверь
   parent: HermoDverTypeTwo
   description: Защитно-герметические и герметические устройства, которые используются для охраны защитных сооружений гражданской обороны от вредных воздействий различного характера.
-  suffix: Stalker, Наёмники
+  suffix: ST, mapping, Наёмники
   components:
   - type: AccessReader
     access: [["Merc"]]
@@ -233,7 +233,7 @@
   name: стальная дверь
   parent: MetalDoorFallout
   description: Крепкая стальная дверь с надёжным замком.
-  suffix: Stalker, Наёмники
+  suffix: ST, mapping, Наёмники
   components:
   - type: AccessReader
     access: [["Merc"]]
@@ -243,7 +243,7 @@
   name: стальная дверь
   parent: MetalAltDoorFallout
   description: Крепкая стальная дверь с надёжным замком.
-  suffix: Stalker, Наёмники
+  suffix: ST, mapping, Наёмники
   components:
   - type: AccessReader
     access: [["Merc"]]
@@ -253,7 +253,7 @@
   name: стальная дверь
   parent: MetalWindowDoorFallout
   description: Крепкая стальная дверь, с окном и надёжным замком.
-  suffix: Stalker, Наёмники
+  suffix: ST, mapping, Наёмники
   components:
   - type: AccessReader
     access: [["Merc"]]
@@ -263,7 +263,7 @@
   name: укрепленная решетчатая дверь
   parent: MetalGrateDoorFallout
   description: Крепкая решётчатая дверь с надёжным замком.
-  suffix: Stalker, Наёмники
+  suffix: ST, mapping, Наёмники
   components:
   - type: AccessReader
     access: [["Merc"]]
@@ -273,7 +273,7 @@
   name: решетчатая дверь
   parent: MetalBarDoorFallout
   description: Решётчатая дверь с надёжным замком.
-  suffix: Stalker, Наёмники
+  suffix: ST, mapping, Наёмники
   components:
   - type: AccessReader
     access: [["Merc"]]
@@ -283,7 +283,7 @@
   name: стальная дверь
   parent: MetalDoorFallout
   description: Крепкая стальная дверь с надёжным замком.
-  suffix: Stalker, СБУ
+  suffix: ST, mapping, СБУ
   components:
   - type: AccessReader
     access: [["MilitaryHead"]]
@@ -293,7 +293,7 @@
   name: стальная дверь
   parent: MetalAltDoorFallout
   description: Крепкая стальная дверь с надёжным замком.
-  suffix: Stalker, СБУ
+  suffix: ST, mapping, СБУ
   components:
   - type: AccessReader
     access: [["MilitaryHead"]]
@@ -303,7 +303,7 @@
   name: стальная дверь
   parent: MetalWindowDoorFallout
   description: Крепкая стальная дверь, с окном и надёжным замком.
-  suffix: Stalker, СБУ
+  suffix: ST, mapping, СБУ
   components:
   - type: AccessReader
     access: [["MilitaryHead"]]
@@ -313,7 +313,7 @@
   name: укрепленная решетчатая дверь
   parent: MetalGrateDoorFallout
   description: Крепкая решётчатая дверь с надёжным замком.
-  suffix: Stalker, СБУ
+  suffix: ST, mapping, СБУ
   components:
   - type: AccessReader
     access: [["MilitaryHead"]]
@@ -323,7 +323,7 @@
   name: гермодверь
   parent: HermoDverTypeOne
   description: Защитно-герметические и герметические устройства, которые используются для охраны защитных сооружений гражданской обороны от вредных воздействий различного характера.
-  suffix: Stalker, Грех
+  suffix: ST, mapping, Грех
   components:
   - type: AccessReader
     access: [["Greh"]]
@@ -333,7 +333,7 @@
   name: гермодверь
   parent: HermoDverTypeTwo
   description: Защитно-герметические и герметические устройства, которые используются для охраны защитных сооружений гражданской обороны от вредных воздействий различного характера.
-  suffix: Stalker, Грех
+  suffix: ST, mapping, Грех
   components:
   - type: AccessReader
     access: [["Greh"]]
@@ -343,7 +343,7 @@
   name: стальная дверь
   parent: MetalDoorFallout
   description: Крепкая стальная дверь с надёжным замком.
-  suffix: Stalker, Грех
+  suffix: ST, mapping, Грех
   components:
   - type: AccessReader
     access: [["Greh"]]
@@ -353,7 +353,7 @@
   name: стальная дверь
   parent: MetalAltDoorFallout
   description: Крепкая стальная дверь с надёжным замком.
-  suffix: Stalker, Грех
+  suffix: ST, mapping, Грех
   components:
   - type: AccessReader
     access: [["Greh"]]
@@ -363,7 +363,7 @@
   name: стальная дверь
   parent: MetalWindowDoorFallout
   description: Крепкая стальная дверь, с окном и надёжным замком.
-  suffix: Stalker, Грех
+  suffix: ST, mapping, Грех
   components:
   - type: AccessReader
     access: [["Greh"]]
@@ -373,7 +373,7 @@
   name: решетчатая дверь
   parent: MetalBarDoorFallout
   description: Решётчатая дверь с надёжным замком.
-  suffix: Stalker, Грех
+  suffix: ST, mapping, Грех
   components:
   - type: AccessReader
     access: [["Greh"]]
@@ -383,7 +383,7 @@
   name: стальная дверь
   parent: MetalDoorFallout
   description: Крепкая стальная дверь с надёжным замком.
-  suffix: Stalker, Журналисты
+  suffix: ST, mapping, Журналисты
   components:
   - type: AccessReader
     access: [["Journalist"]]
@@ -394,7 +394,7 @@
   name: гермодверь
   parent: HermoDverTypeOne
   description: Защитно-герметические и герметические устройства, которые используются для охраны защитных сооружений гражданской обороны от вредных воздействий различного характера.
-  suffix: Stalker, Учёные
+  suffix: ST, mapping, Учёные
   components:
   - type: AccessReader
     access: [["SciBase"]]
@@ -404,7 +404,7 @@
   name: гермодверь
   parent: HermoDverTypeTwo
   description: Защитно-герметические и герметические устройства, которые используются для охраны защитных сооружений гражданской обороны от вредных воздействий различного характера.
-  suffix: Stalker, Учёные
+  suffix: ST, mapping, Учёные
   components:
   - type: AccessReader
     access: [["SciBase"]]
@@ -414,7 +414,7 @@
   name: стальная дверь
   parent: MetalDoorFallout
   description: Крепкая стальная дверь с надёжным замком.
-  suffix: Stalker, Учёные
+  suffix: ST, mapping, Учёные
   components:
   - type: AccessReader
     access: [["SciBase"]]
@@ -424,7 +424,7 @@
   name: стальная дверь
   parent: MetalWindowDoorFallout
   description: Крепкая стальная дверь, с окном и надёжным замком.
-  suffix: Stalker, Учёные
+  suffix: ST, mapping, Учёные
   components:
   - type: AccessReader
     access: [["SciBase"]]
@@ -434,7 +434,7 @@
   name: укрепленная решетчатая дверь
   parent: MetalGrateDoorFallout
   description: Крепкая решётчатая дверь с надёжным замком.
-  suffix: Stalker, Учёные
+  suffix: ST, mapping, Учёные
   components:
   - type: AccessReader
     access: [["SciBase"]]
@@ -444,7 +444,7 @@
   name: решетчатая дверь
   parent: MetalBarDoorFallout
   description: Решётчатая дверь с надёжным замком.
-  suffix: Stalker, Учёные
+  suffix: ST, mapping, Учёные
   components:
   - type: AccessReader
     access: [["SciBase"]]
@@ -454,7 +454,7 @@
   name: гермодверь
   parent: HermoDverTypeOne
   description: Защитно-герметические и герметические устройства, которые используются для охраны защитных сооружений гражданской обороны от вредных воздействий различного характера.
-  suffix: Stalker, Учёные, Лидер
+  suffix: ST, mapping, Учёные, Лидер
   components:
   - type: AccessReader
     access: [["SciHead"]]
@@ -464,7 +464,7 @@
   name: красная деревянная дверь
   parent: WoodRedDoorFallout
   description: Деревянная дверь, окрашена в красный цвет. Открывается быстрее обычной двери, с надёжным замком.
-  suffix: Stalker, Учёные, Лидер
+  suffix: ST, mapping, Учёные, Лидер
   components:
   - type: AccessReader
     access: [["SciHead"]]
@@ -474,7 +474,7 @@
   name: красная стальная дверь
   parent: MetalRedDoorFallout
   description: Стальная дверь с надёжным замком. Окрашена в красный цвет.
-  suffix: Stalker, Учёные, Лидер
+  suffix: ST, mapping, Учёные, Лидер
   components:
   - type: AccessReader
     access: [["SciHead"]]
@@ -484,7 +484,7 @@
   name: стальная дверь
   parent: MetalDoorFallout
   description: Крепкая стальная дверь с надёжным замком.
-  suffix: Stalker, Учёные, Лидер
+  suffix: ST, mapping, Учёные, Лидер
   components:
   - type: AccessReader
     access: [["SciHead"]]
@@ -494,7 +494,7 @@
   name: гермодверь
   parent: HermoDverTypeOne
   description: Защитно-герметические и герметические устройства, которые используются для охраны защитных сооружений гражданской обороны от вредных воздействий различного характера.
-  suffix: Stalker, Циркачи
+  suffix: ST, mapping, Циркачи
   components:
   - type: AccessReader
     access: [["Circus"]]
@@ -504,7 +504,7 @@
   name: гермодверь
   parent: HermoDverTypeTwo
   description: Защитно-герметические и герметические устройства, которые используются для охраны защитных сооружений гражданской обороны от вредных воздействий различного характера.
-  suffix: Stalker, Циркачи
+  suffix: ST, mapping, Циркачи
   components:
   - type: AccessReader
     access: [["Circus"]]
@@ -514,7 +514,7 @@
   name: стальная дверь
   parent: MetalDoorFallout
   description: Крепкая стальная дверь с надёжным замком.
-  suffix: Stalker, Циркачи
+  suffix: ST, mapping, Циркачи
   components:
   - type: AccessReader
     access: [["Circus"]]
@@ -524,7 +524,7 @@
   name: стальная дверь
   parent: MetalWindowDoorFallout
   description: Крепкая стальная дверь, с окном и надёжным замком.
-  suffix: Stalker, Циркачи
+  suffix: ST, mapping, Циркачи
   components:
   - type: AccessReader
     access: [["Circus"]]
@@ -534,7 +534,7 @@
   name: укрепленная решетчатая дверь
   parent: MetalGrateDoorFallout
   description: Крепкая решётчатая дверь с надёжным замком.
-  suffix: Stalker, Циркачи
+  suffix: ST, mapping, Циркачи
   components:
   - type: AccessReader
     access: [["Circus"]]
@@ -544,7 +544,7 @@
   name: решетчатая дверь
   parent: MetalBarDoorFallout
   description: Решётчатая дверь с надёжным замком.
-  suffix: Stalker, Циркачи
+  suffix: ST, mapping, Циркачи
   components:
   - type: AccessReader
     access: [["Circus"]]
@@ -554,7 +554,7 @@
   name: военные ворота
   parent: BaseMaterialDoor
   description: Проезд в стене или ограде, запираемый створами.
-  suffix: Stalker, Военные
+  suffix: ST, mapping, Военные
   components:
   - type: Occluder
     boundingBox: "-1.5,-0.5,1.5,0.5"
@@ -579,7 +579,7 @@
   name: стальная дверь
   parent: MetalDoorFallout
   description: Крепкая стальная дверь с надёжным замком.
-  suffix: Stalker, Жабы
+  suffix: ST, mapping, Жабы
   components:
   - type: AccessReader
     access: [["Jaba"]]
@@ -589,7 +589,7 @@
   name: стальная дверь
   parent: MetalWindowDoorFallout
   description: Крепкая стальная дверь, с окном и надёжным замком.
-  suffix: Stalker, Жабы
+  suffix: ST, mapping, Жабы
   components:
   - type: AccessReader
     access: [["Jaba"]]
@@ -599,7 +599,7 @@
   name: стальная дверь
   parent: MetalWindowDoorFallout
   description: Крепкая стальная дверь, с окном и надёжным замком.
-  suffix: Stalker, Нейтралы
+  suffix: ST, mapping, Нейтралы
   components:
   - type: AccessReader
     access: [["Neutral"]]
@@ -609,7 +609,7 @@
   name: решетчатая дверь
   parent: MetalBarDoorFallout
   description: Решётчатая дверь с надёжным замком.
-  suffix: Stalker, Нейтралы
+  suffix: ST, mapping, Нейтралы
   components:
   - type: AccessReader
     access: [["Neutral"]]
@@ -619,7 +619,7 @@
   name: гермодверь
   parent: HermoDverTypeTwo
   description: Защитно-герметические и герметические устройства, которые используются для охраны защитных сооружений гражданской обороны от вредных воздействий различного характера.
-  suffix: Stalker, Нейтралы
+  suffix: ST, mapping, Нейтралы
   components:
   - type: AccessReader
     access: [["Neutral"]]
@@ -629,7 +629,7 @@
   name: стальная дверь нейтралов
   parent: MetalAltDoorFallout
   description: Крепкая стальная дверь с надёжным замком.
-  suffix: Stalker, Нейтралы
+  suffix: ST, mapping, Нейтралы
   components:
   - type: AccessReader
     access: [["Neutral"]]
@@ -639,7 +639,7 @@
   name: стальная дверь полиции
   parent: MetalAltDoorFallout
   description: Крепкая стальная дверь с надёжным замком.
-  suffix: Stalker, Полиция
+  suffix: ST, mapping, Полиция
   components:
     - type: AccessReader
       access: [["PoliceOfficer"]]
@@ -649,7 +649,7 @@
   name: стальная дверь
   parent: MetalWindowDoorFallout
   description: Крепкая стальная дверь, с окном и надёжным замком.
-  suffix: Stalker, Поиск
+  suffix: ST, mapping, Поиск
   components:
   - type: AccessReader
     access: [["Poisk"]]
@@ -659,7 +659,7 @@
   name: решетчатая дверь
   parent: MetalBarDoorFallout
   description: Решётчатая дверь с надёжным замком.
-  suffix: Stalker, Поиск
+  suffix: ST, mapping, Поиск
   components:
   - type: AccessReader
     access: [["Poisk"]]
@@ -669,7 +669,7 @@
   name: гермодверь
   parent: HermoDverTypeTwo
   description: Защитно-герметические и герметические устройства, которые используются для охраны защитных сооружений гражданской обороны от вредных воздействий различного характера.
-  suffix: Stalker, Поиск
+  suffix: ST, mapping, Поиск
   components:
   - type: AccessReader
     access: [["Poisk"]]
@@ -679,7 +679,7 @@
   name: стальная дверь
   parent: MetalAltDoorFallout
   description: Крепкая стальная дверь с надёжным замком.
-  suffix: Stalker, Поиск
+  suffix: ST, mapping, Поиск
   components:
   - type: AccessReader
     access: [["Poisk"]]
@@ -689,7 +689,7 @@
   name: стальная дверь
   parent: MetalWindowDoorFallout
   description: Крепкая стальная дверь, с окном и надёжным замком.
-  suffix: Stalker, Проект
+  suffix: ST, mapping, Проект
   components:
   - type: AccessReader
     access: [["Project"]]
@@ -699,7 +699,7 @@
   name: решетчатая дверь
   parent: MetalBarDoorFallout
   description: Решётчатая дверь с надёжным замком.
-  suffix: Stalker, Проект
+  suffix: ST, mapping, Проект
   components:
   - type: AccessReader
     access: [["Project"]]
@@ -709,7 +709,7 @@
   name: гермодверь
   parent: HermoDverTypeTwo
   description: Защитно-герметические и герметические устройства, которые используются для охраны защитных сооружений гражданской обороны от вредных воздействий различного характера.
-  suffix: Stalker, Проект
+  suffix: ST, mapping, Проект
   components:
   - type: AccessReader
     access: [["Project"]]
@@ -719,7 +719,7 @@
   name: стальная дверь
   parent: MetalAltDoorFallout
   description: Крепкая стальная дверь с надёжным замком.
-  suffix: Stalker, Проект
+  suffix: ST, mapping, Проект
   components:
   - type: AccessReader
     access: [["Project"]]

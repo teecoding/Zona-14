@@ -3,7 +3,7 @@
   parent: Bookshelf
   name: "старый книжный шкаф"
   description: Старый шкаф, предназначенный для хранения книг. К сожалению, время берёт своё. Ничто не вечно.
-  suffix: Stalker
+  suffix: ST, Mapping
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Furniture/bookshelf.rsi

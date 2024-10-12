@@ -4,7 +4,7 @@
   description: Старый шкаф, предназначенный для хранения книг. К сожалению, время берёт своё. Ничто не вечно.
   parent: Bookshelf
   abstract: true
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Furniture/bookshelf_s.rsi

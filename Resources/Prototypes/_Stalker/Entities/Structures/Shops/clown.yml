@@ -4,7 +4,7 @@
   id: StalkerShopClown
   name: Торгомат, Циркачи
   description: Хахахахахаха хотя нет не смешно.
-  suffix: Stalker, Циркачи
+  suffix: ST, Mapping, Циркачи
   components:
     - type: Sprite
       drawdepth: Objects

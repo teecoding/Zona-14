@@ -4,7 +4,7 @@
   id: StalkerShopNeutrals
   name: Торгомат, Нейтралы
   description: Как торговец туда поместился?
-  suffix: Stalker, Нейтралы
+  suffix: ST, Mapping, Нейтралы
   components:
   - type: Sprite
     drawdepth: Objects
@@ -22,7 +22,7 @@
   id: StalkerShopNeutralsDollar
   name: Торгомат, Нейтралы
   description: Как торговец туда поместился?
-  suffix: Stalker, Нейтралы T4
+  suffix: ST, Mapping, Нейтралы T4
   components:
   - type: Sprite
     drawdepth: Objects

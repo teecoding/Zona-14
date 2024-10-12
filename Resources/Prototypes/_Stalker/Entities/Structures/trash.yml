@@ -3,7 +3,7 @@
   parent: BaseStructure
   name: куча мусора
   description: Куча старого, ржавого металлолома. В ней можно что-то найти, если порыться с металлоискателем.
-  suffix: Stalker
+  suffix: ST, Mapping
   placement:
     mode: AlignTileAny
   components:
@@ -35,7 +35,7 @@
   parent: BaseStructure
   name: куча мусора
   description: Куча старого, ржавого металлолома. В ней можно что-то найти, если порыться с металлоискателем.
-  suffix: Stalker
+  suffix: ST, Mapping
   placement:
     mode: AlignTileAny
   components:

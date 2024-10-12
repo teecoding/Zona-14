@@ -2,7 +2,7 @@
   id: BathroomStalker
   parent: BaseStructure
   name: ванна
-  suffix: Stalker
+  suffix: ST, Mapping
   description: Резервуар для обмывания и погружения разных частей тела в воду.
   components:
   - type: Sprite

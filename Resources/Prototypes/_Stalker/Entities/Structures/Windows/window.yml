@@ -1,6 +1,6 @@
 - type: entity
   id: STWindow
-  suffix: ST
+  suffix: ST, Mapping
   parent: BaseStructure
   name: window
   description: Don't smudge up the glass down there.

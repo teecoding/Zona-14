@@ -1,6 +1,7 @@
 - type: entity
   id: STAltarPilgrim
   parent: AltarConvertFestival
+  suffix: ST, Mapping
   name: Алтарь Паломников
   components:
   - type: Sprite

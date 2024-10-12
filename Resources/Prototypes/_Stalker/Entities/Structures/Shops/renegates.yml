@@ -4,7 +4,7 @@
   id: StalkerShopRenegat
   name: Торгомат, Ренегаты
   description: Как торговец туда поместился?
-  suffix: Stalker, Ренегаты
+  suffix: ST, Mapping, Ренегаты
   components:
     - type: Sprite
       drawdepth: Objects
@@ -22,7 +22,7 @@
   id: StalkerShopRenegatZone
   name: Торгомат, Ренегаты
   description: Как торговец туда поместился?
-  suffix: Stalker, Ренегаты, Zone
+  suffix: ST, Mapping, Ренегаты, Zone
   components:
     - type: Sprite
       drawdepth: Objects

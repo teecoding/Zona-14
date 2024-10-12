@@ -3,7 +3,7 @@
   id: StalkerShopMechanic
   name: Торгомат, механики
   description: Будка коптёра. Как он туда поместился?
-  suffix: Stalker, механики
+  suffix: ST, Mapping, механики
   components:
     - type: Sprite
       drawdepth: Objects

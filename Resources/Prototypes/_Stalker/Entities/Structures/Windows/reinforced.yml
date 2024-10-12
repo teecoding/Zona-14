@@ -1,5 +1,6 @@
 - type: entity
   id: STReinforcedWindow
+  suffix: ST, Mapping
   name: reinforced window
   parent: STWindow
   components:

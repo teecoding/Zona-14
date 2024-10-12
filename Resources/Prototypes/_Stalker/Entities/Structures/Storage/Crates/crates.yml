@@ -2,7 +2,7 @@
   parent: CrateGenericSteel
   id: BlueCrate
   name: синий ящик
-  suffix: Stalker
+  suffix: ST, Mapping
   description: Потрёпанный синий ящик может быть использован для хранилища различных предметов. К сожалению, слишком примечательный, поэтому не стоит в нём оставлять ценное добро.
   components:
   - type: Icon
@@ -14,7 +14,7 @@
   parent: CrateGenericSteel
   id: GreenCrateTearTwo
   name: зелёный ящик
-  suffix: Stalker
+  suffix: ST, Mapping
   description: Потрёпанный зелёный ящик. К сожалению, слишком примечательный, поэтому не стоит в нём оставлять ценное добро.
   components:
   - type: Icon

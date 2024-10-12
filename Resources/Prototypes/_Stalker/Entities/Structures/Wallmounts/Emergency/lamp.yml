@@ -3,7 +3,7 @@
   name: аварийная лампа
   description: На вид старая.
   parent: AlwaysPoweredWallLight
-  suffix: Stalker
+  suffix: ST, Mapping
   components:
   - type: PointLight
     enabled: true

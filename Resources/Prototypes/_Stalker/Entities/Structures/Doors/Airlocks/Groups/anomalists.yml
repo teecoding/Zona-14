@@ -1,7 +1,7 @@
 - type: entity
   parent: HermoDverTypeOne
   id: HermoDverTypeOneAnomalistClosed
-  suffix: Stalker, Anomalists
+  suffix: ST, Mapping, Anomalists
   components:
   - type: AccessReader
     access: [["Anomalist"]]
@@ -9,7 +9,7 @@
 - type: entity
   parent: MetalAltDoorFallout
   id: MetalAltDoorFalloutAnomalistClosed
-  suffix: Stalker, Anomalists
+  suffix: ST, Mapping, Anomalists
   components:
     - type: AccessReader
       access: [["Anomalist"]]
@@ -17,7 +17,7 @@
 - type: entity
   parent: StalkerGate
   id: StalkerGateLeftAnomalistClosed
-  suffix: Stalker, Anomalists, Left
+  suffix: ST, Mapping, Anomalists, Left
   components:
     - type: AccessReader
       access: [["Anomalist"]]
@@ -25,7 +25,7 @@
 - type: entity
   parent: StalkerGater
   id: StalkerGateRightAnomalistClosed
-  suffix: Stalker, Anomalists, Right
+  suffix: ST, Mapping, Anomalists, Right
   components:
     - type: AccessReader
       access: [["Anomalist"]]
@@ -33,7 +33,7 @@
 - type: entity
   parent: HermoDverTypeOne
   id: HermoDverTypeOneAnomalistGuardianClosed
-  suffix: Stalker, Anomalists, Guardian
+  suffix: ST, Mapping, Anomalists, Guardian
   components:
   - type: AccessReader
     access: [["AnomalistGuardian"]]
@@ -41,7 +41,7 @@
 - type: entity
   parent: MetalAltDoorFallout
   id: MetalAltDoorFalloutAnomalistGuardianClosed
-  suffix: Stalker, Anomalists, Guardian
+  suffix: ST, Mapping, Anomalists, Guardian
   components:
     - type: AccessReader
       access: [["AnomalistGuardian"]]
@@ -49,7 +49,7 @@
 - type: entity
   parent: StalkerGate
   id: StalkerGateLeftAnomalistGuardianClosed
-  suffix: Stalker, Anomalists, Guardian, Left
+  suffix: ST, Mapping, Anomalists, Guardian, Left
   components:
     - type: AccessReader
       access: [["AnomalistGuardian"]]
@@ -57,7 +57,7 @@
 - type: entity
   parent: StalkerGater
   id: StalkerGateRightAnomalistGuardianClosed
-  suffix: Stalker, Anomalists, Guardian, Right
+  suffix: ST, Mapping, Anomalists, Guardian, Right
   components:
     - type: AccessReader
       access: [["AnomalistGuardian"]]

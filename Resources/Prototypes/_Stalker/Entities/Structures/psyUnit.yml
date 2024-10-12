@@ -2,7 +2,7 @@
   id: psyUnit
   parent: BaseStructure
   name: компактная пси-установка
-  suffix: Stalker
+  suffix: ST, Mapping
   description: Предмет неизвестного происхождения и предназначения. Известен лишь тот факт, что некоторые образцы во включённом состоянии способны нанести вред нервной системе человека.
   components:
   - type: Sprite
@@ -44,7 +44,7 @@
   id: psyUnitBreakable
   parent: psyUnit
   name: Компактная пси-установка
-  suffix: Stalker, Breakable
+  suffix: ST, Mapping, Breakable
   components:
   - type: Damageable
     damageModifierSet: Metallic

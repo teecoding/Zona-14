@@ -4,7 +4,7 @@
   id: StalkerShopFreedom
   name: Торгомат, Свобода
   description: Как торговец туда поместился?
-  suffix: Stalker, Свобода
+  suffix: ST, Mapping, Свобода
   components:
     - type: Sprite
       drawdepth: Objects
@@ -22,7 +22,7 @@
   id: StalkerDollarShopFreedom
   name: Торгомат, Свобода
   description: Как торговец туда поместился?
-  suffix: Stalker, Свобода T4
+  suffix: ST, Mapping, Свобода T4
   components:
     - type: Sprite
       drawdepth: Objects

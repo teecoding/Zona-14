@@ -51,7 +51,7 @@
 - type: entity
   parent: REWStalkerBase
   id: REWStalker2
-  suffix: Stalker, 2 (ВОС->ЗАП)
+  suffix: ST, Mapping, 2 (ВОС->ЗАП)
   components:
   - type: Sprite
     layers:
@@ -60,7 +60,7 @@
 - type: entity
   parent: REWStalkerBase
   id: REWStalker3
-  suffix: Stalker, 3 (ВОС->ЗАП)
+  suffix: ST, Mapping, 3 (ВОС->ЗАП)
   components:
   - type: Sprite
     layers:
@@ -83,7 +83,7 @@
 - type: entity
   parent: REWStalkerBase
   id: REWStalker4
-  suffix: Stalker, 4 (ВОС->ЗАП)
+  suffix: ST, Mapping, 4 (ВОС->ЗАП)
   components:
   - type: Sprite
     layers:
@@ -106,7 +106,7 @@
 - type: entity
   parent: REWStalkerBase
   id: REWStalker5
-  suffix: Stalker, 5 (ВОС->ЗАП)
+  suffix: ST, Mapping, 5 (ВОС->ЗАП)
   components:
   - type: Sprite
     layers:
@@ -156,7 +156,7 @@
 - type: entity
   parent: SNStalkerBase
   id: SNStalker1
-  suffix: Stalker, 1 (ЮГ->СЕВ)
+  suffix: ST, Mapping, 1 (ЮГ->СЕВ)
   components:
   - type: Sprite
     layers:
@@ -179,7 +179,7 @@
 - type: entity
   parent: SNStalkerBase
   id: SNStalker2
-  suffix: Stalker, 2 (ЮГ->СЕВ)
+  suffix: ST, Mapping, 2 (ЮГ->СЕВ)
   components:
   - type: Sprite
     layers:
@@ -202,7 +202,7 @@
 - type: entity
   parent: SNStalkerBase
   id: SNStalker3
-  suffix: Stalker, 3 (ЮГ->СЕВ)
+  suffix: ST, Mapping, 3 (ЮГ->СЕВ)
   components:
   - type: Sprite
     layers:
@@ -225,7 +225,7 @@
 - type: entity
   parent: SNStalkerBase
   id: SNStalker4
-  suffix: Stalker, 4 (ЮГ->СЕВ)
+  suffix: ST, Mapping, 4 (ЮГ->СЕВ)
   components:
   - type: Sprite
     layers:
@@ -248,7 +248,7 @@
 - type: entity
   parent: SNStalkerBase
   id: SNStalker5
-  suffix: Stalker, 5 (ЮГ->СЕВ)
+  suffix: ST, Mapping, 5 (ЮГ->СЕВ)
   components:
   - type: Sprite
     layers:
@@ -298,7 +298,7 @@
 - type: entity
   parent: UTStalkerBase
   id: UTStalker1
-  suffix: Stalker, 1 (угол, НИЖ->ЛЕВ)
+  suffix: ST, Mapping, 1 (угол, НИЖ->ЛЕВ)
   components:
   - type: Sprite
     layers:
@@ -321,7 +321,7 @@
 - type: entity
   parent: UTStalkerBase
   id: UTStalker2
-  suffix: Stalker, 2 (угол, НИЖ->ЛЕВ)
+  suffix: ST, Mapping, 2 (угол, НИЖ->ЛЕВ)
   components:
   - type: Sprite
     layers:
@@ -344,7 +344,7 @@
 - type: entity
   parent: UTStalkerBase
   id: UTStalker3
-  suffix: Stalker, 1 (угол, НИЖ->ПРАВ)
+  suffix: ST, Mapping, 1 (угол, НИЖ->ПРАВ)
   components:
   - type: Sprite
     layers:
@@ -367,7 +367,7 @@
 - type: entity
   parent: UTStalkerBase
   id: UTStalker4
-  suffix: Stalker, 2 (угол, НИЖ->ПРАВ)
+  suffix: ST, Mapping, 2 (угол, НИЖ->ПРАВ)
   components:
   - type: Sprite
     layers:
@@ -390,7 +390,7 @@
 - type: entity
   parent: UTStalkerBase
   id: UTStalker5
-  suffix: Stalker, 1 (угол, ВЕРХ->ЛЕВ)
+  suffix: ST, Mapping, 1 (угол, ВЕРХ->ЛЕВ)
   components:
   - type: Sprite
     layers:
@@ -413,7 +413,7 @@
 - type: entity
   parent: UTStalkerBase
   id: UTStalker6
-  suffix: Stalker, 2 (угол, ВЕРХ->ЛЕВ)
+  suffix: ST, Mapping, 2 (угол, ВЕРХ->ЛЕВ)
   components:
   - type: Sprite
     layers:
@@ -436,7 +436,7 @@
 - type: entity
   parent: UTStalkerBase
   id: UTStalker7
-  suffix: Stalker, 1 (угол, ВЕРХ->ПРАВ)
+  suffix: ST, Mapping, 1 (угол, ВЕРХ->ПРАВ)
   components:
   - type: Sprite
     layers:
@@ -459,7 +459,7 @@
 - type: entity
   parent: UTStalkerBase
   id: UTStalker8
-  suffix: Stalker, 2 (угол, ВЕРХ->ПРАВ)
+  suffix: ST, Mapping, 2 (угол, ВЕРХ->ПРАВ)
   components:
   - type: Sprite
     layers:

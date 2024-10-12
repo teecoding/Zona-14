@@ -2,7 +2,7 @@
   id: STBaseMonument
   name: monument
   description: ancient structure of unknown origin
-  suffix: ST
+  suffix: ST, Mapping
   abstract: true
   components:
     - type: SpriteFade

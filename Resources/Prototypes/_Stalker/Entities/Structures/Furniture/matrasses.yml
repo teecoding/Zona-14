@@ -2,7 +2,7 @@
   parent: Bed
   id: STMatrassBedBase
   name: матрас
-  suffix: Stalker
+  suffix: ST, Mapping
   description: Старый, но всё ещё удобный матрас.
   components:
   - type: Sprite

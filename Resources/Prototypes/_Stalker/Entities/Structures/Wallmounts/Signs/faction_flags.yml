@@ -4,7 +4,7 @@
   id: FactionFlagAnomalists
   name: anomalist flag
   description: A large flag with an equally huge gear.
-  suffix: Stalker, Flags, Anomalists
+  suffix: ST, Mapping, Flags, Anomalists
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Wallmounts/faction_flags.rsi
@@ -13,6 +13,7 @@
 - type: entity
   parent: PosterBaseStalker
   id: Banner1
+  suffix: ST, Mapping
   name: Флаг бандитов
   components:
   - type: Sprite
@@ -23,7 +24,7 @@
   parent: PosterBaseStalker
   id: Banner2
   name: Флаг Долга
-  suffix: Stalker
+  suffix: ST, Mapping
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Wallmounts/banners.rsi
@@ -33,7 +34,7 @@
   parent: PosterBaseStalker
   id: Banner3
   name: Флаг Свободы
-  suffix: Stalker
+  suffix: ST, Mapping
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Wallmounts/banners.rsi
@@ -43,7 +44,7 @@
   parent: PosterBaseStalker
   id: Banner4
   name: Флаг наёмников
-  suffix: Stalker
+  suffix: ST, Mapping
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Wallmounts/banners.rsi
@@ -53,7 +54,7 @@
   parent: PosterBaseStalker
   id: Banner5
   name: Флаг Завета
-  suffix: Stalker
+  suffix: ST, Mapping
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Wallmounts/banners.rsi
@@ -63,7 +64,7 @@
   parent: PosterBaseStalker
   id: Banner6
   name: Флаг конфедератов
-  suffix: Stalker
+  suffix: ST, Mapping
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Wallmounts/banners.rsi
@@ -73,7 +74,7 @@
   parent: PosterBaseStalker
   id: Banner7
   name: Флаг добра и позитива
-  suffix: Stalker
+  suffix: ST, Mapping
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Wallmounts/banners.rsi
@@ -83,7 +84,7 @@
   parent: PosterBaseStalker
   id: Banner8
   name: Флаг Ренегатов
-  suffix: Stalker
+  suffix: ST, Mapping
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Wallmounts/banners.rsi
@@ -93,7 +94,7 @@
   parent: PosterBaseStalker
   id: Banner9
   name: Флаг Русичей
-  suffix: Stalker
+  suffix: ST, Mapping
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Wallmounts/banners.rsi
@@ -103,7 +104,7 @@
   parent: PosterBaseStalker
   id: Banner10
   name: Флаг империи
-  suffix: Stalker
+  suffix: ST, Mapping
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Wallmounts/banners.rsi
@@ -113,7 +114,7 @@
   parent: PosterBaseStalker
   id: Banner11
   name: Флаг ООН
-  suffix: Stalker
+  suffix: ST, Mapping
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Wallmounts/banners.rsi
@@ -123,7 +124,7 @@
   parent: PosterBaseStalker
   id: Banner12
   name: Флаг Серафимов
-  suffix: Stalker
+  suffix: ST, Mapping
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Wallmounts/banners.rsi
@@ -133,7 +134,7 @@
   parent: PosterBaseStalker
   id: Banner13
   name: Флаг Греха
-  suffix: Stalker
+  suffix: ST, Mapping
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Wallmounts/banners.rsi
@@ -143,7 +144,7 @@
   parent: PosterBaseStalker
   id: Banner14
   name: Флаг Чистого Неба
-  suffix: Stalker
+  suffix: ST, Mapping
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Wallmounts/banners.rsi
@@ -153,7 +154,7 @@
   parent: PosterBaseStalker
   id: Banner15
   name: Флаг Отступников
-  suffix: Stalker
+  suffix: ST, Mapping
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Wallmounts/banners.rsi
@@ -163,7 +164,7 @@
   parent: PosterBaseStalker
   id: Banner16
   name: Знамя Ордена Паломников
-  suffix: Stalker, Баннер
+  suffix: ST, Mapping, Баннер
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Wallmounts/banners.rsi

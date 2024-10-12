@@ -5,7 +5,7 @@
   id: signnew
   parent: BaseStructureStalkerDynamic
   description: entities-sign-desc
-  suffix: Stalker
+  suffix: ST, Mapping
   components:
   - type: Fixtures
     fixtures:
@@ -28,7 +28,7 @@
   id: StalkerCheSign1
   name: Знак "Химическая опасность"
   description: На знаке изображён символ химической опасности, который информирует о химической опасности за знаком. Может, не стоит туда идти?
-  suffix: Stalker
+  suffix: ST, Mapping
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Furniture/RadSigns.rsi
@@ -70,7 +70,7 @@
   id: StalkerCheSign2
   name: Знак "Химическая опасность"
   description: На знаке изображён символ химической опасности, который информирует о химической опасности за знаком. Может, не стоит туда идти?
-  suffix: Stalker
+  suffix: ST, Mapping
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Furniture/RadSigns.rsi
@@ -112,7 +112,7 @@
   id: StalkerCheSign3
   name: Знак "Химическая опасность"
   description: На знаке изображён символ химической опасности, который информирует о химической опасности за знаком. Может, не стоит туда идти?
-  suffix: Stalker
+  suffix: ST, Mapping
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Furniture/RadSigns.rsi
@@ -154,7 +154,7 @@
   id: StalkerRadSign1
   name: Знак "Радиация"
   description: На знаке изображён символ радиоактивной опасности, который информирует о радиоактивной опасности за знаком. Может, не стоит туда идти?
-  suffix: Stalker
+  suffix: ST, Mapping
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Furniture/RadSigns.rsi
@@ -196,7 +196,7 @@
   id: StalkerRadSign2
   name: Знак "Радиация"
   description: На знаке изображён символ радиоактивной опасности, который информирует о радиоактивной опасности за знаком. Может, не стоит туда идти?
-  suffix: Stalker
+  suffix: ST, Mapping
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Furniture/RadSigns.rsi
@@ -238,7 +238,7 @@
   id: StalkerRadSign3
   name: Знак "Радиация"
   description: На знаке изображён символ радиоактивной опасности, который информирует о радиоактивной опасности за знаком. Может, не стоит туда идти?
-  suffix: Stalker
+  suffix: ST, Mapping
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Furniture/RadSigns.rsi

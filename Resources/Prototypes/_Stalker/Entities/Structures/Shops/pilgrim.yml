@@ -4,7 +4,7 @@
   id: StalkerShopPilgrim
   name: Торгомат, Паломники
   description: Как торговец туда поместился?
-  suffix: Stalker, Паломники
+  suffix: ST, Mapping, Паломники
   components:
     - type: Sprite
       drawdepth: Objects

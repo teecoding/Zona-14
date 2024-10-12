@@ -5,7 +5,7 @@
   name: гермодверь
   parent: STBaseMaterialDoor
   description: Защитно-герметические и герметические устройства, которые используются для охраны защитных сооружений гражданской обороны от вредных воздействий различного характера.
-  suffix: Stalker
+  suffix: ST, mapping
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Doors/Steels/hermodver_type_one.rsi
@@ -18,7 +18,7 @@
   name: гермодверь
   parent: STBaseMaterialDoor
   description: Защитно-герметические и герметические устройства, которые используются для охраны защитных сооружений гражданской обороны от вредных воздействий различного характера.
-  suffix: Stalker
+  suffix: ST, mapping
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Doors/Steels/hermodver_type_two.rsi
@@ -31,7 +31,7 @@
   name: решётчатая дверь
   parent: STBaseMaterialDoor
   description: Это один из видов конструкций для установки в разные виды помещений с целью повышения безопасности.
-  suffix: Stalker
+  suffix: ST, mapping
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Doors/Steels/lattice_door.rsi
@@ -54,7 +54,7 @@
   name: Створка ворот
   parent: STBaseMaterialDoor
   description: Жёсткая рама, которую изготавливают из трубы квадратного сечения. Облицовкой служит металлический профнастил, покрытый полимерным покрытием. Неплохо сохранилась для своих лет.
-  suffix: Stalker, левая
+  suffix: ST, mapping, левая
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Doors/Gate/Gate.rsi
@@ -79,7 +79,7 @@
   name: Створка ворот
   parent: STBaseMaterialDoor
   description: Жёсткая рама, которую изготавливают из трубы квадратного сечения. Облицовкой служит металлический профнастил, покрытый полимерным покрытием. Неплохо сохранилась для своих лет.
-  suffix: Stalker, правая
+  suffix: ST, mapping, правая
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Doors/Gate/Gater.rsi
@@ -103,7 +103,7 @@
   name: Створка ворот
   parent: BaseStructure
   description: Жёсткая рама, которую изготавливают из трубы квадратного сечения. Облицовкой служит металлический профнастил, покрытый полимерным покрытием. Неплохо сохранилась для своих лет.
-  suffix: Stalker, левая, незакрываемая
+  suffix: ST, mapping, левая, незакрываемая
   components:
     - type: InteractionOutline
     - type: Sprite
@@ -128,7 +128,7 @@
   name: Створка ворот
   parent: StalkerGateFixed
   description: Жёсткая рама, которую изготавливают из трубы квадратного сечения. Облицовкой служит металлический профнастил, покрытый полимерным покрытием. Неплохо сохранилась для своих лет.
-  suffix: Stalker, правая, незакрываемая
+  suffix: ST, mapping, правая, незакрываемая
   components:
     - type: Sprite
       layers:
@@ -141,7 +141,7 @@
   name: военные ворота
   parent: STBaseMaterialDoor
   description: Проезд в стене или ограде, запираемый створами.
-  suffix: Stalker
+  suffix: ST, mapping
   components:
   - type: Occluder
     boundingBox: "-1.5,-0.5,1.5,0.5"

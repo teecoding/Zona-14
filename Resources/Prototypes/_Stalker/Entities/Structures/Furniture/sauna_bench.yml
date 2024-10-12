@@ -1,6 +1,7 @@
 - type: entity
   name: wooden bench for sauna
   id: SaunaWoodenBench
+  suffix: ST, Mapping
   parent: ChairBase
   description: its natural aroma and smooth surface create ideal conditions for a relaxing holiday.
   components:

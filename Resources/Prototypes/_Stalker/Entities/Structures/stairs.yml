@@ -1,7 +1,7 @@
 - type: entity
   id: StalkerStairs
   name: stairs
-  suffix: ST
+  suffix: ST, mapping
   description: The greatest invention since rocket-propelled grenades.
   placement:
     mode: SnapgridCenter

@@ -2,7 +2,7 @@
   id: ToiletOld
   name: грязный унитаз
   description: Не стоит, садится на него.. я думаю.
-  suffix: Dirty Water
+  suffix: ST, Mapping, Dirty
   parent: SeatBase
   components:
   - type: Sprite
@@ -43,7 +43,7 @@
 - type: entity
   id: ToiletOldfilthy
   parent: ToiletOld
-  suffix: Dirty Water
+  suffix: ST, Mapping, Dirty
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Furniture/toilets.rsi

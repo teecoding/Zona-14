@@ -4,7 +4,7 @@
   id: StalkerShopSera
   name: Торгомат, Серафимы
   description: Как торговец туда поместился?
-  suffix: Stalker, Серафимы
+  suffix: ST, Mapping, Серафимы
   components:
     - type: Sprite
       drawdepth: Objects

@@ -4,7 +4,7 @@
   id: StalkerShopBandits
   name: Торгомат, бригады
   description: Теперь ещё и покупает!
-  suffix: Stalker, бандиты
+  suffix: ST, Mapping, бандиты
   components:
   - type: Sprite
     drawdepth: Objects
@@ -22,7 +22,7 @@
   id: StalkerDollarShopBandits
   name: Торгомат, бригады
   description: Теперь ещё и покупает!
-  suffix: Stalker, бандиты Т4
+  suffix: ST, Mapping, бандиты Т4
   components:
   - type: Sprite
     drawdepth: Objects
@@ -42,7 +42,7 @@
   id: StalkerShopJaba
   name: Торгомат, Жаб
   description: Как торговец туда поместился?
-  suffix: Stalker, Жабы
+  suffix: ST, Mapping, Жабы
   components:
     - type: Sprite
       drawdepth: Objects

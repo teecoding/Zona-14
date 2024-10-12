@@ -60,7 +60,7 @@
   id: StalkerFenceMetalBroken
   name: Колючая проволока перекусанная
   description: Материал, который используется для ограждения и защиты территории от несанкционированного проникновения.
-  suffix: Stalker
+  suffix: ST, Mapping
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Walls/fencerazor.rsi
@@ -78,7 +78,7 @@
   id: StalkerFenceMetalStraight
   name: Колючая проволока
   description: Материал, который используется для ограждения и защиты территории от несанкционированного проникновения.
-  suffix: Stalker, traight
+  suffix: ST, Mapping, traight
   components:
   - type: Icon
     sprite: _Stalker/Structures/Walls/fencerazor.rsi
@@ -95,7 +95,7 @@
   id: StalkerFenceMetalStraightConst
   name: Колючая проволока
   description: Материал, который используется для ограждения и защиты территории от несанкционированного проникновения.
-  suffix: Stalker, traight, разбираемый
+  suffix: ST, Mapping, traight, разбираемый
   components:
   - type: Icon
     sprite: _Stalker/Structures/Walls/fencerazor.rsi
@@ -112,7 +112,7 @@
   id: StalkerFenceRazorMetalCorner
   name: Колючая проволока
   description: Материал, который используется для ограждения и защиты территории от несанкционированного проникновения.
-  suffix: Stalker, corner
+  suffix: ST, Mapping, corner
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Walls/fencerazor.rsi
@@ -126,7 +126,7 @@
   id: StalkerFenceMetalEnd
   name: Колючая проволока
   description: Материал, который используется для ограждения и защиты территории от несанкционированного проникновения.
-  suffix: Stalker, end
+  suffix: ST, Mapping, end
   components:
   - type: Icon
     sprite: _Stalker/Structures/Walls/fencerazor.rsi

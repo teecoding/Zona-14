@@ -4,7 +4,7 @@
   id: StalkerShopMerc
   name: Торгомат, Наёмники
   description: Как торговец туда поместился?
-  suffix: Stalker, Наёмники
+  suffix: ST, Mapping, Наёмники
   components:
     - type: Sprite
       drawdepth: Objects

@@ -3,7 +3,7 @@
   id: StalkerShop
   name: торгомат, общий
   description: Теперь ещё и покупает!
-  suffix: Stalker, общий
+  suffix: ST, Mapping, общий
   components:
   - type: Physics
     bodyType: Static

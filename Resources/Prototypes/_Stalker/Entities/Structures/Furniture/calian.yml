@@ -2,7 +2,7 @@
   id: CalianStalker
   parent: BaseStructure
   name: кальян
-  suffix: Stalker
+  suffix: ST, Mapping
   description: Прибор для курения, отличительной особенностью которого является длинный путь прохождения дыма от его источника до рта курильщика, и наличие ёмкости с водой.
   components:
   - type: Sprite

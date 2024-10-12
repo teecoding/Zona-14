@@ -53,7 +53,7 @@
   name: металическая дверь
   parent: STBaseMaterialDoor
   description: Старая металическая дверь.
-  suffix: Stalker
+  suffix: ST, mapping
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Doors/metalgate.rsi
@@ -76,7 +76,7 @@
 - type: entity
   id: MetalDoorFallout
   name: Стальная дверь
-  suffix: Door, KMIN
+  suffix: ST, Mapping, KMIN
   parent: STBaseMaterialDoor
   description: Обычная стальная дверь.
   components:
@@ -133,7 +133,7 @@
 - type: entity
   id: MetalRedDoorFallout
   name: Красная стальная дверь
-  suffix: Door, KMIN
+  suffix: ST, Mapping, KMIN
   parent: STBaseMaterialDoor
   description: Обычная стальная дверь, окрашена в красный цвет.
   components:
@@ -162,7 +162,7 @@
 - type: entity
   id: MetalAltDoorFallout
   name: Стальная дверь
-  suffix: Door, KMIN
+  suffix: ST, Mapping, KMIN
   parent: STBaseMaterialDoor
   description: Обычная стальная дверь.
   components:
@@ -191,7 +191,7 @@
 - type: entity
   id: MetalBarDoorFallout
   name: Решетчатая дверь
-  suffix: Door, KMIN
+  suffix: ST, Mapping, KMIN
   parent: STBaseMaterialDoor
   description: Обычная решетчатая дверь.
   components:
@@ -223,7 +223,7 @@
 - type: entity
   id: MetalGrateDoorFallout
   name: Укрепленная решетчатая дверь
-  suffix: Door, KMIN
+  suffix: ST, Mapping, KMIN
   parent: STBaseMaterialDoor
   description: Обычная решетчатая дверь
   components:
@@ -255,7 +255,7 @@
 - type: entity
   id: MetalWindowDoorFallout
   name: Оконная стальная дверь
-  suffix: Door, KMIN
+  suffix: ST, Mapping, KMIN
   parent: STBaseMaterialDoor
   description: Обычная стальная дверь, с окном.
   components:
@@ -287,7 +287,7 @@
 - type: entity
   id: WoodDoorFallout
   name: Деревянная дверь
-  suffix: Door, KMIN
+  suffix: ST, Mapping, KMIN
   parent: STBaseMaterialDoor
   description: Обычная деревянная дверь.
   components:
@@ -316,7 +316,7 @@
 - type: entity
   id: WoodWhiteDoorFallout
   name: Белая деревянная дверь
-  suffix: Door, KMIN
+  suffix: ST, Mapping, KMIN
   parent: STBaseMaterialDoor
   description: Обычная деревянная дверь, окрашена в белый цвет.
   components:
@@ -345,7 +345,7 @@
 - type: entity
   id: WoodGreenDoorFallout
   name: Зелёная деревянная дверь
-  suffix: Door, KMIN
+  suffix: ST, Mapping, KMIN
   parent: STBaseMaterialDoor
   description: Обычная деревянная дверь, окрашена в зелёный цвет.
   components:
@@ -374,7 +374,7 @@
 - type: entity
   id: WoodRedDoorFallout
   name: Красная деревянная дверь
-  suffix: Door, KMIN
+  suffix: ST, Mapping, KMIN
   parent: STBaseMaterialDoor
   description: Обычная деревянная дверь, окрашена в красный цвет. Открывается быстрее обычной двери.
   components:
@@ -403,7 +403,7 @@
 - type: entity
   id: WoodBlueDoorFallout
   name: Синяя деревянная дверь
-  suffix: Door, KMIN
+  suffix: ST, Mapping, KMIN
   parent: STBaseMaterialDoor
   description: Обычная деревянная дверь, окрашена в синий цвет.
   components:

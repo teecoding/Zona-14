@@ -3,7 +3,7 @@
   id: StalkerShopPoisk
   name: Торгомат, Поиск
   description: Как торговец туда поместился?
-  suffix: Stalker, Поиск
+  suffix: ST, Mapping, Поиск
   components:
   - type: Sprite
     drawdepth: Objects
