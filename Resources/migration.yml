@@ -10,6 +10,33 @@
 
 # Stalker Upstream 23/9/2024
 
+#11.10.2024 - Stalker14
+Barricade: STBarricade
+BarricadeBlock: STBarricadeBlock
+BarricadeDirectional: STBarricadeDirectional
+PottedPlant0: STPottedPlant0
+PottedPlant1: STPottedPlant1
+PottedPlant2: STPottedPlant2
+PottedPlant3: STPottedPlant3
+PottedPlant4: STPottedPlant4
+PottedPlant5: STPottedPlant5
+PottedPlant6: STPottedPlant6
+PottedPlant7: STPottedPlant7
+PottedPlant8: STPottedPlant8
+PottedPlantBioluminscent: STPottedPlantBioluminscent
+PottedPlant10: STPottedPlant10
+PottedPlant11: STPottedPlant11
+PottedPlant12: STPottedPlant12
+PottedPlant13: STPottedPlant13
+PottedPlant14: STPottedPlant14
+PottedPlant24: STPottedPlant24
+PottedPlantRD: STPottedPlantRD
+PottedPlant26: STPottedPlant26
+PottedPlant27: STPottedPlant27
+PottedPlant28: STPottedPlant28
+PottedPlant29: STPottedPlant29
+PottedPlant30: STPottedPlant30
+
 #07.10.2024 - Stalker14
 ChairOfficeLight: STChairOfficeLight
 ChairOfficeDark: STChairOfficeDark
