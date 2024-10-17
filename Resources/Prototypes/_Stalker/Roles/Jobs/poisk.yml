@@ -5,10 +5,11 @@
   icon: poisk
   description: Поиск
   playTimeTracker: JobPoisk
+  whitelisted: true
   requirements:
-    - !type:RoleTimeRequirement
-      role: JobPoisk
-      time: 1
+    # - !type:RoleTimeRequirement
+    #   role: JobPoisk
+    #   time: 1
     - !type:SpeciesRequirement
       species:
       - Human

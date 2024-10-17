@@ -4,10 +4,11 @@
   icon: rene
   description: Просто какой-то дегенерат.
   playTimeTracker: JobRenegat
+  whitelisted: true
   requirements:
-    - !type:RoleTimeRequirement
-      role: JobRenegat
-      time: 1
+    # - !type:RoleTimeRequirement
+    #   role: JobRenegat
+    #   time: 1
     - !type:SpeciesRequirement
       species:
       - Human

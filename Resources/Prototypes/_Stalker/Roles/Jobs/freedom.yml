@@ -4,10 +4,11 @@
   icon: freedom
   description: Защитник зоны.
   playTimeTracker: JobFreedom
+  whitelisted: true
   requirements:
-    - !type:RoleTimeRequirement
-      role: JobFreedom
-      time: 1
+    # - !type:RoleTimeRequirement
+    #   role: JobFreedom
+    #   time: 1
     - !type:SpeciesRequirement
       species:
       - Human
@@ -36,10 +37,11 @@
   icon: freedom
   description: Защитник зоны.
   playTimeTracker: JobHeadFreedom
+  whitelisted: true
   requirements:
-    - !type:RoleTimeRequirement
-      role: JobHeadFreedom
-      time: 1
+    # - !type:RoleTimeRequirement
+    #   role: JobHeadFreedom
+    #   time: 1
     - !type:SpeciesRequirement
       species:
       - Human

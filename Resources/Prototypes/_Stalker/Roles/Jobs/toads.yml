@@ -4,10 +4,11 @@
   icon: jaba
   description: Группа особых бандитов
   playTimeTracker: JobJaba
+  whitelisted: true
   requirements:
-    - !type:RoleTimeRequirement
-      role: JobJaba
-      time: 1
+    # - !type:RoleTimeRequirement
+    #   role: JobJaba
+    #   time: 1
     - !type:SpeciesRequirement
       species:
       - Human

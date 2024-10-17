@@ -4,10 +4,11 @@
   icon: merc
   description: Искатели приключений и головорезы со всего мира.
   playTimeTracker: JobStalkerMercenary
+  whitelisted: true
   requirements:
-    - !type:RoleTimeRequirement
-      role: JobStalkerMercenary
-      time: 1
+    # - !type:RoleTimeRequirement
+    #   role: JobStalkerMercenary
+    #   time: 1
     - !type:SpeciesRequirement
       species:
       - Human
@@ -49,10 +50,11 @@
   icon: merc
   description: Ваша обязанность - поддержка связи с штабом и непосредственное принятие решений по контракту.
   playTimeTracker: JobStalkerHeadMercenary
+  whitelisted: true
   requirements:
-    - !type:RoleTimeRequirement
-      role: JobStalkerHeadMercenary
-      time: 1
+    # - !type:RoleTimeRequirement
+    #   role: JobStalkerHeadMercenary
+    #   time: 1
     - !type:SpeciesRequirement
       species:
       - Human

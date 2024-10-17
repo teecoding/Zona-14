@@ -4,10 +4,11 @@
   icon: trader
   description: Группировка торговцев и барыг всея Зоны
   playTimeTracker: JobTrader
+  whitelisted: true
   requirements:
-    - !type:RoleTimeRequirement
-      role: JobTrader
-      time: 1
+    # - !type:RoleTimeRequirement
+    #   role: JobTrader
+    #   time: 1
     - !type:SpeciesRequirement
       species:
       - Human

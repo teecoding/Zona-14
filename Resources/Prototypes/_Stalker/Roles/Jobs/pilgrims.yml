@@ -4,10 +4,11 @@
   icon: pilgrim
   description: Послушник в монашеском ордене
   playTimeTracker: JobPostulant
+  whitelisted: true
   requirements:
-    - !type:RoleTimeRequirement
-      role: JobPostulant
-      time: 1
+    # - !type:RoleTimeRequirement
+    #   role: JobPostulant
+    #   time: 1
     - !type:SpeciesRequirement
       species:
       - Human
@@ -36,10 +37,11 @@
   icon: pilgrim
   description: глава монашеского ордена
   playTimeTracker: JobBishop
+  whitelisted: true
   requirements:
-    - !type:RoleTimeRequirement
-      role: JobBishop
-      time: 1
+    # - !type:RoleTimeRequirement
+    #   role: JobBishop
+    #   time: 1
     - !type:SpeciesRequirement
       species:
       - Human

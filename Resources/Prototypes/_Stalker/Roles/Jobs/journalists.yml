@@ -5,10 +5,11 @@
   icon: journalist
   description: Вестники Зоны.
   playTimeTracker: JobJournalist
+  whitelisted: true
   requirements:
-    - !type:RoleTimeRequirement
-      role: JobJournalist
-      time: 1
+    # - !type:RoleTimeRequirement
+    #   role: JobJournalist
+    #   time: 1
     - !type:SpeciesRequirement
       species:
       - Human

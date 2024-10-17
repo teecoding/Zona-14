@@ -4,10 +4,11 @@
   icon: police
   description: Занимаются обеспечением безопасности и следят за соблюдением законов в предбаннике.
   playTimeTracker: JobPolice
+  whitelisted: true
   requirements:
-    - !type:RoleTimeRequirement
-      role: JobPolice
-      time: 1
+    # - !type:RoleTimeRequirement
+    #   role: JobPolice
+    #   time: 1
     - !type:SpeciesRequirement
       species:
       - Human

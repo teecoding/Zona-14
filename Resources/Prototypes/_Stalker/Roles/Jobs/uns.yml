@@ -5,10 +5,11 @@
   icon: un
   description: Представитель высот.
   playTimeTracker: JobUN
+  whitelisted: true
   requirements:
-    - !type:RoleTimeRequirement
-      role: JobUN
-      time: 1
+    # - !type:RoleTimeRequirement
+    #   role: JobUN
+    #   time: 1
     - !type:SpeciesRequirement
       species:
       - Human

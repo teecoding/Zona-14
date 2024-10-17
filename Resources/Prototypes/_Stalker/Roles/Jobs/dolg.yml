@@ -4,10 +4,11 @@
   icon: Dolg
   description: Уничтожитель зоны.
   playTimeTracker: JobDolg
+  whitelisted: true
   requirements:
-    - !type:RoleTimeRequirement
-      role: JobDolg
-      time: 1
+    # - !type:RoleTimeRequirement
+    #   role: JobDolg
+    #   time: 1
     - !type:SpeciesRequirement
       species:
       - Human
@@ -36,10 +37,11 @@
   icon: Dolg
   description: Уничтожитель зоны.
   playTimeTracker: JobHeadDolg
+  whitelisted: true
   requirements:
-    - !type:RoleTimeRequirement
-      role: JobHeadDolg
-      time: 1
+    # - !type:RoleTimeRequirement
+    #   role: JobHeadDolg
+    #   time: 1
     - !type:SpeciesRequirement
       species:
       - Human

@@ -4,10 +4,11 @@
   icon: zavet
   description: Это небольшая армия крайне опасных фанатиков.
   playTimeTracker: JobZavet
+  whitelisted: true
   requirements:
-    - !type:RoleTimeRequirement
-      role: JobZavet
-      time: 1
+    # - !type:RoleTimeRequirement
+    #   role: JobZavet
+    #   time: 1
     - !type:SpeciesRequirement
       species:
       - Human

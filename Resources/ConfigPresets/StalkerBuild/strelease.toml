@@ -8,8 +8,9 @@ soft_max_players = 60
 map_rotation = false
 role_timers = true
 peaceful_end = false
-# lobbyduration = 1
+# lobbyduration = 10
 contraband_examine = false
+role_whitelist = true
 [rules]
 time = 10.0
 

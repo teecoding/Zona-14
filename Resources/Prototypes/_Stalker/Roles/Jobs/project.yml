@@ -4,10 +4,11 @@
   icon: project-1
   description: То что приказывает им Алгоритм, то они и сделают.
   playTimeTracker: JobProjectPawn
+  whitelisted: true
   requirements:
-    - !type:RoleTimeRequirement
-      role: JobProjectPawn
-      time: 1
+    # - !type:RoleTimeRequirement
+    #   role: JobProjectPawn
+    #   time: 1
     - !type:SpeciesRequirement
       species:
       - Human
@@ -53,10 +54,11 @@
   icon: project-3
   description: Тайный X
   playTimeTracker: JobProjectOrchestrator
+  whitelisted: true
   requirements:
-    - !type:RoleTimeRequirement
-      role: JobProjectOrchestrator
-      time: 1
+    # - !type:RoleTimeRequirement
+    #   role: JobProjectOrchestrator
+    #   time: 1
     - !type:SpeciesRequirement
       species:
       - Human

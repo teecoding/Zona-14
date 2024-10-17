@@ -4,10 +4,11 @@
   icon: voen
   description: Солдаты, прошедшие после опыта службы в Зоне специальную подготовку, или сталкеры, подписавшие контракт с армией.
   playTimeTracker: JobMilitaryStalker
+  whitelisted: true
   requirements:
-    - !type:RoleTimeRequirement
-      role: JobMilitaryStalker
-      time: 1
+    # - !type:RoleTimeRequirement
+    #   role: JobMilitaryStalker
+    #   time: 1
     - !type:SpeciesRequirement
       species:
       - Human
@@ -38,10 +39,11 @@
   icon: army
   description: Удерживают Зону для предотвращения разграбления опасных радиоактивных материалов и предотвращения несанкционированного проникновения любых лиц.
   playTimeTracker: JobMilitary
+  whitelisted: true
   requirements:
-    - !type:RoleTimeRequirement
-      role: JobMilitary
-      time: 1
+    # - !type:RoleTimeRequirement
+    #   role: JobMilitary
+    #   time: 1
     - !type:SpeciesRequirement
       species:
       - Human
@@ -71,10 +73,11 @@
   icon: army
   description: Удерживают Зону для предотвращения разграбления опасных радиоактивных материалов и предотвращения несанкционированного проникновения любых лиц.
   playTimeTracker: JobHeadMilitary
+  whitelisted: true
   requirements:
-    - !type:RoleTimeRequirement
-      role: JobHeadMilitary
-      time: 1
+    # - !type:RoleTimeRequirement
+    #   role: JobHeadMilitary
+    #   time: 1
     - !type:SpeciesRequirement
       species:
       - Human
@@ -103,10 +106,11 @@
   icon: army
   description: Удерживают Зону для предотвращения разграбления опасных радиоактивных материалов и предотвращения несанкционированного проникновения любых лиц.
   playTimeTracker: JobOfficerMilitary
+  whitelisted: true
   requirements:
-    - !type:RoleTimeRequirement
-      role: JobOfficerMilitary
-      time: 1
+    # - !type:RoleTimeRequirement
+    #   role: JobOfficerMilitary
+    #   time: 1
     - !type:SpeciesRequirement
       species:
       - Human

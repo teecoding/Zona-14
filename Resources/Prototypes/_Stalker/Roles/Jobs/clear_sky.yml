@@ -4,10 +4,11 @@
   icon: cn
   description: Ищет способ сосуществования с Зоной.
   playTimeTracker: JobClearSky
+  whitelisted: true
   requirements:
-    - !type:RoleTimeRequirement
-      role: JobClearSky
-      time: 1
+    # - !type:RoleTimeRequirement
+    #   role: JobClearSky
+    #   time: 1
     - !type:SpeciesRequirement
       species:
       - Human

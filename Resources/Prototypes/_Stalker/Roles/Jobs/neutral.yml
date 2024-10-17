@@ -5,10 +5,11 @@
   icon: ne
   description: Защитники слабых
   playTimeTracker: JobNeutral
+  whitelisted: true
   requirements:
-    - !type:RoleTimeRequirement
-      role: JobNeutral
-      time: 1
+    # - !type:RoleTimeRequirement
+    #   role: JobNeutral
+    #   time: 1
     - !type:SpeciesRequirement
       species:
       - Human

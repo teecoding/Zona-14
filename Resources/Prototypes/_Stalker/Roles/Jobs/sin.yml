@@ -5,10 +5,11 @@
   icon: greh
   description: ВО СЛАВУ МАТЕРИ!
   playTimeTracker: JobGreh
+  whitelisted: true
   requirements:
-    - !type:RoleTimeRequirement
-      role: JobGreh
-      time: 1
+    # - !type:RoleTimeRequirement
+    #   role: JobGreh
+    #   time: 1
     - !type:SpeciesRequirement
       species:
       - Human

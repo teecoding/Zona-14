@@ -76,7 +76,7 @@ public sealed class RespawnNowCommand : IConsoleCommand
 
         if (playerMgr.TryGetPlayerData(player.UserId, out var dat))
         {
-            if (!jobMan.MindTryGetJob(dat.ContentData()?.Mind, out _, out var jobPrototype))
+            if (!jobMan.MindTryGetJob(dat.ContentData()?.Mind, out var jobPrototype))
                 _jobId = null;
             else
                 _jobId = jobPrototype.ID;

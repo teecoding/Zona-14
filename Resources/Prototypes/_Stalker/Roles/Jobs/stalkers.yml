@@ -4,11 +4,12 @@
   icon: stalker
   description: Это кочевая полуобъединенная группировка, которая просто живёт за счет Зоны, чтобы заработать немного монет на свою повседневную жизнь.
   playTimeTracker: JobStalker
+  whitelisted: false
   requirements:
-    - !type:DepartmentTimeRequirement
-      department: StalkerAdvanced
-      time: 1
-      inverted: true
+    # - !type:DepartmentTimeRequirement
+    #   department: StalkerAdvanced
+    #   time: 1
+    #   inverted: true
     - !type:SpeciesRequirement
       species:
       - Human

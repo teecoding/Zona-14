@@ -4,10 +4,11 @@
   icon: seraphim
   description: Таинственная группировка, появившаяся с первых дней жизни Зоны.
   playTimeTracker: JobSeraphims
+  whitelisted: true
   requirements:
-    - !type:RoleTimeRequirement
-      role: JobSeraphims
-      time: 1
+    # - !type:RoleTimeRequirement
+    #   role: JobSeraphims
+    #   time: 1
     - !type:SpeciesRequirement
       species:
       - Human
@@ -39,10 +40,11 @@
   icon: seraphim
   description: Таинственная группировка, появившаяся с первых дней жизни Зоны.
   playTimeTracker: JobHeadSeraphims
+  whitelisted: true
   requirements:
-    - !type:RoleTimeRequirement
-      role: JobHeadSeraphims
-      time: 1
+    # - !type:RoleTimeRequirement
+    #   role: JobHeadSeraphims
+    #   time: 1
     - !type:SpeciesRequirement
       species:
       - Human

@@ -4,10 +4,11 @@
   icon: sci
   description: Основная цель - изучение всех аспектов Зоны, использование научных методов для дальнейшего объяснения того, что это за Зона и её предназначения.
   playTimeTracker: JobStalkerSci
+  whitelisted: true
   requirements:
-    - !type:RoleTimeRequirement
-      role: JobStalkerSci
-      time: 1
+    # - !type:RoleTimeRequirement
+    #   role: JobStalkerSci
+    #   time: 1
     - !type:SpeciesRequirement
       species:
       - Human
@@ -36,10 +37,11 @@
   icon: sci
   description: Основная цель - изучение всех аспектов Зоны, использование научных методов для дальнейшего объяснения того, что это за Зона и её предназначения.
   playTimeTracker: JobHeadStalkerSci
+  whitelisted: true
   requirements:
-    - !type:RoleTimeRequirement
-      role: JobHeadStalkerSci
-      time: 1
+    # - !type:RoleTimeRequirement
+    #   role: JobHeadStalkerSci
+    #   time: 1
     - !type:SpeciesRequirement
       species:
       - Human

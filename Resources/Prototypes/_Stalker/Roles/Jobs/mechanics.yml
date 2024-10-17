@@ -4,10 +4,11 @@
   icon: mechanic
   description: Рукастые парни которые с помощью свои золотых рук могут смастерить кучу интересностей
   playTimeTracker: JobMechanic
+  whitelisted: true
   requirements:
-    - !type:RoleTimeRequirement
-      role: JobMechanic
-      time: 1
+    # - !type:RoleTimeRequirement
+    #   role: JobMechanic
+    #   time: 1
     - !type:SpeciesRequirement
       species:
       - Human

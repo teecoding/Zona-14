@@ -4,10 +4,11 @@
   icon: clowns
   description: Защитник хорошего настроения.
   playTimeTracker: JobStalkerClown
+  whitelisted: true
   requirements:
-    - !type:RoleTimeRequirement
-      role: JobStalkerClown
-      time: 1
+    # - !type:RoleTimeRequirement
+    #   role: JobStalkerClown
+    #   time: 1
     - !type:SpeciesRequirement
       species:
       - Human

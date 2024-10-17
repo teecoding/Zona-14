@@ -4,10 +4,11 @@
   icon: sbu
   description: Член защиты службы безопасности Украины.
   playTimeTracker: JobSBU
+  whitelisted: true
   requirements:
-    - !type:RoleTimeRequirement
-      role: JobSBU
-      time: 1
+    # - !type:RoleTimeRequirement
+    #   role: JobSBU
+    #   time: 1
     - !type:SpeciesRequirement
       species:
       - Human
