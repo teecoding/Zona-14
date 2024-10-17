@@ -37,41 +37,38 @@ public sealed class ProjectileSystem : SharedProjectileSystem
             || component.DamagedEntity || component is { Weapon: null, OnlyCollideWhenShot: true })
             return;
 
-        // Stalker-Changes
+        // stalker-changes-start
         var ignoreResitance = false;
         List<EntityUid> ignore = new();
-        if (_inventory.TryGetSlotEntity(args.OtherEntity, "outerClothing", out var outer) && TryComp<ArmorComponent>(outer, out var armorComp) && armorComp.ArmorClass.HasValue)
-        {
-            if (component.ProjectileClass >= armorComp.ArmorClass.Value)
-            {
-                ignore.Add(outer.Value);
-            }
-        }
+        string[] slots = {
+            "outerClothing",
+            "head",
+            "cloak",
+            "eyes",
+            "ears",
+            "mask",
+            "jumpsuit",
+            "neck",
+            "back",
+            "belt",
+            "gloves",
+            "shoes",
+            "id",
+            "legs",
+            "torso"
+        };
 
-        if (_inventory.TryGetSlotEntity(args.OtherEntity, "head", out var head) && TryComp(head, out armorComp) && armorComp.ArmorClass.HasValue)
+        foreach (var slot in slots)
         {
-            if (component.ProjectileClass >= armorComp.ArmorClass.Value)
-            {
-                ignore.Add(head.Value);
-            }
-        }
-
-        if (_inventory.TryGetSlotEntity(args.OtherEntity, "neck", out var neck) && TryComp(neck, out armorComp) && armorComp.ArmorClass.HasValue)
-        {
-            if (component.ProjectileClass >= armorComp.ArmorClass.Value)
-            {
-                ignore.Add(neck.Value);
-            }
+            if (_inventory.TryGetSlotEntity(args.OtherEntity, slot, out var entity) && TryComp<ArmorComponent>(entity, out var armorComp) && armorComp.ArmorClass.HasValue)
+                if (component.ProjectileClass >= armorComp.ArmorClass.Value)
+                    ignore.Add(entity.Value);
         }
 
         if (TryComp<DamageableComponent>(args.OtherEntity, out var damageable) && damageable.DamageModifierSetId != null)
-        {
             if (_prototype.TryIndex(damageable.DamageModifierSetId, out var damageModifierSetPrototype))
-            {
                 ignoreResitance = component.ProjectileClass >= damageModifierSetPrototype.Class;
-            }
-        }
-        // Stalker-Changes-Ends
+        // stalker-changes-end
 
         var target = args.OtherEntity;
         // it's here so this check is only done once before possible hit
