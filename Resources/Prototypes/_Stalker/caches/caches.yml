@@ -797,8 +797,6 @@
           prob: 0.005
         - id: STWeaponRifleStalkerAK74
           prob: 0.003
-        - id: STWeaponRifleAR15s
-          prob: 0.004
         - id: IpritGrenadeStalker
           prob: 0.005
         - id: STWeaponSniperMosin

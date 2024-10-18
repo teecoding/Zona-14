@@ -4,6 +4,7 @@ using Content.Shared.Verbs;
 using JetBrains.Annotations;
 using Robust.Shared.Map;
 using Robust.Shared.Prototypes;
+using System.Linq;
 
 namespace Content.Server.Stack
 {
@@ -180,7 +181,9 @@ namespace Content.Server.Stack
             args.Verbs.Add(halve);
 
             var priority = 0;
-            foreach (var amount in DefaultSplitAmounts)
+            _prototypeManager.TryIndex<StackPrototype>(stack.StackTypeId, out var stackProto);  // stalker-changes
+            var amounts = stackProto?.SplitAmounts ?? DefaultSplitAmounts.ToList(); // stalker-changes
+            foreach (var amount in amounts) // stalker-changes
             {
                 if (amount >= stack.Count)
                     continue;
