@@ -38,7 +38,7 @@ public sealed class StaminaActiveSystem : EntitySystem
             // If Walk button pressed we will apply stamina damage.
             if (input.HeldMoveButtons.HasFlag(MoveButtons.Walk) && !active.Slowed && phys.LinearVelocity.Length() != 0)
             {
-                _stamina.TakeStaminaDamage(uid, active.RunStaminaDamage, stamina, visual: false);
+                _stamina.TakeStaminaDamage(uid, active.RunStaminaDamage, stamina, visual: false, shouldLog: false);
             }
 
             // If our entity gets through SlowThreshold, we will apply slowing.

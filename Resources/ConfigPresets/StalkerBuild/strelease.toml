@@ -11,6 +11,8 @@ peaceful_end = false
 # lobbyduration = 10
 contraband_examine = false
 role_whitelist = true
+maxcharacterslots = 1
+
 [rules]
 time = 10.0
 

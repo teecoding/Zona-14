@@ -233,7 +233,8 @@ public sealed partial class StaminaSystem : EntitySystem
     }
 
     public void TakeStaminaDamage(EntityUid uid, float value, StaminaComponent? component = null,
-        EntityUid? source = null, EntityUid? with = null, bool visual = true, SoundSpecifier? sound = null)
+        EntityUid? source = null, EntityUid? with = null, bool visual = true, SoundSpecifier? sound = null,
+        bool shouldLog = true) // stalker-changes
     {
         if (!Resolve(uid, ref component, false))
             return;
@@ -290,11 +291,11 @@ public sealed partial class StaminaSystem : EntitySystem
 
         if (value <= 0)
             return;
-        if (source != null)
+        if (source != null && shouldLog) // stalker-changes
         {
             _adminLogger.Add(LogType.Stamina, $"{ToPrettyString(source.Value):user} caused {value} stamina damage to {ToPrettyString(uid):target}{(with != null ? $" using {ToPrettyString(with.Value):using}" : "")}");
         }
-        else
+        else if (shouldLog)  // stalker-changes
         {
             _adminLogger.Add(LogType.Stamina, $"{ToPrettyString(uid):target} took {value} stamina damage");
         }
