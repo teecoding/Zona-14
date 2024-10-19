@@ -118,6 +118,53 @@
     - type: Clothing
       sprite: _Stalker/Objects/Clothing/outerClothing/seva_green.rsi
 
+# Military
+
+- type: entity
+  parent: STClothingOuterArmorSevaBase
+  id: ClothingOuterArmorSevaMilitary
+  name: костюм "Сева-ЗБМ"
+  description: Научный костюм, вариант «СЕВЫ», производимый по заказу военных.
+  components:
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+      - 0,2,0,3
+      - 1,-0,1,-0
+      - 2,2,2,3
+      - 3,-0,3,-0
+      - 4,2,4,3
+      - 5,-0,5,-0
+      - 6,2,6,3
+      - 7,-0,7,-0
+      - 8,2,8,3
+      - 9,-0,9,-0
+      - 10,2,10,3
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/seva_military.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/seva_military.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHardsuitSevaHelmMilitary
+    slot: head
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+
+- type: entity
+  parent: STClothingHeadHardsuitSevaHelmBase
+  id: ClothingHeadHardsuitSevaHelmMilitary
+  name: шлем севы
+  description: Несмотря, на преимущественно стеклянную состовляющую, довольно прочный.
+  noSpawn: true
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/seva_helm_military.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/seva_helm_military.rsi
+
+
 # Clear sky
 
 - type: entity
