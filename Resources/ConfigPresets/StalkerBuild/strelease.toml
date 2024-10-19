@@ -19,12 +19,6 @@ time = 10.0
 [whitelist]
 enabled = false
 
-[discord]
-ahelp_webhook = "https://discord.com/api/webhooks/1195018829928083607/z8kIzx69ITWaUNNkcwUQHRqWtctCbgxi56RY0SnsNlH-U2WDipgSGa2YICEBUfeQbilh"
-
-[stalker]
-ban_webhook = "https://discord.com/api/webhooks/1180767180695011348/TwTaAfXkb1mYe84fgty-RKJobODmO5orWbQJOnRAbODctcLe68jYWSh44Qy2Pdz6pj64"
-
 [shuttle]
 auto_call_time = 0
 emergency = false

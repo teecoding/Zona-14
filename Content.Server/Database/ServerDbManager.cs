@@ -498,11 +498,13 @@ namespace Content.Server.Database
             return RunDbCommand(() => _db.GetServerBanAsync(address, userId, hwId));
         }
 
+        // stalker-changes-start
         public Task<ServerBanDef?> GetLastServerBanAsync()
         {
             DbReadOpsMetric.Inc();
             return RunDbCommand(() => _db.GetLastServerBanAsync());
         }
+        // stalker-changes-end
 
         public Task<List<ServerBanDef>> GetServerBansAsync(
             IPAddress? address,
