@@ -338,6 +338,11 @@ namespace Content.Server.Database
                 .WithOne(z => z.Owner)
                 .HasForeignKey(z => z.OwnerId)
                 .OnDelete(DeleteBehavior.Cascade);  // This ensures cascade delete when the band got deleted
+
+            modelBuilder.Entity<StalkerZoneOwnership>()
+                .HasOne(z => z.Owner)
+                .WithMany(b => b.ZoneOwnerships)
+                .HasForeignKey(z => z.OwnerId);
             // stalker-changes-ends
         }
 

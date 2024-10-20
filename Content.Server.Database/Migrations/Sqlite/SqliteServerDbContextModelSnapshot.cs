@@ -1270,6 +1270,28 @@ namespace Content.Server.Database.Migrations.Sqlite
                     b.ToTable("stalkers", (string)null);
                 });
 
+            modelBuilder.Entity("Content.Server.Database.StalkerBand", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER")
+                        .HasColumnName("stalker_bands_id");
+
+                    b.Property<string>("BandProtoId")
+                        .IsRequired()
+                        .HasColumnType("TEXT")
+                        .HasColumnName("band_proto_id");
+
+                    b.Property<float>("RewardPoints")
+                        .HasColumnType("REAL")
+                        .HasColumnName("reward_points");
+
+                    b.HasKey("Id")
+                        .HasName("PK_stalker_bands");
+
+                    b.ToTable("stalker_bands", (string)null);
+                });
+
             modelBuilder.Entity("Content.Server.Database.StalkerStats", b =>
                 {
                     b.Property<int>("Id")
@@ -1299,6 +1321,35 @@ namespace Content.Server.Database.Migrations.Sqlite
                         .HasName("PK_stalker_stats");
 
                     b.ToTable("stalker_stats", (string)null);
+                });
+
+            modelBuilder.Entity("Content.Server.Database.StalkerZoneOwnership", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER")
+                        .HasColumnName("stalker_zone_ownerships_id");
+
+                    b.Property<DateTime?>("LastCapturedByCurrentOwnerAt")
+                        .HasColumnType("TEXT")
+                        .HasColumnName("last_captured_by_current_owner_at");
+
+                    b.Property<int?>("OwnerId")
+                        .HasColumnType("INTEGER")
+                        .HasColumnName("owner_id");
+
+                    b.Property<string>("ZoneProtoId")
+                        .IsRequired()
+                        .HasColumnType("TEXT")
+                        .HasColumnName("zone_proto_id");
+
+                    b.HasKey("Id")
+                        .HasName("PK_stalker_zone_ownerships");
+
+                    b.HasIndex("OwnerId")
+                        .HasDatabaseName("IX_stalker_zone_ownerships_owner_id");
+
+                    b.ToTable("stalker_zone_ownerships", (string)null);
                 });
 
             modelBuilder.Entity("Content.Server.Database.Trait", b =>
@@ -1806,6 +1857,17 @@ namespace Content.Server.Database.Migrations.Sqlite
                     b.Navigation("Ban");
                 });
 
+            modelBuilder.Entity("Content.Server.Database.StalkerZoneOwnership", b =>
+                {
+                    b.HasOne("Content.Server.Database.StalkerBand", "Owner")
+                        .WithMany("ZoneOwnerships")
+                        .HasForeignKey("OwnerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .HasConstraintName("FK_stalker_zone_ownerships_stalker_bands_owner_id");
+
+                    b.Navigation("Owner");
+                });
+
             modelBuilder.Entity("Content.Server.Database.Trait", b =>
                 {
                     b.HasOne("Content.Server.Database.Profile", "Profile")
@@ -1944,6 +2006,11 @@ namespace Content.Server.Database.Migrations.Sqlite
             modelBuilder.Entity("Content.Server.Database.ServerRoleBan", b =>
                 {
                     b.Navigation("Unban");
+                });
+
+            modelBuilder.Entity("Content.Server.Database.StalkerBand", b =>
+                {
+                    b.Navigation("ZoneOwnerships");
                 });
 #pragma warning restore 612, 618
         }
