@@ -64,3 +64,12 @@
   components:
   - type: Sprite
     state: lep7
+
+- type: entity
+  name: ЛЭП
+  parent: STPowerlines1
+  id: STPowerlines7
+  suffix: ST, Mapping
+  components:
+  - type: Sprite
+    state: lep8
