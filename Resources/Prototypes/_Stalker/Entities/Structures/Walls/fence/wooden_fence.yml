@@ -146,7 +146,7 @@
 
 
 - type: entity
-  parent: BaseFenceMetal
+  parent: STBaseFenceMetal
   id: FenceMetalStraightConst
   name: сетка-рабица
   suffix: ST, Mapping, разбираемый
