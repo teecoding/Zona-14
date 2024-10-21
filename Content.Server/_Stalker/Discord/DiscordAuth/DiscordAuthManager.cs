@@ -109,6 +109,10 @@ public sealed class DiscordAuthManager : IPostInjectInit
         _sawmill.Debug($"Generating link for {userId}");
         var requestUrl = $"{_apiUrl}/link?userid={userId}&api_token={_apiKey}";
         var response = await _httpClient.GetAsync(requestUrl, cancel);
+
+        if (!response.IsSuccessStatusCode)
+            return "Service Unavailable"; // TODO: Add web page to redirect in such cases
+
         var link = await response.Content.ReadFromJsonAsync<DiscordLinkResponse>(cancel);
         return link!.Link;
     }
