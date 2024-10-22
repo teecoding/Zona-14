@@ -131,7 +131,7 @@ public sealed class DiscordAuthManager : IPostInjectInit
         {
             var response = await _httpClient.GetAsync(requestUrl, cancel);
             if (!response.IsSuccessStatusCode)
-                return AuthErrorLink; // TODO: Add web page to redirect in such cases
+                return AuthErrorLink;
 
             var link = await response.Content.ReadFromJsonAsync<DiscordLinkResponse>(cancel);
             return link!.Link;
