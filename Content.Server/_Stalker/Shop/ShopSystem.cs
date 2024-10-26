@@ -226,7 +226,7 @@ public sealed class ShopSystem : SharedShopSystem
     #region Containers logic
     private string GetItemProtoId(EntityUid uid)
     {
-        if (!TryComp<MetaDataComponent>(uid, out var mets))
+        if (!TryComp(uid, out MetaDataComponent? mets))
             return string.Empty;
         var entityPrototypeId = mets.EntityPrototype?.ID;
         return entityPrototypeId ?? string.Empty;
