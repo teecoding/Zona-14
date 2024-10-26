@@ -438,6 +438,7 @@ public sealed class ShopSystem : SharedShopSystem
                 Priority = 0,
                 ProductAction = null,
                 ProductEntity = meta.EntityPrototype?.ID,
+                Count = 1 // Initialize count to 1 for the first item
             };
 
             result.Add(listing);
