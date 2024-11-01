@@ -2,7 +2,7 @@
   id: TrashCanS1
   parent: BaseStructure
   name: мусорный контейнер
-  suffix: Stalker
+  suffix: ST, Mapping
   description: Специализированная ёмкость, служащая для сбора бытовых или строительных отходов.
   components:
   - type: Sprite

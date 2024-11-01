@@ -2,7 +2,7 @@
   id: FanStalker
   parent: BaseStructure
   name: вентилятор
-  suffix: Stalker
+  suffix: ST, Mapping
   description: Механическое устройство для перемещения воздуха или другого газа (воздушный насос) с создаваемым полным напором. Удивительно, как он еще работает...
   placement:
     mode: SnapgridCenter

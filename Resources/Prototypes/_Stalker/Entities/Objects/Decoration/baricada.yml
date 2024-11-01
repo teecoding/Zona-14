@@ -2,7 +2,7 @@
   id: BarricadaStalker1
   parent: BaseStructure
   name: баррикада
-  suffix: Stalker
+  suffix: ST, Mapping
   description: Искусственное фортификационное заграждение, выполненное из подручных материалов и расположенное поперёк дороги, улицы
   components:
   - type: Sprite

@@ -14,7 +14,7 @@
   parent: PosterBaseStalker
   id: Banner1
   suffix: ST, Mapping
-  name: Флаг бандитов
+  name: флаг бандитов
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Wallmounts/banners.rsi
@@ -23,7 +23,7 @@
 - type: entity
   parent: PosterBaseStalker
   id: Banner2
-  name: Флаг Долга
+  name: флаг долга
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -33,7 +33,7 @@
 - type: entity
   parent: PosterBaseStalker
   id: Banner3
-  name: Флаг Свободы
+  name: флаг свободы
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -43,7 +43,7 @@
 - type: entity
   parent: PosterBaseStalker
   id: Banner4
-  name: Флаг наёмников
+  name: флаг наёмников
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -53,7 +53,7 @@
 - type: entity
   parent: PosterBaseStalker
   id: Banner5
-  name: Флаг Завета
+  name: флаг завета
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -63,7 +63,7 @@
 - type: entity
   parent: PosterBaseStalker
   id: Banner6
-  name: Флаг конфедератов
+  name: флаг конфедератов
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -73,7 +73,7 @@
 - type: entity
   parent: PosterBaseStalker
   id: Banner7
-  name: Флаг добра и позитива
+  name: флаг добра и позитива
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -83,7 +83,7 @@
 - type: entity
   parent: PosterBaseStalker
   id: Banner8
-  name: Флаг Ренегатов
+  name: флаг ренегатов
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -93,7 +93,7 @@
 - type: entity
   parent: PosterBaseStalker
   id: Banner9
-  name: Флаг Русичей
+  name: флаг русичей
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -103,7 +103,7 @@
 - type: entity
   parent: PosterBaseStalker
   id: Banner10
-  name: Флаг империи
+  name: флаг империи
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -113,7 +113,7 @@
 - type: entity
   parent: PosterBaseStalker
   id: Banner11
-  name: Флаг ООН
+  name: флаг ООН
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -123,7 +123,7 @@
 - type: entity
   parent: PosterBaseStalker
   id: Banner12
-  name: Флаг Серафимов
+  name: флаг серафимов
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -133,7 +133,7 @@
 - type: entity
   parent: PosterBaseStalker
   id: Banner13
-  name: Флаг Греха
+  name: флаг греха
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -143,7 +143,7 @@
 - type: entity
   parent: PosterBaseStalker
   id: Banner14
-  name: Флаг Чистого Неба
+  name: флаг чистого неба
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -153,7 +153,7 @@
 - type: entity
   parent: PosterBaseStalker
   id: Banner15
-  name: Флаг Отступников
+  name: флаг отступников
   suffix: ST, Mapping
   components:
   - type: Sprite
@@ -163,7 +163,17 @@
 - type: entity
   parent: PosterBaseStalker
   id: Banner16
-  name: Знамя Ордена Паломников
+  name: знамя ордена паломников
+  suffix: ST, Mapping, Баннер
+  components:
+  - type: Sprite
+    sprite: _Stalker/Structures/Wallmounts/banners.rsi
+    state: banner16
+
+- type: entity
+  parent: PosterBaseStalker
+  id: Banner17
+  name: флаг проекта
   suffix: ST, Mapping, Баннер
   components:
   - type: Sprite

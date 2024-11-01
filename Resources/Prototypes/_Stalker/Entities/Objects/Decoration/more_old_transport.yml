@@ -1,6 +1,7 @@
 - type: entity
   id: STOldicarus
   name: старый ikarus-280
+  suffix: ST, Mapping
   description: Венгерский городской сочленённый высокопольный среднеприводный автобус особо большой вместимости фирмы Ikarus. Выглядит старым.
   parent: kraz
   components:
@@ -24,7 +25,7 @@
   parent: OldCarGreen
   name: Нива
   description: Старая Нива производства СССР.
-  suffix: Stalker
+  suffix: ST, Mapping
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Transport/old_NIVA.rsi
@@ -36,7 +37,7 @@
   parent: OldCarGreen
   name: Линкольн
   description: Старый Линкольн времен холодной войны.
-  suffix: Stalker
+  suffix: ST, Mapping
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Transport/old_linkoln.rsi

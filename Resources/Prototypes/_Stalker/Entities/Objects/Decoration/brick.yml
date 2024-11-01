@@ -1,6 +1,7 @@
 - type: entity
   id: Brick
   name: Кирпич
+  suffix: ST, Mapping
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Other/brick.rsi

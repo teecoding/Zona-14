@@ -2,7 +2,7 @@
   id: PaletteStalker
   parent: BaseStructure
   name: поддон с плиткой
-  suffix: Stalker
+  suffix: ST, Mapping
   description: Платформа, на которую уложена керамическая плитка для удобства транспортировки.
   components:
   - type: Sprite

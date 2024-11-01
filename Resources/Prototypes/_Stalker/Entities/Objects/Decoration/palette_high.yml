@@ -1,7 +1,7 @@
 - type: entity
   id: PaletteHighStalker
   parent: PaletteStalker
-  suffix: ST
+  suffix: ST, Mapping
   name: поддон с кирпичами
   description: Платформа, на которую уложены глинянные кирпичи для удобства транспортировки.
   components:

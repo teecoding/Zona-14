@@ -1,8 +1,8 @@
 - type: entity
   id: PaintCan
   parent: BaseStructureDynamic
-  name: Банка краски
-  suffix: ST
+  name: банка краски
+  suffix: ST, Mapping
   description: Стальная банка с краской которой уже пользовались.
   placement:
     mode: PlaceFree

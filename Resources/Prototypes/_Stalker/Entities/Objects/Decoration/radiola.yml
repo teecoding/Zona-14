@@ -2,7 +2,7 @@
   id: RadiolaStalker
   parent: BaseStructure
   name: радиола
-  suffix: Stalker
+  suffix: ST, Mapping
   description: Бытовое радиоэлектронное устройство, конструктивно объединяющее в одном корпусе радиоприёмник и электрофон.
   components:
   - type: AmbientOnPowered

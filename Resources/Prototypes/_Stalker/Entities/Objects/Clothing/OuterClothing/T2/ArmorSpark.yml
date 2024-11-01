@@ -6,6 +6,8 @@
   suffix: ST, T2, Env
   description: Самопальный костюм, производимый умельцами «НИИ» из подручных предметов. Пассивно выводит радиацию по 0.1 в секунду
   components:
+    - type: STWeight
+      self: 4.5
     - type: Sprite
       sprite: _Stalker/Objects/Clothing/outerClothing/Jewelry/spark.rsi
       state: icon-suit
@@ -47,7 +49,7 @@
           Radiation: -0.1
 
 - type: entity
-  parent: STClothingHeadBase
+  parent: STClothingHeadHatBase
   id: ClothingHeadHelmetSpark
   name: капюшон «Искры»
   description: Плотный кусок резины на вашей голове.

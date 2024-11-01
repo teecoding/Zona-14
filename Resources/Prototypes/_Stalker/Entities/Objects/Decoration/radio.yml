@@ -4,7 +4,7 @@
   parent: BaseItem
   id: RadioStalkerPlayer
   name: кассетный плеер
-  suffix: Stalker, переносной
+  suffix: ST, переносной
   description: Кассетный плеер, представленный в 1983 году и выполненный в ультракомпактном корпусе, который по габаритам меньше даже самой аудиокассеты. Это стало возможным за счёт раздвижной конструкции, что и позволяло установить внутрь кассету.
   components:
   - type: STWeight
@@ -24,7 +24,7 @@
 - type: entity
   id: RadioStandStalkerIgorIvanovichTheme
   parent: RadioBaseStalker
-  suffix: Stalker, IgorIvanovichTheme
+  suffix: ST, IgorIvanovichTheme
   components:
   - type: AmbientSound
     volume: 1

@@ -46,8 +46,6 @@
         Compression: 0.7
   - type: ExplosionResistance
     damageCoefficient: 0.85
-  - type: IdentityBlocker
-  - type: IngestionBlocker
   - type: Craftable
   - type: PressureProtection
     highPressureMultiplier: 0.1
@@ -74,3 +72,19 @@
           Blunt: 0.95
           Slash: 0.95
           Piercing: 0.95
+    - type: IdentityBlocker
+    - type: IngestionBlocker
+
+# freedom
+
+- type: entity
+  parent: ClothingOuterArmorAborigineStalker
+  id: ClothingOuterArmorAborigineFreedom
+  name: бронекостюм "Туземец" свободы
+  suffix: ST, T3, Universal
+  description: Были взяты за основу списаные бронекостюмы Берилл-5М, и модернизированы в кустарных условиях. Заметно упала защита от пуль но при этом выросли все остальные показатели что позволило сделать бронекостюм сбалансированным за свою цену для пребывания в условиях зоны.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/aborigine_freedom.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/aborigine_freedom.rsi

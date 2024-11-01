@@ -2,7 +2,7 @@
   id: BrokenMachineS1
   parent: BaseStructure
   name: сломанный научный прибор
-  suffix: Stalker
+  suffix: ST, Mapping
   description: Устройство или инструмент, используемый в научных целях, включая изучение как природных явлений, так и теоретических исследований. К сожалению он сломан.
   components:
   - type: Sprite

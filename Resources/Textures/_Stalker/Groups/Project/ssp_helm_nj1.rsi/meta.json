@@ -1,5 +1,6 @@
 {
   "version": 1,
+  "license": "stalker14 license",
   "size": {
     "x": 32,
     "y": 32
@@ -9,15 +10,8 @@
       "name": "icon"
     },
     {
-      "name": "off-equipped-HELMET",
+      "name": "equipped-HELMET",
       "directions": 4
-    },
-    {
-      "name": "on-equipped-HELMET",
-      "directions": 4
-    },
-    {
-      "name": "icon-flash"
     }
   ]
 }

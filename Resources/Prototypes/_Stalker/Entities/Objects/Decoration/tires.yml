@@ -1,8 +1,8 @@
-﻿- type: entity
+- type: entity
   id: tire1
   parent: BaseStructure
   name: покрышка
-  suffix: Stalker
+  suffix: ST, Mapping
   components:
   - type: Clickable
   - type: Physics
@@ -48,7 +48,7 @@
   id: tire2
   parent: tire1
   name: покрышка
-  suffix: Stalker
+  suffix: ST, Mapping
   components:
   - type: Sprite
     sprite: _Stalker/Decals/Garbage/tire.rsi
@@ -58,7 +58,7 @@
   id: tire3
   parent: tire1
   name: покрышка
-  suffix: Stalker
+  suffix: ST, Mapping
   components:
     - type: Sprite
       sprite: _Stalker/Decals/Garbage/tire.rsi
@@ -78,7 +78,7 @@
   id: tire5
   parent: tire1
   name: покрышка
-  suffix: Stalker
+  suffix: ST, Mapping
   components:
     - type: Sprite
       sprite: _Stalker/Decals/Garbage/tire.rsi

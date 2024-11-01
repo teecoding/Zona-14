@@ -1,8 +1,8 @@
 - type: entity
   id: PlanksStalker
   parent: BaseStructureDynamic
-  name: Доски
-  suffix: ST
+  name: доски
+  suffix: ST, Mapping
   description: Используются в строительстве домов, в мебельной промышленности, производстве тары и др.
   placement:
     mode: PlaceFree

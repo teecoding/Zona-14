@@ -2,7 +2,7 @@
   id: GasStoveS1
   parent: BaseStructure
   name: газовая плита
-  suffix: Stalker
+  suffix: ST, Mapping
   description: Кухонная плита, использующая в качестве топлива горючий газ. Может использоваться природный газ из городской газовой сети или сжиженный газ.
   components:
   - type: Sprite

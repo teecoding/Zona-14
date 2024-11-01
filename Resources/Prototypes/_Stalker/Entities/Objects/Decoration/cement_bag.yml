@@ -2,7 +2,7 @@
   id: CementBag
   parent: BaseStructureDynamic
   name: Мешок с цементом
-  suffix: ST
+  suffix: ST, Mapping
   description: Картонный мешок с цементом, вероятно залежавшимся.
   placement:
     mode: PlaceFree

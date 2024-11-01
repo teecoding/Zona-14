@@ -2,7 +2,7 @@
   id: TrashBin
   parent: BaseStructure
   name: зеленая урна
-  suffix: Stalker
+  suffix: ST, Mapping
   description: вы задавались вопросом сколько мусора ежегодно проходит через этих маленьких плохишей?
   components:
   - type: Sprite

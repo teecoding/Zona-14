@@ -1,8 +1,8 @@
 - type: entity
   id: RoadSigns1
-  parent: BaseTreeLarge
+  parent: STBaseTreeLarge
   name: дорожный знак
-  suffix: Stalker
+  suffix: ST, Mapping
   description: Дорожный знак, "Главная дорога".
   components:
   - type: Sprite
@@ -21,7 +21,7 @@
   id: RoadSigns2
   parent: RoadSigns1
   name: дорожный знак
-  suffix: Stalker
+  suffix: ST, Mapping
   description: Дорожный знак, "Главная дорога".
   components:
   - type: Sprite
@@ -31,7 +31,7 @@
   id: RoadSigns3
   parent: RoadSigns1
   name: дорожный знак
-  suffix: Stalker
+  suffix: ST, Mapping
   description: Дорожный знак, "Остановка запрещена".
   components:
   - type: Sprite
@@ -41,7 +41,7 @@
   id: RoadSigns4
   parent: RoadSigns1
   name: дорожный знак
-  suffix: Stalker
+  suffix: ST, Mapping
   description: Дорожный знак, "Пешеходный переход".
   components:
   - type: Sprite
@@ -51,7 +51,7 @@
   id: RoadSigns5
   parent: RoadSigns1
   name: дорожный знак
-  suffix: Stalker
+  suffix: ST, Mapping
   description: Дорожный знак, "Припять".
   components:
   - type: Sprite
@@ -61,7 +61,7 @@
   id: RoadSigns6
   parent: RoadSigns1
   name: дорожный знак
-  suffix: Stalker
+  suffix: ST, Mapping
   description: Дорожный знак, "Стоп".
   components:
   - type: Sprite
@@ -71,7 +71,7 @@
   id: RoadSigns7
   parent: RoadSigns1
   name: дорожный знак
-  suffix: Stalker
+  suffix: ST, Mapping
   description: Дорожный знак, "Стоп".
   components:
   - type: Sprite
@@ -81,7 +81,7 @@
   id: RoadSigns8
   parent: RoadSigns1
   name: дорожный знак
-  suffix: Stalker
+  suffix: ST, Mapping
   description: Дорожный знак, "Стоянка запрещена".
   components:
   - type: Sprite

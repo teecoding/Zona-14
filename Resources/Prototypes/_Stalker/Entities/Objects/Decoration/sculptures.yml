@@ -2,7 +2,7 @@
   id: weird_sculpture
   parent: BaseRock
   name: скульптура
-  suffix: Stalker
+  suffix: ST, Mapping
   description: Страшная дворовая скульптура вымышленного героя.
   components:
   - type: Sprite
@@ -12,7 +12,7 @@
 - type: entity
   id: weird_sculpture1
   parent: weird_sculpture
-  suffix: stalker
+  suffix: ST, Mapping
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Other/sculptures.rsi/64x64.rsi

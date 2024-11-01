@@ -3,7 +3,7 @@
 - type: entity
   parent: BaseTree
   id: BirchTreeNew01
-  suffix: Stalker
+  suffix: ST, Mapping
   name: берёза
   components:
   - type: Sprite
@@ -39,7 +39,7 @@
 - type: entity
   parent: BirchTreeNew01
   id: BirchTreeNew02
-  suffix: Stalker
+  suffix: ST, Mapping
   name: берёза
   components:
   - type: Sprite
@@ -50,7 +50,7 @@
 - type: entity
   parent: BirchTreeNew01
   id: BirchTreeNew03
-  suffix: Stalker
+  suffix: ST, Mapping
   name: берёза
   components:
   - type: Sprite
@@ -61,7 +61,7 @@
 - type: entity
   parent: BirchTreeNew01
   id: BirchTreeNew04
-  suffix: Stalker
+  suffix: ST, Mapping
   name: берёза
   components:
   - type: Sprite
@@ -72,7 +72,7 @@
 - type: entity
   parent: BirchTreeNew01
   id: BirchTreeNew05
-  suffix: Stalker
+  suffix: ST, Mapping
   name: берёза
   components:
   - type: Sprite
@@ -85,7 +85,7 @@
 - type: entity
   parent: BaseStalkerTree
   id: SpruceTreeNew01
-  suffix: Stalker
+  suffix: ST, Mapping
   name: Ель
   components:
   - type: Sprite
@@ -96,7 +96,7 @@
 - type: entity
   parent: BaseStalkerTree
   id: SpruceTreeNew02
-  suffix: Stalker
+  suffix: ST, Mapping
   name: Ель
   components:
   - type: Sprite
@@ -107,7 +107,7 @@
 - type: entity
   parent: BaseStalkerTree
   id: SpruceTreeNew03
-  suffix: Stalker
+  suffix: ST, Mapping
   name: Ель
   components:
   - type: Sprite
@@ -118,7 +118,7 @@
 - type: entity
   parent: BaseStalkerTree
   id: SpruceTreeNew04
-  suffix: Stalker
+  suffix: ST, Mapping
   name: Ель
   components:
   - type: Sprite
@@ -131,7 +131,7 @@
 - type: entity
   parent: BaseStalkerTree
   id: PineTreeNew01
-  suffix: Stalker
+  suffix: ST, Mapping
   name: Сосна
   components:
   - type: Sprite
@@ -167,7 +167,7 @@
 - type: entity
   parent: PineTreeNew01
   id: PineTreeNew02
-  suffix: Stalker
+  suffix: ST, Mapping
   name: Сосна
   components:
   - type: Sprite
@@ -178,7 +178,7 @@
 - type: entity
   parent: PineTreeNew01
   id: PineTreeNew03
-  suffix: Stalker
+  suffix: ST, Mapping
   name: Сосна
   components:
   - type: Sprite
@@ -189,7 +189,7 @@
 - type: entity
   parent: PineTreeNew01
   id: PineTreeNew04
-  suffix: Stalker
+  suffix: ST, Mapping
   name: Сосна
   components:
   - type: Sprite
@@ -200,7 +200,7 @@
 - type: entity
   parent: PineTreeNew01
   id: PineTreeNew05
-  suffix: Stalker
+  suffix: ST, Mapping
   name: Сосна
   components:
   - type: Sprite
@@ -211,7 +211,7 @@
 - type: entity
   parent: PineTreeNew01
   id: PineTreeNew06
-  suffix: Stalker
+  suffix: ST, Mapping
   name: Сосна
   components:
   - type: Sprite
@@ -224,7 +224,7 @@
 - type: entity
   parent: BaseStalkerTree
   id: OakTreeNew01
-  suffix: Stalker
+  suffix: ST, Mapping
   name: Сосна
   components:
   - type: Sprite
@@ -235,7 +235,7 @@
 - type: entity
   parent: BaseStalkerTree
   id: OakTreeNew02
-  suffix: Stalker
+  suffix: ST, Mapping
   name: Сосна
   components:
   - type: Sprite
@@ -251,7 +251,7 @@
 - type: entity
   parent: BirchTreeNew01
   id: BaseStalkerTree
-  suffix: Stalker
+  suffix: ST, Mapping
   name: берёза
   components:
   - type: Sprite
@@ -262,7 +262,7 @@
 - type: entity
   parent: BirchTreeNew01
   id: BirchTree01
-  suffix: Stalker
+  suffix: ST, Mapping
   name: берёза
   components:
   - type: Sprite
@@ -273,7 +273,7 @@
 - type: entity
   parent: BirchTreeNew01
   id: BirchTree02
-  suffix: Stalker
+  suffix: ST, Mapping
   name: берёза
   components:
   - type: Sprite
@@ -284,7 +284,7 @@
 - type: entity
   parent: BirchTreeNew01
   id: BirchTree03
-  suffix: Stalker
+  suffix: ST, Mapping
   name: берёза
   components:
   - type: Sprite
@@ -295,7 +295,7 @@
 - type: entity
   parent: BirchTreeNew01
   id: BirchTree04
-  suffix: Stalker
+  suffix: ST, Mapping
   name: берёза
   components:
   - type: Sprite
@@ -308,7 +308,7 @@
 - type: entity
   parent: PineTreeNew01
   id: PineTree01
-  suffix: Stalker
+  suffix: ST, Mapping
   name: сосна
   components:
   - type: Sprite
@@ -319,7 +319,7 @@
 - type: entity
   parent: PineTreeNew01
   id: PineTree02
-  suffix: Stalker
+  suffix: ST, Mapping
   name: сосна
   components:
   - type: Sprite
@@ -332,7 +332,7 @@
 - type: entity
   parent: BaseStalkerTree
   id: PoplarTree01
-  suffix: Stalker
+  suffix: ST, Mapping
   name: тополь
   components:
   - type: Sprite
@@ -343,7 +343,7 @@
 - type: entity
   parent: BaseStalkerTree
   id: PoplarTree02
-  suffix: Stalker
+  suffix: ST, Mapping
   name: тополь
   components:
   - type: Sprite
@@ -355,7 +355,7 @@
 
 - type: entity
   id: Bush01
-  suffix: Stalker
+  suffix: ST, Mapping
   name: куст
   description: Древовидное растение, разветвляющееся от самого основания.
   components:
@@ -411,7 +411,7 @@
 - type: entity
   parent: Bush01
   id: Bush02
-  suffix: Stalker
+  suffix: ST, Mapping
   name: куст
   description: Древовидное растение, разветвляющееся от самого основания.
   components:
@@ -422,7 +422,7 @@
 - type: entity
   parent: Bush01
   id: Bush03
-  suffix: Stalker
+  suffix: ST, Mapping
   name: куст
   description: Древовидное растение, разветвляющееся от самого основания.
   components:
@@ -433,7 +433,7 @@
 - type: entity
   parent: Bush01
   id: Bush04
-  suffix: Stalker
+  suffix: ST, Mapping
   name: куст
   description: Древовидное растение, разветвляющееся от самого основания.
   components:
@@ -444,7 +444,7 @@
 - type: entity
   parent: Bush01
   id: Bush05
-  suffix: Stalker
+  suffix: ST, Mapping
   name: куст
   description: Древовидное растение, разветвляющееся от самого основания.
   components:
@@ -455,7 +455,7 @@
 - type: entity
   parent: Bush01
   id: Bush06
-  suffix: Stalker
+  suffix: ST, Mapping
   name: куст
   description: Древовидное растение, разветвляющееся от самого основания.
   components:
@@ -468,7 +468,7 @@
 - type: entity
   parent: Bush01
   id: kuvshinki
-  suffix: Stalker
+  suffix: ST, Mapping
   name: кувшинки
   description: Многолетнее водяное растение. У нее нет стебля. Листья крупные плавающие по воде.
   components:
@@ -481,7 +481,7 @@
 - type: entity
   parent: Bush01
   id: peny
-  suffix: Stalker
+  suffix: ST, Mapping
   name: пень
   components:
   - type: Sprite
@@ -491,7 +491,7 @@
 - type: entity
   parent: Bush01
   id: penm
-  suffix: Stalker
+  suffix: ST, Mapping
   name: пень
   components:
   - type: Sprite
@@ -503,7 +503,7 @@
 - type: entity
   parent: Bush01
   id: kamysh
-  suffix: Stalker
+  suffix: ST, Mapping
   name: камыш
   description: Заселяет берега водоемов, мелководья, болота, канавы, заболоченные луга и различные сырые болотистые местности. Нередко образует сплошные заросли.
   components:
@@ -517,7 +517,7 @@
   parent: BaseTree
   id: FloraTreeRed01
   name: Дерево
-  suffix: Stalker
+  suffix: ST, Mapping
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Flora/flora_trees_red/flora_trees.rsi
@@ -608,7 +608,7 @@
   parent: FloraTreeRed01
   id: FloraTreeLargeRed01
   name: Дерево
-  suffix: Stalker
+  suffix: ST, Mapping
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Flora/flora_trees_red/flora_treeslarge.rsi
@@ -619,7 +619,7 @@
   parent: FloraTreeLargeRed01
   id: FloraTreeLargeRed02
   name: Дерево
-  suffix: Stalker
+  suffix: ST, Mapping
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Flora/flora_trees_red/flora_treeslarge.rsi
@@ -631,7 +631,7 @@
   parent: FloraTreeLargeRed01
   id: FloraTreeLargeRed03
   name: Дерево
-  suffix: Stalker
+  suffix: ST, Mapping
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Flora/flora_trees_red/flora_treeslarge.rsi
@@ -643,7 +643,7 @@
   parent: FloraTreeLargeRed01
   id: FloraTreeLargeRed04
   name: Дерево
-  suffix: Stalker
+  suffix: ST, Mapping
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Flora/flora_trees_red/flora_treeslarge.rsi
@@ -655,7 +655,7 @@
   parent: FloraTreeLargeRed01
   id: FloraTreeLargeRed05
   name: Дерево
-  suffix: Stalker
+  suffix: ST, Mapping
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Flora/flora_trees_red/flora_treeslarge.rsi
@@ -667,7 +667,7 @@
   parent: FloraTreeLargeRed01
   id: FloraTreeLargeRed06
   name: Дерево
-  suffix: Stalker
+  suffix: ST, Mapping
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Flora/flora_trees_red/flora_treeslarge.rsi
@@ -678,7 +678,7 @@
   parent: BaseTreeLarge
   id: FloraTreeWillow01
   name: Дерево
-  suffix: Stalker
+  suffix: ST, Mapping
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Flora/flora_tree_willow.rsi
@@ -715,7 +715,7 @@
 - type: entity
   id: STBaseRock
   parent: BaseRock
-  suffic: ST
+  suffix: ST, Mapping
   abstract: true
   components:
   - type: Sprite
@@ -750,7 +750,7 @@
   id: STBaseTree
   description: Yep, it's a tree.
   parent: BaseTree
-  suffix: ST
+  suffix: ST, Mapping
   noSpawn: true
   # abstract: true
   components:

@@ -1,8 +1,8 @@
 - type: entity
   id: GasStationstalker
   parent: BaseStructure
-  name: Бензоколонка
-  suffix: Stalker
+  name: бензоколонка
+  suffix: ST, Mapping
   description: Старая бензоколонка, врядли она работает.
   placement:
     mode: SnapgridCenter
@@ -53,8 +53,8 @@
 - type: entity
   id: TVStalker
   parent: BaseStructure
-  name: Телевизор
-  suffix: Stalker
+  name: телевизор
+  suffix: ST, Mapping
   description: Телевизионный приёмник.
   placement:
     mode: SnapgridCenter

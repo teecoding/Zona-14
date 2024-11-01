@@ -2,7 +2,7 @@
   id: WoodenBoxWithLoot
   parent: BaseStructureStalkerDynamic
   name: старая деревянная коробка
-  suffix: Stalker
+  suffix: ST, Mapping
   placement:
     mode: PlaceFree
   noSpawn: true
@@ -60,7 +60,7 @@
   name: деревянная коробка
   placement:
     mode: PlaceFree
-  suffix: Stalker
+  suffix: ST, Mapping
   description: Универсальный предмет быта с широким спектром использования. Конструкции и габариты коробок могут быть различными в зависимости от предназначения – от подарочных декоративных вариантов до изделий для размещения овощей, фруктов и различной домашней утвари. Соответственно, каждый вид имеет свои особенности, позитивные и негативные стороны.
   components:
   - type: Sprite
@@ -74,7 +74,7 @@
   id: WoodenBox1
   parent: BaseStructureStalkerDynamic
   name: ящик
-  suffix: Stalker
+  suffix: ST, Mapping
   description: Универсальный предмет быта с широким спектром использования. Конструкции и габариты коробок могут быть различными в зависимости от предназначения – от подарочных декоративных вариантов до изделий для размещения овощей, фруктов и различной домашней утвари. Соответственно, каждый вид имеет свои особенности, позитивные и негативные стороны.
   components:
   - type: Sprite
@@ -160,7 +160,7 @@
 - type: entity
   id: WoodenYaschik1
   name: старая деревянная тумбочка
-  suffix: Stalker
+  suffix: ST, Mapping
   description: Старая деревянная тумбочка. Хм. не открывается. Наврядли там есть что-то ценное. Не стоит тратить нервы и силы на неё.
   parent: WoodenBox2
   components:
@@ -172,7 +172,7 @@
   id: WoodenYaschik2
   parent: WoodenBox2
   name: пустой ящик
-  suffix: Stalker
+  suffix: ST, Mapping
   description: Старый деревянный ящик. Просто пустой ящик. Ничего интересного в нём, к сожалению, нет.
   components:
   - type: Sprite
@@ -193,7 +193,7 @@
 - type: entity
   id: WoodenYaschik4
   name: ящик с картоном
-  suffix: Stalker
+  suffix: ST, Mapping
   description: Старый деревянный ящик, который наполнен кучей старых картонных коробок. Навряд ли там есть что-то ценное, Хотя, на одной из них виднеется надпись "Получатель Сергей" Дальше текст размыт. Наверное, из-за старости и погодных условий...
   parent: WoodenBox2
   components:
@@ -204,7 +204,7 @@
 - type: entity
   id: WoodenYaschik5
   name: ящик с колбами
-  suffix: Stalker
+  suffix: ST, Mapping
   description: Старый деревянный ящик, который наполнен кучей колб с разными размерами. Навряд ли стоит туда лезть, вдруг там что-то токсичное...
   parent: WoodenBox2
   components:
@@ -246,7 +246,7 @@
   id: GreenBox
   parent: WoodenBox2
   name: армейский ящик
-  suffix: Stalker
+  suffix: ST, Mapping
   description: Армейский ящик изготавливаемый по просто, но проверенной схеме. Он подходит в качестве упаковки для оружия, боеприпасов, оборудования и приборов.
   components:
   - type: Sprite
@@ -260,7 +260,7 @@
   id: WoodenGreenBox1Center
   parent: BaseStructure
   name: зелёный армейский ящик
-  suffix: Stalker, (Центр, структура)
+  suffix: ST, (Центр, структура), Mapping
   description: Закрытый армейский ящик. Обычно такие используются для перевозки боеприпасов или для их хранения. Навряд ли вы узнаете, что хранится в нём, ведь он уже очень давно не открывается.
   components:
   - type: Sprite
@@ -284,7 +284,7 @@
   id: WoodenGreenBox1
   parent: WoodenBox2
   name: зелёный армейский ящик
-  suffix: Stalker, (Свободный, ящик)
+  suffix: ST, (Свободный, ящик), Mapping
   description: Закрытый армейский ящик. Обычно такие используются для перевозки боеприпасов или для их хранения. Навряд ли вы узнаете, что хранится в нём, ведь он уже очень давно не открывается.
   components:
   - type: Sprite
@@ -306,7 +306,7 @@
 - type: entity
   id: WoodenGreenBox2
   name: зелёный ящик
-  suffix: Stalker
+  suffix: ST, Mapping
   description: null
   parent: WoodenBox2
   components:
@@ -328,7 +328,7 @@
 - type: entity
   id: WoodenGreenBox3
   name: поддон зелёных ящиков
-  suffix: Stalker
+  suffix: ST, Mapping
   description: Закрытые старые ящики, которые не потеряли ещё свой зелёный цвет. Навряд ли вы сможете их открыть. Может оно и к лучшему. Очередная тайна Зоны не будет открыта.
   parent: BaseStructure
   components:
@@ -352,7 +352,7 @@
 - type: entity
   id: WoodenGreenBox4
   name: старый зелёный ящик
-  suffix: Stalker
+  suffix: ST, Mapping
   description: Закрытый старый ящик, который не потерял ещё свой зелёный цвет. На удивление его не открыть. Может оно и к лучшему. Очередная тайна Зоны не будет открыта.
   parent: WoodenBox2
   components:
@@ -375,7 +375,7 @@
 - type: entity
   id: WoodenGreenBox5
   name: ржавый ящик
-  suffix: Stalker
+  suffix: ST, Mapping
   description: Закрытый старый и ржавый ящик, который некогда был зелёным. На удивление его не открыть. Может оно и к лучшему. Очередная тайна Зоны не будет открыта.
   parent: WoodenBox2
   components:
@@ -398,7 +398,7 @@
 - type: entity
   id: STWoodenGreenBoxWeapon
   name: ржавый ящик
-  suffix: ST
+  suffix: ST, Mapping
   description: Закрытый старый и ржавый ящик, который некогда был зелёным. На удивление его не открыть. Может оно и к лучшему. Очередная тайна Зоны не будет открыта. На крышке картинка пистолета.
   parent: WoodenBox2
   components:
@@ -480,7 +480,7 @@
   id: WoodenBoxWithLoot0
   parent: WoodenBoxWithLoot
   name: старая деревянная коробка
-  suffix: ST
+  suffix: ST, Mapping
   description: Деревянная коробка, только старая. Если постараться, то с помощью небольших усилий можно её сломать. Интересно, лежит ли что-то внутри?
   components:
   - type: Sprite
@@ -757,7 +757,7 @@
   id: SteelBoxWithLoot1
   name: старая стальная коробка
   description: Стальная коробка, только старая. Если постараться, то с помощью небольших усилий можно её сломать. Интересно, лежит ли что-то внутри?
-  suffix: Stalker
+  suffix: ST, Mapping
   parent: WoodenBoxWithLoot
   components:
   - type: Sprite

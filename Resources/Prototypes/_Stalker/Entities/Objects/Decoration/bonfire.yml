@@ -2,6 +2,7 @@
   id: StalkerMonolitBornFire
   parent: Bonfire
   name: алтарь
+  suffix: ST, Mapping
   description: Алтарь богов..
   components:
   - type: Sprite

@@ -2,9 +2,9 @@
 
 - type: entity
   id: STPowerlines1
-  parent: BaseTreeLarge
+  parent: STBaseTreeLarge
   name: ЛЭП
-  suffix: ST
+  suffix: ST, Mapping
   description: Один из компонентов электрической сети, система энергетического оборудования, предназначенная для передачи электроэнергии посредством электрического тока.
   components:
   - type: Sprite
@@ -15,7 +15,7 @@
   name: ЛЭП
   parent: STPowerlines1
   id: STPowerlines2
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: lep2
@@ -24,7 +24,7 @@
   name: ЛЭП
   parent: STPowerlines1
   id: STPowerlines3
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: lep3
@@ -33,7 +33,7 @@
   name: ЛЭП
   parent: STPowerlines1
   id: STPowerlines4
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: lep4
@@ -42,7 +42,7 @@
   name: ЛЭП
   parent: STPowerlines1
   id: STPowerlines5
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: lep5
@@ -51,7 +51,7 @@
   name: ЛЭП
   parent: STPowerlines1
   id: STPowerlines6
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: lep6
@@ -60,7 +60,16 @@
   name: ЛЭП
   parent: STPowerlines1
   id: STPowerlines7
-  suffix: ST
+  suffix: ST, Mapping
   components:
   - type: Sprite
     state: lep7
+
+- type: entity
+  name: ЛЭП
+  parent: STPowerlines1
+  id: STPowerlines8
+  suffix: ST, Mapping
+  components:
+  - type: Sprite
+    state: lep8

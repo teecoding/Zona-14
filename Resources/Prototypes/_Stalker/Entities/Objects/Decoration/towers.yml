@@ -2,7 +2,7 @@
   id: TowerStalker1
   parent: BaseStructure
   name: башня
-  suffix: Stalker
+  suffix: ST, Mapping
   description: Инженерное сооружение, отличающееся значительным преобладанием высоты над стороной или диаметром основания.
   components:
   - type: Sprite

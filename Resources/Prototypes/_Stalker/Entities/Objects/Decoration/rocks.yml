@@ -2,7 +2,7 @@
   parent: BaseRock
   id: StalkerRock02
   name: валун
-  suffix: Stalker
+  suffix: ST, Mapping
   description: Крупный окатанный обломок горной породы.
   components:
   - type: Sprite

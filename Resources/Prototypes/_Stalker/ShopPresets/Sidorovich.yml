@@ -1,56 +1,56 @@
 - type: shopPreset
-  id: NpcSidor
+  id: NpcSidor # 0.7x
   itemsForSale:
     # Thermal group - 1
-    ZoneArtifactFireball: 300
-    ZoneArtifactEye: 500
-    ZoneArtifactFlame: 1000
+    ZoneArtifactFireball: 210
+    ZoneArtifactEye: 350
+    ZoneArtifactFlame: 700
     # Thermal group - 2
-    ZoneArtifactCristall: 1250
-    ZoneArtifactLithosphere: 2000
+    ZoneArtifactCristall: 875
+    ZoneArtifactLithosphere: 1400
     # Electrical group - 1
-    ZoneArtifactSparkler: 300
-    ZoneArtifactBattery: 600
-    ZoneArtifactFlash: 1200
-    ArtMoon: 1500
-    ZoneArtifactTesla: 2300
-    ZoneArtifactIce: 2500
+    ZoneArtifactSparkler: 210
+    ZoneArtifactBattery: 420
+    ZoneArtifactFlash: 840
+    ArtMoon: 1050
+    ZoneArtifactTesla: 1575
+    ZoneArtifactIce: 1750
     # Gravity group - 1
-    ArtMedusa: 300
-    ZoneArtifactFlower: 500
-    ZoneArtifactNightStar: 1300
+    ArtMedusa: 175
+    ZoneArtifactFlower: 350
+    ZoneArtifactNightStar: 875
     # Gravity group - 2
-    ZoneArtifactVyvert: 300
-    ZoneArtifactAmoeba: 500
-    ZoneArtifactGravi: 1500
-    ZoneArtifactGoldfish: 2000
-    ZoneArtifactSpring: 2500
-    ZoneArtifactFocus: 1000
-    ZoneArtifactStuntman: 2000
-    ZoneArtifactDistorter: 3000
-    ZoneArtifactSoul: 4000
+    ZoneArtifactVyvert: 210
+    ZoneArtifactAmoeba: 350
+    ZoneArtifactGravi: 1050
+    ZoneArtifactGoldfish: 1400
+    ZoneArtifactSpring: 1750
+    ZoneArtifactFocus: 700
+    ZoneArtifactStuntman: 1400
+    ZoneArtifactDistorter: 2100
+    ZoneArtifactSoul: 1750
     # Acidic group - 1
-    ZoneArtifactBlood: 400
-    ZoneArtifactMeat: 800
-    ZoneArtifactKolobok: 1000
+    ZoneArtifactBlood: 280
+    ZoneArtifactMeat: 525
+    ZoneArtifactKolobok: 700
     # Acidic group - 2
-    ZoneArtifactPellicle: 500
-    ZoneArtifactBaloon: 1800
+    ZoneArtifactPellicle: 350
+    ZoneArtifactBaloon: 1225
+    #############################Части Мутантов
+    FoodMeatSpiderLeg: 35
+    MutantPartBlindDogTail: 63
+    MutantPartZombieHand: 294
+    MutantPartFleshEye: 168
+    MutantPartBoarHoof: 168
+    MutantPartPseudodogTail: 210
+    MutantPartSnorkFoot: 252
+    MutantPartLeshiyRoot: 350
+    MutantPartBloodsuckerTentacles: 420
+    MutantPartPseudogiantHeart: 1750
+    MutantPartOraculeEye: 2100
 
     # Smuggling
     TradeBox: 1100
-############################# 65% от цены вкупки в городе
-    FoodMeatSpiderLeg: 40
-    MutantPartBlindDogTail: 75
-    MutantPartZombieHand: 350
-    MutantPartFleshEye: 200
-    MutantPartBoarHoof: 200
-    MutantPartPseudodogTail: 250
-    MutantPartSnorkFoot: 300
-    MutantPartLeshiyRoot: 420
-    MutantPartBloodsuckerTentacles: 500
-    MutantPartPseudogiantHeart: 2000
-    MutantPartOraculeEye: 2500
   categories:
     - name: Оружие
       priority: 1
@@ -65,12 +65,12 @@
     - name: Магазины
       priority: 2
       items:
-        545Mag20: 200
-        545Mag30: 400
-        Base751Mag10: 400
-        751Mag20: 550
-        BaseAPSMag: 400
-        GlockMag24: 400
+        545Mag20: 150
+        545Mag30: 250
+        Base751Mag10: 300
+        751Mag20: 450
+        BaseAPSMag: 300
+        GlockMag24: 300
 
     - name: Боеприпасы
       priority: 3
@@ -103,9 +103,17 @@
         ClothingHeadHelmetVityaz1C: 2209
         # рюкзаки
         ClothingBackpackTacticBlackStalker: 600
-    - name: Утилиты
+    - name: Рюкзаки
       priority: 5
       items:
+        ClothingBackpackDuffelGreenStalker: 65 # 4,4
+        ClothingBackpackDuffelBlackStalker: 65 # 4,4
+        ClothingBackpackTacticBeigeStalker: 350  # 6,5
+        ClothingBackpackTacticOliveStalker: 350
+    - name: Утилиты
+      priority: 6
+      items:
+        ClothingBeltBandolierStalker: 35
         STCombatKnife: 25
         TrashBag: 30
         BoxZiptie: 50
@@ -131,7 +139,7 @@
         HatchetStalker: 150
         STCraftPlasticFittingT2: 400
     - name: Аномалии
-      priority: 6
+      priority: 7
       items:
         # Bolt bags
         STBoltBagFilled: 50
@@ -147,7 +155,7 @@
         ZoneArtifactDetectorPulse: 200
         ZoneArtifactDetectorHunter: 900
     - name: Провизия
-      priority: 7
+      priority: 8
       items:
         STEnergyDrink: 200
         DrinkVodkaBottleFull: 55
@@ -158,7 +166,7 @@
         DrinkLemonadehBottleFull: 50
         FoodMeatSalami: 350
     - name: Медицина
-      priority: 8
+      priority: 9
       items:
         PillDexalin: 10
         PillDexalinPlusStalker: 30
@@ -175,7 +183,7 @@
         MedkitCMSStalker: 750
         MedkitGrizzlyStalker: 1050
     - name: Кастомизация
-      priority: 9
+      priority: 10
       items:
         ClothingHeadHatBeaniehat: 10
         ClothingMaskNeckFacemask: 10
@@ -201,7 +209,7 @@
         # Cloaks
         ClothingCloakStalker: 30
     - name: Развлечения
-      priority: 10
+      priority: 11
       items:
         # Dices
         DiceBag: 20
@@ -216,6 +224,6 @@
         AcousticGuitarInstrument: 300
         AccordionInstrument: 500
     - name: Набор тестера
-      priority: 10
+      priority: 12
       items:
         STTempTestNabor: 1

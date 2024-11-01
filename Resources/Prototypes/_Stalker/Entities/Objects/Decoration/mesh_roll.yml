@@ -1,8 +1,8 @@
 - type: entity
   id: MeshRollStalker
   parent: BaseStructureDynamic
-  name: Рулон сетки
-  suffix: ST
+  name: рулон сетки
+  suffix: ST, Mapping
   description: Металлическая сетка, состоящая из проволоки из нержавеющей стали свёрнутая в рулон.
   placement:
     mode: PlaceFree

@@ -1,4 +1,4 @@
-﻿####################################Одиночки
+####################################Одиночки
 
 - type: entity
   parent: MapTeleportBase
@@ -18,6 +18,25 @@
     - type: NewMapTeleport
       allowAll: false
       portalName: Cordon-DerebasStalker
+
+####################################Общий
+
+- type: entity
+  parent: MapTeleportBase
+  id: Bar-BarStalker
+  name: Bar-BarStalker
+  components:
+    - type: NewMapTeleport
+      allowAll: true
+      portalName: Bar-BarStalker
+- type: entity
+  parent: MapTeleportBaseUncollide
+  id: Bar-BarStalkerUncollide
+  name: Bar-BarStalkerUncollide
+  components:
+    - type: NewMapTeleport
+      allowAll: false
+      portalName: Bar-BarStalker
 
 ####################################Бандиты
 

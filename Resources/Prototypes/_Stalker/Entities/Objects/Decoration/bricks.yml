@@ -2,7 +2,7 @@
   id: Bricks
   parent: BaseStructureDynamic
   name: Кирпичи
-  suffix: ST
+  suffix: ST, Mapping
   description: Глиняннные кирпичи сложенные странной формой.
   placement:
     mode: PlaceFree

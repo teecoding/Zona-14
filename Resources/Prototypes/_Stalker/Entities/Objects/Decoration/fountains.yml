@@ -2,7 +2,7 @@
   id: STFountainWater
   parent: BaseStructure
   name: Фонтан с водой
-  suffix: ST
+  suffix: ST, Mapping
   description: Старенький фонтан совестких времен. Функционирует исправно.
   components:
   - type: Sprite
@@ -32,7 +32,7 @@
   id: STFountainShit
   parent: BaseStructure
   name: Фонтан с фекалиями
-  suffix: ST
+  suffix: ST, Mapping
   description: Старенький фонтан советских времен, неприятно пахнет. Не ясно как сюда попала эта жижа...
   components:
   - type: Sprite
@@ -62,7 +62,7 @@
   id: STFountainBlood
   parent: BaseStructure
   name: Фонтан с кровью
-  suffix: ST
+  suffix: ST, Mapping
   description: Старенький фонтан советских времен. Наполнен кровью грешников.
   components:
   - type: Sprite

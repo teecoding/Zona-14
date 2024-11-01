@@ -4,6 +4,7 @@ using System.Net;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using Content.Server._Stalker.Discord;
 using Content.Server.Chat.Managers;
 using Content.Server.Database;
 using Content.Server.GameTicking;
@@ -39,6 +40,7 @@ public sealed partial class BanManager : IBanManager, IPostInjectInit
     [Dependency] private readonly IGameTiming _gameTiming = default!;
     [Dependency] private readonly ITaskManager _taskManager = default!;
     [Dependency] private readonly UserDbDataManager _userDbData = default!;
+    [Dependency] private readonly BanWebhook _webhook = default!; // stalker-changes
 
     private ISawmill _sawmill = default!;
 
@@ -196,6 +198,16 @@ public sealed partial class BanManager : IBanManager, IPostInjectInit
 
         _sawmill.Info(logMessage);
         _chat.SendAdminAlert(logMessage);
+
+        var severityLoc = severity switch // stalker-changes-start
+        {
+            NoteSeverity.None => Loc.GetString("admin-banmanager-ban-reason-none"),
+            NoteSeverity.Minor => Loc.GetString("admin-banmanager-ban-reason-low"),
+            NoteSeverity.Medium => Loc.GetString("admin-banmanager-ban-reason-middle"),
+            NoteSeverity.High => Loc.GetString("admin-banmanager-ban-reason-high")
+        };
+        var lastBan = await _db.GetLastServerBanAsync();
+        _webhook.GenerateWebhook(adminName, targetName, lastBan?.Id.ToString(), severityLoc, minutes, reason); // stalker-changes-end
 
         KickMatchingConnectedPlayers(banDef, "newly placed ban");
     }

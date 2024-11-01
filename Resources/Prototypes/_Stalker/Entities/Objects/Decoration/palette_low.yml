@@ -2,7 +2,7 @@
   id: PaletteLowStalker
   parent: PaletteStalker
   name: поддон
-  suffix: ST
+  suffix: ST, Mapping
   description: Обычный деревянный поддон повёрнутый на бок.
   components:
   - type: Sprite

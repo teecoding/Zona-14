@@ -2,7 +2,7 @@
   id: tent
   parent: BaseRock
   name: палатка
-  suffix: Stalker
+  suffix: ST, Mapping
   description: Палатка, что укроет от дождя - но не от мутантов.
   components:
   - type: Sprite
@@ -10,11 +10,12 @@
     sprite: _Stalker/Objects/Decoration/tent.rsi
     state: base
   - type: InteractionOutline
+  
 - type: entity
   id: tent2
   parent: BaseRock
   name: палатка
-  suffix: Stalker, некрутибельна
+  suffix: ST, Mapping
   description: Палатка, что укроет от дождя - но не от мутантов.
   components:
   - type: Sprite
