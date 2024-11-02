@@ -144,11 +144,6 @@ public sealed class SponsorsManager
         }
     }
 
-    public bool TryGetSponsorData(NetUserId userId, [NotNullWhen(true)] out SponsorData? sponsorData)
-    {
-        return _cachedSponsors.TryGetValue(userId, out sponsorData);
-    }
-
     public bool HavePriorityJoin(NetUserId userId)
     {
         if (!TryGetInfo(userId, out var sponsorInfo))
