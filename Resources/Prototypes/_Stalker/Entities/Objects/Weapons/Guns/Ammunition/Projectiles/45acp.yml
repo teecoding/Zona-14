@@ -2,7 +2,7 @@
   id: Bullet45ACPLFMJ
   name: bullet (.45 ACP Lasermatch FMJ magnum)
   parent: BaseBullet
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
     - type: TimedDespawn
       lifetime: 2
@@ -18,7 +18,7 @@
   id: Bullet45ACPMFMJ
   name: bullet (.45 ACP Match FMJ magnum)
   parent: Bullet45ACPLFMJ
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
     - type: Projectile
       projectileClass: 2
@@ -32,7 +32,7 @@
   id: Bullet45ACPHydroshock
   name: bullet (.45 ACP Hydra-Shok magnum)
   parent: Bullet45ACPLFMJ
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
     - type: Projectile
       projectileClass: 1
@@ -46,7 +46,7 @@
   id: Bullet45ACPRIP
   name: bullet (.45 ACP RIP magnum)
   parent: Bullet45ACPLFMJ
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
     - type: Projectile
       projectileClass: 0
@@ -60,7 +60,7 @@
   id: Bullet45ACPAP
   name: bullet (.45 ACP AP magnum)
   parent: Bullet45ACPLFMJ
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
     - type: Projectile
       projectileClass: 3

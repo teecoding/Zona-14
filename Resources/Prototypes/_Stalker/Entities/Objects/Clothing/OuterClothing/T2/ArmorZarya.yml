@@ -48,7 +48,7 @@
   parent: STClothingHeadHatBase
   id: ClothingHeadHelmetZaryaStalker
   name: капюшон «Заря»
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   description: Вольный как воздух у облаков.
   components:
     - type: Sprite
@@ -103,7 +103,7 @@
   id: ClothingHeadCapoSera
   name: капюшон
   description: Защиты не обеспечивает.
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
     - type: Sprite
       sprite: _Stalker/Objects/Clothing/hats/_Sera/zarya_helm.rsi
@@ -156,7 +156,7 @@
   parent: STClothingHeadHatBase
   id: ClothingHeadHelmetZaryaDolg
   name: капюшон Зари Долга
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
     - type: Sprite
       sprite: _Stalker/Objects/Clothing/hats/zarya_helm_dolg.rsi
@@ -253,7 +253,7 @@
   id: ClothingHeadCapoProject
   name: капюшон
   description: Защиты не обеспечивает.
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
     - type: Sprite
       sprite: _Stalker/Objects/Clothing/hats/zarya_helm_project.rsi
@@ -287,7 +287,7 @@
   id: ClothingHeadWandererCap
   name: капюшон Бродяги
   description: Тёмный капюшон от бандитского понтового аналога Зари.
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/hats/Bandit_zarya_cap.rsi
@@ -310,7 +310,7 @@
   id: ClothingHeadSeraphimCap
   name: капюшон "Зари" Серафима
   description: Зёленый капюшон от аналога "Зари", представленного Серафимом.
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/hats/zarya_seraphim_cap.rsi

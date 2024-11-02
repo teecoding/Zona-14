@@ -192,7 +192,7 @@
 
 - type: entity
   id: ClothingBackpackTacticBase
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   # abstract: true
   parent: ClothingBackpackDuffelGreenStalker
   suffix: ST
@@ -263,7 +263,6 @@
   parent: ClothingBackpackDuffelHikingVSRF
   id: ClothingBackpackDuffelHikingVSRFAnomaly
   name: аномальный походный рюкзак
-  noSpawn: false
   suffix: ST, T5, Lord, ADMIN
   components:
   - type: STWeight

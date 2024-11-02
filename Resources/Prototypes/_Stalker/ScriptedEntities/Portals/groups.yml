@@ -128,7 +128,6 @@
 - type: entity
   parent: MapTeleportBase
   id: Cordon-Rene1
-  noSpawn: false
   name: Cordon-Rene1 (spawn)
   components:
     - type: NewMapTeleport
@@ -139,7 +138,6 @@
 - type: entity
   parent: MapTeleportBaseUncollide
   id: Cordon-ReneUncollide1
-  noSpawn: false
   name: Cordon-ReneUncollide1 (spawn)
   components:
     - type: NewMapTeleport
@@ -150,7 +148,6 @@
 - type: entity
   parent: MapTeleportBase
   id: Cordon-Rene2
-  noSpawn: false
   name: Cordon-Rene2 (spawn)
   components:
     - type: NewMapTeleport
@@ -161,7 +158,6 @@
 - type: entity
   parent: MapTeleportBaseUncollide
   id: Cordon-ReneUncollide2
-  noSpawn: false
   name: Cordon-ReneUncollide2 (spawn)
   components:
     - type: NewMapTeleport
@@ -172,7 +168,6 @@
 - type: entity
   parent: MapTeleportBase
   id: Cordon-Rene3
-  noSpawn: false
   name: Cordon-Rene3 (spawn)
   components:
     - type: NewMapTeleport
@@ -183,7 +178,6 @@
 - type: entity
   parent: MapTeleportBaseUncollide
   id: Cordon-ReneUncollide3
-  noSpawn: false
   name: Cordon-ReneUncollide3 (spawn)
   components:
     - type: NewMapTeleport
@@ -194,7 +188,6 @@
 - type: entity
   parent: MapTeleportBase
   id: Rene-Svalka
-  noSpawn: false
   name: Rene-Svalka (spawn)
   components:
     - type: NewMapTeleport
@@ -205,7 +198,6 @@
 - type: entity
   parent: MapTeleportBaseUncollide
   id: Rene-SvalkaUncollide
-  noSpawn: false
   name: Rene-SvalkaUncollide (spawn)
   components:
     - type: NewMapTeleport
@@ -219,7 +211,7 @@
 - type: entity
   parent: MapTeleportBase
   id: Cordon-Oazis
-  # noSpawn: true
+  # categories: [ HideSpawnMenu ]
   name: Cordon-Oazis
   components:
     - type: NewMapTeleport
@@ -230,7 +222,7 @@
 - type: entity
   parent: MapTeleportBaseUncollide
   id: Cordon-OazisUncollide
-  # noSpawn: true
+  # categories: [ HideSpawnMenu ]
   name: Cordon-OazisUncollide
   components:
     - type: NewMapTeleport
@@ -241,7 +233,7 @@
 - type: entity
   parent: MapTeleportBase
   id: Garbage-Oazis
-  # noSpawn: true
+  # categories: [ HideSpawnMenu ]
   name: Garbage-Oazis
   components:
     - type: NewMapTeleport
@@ -249,7 +241,7 @@
 - type: entity
   parent: MapTeleportBase
   id: RedForest-Oazis
-  # noSpawn: true
+  # categories: [ HideSpawnMenu ]
   name: RedForest-Oazis
   components:
     - type: NewMapTeleport
@@ -260,7 +252,7 @@
 - type: entity
   parent: MapTeleportBase
   id: Cordon-Top
-  # noSpawn: true
+  # categories: [ HideSpawnMenu ]
   name: Cordon-Top
   components:
     - type: NewMapTeleport
@@ -271,7 +263,7 @@
 - type: entity
   parent: MapTeleportBaseUncollide
   id: Cordon-TopUncollide
-  # noSpawn: true
+  # categories: [ HideSpawnMenu ]
   name: Cordon-TopUncollide
   components:
     - type: NewMapTeleport
@@ -285,7 +277,7 @@
 - type: entity
   parent: MapTeleportBase
   id: Cordon-TemnajaLoshina
-  # noSpawn: true
+  # categories: [ HideSpawnMenu ]
   name: Cordon-TemnajaLoshina
   components:
     - type: NewMapTeleport
@@ -296,7 +288,7 @@
 - type: entity
   parent: MapTeleportBaseUncollide
   id: Cordon-TemnajaLoshinaUncollide
-  # noSpawn: true
+  # categories: [ HideSpawnMenu ]
   name: Cordon-TemnajaLoshinaUncollide
   components:
     - type: NewMapTeleport
@@ -332,7 +324,6 @@
 - type: entity
   parent: MapTeleportBase
   id: Cordon-Circusbase
-  noSpawn: false
   name: Cordon-Circusbase
   components:
     - type: NewMapTeleport
@@ -346,7 +337,6 @@
 - type: entity
   parent: MapTeleportBase
   id: Cordon-Merc
-  noSpawn: false
   name: Cordon-Merc
   components:
     - type: NewMapTeleport
@@ -357,7 +347,6 @@
 - type: entity
   parent: MapTeleportBaseUncollide
   id: Cordon-MercBandUncollide
-  noSpawn: false
   name: Cordon-MercBandUncollide
   components:
     - type: NewMapTeleport
@@ -371,7 +360,6 @@
 - type: entity
   parent: MapTeleportBase
   id: Cordon-Poisk
-  noSpawn: false
   name: Cordon-Poisk
   components:
     - type: NewMapTeleport
@@ -382,7 +370,6 @@
 - type: entity
   parent: MapTeleportBaseUncollide
   id: Cordon-PoiskUncollide
-  noSpawn: false
   name: Cordon-PoiskUncollide
   components:
     - type: NewMapTeleport
@@ -396,7 +383,6 @@
 - type: entity
   parent: MapTeleportBase
   id: Cordon-Project
-  noSpawn: false
   name: Cordon-Project
   components:
     - type: NewMapTeleport
@@ -407,7 +393,6 @@
 - type: entity
   parent: MapTeleportBaseUncollide
   id: Cordon-ProjectUncollide
-  noSpawn: false
   name: Cordon-ProjectUncollide
   components:
     - type: NewMapTeleport
@@ -421,7 +406,6 @@
 - type: entity
   parent: MapTeleportBase
   id: Cordon-Neutral
-  noSpawn: false
   name: Cordon-Neutral
   components:
     - type: NewMapTeleport
@@ -433,7 +417,6 @@
 - type: entity
   parent: MapTeleportBaseUncollide
   id: Cordon-NeutralUncollide
-  noSpawn: false
   name: Cordon-NeutralUncollide
   components:
     - type: NewMapTeleport

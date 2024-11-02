@@ -751,7 +751,7 @@
   description: Yep, it's a tree.
   parent: BaseTree
   suffix: ST, Mapping
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   # abstract: true
   components:
   - type: Sprite
