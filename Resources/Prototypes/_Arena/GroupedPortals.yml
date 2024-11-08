@@ -1,3 +1,4 @@
+# PVP-START
 - type: entity
   parent: GroupedTeleportBase
   suffix: ARENA
@@ -29,3 +30,25 @@
       radius: 0
       energy: 0
       netsync: false
+# PVP-END
+
+# PVE-START
+- type: entity
+  parent: MapTeleportBase
+  id: ARENALOBBYPVE
+  noSpawn: true
+  name: Lobby-PVE
+  components:
+    - type: NewMapTeleport
+      allowAll: false
+      portalName: Arena-PVE
+- type: entity
+  parent: MapTeleportBaseUncollide
+  id: ARENAPVELOBBY
+  noSpawn: true
+  name: PVE-Lobby
+  components:
+    - type: NewMapTeleport
+      allowAll: false
+      portalName: Arena-PVE
+# PVE-END
