@@ -23,7 +23,6 @@
   parent: ClothingBackpackDuffelHikingVSRFAnomaly
   id: ArenaClothingBackpackDuffelHikingVSRFAnomaly
   components:
-  - type: Unremoveable
   - type: StorageFill
     contents:
       - id: GL1Grenade
