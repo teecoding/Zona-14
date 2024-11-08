@@ -12,5 +12,6 @@
           mapNameTemplate: "Арена"
         - type: StationJobs
           overflowJobs:
-            - Agunner
+            - Arenolog
           availableJobs:
+            Arenolog: [ -1, -1 ]

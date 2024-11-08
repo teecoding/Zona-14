@@ -1,0 +1,40 @@
+- type: job
+  id: Arenolog
+  name: Аренолог
+  icon: voen
+  description: Самый базовый пресет
+  playTimeTracker: JobArenolog
+  startingGear: ArenologGear
+  supervisors: Подчиняетесь законам божьим
+
+- type: playTimeTracker
+  id: JobArenolog
+
+- type: startingGear
+  id: ArenologGear
+  equipment:
+    id: MilitaryPDA
+    belt: ClothingBeltGreenWebbingStalker
+    shoes: ClothingShoesBootsCombatFilled
+    ears: STHeadLight
+    back: ArenaClothingBackpackDuffelHikingVSRFAnomaly
+
+- type: entity
+  parent: ClothingBackpackDuffelHikingVSRFAnomaly
+  id: ArenaClothingBackpackDuffelHikingVSRFAnomaly
+  components:
+  - type: Unremoveable
+  - type: StorageFill
+    contents:
+      - id: GL1Grenade
+      - id: GL1Grenade
+      - id: STBloodpack
+      - id: STBloodpack
+      - id: STBloodpack
+      - id: STBloodpack
+      - id: STTourniquet
+      - id: STTourniquet
+      - id: STTourniquet
+      - id: STTourniquet
+      - id: PowerCellHyper
+      - id: PowerCellHyper
