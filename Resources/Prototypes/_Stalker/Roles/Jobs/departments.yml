@@ -74,6 +74,7 @@
   - MilitaryHead
   - StalkerScientist
   - StalkerHeadScientist
+  - StalkerISSG
 
 - type: department
   id: StalkerReligius
