@@ -65,3 +65,43 @@
         flatReductions:
           Radiation: 1
           Caustic: 1
+
+
+- type: entity
+  parent: ClothingOuterArmorSpark
+  id: ClothingOuterArmorIssgSpark
+  name: костюм «ITF»
+  suffix: ST, T2, Env
+  description: Комбинезон ISSG, более неизвестно. Пассивно выводит радиацию по 0.25 в секунду
+  components:
+    - type: STWeight
+      self: 2.5
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/outerClothing/IssgSpark.rsi
+      state: icon-suit
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/outerClothing/IssgSpark.rsi
+    - type: ToggleableClothing
+      clothingPrototype: ClothingHeadHelmetIssgSpark
+    - type: PersonalDamage
+      interval: 1
+      damage:
+        types:
+          Radiation: -0.25
+
+- type: entity
+  parent: ClothingHeadHelmetSpark
+  id: ClothingHeadHelmetIssgSpark
+  name: капюшон «ITF»
+  description: Плотный кусок резины на вашей голове.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/hats/IssgSpark_helm.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/hats/IssgSpark_helm.rsi
+    - type: Armor
+      armorClass: 1
+      modifiers:
+        flatReductions:
+          Radiation: 2.5
+          Caustic: 1
