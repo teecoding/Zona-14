@@ -221,10 +221,12 @@
   - type: Clothing
     sprite: _Stalker/Objects/Clothing/cloak/desertercape.rsi
 
+# Скин на дождевик
 - type: entity
   parent: ClothingOuterCoatDoshdevik
-  id: ClothingCapeSerafim
+  id: STClothingCapeT1Serafim
   name: плащ Серафимов
+  suffix: ST, T1, Serafim
   description: Выполнен в тёмно-зелёной цветовой гамме
   components:
   - type: Sprite

@@ -1226,8 +1226,9 @@
   parent: NPCDoll
   id: NPCGabrielSerafim
   noSpawn: false
-  name: Габриэль [→ ? ←]
-  description: Очень плохой тип. Из-под Палы продаёт контрабанду. Лучше с ним не связываться, себе же дороже.
+  name: Габриэль [→   ←]
+  suffix: ST, Serafim
+  description: Чутка с дикостью и деревенским акцентом. Из-под Палы продаёт контрабанду. Лучший друг группировки Серафимы.
   components:
   - type: Sprite
     sprite: _Stalker/NPC/Gabriel.rsi

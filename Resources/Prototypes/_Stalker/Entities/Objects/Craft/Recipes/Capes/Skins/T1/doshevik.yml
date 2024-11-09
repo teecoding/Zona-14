@@ -1,6 +1,5 @@
-# light helmet
 - type: lightCraftingRecipe
-  id: STCraftSkinSTCraftSkinClothingHeadHelmetDolg
+  id: STCraftSkinClothingCloakT1Seraphim
   results:
     - ClothingCapeSerafim
   steps:

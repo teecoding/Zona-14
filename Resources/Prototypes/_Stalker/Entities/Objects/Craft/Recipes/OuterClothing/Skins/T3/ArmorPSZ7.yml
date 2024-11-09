@@ -9,7 +9,7 @@
     time: 5
 
 - type: lightCraftingRecipe
-  id: STCraftSkinClothingPSZ7Deserter
+  id: STCraftSkinClothingSeraphimStrash
   results:
     - STClothingOuterArmorSeraphimStrash
   steps:

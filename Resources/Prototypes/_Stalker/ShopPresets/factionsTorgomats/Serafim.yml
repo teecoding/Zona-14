@@ -82,10 +82,10 @@
   id: SerafimShopPresetLight
   itemsForSale:
     FoodMeatSpiderLeg: 17
-    MutantPartBlindDogTail: 35
+    MutantPartBlindDogTail: 25
     # MutantPartZombieHand: 140
-    MutantPartFleshEye: 80
-    MutantPartBoarHoof: 5
+    MutantPartFleshEye: 35
+    MutantPartBoarHoof: 12
     MutantPartPseudodogTail: 36
     MutantPartSnorkFoot: 280
     MutantPartLeshiyRoot: 167
@@ -138,7 +138,7 @@
     - name: Боеприпасы
       priority: 6
       items:
-        7mmBuckshotBox: 10
+        7mmBuckshotBox: 13
         545FMJBox: 350
     - name: Провизия
       priority: 7

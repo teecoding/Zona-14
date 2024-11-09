@@ -168,8 +168,9 @@
 
 - type: entity
   parent: [ BaseStalkerPDA, GeigerCounter ]
-  id: SeraphimPDA
+  id: STSeraphimPDA
   name: КПК Серафима
+  suffix: ST, Serafim
   description: Объединены общей сетью и позволяют обмениваться информацией.
   components:
   - type: Icon

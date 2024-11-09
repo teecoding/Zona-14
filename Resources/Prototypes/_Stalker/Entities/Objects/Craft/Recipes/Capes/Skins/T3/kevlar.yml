@@ -1,5 +1,5 @@
 - type: lightCraftingRecipe
-  id:  STCraftSkinClothingHeadAssaultHelmetUN
+  id: STCraftSkinClothingCloakT3KevlarSeraphim
   results:
     - ClothingOuterCoatSeraphim
   steps:

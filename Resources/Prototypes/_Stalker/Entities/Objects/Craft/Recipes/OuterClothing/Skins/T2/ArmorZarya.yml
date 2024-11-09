@@ -79,7 +79,7 @@
     time: 5
 
 - type: lightCraftingRecipe
-  id: STCraftSkinClothingOuterArmorZaryaJabs
+  id: STCraftSkinClothingOuterArmorRassvetSera
   results:
     - ClothingOuterArmorRassvetSera
   steps:

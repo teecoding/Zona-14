@@ -1,5 +1,5 @@
 - type: lightCraftingRecipe
-  id:  STCraftSkinClothingHeadHelmetRenegate
+  id:  STCraftSkinClothingCloakT2Seraphim
   results:
     - ClothingCapeSerafimPrestige
   steps:
