@@ -53,7 +53,7 @@
       components:
       - type: Access
         groups:
-          - ecologists
+          - Sci
       - type: Bands
         altBand: stalker
         canChange: true
