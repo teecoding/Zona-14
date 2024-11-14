@@ -49,16 +49,6 @@
     time: 5
 
 - type: lightCraftingRecipe
-  id: STCraftSkinClothingOuterArmorZaryaSera
-  results:
-    - ClothingOuterArmorZaryaSera
-  steps:
-    firstIngredient: STSkinsKitSeraphim
-    secondIngredient: ClothingOuterArmorZaryaStalker
-    keepFirst: true
-    time: 5
-
-- type: lightCraftingRecipe
   id: STCraftSkinSTClothingOuterArmorDesertersZarya
   results:
     - STClothingOuterArmorDesertersZarya
@@ -76,4 +66,14 @@
     firstIngredient: STSkinsKitProject
     secondIngredient: ClothingOuterArmorZaryaStalker
     keepFirst: true
+    time: 5
+
+- type: lightCraftingRecipe
+  id: STCraftSkinClothingOuterArmorRassvetSera
+  results:
+    - ClothingOuterArmorRassvetSera
+  steps:
+    firstIngredient: STSkinsKitSeraphim
+    secondIngredient: ClothingOuterArmorZaryaHunter
+    keepFirst: false
     time: 5
