@@ -316,6 +316,22 @@
   - type: IconSmooth
     key: walls
     base: concrete
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 100
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+          - !type:PlaySoundBehavior
+            sound:
+              path: /Audio/Effects/metal_break1.ogg
+
+- type: entity
+  id: STWallRockBasalt
+  name: завал
+  parent: BaseWall
 
 - type: entity
   id: WallRockBasaltDestructible
