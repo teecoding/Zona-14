@@ -37,12 +37,12 @@
 - type: startingGear
   id: SeraphimGear
   equipment:
-    id: SeraphimPDA
+    id: STSeraphimPDA
     neck: ClothingStalkerNeckTokenSeraphim
     belt: ClothingBeltStorageWaistbag
     shoes: ClothingShoesBootsCombatFilled
-    legs: ClothingLegsSerafimPants
-    torso: ClothingTorsoSerafimLittleChaos
+    legs: STClothingLegsSerafimPants
+    torso: STClothingTorsoSerafimLittleChaos
 
 - type: job
   id: SeraphimHead
@@ -84,9 +84,9 @@
 - type: startingGear
   id: SeraphimHeadGear
   equipment:
-    id: SeraphimPDA
+    id: STSeraphimPDA
     neck: ClothingStalkerNeckTokenSeraphim
     belt: ClothingBeltStorageWaistbag
     shoes: ClothingShoesBootsCombatFilled
-    legs: ClothingLegsSerafimPants
-    torso: ClothingTorsoSerafimFullReady
+    legs: STClothingLegsSerafimPants
+    torso: STClothingTorsoSerafimFullReady

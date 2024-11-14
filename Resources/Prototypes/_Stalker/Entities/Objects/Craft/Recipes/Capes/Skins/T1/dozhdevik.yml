@@ -1,7 +1,7 @@
 - type: lightCraftingRecipe
   id: STCraftSkinClothingCloakT1Seraphim
   results:
-    - ClothingCapeSerafim
+    - STClothingCapeT1Serafim
   steps:
     firstIngredient: STSkinsKitSeraphim
     secondIngredient: ClothingOuterCoatDoshdevik

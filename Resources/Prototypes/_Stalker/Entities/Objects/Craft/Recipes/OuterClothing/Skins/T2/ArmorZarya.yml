@@ -67,13 +67,3 @@
     secondIngredient: ClothingOuterArmorZaryaStalker
     keepFirst: true
     time: 5
-
-- type: lightCraftingRecipe
-  id: STCraftSkinClothingOuterArmorRassvetSera
-  results:
-    - ClothingOuterArmorRassvetSera
-  steps:
-    firstIngredient: STSkinsKitSeraphim
-    secondIngredient: ClothingOuterArmorZaryaHunter
-    keepFirst: false
-    time: 5

@@ -203,10 +203,10 @@
     - name: Броня и снаряжение
       priority: 2
       items:
-        ClothingOuterArmorRassvetSera: 600
+        STClothingOuterArmorRassvetSera: 600
         STClothingOuterArmorSeraphimStrash: 1300
-        ClothingCapeSerafim: 150
-        ClothingCapeSerafimPrestige: 180
+        STClothingCapeT1Serafim: 150
+        STClothingCapeT2SerafimPrestige: 180
         ClothingOuterCoatSeraphim: 100
         ClothingOuterArmorSevasera: 850
         STSkinsKitSeraphim: 200
