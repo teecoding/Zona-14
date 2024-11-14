@@ -20,7 +20,7 @@
         ClothingBeltTarzanBlack: 1000
         ClothingBeltTarzanGreen: 1000
         ClothingBeltTarzanOrange: 1000
-        ClothingCapeSerafim: 356
+        STClothingCapeT1Serafim: 356
         ClothingMaskXoma: 380
         ClothingMaskGasM40: 1000
     - name: Утилиты
@@ -92,6 +92,7 @@
     MutantPartBloodsuckerTentacles: 430
     MutantPartPseudogiantHeart: 833
     MutantPartOraculeEye: 650
+  categories:
     - name: Оружие
       priority: 1
       items:
@@ -101,11 +102,11 @@
     - name: Броня и снаряжение
       priority: 2
       items:
-        ClothingCapeSerafimPrestige: 200
+        STClothingCapeT2SerafimPrestige: 200
         STSkinsKitSeraphim: 350
         ClothingBackpackTacticBlackStalker: 250
         ClothingBackpackDuffelBlackStalker: 20
-        ClothingOuterArmorRassvetSera: 600
+        STClothingOuterArmorRassvetSera: 600
         ClothingBeltBandolierStalker: 10
         ClothingBeltTarzanBlack: 30
         ClothingBeltTarzanGreen: 30
@@ -209,7 +210,7 @@
         ClothingOuterCoatSeraphim: 100
         ClothingOuterArmorSevasera: 850
         STSkinsKitSeraphim: 200
-        ClothingHeadSeraphimAltin: 1200
+        STClothingHeadHelmetSeraphimAltin: 1200
     - name: Утилиты
       priority: 3
       items:
