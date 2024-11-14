@@ -31,7 +31,7 @@
 - type: lightCraftingRecipe
   id: STCraftSkinClothingHeadHelmetAltin
   results:
-    - ClothingHeadSeraphimAltin
+    - STClothingHeadHelmetSeraphimAltin
   steps:
     firstIngredient: STSkinsKitSeraphim
     secondIngredient: ClothingHeadHelmetVityaz1C
