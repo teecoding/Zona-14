@@ -43,7 +43,6 @@
         - TableMask
         layer:
         - TableLayer
-  - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
@@ -98,7 +97,6 @@
         - TableMask
         layer:
         - TableLayer
-  - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
@@ -144,7 +142,6 @@
         - TableMask
         layer:
         - TableLayer
-  - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
@@ -208,7 +205,6 @@
           - TableMask
         layer:
           - TableLayer
-  - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
