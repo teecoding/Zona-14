@@ -220,3 +220,14 @@
     sprite: _Stalker/Objects/Clothing/cloak/desertercape.rsi
   - type: Clothing
     sprite: _Stalker/Objects/Clothing/cloak/desertercape.rsi
+
+- type: entity
+  parent: STClothingCapeBase
+  id: ClothingCapeRenegat
+  name: плащ ренегатов
+  description: Кусок ткани в пиксельном какашном камуфляже, при желании можно носить как плащ
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/cloak/renegatcape.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/cloak/renegatcape.rsi

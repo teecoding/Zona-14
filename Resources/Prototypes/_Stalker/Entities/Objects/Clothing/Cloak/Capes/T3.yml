@@ -285,6 +285,35 @@
 ##Donated for Skins
 - type: entity
   parent: ClothingOuterCoatLoyalist
+  id: ClothingOuterCoatRenegat
+  name: кевларовый плащ Ренегата
+  description: Плащ, модифицированный под нужды группировки Ренегаты, окрашенный в "родные" цвета.
+  suffix: ST, T3, Renegat
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/cloak/coat_renegat.rsi.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/cloak/coat_renegat.rsi.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetLoyalistCoatRenegat
+    requiredSlot:
+    - cloak
+    slot: head
+
+- type: entity
+  parent: STClothingHeadHatBase
+  id: ClothingHeadHelmetLoyalistCoatRenegat
+  name: кевларовый капюшон Ренегата
+  description: От кевлара в нем не только название.
+  suffix: ST, Renegat
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/coat_hat_renegat.rsi.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/coat_hat_renegat.rsi.rsi
+
+- type: entity
+  parent: ClothingOuterCoatLoyalist
   id: ClothingOuterCoatSeraphim
   name: кевларовый плащ Серафима
   description: Плащ, модифицированный под нужды группировки Серафимов, окрашенный в "родные" цвета.
