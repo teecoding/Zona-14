@@ -527,8 +527,8 @@ BlueprintFlare: null
 # 2024-10-04
 BaseAdvancedPen: Pen
 # день-месяц-год Stalker14 upstream
-BaseRailing : BaseRailingStalker
-Railing : RailingStalker
-RailingCorner : RailingCornerStalker
-RailingCornerSmall : RailingCornerSmallStalker
-RailingRound : RailingRoundStalker
+BaseRailing : STBaseRailing
+Railing : STRailing
+RailingCorner : STRailingCorner
+RailingCornerSmall : STRailingCornerSmall
+RailingRound : STRailingRound
