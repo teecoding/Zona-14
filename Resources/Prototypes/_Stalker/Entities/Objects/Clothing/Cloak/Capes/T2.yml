@@ -153,12 +153,11 @@
   - type: Clothing
     sprite: _Stalker/Objects/Clothing/hats/hood_november.rsi
 
-# Скин на кожаный плащ
 - type: entity
   parent: STClothingCapeT2Base
   id: STClothingCapeT2SerafimPrestige
-  name: престижный плащ Серафимов
-  suffix: ST, T2, Serafim
+  name: престижный плащ серафимов
+  suffix: ST, T2, Скин
   description: Выполнен в тёмно-зелёной цветовой гамме с металлическими вставками
   components:
   - type: STWeight

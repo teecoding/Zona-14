@@ -286,9 +286,9 @@
 - type: entity
   parent: ClothingOuterCoatLoyalist
   id: ClothingOuterCoatSeraphim
-  name: кевларовый плащ Серафима
+  name: кевларовый плащ серафимов
   description: Плащ, модифицированный под нужды группировки Серафимов, окрашенный в "родные" цвета.
-  suffix: ST, T3, Seraphims
+  suffix: ST, T3, Скин
   components:
   - type: Sprite
     sprite: _Stalker/Clothing/cloak/Sera_/seraphim_kevlar_cape.rsi
@@ -303,9 +303,9 @@
 - type: entity
   parent: STClothingHeadHatBase
   id: ClothingHeadHelmetLoyalistCoatSeraphim
-  name: кевларовый капюшон Серафима
+  name: кевларовый капюшон серафимов
   description: От кевлара в нем не только название.
-  suffix: ST, Seraphims
+  suffix: ST, Скин
   components:
   - type: Sprite
     sprite: _Stalker/Clothing/Head/Sera_/coat_hat_kevlar_seraphim.rsi
