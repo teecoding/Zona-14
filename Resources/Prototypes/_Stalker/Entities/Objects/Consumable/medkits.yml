@@ -72,6 +72,9 @@
   - type: Item
     sprite: _Stalker/Objects/Consumable/Medicine/brutepacksera.rsi
     state: icon
+  - type: Sprite
+    sprite: _Stalker/Objects/Consumable/Medicine/brutepacksera.rsi
+    state: icon
 
 - type: stack
   id: STBrutepackSera
@@ -115,6 +118,9 @@
   - type: Item
     sprite: _Stalker/Objects/Consumable/Medicine/ointmentsera.rsi
     state: icon
+  - type: Sprite
+    sprite: _Stalker/Objects/Consumable/Medicine/ointmentsera.rsi
+    state: icon
 
 - type: stack
   id: STOintmentSera
@@ -156,6 +162,9 @@
     stackType: STGauzeSera
     count: 10
   - type: Item
+    sprite: _Stalker/Objects/Consumable/Medicine/gausesera.rsi
+    state: icon
+  - type: Sprite
     sprite: _Stalker/Objects/Consumable/Medicine/gausesera.rsi
     state: icon
 
@@ -211,6 +220,9 @@
     stackType: MedkitAI2Sera
     count: 10
   - type: Item
+    sprite: _Stalker/Objects/Consumable/Medicine/ai2sera.rsi
+    state: icon
+  - type: Sprite
     sprite: _Stalker/Objects/Consumable/Medicine/ai2sera.rsi
     state: icon
 

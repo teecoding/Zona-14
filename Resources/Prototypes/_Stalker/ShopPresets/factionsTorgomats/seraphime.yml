@@ -12,7 +12,7 @@
     - name: Броня и снаряжение
       priority: 2
       items:
-        ClothingMaskGasSeraP: 180
+        ClothingMaskGasSera: 180
         ClothingBackpackDuffelGreenStalker: 300 # 4,4
         ClothingBackpackDuffelBlackStalker: 300 # 4,4
         ClothingBackpackDuffelMedicalStalker: 500

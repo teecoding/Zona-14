@@ -71,5 +71,5 @@
   id: STClothingShoesBootsSeraFilled
   suffix: ST, Filled, Скин
   parent:
-  - ClothingShoesBootsCombat
+  - STClothingShoesBootsSera
   - ClothingShoesBootsSecFilled
