@@ -12,6 +12,7 @@
     - name: Броня и снаряжение
       priority: 2
       items:
+        ClothingMaskGasSeraP: 180
         ClothingBackpackDuffelGreenStalker: 300 # 4,4
         ClothingBackpackDuffelBlackStalker: 300 # 4,4
         ClothingBackpackDuffelMedicalStalker: 500
@@ -21,8 +22,7 @@
         ClothingBeltTarzanGreen: 1000
         ClothingBeltTarzanOrange: 1000
         STClothingCapeT1Serafim: 356
-        ClothingMaskXoma: 380
-        ClothingMaskGasM40: 1000
+        STSkinsKitSeraphim: 1000
     - name: Утилиты
       priority: 3
       items:
@@ -102,6 +102,7 @@
     - name: Броня и снаряжение
       priority: 2
       items:
+        ClothingMaskGasSera: 45
         STClothingCapeT2SerafimPrestige: 200
         STSkinsKitSeraphim: 350
         ClothingBackpackTacticBlackStalker: 250
@@ -203,6 +204,7 @@
     - name: Броня и снаряжение
       priority: 2
       items:
+        ClothingMaskGasSera: 90
         STClothingOuterArmorRassvetSera: 600
         STClothingOuterArmorSeraphimStrash: 1300
         STClothingCapeT1Serafim: 150
