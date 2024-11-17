@@ -73,11 +73,6 @@
     sprite: _Stalker/Clothing/OuterClothing/_Sera/strash_seraphim.rsi
   - type: Clothing
     sprite: _Stalker/Clothing/OuterClothing/_Sera/strash_seraphim.rsi
-#bonus
   - type: Armor
-    armorClass: 3
-    modifiers:
-      flatReductions:
-        Radiation: 3
-      coefficients:
-        Radiation: 0.8
+    armorLevels:
+      radiation: 1

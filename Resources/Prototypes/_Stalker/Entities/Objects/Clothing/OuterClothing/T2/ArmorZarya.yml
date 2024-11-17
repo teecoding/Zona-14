@@ -90,7 +90,7 @@
   parent: ClothingOuterArmorZaryaHunter
   id: STClothingOuterArmorRassvetSera
   name: комбинезон «Рассвет» Серафимов
-  suffix: ST, T2, PVE, Serafim
+  suffix: ST, T2, PVE
   description: комбинезон "Рассвет", используемый группировкой "Серафимы" для выполнения тактических задач с повышенной защитой от агрессивной фауны.
   components:
     - type: Sprite
@@ -100,11 +100,9 @@
     - type: ToggleableClothing
       clothingPrototype: ClothingHeadCapoSera
       slot: head
-#bonus
-    - type: PersonalDamage
-      damage:
-        types:
-          Radiation: -0.4
+    - type: Armor
+      armorLevels:
+        radiation: 1
 
 - type: entity
   parent: STClothingHeadHatBase
