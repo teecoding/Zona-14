@@ -6,10 +6,6 @@
   name: PDA
   description: Personal Data Assistant.
   components:
-  - type: Unremoveable
-  - type: Geiger
-    showControl: true
-    showExamine: true
   - type: Trash
     time: 600
   - type: Appearance
@@ -177,6 +173,7 @@
   suffix: ST, Serafim
   description: Объединены общей сетью и позволяют обмениваться информацией.
   components:
+  - type: Unremoveable
   - type: Icon
     sprite: _Stalker/Objects/Devices/pda.rsi
     state: seraphim_off
