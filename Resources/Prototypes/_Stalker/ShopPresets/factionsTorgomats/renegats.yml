@@ -24,3 +24,7 @@
       priority: 4
       items:
         PliersStalker: 300
+    - name: Кастомизация
+      priority: 4
+      items:
+        ClothingCapeRenegat: 50

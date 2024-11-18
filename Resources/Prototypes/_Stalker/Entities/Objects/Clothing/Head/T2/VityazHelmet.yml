@@ -69,3 +69,14 @@
   - type: Armor
     armorLevels:
       radiation: 1
+
+- type: entity
+  parent: STClothingHeadHelmetTacticalT2Base
+  id: ClothingHeadHelmetVityaz1L
+  name: шлем "Витязь 1L"
+  description: Противоударный шлем "Витязь-L", модифицированный Ренегатами.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/Vityaz1L.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/Vityaz1L.rsi
