@@ -160,7 +160,7 @@
         PillDexalinPlusStalker: 15
         radioprotectpill: 30
         psyblock: 120
-        MedkitAI2Sera: 200
+        MedkitAI2Sera: 75
         STOintmentSera: 5
         STGauzeSera: 5
         STBrutepackSera: 15
@@ -196,8 +196,9 @@
     - name: Оружие
       priority: 1
       items:
-        STWeaponRifleStalkerAK12: 1800
-        STWeaponRifleStalkerVeprSerafim: 1500
+        STWeaponRifleStalkerAK12: 1600
+        STWeaponRifleStalkerAK104: 900
+        STWeaponRifleStalkerVeprSerafim: 2800
         STWeaponShotgunSaiga12Sera: 1200
         STWeaponShotgunToz34: 300
         STCombatKnife: 30
@@ -205,14 +206,14 @@
       priority: 2
       items:
         ClothingMaskGasSera: 90
-        STClothingOuterArmorRassvetSera: 600
-        STClothingOuterArmorSeraphimStrash: 1300
+        STClothingOuterArmorRassvetSera: 700
+        STClothingOuterArmorSeraphimStrash: 1400
         STClothingCapeT1Serafim: 150
         STClothingCapeT2SerafimPrestige: 180
         ClothingOuterCoatSeraphim: 100
         ClothingOuterArmorSevasera: 850
         STSkinsKitSeraphim: 200
-        STClothingHeadHelmetSeraphimAltin: 1200
+        STClothingHeadHelmetSeraphimAltin: 900
     - name: Утилиты
       priority: 3
       items:
@@ -229,8 +230,8 @@
         ZoneArtifactDetectorPulse: 100
         ZoneArtifactDetectorHunter: 650
         # Bolt bags
-        STBoltBagFilled: 65
-        STBoltBagOliveGrayFilled: 65
+        STBoltBagFilled: 25
+        STBoltBagOliveGrayFilled: 25
     - name: Провизия
       priority: 5
       items:
@@ -261,7 +262,7 @@
     - name: Обвесы
       priority: 7
       items:
-        STModuleScopeRiflesT1Ru: 1400
+        STModuleScopeRiflesT2Ru: 1200
     - name: Магазины
       priority: 8
       items:
@@ -280,5 +281,5 @@
         7mmBuckshotBox: 50
         6mmBuckshotBox: 150
         8mmBuckshotBox: 600
-        545PCBox: 360
-        754FMJBox: 440
+        545PCBox: 290
+        754FMJBox: 540
