@@ -1,5 +1,5 @@
 - type: entity
-  categories: [ HideSpawnMenu ] HideSpawnMenu ]
+  categories: [ HideSpawnMenu ]
   parent: ClothingBackpack
   id: ClothingBackpackIAAFilled
   components:
@@ -8,7 +8,7 @@
         - id: BoxSurvival
 
 - type: entity
-  categories: [ HideSpawnMenu ] HideSpawnMenu ]
+  categories: [ HideSpawnMenu ] 
   parent: ClothingBackpackMedical
   id: ClothingBackpackPsychologistFilled
   components:
