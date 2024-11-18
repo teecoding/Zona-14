@@ -8,11 +8,11 @@
     },
     "states": [
         {
-            "name": "equipped-CLOAK",
-            "directions": 4
+            "name": "icon"
         },
         {
-            "name": "icon"
+            "name": "equipped-CLOAK",
+            "directions": 4
         }
     ]
 }

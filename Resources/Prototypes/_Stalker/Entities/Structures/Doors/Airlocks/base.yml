@@ -790,16 +790,6 @@
     access: [["Jaba"]]
 
 - type: entity
-  id: MetalWindowDoorFalloutJabaClosed
-  name: стальная дверь
-  parent: MetalWindowDoorFallout
-  description: Крепкая стальная дверь, с окном и надёжным замком.
-  suffix: ST, mapping, Jaba
-  components:
-  - type: AccessReader
-    access: [["Jaba"]]
-
-- type: entity
   id: STMetalBarDoorFalloutJabaClosed
   name: решетчатая дверь
   parent: MetalBarDoorFallout

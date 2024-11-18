@@ -291,9 +291,9 @@
   suffix: ST, T3, Renegat
   components:
   - type: Sprite
-    sprite: _Stalker/Objects/Clothing/cloak/coat_renegat.rsi.rsi
+    sprite: _Stalker/Objects/Clothing/cloak/coat_renegat.rsi
   - type: Clothing
-    sprite: _Stalker/Objects/Clothing/cloak/coat_renegat.rsi.rsi
+    sprite: _Stalker/Objects/Clothing/cloak/coat_renegat.rsi
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetLoyalistCoatRenegat
     requiredSlot:
@@ -308,9 +308,9 @@
   suffix: ST, Renegat
   components:
   - type: Sprite
-    sprite: _Stalker/Objects/Clothing/hats/coat_hat_renegat.rsi.rsi
+    sprite: _Stalker/Objects/Clothing/hats/coat_hat_renegat.rsi
   - type: Clothing
-    sprite: _Stalker/Objects/Clothing/hats/coat_hat_renegat.rsi.rsi
+    sprite: _Stalker/Objects/Clothing/hats/coat_hat_renegat.rsi
 
 - type: entity
   parent: ClothingOuterCoatLoyalist
