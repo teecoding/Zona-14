@@ -27,7 +27,7 @@
   id: STClothingHandsGlovesSera
   name: обмотки серафимов
   suffix: ST, Скин
-  description: Обмотки на руки, используемые группировкой Серафимы.
+  description: Обмотки из лоскутов ткани, заменяющие серафимам перчатки. Если приглядеться то можно увидеть что на лоскутах аккуратно написаны молитвы серафимов к их Богу.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/gloves/gloves_sera.rsi

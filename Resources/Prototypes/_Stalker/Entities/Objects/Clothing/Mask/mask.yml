@@ -225,14 +225,15 @@
 - type: entity
   parent: ClothingMaskBase
   id: STClothingMaskKufei
-  name: куфей
+  name: куфей Серафимов
   suffix: ST, Скин
-  description: Обмотки на лицо зелёного цвета.
+  description: Легкая ткань, предназначенная для ношения на голове и для закрытия лица в которой легко дышать и активно двигаться.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/mask/kufei_sera.rsi
   - type: Clothing
     sprite: _Stalker/Objects/Clothing/mask/kufei_sera.rsi
+  - type: IngestionBlocker
   - type: IdentityBlocker
   - type: Tag
     tags:
