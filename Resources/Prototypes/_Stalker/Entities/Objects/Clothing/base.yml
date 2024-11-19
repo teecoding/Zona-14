@@ -20,6 +20,8 @@
   components:
   - type: RepositoryItem
     categoryName: Броня
+  - type: PullDoAfter
+    pullTime: 6
 
 - type: entity
   parent: ClothingOuterBaseLarge
@@ -29,6 +31,8 @@
   components:
   - type: RepositoryItem
     categoryName: Броня
+  - type: PullDoAfter
+    pullTime: 6
 
 - type: entity
   parent: ClothingOuterArmorBasic
@@ -141,6 +145,8 @@
     tags:
       - ClothMade
       - WhitelistChameleon
+  - type: PullDoAfter
+    pullTime: 2
 
 - type: entity
   abstract: true
@@ -264,6 +270,8 @@
   suffix: ST
   abstract: true
   components:
+    - type: PullDoAfter
+      pullTime: 3
     - type: ClothingSpeedModifier
       walkModifier: 1
       sprintModifier: 1
