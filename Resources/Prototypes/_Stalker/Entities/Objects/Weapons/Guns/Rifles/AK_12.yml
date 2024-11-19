@@ -1,7 +1,7 @@
 #_Stalker/Objects/Weapons/Guns/Rifles/ak12.rsi
 - type: entity
   name: АК-12
-  suffix: ST
+  suffix: ST, Custom
   parent: STBaseWeaponRifle
   id: STWeaponRifleStalkerAK12
   description: Данная модель является вершиной развития системы АК и отличается от предыдущих поколений продуманной эргономикой, адаптацией к всесуточному применению и повышенной точностью и кучностью стрельбы. 
@@ -16,7 +16,7 @@
     sprite: _Stalker/Objects/Weapons/Guns/Rifles/ak103.rsi
   - type: Gun
     soundGunshot:
-      path: /Audio/_Stalker/Effects/Guns/103_shoot.ogg
+      path: /Audio/_Stalker/Effects/Guns/ak.ogg
     minAngle: 48
     maxAngle: 95
     angleIncrease: 3.6
@@ -51,3 +51,48 @@
         whitelist:
           tags:
             - Cartridge545
+
+- type: entity
+  name: АК-12 кустарной модификации
+  suffix: ST, Custom
+  parent: STWeaponRifleStalkerAK12
+  id: STWeaponRifleStalkerAK12Sera
+  components:
+  - type: Gun
+    soundGunshot:
+      path: /Audio/_Stalker/Effects/Guns/103_shoot.ogg
+    projectileSpeed: 30
+    minAngle: 55
+    maxAngle: 95
+    angleIncrease: 6
+    angleDecay: 25
+    fireRate: 4
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: Base739Mag10
+        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        priority: 4
+        whitelist:
+          tags:
+            - Magazine739
+      gun_module_muzzle:
+        name: Muzzle
+        priority: 3
+        whitelist:
+          tags:
+            - STWeaponModuleRifleSilencerRu
+      gun_module_scope:
+        name: Scope
+        priority: 2
+        whitelist:
+          tags:
+            - STWeaponModuleRifleScopeRu
+      gun_chamber:
+        name: Chamber
+        priority: 1
+        whitelist:
+          tags:
+            - Cartridge739

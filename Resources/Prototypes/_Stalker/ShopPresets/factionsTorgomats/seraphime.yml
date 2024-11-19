@@ -104,6 +104,7 @@
       items:
         ClothingMaskGasSera: 45
         STClothingCapeT2SerafimPrestige: 200
+        STClothingOuterCoatHimera: 200
         STSkinsKitSeraphim: 350
         ClothingBackpackTacticBlackStalker: 250
         ClothingBackpackDuffelBlackStalker: 20
@@ -196,9 +197,9 @@
     - name: Оружие
       priority: 1
       items:
-        STWeaponRifleStalkerAK12: 1600
-        STWeaponRifleStalkerAK104: 900
-        STWeaponRifleStalkerVeprSerafim: 2800
+        STWeaponRifleStalkerAK12: 1450
+        STWeaponRifleStalkerAK12Sera: 1900
+        STWeaponRifleStalkerVeprSerafim: 2500
         STWeaponShotgunSaiga12Sera: 1200
         STWeaponShotgunToz34: 300
         STCombatKnife: 30
@@ -210,6 +211,7 @@
         STClothingOuterArmorSeraphimStrash: 1400
         STClothingCapeT1Serafim: 150
         STClothingCapeT2SerafimPrestige: 180
+        STClothingOuterCoatHimera: 180
         ClothingOuterCoatSeraphim: 250
         ClothingOuterArmorSevasera: 850
         STSkinsKitSeraphim: 200
@@ -283,3 +285,4 @@
         8mmBuckshotBox: 600
         545PCBox: 290
         754FMJBox: 540
+        739FMJBox: 410
