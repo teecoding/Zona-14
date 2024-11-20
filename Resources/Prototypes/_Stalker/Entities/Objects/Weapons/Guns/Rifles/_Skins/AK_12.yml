@@ -55,7 +55,7 @@
 - type: entity
   name: АК-12 серафимов
   parent: STBaseWeaponRifle
-  id: STWeaponRifleStalkerAK12sera
+  id: STWeaponRifleStalkerAK12Sera
   components:
   - type: Clothing
     sprite: _Stalker/Objects/Weapons/Guns/Rifles/_Skins/ak12sera.rsi
