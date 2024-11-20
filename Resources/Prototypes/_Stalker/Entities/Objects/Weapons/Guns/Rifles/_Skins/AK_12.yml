@@ -55,7 +55,7 @@
 
 - type: entity
   name: АК-12 серафимов
-  parent: STBaseWeaponRifle
+  parent: STWeaponRifleStalkerAK12
   id: STWeaponRifleStalkerAK12Sera
   components:
   - type: Clothing

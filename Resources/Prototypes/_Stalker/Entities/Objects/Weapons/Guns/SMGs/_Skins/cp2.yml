@@ -9,14 +9,14 @@
     - type: STWeight
       self: 2.2
     - type: Item
-      sprite: _Stalker/Objects/Weapons/Guns/SMGs/_Sking/cp2.rsi
+      sprite: _Stalker/Objects/Weapons/Guns/SMGs/cp2.rsi
       size: Large
       shape:
         - 0,0,5,1
     - type: Sprite
-      sprite: _Stalker/Objects/Weapons/Guns/SMGs/_Sking/cp2.rsi
+      sprite: _Stalker/Objects/Weapons/Guns/SMGs/cp2.rsi
     - type: Clothing
-      sprite: _Stalker/Objects/Weapons/Guns/SMGs/_Sking/cp2.rsi
+      sprite: _Stalker/Objects/Weapons/Guns/SMGs/cp2.rsi
     - type: Gun
       projectileSpeed: 20
       minAngle: 45
@@ -47,15 +47,33 @@
 
 - type: entity
   name: СР-2 «Вереск» серафимов
-  parent: STBaseWeaponSubMachineGun
+  parent: STWeaponSMGStalkerCP2Veresk
   id: STWeaponSMGStalkerCP2VereskSera
   components:
     - type: Item
-      sprite: _Stalker/Objects/Weapons/Guns/SMGs/_Sking/cp2sera.rsi
+      sprite: _Stalker/Objects/Weapons/Guns/SMGs/cp2sera.rsi
       size: Large
       shape:
         - 0,0,5,1
     - type: Sprite
-      sprite: _Stalker/Objects/Weapons/Guns/SMGs/_Sking/cp2sera.rsi
+      sprite: _Stalker/Objects/Weapons/Guns/SMGs/cp2sera.rsi
     - type: Clothing
-      sprite: _Stalker/Objects/Weapons/Guns/SMGs/_Sking/cp2sera.rsi
+      sprite: _Stalker/Objects/Weapons/Guns/SMGs/cp2sera.rsi
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: VityazMag
+          insertSound: /Audio/Weapons/Guns/MagIn/smg_magin.ogg
+          ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg
+          priority: 4
+          whitelist:
+            tags:
+              - MagazineVityaz
+        gun_chamber:
+          name: Chamber
+          startingItem: Cartridge919PSOGJ
+          priority: 1
+          whitelist:
+            tags:
+              - Cartridge919
