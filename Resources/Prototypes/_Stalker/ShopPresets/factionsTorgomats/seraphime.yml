@@ -161,10 +161,10 @@
         PillDexalinPlusStalker: 15
         radioprotectpill: 30
         psyblock: 120
-        MedkitAI2Sera: 75
+        MedkitAI2Sera: 50
         STOintmentSera: 5
-        STGauzeSera: 5
-        STBrutepackSera: 15
+        STGauzeSera: 8
+        STBrutepackSera: 17
         Tourniquet: 3
         Bloodpack: 100
         MedkitMilitary: 450
