@@ -63,9 +63,9 @@
   id: STWeaponRifleStalkerVeprSerafim
   description: Тактический ВПО в раскраске Серафимов.
   components:
-  - type: Clothing
-    sprite: _Stalker\Objects\Weapons\Guns\Rifles\_Skins\vepr_seraphim.rsi
-  - type: Item
-    sprite: _Stalker\Objects\Weapons\Guns\Rifles\_Skins\vepr_seraphim.rsi
-  - type: Sprite
-    sprite: _Stalker\Objects\Weapons\Guns\Rifles\_Skins\vepr_seraphim.rsi
+    - type: Clothing
+      sprite: _Stalker\Objects\Weapons\Guns\Rifles\_Skins\vepr_seraphim.rsi
+    - type: Item
+      sprite: _Stalker\Objects\Weapons\Guns\Rifles\_Skins\vepr_seraphim.rsi
+    - type: Sprite
+      sprite: _Stalker\Objects\Weapons\Guns\Rifles\_Skins\vepr_seraphim.rsi

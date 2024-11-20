@@ -12,6 +12,7 @@
     sprite: _Stalker/Objects/Weapons/Guns/Rifles/_Skins/ak12.rsi
   - type: Sprite
     sprite: _Stalker/Objects/Weapons/Guns/Rifles/_Skins/ak12.rsi
+    scale: 0.5, 0.5
   - type: Item
     sprite: _Stalker/Objects/Weapons/Guns/Rifles/_Skins/ak12.rsi
   - type: Gun

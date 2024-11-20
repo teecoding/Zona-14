@@ -9,6 +9,12 @@
       "name": "base"
     },
     {
+      "name": "muzzle"
+    },
+    {
+      "name": "grip"
+    },
+    {
       "name": "bolt-open"
     },
     {
