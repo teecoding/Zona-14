@@ -677,6 +677,32 @@
       cooldownTime: 0
       godmodeCooldown: 0
 
+###################################################### Жабы Порталы этажей
+
+- type: entity
+  parent: MapTeleportBase
+  id: JabaInstituteFirstFloor
+  suffix: Жаба первый этаж
+  name: Jaba first floor
+  components:
+    - type: NewMapTeleport
+      portalName: JabaFirstFloorPortal
+      cooldownEnabled: false
+      cooldownTime: 0
+      godmodeCooldown: 0
+
+- type: entity
+  parent: MapTeleportBase
+  id: JabaFirstFloorToSecondFloor
+  suffix: Жаба первый этаж - Жаба второй этаж
+  name: Jaba first floor - Jaba second floor
+  components:
+    - type: NewMapTeleport
+      portalName: JabaFirstFloorToSecondFloorPortal
+      cooldownEnabled: false
+      cooldownTime: 0
+      godmodeCooldown: 0
+
 ######################################################Предбанник-Кордон
 - type: entity
   parent: MapTeleportBase

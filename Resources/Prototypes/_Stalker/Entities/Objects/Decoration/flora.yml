@@ -391,13 +391,13 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 250
+        damage: 700
       behaviors:
         - !type:DoActsBehavior
           acts: [ "Destruction" ]
     - trigger:
         !type:DamageTrigger
-        damage: 200
+        damage: 700
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -714,13 +714,37 @@
 # moved to _Stalker
 - type: entity
   id: STBaseRock
-  parent: BaseRock
   suffix: ST, Mapping
   abstract: true
   components:
   - type: Sprite
     noRot: true
     sprite: _Stalker/Objects/Decoration/Flora/flora_rockssolid.rsi
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 6500
+      behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+  - type: Clickable
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.4
+        density: 1000
+        layer:
+        - HalfWallLayer
+        - Opaque
+  - type: Climbable
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
 
 - type: entity
   parent: STBaseRock

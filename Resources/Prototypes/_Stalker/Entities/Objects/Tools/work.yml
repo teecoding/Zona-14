@@ -185,7 +185,7 @@
   components:
     - type: InteractionOutline
     - type: Sprite
-      sprite: _Stalker/Objects/Devices/workbench.rsi
+      sprite: _Stalker/Objects/Devices/worktables.rsi
       state: worktable_broken
     - type: Transform
       noRot: true

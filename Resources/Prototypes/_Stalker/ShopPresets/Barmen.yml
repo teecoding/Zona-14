@@ -65,6 +65,12 @@
     - name: Магазины
       priority: 2
       items:
+        Magazine762x39RPD: 1000
+        Vz61Mag: 100
+        BaseMP5Mag: 245
+        MP40Mag: 200
+        VityazMag: 350
+        BasePPSHMag: 220
         545Mag30: 350
         556Mag30: 350
         739Mag30: 400
@@ -72,6 +78,7 @@
         GlockMag24: 350
         GlockMag33: 400
         PP91Mag: 300
+        P90Mag: 439
     - name: Боеприпасы
       priority: 3
       items:
