@@ -114,9 +114,9 @@
   description: "Разработанный Киевским НИИ костюм замкнутого цикла, предназначенный специально для работы в условиях Зоны со старым дизайном"
   components:
     - type: Sprite
-      sprite: _Stalker\Objects\Clothing\outerClothing\seva_sci.rsi
+      sprite: _Stalker/Objects/Clothing/outerClothing/seva_sci.rsi
     - type: Clothing
-      sprite: _Stalker\Objects\Clothing\outerClothing\seva_sci.rsi
+      sprite: _Stalker/Objects/Clothing/uterClothing/seva_sci.rsi
     - type: ToggleableClothing
       clothingPrototype: ClothingHeadHardsuitSevaHelmSci
       slot: head
@@ -129,9 +129,9 @@
   noSpawn: true
   components:
   - type: Sprite
-    sprite: _Stalker\Objects\Clothing\hats\seva_sci_helm.rsi
+    sprite: _Stalker/Objects/Clothing/hats/seva_sci_helm.rsi
   - type: Clothing
-    sprite: _Stalker\Objects\Clothing\hats\seva_sci_helm.rsi
+    sprite: _Stalker/Objects/Clothing/hats/seva_sci_helm.rsi
 # Military
 
 - type: entity
