@@ -109,15 +109,29 @@
 
 - type: entity
   parent: STClothingOuterArmorSevaBase
-  id: ClothingOuterArmorSevaSciGreen
-  name: костюм "Сева" Учёных
-  description: "Разработанный Киевским НИИ костюм замкнутого цикла, предназначенный специально для работы в условиях Зоны."
+  id: ClothingOuterArmorSevaSciWhite
+  name: белый костюм "Сева" Учёных 
+  description: "Разработанный Киевским НИИ костюм замкнутого цикла, предназначенный специально для работы в условиях Зоны со старым дизайном"
   components:
     - type: Sprite
-      sprite: _Stalker/Objects/Clothing/outerClothing/seva_green.rsi
+      sprite: _Stalker\Objects\Clothing\outerClothing\seva_sci.rsi
     - type: Clothing
-      sprite: _Stalker/Objects/Clothing/outerClothing/seva_green.rsi
+      sprite: _Stalker\Objects\Clothing\outerClothing\seva_sci.rsi
+    - type: ToggleableClothing
+      clothingPrototype: ClothingHeadHardsuitSevaHelmSci
+      slot: head
 
+- type: entity
+  parent: STClothingHeadHardsuitSevaHelmBase
+  id: ClothingHeadHardsuitSevaHelmSci
+  name: шлем севы 
+  description: Несмотря, на преимущественно стеклянную состовляющую, довольно прочный.
+  noSpawn: true
+  components:
+  - type: Sprite
+    sprite: _Stalker\Objects\Clothing\hats\seva_sci_helm.rsi
+  - type: Clothing
+    sprite: _Stalker\Objects\Clothing\hats\seva_sci_helm.rsi
 # Military
 
 - type: entity
