@@ -165,6 +165,40 @@
     sprite: _Stalker/Objects/Clothing/hats/seva_helm_military.rsi
 
 
+# monolith
+
+- type: entity
+  parent: STClothingOuterArmorSevaBase
+  id: ClothingOuterArmorSevaMonolith
+  name: костюм "Сева" монолита
+  description: Научный костюм, вариант «СЕВЫ», производимый монолитовцами.
+  components:
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+      - 0,2,0,3
+      - 1,-0,1,-0
+      - 2,2,2,3
+      - 3,-0,3,-0
+      - 4,2,4,3
+      - 5,-0,5,-0
+      - 6,2,6,3
+      - 7,-0,7,-0
+      - 8,2,8,3
+      - 9,-0,9,-0
+      - 10,2,10,3
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/seva_monolith.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/seva_monolith.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHardsuitSevaHelmMilitary
+    slot: head
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+
 # Clear sky
 
 - type: entity
