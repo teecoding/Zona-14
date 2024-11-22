@@ -109,6 +109,6 @@
   name: LocalTeleportmonolithUncollide
   components:
     - type: AccessReader
-      access: [["Monolith"]]
+      access: [["Bandit"]]
     - type: LocalTeleport
       portalName: LocalTeleportmonolith

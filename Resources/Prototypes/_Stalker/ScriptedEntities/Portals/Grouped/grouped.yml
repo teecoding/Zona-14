@@ -308,7 +308,7 @@
   components:
     - type: GroupTeleport
       group: "MonolithBaseGroup"
-      targetGroup: "RandomLocationProjectGroup"
+      targetGroup: "BaseProjectGroup"
       allowAll: true
 
 - type: entity
