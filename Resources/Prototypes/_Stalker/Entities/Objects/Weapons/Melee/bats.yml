@@ -95,14 +95,14 @@
   parent: StalkerBallBat
   id: STBatMolitoslov
   name: молитослов
-  description: сборник молитв или молитвенных песнопений, текстов, с помощью которых люди обращаются к Богу.
+  description: Cборник молитв или молитвенных песнопений, текстов, с помощью которых люди обращаются к Богу.
   suffix: ST
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Melee/molitoslov.rsi
+      sprite: _Stalker/Objects/Weapons/Melee/molitoslov.rsi
       state: icon
     - type: Clothing
-      sprite: Objects/Weapons/Melee/molitoslov.rsi
+      sprite: _Stalker/Objects/Weapons/Melee/molitoslov.rsi
       quickEquip: false
       slots:
         - suitStorage

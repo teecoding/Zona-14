@@ -108,7 +108,7 @@
         STClothingCapeT2SerafimPrestige: 350
         STClothingOuterCoatHimera: 350
         STSkinsKitSeraphim: 250
-        ClothingBackpackTacticBlackStalker: 250
+        ClothingBackpackTacticSera: 250
         ClothingBackpackDuffelBlackStalker: 20
         STClothingOuterArmorRassvetSera: 600
         ClothingBeltBandolierStalker: 10
@@ -214,9 +214,12 @@
         STBatMolitoslov: 195
         STWeaponShotgunStalkerBenelli: 1300
         STWeaponShotgunStalkerBenelliSera: 1300
+        STWeaponRifleSVUSera: 2950
+        STWeaponRifleSVU: 2950
     - name: Броня и снаряжение
       priority: 2
       items:
+        ClothingBackpackTacticSera: 250
         ClothingMaskGasSera: 90
         STClothingOuterArmorRassvetSera: 700
         STClothingOuterArmorSeraphimStrash: 1400

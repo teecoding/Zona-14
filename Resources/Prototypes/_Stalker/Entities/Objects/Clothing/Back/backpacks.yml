@@ -240,3 +240,13 @@
   components:
   - type: STWeight
     self: -15
+
+  # Skin
+- type: entity
+  parent: STClothingBackTacticBase
+  id: ClothingBackpackTacticSera
+  name: камуфляжный тактический рюкзак
+  description: Он никогда не бывает разноцветным и ярким, ведь одна из задач тактических рюкзаков — маскироваться под среду. Такие используются группировкой Серафимы.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/backpacks/Tactical/tacticsera.rsi
