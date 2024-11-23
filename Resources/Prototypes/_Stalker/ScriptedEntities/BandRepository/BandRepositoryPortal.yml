@@ -659,6 +659,22 @@
     repositoryWeight: 2000
 # Repository for Poisk - End
 
+# Repository for Monolith - Start
+- type: entity
+  parent: BandRepositoryBase
+  id: PortalBandMonolithRepository
+  suffix: 2500
+  noSpawn: false
+  name: Band-Monolith-Repository
+  description: Band-MilitaryStalker-Repository-desc
+  components:
+  - type: AccessReader
+    access: [["Monolith"]]
+  - type: StalkerBandTeleport
+    portalName: _PortalBandMonolithRepository
+    repositoryWeight: 2500
+# Repository for Monolith - End 
+
 # BandPrototype
 - type: bandLoader
   id: BandLoaderBase
@@ -719,3 +735,5 @@
     - "_PortalBandJabaRepository"
     - "_PortalBandSerafimRepository"
     - "_PortalBandMechanicRepository"
+
+    - "_PortalBandMonolithRepository"

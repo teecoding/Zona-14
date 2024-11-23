@@ -38,6 +38,29 @@
       allowAll: false
       portalName: Bar-BarStalker
 
+####################################Монолит
+
+- type: entity
+  parent: MapTeleportBase
+  id: Cordon-BarierBase
+  name: Cordon-BarierBase
+  components:
+    - type: NewMapTeleport
+      allowAll: false
+      portalName: Cordon-BarierBase
+    - type: AccessReader
+      access: [["Monolith"]]
+- type: entity
+  parent: MapTeleportBaseUncollide
+  id: Cordon-BarierBaseUncollide
+  name: Cordon-BarierBaseUncollide
+  components:
+    - type: NewMapTeleport
+      allowAll: false
+      portalName: Cordon-BarierBase
+    - type: AccessReader
+      access: [["Monolith"]]
+
 ####################################Бандиты
 
 - type: entity

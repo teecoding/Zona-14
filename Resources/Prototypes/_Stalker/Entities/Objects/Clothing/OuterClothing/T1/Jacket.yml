@@ -313,6 +313,31 @@
   - type: Clothing
     sprite: _Stalker/Objects/Clothing/hats/jacket_hat_deserter.rsi
 
+- type: entity
+  parent: STClothingOuterJacketBase
+  id: ClothingOuterJacketMonolith
+  name: куртка монолита
+  description: Куртка в светло-сером пиксельном камуфляже, используемая монолитом, имеет наплечники, но они защитят вас лишь от скучного внешнего вида.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/jacket_monolith.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/jacket_monolith.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHatHoodJacketMonolith
+    slot: head
+
+- type: entity
+  parent: STClothingHeadHatHoodBase
+  id: ClothingHeadHatHoodJacketMonolith
+  noSpawn: true
+  name: капюшон
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/jacket_hat_monolith.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/jacket_hat_monolith.rsi
+
 # Скинчики
 
 - type: entity

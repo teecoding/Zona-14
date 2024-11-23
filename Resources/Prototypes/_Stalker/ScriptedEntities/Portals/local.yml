@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   parent: LocalTeleportBase
   id: LocalTeleportBasement5
   tag: Stalker 5
@@ -89,3 +89,26 @@
   components:
     - type: LocalTeleport
       portalName: JabasFloors
+
+################################Вход в базу монолита
+- type: entity
+  parent: LocalTeleportBase
+  id: LocalTeleportmonolith
+  tag: monolith
+  name: LocalTeleportmonolith
+  components:
+    - type: AccessReader
+      access: [["Monolith"]]
+    - type: LocalTeleport
+      portalName: LocalTeleportmonolith
+
+- type: entity
+  parent: LocalTeleportBaseUncollide
+  id: LocalTeleportmonolithUncollide
+  tag: monolith
+  name: LocalTeleportmonolithUncollide
+  components:
+    - type: AccessReader
+      access: [["Bandit"]]
+    - type: LocalTeleport
+      portalName: LocalTeleportmonolith
