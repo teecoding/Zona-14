@@ -34,6 +34,19 @@
     verbAction: psy-pray-action
     verbPopup: psy-pray-action-popup
     psyRecovery: 5
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-1,-1,1,1"
+        density: 55
+        mask:
+        - FullTileMask
+        layer:
+        - TableLayer
+        - MidImpassable
+        - LowImpassable
   - type: Sprite
     sprite: _Stalker/Structures/Furniture/sera_altar.rsi
     drawdepth: Overdoors
