@@ -233,7 +233,7 @@
     sprite: _Stalker/Objects/Counsumable/Medicine/ai2sera.rsi
     state: icon
   spawn: MedkitAI2Sera
-  maxCount: 10
+  maxCount: 4
 
 - type: entity
   parent: BaseMedkit

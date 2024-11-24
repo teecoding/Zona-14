@@ -53,3 +53,21 @@
     volume: -3
     sound:
       path: /Audio/Ambience/anomaly_scary.ogg
+
+
+- type: entity
+  id: STSeraAltar2
+  parent: STSeraAltar
+  name: алтарь серафимов
+  suffix: ST, Mapping
+  components:
+  - type: Sprite
+    sprite: _Stalker/Structures/Furniture/sera_altar2.rsi
+    drawdepth: Overdoors
+    layers:
+    - state: full
+    - state: blood
+      shader: unshaded
+  - type: Icon
+    sprite: _Stalker/Structures/Furniture/sera_altar2.rsi
+    state: full
