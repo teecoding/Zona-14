@@ -1677,15 +1677,11 @@
           prob: 0.1
         - id: STClothingOuterArmorLightPlateVestBaseMonolith
           prob: 0.1
-        - id: STClothingOuterArmorLightPlateVestBaseMonolith
-          prob: 0.1
         - id: ClothingOuterArmorSevaMonolith
-          prob: 0.025
+          prob: 0.05
         # backpack
         - id: ClothingBackpackTacticBlackStalker
           prob: 0.5
-        - id: ClothingBackpackTacticBlackStalker
-          prob: 0.125
         - id: ClothingBackpackTacticBlackStalker
           prob: 0.125
         # mask
@@ -1698,10 +1694,6 @@
         - id: ClothingMaskGasMono
           prob: 0.125
         # hat
-        - id: ClothingHeadHelmetBerill5MMonolith
-          prob: 0.125
-        - id: ClothingHeadHelmetBerill5MMonolith
-          prob: 0.125
         - id: ClothingHeadHelmetBerill5MMonolith
           prob: 0.125
         # weapon
@@ -1718,14 +1710,6 @@
         - id: STWeaponSMGMp5
           prob: 0.1
         - id: STWeaponSMGMp5
-          prob: 0.1
-        - id: STWeaponRifleStalkerL85
-          prob: 0.1
-        - id: STWeaponRifleStalkerL85
-          prob: 0.075
-        - id: STWeaponRifleStalkerL85
-          prob: 0.075
-        - id: STWeaponRifleSig550
           prob: 0.1
         - id: STWeaponRifleSig550
           prob: 0.05
@@ -1826,41 +1810,41 @@
           prob: 0.15
         - id: 7mmBuckshotBox
           prob: 0.15   
-        - id: 919PSTBox
+        - id: 7mmBuckshotBox
+          prob: 0.15
+        - id: 7mmBuckshotBox
+          prob: 0.15
+        - id: 7mmBuckshotBox
           prob: 0.15
         - id: 919PSTBox
           prob: 0.15
-        - id: 919PSTBox
+        - id: 7mmBuckshotBox
           prob: 0.15
-        - id: 919PSTBox
+        - id: 7mmBuckshotBox
           prob: 0.15
-        - id: 919PSTBox
+        - id: 7mmBuckshotBox
           prob: 0.15
-        - id: 919PSTBox
+        - id: 7mmBuckshotBox
           prob: 0.15
-        - id: 919PSTBox
+        - id: 7mmBuckshotBox
           prob: 0.15
-        - id: 919PSTBox
+        - id: 7mmBuckshotBox
           prob: 0.15
-        - id: 556FMJBox
+        - id: 7mmBuckshotBox
           prob: 0.15
-        - id: 556FMJBox
+        - id: 7mmBuckshotBox
           prob: 0.15
-        - id: 556FMJBox
+        - id: 7mmBuckshotBox
           prob: 0.15
-        - id: 556FMJBox
+        - id: 7mmBuckshotBox
           prob: 0.15
-        - id: 556FMJBox
+        - id: 7mmBuckshotBox
           prob: 0.15
-        - id: 556FMJBox
+        - id: 7mmBuckshotBox
           prob: 0.15
-        - id: 556FMJBox
+        - id: 7mmBuckshotBox
           prob: 0.15
-        - id: 556FMJBox
-          prob: 0.15
-        - id: 556FMJBox
-          prob: 0.15
-        - id: 556FMJBox
+        - id: 7mmBuckshotBox
           prob: 0.15
         - id: 919PBMBox
           prob: 0.075
@@ -2016,6 +2000,8 @@
         - id: MedkitMilitary
           prob: 0.15
       # rare
+        - id: STClothingOuterCoatTihiy
+          prob: 0.03
         - id: STWeaponRifleStalkerG36
           prob: 0.015
         - id: 556M856Box
