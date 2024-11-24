@@ -187,31 +187,33 @@
   name: костюм "Сева" монолита
   description: Научный костюм, вариант «СЕВЫ», производимый монолитовцами.
   components:
-  - type: Storage
-    maxItemSize: Normal
-    grid:
-      - 0,2,0,3
-      - 1,-0,1,-0
-      - 2,2,2,3
-      - 3,-0,3,-0
-      - 4,2,4,3
-      - 5,-0,5,-0
-      - 6,2,6,3
-      - 7,-0,7,-0
-      - 8,2,8,3
-      - 9,-0,9,-0
-      - 10,2,10,3
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/outerClothing/seva_monolith.rsi
   - type: Clothing
     sprite: _Stalker/Objects/Clothing/outerClothing/seva_monolith.rsi
   - type: ToggleableClothing
-    clothingPrototype: ClothingHeadHardsuitSevaHelmMilitary
+    clothingPrototype: ClothingHeadHardsuitSevaHelmMonolith
     slot: head
   - type: UserInterface
     interfaces:
       enum.StorageUiKey.Key:
         type: StorageBoundUserInterface
+  #bonus
+  - type: ClothingSpeedModifier
+    walkModifier: 0.95
+    sprintModifier: 0.95
+
+- type: entity
+  parent: STClothingHeadHardsuitSevaHelmBase
+  id: ClothingHeadHardsuitSevaHelmMonolith
+  name: шлем севы
+  description: Несмотря, на преимущественно стеклянную состовляющую, довольно прочный.
+  noSpawn: true
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/seva_helm_monolith.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/seva_helm_monolith.rsi
 
 # Clear sky
 
