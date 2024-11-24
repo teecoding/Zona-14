@@ -97,9 +97,11 @@
       items:
         STWeaponShotgunMP155T: 25
         STWeaponShotgunToz34: 300
+        STWeaponSMGStalkerCP2Veresk: 655
+        STWeaponSMGStalkerCP2VereskSera: 655
         STSeraKnife: 10
-        STWeaponShotgunStalkerBenelli: 1166
-        STWeaponShotgunStalkerBenelliSera: 1166
+        STWeaponShotgunStalkerBenelli: 345
+        STWeaponShotgunStalkerBenelliSera: 345
         STBatMolitoslov: 175
 
     - name: Броня и снаряжение

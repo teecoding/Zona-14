@@ -1949,6 +1949,16 @@
         - id: 556M855Box
           prob: 0.075
         # meds
+        - id: STBrutepack
+          prob: 0.3
+        - id: STBrutepack
+          prob: 0.3
+        - id: STBrutepack
+          prob: 0.3
+        - id: STBrutepack
+          prob: 0.3
+        - id: STBrutepack
+          prob: 0.3
         - id: STGauze
           prob: 0.3
         - id: STGauze
