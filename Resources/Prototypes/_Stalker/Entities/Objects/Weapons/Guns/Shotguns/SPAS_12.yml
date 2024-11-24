@@ -25,36 +25,3 @@
     angleIncrease: 10
     angleDecay: 50
     fireRate: 2
-
-# skin
-
-- type: entity
-  name: Benelli M4 Super 90
-  suffix: ST, Скин
-  parent: STWeaponShotgunStalkerSPAS
-  id: STWeaponShotgunStalkerBenelli
-  description: Гладкоствольное полуавтоматическое магазинное ружьё, разработанное в Италии фирмой Benelli Armi S.p.A..
-  components:
-  - type: Sprite
-    sprite: _Stalker/Objects/Weapons/Guns/Shotguns/beneli.rsi
-  - type: Clothing
-    sprite: _Stalker/Objects/Weapons/Guns/Shotguns/beneli.rsi
-  - type: Item
-    sprite: _Stalker/Objects/Weapons/Guns/Shotguns/beneli.rsi
-  - type: BallisticAmmoProvider
-    capacity: 5
-  - type: STWeight
-    self: 3.8
-
-- type: entity
-  name: Benelli M4 Super 90 серафимов
-  suffix: ST, Скин
-  parent: STWeaponShotgunStalkerBenelli
-  id: STWeaponShotgunStalkerBenelliSera
-  components:
-  - type: Sprite
-    sprite: _Stalker/Objects/Weapons/Guns/Shotguns/benelisera.rsi
-  - type: Clothing
-    sprite: _Stalker/Objects/Weapons/Guns/Shotguns/benelisera.rsi
-  - type: Item
-    sprite: _Stalker/Objects/Weapons/Guns/Shotguns/benelisera.rsi
