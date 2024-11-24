@@ -147,7 +147,7 @@
   parent: STClothingHeadHatBase
   id: ClothingHeadHelmetFreedomDefender
   name: капюшон «Страж свободы»
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   description: Не очень свободный, покуда сидит на вашей голове.
   components:
     - type: Sprite

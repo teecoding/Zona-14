@@ -53,7 +53,7 @@
   id: ClothingHeadHelmetSpark
   name: капюшон «Искры»
   description: Плотный кусок резины на вашей голове.
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
     - type: Sprite
       sprite: _Stalker/Objects/Clothing/outerClothing/Jewelry/spark.rsi

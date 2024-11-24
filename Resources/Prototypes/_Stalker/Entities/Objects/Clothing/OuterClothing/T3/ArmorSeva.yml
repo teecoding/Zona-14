@@ -5,7 +5,7 @@
   name: костюм "Сева" #base
   description: "Разработанный Киевским НИИ костюм замкнутого цикла, предназначенный специально для работы в условиях Зоны."
   suffix: ST, T3, Env
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   abstract: true
   components:
   - type: Sprite
@@ -48,7 +48,7 @@
   id: STClothingHeadHardsuitSevaHelmBase
   name: шлем севы #base
   description: Несмотря, на преимущественно стеклянную состовляющую, довольно прочный.
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/hats/seva_helm.rsi
@@ -171,7 +171,7 @@
   id: ClothingHeadHardsuitSevaHelmMilitary
   name: шлем севы
   description: Несмотря, на преимущественно стеклянную состовляющую, довольно прочный.
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/hats/seva_helm_military.rsi
@@ -253,7 +253,7 @@
   id: ClothingHeadHardsuitSevaHelmMerc
   name: шлем севы наёмников
   description: Несмотря, на преимущественно стеклянную состовляющую, довольно прочный.
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/hats/seva_helm_merc.rsi
@@ -280,7 +280,7 @@
   id: ClothingHeadHardsuitSevaHelmPoisk
   name: шлем севы поиска
   description: Несмотря, на преимущественно стеклянную состовляющую, довольно прочный.
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: _Stalker/Clothing/Head/Seva/poisk.rsi
@@ -325,7 +325,7 @@
   name: шлем севы Завета
   description: Несмотря, на преимущественно стеклянную состовляющую, довольно прочный.
   suffix: Stalker, Завет
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: _Stalker/Clothing/Head/Seva/covenant.rsi
@@ -355,7 +355,7 @@
   id: ClothingHeadHardsuitSevaHelmSera
   name: шлем севы серафимов
   description: Несмотря, на преимущественно стеклянную состовляющую, довольно прочный.
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
     - type: Sprite
       sprite: _Stalker/Clothing/Head/Sera_/seva_helm.rsi
@@ -387,7 +387,7 @@
   id: ClothingHeadHardsuitSevaHelmProjectGROM9
   name: шлем севы «GROM-9»
   description: Несмотря, на преимущественно стеклянную состовляющую, довольно прочный.
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: _Stalker/Groups/Project/seva_helm.rsi

@@ -79,7 +79,7 @@
   parent: STClothingHeadHatBase
   id: ClothingHeadHelmetKKKCoat
   name: капюшон куклус плаща
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   description: Покрывает вашу голову ККК.
   components:
   - type: Sprite
@@ -110,7 +110,7 @@
   parent: STClothingHeadHatBase
   id: ClothingHeadHelmetPahanCoat
   name: капюшон плаща пахана
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   description: Покрывает вашу голову
   components:
   - type: Sprite
@@ -143,7 +143,7 @@
 - type: entity
   parent: STClothingHeadHatBase
   id: ClothingHeadHatHoodCoatPoisk
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   name: капюшон
   components:
   - type: Sprite
@@ -173,7 +173,7 @@
   id: ClothingHeadCassock
   name: капюшон рясы
   description: капюшон из грубой ткани от монашеской рясы
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: _Stalker/Clothing/Head/Hats/cassock_hood.rsi

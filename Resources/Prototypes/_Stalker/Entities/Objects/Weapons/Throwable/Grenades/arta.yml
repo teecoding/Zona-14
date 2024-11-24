@@ -15,7 +15,7 @@
 - type: entity
   id: ArtilleryLanding
   name: прилёт взрыва
-  #noSpawn: true
+  #categories: [ HideSpawnMenu ]
   components:
   - type: TimedDespawn
     lifetime: 3
@@ -31,7 +31,7 @@
 - type: entity
   name: взрыв
   id: ArtilleryExplosive
-  #noSpawn: true
+  #categories: [ HideSpawnMenu ]
   components:
   - type: ExplodeOnTrigger
   - type: Explosive
@@ -46,7 +46,7 @@
 - type: entity
   name: ArtillerySpawner
   id: ArtilleryTargetBase
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   parent: MarkerBase
   components:
     - type: Marker

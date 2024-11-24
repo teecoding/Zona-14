@@ -276,7 +276,7 @@
 - type: entity
   parent: BaseItem
   id: BaseCardBin
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Misc/cards/cardbin.rsi

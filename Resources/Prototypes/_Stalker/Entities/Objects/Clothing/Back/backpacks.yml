@@ -175,7 +175,19 @@
 # Тактические Прочие
 
 - type: entity
-  parent: STClothingBackTacticBase
+  id: ClothingBackpackTacticBase
+  categories: [ HideSpawnMenu ]
+  # abstract: true
+  parent: ClothingBackpackDuffelGreenStalker
+  suffix: ST
+  components:
+  - type: Craftable
+  - type: Storage
+    grid:
+    - 0,0,6,5
+    
+- type: entity
+  parent: ClothingBackpackTacticBase
   id: ClothingBackpackTacticBeigeStalker
   name: бежевый тактический рюкзак
   description: Он никогда не бывает разноцветным и ярким, ведь одна из задач тактических рюкзаков — маскироваться под среду, будь то горы, лес или пустыня.
@@ -235,7 +247,6 @@
   parent: ClothingBackpackDuffelHikingVSRF
   id: ClothingBackpackDuffelHikingVSRFAnomaly
   name: аномальный походный рюкзак
-  noSpawn: false
   suffix: ST, T5, Lord, ADMIN
   components:
   - type: STWeight
