@@ -89558,20 +89558,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: -171.45323,-147.58925
       parent: 1
-- proto: FoodCocoaBeans
-  entities:
-  - uid: 8813
-    components:
-    - type: MetaData
-      desc: Братишка принёс тебе покушать
-      name: Сладкий хлебушек
-    - type: Transform
-      pos: -196.12125,-141.73837
-      parent: 1
-    - type: HiddenDescription
-      entries: []
-    - type: NameIdentifier
-      group: ""
 - proto: FoodPlateSmall
   entities:
   - uid: 8579
