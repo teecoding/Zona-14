@@ -18,6 +18,8 @@
     - cash
     - cash_20
     - cash_100
+    - cash_1000
+    - cash_5000
   - type: Sprite
     sprite: _Stalker/Objects/Economy/dollar.rsi
     state: cash
@@ -41,6 +43,7 @@
     - Dollar
   - type: RepositoryItem
     categoryName: Деньги
+
 
 - type: currency
   id: Dollar
@@ -77,3 +80,25 @@
     state: cash_100
   - type: Stack
     count: 100
+
+- type: entity
+  parent: Dollar
+  id: Dollar1000
+  suffix: Stalker, 1000
+  components:
+  - type: Icon
+    sprite: _Stalker/Objects/Economy/dollar.rsi
+    state: cash_1000
+  - type: Stack
+    count: 1000
+
+- type: entity
+  parent: Dollar
+  id: Dollar5000
+  suffix: Stalker, 5000
+  components:
+  - type: Icon
+    sprite: _Stalker/Objects/Economy/dollar.rsi
+    state: cash_5000
+  - type: Stack
+    count: 5000
