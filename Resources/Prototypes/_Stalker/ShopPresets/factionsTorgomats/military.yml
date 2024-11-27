@@ -26,7 +26,12 @@
       items:
         hunterLicense: 2
         militaryLicense: 3
-
+    - name: Гранаты
+      priority: 4
+      items:
+        FragGrenade: 2
+        PhosphorusGrenadeStalker: 6
+        MK3A2Grenade: 5
 - type: shopPreset
   id: MilitaryPremiumShopPreset
   itemsForSale:
@@ -99,9 +104,9 @@
     - name: Гранаты
       priority: 7
       items:
-        DG05SmokeGrenade: 1
-        RGD5Grenade: 1
-        HydrocyanicGrenadeStalker: 3
+        DG05SmokeGrenade: 2
+        RGD5Grenade: 2
+        GL1Grenade: 1
     - name: Другое
       priority: 8
       items:

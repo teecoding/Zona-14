@@ -92,6 +92,10 @@
         BypassCard: 1000
         DollarBypassCard: 2500
         BoltCutter: 500
+    - name: Гранаты
+      priority: 7
+      items:
+        KhattabkaGrenade: 400
   sponsorCategories:
     1:
       - name: Оружие

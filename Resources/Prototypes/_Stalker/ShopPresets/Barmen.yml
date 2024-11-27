@@ -235,3 +235,10 @@
         # Instruments
         AcousticGuitarInstrument: 300
         AccordionInstrument: 500
+    - name: Гранаты
+      priority: 11
+      items:
+        FragGrenade: 1110
+        IpritGrenadeStalker: 800
+        GL1Grenade: 350
+        SmokeGrenade: 750
