@@ -74,7 +74,7 @@
     shoes: ClothingShoesBootsCombatFilled
     back: ClothingBackpackDuffelCommonStalkerSpecnaz
     head: STClothingHeadHelmetFASTNeutralBlackSpecnaz
-    gloves: ClothingHandsGlovesCombat
+    gloves: STClothingHandsGlovesCombat
     outerClothing: STClothingOuterArmorLightPlateVestBaseHeavyMilitarySpecnaz
     belt: ClothingBeltGreenWebbingStalkerSpecnaz
     pocket1: FlashlightSeclite
