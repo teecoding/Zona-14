@@ -17,8 +17,8 @@
     armorClass: 2
     modifiers:
       flatReductions:
-        Blunt: 2
-        Slash: 2.5
+        Blunt: 3
+        Slash: 5
         Piercing: 4
       coefficients:
         Blunt: 0.85
@@ -45,10 +45,10 @@
     armorClass: 2
     modifiers:
       flatReductions:
-        Blunt: 2
-        Slash: 2
-        Piercing: 2
-        Heat: 2
+        Blunt: 4
+        Slash: 4
+        Piercing: 4
+        Heat: 4
   - type: Storage
     maxItemSize: Normal
     grid:
