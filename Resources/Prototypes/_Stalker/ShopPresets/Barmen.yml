@@ -165,7 +165,10 @@
         ZoneAnomalyDetectorAD2: 1050
         # Artifact detectors
         ZoneArtifactDetectorPulse: 100
-        ZoneArtifactDetectorHunter: 800
+        ZoneArtifactDetectorHunter: 600
+        ZoneArtifactDetectorResponse: 1100
+        ZoneArtifactDetectorSpruce: 2600
+
     - name: Провизия
       priority: 7
       items:

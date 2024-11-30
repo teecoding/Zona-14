@@ -1359,8 +1359,8 @@
   description: Продавец патронов множества калибров высокого броневого пробития.
   components:
   - type: Sprite
-    sprite: _Stalker/NPC/Merc.rsi
-    state: merc
+    sprite: _Stalker/NPC/BarahloSimp.rsi
+    state: barahlosimple
   - type: Physics
     bodyType: Static
   - type: Advertise

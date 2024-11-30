@@ -61,7 +61,7 @@
       items:
         ZoneArtifactDetectorPulse: 150
         ZoneArtifactDetectorHunter: 550
-        #ZoneArtifactDetectorResponse: 1500
+        ZoneArtifactDetectorResponse: 1500
         #ZoneArtifactDetectorSpruce: 1900
         #ZoneArtifactDetectorBarracuda: 5300
         #ZoneArtifactDetectorBear: 7700
