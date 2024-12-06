@@ -331,7 +331,7 @@
       maxAmount: 4
       maxOffset: 6
       minOffset: 3
-      cooldown: '1800
+      cooldown: 1800
       chance: 0.2
       restricted:
         - MobMutantSeasonedBoar
