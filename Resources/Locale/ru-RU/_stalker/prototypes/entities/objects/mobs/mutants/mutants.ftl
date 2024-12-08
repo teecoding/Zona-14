@@ -30,10 +30,3 @@ ent-MobMutantPseudodog = псевдопёс
 ent-MobMutantOraclesBrown = оракул
     .desc = Беги!
     .suffix = { ent-BaseMobMutant.suffix }
-ent-MobMutantOldBoar = Старый кабан
-    .desc = Старый кабан повидавший многое. Крайне опасен
-    .suffix = { ent-BaseMobMutant.suffix }
-ent-MobMutantSeasonedBoar = Бывалый кабан
-    .desc = Кабан,который смог прожить в зоне долгое время
-    .suffix = { ent-BaseMobMutant.suffix }
-
