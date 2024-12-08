@@ -1,6 +1,7 @@
 using Content.Shared.Weapons.Ranged.Components;
 using Content.Shared.Weapons.Ranged.Events;
 using Robust.Shared.Map;
+using Robust.Shared.Utility;
 
 namespace Content.Server.Weapons.Ranged.Systems;
 
