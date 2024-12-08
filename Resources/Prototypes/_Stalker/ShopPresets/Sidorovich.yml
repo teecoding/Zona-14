@@ -228,3 +228,9 @@
         # Instruments
         AcousticGuitarInstrument: 300
         AccordionInstrument: 500
+    - name: Гранаты
+      priority: 12
+      items:
+        RGD5Grenade: 890
+        DG05SmokeGrenade: 900
+        GL1Grenade: 300

@@ -245,7 +245,6 @@
         # Instruments
         AcousticGuitarInstrument: 300
         AccordionInstrument: 500
-<<<<<<< HEAD
     - name: Гранаты
       priority: 11
       items:
@@ -253,5 +252,3 @@
         IpritGrenadeStalker: 800
         GL1Grenade: 350
         SmokeGrenade: 750
-=======
->>>>>>> parent of 258bdb887f (Merge pull request #123 from stalker14-project/KLeym1/Granades)

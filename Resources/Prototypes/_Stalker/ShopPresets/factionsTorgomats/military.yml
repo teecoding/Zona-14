@@ -27,15 +27,12 @@
       items:
         hunterLicense: 2
         militaryLicense: 3
-<<<<<<< HEAD
     - name: Гранаты
       priority: 4
       items:
         FragGrenade: 2
         PhosphorusGrenadeStalker: 6
         MK3A2Grenade: 5
-=======
->>>>>>> parent of 258bdb887f (Merge pull request #123 from stalker14-project/KLeym1/Granades)
 
 - type: shopPreset
   id: MilitaryPremiumShopPreset
@@ -110,9 +107,9 @@
     - name: Гранаты
       priority: 7
       items:
-        DG05SmokeGrenade: 1
-        RGD5Grenade: 1
-        HydrocyanicGrenadeStalker: 3
+        DG05SmokeGrenade: 2
+        RGD5Grenade: 2
+        GL1Grenade: 1
     - name: Другое
       priority: 8
       items:

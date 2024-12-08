@@ -94,7 +94,6 @@
         BypassCard: 1000
         DollarBypassCard: 2500
         BoltCutter: 500
-<<<<<<< HEAD
     - name: Гранаты
       priority: 7
       items:
@@ -103,8 +102,6 @@
       priority: 8
       items:
         ClothingBandageStalkerUk: 50
-=======
->>>>>>> parent of 258bdb887f (Merge pull request #123 from stalker14-project/KLeym1/Granades)
   sponsorCategories:
     1:
       - name: Оружие

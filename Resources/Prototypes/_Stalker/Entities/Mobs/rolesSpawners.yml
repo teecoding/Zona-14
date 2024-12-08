@@ -45,7 +45,6 @@
     - type: Loadout
       prototypes: [ MilitaryGearHead ]
 
-<<<<<<< HEAD
 ## КПП админ защитник
 
 - type: entity
@@ -185,8 +184,6 @@
 
 ## КПП админ защитник
 
-=======
->>>>>>> parent of 258bdb887f (Merge pull request #123 from stalker14-project/KLeym1/Granades)
 - type: entity
   name: кукла ренегат (переименуй меня)
   suffix: Stalker, пешка с нашивкой
