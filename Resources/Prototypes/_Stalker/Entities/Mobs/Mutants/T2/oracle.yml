@@ -1,8 +1,9 @@
 - type: entity
   parent: BaseMobMutant
   id: MobMutantOraclesBrown
-  name: oracle
-  description: Run!
+  name: оракл
+  suffix: ST, T2
+  description: Огромных размеров жаба, в животе которой поместиться не один кабан.
   components:
     - type: Butcherable
       spawned:

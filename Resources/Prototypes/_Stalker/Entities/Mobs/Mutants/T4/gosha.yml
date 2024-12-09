@@ -1,6 +1,7 @@
 - type: entity
-  parent: STBaseMobMutated
+  parent: BaseMobMutant
   id: STMobMutatedGosha
+  suffix: ST, T4
   components:
     # AI
     - type: HTN
@@ -85,4 +86,3 @@
     - type: StaminaDamageOnHit
       damage: 50
 
-  

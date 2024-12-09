@@ -2,7 +2,7 @@
   name: Триггер стаи слепых псов (100%)
   id: BlinddogPackTrigger100
   parent: MarkerBase
-  suffix: Stalker | КД 10 минут
+  suffix: ST, T1
   components:
     - type: STPackSpawner
       protoId: STBlindDogPack
@@ -24,7 +24,7 @@
   name: Триггер стаи пауков Лапачей (100%)
   id: SpiderLapachPackTrigger100
   parent: MarkerBase
-  suffix: Stalker | КД 10 минут
+  suffix: ST, T1
   components:
     - type: STPackSpawner
       protoId: STSpiderLapachPack
@@ -46,7 +46,7 @@
   name: Триггер контролёра с собаками (100%)
   id: ControllerBlindDogPackTrigger100
   parent: MarkerBase
-  suffix: Stalker | КД 10 минут
+  suffix: ST, T3
   components:
     - type: STPackSpawner
       protoId: STControllerBlindDogPack

@@ -1,8 +1,8 @@
-
 - type: entity
   parent: BaseMobMutant
   id: MobMutantRogonosets
   name: Рогоносец
+  suffix: ST, Boss
   description: Гиганский мутировавший олень
   components:
     - type: Butcherable
