@@ -36,7 +36,7 @@
     # Acidic group - 2
     ZoneArtifactPellicle: 375
     ZoneArtifactBaloon: 1312
-    #############################Части Мутантов
+    # Части Мутантов
     FoodMeatSpiderLeg: 37
     MutantPartBlindDogTail: 67
     MutantPartZombieHand: 315
@@ -57,7 +57,7 @@
     - name: Оружие
       priority: 1
       items:
-        STWeaponRifleSKS: 4000
+        STWeaponRifleSKS: 3000
         STWeaponRifleStalkerAK74: 3500
         STWeaponSMGPP91: 1500
         STWeaponRifleM16: 4000
@@ -119,9 +119,12 @@
         ClothingBackpackDuffelMedicalStalker: 350 # 7,7 med only
         ClothingBackpackTacticBeigeStalker: 425  # 6,5
         ClothingBackpackTacticOliveStalker: 425
-        ClothingBackpackMercStalker: 850 # 6,6
+        ClothingBackpackMercStalker: 650 # 6,6
+        ClothingBackpackDuffelBlackTacticStalker: 900
+        ClothingBackpackDuffelOliveTacticStalker: 900
         # belt
         ClothingBeltBandolierStalker: 45
+        ClothingBeltVoron: 440
     - name: Утилиты
       priority: 5
       items:
@@ -165,7 +168,10 @@
         ZoneAnomalyDetectorAD2: 1050
         # Artifact detectors
         ZoneArtifactDetectorPulse: 100
-        ZoneArtifactDetectorHunter: 800
+        ZoneArtifactDetectorHunter: 600
+        ZoneArtifactDetectorResponse: 1100
+        ZoneArtifactDetectorSpruce: 2600
+
     - name: Провизия
       priority: 7
       items:
@@ -200,6 +206,7 @@
     - name: Кастомизация
       priority: 9
       items:
+        ClothingBandageStalkerJid: 50
         ClothingHeadHatBeaniehat: 10
         ClothingMaskNeckFacemask: 10
         ClothingMaskNeckBalaklava1: 10

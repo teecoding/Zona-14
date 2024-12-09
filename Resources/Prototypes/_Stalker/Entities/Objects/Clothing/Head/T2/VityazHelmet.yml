@@ -17,10 +17,6 @@
   - type: Armor
     armorClass: 2
     modifiers:
-      flatReductions:
-        Slash: 8
-        Blunt: 8
-        Piercing: 4
       coefficients:
         Slash: 0.8
         Blunt: 0.8
@@ -66,3 +62,14 @@
     sprite: _Stalker/Objects/Clothing/hats/Vityaz1L.rsi
   - type: Clothing
     sprite: _Stalker/Objects/Clothing/hats/Vityaz1L.rsi
+
+- type: entity
+  parent: STClothingHeadHelmetTacticalT2Base
+  id: ClothingHeadHelmetVityaz1P
+  name: шлем "Капелан"
+  description: Противоударный шлем "Витязь-L", модифицированный Паломниками.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/Kapelan.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/Kapelan.rsi

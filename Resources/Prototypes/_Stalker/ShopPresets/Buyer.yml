@@ -36,7 +36,7 @@
     # Acidic group - 2
     ZoneArtifactPellicle: 750
     ZoneArtifactBaloon: 2625
-    #############################Части Мутантов
+    # Части Мутантов
     FoodMeatSpiderLeg: 75
     MutantPartBlindDogTail: 135
     MutantPartZombieHand: 630
@@ -61,7 +61,7 @@
       items:
         ZoneArtifactDetectorPulse: 150
         ZoneArtifactDetectorHunter: 550
-        #ZoneArtifactDetectorResponse: 1500
+        ZoneArtifactDetectorResponse: 1500
         #ZoneArtifactDetectorSpruce: 1900
         #ZoneArtifactDetectorBarracuda: 5300
         #ZoneArtifactDetectorBear: 7700
@@ -96,6 +96,10 @@
       priority: 7
       items:
         KhattabkaGrenade: 400
+    - name: Повязка
+      priority: 8
+      items:
+        ClothingBandageStalkerUk: 50
   sponsorCategories:
     1:
       - name: Оружие
