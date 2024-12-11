@@ -30,9 +30,9 @@
     armorClass: 3
     modifiers:
       flatReductions:
-        Blunt: 8
-        Slash: 8
-        Piercing: 12
+        Blunt: 6
+        Slash: 6
+        Piercing: 4
       coefficients:
         Blunt: 0.65
         Slash: 0.65
@@ -142,6 +142,9 @@
     sprite: _Stalker/Objects/Clothing/outerClothing/freedom_defender.rsi
   - type: Clothing
     sprite: _Stalker/Objects/Clothing/outerClothing/freedom_defender.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetFreedomDefender
+    slot: head
 
 - type: entity
   parent: STClothingHeadHatBase
@@ -182,3 +185,44 @@
       - 8,-2,8,0
       - 10,2,11,3
       - -2,2,-2,3
+
+- type: entity
+  parent: STClothingOuterArmorBase
+  id: ClothingOuterArmorMonolith
+  name: бронекомбез «Чернобыль»
+  description: Производимый ремесленниками группировки «Монолит» усиленный комбинезон. 3 класс
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/monolith_armor.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/monolith_armor.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHatMonolith
+    slot: head
+# bonus
+  - type: STWeight
+    self: -3.5
+
+- type: entity
+  parent: STClothingHeadHatBase
+  id: ClothingHeadHelmetHatMonolith
+  name: капюшон «Чернобыль»
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Clothing/hats/armor_hat_monolith.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Clothing/hats/armor_hat_monolith.rsi
+
+- type: entity
+  parent: STClothingOuterArmorBase
+  id: ClothingOuterArmorPilgrim
+  name: бронекомбез инквизиции
+  suffix: ST, T3, Pilgrim
+  description: Дешёвый и защищающий от мутантов и еретиков комбез инквизиции. Обеспечивает 3 класс защиты.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/inquisitor_armor.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/inquisitor_armor.rsi
+

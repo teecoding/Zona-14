@@ -183,3 +183,7 @@
     sprite: _Stalker/Clothing/Goggles/project_hud.rsi
   - type: Clothing
     sprite: _Stalker/Clothing/Goggles/project_hud.rsi
+  - type: Scope
+    zoom: 1.25
+    offset: 8
+    useInHand: false

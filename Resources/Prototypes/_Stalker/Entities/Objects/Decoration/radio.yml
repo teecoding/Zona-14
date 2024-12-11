@@ -2560,8 +2560,8 @@
 - type: entity
   parent: BaseItem
   id: CasseteLoseMyMindInHysteriaContributorRadio
-  suffix: Stalker, кассета, (Funked Up)
-  name: кассета "Funked Up"
+  suffix: Stalker, кассета, (Lose My Mind In Hysteria)
+  name: кассета "Lose My Mind In Hysteria"
   description: Совершенно новая кассета. Предположительно, на неё записана какая-то песня. На передней части кассеты имеется зашифрованная запись C.o.n.t.r.i.b.u.t.o.r.
   components:
   - type: STWeight

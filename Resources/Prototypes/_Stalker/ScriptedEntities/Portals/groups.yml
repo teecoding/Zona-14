@@ -128,6 +128,31 @@
       portalName: Purgatory-NII
     - type: AccessReader
       access: [["SciBase"]]
+
+- type: entity
+  parent: MapTeleportBase
+  id: Purgatory-Les
+  name: Purgatory-Les (spawn)
+  components:
+    - type: NewMapTeleport
+      portalName: Purgatory-Les
+      allowAll: false
+      cooldownEnabled: true
+      cooldownTime: 0
+      godmodeCooldown: 5
+    - type: AccessReader
+      access: [["SciBase"]]
+
+- type: entity
+  parent: MapTeleportBaseUncollide
+  id: Purgatory-LesUncolibe
+  name: Purgatory-LesUncolibe (spawn)
+  components:
+    - type: NewMapTeleport
+      allowAll: false
+      portalName: Purgatory-Les
+    - type: AccessReader
+      access: [["SciBase"]]
 ####################################Серафимы
 - type: entity
   parent: MapTeleportBase

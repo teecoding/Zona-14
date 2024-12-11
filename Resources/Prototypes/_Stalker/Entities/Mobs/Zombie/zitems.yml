@@ -20,11 +20,17 @@
           prob: 0.02
         - id: WirecutterStalker
           prob: 0.05
-        - id: MaterialCloth1Stalker
-          prob: 0.2
-        - id: CraftNails
-          prob: 0.2
-        - id: BoltCutter
+        - id: STCraftStandardPCBT2
+          prob: 0.1
+        - id: STCraftMultilayerPCBT3
+          prob: 0.07
+        - id: STCraftQuartzCrystalT3
+          prob: 0.05
+        - id: STCraftSapphireCrystalT4
+          prob: 0.02
+        - id: STCraftHideT2
+          prob: 0.1
+        - id: STCraftSturdyHideT3
           prob: 0.05
         - id: CraftLeatherbox
           prob: 0.01
@@ -32,20 +38,38 @@
           prob: 0.01
         - id: CraftScrap
           prob: 0.2
-        - id: SolderingIron
+        - id: STCraftGlueKitT3
           prob: 0.05
         - id: Toolbox
           prob: 0.01
         - id: CraftTransformerCoil
           prob: 0.01
-        - id: PartRodMetalStalker
+        - id: STCraftBasicThreadKitT1
           prob: 0.2
+        - id: STCraftTapeKitT2
+          prob: 0.1
         - id: IngotGold1
           prob: 0.005
+        - id: STCraftIndustrialThreadStaplesKtiT4
+          prob: 0.01
         - id: IngotSilver1
           prob: 0.01
         - id: BikeHornInstrument
           prob: 0.01
+        - id: STCraftPlasticFittingT2
+          prob: 0.1
+        - id: STCraftPlasticFittingT3
+          prob: 0.05
+        - id: STCraftPlasticFittingT4
+          prob: 0.02
+        - id: STCraftSheetIronT2
+          prob: 0.2
+        - id: STCraftSheetBrassT3
+          prob: 0.1
+        - id: STCraftSheetAluminumT4
+          prob: 0.05
+        
+        
         # Meds random
         - id: MedkitAI2
           prob: 0.07
@@ -130,34 +154,59 @@
     - type: StorageFill
       contents:
         # Craft random
-        - id: WirecutterStalker
-          prob: 0.1
         - id: STCraftPolymerFabricT4
+          prob: 0.02
+        - id: WirecutterStalker
           prob: 0.05
-        - id: MaterialCloth1Stalker
-          prob: 0.2
-        - id: CraftLeatherPatch
-          prob: 0.2
-        - id: CraftAwl
+        - id: STCraftStandardPCBT2
           prob: 0.1
-        - id: BoltCutter
+        - id: STCraftMultilayerPCBT3
+          prob: 0.07
+        - id: STCraftQuartzCrystalT3
+          prob: 0.05
+        - id: STCraftSapphireCrystalT4
+          prob: 0.02
+        - id: STCraftHideT2
           prob: 0.1
+        - id: STCraftSturdyHideT3
+          prob: 0.05
+        - id: CraftLeatherbox
+          prob: 0.01
         - id: CraftNeedle
-          prob: 0.05
-        - id: CraftPlasticParts
-          prob: 0.15
+          prob: 0.01
         - id: CraftScrap
           prob: 0.2
-        - id: SolderingIron
-          prob: 0.1
+        - id: STCraftGlueKitT3
+          prob: 0.05
         - id: Toolbox
-          prob: 0.05
+          prob: 0.01
+        - id: CraftTransformerCoil
+          prob: 0.01
+        - id: STCraftBasicThreadKitT1
+          prob: 0.2
+        - id: STCraftTapeKitT2
+          prob: 0.1
         - id: IngotGold1
-          prob: 0.05
+          prob: 0.005
+        - id: STCraftIndustrialThreadStaplesKtiT4
+          prob: 0.01
         - id: IngotSilver1
-          prob: 0.05
+          prob: 0.01
         - id: BikeHornInstrument
           prob: 0.01
+        - id: STCraftPlasticFittingT2
+          prob: 0.1
+        - id: STCraftPlasticFittingT3
+          prob: 0.05
+        - id: STCraftPlasticFittingT4
+          prob: 0.02
+        - id: STCraftSheetIronT2
+          prob: 0.2
+        - id: STCraftSheetBrassT3
+          prob: 0.1
+        - id: STCraftSheetAluminumT4
+          prob: 0.05
+        
         # Meds random
         - id: MedkitAI2
           prob: 0.2

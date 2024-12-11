@@ -80,17 +80,17 @@
 - type: shopPreset
   id: SerafimShopPresetLight
   itemsForSale:
-    FoodMeatSpiderLeg: 16
-    MutantPartBlindDogTail: 30
-    MutantPartZombieHand: 140
-    MutantPartFleshEye: 80
-    MutantPartBoarHoof: 80
-    MutantPartPseudodogTail: 100
-    MutantPartSnorkFoot: 120
-    MutantPartLeshiyRoot: 166
-    MutantPartBloodsuckerTentacles: 200
-    MutantPartPseudogiantHeart: 833
-    MutantPartOraculeEye: 1000
+    FoodMeatSpiderLeg: 24
+    MutantPartBlindDogTail: 45
+    MutantPartZombieHand: 210
+    MutantPartFleshEye: 120
+    MutantPartBoarHoof: 120
+    MutantPartPseudodogTail: 150
+    MutantPartSnorkFoot: 180
+    MutantPartLeshiyRoot: 249
+    MutantPartBloodsuckerTentacles: 300
+    MutantPartPseudogiantHeart: 1249
+    MutantPartOraculeEye: 1500  
   categories:
     - name: Оружие
       priority: 1
@@ -188,17 +188,17 @@
 - type: shopPreset
   id: SerafimShopPresetHeavy
   itemsForSale:
-    FoodMeatSpiderLeg: 6
-    MutantPartBlindDogTail: 12
-    MutantPartZombieHand: 56
-    MutantPartFleshEye: 32
-    MutantPartBoarHoof: 32
-    MutantPartPseudodogTail: 40
-    MutantPartSnorkFoot: 48
-    MutantPartLeshiyRoot: 66
-    MutantPartBloodsuckerTentacles: 80
-    MutantPartPseudogiantHeart: 333
-    MutantPartOraculeEye: 400
+    FoodMeatSpiderLeg: 9
+    MutantPartBlindDogTail: 18
+    MutantPartZombieHand: 84
+    MutantPartFleshEye: 48
+    MutantPartBoarHoof: 48
+    MutantPartPseudodogTail: 60
+    MutantPartSnorkFoot: 72
+    MutantPartLeshiyRoot: 99
+    MutantPartBloodsuckerTentacles: 120
+    MutantPartPseudogiantHeart: 499
+    MutantPartOraculeEye: 600  
   categories:
     - name: Оружие
       priority: 1
