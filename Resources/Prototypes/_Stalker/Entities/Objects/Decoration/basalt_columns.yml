@@ -7,7 +7,7 @@
   components:
   - type: Sprite
     noRot: true
-    sprite: _Stalker\Objects\Decoration\basalt.rsi
+    sprite: _Stalker/Objects/Decoration/basalt-columns.rsi
   - type: Destructible
     thresholds:
     - trigger:
@@ -68,5 +68,3 @@
   components:
   - type: Sprite
     state: basalt-column-small-1
-
-
