@@ -102,10 +102,11 @@
         ClothingBandageStalkerUk: 50
   sponsorCategories:
     1:
-      - name: Оружие
+      - name: sponsor
         items:
           STWeaponGunAKS74UWhite: 650
   contributorCategories:
-    - name: Оружие
+    - name: contributor
       items:
-        STWeaponShotgunMP153Voron: 900
+        STWeaponShotgunMP153Voron: 550
+        WeaponPistolStalkerAPSHugo: 75
