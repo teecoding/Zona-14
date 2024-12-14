@@ -22,7 +22,7 @@
   isSubfloor: false
   canCrowbar: false
   footstepSounds:
-    collection: STFootstepDirt
+    collection: STFootstepGrass
   itemDrop: FloorTileItemGrass
   heatCapacity: 10000
   weather: true
@@ -52,7 +52,7 @@
   isSubfloor: false
   canCrowbar: false
   footstepSounds:
-    collection: STFootstepDirt
+    collection: STFootstepGrass
   itemDrop: FloorTileItemGrass
   heatCapacity: 10000
   weather: true
@@ -82,7 +82,7 @@
   isSubfloor: false
   canCrowbar: false
   footstepSounds:
-    collection: STFootstepDirt
+    collection: STFootstepGrass
   itemDrop: FloorTileItemGrass
   heatCapacity: 10000
   weather: true
