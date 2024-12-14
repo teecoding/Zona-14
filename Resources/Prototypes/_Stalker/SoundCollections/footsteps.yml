@@ -22,6 +22,9 @@
   - /Audio/_Stalker/Effects/Footsteps/grass1.ogg
   - /Audio/_Stalker/Effects/Footsteps/grass2.ogg
   - /Audio/_Stalker/Effects/Footsteps/grass3.ogg
+  - /Audio/_Stalker/Effects/Footsteps/grass4.ogg
+  - /Audio/_Stalker/Effects/Footsteps/grass5.ogg
+  - /Audio/_Stalker/Effects/Footsteps/grass6.ogg
 
 - type: soundCollection
   id: STFootstepDirt
@@ -49,3 +52,5 @@
   id: STFootstepWater
   files:
   - /Audio/_Stalker/Effects/Footsteps/water1.ogg
+  - /Audio/_Stalker/Effects/Footsteps/water2.ogg
+  - /Audio/_Stalker/Effects/Footsteps/water3.ogg
