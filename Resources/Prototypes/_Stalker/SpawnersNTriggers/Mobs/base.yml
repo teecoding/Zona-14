@@ -1,4 +1,55 @@
 - type: entity
+  id: FlexibleMarkerTrigger
+  abstract: true
+  suffix: Stalker
+  components:
+  - type: ApproachTrigger
+    range: 20
+    minRange: 15
+    useMinRange: true
+    whitelist:
+      components:
+        - Dna
+  - type: Marker
+  - type: Clickable
+  - type: InteractionOutline
+  - type: Anchorable
+  - type: Pullable
+  - type: MovedByPressure
+  - type: Physics
+    bodyType: Static
+    fixedRotation: true
+  - type: Fixtures
+    fixtures:
+      slips:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.2,-0.2,0.2,0.2"
+        hard: false
+        layer:
+          - LowImpassable
+  - type: Sprite
+    drawdepth: Overdoors
+    sprite: Markers/cross.rsi
+    layers:
+      - state: pink
+    requiredTriggeredSpeed: 0.0
+    blacklist:
+      components:
+      - HTN
+- type: entity
+  id: FlexibleMarkerTrigger50
+  parent: FlexibleMarkerTrigger
+  abstract: true
+  suffix: Stalker, КД 40 МИНУТ
+  components:
+  - type: ApproachTrigger
+    range: 40
+    whitelist:
+      components:
+        - Dna
+
+- type: entity
   name: базовый триггер (1-4) (20%)
   abstract: true
   id: STBaseTrigger1420
