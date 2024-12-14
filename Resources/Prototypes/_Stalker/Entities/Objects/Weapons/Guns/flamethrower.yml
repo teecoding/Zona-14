@@ -2,7 +2,6 @@
   parent: BaseWeaponPowerCell
   id: STWeaponFlamethrower
   name: Огнемёт
-  abstract: true # увы, на время ивента, предиктом искореняем абуз и последующее нытье
   description: Убей мутанта, сожги еретика!
   components:
     - type: STWeight
