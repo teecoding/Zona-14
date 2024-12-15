@@ -26,6 +26,7 @@
 - type: entity
   parent: [STBaseCache, STCacheStorageFillT1]
   id: STCacheT1
+  categories: [ HideSpawnMenu ]
   components:
     - type: Sprite
       sprite: _Stalker/Objects/Other/Boxes/green_crate.rsi

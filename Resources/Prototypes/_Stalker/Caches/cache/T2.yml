@@ -26,6 +26,7 @@
 - type: entity
   parent: [STBaseCache, STCacheStorageFillT2]
   id: STCache1T2
+  categories: [ HideSpawnMenu ]
   components:
     - type: SpawnOnDespawn
       prototype: STCache1T2
@@ -36,6 +37,7 @@
 - type: entity
   parent: [STBaseCache, STCacheStorageFillT2]
   id: STCache2T2
+  categories: [ HideSpawnMenu ]
   components:
     - type: SpawnOnDespawn
       prototype: STCache2T2
@@ -47,6 +49,7 @@
 - type: entity
   parent: [STBaseCache, STCacheStorageFillT2]
   id: STCache3T2
+  categories: [ HideSpawnMenu ]
   components:
     - type: SpawnOnDespawn
       prototype: STCache3T2
@@ -57,6 +60,7 @@
 - type: entity
   parent: [STBaseCache, STCacheStorageFillT2]
   id: STCache3T2
+  categories: [ HideSpawnMenu ]
   components:
     - type: SpawnOnDespawn
       prototype: STCache3T2
