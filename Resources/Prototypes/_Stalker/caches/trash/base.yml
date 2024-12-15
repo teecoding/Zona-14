@@ -1,7 +1,6 @@
 - type: entity
   parent: BaseStructureStalkerDynamic
   id: STBaseTrashCache
-  suffix: ST, Cache
   abstract: true
   name: мусор
   components:
