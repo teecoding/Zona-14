@@ -1,0 +1,34 @@
+- type: entity
+  parent: STBaseCache
+  id: STCacheStorageFillT1
+  abstract: true
+  suffix: ST, Cache, T1
+  name: storage fill comp
+  components:
+    - type: StorageFill
+      contents:
+        - id: STCraftBasicPCBT1
+          prob: 0.1
+        - id: STCraftBasicThreadKitT1
+          prob: 0.1
+        - id: STCraftCottonFabricT1
+          prob: 0.1
+        - id: STCraftGlassT1
+          prob: 0.1
+        - id: STCraftPinePlankT1
+          prob: 0.1
+        - id: STCraftPlasticFittingT1
+          prob: 0.1
+        - id: STCraftSheetCopperT1
+          prob: 0.1
+
+- type: entity
+  parent: [STBaseCache, STCacheStorageFillT1]
+  id: STCacheT1
+  name: ящик
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Other/Boxes/green_crate.rsi
+      state: icon
+    - type: SpawnOnDespawn
+      prototype: ST1CacheT1

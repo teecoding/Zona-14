@@ -2,7 +2,7 @@
   parent: BaseStructureStalkerDynamic
   id: STBaseTrashCache
   abstract: true
-  name: мусор
+  name: base trach cache
   components:
     - type: TimedDespawn
       lifetime: 7220
