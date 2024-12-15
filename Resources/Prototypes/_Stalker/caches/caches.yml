@@ -1602,20 +1602,3 @@
         - BlueCrateTearTwoCache
       chance: 0.80
       offset: 0.0
-
-- type: entity
-  id: RandomCacheSpawnerMonolithCrate
-  name: спавнер ящика монолита (100% шанс)
-  suffix: Stalker
-  parent: FlexibleMarker
-  components:
-    - type: Sprite
-      layers:
-      - state: red
-      - sprite: _Stalker/Objects/Decoration/yashik.rsi
-        state: yaschik
-    - type: RandomSpawner
-      prototypes:
-        - STMonolithCrate
-      chance: 1
-      offset: 0.0
