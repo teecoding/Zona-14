@@ -368,18 +368,6 @@
     - type: AccessReader
       access: [["Deserter"]]
 
-## Циркачи
-- type: entity
-  parent: MapTeleportBase
-  id: Cordon-Circusbase
-  name: Cordon-Circusbase
-  components:
-    - type: NewMapTeleport
-      allowAll: false
-      portalName: Cordon-Circusbase
-    - type: AccessReader
-      access: [["Circus"]]
-
 ####################################Наёмники
 
 - type: entity
@@ -402,31 +390,6 @@
       portalName: Cordon-Merc
     - type: AccessReader
       access: [["Merc"]]
-
-####################################Механики
-
-- type: entity
-  parent: MapTeleportBase
-  id: Lobby-Mechanic
-  noSpawn: false
-  name: Lobby-Mechanic
-  components:
-    - type: NewMapTeleport
-      allowAll: false
-      portalName: Lobby-Mechanic
-    - type: AccessReader
-      access: [["Mechanic"]]
-- type: entity
-  parent: MapTeleportBaseUncollide
-  id: Lobby-MechanicBandUncollide
-  noSpawn: false
-  name: Lobby-MechanicBandUncollide
-  components:
-    - type: NewMapTeleport
-      allowAll: false
-      portalName: Lobby-Mechanic
-    - type: AccessReader
-      access: [["Mechanic"]]
 
 ###################################Поиск
 

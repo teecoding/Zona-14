@@ -7,7 +7,24 @@
 # Window: WallSolid
 # WallSolid: Window
 # Table: null
-
+#15.12.2024 - stalker14
+HermoDverTypeOneCircusClosed : null
+HermoDverTypeTwoCircusClosed : null
+MetalDoorFalloutCircusClosed : null
+MetalWindowDoorFalloutCircusClosed : null
+MetalGrateDoorFalloutCircusClosed : null
+MetalBarDoorFalloutCircusClosed : null
+WoodDoorFalloutMechanic : null
+MetalWindowDoorFalloutMechanicClosed : null
+STMetalBarDoorFalloutMechanicClosed : null
+HermoDverTypeOneMechanicClosed : null
+MetalAltDoorFalloutMechanicClosed : null
+StalkerGateLeftMechanicClosed : null
+StalkerGateRightMechanicClosed : null
+PortalBandMechanicRepository : null
+Lobby-Mechanic : null
+Lobby-MechanicBandUncollide : null
+Cordon-Circusbase : null
 #14.12.2024 - Stalker14
 Cordon1-Predbannik : null
 Predbannik-Cordon1 : null

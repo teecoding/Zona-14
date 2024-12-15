@@ -38,9 +38,7 @@
   - StalkerHeadDolg
   - StalkerFreedom
   - StalkerHeadFreedom
-  - StalkerMechanic
   - StalkerTrader
-  - StalkerClown
   - StalkerClearSky
   - StalkerNeutral
   - StalkerProjectOrchestrator
@@ -89,7 +87,6 @@
   - StalkerGreh
   - Seraphim
   - SeraphimHead
-  - StalkerMonolith
 
 - type: department
   id: Evolver
