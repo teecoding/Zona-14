@@ -32,4 +32,4 @@
       sprite: _Stalker/Objects/Other/Boxes/black_crate.rsi
       state: icon
     - type: SpawnOnDespawn
-      prototype: ST1CacheT5
+      prototype: STCacheT5

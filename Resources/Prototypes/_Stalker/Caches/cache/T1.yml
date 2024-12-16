@@ -32,4 +32,4 @@
       sprite: _Stalker/Objects/Other/Boxes/green_crate.rsi
       state: icon
     - type: SpawnOnDespawn
-      prototype: ST1CacheT1
+      prototype: STCacheT1
