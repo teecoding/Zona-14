@@ -1,6 +1,7 @@
 - type: entity
   parent: STBaseTrashCache
   id: STTrashStorageFillT1
+  name: мусор
   abstract: true
   suffix: ST, Cache, T1
   components:
@@ -57,6 +58,8 @@
         - id: ArtMedusa
           prob: 0.005
         - id: ZoneArtifactFireball
+          prob: 0.005
+        - id: CraftLeatherbox
           prob: 0.005
 
 - type: entity

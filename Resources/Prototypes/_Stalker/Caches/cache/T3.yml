@@ -95,43 +95,57 @@
         - id: STOintment
           prob: 0.3
         - id: ZoneArtifactMeat
-          prob: 0.005
+          prob: 0.01
         - id: ZoneArtifactFlash
-          prob: 0.005
+          prob: 0.01
         - id: ArtMoon
-          prob: 0.005
+          prob: 0.01
         - id: ZoneArtifactFlower
-          prob: 0.005
+          prob: 0.01
         - id: ZoneArtifactBlood
-          prob: 0.005
+          prob: 0.01
         - id: ZoneArtifactBattery
-          prob: 0.005
+          prob: 0.01
         - id: ZoneArtifactVyvert
-          prob: 0.005
+          prob: 0.01
         - id: ZoneArtifactAmoeba
-          prob: 0.005
+          prob: 0.01
         - id: ZoneArtifactEye
-          prob: 0.005
+          prob: 0.01
         - id: 939SP6Box
-          prob: 0.005
+          prob: 0.01
         - id: 754FMJBox
-          prob: 0.005
+          prob: 0.01
         - id: 751M80Box
-          prob: 0.005
+          prob: 0.01
         - id: 739FMJBox
-          prob: 0.005
+          prob: 0.01
         - id: 556M855Box
-          prob: 0.005
+          prob: 0.01
         - id: 545PCBox
-          prob: 0.005
+          prob: 0.01
         - id: 918PBMBox
-          prob: 0.005
+          prob: 0.01
         - id: 919PBMBox
-          prob: 0.005
+          prob: 0.01
         - id: 725PSTBox
-          prob: 0.005
+          prob: 0.01
         - id: 45ACPAPBox
-          prob: 0.005
+          prob: 0.01
+        - id: ToolkitTearOne
+          prob: 0.0001
+        - id: ToolkitTearTwo
+          prob: 0.0001
+        - id: ToolkitTearThree
+          prob: 0.0001
+        - id: IngotGold1
+          prob: 0.15
+        - id: IngotSilver1
+          prob: 0.15
+        - id: MaterialDiamond1
+          prob: 0.15
+        - id: DrinkGoldenCup
+          prob: 0.15
 
 - type: entity
   parent: [STBaseCache, STCacheStorageFillT3]

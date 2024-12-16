@@ -217,6 +217,20 @@
           prob: 0.005
         - id: STZoneArtifactDetectorSpruceBlueprint
           prob: 0.005
+        - id: ToolkitTearOne
+          prob: 0.0005
+        - id: ToolkitTearTwo
+          prob: 0.0005
+        - id: ToolkitTearThree
+          prob: 0.0005
+        - id: IngotGold1
+          prob: 0.15
+        - id: IngotSilver1
+          prob: 0.15
+        - id: MaterialDiamond1
+          prob: 0.15
+        - id: DrinkGoldenCup
+          prob: 0.15
 
 - type: entity
   parent: [STBaseHiddenCache, STHiddenCacheStorageFillT3, BirchTreeNew02]

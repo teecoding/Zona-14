@@ -3,6 +3,7 @@
   id: STTrashStorageFillT5
   abstract: true
   suffix: ST, Cache, T5
+  name: мусор
   components:
     - type: StorageFill
       contents:

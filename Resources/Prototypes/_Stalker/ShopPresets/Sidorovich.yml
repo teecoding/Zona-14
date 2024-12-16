@@ -40,26 +40,24 @@
     # Mutant parts
 
     #Boars -------- Health * T * 0.45
-    MutantPartBoarHoof: 85 # T1
-    MutantPartSeasonedBoarHoof: 176 # T2
-    MutantPartOldBoarHoof: 283 # T3
+    MutantPartBoarHoof: 94 # T1
+    MutantPartSeasonedBoarHoof: 227 # T2
+    MutantPartOldBoarHoof: 425 # T3
 
-    #T1 -------- Health * 0.9
-    MutantPartBlindDogTail: 57
-    MutantPartFleshEye: 126
-    FoodMeatSpiderLeg: 31
+    #T1 -------- Health * 1
+    MutantPartBlindDogTail: 63
+    MutantPartFleshEye: 140
+    FoodMeatSpiderLeg: 35
 
-    #T2 -------- Health * 1.4
-    MutantPartLeshiyRoot: 490
-    MutantPartPseudodogTail: 245
-    MutantPartSnorkFoot: 245
+    #T2 -------- Health * 1.8
+    MutantPartLeshiyRoot: 630
+    MutantPartPseudodogTail: 315
+    MutantPartSnorkFoot: 315
 
-    #T3 -------- Health * 2
+    #T3 -------- Health * 3
     MutantPartBloodsuckerTentacles: 630
-    MutantPartOraculeEye: 1120
-    MutantPartPseudogiantHeart: 2800
-
-
+    MutantPartOraculeEye: 1680
+    MutantPartPseudogiantHeart: 4200
 
     # Smuggling
     TradeBox: 1650  

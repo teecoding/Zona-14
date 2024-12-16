@@ -123,6 +123,16 @@
           prob: 0.005
         - id: STDetectorAD1Blueprint
           prob: 0.005
+        - id: ToolkitTearOne
+          prob: 0.0005
+        - id: IngotGold1
+          prob: 0.05
+        - id: IngotSilver1
+          prob: 0.05
+        - id: MaterialDiamond1
+          prob: 0.05
+        - id: DrinkGoldenCup
+          prob: 0.05
 
 - type: entity
   parent: [STBaseHiddenCache, STHiddenCacheStorageFillT1, BirchTreeNew02]

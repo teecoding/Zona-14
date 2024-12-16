@@ -1,6 +1,7 @@
 - type: entity
   parent: STBaseTrashCache
   id: STTrashStorageFillT2
+  name: мусор
   abstract: true
   suffix: ST, Cache, T2
   components:
@@ -81,6 +82,8 @@
         - id: ZoneArtifactAmoeba
           prob: 0.005
         - id: ZoneArtifactEye
+          prob: 0.005
+        - id: CraftLeatherbox
           prob: 0.005
 
 - type: entity
