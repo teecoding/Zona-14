@@ -1,5 +1,7 @@
 - type: shopPreset
   id: DolgShopPreset
+  itemsForSale:
+    CraftLeather: 120
   categories:
     - name: Оружие
       priority: 1

@@ -12,9 +12,9 @@
       path: /Audio/_Stalker/Effects/Guns/ak.ogg
     minAngle: 52
     maxAngle: 95
-    angleIncrease: 4.5
+    angleIncrease: 4
     angleDecay: 40
-    fireRate: 6
+    fireRate: 7
   - type: ItemSlots
     slots:
       gun_magazine:
@@ -58,8 +58,8 @@
   description: Оснащен складывающимся влево пластиковым прикладом, фурнитурой из ударостойкой пластмассы и универсальной планкой "Ласточкин хвост" для крепления прицелов, таким образом заменив собой сразу несколько версий автомата. Использует калибр 5,45x39
   components:
   - type: Gun
-    angleIncrease: 4
-    fireRate: 7
+    angleIncrease: 4.5
+    fireRate: 6
   - type: Clothing
     sprite: _Stalker/Objects/Weapons/Guns/Rifles/ak74m.rsi
   - type: Item

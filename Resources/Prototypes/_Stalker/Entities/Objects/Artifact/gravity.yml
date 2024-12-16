@@ -5,10 +5,6 @@
 # а куда ты делась в мастере? Нипон
   suffix: Stalker, Медуза
   components:
-  - type: Butcherable
-    spawned:
-      - id: ArtMedusaActive1
-        amount: 1
   - type: Craftable
   - type: Sprite
     state: medusa

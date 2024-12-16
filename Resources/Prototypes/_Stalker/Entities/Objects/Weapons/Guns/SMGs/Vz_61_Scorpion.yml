@@ -14,7 +14,7 @@
     - type: Sprite
       sprite: _Stalker/Objects/Weapons/Guns/SMGs/vz61.rsi
     - type: Gun
-      projectileSpeed: 16
+      projectileSpeed: 20
       minAngle: 45
       maxAngle: 90
       angleIncrease: 5

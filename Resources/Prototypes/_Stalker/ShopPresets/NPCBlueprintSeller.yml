@@ -32,6 +32,15 @@
       priority: 4
       items:
         STCraftLinenFabricT1Blueprint: 2000
+        STCraftSTCraftTapeKitT2Blueprint: 8000
+        STCraftSTCraftGlueKitT3Blueprint: 16000
+        STCraftSTCraftSapphireCrystalT4BlueprintNUM1: 28000
+        STCraftSTCraftSapphireCrystalT4BlueprintNUM2: 28000
+        STCraftSTCraftSapphireCrystalT4BlueprintNUM3: 28000
+        STCraftSTCraftSheetAluminumT4BlueprintNUM1: 28000
+        STCraftSTCraftSheetAluminumT4BlueprintNUM2: 28000
+        STCraftSTCraftSheetAluminumT4BlueprintNUM3: 28000
+        STCraftSTCraftSheetAluminumT4BlueprintNUM4: 28000
     - name: Противогазы
       priority: 5
       items:
