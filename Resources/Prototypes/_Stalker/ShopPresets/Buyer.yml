@@ -42,7 +42,7 @@
     #Boars -------- Health * T * 0.45
     MutantPartBoarHoof: 122 # T1
     MutantPartSeasonedBoarHoof: 252 # T2
-    MutantPartOldBoarHoof: 324 # T3
+    MutantPartOldBoarHoof: 405 # T3
 
     #T1 -------- Health * 0.9
     MutantPartBlindDogTail: 81
@@ -54,10 +54,10 @@
     MutantPartPseudodogTail: 350
     MutantPartSnorkFoot: 350
 
-    #T3 -------- Health * 1.6
-    MutantPartBloodsuckerTentacles: 720
-    MutantPartOraculeEye: 1280
-    MutantPartPseudogiantHeart: 3200
+    #T3 -------- Health * 2
+    MutantPartBloodsuckerTentacles: 900
+    MutantPartOraculeEye: 1600
+    MutantPartPseudogiantHeart: 4000
 
     ### Наркотики
     STCannabisBox: 4500

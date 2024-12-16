@@ -59,40 +59,52 @@
     MutantPartOraculeEye: 640
     MutantPartPseudogiantHeart: 1600
   categories:
-    - name: Оружие # цены пб * 2
+    - name: Оружие # 1.5
       priority: 1
       items:
-        STWeaponShotgunToz34: 500
-        STWeaponShotgunMossberg: 1500
-        STWeaponShotgunMP153: 2250
-        STWeaponSniperMosin: 2750
-    - name: Магазины # цены бара * 1.5
+        STWeaponShotgunToz34: 300
+        WeaponPistolStalkerPM: 338
+        WeaponPistolStalkerTT: 375
+        STWeaponRevolverTaurusJudge: 675
+        STWeaponRevolverTaurusTracker455: 825
+        STWeaponRevolverSWPC325TR: 1087
+        WeaponShotgunStalkerMP133: 825
+        STWeaponShotgunMossberg: 900
+        STWeaponShotgunMP153: 1650
+        STWeaponRifleStalkerSaiga545: 1650
+        STWeaponRifleStalkerFAL: 5475
+
+    - name: Магазины # 1.5
       priority: 2
       items:
-        Magazine762x39RPD: 1500
-        Vz61Mag: 150
-        BaseMP5Mag: 367
-        MP40Mag: 300
-        VityazMag: 525
-        BasePPSHMag: 330
-        545Mag30: 525
-        556Mag30: 525
-        739Mag30: 600
-        751Mag30: 600
-        GlockMag24: 525
-        GlockMag33: 600
-        PP91Mag: 450
-        P90Mag: 658
-    - name: Боеприпасы # цены бара * 1.5
+        BasePMMag: 113
+        TTMag: 113
+        SpeedLoader45ACPEmpty: 113
+        545Mag20: 188
+        556Mag20: 188
+        751Mag20: 368
+    - name: Боеприпасы # 1.5
       priority: 3
       items:
-        7mmBuckshotBox: 150
-        6mmBuckshotBox: 375
-        919RIPBox: 375
-        919PSTBox: 375
-        545HPBox: 600
-        556FMJBox: 600
-        751UNBox: 900
+        6mmBuckshotBox: 450
+        8mmBuckshotBox: 1875
+        7mmBuckshotBox: 60
+        # .45
+        45ACPLFMJBox: 150
+        45ACPMFMJBox: 338
+        # 7.25
+        725PBox: 150
+        725PTBox: 338
+        # 9.19
+        919PSOGJBox: 150
+        919PSTBox: 338
+        # 9.19
+        918PGJBox: 150
+        918PSTBox: 338
+        # 5.45
+        545FMJBox: 375
+        # 5.56
+        556FMJBox: 450
     - name: Броня и снаряжение # цена сидора * 2
       priority: 4
       items:

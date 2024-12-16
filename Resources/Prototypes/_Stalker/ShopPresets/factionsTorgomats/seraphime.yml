@@ -119,9 +119,9 @@
     # Mutant parts
 
     #Boars -------- Health * T * 0.45
-    MutantPartBoarHoof: 40 # T1
+    MutantPartBoarHoof: 41 # T1
     MutantPartSeasonedBoarHoof: 84 # T2
-    MutantPartOldBoarHoof: 108 # T3
+    MutantPartOldBoarHoof: 135 # T3
 
     #T1 -------- Health * 0.9
     MutantPartBlindDogTail: 27
@@ -130,13 +130,14 @@
 
     #T2 -------- Health * 1.4
     MutantPartLeshiyRoot: 233
-    MutantPartPseudodogTail: 116
-    MutantPartSnorkFoot: 116
+    MutantPartPseudodogTail: 117
+    MutantPartSnorkFoot: 117
 
-    #T3 -------- Health * 1.6
-    MutantPartBloodsuckerTentacles: 240
-    MutantPartOraculeEye: 426
-    MutantPartPseudogiantHeart: 1066
+    #T3 -------- Health * 2
+    MutantPartBloodsuckerTentacles: 300
+    MutantPartOraculeEye: 533
+    MutantPartPseudogiantHeart: 1333
+
 
   categories:
     - name: Оружие
@@ -144,11 +145,11 @@
       items:
         STWeaponShotgunMP155T: 25
         STWeaponShotgunToz34: 300
-        STWeaponSMGStalkerCP2Veresk: 655
-        STWeaponSMGStalkerCP2VereskSera: 655
+        STWeaponSMGStalkerCP2Veresk: 816
+        STWeaponSMGStalkerCP2VereskSera: 816
         STSeraKnife: 10
-        STWeaponShotgunStalkerBenelli: 345
-        STWeaponShotgunStalkerBenelliSera: 345
+        STWeaponShotgunStalkerBenelli: 366
+        STWeaponShotgunStalkerBenelliSera: 366
         STBatMolitoslov: 175
 
     - name: Броня и снаряжение
@@ -276,41 +277,42 @@
     #Boars -------- Health * T * 0.45
     MutantPartBoarHoof: 20 # T1
     MutantPartSeasonedBoarHoof: 42 # T2
-    MutantPartOldBoarHoof: 54 # T3
+    MutantPartOldBoarHoof: 68 # T3
 
     #T1 -------- Health * 0.9
-    MutantPartBlindDogTail: 13
+    MutantPartBlindDogTail: 14
     MutantPartFleshEye: 30
-    FoodMeatSpiderLeg: 7
+    FoodMeatSpiderLeg: 8
 
     #T2 -------- Health * 1.4
     MutantPartLeshiyRoot: 116
     MutantPartPseudodogTail: 58
     MutantPartSnorkFoot: 58
 
-    #T3 -------- Health * 1.6
-    MutantPartBloodsuckerTentacles: 120
-    MutantPartOraculeEye: 213
-    MutantPartPseudogiantHeart: 533
+    #T3 -------- Health * 2
+    MutantPartBloodsuckerTentacles: 150
+    MutantPartOraculeEye: 267
+    MutantPartPseudogiantHeart: 667
+
 
   categories:
     - name: Оружие
       priority: 1
       items:
-        STWeaponSMGStalkerCP2Veresk: 850
-        STWeaponSMGStalkerCP2VereskSera: 850
-        STWeaponRifleStalkerAK12: 1450
-        STWeaponRifleStalkerAK12Sera: 1450
+        STWeaponSMGStalkerCP2Veresk: 1225
+        STWeaponSMGStalkerCP2VereskSera: 1225
+        STWeaponRifleStalkerAK12: 1650
+        STWeaponRifleStalkerAK12Sera: 1650
         STWeaponRifleStalkerAK104: 1900
-        STWeaponRifleStalkerVeprSerafim: 2500
-        STWeaponShotgunSaiga12Sera: 1200
+        STWeaponRifleStalkerVeprSerafim: 4900
+        STWeaponShotgunSaiga12Sera: 900
         STWeaponShotgunToz34: 100
         STSeraKnife: 30
         STBatMolitoslov: 195
         STWeaponShotgunStalkerBenelli: 385
         STWeaponShotgunStalkerBenelliSera: 385
-        STWeaponRifleSVUSera: 2950
-        STWeaponRifleSVU: 2950
+        STWeaponRifleSVUSera: 7900
+        STWeaponRifleSVU: 7900
     - name: Броня и снаряжение
       priority: 2
       items:
