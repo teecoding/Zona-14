@@ -1,0 +1,35 @@
+- type: entity
+  parent: STBaseCache
+  id: STCacheStorageFillT1
+  abstract: true
+  suffix: ST, Cache, T1
+  name: ящик
+  description: Довольно таки старый ящик. Возможно, стоит его обыскать. Может, можно найти что-то полезное в нём.
+  components:
+    - type: StorageFill
+      contents:
+        - id: STCraftBasicPCBT1
+          prob: 0.1
+        - id: STCraftBasicThreadKitT1
+          prob: 0.1
+        - id: STCraftCottonFabricT1
+          prob: 0.1
+        - id: STCraftGlassT1
+          prob: 0.1
+        - id: STCraftPinePlankT1
+          prob: 0.1
+        - id: STCraftPlasticFittingT1
+          prob: 0.1
+        - id: STCraftSheetCopperT1
+          prob: 0.1
+
+- type: entity
+  parent: [STBaseCache, STCacheStorageFillT1]
+  id: STCacheT1
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Other/Boxes/green_crate.rsi
+      state: icon
+    - type: SpawnOnDespawn
+      prototype: ST1CacheT1

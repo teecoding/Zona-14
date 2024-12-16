@@ -32,22 +32,16 @@
         behaviors:
           - !type:SpawnEntitiesBehavior
             spawn:
-              CraftSheetSteel:
+              STCraftSheetIronT2:
+                min: 0
+                max: 2
+              STCraftSheetCopperT1:
+                min: 1
+                max: 3
+              STCraftSheetBrassT3:
                 min: 0
                 max: 1
-              CraftSheetIron:
-                min: 0
-                max: 1
-              CraftSheetAluminum:
-                min: 0
-                max: 1
-              CraftScrap:
-                min: 0
-                max: 1
-              CraftRubber:
-                min: 0
-                max: 1
-              CraftMetalParts:
+              STCraftPlasticFittingT2:
                 min: 0
                 max: 1
               PartRodMetalStalker:

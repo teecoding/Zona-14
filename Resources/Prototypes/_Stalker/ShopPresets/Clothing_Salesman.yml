@@ -29,12 +29,7 @@
     ClothingTshirtBlue: 5
     ClothingTshirtOrange: 5
     # Craft Items to Sale
-    CraftHide: 25
-    CraftLeather: 50
-    CraftLeatherPatch: 34
-    CraftAwl: 26
-    CraftNeedle: 65
-    MaterialCloth1Stalker: 43
+    STCraftCottonFabricT1: 43
     CraftLeatherbox: 1260
     # Cloaks
     ClothingCloakStalker: 5
