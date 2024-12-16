@@ -50,6 +50,14 @@
           prob: 0.1
         - id: STCraftSheetCopperT1
           prob: 0.1
+        - id: ZoneArtifactPellicle
+          prob: 0.005
+        - id: ZoneArtifactSparkler
+          prob: 0.005
+        - id: ArtMedusa
+          prob: 0.005
+        - id: ZoneArtifactFireball
+          prob: 0.005
 
 - type: entity
   parent: [STBaseTrashCache, STTrashStorageFillT1]

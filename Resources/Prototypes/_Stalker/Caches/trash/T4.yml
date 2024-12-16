@@ -50,6 +50,20 @@
           prob: 0.05
         - id: STCraftSheetAluminumT4
           prob: 0.05
+        - id: STCraftMultilayerPCBT3
+          prob: 0.1
+        - id: STCraftGlueKitT3
+          prob: 0.1
+        - id: STCraftSturdyHideT3
+          prob: 0.1
+        - id: STCraftQuartzCrystalT3
+          prob: 0.1
+        - id: STCraftOakPlankT3
+          prob: 0.1
+        - id: STCraftPlasticFittingT3
+          prob: 0.1
+        - id: STCraftSheetBrassT3
+          prob: 0.1
 
 - type: entity
   parent: [STBaseTrashCache, STTrashStorageFillT4]

@@ -8,6 +8,20 @@
   components:
     - type: StorageFill
       contents:
+        - id: STCraftMultilayerPCBT3
+          prob: 0.1
+        - id: STCraftGlueKitT3
+          prob: 0.1
+        - id: STCraftSturdyHideT3
+          prob: 0.1
+        - id: STCraftQuartzCrystalT3
+          prob: 0.1
+        - id: STCraftOakPlankT3
+          prob: 0.1
+        - id: STCraftPlasticFittingT3
+          prob: 0.1
+        - id: STCraftSheetBrassT3
+          prob: 0.1
         - id: STCraftHighPerformanceChipT4
           prob: 0.1
         - id: STCraftIndustrialThreadStaplesKitT4

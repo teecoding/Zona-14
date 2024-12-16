@@ -19,6 +19,21 @@
           prob: 0.025
         - id: STCraftSheetSteelT5
           prob: 0.025
+        - id: STCraftHighPerformanceChipT4
+          prob: 0.05
+        - id: STCraftIndustrialThreadStaplesKitT4
+          prob: 0.05
+        - id: STCraftPolymerFabricT4
+          prob: 0.05
+        - id: STCraftSapphireCrystalT4
+          prob: 0.05
+        - id: STCraftYewPlankT4
+          prob: 0.05
+        - id: STCraftPlasticFittingT4
+          prob: 0.05
+        - id: STCraftSheetAluminumT4
+          prob: 0.05
+
 - type: entity
   parent: [STBaseHiddenCache, STHiddenCacheStorageFillT5, BirchTreeNew02]
   id: STHiddenCache1T5

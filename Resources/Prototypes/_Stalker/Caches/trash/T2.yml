@@ -50,6 +50,38 @@
           prob: 0.1
         - id: STCraftSheetIronT2
           prob: 0.1
+        - id: STCraftBasicPCBT1
+          prob: 0.1
+        - id: STCraftBasicThreadKitT1
+          prob: 0.1
+        - id: STCraftCottonFabricT1
+          prob: 0.1
+        - id: STCraftGlassT1
+          prob: 0.1
+        - id: STCraftPinePlankT1
+          prob: 0.1
+        - id: STCraftPlasticFittingT1
+          prob: 0.1
+        - id: STCraftSheetCopperT1
+          prob: 0.1
+        - id: ZoneArtifactPellicle
+          prob: 0.005
+        - id: ZoneArtifactSparkler
+          prob: 0.005
+        - id: ArtMedusa
+          prob: 0.005
+        - id: ZoneArtifactFireball
+          prob: 0.005
+        - id: ZoneArtifactBlood
+          prob: 0.005
+        - id: ZoneArtifactBattery
+          prob: 0.005
+        - id: ZoneArtifactVyvert
+          prob: 0.005
+        - id: ZoneArtifactAmoeba
+          prob: 0.005
+        - id: ZoneArtifactEye
+          prob: 0.005
 
 - type: entity
   parent: [STBaseTrashCache, STTrashStorageFillT2]
