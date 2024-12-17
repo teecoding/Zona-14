@@ -4,7 +4,7 @@
   suffix: Stalker
   components:
   - type: ApproachTrigger
-    range: 20
+    range: 40
     minRange: 15
     useMinRange: true
     whitelist:
@@ -56,7 +56,7 @@
   parent: MarkerBase
   components:
     - type: ApproachTrigger
-      range: 20
+      range: 40
       minRange: 15
       useMinRange: true
       whitelist:
@@ -84,7 +84,7 @@
   parent: MarkerBase
   components:
     - type: ApproachTrigger
-      range: 20
+      range: 40
       minRange: 15
       useMinRange: true
       whitelist:
@@ -111,7 +111,7 @@
   abstract: true
   components:
     - type: ApproachTrigger
-      range: 20
+      range: 40
       minRange: 15
       useMinRange: true
       whitelist:
@@ -138,7 +138,7 @@
   parent: MarkerBase
   components:
     - type: ApproachTrigger
-      range: 20
+      range: 40
       minRange: 15
       useMinRange: true
       whitelist:
@@ -165,7 +165,7 @@
   parent: MarkerBase
   components:
     - type: ApproachTrigger
-      range: 20
+      range: 40
       minRange: 15
       useMinRange: true
       whitelist:
@@ -192,7 +192,7 @@
   parent: MarkerBase
   components:
     - type: ApproachTrigger
-      range: 20
+      range: 40
       minRange: 15
       useMinRange: true
       whitelist:
