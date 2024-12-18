@@ -140,3 +140,22 @@
   flatReductions:
     Blunt: 5
     Piercing: 12
+
+- type: damageModifierSet
+  id: MutantZombie
+  class: 3
+  coefficients:
+    Blunt: 0.9
+    Slash: 0.9
+    Piercing: 0.5
+    Heat: 0
+    Cold: 0
+    Poison: 0
+    Cellular: 0
+    Radiation: 0
+    Caustic: 0
+    Compression: 0
+    Psy: 0
+  flatReductions:
+    Blunt: 5
+    Piercing: 5
