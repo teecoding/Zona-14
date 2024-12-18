@@ -231,7 +231,12 @@
           prob: 0.15
         - id: DrinkGoldenCup
           prob: 0.15
-
+        - id: CraftMaterialGunpowder
+          prob: 0.02
+        - id: CraftCardboardTube
+          prob: 0.02
+        - id: CraftFitil
+          prob: 0.02
 - type: entity
   parent: [STBaseHiddenCache, STHiddenCacheStorageFillT3, BirchTreeNew02]
   id: STHiddenCache1T3

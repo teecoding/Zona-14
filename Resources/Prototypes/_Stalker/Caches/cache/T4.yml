@@ -36,6 +36,12 @@
           prob: 0.1
         - id: STCraftSheetAluminumT4
           prob: 0.1
+        - id: CraftMaterialGunpowder
+          prob: 0.025
+        - id: CraftCardboardTube
+          prob: 0.025
+        - id: CraftFitil
+          prob: 0.025
 
 - type: entity
   parent: [STBaseCache, STCacheStorageFillT4]
