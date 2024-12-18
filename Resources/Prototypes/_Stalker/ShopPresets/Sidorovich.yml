@@ -91,6 +91,7 @@
         545Mag20: 163
         556Mag20: 163
         751Mag20: 319
+        BaseMP5Mag: 163
 
     - name: Боеприпасы
       priority: 3
