@@ -26,7 +26,7 @@
       thresholds:
         - trigger:
             !type:DamageTrigger
-            damage: 450
+            damage: 300
           behaviors:
             - !type:PlaySoundBehavior
               sound:
@@ -61,7 +61,7 @@
     - type: MobThresholds
       thresholds:
         0: Alive
-        450: Dead
+        300: Dead
     - type: MeleeWeapon
       attackRate: 0.4
       heavyWindupModifier: 1
