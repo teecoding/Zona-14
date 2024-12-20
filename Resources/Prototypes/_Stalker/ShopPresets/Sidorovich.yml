@@ -60,7 +60,7 @@
     MutantPartPseudogiantHeart: 4200
     MutantPartZombieHand: 315
     # Smuggling
-    TradeBox: 1650  
+    TradeBox: 1650
   categories:
     - name: Оружие
       priority: 1
@@ -192,12 +192,12 @@
       items:
         STEnergyDrink: 200
         DrinkVodkaBottleFull: 55
-        FoodBreadPlain: 35
+        STFoodBreadPlain: 35
         DrinkFlaskOld: 30
         DrinkWaterBottleFull: 45
         FoodTinMRE: 120
         DrinkLemonadehBottleFull: 50
-        FoodMeatSalami: 350
+        STFoodMeatSalami: 350
     - name: Медицина
       priority: 9
       items:

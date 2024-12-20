@@ -55,12 +55,12 @@
       items:
         STEnergyDrink: 1450
         DrinkVodkaBottleFull: 550
-        FoodBreadPlain: 350
+        STFoodBreadPlain: 350
         DrinkFlaskOld: 300
         DrinkWaterBottleFull: 450
         FoodTinMRE: 1200
         DrinkLemonadehBottleFull: 500
-        FoodMeatSalami: 900
+        STFoodMeatSalami: 900
     - name: Медицина
       priority: 7
       items:
@@ -202,12 +202,12 @@
       items:
         STEnergyDrink: 40
         DrinkVodkaBottleFull: 70
-        FoodBreadPlain: 5
+        STFoodBreadPlain: 5
         DrinkFlaskOld: 5
         DrinkWaterBottleFull: 5
         FoodTinMRE: 60
         DrinkLemonadehBottleFull: 70
-        FoodMeatSalami: 50
+        STFoodMeatSalami: 50
     - name: Медицина
       priority: 8
       items:
@@ -349,12 +349,12 @@
       items:
         STEnergyDrink: 50
         DrinkVodkaBottleFull: 100
-        FoodBreadPlain: 20
+        STFoodBreadPlain: 20
         DrinkFlaskOld: 20
         DrinkWaterBottleFull: 20
         FoodTinMRE: 80
         DrinkLemonadehBottleFull: 80
-        FoodMeatSalami: 60
+        STFoodMeatSalami: 60
     - name: Медицина
       priority: 6
       items:

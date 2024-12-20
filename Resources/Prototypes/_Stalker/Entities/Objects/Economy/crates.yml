@@ -1105,15 +1105,7 @@
       - Gun
       - BallisticAmmoProvider
 
-- type: entity
-  parent: SeedBase
-  name: пакетик травы
-  description: Только не попадитесь с ней ментам.
-  id: CannabisSeedsStalker
-  suffixx: Stalker
-  components:
-    - type: Sprite
-      sprite: Objects/Specific/Hydroponics/cannabis.rsi
+
 
 - type: entity
   parent: BaseItem

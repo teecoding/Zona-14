@@ -133,11 +133,11 @@
       items:
         STEnergyDrink: 100
         DrinkCognacBottleFull: 100
-        FoodBreadPlain: 15
+        STFoodBreadPlain: 15
         DrinkFlaskOld: 15
         DrinkWaterBottleFull: 5
         FoodTinMRE: 15
-        FoodMeatSalami: 60
+        STFoodMeatSalami: 60
     - name: Медицина
       priority: 7
       items:

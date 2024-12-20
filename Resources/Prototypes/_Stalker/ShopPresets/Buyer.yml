@@ -67,7 +67,7 @@
       priority: 0
       items:
         TradeBox: 1000
-        CannabisSeeds: 200
+        CannabisSeedsStalker: 200
     - name: Детекторы
       priority: 1
       items:
