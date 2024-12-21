@@ -58,7 +58,8 @@
     MutantPartBloodsuckerTentacles: 1350
     MutantPartOraculeEye: 3600
     MutantPartPseudogiantHeart: 9000
-    #Other
+    
+    # Zombie
     MutantPartZombieHand: 675
   categories:
     - name: ССП-99
