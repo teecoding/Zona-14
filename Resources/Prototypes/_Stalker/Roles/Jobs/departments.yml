@@ -74,6 +74,7 @@
   - StalkerHeadScientist
   - StalkerISSG
   - MilitaryStalker
+  - StalkerUN
 
 - type: department
   id: StalkerReligius
@@ -87,7 +88,7 @@
   - StalkerGreh
   - Seraphim
   - SeraphimHead
-
+  - StalkerZavet
 - type: department
   id: Evolver
   name: department-Evolver
