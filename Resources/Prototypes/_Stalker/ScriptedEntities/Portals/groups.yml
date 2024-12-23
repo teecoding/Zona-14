@@ -295,7 +295,7 @@
     - type: NewMapTeleport
       portalName: RedForest-Oazis
 
-###################################### Чистое небо
+###################################### Чистое небо (старый, удалить когда поставят новый)
 
 - type: entity
   parent: MapTeleportBase
@@ -486,3 +486,30 @@
       portalName: Lobby-Jaba
     - type: AccessReader
       access: [["Jaba"]]
+
+####################################Чистое Небо
+
+- type: entity
+  parent: MapTeleportBase
+  id: Lobby-Clear-Sky
+  noSpawn: false
+  name: Lobby-Clear-Sky
+  components:
+    - type: NewMapTeleport
+      allowAll: false
+      portalName: Lobby-Clear-Sky
+    - type: AccessReader
+      access: [["CN"]]
+
+- type: entity
+  parent: MapTeleportBaseUncollide
+  id: Lobby-Clear-SkyUncollide
+  noSpawn: false
+  name: Lobby-Clear-SkyUncollide
+  components:
+    - type: NewMapTeleport
+      allowAll: false
+      portalName: Lobby-Clear-Sky
+    - type: AccessReader
+      access: [["CN"]]
+
