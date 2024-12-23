@@ -240,7 +240,6 @@
     STWeaponRifleM4: 6
     556FMJBox: 50
     556M855Box: 10
-    556M856Box: 5
 
 - type: entity
   parent: BaseVendingMachineRestock
