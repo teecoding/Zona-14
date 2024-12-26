@@ -1914,6 +1914,7 @@
     sprite: _Stalker/Objects/Misc/casete.rsi
     state: c5
 
+
 # Contributor
 - type: entity
   parent: BaseItem
