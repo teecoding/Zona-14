@@ -154,7 +154,7 @@
           prob: 0.01
 
 - type: entity
-  parent: [STBaseCache, STCacheStorageFillT3]
+  parent: [STCacheStorageFillT3, STBaseCache]
   id: STCacheT3
   categories: [ HideSpawnMenu ]
   components:

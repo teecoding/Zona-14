@@ -158,7 +158,7 @@
           prob: 0.005
 
 - type: entity
-  parent: [STBaseCache, STCacheStorageFillT2]
+  parent: [STCacheStorageFillT2, STBaseCache]
   id: STCache1T2
   categories: [ HideSpawnMenu ]
   components:
@@ -169,7 +169,7 @@
       state: base
 
 - type: entity
-  parent: [STBaseCache, STCacheStorageFillT2]
+  parent: [STCacheStorageFillT2, STBaseCache]
   id: STCache2T2
   categories: [ HideSpawnMenu ]
   components:
@@ -181,7 +181,7 @@
 
 
 - type: entity
-  parent: [STBaseCache, STCacheStorageFillT2]
+  parent: [STCacheStorageFillT2, STBaseCache]
   id: STCache3T2
   categories: [ HideSpawnMenu ]
   components:
@@ -192,7 +192,7 @@
       state: base3
 
 - type: entity
-  parent: [STBaseCache, STCacheStorageFillT2]
+  parent: [STCacheStorageFillT2, STBaseCache]
   id: STCache4T2
   categories: [ HideSpawnMenu ]
   components:

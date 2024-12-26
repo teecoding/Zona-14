@@ -107,7 +107,7 @@
         - id: CraftFitil
           prob: 0.005
 - type: entity
-  parent: [STBaseCache, STCacheStorageFillT1]
+  parent: [ STCacheStorageFillT1, STBaseCache]
   id: STCacheT1
   categories: [ HideSpawnMenu ]
   components:
