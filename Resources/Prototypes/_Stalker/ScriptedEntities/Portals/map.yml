@@ -1091,3 +1091,15 @@
       cooldownEnabled: true
       cooldownTime: 5
       godmodeCooldown: 5
+################################################### Подземка свалки - Подземка Бара
+- type: entity
+  parent: MapTeleportBase
+  id: UndergrundBar-UndergrundSvalka
+  name: Подземка Бара - Подземка Свалки
+  components:
+    - type: NewMapTeleport
+      portalName: UndergrundBar-UndergrundSvalka
+      allowAll: false
+      cooldownEnabled: true
+      cooldownTime: 5
+      godmodeCooldown: 5
