@@ -259,3 +259,85 @@
       sprite: _Stalker/Clothing/Legs/Jeans/Camouflage/monolith.rsi
     - type: Clothing
       sprite: _Stalker/Clothing/Legs/Jeans/Camouflage/monolith.rsi
+
+- type: entity
+  parent: BaseClothingLegs
+  id: ClothingLegsBattlePantsBlack
+  name: battle pants black
+  components:
+    - type: Sprite
+      sprite: _Stalker/Clothing/Legs/Jeans/battle_pants_black.rsi
+    - type: Clothing
+      sprite: _Stalker/Clothing/Legs/Jeans/battle_pants_black.rsi
+
+
+- type: entity
+  parent: BaseClothingLegs
+  id: ClothingLegsVeryBlueJenas
+  name: very blue jeans
+  components:
+    - type: Sprite
+      sprite: _Stalker/Clothing/Legs/Jeans/blue-jeans.rsi
+    - type: Clothing
+      sprite: _Stalker/Clothing/Legs/Jeans/blue-jeans.rsi
+
+- type: entity
+  parent: BaseClothingLegs
+  id: ClothingLegsCombatForest
+  name: combat forest
+  components:
+    - type: Sprite
+      sprite: _Stalker/Clothing/Legs/Jeans/combat-forest.rsi
+    - type: Clothing
+      sprite: _Stalker/Clothing/Legs/Jeans/combat-forest.rsi
+      
+- type: entity
+  parent: BaseClothingLegs
+  id: ClothingLegsGorka5
+  name: gorka 5
+  components:
+    - type: Sprite
+      sprite: _Stalker/Clothing/Legs/Jeans/gorka5.rsi
+    - type: Clothing
+      sprite: _Stalker/Clothing/Legs/Jeans/gorka5.rsi
+
+- type: entity
+  parent: BaseClothingLegs
+  id: ClothingLegsGorka6b
+  name: gorka 6b
+  components:
+    - type: Sprite
+      sprite: _Stalker/Clothing/Legs/Jeans/gorka6b.rsi
+    - type: Clothing
+      sprite: _Stalker/Clothing/Legs/Jeans/gorka6b.rsi
+
+- type: entity
+  parent: BaseClothingLegs
+  id: ClothingLegsNavyPants
+  name: navy pants
+  components:
+    - type: Sprite
+      sprite: _Stalker/Clothing/Legs/Jeans/navy_pants.rsi
+    - type: Clothing
+      sprite: _Stalker/Clothing/Legs/Jeans/navy_pants.rsi
+
+- type: entity
+  parent: BaseClothingLegs
+  id: ClothingLegsNewbie
+  name: newbie
+  components:
+    - type: Sprite
+      sprite: _Stalker/Clothing/Legs/Jeans/newbie.rsi
+    - type: Clothing
+      sprite: _Stalker/Clothing/Legs/Jeans/newbie.rsi
+
+- type: entity
+  parent: BaseClothingLegs
+  id: ClothingLegsRussianNumber
+  name: russian number
+  components:
+    - type: Sprite
+      sprite: _Stalker/Clothing/Legs/Jeans/russian_number.rsi
+    - type: Clothing
+      sprite: _Stalker/Clothing/Legs/Jeans/russian_number.rsi
+

@@ -177,3 +177,83 @@
       sprite: _Stalker/Clothing/Torso/Turtlenecks/monolith.rsi
     - type: Clothing
       sprite: _Stalker/Clothing/Torso/Turtlenecks/monolith.rsi
+
+- type: entity
+  parent: BaseClothingTorso
+  id: ClothingTorsoTurtlenecksBattleTurtleneckbBlack
+  name: battle turtleneck black
+  components:
+    - type: Sprite
+      sprite: _Stalker/Clothing/Torso/Turtlenecks/battle_turtleneck_black.rsi
+    - type: Clothing
+      sprite: _Stalker/Clothing/Torso/Turtlenecks/battle_turtleneck_black.rsi
+
+- type: entity
+  parent: BaseClothingTorso
+  id: ClothingTorsoTurtlenecksBlackTurtleneck
+  name: black turtleneck 
+  components:
+    - type: Sprite
+      sprite: _Stalker/Clothing/Torso/Turtlenecks/black_turtleneck.rsi
+    - type: Clothing
+      sprite: _Stalker/Clothing/Torso/Turtlenecks/black_turtleneck.rsi
+
+- type: entity
+  parent: BaseClothingTorso
+  id: ClothingTorsoTurtlenecksCombatForest
+  name: combat forest
+  components:
+    - type: Sprite
+      sprite: _Stalker/Clothing/Torso/Turtlenecks/combat_forest.rsi
+    - type: Clothing
+      sprite: _Stalker/Clothing/Torso/Turtlenecks/combat_forest.rsi
+
+- type: entity
+  parent: BaseClothingTorso
+  id: ClothingTorsoTurtlenecksGorka5
+  name: gorka 5
+  components:
+    - type: Sprite
+      sprite: _Stalker/Clothing/Torso/Turtlenecks/gorka5.rsi
+    - type: Clothing
+      sprite: _Stalker/Clothing/Torso/Turtlenecks/gorka5.rsi
+
+- type: entity
+  parent: BaseClothingTorso
+  id: ClothingTorsoTurtlenecksGorka6B
+  name: gorka 6
+  components:
+    - type: Sprite
+      sprite: _Stalker/Clothing/Torso/Turtlenecks/gorka6b.rsi
+    - type: Clothing
+      sprite: _Stalker/Clothing/Torso/Turtlenecks/gorka6b.rsi
+
+- type: entity
+  parent: BaseClothingTorso
+  id: ClothingTorsoTurtlenecksKhakiTurtleneck
+  name: khaki turtleneck
+  components:
+    - type: Sprite
+      sprite: _Stalker/Clothing/Torso/Turtlenecks/khaki_turtleneck.rsi
+    - type: Clothing
+      sprite: _Stalker/Clothing/Torso/Turtlenecks/khaki_turtleneck.rsi
+
+- type: entity
+  parent: BaseClothingTorso
+  id: ClothingTorsoTurtlenecksMatrosska
+  name: matrosska
+  components:
+    - type: Sprite
+      sprite: _Stalker/Clothing/Torso/Turtlenecks/matrosska.rsi
+    - type: Clothing
+      sprite: _Stalker/Clothing/Torso/Turtlenecks/matrosska.rsi
+
+- type: entity
+  parent: BaseClothingTorso
+  id: ClothingTorsoTurtlenecksNewbie
+  name: newbie
+  components:
+    - type: Sprite
+      sprite: _Stalker/Clothing/Torso/Turtlenecks/newbie.rsi
+    - type: Clothing
+      sprite: _Stalker/Clothing/Torso/Turtlenecks/newbie.rsi
