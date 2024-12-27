@@ -124,6 +124,7 @@
         # Anomaly detectors
         ZoneAnomalyDetectorAD1: 50
         ZoneAnomalyDetectorAD2: 250
+        ZoneAnomalyDetectorAD3: 1000
         # Artifact detectors
         ZoneArtifactDetectorPulse: 100
         ZoneArtifactDetectorHunter: 400
@@ -237,6 +238,7 @@
         TechCardCalibrationDosimeter: 100
         STDetectorAD1Blueprint: 1000
         STDetectorAD2Blueprint: 1000
+        STDetectorAD3Blueprint: 3000
         STZoneArtifactDetectorPulseBlueprint: 3000
         STZoneArtifactDetectorHunterBlueprint: 3000
         STZoneArtifactDetectorResponseBlueprint: 6000

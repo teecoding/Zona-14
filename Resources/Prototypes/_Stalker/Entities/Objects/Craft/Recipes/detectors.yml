@@ -33,6 +33,24 @@
     ZoneAnomalyDetectorAD1:
       amount: 1
 
+- type: craftRecipe
+  id: newrecipeDetectorAD3
+  resultProtos:
+    - ZoneAnomalyDetectorAD3
+  craftTime: 2
+  items:
+    STDetectorAD3Blueprint:
+      amount: 1
+      catalyzer: true
+    STCraftStandardPCBT2:
+      amount: 2
+    STCraftPlasticFittingT2:
+      amount: 1
+    ZoneAnomalyDetectorAD2:
+      amount: 1
+    ZoneArtifactBattery:
+      amount: 1
+
 # Детекторы Артефактов
 
 - type: craftRecipe
