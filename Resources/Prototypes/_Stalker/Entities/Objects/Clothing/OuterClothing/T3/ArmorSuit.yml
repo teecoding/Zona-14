@@ -216,7 +216,7 @@
 
 - type: entity
   parent: STClothingOuterArmorBase
-  id: ClothingOuterArmorClerSky
+  id: ClothingOuterArmorPilgrim
   name: бронекомбез инквизиции
   suffix: ST, T3, Pilgrim
   description: Дешёвый и защищающий от мутантов и еретиков комбез инквизиции. Обеспечивает 3 класс защиты.
