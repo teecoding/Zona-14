@@ -77,7 +77,7 @@
             - Stalker
         - type: Bands
           band: Stalker
-          bandIcon: seraphim
+          bandIcon: seraphim_officer
         - type: BlockTackingHolyItems
         - type: TeethPull
           teethProto: ToothStalker

@@ -39,6 +39,14 @@
     state: seraph
 
 - type: jobIcon
+  id: seraphim_officer
+  locationPreference: Left
+  icon:
+    sprite: /Textures/_Stalker/Icons/Patches/band.rsi
+    hideOnStealth: true
+    state: seraph_officer
+
+- type: jobIcon
   id: tec
   locationPreference: Left
   icon:
