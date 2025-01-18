@@ -108,7 +108,7 @@
   parent: STClothingCapeBase
   id: ClothingCloakNavy
   name: Темно-синий плащ
-  description: Я не придумал, "смешное" описание для это плащя...
+  description: Я не придумал, "смешное" описание для это плаща...
   suffix: Stalker, Плащ
   components:
   - type: Sprite
