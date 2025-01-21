@@ -407,9 +407,9 @@
     tags:
       - Wall
   - type: Sprite
-    sprite: Structures/Walls/wall_lava.rsi
+    sprite: _Stalker/Structures/Walls/wall_lava.rsi
   - type: Icon
-    sprite: Structures/Walls/wall_lava.rsi
+    sprite: _Stalker/Structures/Walls/wall_lava.rsi
   - type: IconSmooth
     key: walls
     base: wall_lava
