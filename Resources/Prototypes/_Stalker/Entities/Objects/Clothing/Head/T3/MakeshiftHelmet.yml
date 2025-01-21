@@ -1,8 +1,8 @@
 - type: entity
   parent: STClothingHeadBase
   id: STClothingHeadHelmetMakeshiftTacticalT3
-  name: шлем "Взор-9"
-  description: шлем, сделанный вручную, может не самый привлекательный внешне, но защищает хорошо
+  name: Шлем «Циклоп»
+  description: шлем, сделанный вручную из качественных материалов, может не самый привлекательный внешне, но защищает хорошо.
   suffix: ST, T3, Tactical
   components:
   - type: Sprite

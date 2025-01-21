@@ -28,8 +28,8 @@
 - type: entity
   parent: STClothingHeadHelmetCombatT3Base
   id: ClothingHeadAssaultHelmet
-  name: КТ-1 "Кинетика"
-  description: боевой шлем, отличного качества, удобный, прочный и лёгкий
+  name: шлем «Зенит»
+  description: боевой шлем марки «Зенит» третьего класса защиты.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/hats/assault_helm.rsi
@@ -39,8 +39,8 @@
 - type: entity
   parent: STClothingHeadHelmetCombatT3Base
   id: ClothingHeadAssaultHelmetUN
-  name: КТ-1 "Кинетика" ООН
-  description: боевой шлем, отличного качества, удобный, прочный и лёгкий
+  name: шлем «Зенит» ООН
+  description: боевой шлем марки «Зенит» третьего класса защиты в цветах миротворцев.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/hats/un_head.rsi
@@ -50,7 +50,7 @@
 - type: entity
   parent: STClothingHeadHelmetCombatT3Base
   id: ClothingHeadAssaultHelmetDeserter
-  name: КТ-1-Л "Кинетика"
+  name: шлем «Зенит-Л»
   description: Шлем полностью покрывающий всю голову владельца кроме лица, очки приварены к шлему, не пытайтесь их снять!
   components:
   - type: Sprite
@@ -61,8 +61,8 @@
 - type: entity
   parent: STClothingHeadHelmetCombatT3Base
   id: ClothingHeadAssaultHelmetMilitary
-  name: КТ-1 "Кинетика" Военных
-  description: боевой шлем, отличного качества, удобный, прочный и лёгкий
+  name: военный шлем «Зенит»
+  description: боевой шлем марки «Зенит» третьего класса защиты в зелёном цвете.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/hats/assault_helm_military.rsi
@@ -72,8 +72,8 @@
 - type: entity
   parent: STClothingHeadHelmetCombatT3Base
   id: ClothingHeadAssaultHelmetBandit
-  name: КТ-1 "Кинетика" Бандитов
-  description: боевой шлем, отличного качества, удобный, прочный и лёгкий
+  name: бандитский шлем «Зенит»
+  description: боевой шлем марки «Зенит» третьего класса защиты.
   components:
   - type: Sprite
     sprite: _Stalker/Objects/Clothing/hats/assault_helm_bandit.rsi
