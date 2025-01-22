@@ -25,6 +25,7 @@
       sprite: _Stalker/Groups/Project/code_project_garniture.rsi
       slots:
       - ears
+    - type: Unremoveable
     - type: Armor
       armorClass: 0
       modifiers:
