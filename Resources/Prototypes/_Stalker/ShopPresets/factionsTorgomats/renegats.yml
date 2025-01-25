@@ -350,3 +350,17 @@
         ClothingTorsoTurtlenecksGorka6B: 50
         ClothingTorsoTurtlenecksKhakiTurtleneck: 50
         ClothingTorsoTurtlenecksMatrosska: 50
+    - name: Резерв Гетлира
+      priority: 14
+      items:
+        ChlorineBalloonStalker: 1600
+        IpritGrenadeStalker: 300
+        LewisiteGrenadeStalker: 600
+        HydrocyanicGrenadeStalker: 1000
+        PhosphorusGrenadeStalker: 1000
+        DynamiteThree: 1000
+        DynamiteFour: 1500
+        StielhandgranateM24: 700
+        StielhandgranateM24Bundle: 1400
+        SignalSmoke: 10000
+        KhattabkaGrenade: 350
