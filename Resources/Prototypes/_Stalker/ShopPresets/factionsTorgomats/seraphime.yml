@@ -194,6 +194,7 @@
         VityazMag: 43
           # Other
         TTMag: 19
+        739Mag30: 60
     - name: Боеприпасы
       priority: 6
       items:
@@ -217,6 +218,10 @@
         918PGJBox: 15
         918PSTBox: 36
         918PBMBox: 90
+        # 9.19
+        919PSOGJBox: 75
+        919PSTBox: 180
+        919PBMBox: 450
     - name: Провизия
       priority: 7
       items:
