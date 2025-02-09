@@ -168,6 +168,7 @@
       items:
         STSkinsKitDolg: 500
         STCombatKnife: 25
+        LgbtKnife: 30
         TrashBag: 30
         BoxZiptie: 50
         BoxSafebox: 300
@@ -229,10 +230,15 @@
         STModuleAutoSear: 3200
         STModuleSniperSightT1: 600
         STModuleSilencerSniperT1: 600
+        STModuleSMGGripT1: 600
     - name: Кастомизация
       priority: 12
       items:
         ClothingBandageStalkerRed: 5
+        ClothingBandageStalkerRus: 25
+        ClothingBandageStalkerUk: 25
+        ClothingBandageStalkerPeace: 25
+        ClothingBandageStalkerJid: 35
         ClothingHeadHatBeaniehat: 10
         ClothingMaskNeckFacemask: 10
         ClothingMaskNeckBalaklava1: 10
