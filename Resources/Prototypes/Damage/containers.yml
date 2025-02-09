@@ -52,14 +52,3 @@
   id: ShadowHaze
   supportedTypes:
     - Heat
-
-# stalker change
-- type: damageContainer
-  id: Mutant
-  supportedGroups:
-    - Brute
-    - Burn
-    - Toxin
-    - Airloss
-    - Genetic
-    - Mutant
