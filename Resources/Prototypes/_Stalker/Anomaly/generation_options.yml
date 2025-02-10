@@ -20,7 +20,6 @@
       - protoId: ZoneAnomalySpringboard
       - protoId: ZoneAnomalyLamp
       - protoId: ZoneAnomalyJarka
-      - protoId: ZoneAnomalyEMP
 
 # Свалка XXX
 - type: stAnomalyGenerationOptions
@@ -139,14 +138,12 @@
   options:
     totalCount: 170
     anomalyEntries:
-      - protoId: STAnomalyBarrier
       - protoId: ZoneAnomalyKissel
       - protoId: ZoneAnomalyPulse
       - protoId: ZoneAnomalyElectra
       - protoId: ZoneAnomalySteam
       - protoId: ZoneAnomalyBarabashka
       - protoId: ZoneAnomalyFreezer
-      - protoId: ZoneAnomalyEMP
       - protoId: STAnomalyHush
 
 # Росток XXX
@@ -167,7 +164,6 @@
       - protoId: ZoneAnomalySmoke
       - protoId: ZoneAnomalyGrabber
       - protoId: ZoneAnomalySteam
-      - protoId: ZoneAnomalyEMP
 
 
 # Оазис XXX
@@ -179,4 +175,3 @@
       - protoId: ZoneAnomalySource
       - protoId: ZoneAnomalyGrabber
       - protoId: STAnomalyHush
-      - protoId: ZoneAnomalyEMP
