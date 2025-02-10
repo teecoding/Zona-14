@@ -47,7 +47,7 @@
         base:
           Enabled: { state: screen_on }
           Disabled: { state: screen_off }
-          Detected: { state: screen_on }
+          Detected: { state: screen_detected }
   - type: ZoneArtifactDetector
     beepSound: /Audio/Items/Detectors/Artefacts/art_beep3.ogg
     level: 1
