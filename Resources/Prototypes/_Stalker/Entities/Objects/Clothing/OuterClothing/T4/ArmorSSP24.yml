@@ -97,8 +97,8 @@
         Shock: 1
         Psy: 1
       coefficients:
-        Blunt: 0.60
-        Slash: 0.60
+        Blunt: 0.55
+        Slash: 0.55
         Piercing: 0.90
         Heat: 0.60
         Caustic: 0.80
