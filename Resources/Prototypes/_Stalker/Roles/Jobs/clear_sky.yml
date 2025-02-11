@@ -15,6 +15,7 @@
       - Dwarf
   startingGear: StalkerClearSkyGear
   supervisors: Исследуй Зону и оберегай её секреты от посторонних глаз.
+  canBeAntag: false
   special:
     - !type:AddComponentSpecial
       components:

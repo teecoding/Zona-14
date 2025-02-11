@@ -33,6 +33,7 @@
     #   inverted: true
   startingGear: StalkerGear
   supervisors: Вы работаете сами на себя
+  canBeAntag: false
   special:
     - !type:AddComponentSpecial
       components:
