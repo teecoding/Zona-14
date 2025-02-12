@@ -15,6 +15,7 @@
       - Dwarf
   startingGear: FreedomGear
   supervisors: Кури, защищай Зону и игнорируй авторитеты.
+  canBeAntag: false
   special:
     - !type:AddComponentSpecial
       components:
@@ -49,6 +50,7 @@
       - Dwarf
   startingGear: FreedomGear
   supervisors: Командиры? У анархистов?.
+  canBeAntag: false
   special:
     - !type:AddComponentSpecial
       components:

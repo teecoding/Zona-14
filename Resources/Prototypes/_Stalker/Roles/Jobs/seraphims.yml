@@ -15,6 +15,7 @@
       - Dwarf
   startingGear: SeraphimGear
   supervisors: Вы служите во имя Его.
+  canBeAntag: false
   special:
     - !type:AddComponentSpecial
       components:
@@ -66,6 +67,7 @@
       - Dwarf
   startingGear: SeraphimHeadGear
   supervisors: Вы служите во имя Его.
+  canBeAntag: false
   special:
     - !type:AddComponentSpecial
       components:

@@ -15,6 +15,7 @@
       - Dwarf
   startingGear: DolgGear
   supervisors: Вы подчиняетесь старшим по званию.
+  canBeAntag: false
   special:
     - !type:AddComponentSpecial
       components:
@@ -49,6 +50,7 @@
       - Dwarf
   startingGear: DolgGear
   supervisors: Вы командуете другими бойцами Долга.
+  canBeAntag: false
   special:
     - !type:AddComponentSpecial
       components:
