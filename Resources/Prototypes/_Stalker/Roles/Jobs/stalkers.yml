@@ -6,27 +6,10 @@
   playTimeTracker: JobStalker
   whitelisted: false
   requirements:
-    - !type:DepartmentTimeRequirement
-      department: StalkerAdvanced
-      time: 1
-      inverted: true
-    - !type:DepartmentTimeRequirement
-      department: StalkerBrigands
-      time: 1
-      inverted: true
-    - !type:DepartmentTimeRequirement
-      department: StalkerOfficials
-      time: 1
-      inverted: true
-    - !type:DepartmentTimeRequirement
-      department: StalkerReligius
-      time: 1
-      inverted: true
     - !type:SpeciesRequirement
       species:
       - Human
       - Dwarf
-      - Gingerbread
     # - !type:DepartmentTimeRequirement
     #   department: StalkerAnomalists
     #   time: 1
