@@ -85,11 +85,6 @@
            rangeKey: RangedRange
 
       - !type:HTNPrimitiveTask
-        operator: !type:SetFloatOperator
-          targetKey: AttackDelay
-          amount: 1
-
-      - !type:HTNPrimitiveTask
         operator: !type:WaitOperator
           key: AttackDelay
         preconditions:
@@ -127,11 +122,6 @@
            rangeKey: RangedRange
 
       - !type:HTNPrimitiveTask
-        operator: !type:SetFloatOperator
-          targetKey: AttackDelay
-          amount: 1
-
-      - !type:HTNPrimitiveTask
         operator: !type:WaitOperator
           key: AttackDelay
         preconditions:
@@ -148,11 +138,6 @@
            rangeKey: RangedRange
 
       - !type:HTNPrimitiveTask
-        operator: !type:SetFloatOperator
-          targetKey: AttackDelay
-          amount: 1
-
-      - !type:HTNPrimitiveTask
         operator: !type:WaitOperator
           key: AttackDelay
         preconditions:
@@ -167,11 +152,6 @@
            targetKey: TargetCoordinates
            pathfindKey: TargetPathfind
            rangeKey: RangedRange
-
-      - !type:HTNPrimitiveTask
-        operator: !type:SetFloatOperator
-          targetKey: AttackDelay
-          amount: 1
 
       - !type:HTNPrimitiveTask
         operator: !type:WaitOperator
