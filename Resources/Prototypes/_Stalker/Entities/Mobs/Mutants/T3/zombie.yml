@@ -34,7 +34,7 @@
         Dead:
           Base: dead
     - type: Damageable
-      damageModifierSet: STMutantT3DamageModifierSet
+      damageModifierSet: MutantZombie
     - type: Bands
       band: Zombie
       bandIcon: zombie

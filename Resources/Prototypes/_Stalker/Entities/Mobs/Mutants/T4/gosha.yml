@@ -19,7 +19,7 @@
       maximum: 580
     # Other
     - type: Damageable
-      damageModifierSet: STMutantT4DamageModifierSet
+      damageModifierSet: STMutatedGosha
     - type: DamageStateVisuals
       states:
         Alive:

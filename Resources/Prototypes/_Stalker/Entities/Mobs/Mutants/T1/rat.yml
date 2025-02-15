@@ -59,7 +59,7 @@
     baseWalkSpeed: 3.2
     baseSprintSpeed: 4
   - type: Damageable
-    damageModifierSet: STMutantT1DamageModifierSet
+    damageModifierSet: PathetictMutant
   - type: SlowOnDamage
     speedModifierThresholds:
       30: 0.9

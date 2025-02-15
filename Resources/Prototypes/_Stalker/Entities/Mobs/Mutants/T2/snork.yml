@@ -9,7 +9,7 @@
       spawned:
         - id: MutantPartSnorkFoot
     - type: Damageable
-      damageModifierSet: STMutantT3DamageModifierSet
+      damageModifierSet: SnorkMutant
     - type: DamageStateVisuals
       states:
         Alive:

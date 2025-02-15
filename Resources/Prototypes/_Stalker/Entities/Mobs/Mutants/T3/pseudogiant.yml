@@ -83,7 +83,7 @@
           layer:
             - MobLayer
     - type: Damageable
-      damageModifierSet: STMutantT3DamageModifierSet
+      damageModifierSet: PseudogiantMutant
     - type: SlowOnDamage
       speedModifierThresholds:
         1500: 0.8
