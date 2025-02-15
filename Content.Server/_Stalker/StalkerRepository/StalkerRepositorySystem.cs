@@ -230,6 +230,7 @@ public sealed class StalkerRepositorySystem : EntitySystem
     #endregion
 
     private HashSet<EntityUid> _currentlyProcessingEjects = new HashSet<EntityUid>();
+    private readonly object _ejectLock = new();
 
     private void OnEjectMessage(EntityUid uid, StalkerRepositoryComponent component, RepositoryEjectMessage msg)
     {
@@ -240,40 +241,44 @@ public sealed class StalkerRepositorySystem : EntitySystem
 
         try
         {
-            if (msg.Item.Weight < 0)
+            lock (_ejectLock)
             {
-                var sum = component.CurrentWeight - msg.Item.Weight;
-                if (Math.Round(sum, 2) > component.MaxWeight)
+                if (msg.Item.Weight < 0)
                 {
-                    _sawmill.Debug($"Could not eject an item due to its weight. {msg.Item.Identifier} | item weight: {msg.Item.Weight} | repo weight: {component.CurrentWeight}");
-                    return;
+                    var sum = component.CurrentWeight - msg.Item.Weight;
+                    if (Math.Round(sum, 2) > component.MaxWeight)
+                    {
+                        _sawmill.Debug($"Could not eject an item due to its weight. {msg.Item.Identifier} | item weight: {msg.Item.Weight} | repo weight: {component.CurrentWeight}");
+                        return;
+                    }
                 }
+
+                var item = GetFirstItem(component.ContainedItems, msg.Item.Identifier);
+                if (item == null || item.Count < msg.Count)
+                    return;
+
+                item.Count -= msg.Count;
+
+                if (item.SStorageData is IItemStalkerStorage stalker)
+                {
+                    stalker.CountVendingMachine -= (uint)msg.Count;
+                }
+
+                if (item.Count <= 0)
+                    component.ContainedItems.Remove(item);
+
+                EjectItems(GetEntity(msg.Entity), item, msg.Count);
+                _adminLogger.Add(LogType.Action, LogImpact.Low, $"Player {Name(msg.Actor):user} ejected {msg.Count} {msg.Item.Name} from repository");
+                _stalkerStorageSystem.SaveStorage(component);
+                UpdateUiState(msg.Actor, GetEntity(msg.Entity), component);
             }
-
-            var item = GetFirstItem(component.ContainedItems, msg.Item.Identifier);
-            if (item == null)
-                return;
-
-            item.Count -= msg.Count;
-
-            if (item.SStorageData is IItemStalkerStorage stalker)
-            {
-                stalker.CountVendingMachine -= (uint)msg.Count;
-            }
-
-            if (item.Count <= 0)
-                component.ContainedItems.Remove(item);
-
-            EjectItems(GetEntity(msg.Entity), item, msg.Count);
-            _adminLogger.Add(LogType.Action, LogImpact.Low, $"Player {Name(msg.Actor):user} ejected {msg.Count} {msg.Item.Name} from repository");
-            _stalkerStorageSystem.SaveStorage(component);
-            UpdateUiState(msg.Actor, GetEntity(msg.Entity), component);
         }
         finally
         {
             _currentlyProcessingEjects.Remove(msg.Actor);
         }
     }
+
 
 
     private void OnInjectMessage(EntityUid uid, StalkerRepositoryComponent component,
