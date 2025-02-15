@@ -84,8 +84,8 @@
           Bloodloss:
             -1
     - type: Damageable
-      damageContainer: Biological
-      damageModifierSet: DefaultMutant
+      damageContainer: Mutant
+      damageModifierSet: STMutantT1DamageModifierSet
     - type: AtmosExposed
     - type: Flammable
       fireSpread: true

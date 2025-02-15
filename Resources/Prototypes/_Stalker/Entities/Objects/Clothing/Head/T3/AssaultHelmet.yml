@@ -81,3 +81,16 @@
     sprite: _Stalker/Objects/Clothing/hats/assault_helm_bandit.rsi
   - type: Clothing
     sprite: _Stalker/Objects/Clothing/hats/assault_helm_bandit.rsi
+
+- type: entity
+  parent: STClothingHeadHelmetCombatT3Base
+  id: ClothingHeadAssaultHelmetDolg
+  name: шлем «Зенит» Долга
+  description: боевой шлем марки «Зенит» третьего класса защиты.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/assault_helm_dolg.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/assault_helm_dolg.rsi
+
+

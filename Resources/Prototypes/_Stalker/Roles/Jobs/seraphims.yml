@@ -15,6 +15,7 @@
       - Dwarf
   startingGear: SeraphimGear
   supervisors: Вы служите во имя Его.
+  canBeAntag: false
   special:
     - !type:AddComponentSpecial
       components:
@@ -45,6 +46,8 @@
     torso: STClothingTorsoSerafimLittleChaos
     mask: STClothingMaskKufei
     gloves: STClothingHandsGlovesSera
+    pocket1: STBoltBagFilled
+    pocket2: GeigerCounter
 
 
 - type: job
@@ -64,6 +67,7 @@
       - Dwarf
   startingGear: SeraphimHeadGear
   supervisors: Вы служите во имя Его.
+  canBeAntag: false
   special:
     - !type:AddComponentSpecial
       components:
@@ -98,3 +102,5 @@
     torso: STClothingTorsoSerafimFullReady
     mask: STClothingMaskKufei
     gloves: STClothingHandsGlovesSera
+    pocket1: STBoltBagFilled
+    pocket2: GeigerCounter
