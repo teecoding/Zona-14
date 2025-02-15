@@ -24,8 +24,6 @@
           - CN
       - type: Bands
         band: Stalker
-        altBand: stalker
-        canChange: true
         bandIcon: cn
       - type: BlockTackingHolyItems
       - type: TeethPull
