@@ -35,6 +35,36 @@
       walkModifier: 1.2
       sprintModifier: 1.1
 
+- type: entity
+  parent: BaseArtifact
+  id: ZoneArtifactFloodlight
+  suffix: Stalker, Артефакт-фонарь
+  components:
+    - type: Sprite
+      state: artifactFloodlight
+    - type: ZoneArtifact
+      anomaly: ZoneAnomalyLamp
+    - type: ZoneArtifactDetectorTarget
+      detectedLevel: 1
+    - type: Item
+      size: Small
+      shape:
+        - 0,0,1,1
+    - type: Clothing
+      quickEquip: true
+      slots:
+        - ARTIFACT
+        - pocket
+    - type: PointLight
+      radius: 20
+      energy: 8
+      color: "#c2a41f"
+      netsync: false
+    - type: PersonalDamage
+      damage:
+        types:
+          Radiation: 0.2
+      interval: 1
 #
 - type: entity
   parent: BaseArtifactStorage
