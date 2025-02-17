@@ -37,8 +37,8 @@
       speedModifierThresholds:
         200: 0.8
     - type: MovementSpeedModifier
-      baseWalkSpeed : 1.2
-      baseSprintSpeed : 2.4
+      baseWalkSpeed : 2
+      baseSprintSpeed : 4
     - type: MeleeWeapon
       attackRate: 0.7
       heavyWindupModifier: 1
@@ -70,6 +70,13 @@
             !type:DamageTrigger
             damage: 300
           behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+            - !type:SpawnEntitiesBehavior
+              spawn:
+                MutantPartPseudodogTail:
+                  min: 1
+                  max: 1
             - !type:PlaySoundBehavior
               sound:
                 path: /Audio/_Stalker/Mutants/bdog_die_0.ogg
