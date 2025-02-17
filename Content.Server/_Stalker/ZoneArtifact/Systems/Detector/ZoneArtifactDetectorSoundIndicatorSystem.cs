@@ -25,16 +25,14 @@ public sealed class ZoneArtifactDetectorSoundIndicatorSystem : EntitySystem
                 continue;
 
             if (detector.ClosestEntity is null || detector.ClosestDistance is not { } distance)
-                return;
+                continue;
 
             _audio.PlayPvs(indicator.Sound, uid);
 
             var scalingFactor = distance / detector.DetectionDistance;
             var interval = (indicator.MaxInterval - indicator.MinInterval) * scalingFactor + indicator.MinInterval;
 
-            indicator.NextTime += interval;
 
-            if (indicator.NextTime < _timing.CurTime)
                 indicator.NextTime = _timing.CurTime + interval;
         }
     }
