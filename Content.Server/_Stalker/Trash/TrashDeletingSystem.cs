@@ -50,14 +50,16 @@ public sealed class TrashDeletingSystem : EntitySystem
         comp.DeletingTime = null;
     }
 
+    private bool _warningIssued = false;
+
     public override void Update(float frameTime)
     {
         base.Update(frameTime);
 
-        if (_timing.CurTime >= _nextTimeUpdate - TimeSpan.FromSeconds(30) &&
-            _timing.CurTime < _nextTimeUpdate)
+        if (!_warningIssued && _timing.CurTime >= _nextTimeUpdate - TimeSpan.FromSeconds(30))
         {
             _chat.DispatchServerAnnouncement("Очистка мусора и пустых схронов произойдет через 30 секунд, предметы на полу могут пропасть!");
+            _warningIssued = true;
         }
 
         if (_timing.CurTime <= _nextTimeUpdate)
@@ -81,7 +83,10 @@ public sealed class TrashDeletingSystem : EntitySystem
             if (comp.DeletingTime <= _timing.CurTime)
                 QueueDel(uid);
         }
+
+        _warningIssued = false;
         _nextTimeUpdate = _timing.CurTime + TimeSpan.FromMinutes(_updateTime);
     }
+
 
 }
