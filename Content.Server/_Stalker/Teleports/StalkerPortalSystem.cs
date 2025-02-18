@@ -17,6 +17,9 @@ using Robust.Shared.Physics.Events;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Content.Server._Stalker.Trash;
+using Content.Shared.Mind;
+using Content.Shared.Mind.Components;
+
 
 namespace Content.Server._Stalker.Teleports;
 
@@ -100,17 +103,36 @@ public sealed class StalkerPortalSystem : SharedTeleportSystem
 
     private void OnClearArenaGrids(RequestClearArenaGridsEvent args)
     {
-        foreach(var data in StalkerArenaDataList)
+        foreach (var data in StalkerArenaDataList)
         {
             var gridIdNet = NetEntity.Parse(data.GridId.ToString());
 
             if (!_ent.TryGetEntity(gridIdNet, out var gridId) || !_ent.HasComponent<MapGridComponent>(gridId))
                 continue;
 
+            if (!TryComp<TransformComponent>(gridId, out var transform))
+                continue;
+
+            var enumerator = transform.ChildEnumerator;
+            bool hasMind = false;
+
+            while (enumerator.MoveNext(out var ent))
+            {
+                if (TryComp<MindContainerComponent>(ent, out var mind) && mind.HasMind)
+                {
+                    hasMind = true;
+                    break;
+                }
+            }
+
+            if (hasMind)
+                continue;
+
             _ent.DeleteEntity(gridId);
+            RemoveFromStalkerTeleportDataList(data.Login);
         }
-        StalkerArenaDataList.Clear();
     }
+
 
     // При столкновении с телепортом в сталкер арене происходит телепортация в тот телепорт из которого был выполнен вход в сталкер арену
     private void OnCollideStalkerPortalPersonal(EntityUid uid, StalkerPortalPersonalComponent component, ref StartCollideEvent args)
