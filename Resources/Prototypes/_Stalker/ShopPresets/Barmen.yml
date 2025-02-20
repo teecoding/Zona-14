@@ -183,6 +183,7 @@
         ClothingGoPro: 250
         ExtendedEmergencyOxygenTankFilledStalker: 50
         Matchbox: 10
+        STHeadLight: 350
         HatchetStalker: 150
         STCraftGlueKitT3: 1000
         STCraftPlasticFittingT3: 1000
@@ -313,6 +314,8 @@
         # Instruments
         AcousticGuitarInstrument: 300
         AccordionInstrument: 500
+        CardBin: 100
+        PokerCardBin: 150
   sponsorCategories:
     1:
       - name: sponsor
