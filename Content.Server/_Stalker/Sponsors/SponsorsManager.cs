@@ -1,7 +1,10 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Net.Http;
+using System.Net.Http.Headers;
+using System.Net.Http.Json;
 using System.Text.Json;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 using Content.Server._Stalker.Discord.DiscordAuth;
 using Content.Shared._Stalker.CCCCVars;
@@ -46,6 +49,8 @@ public sealed class SponsorsManager
 
         _discordAuthManager.PlayerVerified += OnPlayerVerified;
         _netMgr.Disconnect += OnDisconnect;
+
+        _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", _apiKey);
     }
 
     private void OnDisconnect(object? sender, NetDisconnectedArgs e)
@@ -88,7 +93,7 @@ public sealed class SponsorsManager
 
     private async Task<List<string>?> GetRoles(NetUserId userId)
     {
-        var requestUrl = $"{_apiUrl}/roles?userid={userId}&guildid={_guildId}&api_token={_apiKey}";
+        var requestUrl = $"{_apiUrl}/roles?method=uid&id={userId}&guildId={_guildId}";
         var response = await _httpClient.GetAsync(requestUrl);
 
         if (!response.IsSuccessStatusCode)
@@ -97,13 +102,11 @@ public sealed class SponsorsManager
             return null;
         }
 
-        var responseContent = await response.Content.ReadAsStringAsync();
+        var responseContent = await response.Content.ReadFromJsonAsync<RolesResponse>();
 
-        var rolesJson = JsonSerializer.Deserialize<Dictionary<string, List<string>>>(responseContent);
-
-        if (rolesJson != null && rolesJson.TryGetValue("roles", out var roles))
+        if (responseContent is not null)
         {
-            return roles;
+            return responseContent.Roles.ToList();
         }
 
         _sawmill.Error($"Roles not found in response for user {userId}");
@@ -112,23 +115,22 @@ public sealed class SponsorsManager
 
     private async Task<bool> IsGiven(NetUserId userId)
     {
-        var requestUrl = $"{_apiUrl}/is_given?id={userId}&method=ss14&api_token={_apiKey}";
-        var response = await _httpClient.GetAsync(requestUrl);
-
-        return (int)response.StatusCode == 200;
+        // Hotfix.
+        // TODO: Use extra table from auth API.
+        return true;
     }
 
     public async Task SetGiven(NetUserId userId, bool given)
     {
-        var requestUrl = $"{_apiUrl}/given?id={userId}&given={(given ? 1 : 0)}&method=ss14&api_token={_apiKey}";
-        var response = await _httpClient.PostAsync(requestUrl, null);
-        if (!response.IsSuccessStatusCode)
-            _sawmill.Error($"Error setting given value for {userId}");
-
-        if (TryGetInfo(userId, out var data))
-        {
-            data.IsGiven = given;
-        }
+        // var requestUrl = $"{_apiUrl}/given?id={userId}&given={(given ? 1 : 0)}&method=ss14&api_token={_apiKey}";
+        // var response = await _httpClient.PostAsync(requestUrl, null);
+        // if (!response.IsSuccessStatusCode)
+        //     _sawmill.Error($"Error setting given value for {userId}");
+        //
+        // if (TryGetInfo(userId, out var data))
+        // {
+        //     data.IsGiven = given;
+        // }
     }
 
     public async Task MakeWipe()
@@ -201,6 +203,12 @@ public sealed class SponsorsManager
 
         sponsorCategories = found.Count == 0 ? null : found;
         contribCategories = !info.Contributor ? null : contribList;
+    }
+
+    private sealed class RolesResponse
+    {
+        [JsonPropertyName("roles")]
+        public string[] Roles { get; set; } = [];
     }
 }
 
