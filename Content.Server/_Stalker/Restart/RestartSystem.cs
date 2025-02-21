@@ -110,7 +110,7 @@ public partial class RestartSystem : EntitySystem
 
         if (_usedHomeCommand.Contains(uid))
         {
-            var message = $"Телепортация возможно только один раз";
+            var message = $"Телепортация возможнa только один раз";
             shell.WriteError(message);
             _sawmill.Info($"{session.AttachedEntity.Value.Id} {session.Name} пытался повторно телепортироваться в чистилище");
             return;
