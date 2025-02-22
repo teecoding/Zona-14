@@ -83,6 +83,7 @@
   color: "#C0C0C0"
   weight: 6
   roles:
+  - StalkerMonolith
   - StalkerPostulant
   - StalkerBishop
   - StalkerGreh
