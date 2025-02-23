@@ -52,7 +52,6 @@ public sealed partial class MessengerUiFragment : BoxContainer
             MenuChat.Visible = false;
         };
 
-
         SendMessage.OnPressed += ev =>
         {
             OnSendMessage?.Invoke(new PdaMessage(InputTitle.Text, Rope.Collapse(ContentInput.TextRope), InputReciver.Text));
