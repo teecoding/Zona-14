@@ -51,6 +51,7 @@ public sealed class TrashDeletingSystem : EntitySystem
     }
 
     private bool _warningIssued = false;
+    private bool _cleanIssued = false;
 
     public override void Update(float frameTime)
     {
@@ -65,8 +66,12 @@ public sealed class TrashDeletingSystem : EntitySystem
         if (_timing.CurTime <= _nextTimeUpdate)
             return;
 
-        _chat.DispatchServerAnnouncement("Произошла очистка мусора и пустых схронов, некоторые предметы на полу пропали!");
-        RaiseLocalEvent(new RequestClearArenaGridsEvent());
+        if (!_cleanIssued)
+        {
+            _chat.DispatchServerAnnouncement("Произошла очистка мусора и пустых схронов, некоторые предметы на полу пропали!");
+            RaiseLocalEvent(new RequestClearArenaGridsEvent());
+            _cleanIssued = true;
+        }
 
         var trashEnts = EntityQueryEnumerator<TrashComponent>();
         while (trashEnts.MoveNext(out var uid, out var comp))
@@ -85,6 +90,7 @@ public sealed class TrashDeletingSystem : EntitySystem
         }
 
         _warningIssued = false;
+        _cleanIssued = false;
         _nextTimeUpdate = _timing.CurTime + TimeSpan.FromMinutes(_updateTime);
     }
 
