@@ -103,8 +103,9 @@ public sealed class StalkerPortalSystem : SharedTeleportSystem
 
     private void OnClearArenaGrids(RequestClearArenaGridsEvent args)
     {
-        foreach (var data in StalkerArenaDataList)
+        for (int i = 0; i < StalkerArenaDataList.Count; i++) // InvalidOperationException
         {
+            var data = StalkerArenaDataList[i];
             var gridIdNet = NetEntity.Parse(data.GridId.ToString());
 
             if (!_ent.TryGetEntity(gridIdNet, out var gridId) || !_ent.HasComponent<MapGridComponent>(gridId))
@@ -114,7 +115,7 @@ public sealed class StalkerPortalSystem : SharedTeleportSystem
                 continue;
 
             var enumerator = transform.ChildEnumerator;
-            bool hasMind = false;
+            var hasMind = false;
 
             while (enumerator.MoveNext(out var ent))
             {
@@ -128,8 +129,8 @@ public sealed class StalkerPortalSystem : SharedTeleportSystem
             if (hasMind)
                 continue;
 
-            _ent.DeleteEntity(gridId);
-            RemoveFromStalkerTeleportDataList(data.Login);
+            _ent.QueueDeleteEntity(gridId);
+            StalkerArenaDataList.RemoveAt(i);
         }
     }
 
@@ -270,19 +271,6 @@ public sealed class StalkerPortalSystem : SharedTeleportSystem
             }
         }
         return null!;
-    }
-
-    public bool RemoveFromStalkerTeleportDataList(string inputLogin)
-    {
-        for (int i = 0; i < StalkerArenaDataList.Count; i++) // InvalidOperationException
-        {
-            if (StalkerArenaDataList[i].Login == inputLogin)
-            {
-                StalkerArenaDataList.RemoveAt(i);
-                return true;
-            }
-        }
-        return false;
     }
 
 
