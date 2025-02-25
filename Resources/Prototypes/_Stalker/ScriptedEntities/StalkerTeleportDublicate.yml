@@ -88,7 +88,7 @@
   id: StalkerDublicateRedForest
   name: Подвал в логово
   description: С помощью этого подвала вы можете попасть в своё логово.
-  suffix: Teleport, Portal, Duplicate, RedForest
+  suffix: Teleport, Portal, Duplicate, OrangeForest
   components:
   - type: DuplicateTeleport
     prefix: RedForest
