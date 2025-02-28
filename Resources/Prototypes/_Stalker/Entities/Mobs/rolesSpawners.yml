@@ -266,6 +266,21 @@
     - type: Loadout
       prototypes: [ StalkerGearT4 ]
 
+- type: entity
+  name: кукла Сталкера (переименуй меня)
+  suffix: Stalker, пешка с нашивкой
+  parent: MobHuman
+  id: MobStalkerStalker
+  components:
+    - type: Bands
+      band: Stalker
+      bandIcon: stalker
+    - type: Access
+      tags:
+        - Stalker
+    - type: Loadout
+      prototypes: [ StalkerGear ]
+
 - type: startingGear
   id: StalkerGearT4
   equipment:
