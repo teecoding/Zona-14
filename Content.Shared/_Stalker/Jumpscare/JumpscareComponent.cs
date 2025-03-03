@@ -59,9 +59,6 @@ namespace Content.Shared._Stalker.Jumpscare
         [ViewVariables(VVAccess.ReadWrite)]
         public float StepInterval = 0.025f;
 
-        [ViewVariables(VVAccess.ReadWrite)]
-        public float StepMultiplier = 1.0f;
-
         [AutoPausedField]
         public TimeSpan? NextStepTime;
 

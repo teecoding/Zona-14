@@ -68,7 +68,6 @@ public sealed class JumpscareSystem : EntitySystem
                 comp.NextStepTime = _timing.CurTime;
                 comp.MovingToJumpTarget = true;
                 comp.OnCoolDown = true;
-                comp.StepMultiplier = 1.0f; // Начальное значение множителя шага
             }
         }
     }
@@ -89,7 +88,7 @@ public sealed class JumpscareSystem : EntitySystem
             return;
         }
 
-        var stepDistance = (comp.JumpDistance / comp.TotalSteps) * comp.StepMultiplier;
+        var stepDistance = comp.JumpDistance / comp.TotalSteps;
         if (stepDistance > distanceRemaining)
             stepDistance = distanceRemaining;
         
@@ -97,7 +96,6 @@ public sealed class JumpscareSystem : EntitySystem
         _stunSystem.TrySlowdown(uid, TimeSpan.FromSeconds(0.1f), false, 0.5f, 0.5f);
 
         comp.CurrentStep++;
-        comp.StepMultiplier *= 1.2f;
         comp.NextStepTime = _timing.CurTime + TimeSpan.FromSeconds(comp.StepInterval);
     }
 
