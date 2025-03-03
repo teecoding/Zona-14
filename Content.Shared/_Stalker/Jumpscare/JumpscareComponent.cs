@@ -46,6 +46,9 @@ namespace Content.Shared._Stalker.Jumpscare
         [DataField]
         public float UpdateCooldown;
 
+        [DataField, AutoPausedField]
+        public TimeSpan? SlowdownTime = TimeSpan.FromSeconds(0.1f);
+
         // steps params
         [ViewVariables(VVAccess.ReadWrite)]
         public Vector2 JumpTarget = new(0, 0);
