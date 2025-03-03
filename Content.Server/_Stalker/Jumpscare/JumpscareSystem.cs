@@ -94,7 +94,7 @@ public sealed class JumpscareSystem : EntitySystem
             stepDistance = distanceRemaining;
         
         _throwing.TryThrow(uid, direction * stepDistance, comp.JumpPower, user: uid, pushbackRatio: 0);
-        _stunSystem.TrySlowdown(uid, TimeSpan.FromSeconds(2f), false, 0.5f, 0.5f);
+        _stunSystem.TrySlowdown(uid, TimeSpan.FromSeconds(0.1f), false, 0.5f, 0.5f);
 
         comp.CurrentStep++;
         comp.StepMultiplier *= 1.2f;

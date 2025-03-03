@@ -17,7 +17,7 @@ namespace Content.Shared._Stalker.Jumpscare
         public float JumpDistance = 7f;
 
         [DataField, ViewVariables(VVAccess.ReadWrite)]
-        public float JumpPower = 60f;
+        public float JumpPower = 14f;
 
         [DataField(required: true), ViewVariables(VVAccess.ReadWrite)]
         public DamageSpecifier ChargeDamage = default!;
@@ -54,7 +54,7 @@ namespace Content.Shared._Stalker.Jumpscare
         public int CurrentStep = 0;
 
         [ViewVariables(VVAccess.ReadWrite)]
-        public int TotalSteps = 50;
+        public int TotalSteps = 3;
 
         [ViewVariables(VVAccess.ReadWrite)]
         public float StepInterval = 0.025f;
