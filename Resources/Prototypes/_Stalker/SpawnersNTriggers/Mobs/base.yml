@@ -70,7 +70,7 @@
         - state: ai
     - type: SpawnOnApproach
       minAmount: 1
-      maxAmount: 2
+      maxAmount: 4
       maxOffset: 8
       minOffset: 4
       cooldown: 1800
@@ -98,7 +98,7 @@
         - state: ai
     - type: SpawnOnApproach
       minAmount: 1
-      maxAmount: 2
+      maxAmount: 4
       maxOffset: 8
       minOffset: 4
       cooldown: 1800
@@ -125,7 +125,7 @@
         - state: ai
     - type: SpawnOnApproach
       minAmount: 1
-      maxAmount: 1
+      maxAmount: 2
       maxOffset: 8
       minOffset: 4
       cooldown: 600
@@ -152,7 +152,7 @@
         - state: ai
     - type: SpawnOnApproach
       minAmount: 1
-      maxAmount: 1
+      maxAmount: 2
       maxOffset: 8
       minOffset: 4
       cooldown: 600
