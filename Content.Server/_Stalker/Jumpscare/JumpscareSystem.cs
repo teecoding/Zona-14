@@ -9,6 +9,7 @@ using Content.Shared.Throwing;
 using Robust.Server.GameObjects;
 using Robust.Shared.Random;
 using Robust.Shared.Timing;
+using YamlDotNet.Core.Tokens;
 
 namespace Content.Server._Stalker.Jumpscare;
 
@@ -22,7 +23,7 @@ public sealed class JumpscareSystem : EntitySystem
     [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly TransformSystem _xform = default!;
     [Dependency] private readonly StaminaSystem _stamina = default!;
-
+    [Dependency] private readonly ThrowingSystem _throwing = default!;
     public override void Update(float frameTime)
     {
         base.Update(frameTime);
@@ -30,7 +31,6 @@ public sealed class JumpscareSystem : EntitySystem
 
         while (query.MoveNext(out var uid, out var comp))
         {
-            // this update is too large to call it every tick TwT
             if (comp.NextTimeUpdate > _timing.CurTime)
                 continue;
             comp.NextTimeUpdate = _timing.CurTime + TimeSpan.FromSeconds(comp.UpdateCooldown);
@@ -52,7 +52,6 @@ public sealed class JumpscareSystem : EntitySystem
                 if (TryComp<MobStateComponent>(uid, out var entityMobState) && _mobState.IsAlive(uid, entityMobState))
                 {
                     _stunSystem.TrySlowdown(uid, TimeSpan.FromSeconds(0.4f), false, 0f, 0f);
-
                     comp.PreparingStartTime = _timing.CurTime;
                     comp.PreparingEndTime = comp.PreparingStartTime + comp.PreparingReloadTime;
                     comp.OnCoolDown = false;
@@ -63,19 +62,13 @@ public sealed class JumpscareSystem : EntitySystem
             {
                 var startPos = _xform.GetWorldPosition(uid);
                 var targetPos = _xform.GetWorldPosition(humanTarget);
-                var gomen = targetPos - startPos;
-                var length = gomen.Length();
-
-                if (length > comp.AttackDistance)
-                {
-                    gomen *= comp.AttackDistance / length;
-                }
-
-                comp.JumpTarget = startPos + gomen;
-                comp.CurrentStep = 0;
+                var direction = (targetPos - startPos).Normalized();
+                comp.JumpTarget = targetPos;
+                comp.CurrentStep = 0;   
                 comp.NextStepTime = _timing.CurTime;
                 comp.MovingToJumpTarget = true;
                 comp.OnCoolDown = true;
+                comp.StepMultiplier = 1.0f; // Начальное значение множителя шага
             }
         }
     }
@@ -87,17 +80,24 @@ public sealed class JumpscareSystem : EntitySystem
 
         var currentPos = _xform.GetWorldPosition(uid);
         var targetPos = comp.JumpTarget;
-        var gomen = targetPos - currentPos;
-        if (gomen.Length() < 0.1f || comp.CurrentStep >= comp.TotalSteps)
+        var direction = (targetPos - currentPos).Normalized();
+        var distanceRemaining = (targetPos - currentPos).Length();
+        
+        if (distanceRemaining < 0.1f || comp.CurrentStep >= comp.TotalSteps)
         {
             comp.MovingToJumpTarget = false;
             return;
         }
 
-        var step = gomen / (comp.TotalSteps - comp.CurrentStep);
-        _xform.SetWorldPosition(uid, currentPos + step);
+        var stepDistance = (comp.JumpDistance / comp.TotalSteps) * comp.StepMultiplier;
+        if (stepDistance > distanceRemaining)
+            stepDistance = distanceRemaining;
+        
+        _throwing.TryThrow(uid, direction * stepDistance, comp.JumpPower, user: uid, pushbackRatio: 0);
+        _stunSystem.TrySlowdown(uid, TimeSpan.FromSeconds(2f), false, 0.5f, 0.5f);
 
         comp.CurrentStep++;
+        comp.StepMultiplier *= 1.2f;
         comp.NextStepTime = _timing.CurTime + TimeSpan.FromSeconds(comp.StepInterval);
     }
 
@@ -106,11 +106,9 @@ public sealed class JumpscareSystem : EntitySystem
         var closestDistance = float.MaxValue;
         EntityUid? target = null;
 
-        // creating new hashset and filling it with entities to iterate through
         var entities = new HashSet<Entity<MobStateComponent>>();
         var xform = Transform(uid);
         var mapCoords = _xform.ToMapCoordinates(xform.Coordinates);
-        // we'll iterate only through dynamic objects, cause we don't need to check non-alive objects
         _lookup.GetEntitiesInRange(mapCoords, component.AttackRadius, entities, LookupFlags.Dynamic);
 
         foreach (var entity in entities)

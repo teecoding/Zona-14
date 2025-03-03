@@ -44,7 +44,7 @@
           Blunt: 12
           Slash: 30
       jumpPower: 60
-      updateCooldown: 3
+      updateCooldown: 0.5
     - type: MobThresholds
       thresholds:
         0: Alive
