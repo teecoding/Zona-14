@@ -1,7 +1,7 @@
 - type: entity
   id: Bricks
   parent: BaseStructureDynamic
-  name: Кирпичи
+  name: кирпичи
   suffix: ST, Mapping
   description: Глиняннные кирпичи сложенные странной формой.
   placement:

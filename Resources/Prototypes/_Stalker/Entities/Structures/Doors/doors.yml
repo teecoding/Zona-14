@@ -115,10 +115,10 @@
 
 - type: entity
   id: STToxicDoor
-  name: acid door
+  name: кислотная дверь
   suffix: Door, toxic
   parent: MetalDoorFallout
-  description: door covered with rush and acid. You can barely open it
+  description: Дверь покрыта кислотой. Ты едва можешь ее открыть...
   components:
   - type: Sprite
     sprite: _Stalker/Structures/Doors/acid_doors.rsi
