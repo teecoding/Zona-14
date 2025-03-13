@@ -126,9 +126,9 @@
     - BaseStructureStalkerDynamic
   id: STToxicBarrelBase
   abstract: true
-  name: toxic barrel
+  name: токсичная бочка
   suffix: acid, explosion
-  description: after all this years there is still some green liquid out there
+  description: после всех этих лет там все еще есть какая-то зеленая жидкость.
   placement:
     mode: PlaceFree
   components:

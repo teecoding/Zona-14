@@ -1,7 +1,7 @@
 - type: entity
   id: Bricks
   parent: BaseStructureDynamic
-  name: Кирпичи
+  name: кирпичи
   suffix: ST, Mapping
   description: Глиняннные кирпичи сложенные странной формой.
   placement:
@@ -10,7 +10,6 @@
   - type: Sprite
     sprite: _Stalker/Objects/Decoration/Other/bricks.rsi
     state: p1
-  - type: InteractionOutline
   - type: Physics
     bodyType: Static
   - type: Climbable
