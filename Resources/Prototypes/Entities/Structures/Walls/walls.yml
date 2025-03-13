@@ -3,7 +3,7 @@
   parent: BaseStructure
   id: BaseWall
   name: basewall
-  description: Keeps the air in and the greytide out.
+  description: Удерживает воздух внутри и не допускает проникновения пыли.
   placement:
     mode: SnapgridCenter
     snap:
