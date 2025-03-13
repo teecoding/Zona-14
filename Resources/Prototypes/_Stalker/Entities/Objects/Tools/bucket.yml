@@ -70,7 +70,7 @@
   suffix: Fill
   description: Обычное оцинкованное ведро.
   components:
-  - type: STWeight
+    - type: STWeight
       self: 2.0
     - type: SolutionContainerManager
       solutions:
@@ -86,9 +86,9 @@
   suffix: Empty
   description: Обычное оцинкованное ведро.
   components:
-  - type: STWeight
+    - type: STWeight
       self: 1.0
-  - type: SolutionContainerManager
-    solutions:
-      bucket:
-        maxVol: 250
+    - type: SolutionContainerManager
+      solutions:
+        bucket:
+          maxVol: 250
