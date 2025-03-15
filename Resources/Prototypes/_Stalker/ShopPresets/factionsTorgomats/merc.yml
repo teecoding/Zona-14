@@ -41,33 +41,31 @@
      # Mutant parts
 
   #Boars -------- Health * T * 0.45
-    MutantPartBoarHoof: 95 # T1
-    MutantPartSeasonedBoarHoof: 190 # T2
-    MutantPartOldBoarHoof: 285 # T3
+    MutantPartBoarHoof: 85 # T1
+    MutantPartSeasonedBoarHoof: 170 # T2
+    MutantPartOldBoarHoof: 255 # T3
 
     #T1 -------- Health * 1
-    MutantPartBlindDogTail: 65
-    MutantPartFleshEye: 140
-    FoodMeatSpiderLeg: 35
+    MutantPartBlindDogTail: 55
+    MutantPartFleshEye: 125
+    FoodMeatSpiderLeg: 30
 
     #T2 -------- Health * 1.8
-    MutantPartLeshiyRoot: 385
-    MutantPartPseudodogTail: 210
-    MutantPartSnorkFoot: 350
+    MutantPartLeshiyRoot: 345
+    MutantPartPseudodogTail: 190
+    MutantPartSnorkFoot: 315
 
     #T3 -------- Health * 3
-    MutantPartBloodsuckerTentacles: 525
-    MutantPartOraculeEye: 1120
-    MutantPartPseudogiantHeart: 2800
-    MutantPartZombieHand: 420
+    MutantPartBloodsuckerTentacles: 470
+    MutantPartOraculeEye: 1000
+    MutantPartPseudogiantHeart: 2500
+    MutantPartZombieHand: 380
 
   categories:
     - name: Оружие
       priority: 1
       items:
           # shotgun
-        STWeaponShotgunMP155T: 45
-        STWeaponShotgunToz34: 225
         STWeaponShotgunMossberg: 630
         STWeaponShotgunStalkerSPAS: 1300
         STWeaponShotgunProtecta: 2610
@@ -89,7 +87,6 @@
         556Mag20: 220
         556Mag45: 400
         556Mag30: 330
-        Base739Mag10: 100
         BaseMP5Mag: 260
         BaseTEC9Mag: 120
         BaseGlockMag10: 100
