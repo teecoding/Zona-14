@@ -367,7 +367,7 @@
     sprite: _Stalker/Objects/Medicine/medkit/ai4.rsi
     state: medkit-4
   - type: Item
-    sprite: _Stalker/Objects/Medicine/medkit/ai1.rsi
+    sprite: _Stalker/Objects/Medicine/medkit/ai4.rsi
     inhandVisuals:
       left:
       - state: inhand-left
@@ -422,7 +422,7 @@
     sprite: _Stalker/Objects/Medicine/medkit/ai5.rsi
     state: medkit-5
   - type: Item
-    sprite: _Stalker/Objects/Medicine/medkit/ai1.rsi
+    sprite: _Stalker/Objects/Medicine/medkit/ai5.rsi
     inhandVisuals:
       left:
       - state: inhand-left
