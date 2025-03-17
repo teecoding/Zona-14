@@ -2,7 +2,7 @@
   parent: BaseMobMutant
   id: MobMutantPseudogiant
   name: псевдогигант
-  suffix: ST, T3
+  suffix: ST, T4
   description: A massive, terrifying mutant that towers over other creatures in the Zone.
   components:
     - type: Butcherable
@@ -83,7 +83,7 @@
           layer:
             - MobLayer
     - type: Damageable
-      damageModifierSet: STMutantT3DamageModifierSet
+      damageModifierSet: STMutantT4DamageModifierSet
     - type: SlowOnDamage
       speedModifierThresholds:
         1500: 0.8
