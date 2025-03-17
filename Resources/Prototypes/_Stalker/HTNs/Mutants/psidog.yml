@@ -39,3 +39,18 @@
       - !type:HTNPrimitiveTask
         operator: !type:JukeOperator
           jukeType: AdjacentTile
+
+      - !type:HTNPrimitiveTask
+        operator: !type:MeleeOperator
+          targetKey: Target
+        preconditions:
+          - !type:KeyExistsPrecondition
+            key: Target
+          - !type:TargetInRangePrecondition
+            targetKey: Target
+            rangeKey: RangedRange
+        services:
+          - !type:UtilityService
+            id: MeleeService
+            proto: NearbyMeleeTargets
+            key: Target
