@@ -67,7 +67,12 @@
         pullingItemTag: PliersStalker
         teethCount: 3
         initialTeeth: 3
-
+      - type: NpcFactionMember
+        factions:
+        - Military
+      - type: GuardFactionController
+        toggleOffAction: GuardFactionControllerOffAction
+        toggleOnAction: GuardFactionControllerOnAction
 
 - type: job
   id: MilitaryHead
@@ -102,7 +107,12 @@
           pullingItemTag: PliersStalker
           teethCount: 3
           initialTeeth: 3
-
+        - type: NpcFactionMember
+          factions:
+          - Military
+        - type: GuardFactionController
+          toggleOffAction: GuardFactionControllerOffAction
+          toggleOnAction: GuardFactionControllerOnAction
 - type: job
   id: MilitaryOfficer
   name: Командир Военных
@@ -131,6 +141,12 @@
           band: Stalker
           bandIcon: army
         - type: BlockTackingHolyItems
+        - type: NpcFactionMember
+          factions:
+          - Military
+        - type: GuardFactionController
+          toggleOffAction: GuardFactionControllerOffAction
+          toggleOnAction: GuardFactionControllerOnAction
 
 - type: startingGear
   id: MilitaryGear
