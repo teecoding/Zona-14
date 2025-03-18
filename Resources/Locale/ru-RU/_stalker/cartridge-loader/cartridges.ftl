@@ -1,1 +1,0 @@
-medic-tek-program-name = Мед. Модуль

@@ -1,65 +1,41 @@
 - type: jukebox
-  id: RSongOne
-  name: Линии вогню - Океан эльзы
+  id: FlipFlap
+  name: X-CEED - Flip Flap
   path:
-    path: /Audio/_Stalker/ua_radio.ogg
+    path: /Audio/Jukebox/flip-flap.ogg
 
 - type: jukebox
-  id: RSongTwo
-  name: In The Army Now - Status Quo
+  id: Tintin
+  name: Jeroen Tel - Tintin on the Moon
   path:
-    path: /Audio/_Stalker/un_radio.ogg
+    path: /Audio/Jukebox/title3.ogg
 
 - type: jukebox
-  id: RSongThree
-  name: perry como - magic moments 
+  id: Thunderdome
+  name: MashedByMachines - Sector 11
   path:
-    path: /Audio/_Stalker/un_radio2.ogg
+    path: /Audio/Jukebox/sector11.ogg
 
 - type: jukebox
-  id: RSongFour
-  name: Thank You USA - Armend Miftari
+  id: Constellations
+  name: Qwertyquerty - Constellations
   path:
-    path: /Audio/_Stalker/un_radio3.ogg
+    path: /Audio/Jukebox/constellations.ogg
 
 - type: jukebox
-  id: RSongFive
-  name: Солдат - 5’Nizza
+  id: Drifting
+  name: Qwertyquerty - Drifting
   path:
-    path: /Audio/_Stalker/army_radio.ogg
+    path: /Audio/Jukebox/drifting.ogg
 
 - type: jukebox
-  id: RSongSix
-  name: Бомж - Сектор Газа
+  id: starlight
+  name: Qwertyquerty - Starlight
   path:
-    path: /Audio/_Stalker/army_radio2.ogg
+    path: /Audio/Jukebox/starlight.ogg
 
 - type: jukebox
-  id: RSongSeven
-  name: Шансоньетка - Александр Васильевич Новиков
+  id: sunset
+  name: PigeonBeans - Sunset
   path:
-    path: /Audio/_Stalker/army_radio3.ogg
-
-- type: jukebox
-  id: RSongEight
-  name: Музыка бандитов - S.T.A.L.K.E.R.
-  path:
-    path: /Audio/_Stalker/bandit_radio.ogg
-    
-- type: jukebox
-  id: RSongNine
-  name: Музыка из бара - S.T.A.L.K.E.R.
-  path:
-    path: /Audio/_Stalker/bar_100_rentgen.ogg
-    
-- type: jukebox
-  id: RSongTem
-  name: Музыка из бара Чистого неба - S.T.A.L.K.E.R.
-  path:
-    path: /Audio/_Stalker/bar_chistoe_nebo.ogg
-    
-- type: jukebox
-  id: RSongEleven
-  name: ЧЁРНЫЙ СТАЛКЕР - MALIW4N
-  path:
-    path: /Audio/_Stalker/cherniy_stalker.ogg
+    path: /Audio/Jukebox/sunset.ogg
