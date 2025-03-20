@@ -17,6 +17,10 @@
   components:
     - type: Paper
       content: book-text-artguide-stalker
+      stampState: paper_stamp-cap
+      stampedBy:
+      - stampedName: Студентка
+        stampedColor: "#dfb2f4"
     - type: Sprite
       sprite: Objects/Misc/books.rsi
       layers:
@@ -26,3 +30,4 @@
         - state: decor_wingette
           color: "#453827"
         - state: icon_stars
+    
