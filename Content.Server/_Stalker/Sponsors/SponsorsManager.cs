@@ -105,8 +105,14 @@ public sealed class SponsorsManager
 
     public async Task MakeWipe()
     {
-        var requestUrl = $"{_apiUrl}/wipe_given?api_token={_apiKey}";
-        var response = await _httpClient.PostAsync(requestUrl, null);
+        var requestUrl = $"{_apiUrl}/each/extra";
+        var request = new HttpRequestMessage(HttpMethod.Delete, requestUrl)
+        {
+            Content = new StringContent("{\"fields\": [\"loadout_given\"]}", Encoding.UTF8, "application/json"),
+        };
+
+        var response = await _httpClient.SendAsync(request);
+        _sawmill.Debug($"Status Code: {response.StatusCode}");
         if (!response.IsSuccessStatusCode)
             _sawmill.Error("Error wiping given records.");
 
