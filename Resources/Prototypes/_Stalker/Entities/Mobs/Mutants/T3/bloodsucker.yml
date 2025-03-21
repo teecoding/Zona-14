@@ -12,15 +12,15 @@
           maxAmount: 1
           prob: 0.30
     - type: NPCBloodsucker
-      stunTime: 3
+      stunTime: 2
       damageOnSuck:
         types:
-          Bloodloss: 17
-        ModifyBloodLevel: -30
+          Bloodloss: 34
+        ModifyBloodLevel: -60
       healOnSuck:
         groups:
-          Brute: -124
-          Burn: -124
+          Brute: -258
+          Burn: -258
         ModifyBloodLevel: 133
     - type: DamageStateVisuals
       states:

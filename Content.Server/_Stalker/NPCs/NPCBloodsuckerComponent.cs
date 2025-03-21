@@ -11,7 +11,7 @@ public sealed partial class NPCBloodsuckerComponent : Component
     public string TargetKey = "Target";
 
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public float AttackRadius = 1.5f;
+    public float AttackRadius = 0.8ff;
 
     [DataField("nextTimeUpdate", customTypeSerializer: typeof(TimeOffsetSerializer))]
     [AutoPausedField]
@@ -35,7 +35,7 @@ public sealed partial class NPCBloodsuckerComponent : Component
     public float RandomiseReloadTime = 12f;
 
     [DataField, ViewVariables(VVAccess.ReadOnly)]
-    public float StunTime = 3f;
+    public float StunTime = 2f;
 
     [DataField(required: true)]
     [ViewVariables(VVAccess.ReadWrite)]
@@ -55,5 +55,8 @@ public sealed partial class NPCBloodsuckerComponent : Component
     public bool IsSucking = false;
 
     [DataField]
-    public SoundSpecifier BloodsuckSound = new SoundPathSpecifier("/Audio/_Stalker/Mutants/bloodsucker_scream.ogg");
+    public SoundSpecifier BloodsuckSound = new SoundPathSpecifier("/Audio/_Stalker/Mutants/bloodsucker_eat.ogg");
+
+    [DataField]
+    public float ShakeStrength = 11f;
 }
