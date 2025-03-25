@@ -1,3 +1,5 @@
+
+
 - type: entity
   name: KRISS Vector-9
   suffix: ST, Спонсор
@@ -13,6 +15,17 @@
     shape:
     - 0,0,4,1
   - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: muzzle
+      map: ["enum.GunVisualLayers.Muzzle"]
+    - state: grip
+      map: ["enum.GunVisualLayers.Underbarrel"]
+    - state: scope
+      map: ["enum.GunVisualLayers.Scope"]
     sprite: _Stalker/Objects/Weapons/Guns/SMGs/vector.rsi
     scale: 0.75, 0.75
   - type: Clothing
@@ -23,6 +36,15 @@
     fireRate: 14
     soundGunshot:
       path: /Audio/_Stalker/Effects/Guns/919.ogg
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_module_underbarrel: !type:ContainerSlot
+      gun_module_muzzle: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+      gun_module_scope: !type:ContainerSlot
+  - type: STScopeVisuals
+    scopeState: scope
   - type: ItemSlots
     slots:
       gun_magazine:
