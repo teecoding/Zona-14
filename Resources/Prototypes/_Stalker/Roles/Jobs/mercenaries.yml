@@ -23,7 +23,7 @@
           tags:
             - Merc
         - type: Bands
-          altBand: stalker
+          altBand: vagner
           canChange: true
           band: Stalker
           bandIcon: merc
@@ -73,7 +73,7 @@
           altBand: stalker
           canChange: true
           band: Stalker
-          bandIcon: merc
+          bandIcon: vagner
         - type: BlockTackingHolyItems
         - type: TeethPull
           teethProto: ToothStalker
