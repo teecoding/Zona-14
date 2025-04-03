@@ -7,7 +7,7 @@
 # - /Prototypes/Guidebook
 # - /Prototypes/Catalog/uplink_catalog.yml
 # stalker-changes-start
-- /Prototypes/Maps
 - /Prototypes/Guidebook
 - /Prototypes/Procedural # each dungeonRoom prototype loads map, this is pointless workload. But this folder contains not only dungeonRoom protos, other procedural specific also lies there.
+- /Prototypes/Recipes/Reactions
 # stalker-changes-end
