@@ -1345,10 +1345,10 @@
 
 - type: entity
   parent: BaseItem
-  id: CassetenxchvxsKharmaGuessContributorRadio
+  id: CasseteNxchvxsDonateRadio
   suffix: Stalker, кассета, (nx chvxs - KharmaGuess)
   name: кассета "nx chvxs - KharmaGuess"
-  description: Совершенно новая кассета. Предположительно, на неё записана какая-то песня. Сделана для Ret4.
+  description: Старая потрёпанная кассета. Предположительно, на неё записана какая-то песня. На передней части кассеты имеется неразборчивая надпись. Сделано на заказ для Ret4.
   components:
   - type: STWeight
     self: 0.15
@@ -1363,10 +1363,10 @@
 
 - type: entity
   parent: BaseItem
-  id: CasseteAramisFuturoContributorRadio
+  id: CasseteFuturoDonateRadio
   suffix: Stalker, кассета, (Aramis - Futuro)
   name: кассета "Aramis - Futuro"
-  description: Совершенно новая кассета. Предположительно, на неё записана какая-то песня. Сделана для Ret4.
+  description: Старая потрёпанная кассета. Предположительно, на неё записана какая-то песня. На передней части кассеты имеется неразборчивая надпись. Сделано на заказ для Ret4.
   components:
   - type: STWeight
     self: 0.15
@@ -1381,7 +1381,7 @@
 
 - type: entity
   parent: BaseItem
-  id: CasseteDurnoiVkusPlastinkiDonateRadio
+  id: CassetePlastinkiDonateRadio
   suffix: Stalker, кассета, (дурной вкус - пластинки)
   name: кассета "дурной вкус - пластинки"
   description: Старая потрёпанная кассета. Предположительно, на неё записана какая-то песня. На передней части кассеты имеется неразборчивая надпись. Сделано на заказ для Ret4.
