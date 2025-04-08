@@ -62,9 +62,11 @@
     MutantPartZombieHand: 380
 
   categories:
-    - name: Оружие
+    - name: shop-category-weapons
       priority: 1
       items:
+        STCombatKnife: 10
+    - name: shop-category-armor
           # shotgun
         STWeaponShotgunMossberg: 630
         STWeaponShotgunStalkerSPAS: 1300
@@ -115,6 +117,7 @@
       items:
         STSkinsKitMercenary: 500
         ClothingOuterJacketMerc: 50
+    - name: shop-category-utilities
         STClothingOuterArmorLightPlateVestBaseMerc: 1100
         ClothingOuterArmorSevaMerc: 2500
         ClothingOuterArmorMerc: 3100
@@ -138,7 +141,7 @@
         ClothingMaskGasZarya: 100
         ClothingMaskGasM40: 250
         ClothingMaskGP7: 900
-    - name: Утилиты
+    - name: shop-category-utilities
       priority: 8
       items:
         STCombatKnife: 25
@@ -148,6 +151,8 @@
         CheapLighter: 5
         GeigerCounter: 50
         BaseRadio: 50
+    - name: shop-category-research-equipment
+      priority: 6
         STFlashlightSeclite: 50
         PowerCellHyper: 50
         HandheldGPSBasic: 50
@@ -179,7 +184,7 @@
         FoodTinMRE: 120
         DrinkLemonadehBottleFull: 50
         STFoodMeatSalami: 350
-    - name: Медицина
+    - name: shop-category-medicine
       priority: 10
       items:
           # Cheap
@@ -196,7 +201,7 @@
         MedkitAI2: 200
         MedkitMilitary: 400
         Defibrillator: 1000
-    - name: Модули
+    - name: shop-category-modules
       priority: 11
       items:
         STModuleScopeRiflesT1Nato: 600
