@@ -1,13 +1,13 @@
 using System;
 using System.Collections.Generic;
-using Content.Server._Stalker.WarZone.Requirenments;
+using Content.Shared._Stalker.WarZone.Requirenments;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization;
 
-namespace Content.Server._Stalker.WarZone;
+namespace Content.Shared._Stalker.WarZone;
 
 [Prototype("stWarZone"), Serializable, NetSerializable]
-public sealed class STWarZonePrototype : IPrototype
+public sealed partial class STWarZonePrototype : IPrototype
 {
     [IdDataField, ViewVariables]
     public string ID { get; private set; } = default!;

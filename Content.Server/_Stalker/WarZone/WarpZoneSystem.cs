@@ -1,11 +1,15 @@
+using System;
+using System.Collections.Generic;
 using Content.Server.Database;
 using Content.Shared._Stalker.Bands;
 using Content.Shared._Stalker.WarZone;
 using Content.Shared.NPC.Prototypes;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
+using Content.Shared._Stalker.WarZone.Requirenments;
 
 namespace Content.Server._Stalker.WarZone;
+
 public sealed class WarpZoneSystem : SharedWarZoneSystem
 {
     [Dependency] private readonly IEntityManager _entityManager = default!;
@@ -21,7 +25,7 @@ public sealed class WarpZoneSystem : SharedWarZoneSystem
 
     public override void Update(float frameTime)
     {
-        if (_timing.CurTime < _lastUpdateTime.Add(TimeSpan.FromSeconds(2f))) // Decrease it to increase check frequency
+        if (_timing.CurTime < _lastUpdateTime.Add(TimeSpan.FromSeconds(2f)))
             return;
         _lastUpdateTime = _timing.CurTime;
 
@@ -30,13 +34,34 @@ public sealed class WarpZoneSystem : SharedWarZoneSystem
         {
             if (_protoMan.TryIndex(warZone.ZoneProto.Id, out STWarZonePrototype? zoneProto) && zoneProto?.Requirements != null)
             {
-                foreach(var requirenment in zoneProto.Requirements)
+                var ownerships = new Dictionary<ProtoId<STWarZonePrototype>, (int? BandId, int? FactionId)>();
+                var requiredZoneIds = new HashSet<ProtoId<STWarZonePrototype>>();
+
+                foreach (var req in zoneProto.Requirements)
                 {
-                    requirenment.Check(_entityManager, _protoMan, out var reason);
+                    if (req is ZoneOwnershipRequirenment zoneReq)
+                    {
+                        foreach (var rid in zoneReq.RequiredZones)
+                            requiredZoneIds.Add(rid);
+                    }
+                }
+
+                foreach (var rid in requiredZoneIds)
+                {
+                    var ownership = _dbManager.GetStalkerWarOwnershipAsync(rid).GetAwaiter().GetResult();
+                    if (ownership != null)
+                        ownerships[rid] = (ownership.BandId, ownership.FactionId);
+                }
+
+                int? attackerBand = null;
+                int? attackerFaction = null;
+
+                foreach (var req in zoneProto.Requirements)
+                {
+                    req.Check(attackerBand, attackerFaction, ownerships, frameTime);
                 }
             }
         }
-
     }
 
     private void OnInit(Entity<WarZoneComponent> entity, ref ComponentInit args)
@@ -52,6 +77,5 @@ public sealed class WarpZoneSystem : SharedWarZoneSystem
                 _dbManager.GetStalkerBandAsync(bandProtoId).GetAwaiter().GetResult();
             }
         }
-
     }
 }

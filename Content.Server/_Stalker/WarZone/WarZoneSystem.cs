@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Content.Server._Stalker.WarZone;
-using Content.Server._Stalker.WarZone.Requirenments;
+using Content.Shared._Stalker.WarZone.Requirenments;
 using Content.Server.Database;
 using Content.Shared._Stalker.WarZone;
 using Content.Shared.Physics;
@@ -13,6 +13,8 @@ using Robust.Shared.Timing;
 using Robust.Shared.Physics.Events;
 
 using Content.Shared.Physics;
+using Content.Shared._Stalker.Bands;
+using Content.Shared.NPC.Prototypes;
 
 namespace Content.Server._Stalker.WarZone;
 
@@ -66,16 +68,16 @@ public sealed partial class WarZoneSystem : EntitySystem
             return;
         }
 
-        Guid? attackerBand = null;
-        Guid? attackerFaction = null;
+        int? attackerBand = null;
+        int? attackerFaction = null;
 
         if (state.PresentBandIds.Count == 1)
             attackerBand = GetFirst(state.PresentBandIds);
         if (state.PresentFactionIds.Count == 1)
             attackerFaction = GetFirst(state.PresentFactionIds);
 
-        if ((attackerBand != null && attackerBand == state.DefendingBandId) ||
-            (attackerFaction != null && attackerFaction == state.DefendingFactionId))
+        if ((attackerBand.HasValue && attackerBand == state.DefendingBandId) ||
+            (attackerFaction.HasValue && attackerFaction == state.DefendingFactionId))
         {
             ResetAllRequirements(zone);
             return;
@@ -85,7 +87,7 @@ public sealed partial class WarZoneSystem : EntitySystem
             !_prototypeManager.TryIndex<STWarZonePrototype>(wzComp.ZoneProto, out var wzProto))
             return;
 
-        var ownerships = new Dictionary<ProtoId<STWarZonePrototype>, (Guid? BandId, Guid? FactionId)>();
+        var ownerships = new Dictionary<ProtoId<STWarZonePrototype>, (int? BandId, int? FactionId)>();
 
         if (wzProto.Requirements != null)
         {
@@ -130,8 +132,8 @@ public sealed partial class WarZoneSystem : EntitySystem
 
         await _dbManager.SetStalkerZoneOwnershipAsync(
             wzComp.ZoneProto,
-            attackerBand != null ? new ProtoId<STBandPrototype>(attackerBand.ToString()) : null,
-            attackerFaction != null ? new ProtoId<NpcFactionPrototype>(attackerFaction.ToString()) : null);
+            attackerBand.HasValue ? new ProtoId<STBandPrototype>(attackerBand.Value.ToString()) : default,
+            attackerFaction.HasValue ? new ProtoId<NpcFactionPrototype>(attackerFaction.Value.ToString()) : default);
 
         var msg = $"Zone '{wzComp.PortalName}' captured!";
         Logger.InfoS("warzone", msg);
@@ -173,27 +175,27 @@ public sealed partial class WarZoneSystem : EntitySystem
 
         var points = wzProto.RewardPointsPerPeriod;
 
-        if (state.DefendingBandId != null)
+        if (state.DefendingBandId.HasValue)
         {
             _dbManager.SetStalkerBandAsync(
-                new ProtoId<STBandPrototype>(state.DefendingBandId.ToString()),
+                new ProtoId<STBandPrototype>(state.DefendingBandId.Value.ToString()),
                 points);
         }
-        else if (state.DefendingFactionId != null)
+        else if (state.DefendingFactionId.HasValue)
         {
             _dbManager.SetStalkerFactionAsync(
-                new ProtoId<NpcFactionPrototype>(state.DefendingFactionId.ToString()),
+                new ProtoId<NpcFactionPrototype>(state.DefendingFactionId.Value.ToString()),
                 points);
         }
 
         _lastRewardTimes[zone] = now;
     }
 
-    private static Guid GetFirst(HashSet<Guid> set)
+    private static int? GetFirst(HashSet<int> set)
     {
         foreach (var g in set)
             return g;
-        return Guid.Empty;
+        return null;
     }
 
     private void OnStartCollide(EntityUid uid, WarZoneComponent component, ref StartCollideEvent args)
@@ -217,9 +219,9 @@ public sealed partial class WarZoneSystem : EntitySystem
             _activeCaptures[uid] = state;
         }
 
-        state.PresentBandIds.Add(Guid.Parse(bandId));
+        state.PresentBandIds.Add(int.Parse(bandId));
         if (factionId != null)
-            state.PresentFactionIds.Add(Guid.Parse(factionId));
+            state.PresentFactionIds.Add(int.Parse(factionId));
     }
 
     private void OnEndCollide(EntityUid uid, WarZoneComponent component, ref EndCollideEvent args)
@@ -240,17 +242,17 @@ public sealed partial class WarZoneSystem : EntitySystem
         if (!_activeCaptures.TryGetValue(uid, out var state))
             return;
 
-        state.PresentBandIds.Remove(Guid.Parse(bandId));
+        state.PresentBandIds.Remove(int.Parse(bandId));
         if (factionId != null)
-            state.PresentFactionIds.Remove(Guid.Parse(factionId));
+            state.PresentFactionIds.Remove(int.Parse(factionId));
     }
 
     private sealed class CaptureState
     {
-        public Guid? DefendingBandId;
-        public Guid? DefendingFactionId;
+        public int? DefendingBandId;
+        public int? DefendingFactionId;
 
-        public HashSet<Guid> PresentBandIds = new();
-        public HashSet<Guid> PresentFactionIds = new();
+        public HashSet<int> PresentBandIds = new();
+        public HashSet<int> PresentFactionIds = new();
     }
 }

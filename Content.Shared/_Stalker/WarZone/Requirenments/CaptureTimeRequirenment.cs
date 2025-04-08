@@ -2,9 +2,8 @@ using System;
 using System.Collections.Generic;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization;
-using Content.Server.Database;
 
-namespace Content.Server._Stalker.WarZone.Requirenments;
+namespace Content.Shared._Stalker.WarZone.Requirenments;
 
 [Serializable, NetSerializable]
 public sealed partial class CaptureTimeRequirenment : BaseWarZoneRequirenment
@@ -16,9 +15,9 @@ public sealed partial class CaptureTimeRequirenment : BaseWarZoneRequirenment
     public float ProgressSeconds = 0f;
 
     public override bool Check(
-        Guid? attackerBand,
-        Guid? attackerFaction,
-        Dictionary<ProtoId<STWarZonePrototype>, (Guid? BandId, Guid? FactionId)> ownerships,
+        int? attackerBand,
+        int? attackerFaction,
+        Dictionary<ProtoId<STWarZonePrototype>, (int? BandId, int? FactionId)> ownerships,
         float frameTime)
     {
         ProgressSeconds += frameTime;
