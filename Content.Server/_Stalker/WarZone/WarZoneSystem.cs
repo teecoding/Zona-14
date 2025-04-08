@@ -1,18 +1,21 @@
 using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using Content.Server._Stalker.WarZone;
+using Content.Server._Stalker.WarZone.Requirenments;
+using Content.Server.Database;
 using Content.Shared._Stalker.WarZone;
-using Content.Shared._Stalker.WarZone.Requirenments;
+using Content.Shared.Physics;
 using Robust.Server.GameObjects;
 using Robust.Shared.GameObjects;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
+using Robust.Shared.Physics.Events;
+
+using Content.Shared.Physics;
 
 namespace Content.Server._Stalker.WarZone;
 
-/// <summary>
-/// Handles War Zone capture logic, contestation, ownership persistence, and reward distribution.
-/// </summary>
 public sealed partial class WarZoneSystem : EntitySystem
 {
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
@@ -38,7 +41,7 @@ public sealed partial class WarZoneSystem : EntitySystem
 
         foreach (var (zone, state) in _activeCaptures)
         {
-            UpdateCapture(zone, state, now);
+            _ = UpdateCaptureAsync(zone, state, now);
         }
 
         foreach (var (zone, lastRewardTime) in _lastRewardTimes)
@@ -47,7 +50,7 @@ public sealed partial class WarZoneSystem : EntitySystem
         }
     }
 
-    private void UpdateCapture(EntityUid zone, CaptureState state, TimeSpan now)
+    private async Task UpdateCaptureAsync(EntityUid zone, CaptureState state, TimeSpan now)
     {
         var frameTimeSec = (float)_gameTiming.FrameTime.TotalSeconds;
 
@@ -82,13 +85,36 @@ public sealed partial class WarZoneSystem : EntitySystem
             !_prototypeManager.TryIndex<STWarZonePrototype>(wzComp.ZoneProto, out var wzProto))
             return;
 
+        var ownerships = new Dictionary<ProtoId<STWarZonePrototype>, (Guid? BandId, Guid? FactionId)>();
+
+        if (wzProto.Requirements != null)
+        {
+            var requiredZoneIds = new HashSet<ProtoId<STWarZonePrototype>>();
+
+            foreach (var req in wzProto.Requirements)
+            {
+                if (req is ZoneOwnershipRequirenment zoneReq)
+                {
+                    foreach (var rid in zoneReq.RequiredZones)
+                        requiredZoneIds.Add(rid);
+                }
+            }
+
+            foreach (var rid in requiredZoneIds)
+            {
+                var ownership = await _dbManager.GetStalkerWarOwnershipAsync(rid);
+                if (ownership != null)
+                    ownerships[rid] = (ownership.BandId, ownership.FactionId);
+            }
+        }
+
         var allMet = true;
 
         if (wzProto.Requirements != null)
         {
             foreach (var req in wzProto.Requirements)
             {
-                if (!req.Check(_dbManager, attackerBand, attackerFaction, frameTimeSec))
+                if (!req.Check(attackerBand, attackerFaction, ownerships, frameTimeSec))
                 {
                     allMet = false;
                     break;
@@ -102,7 +128,7 @@ public sealed partial class WarZoneSystem : EntitySystem
         state.DefendingBandId = attackerBand;
         state.DefendingFactionId = attackerFaction;
 
-        _dbManager.SetStalkerZoneOwnershipAsync(
+        await _dbManager.SetStalkerZoneOwnershipAsync(
             wzComp.ZoneProto,
             attackerBand != null ? new ProtoId<STBandPrototype>(attackerBand.ToString()) : null,
             attackerFaction != null ? new ProtoId<NpcFactionPrototype>(attackerFaction.ToString()) : null);
