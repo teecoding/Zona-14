@@ -14,9 +14,14 @@ public sealed partial class NpcFactionPrototype : IPrototype
 
     [DataField]
     public List<ProtoId<NpcFactionPrototype>> Friendly = new();
-
     [DataField]
     public List<ProtoId<NpcFactionPrototype>> Hostile = new();
+
+    /// <summary>
+    /// The database ID for this faction. This is used to match the faction with its database record.
+    /// </summary>
+    [DataField]
+    public int DatabaseId { get; set; } = 0;
 }
 
 /// <summary>
