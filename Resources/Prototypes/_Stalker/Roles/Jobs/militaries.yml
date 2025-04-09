@@ -199,7 +199,7 @@
 - type: stBand
   id: STMilitaryBand
   name: Military
-  factionId: Stalker
+  factionId: Military
   maxMembers: 10
   managingRankId: 3
   hierarchy:

@@ -20,8 +20,10 @@
   id: MobStalkerMilitary
   components:
     - type: Bands
-      band: Stalker
+      band: STMilitaryBand
       bandIcon: army
+      bandProto: STMilitaryBand
+      bandRankId: 1
     - type: Access
       groups:
         - Military
