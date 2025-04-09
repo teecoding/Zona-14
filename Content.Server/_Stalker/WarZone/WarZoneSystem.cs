@@ -11,7 +11,7 @@ using Robust.Shared.GameObjects;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
 using Robust.Shared.Physics.Events;
-
+using Content.Server.Chat.Managers;
 using Content.Shared.Physics;
 using Content.Shared._Stalker.Bands;
 using Content.Shared.NPC.Prototypes;
@@ -24,6 +24,7 @@ public sealed partial class WarZoneSystem : EntitySystem
     [Dependency] private readonly IGameTiming _gameTiming = default!;
     [Dependency] private readonly IEntityManager _entityManager = default!;
     [Dependency] private readonly IServerDbManager _dbManager = default!;
+    [Dependency] private readonly IChatManager _chatManager = default!;
 
     private readonly Dictionary<EntityUid, CaptureState> _activeCaptures = new();
     private readonly Dictionary<EntityUid, TimeSpan> _lastRewardTimes = new();
@@ -86,6 +87,16 @@ public sealed partial class WarZoneSystem : EntitySystem
         if (!_entityManager.TryGetComponent(zone, out WarZoneComponent? wzComp) ||
             !_prototypeManager.TryIndex<STWarZonePrototype>(wzComp.ZoneProto, out var wzProto))
             return;
+
+        if ((attackerBand != state.CurrentAttackerBandId || attackerFaction != state.CurrentAttackerFactionId) &&
+            (attackerBand.HasValue || attackerFaction.HasValue))
+        {
+            state.CurrentAttackerBandId = attackerBand;
+            state.CurrentAttackerFactionId = attackerFaction;
+
+            var announce = $"Capture attempt started on '{wzComp.PortalName}'!";
+            _chatManager.DispatchServerAnnouncement(announce);
+        }
 
         var ownerships = new Dictionary<ProtoId<STWarZonePrototype>, (int? BandId, int? FactionId)>();
 
@@ -251,6 +262,9 @@ public sealed partial class WarZoneSystem : EntitySystem
     {
         public int? DefendingBandId;
         public int? DefendingFactionId;
+
+        public int? CurrentAttackerBandId;
+        public int? CurrentAttackerFactionId;
 
         public HashSet<int> PresentBandIds = new();
         public HashSet<int> PresentFactionIds = new();
