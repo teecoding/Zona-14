@@ -23,11 +23,12 @@ public sealed class WarZoneAdminCommand : IConsoleCommand
                           "warzoneadmin setpoints band <dbid> <points>\n" +
                           "warzoneadmin setpoints faction <dbid> <points>\n" +
                           "warzoneadmin setowner <zoneProtoId> band <dbid>\n" +
-                          "warzoneadmin setowner <zoneProtoId> faction <dbid>";
+                          "warzoneadmin setowner <zoneProtoId> faction <dbid>\n" +
+                          "warzoneadmin clearowner <zoneProtoId>";
 
     public async void Execute(IConsoleShell shell, string argStr, string[] args)
     {
-        if (args.Length < 4)
+        if (args.Length < 2)
         {
             shell.WriteLine(Help);
             return;
@@ -233,6 +234,42 @@ public sealed class WarZoneAdminCommand : IConsoleCommand
 
             await _dbManager.SetStalkerZoneOwnershipAsync(zoneProtoId, bandProtoId, factionProtoId);
             shell.WriteLine($"Set owner of warzone {zoneProtoId} to {target} {dbid}");
+            return;
+        }
+
+        if (args[0] == "clearowner")
+        {
+            if (args.Length != 2)
+            {
+                shell.WriteLine(Help);
+                return;
+            }
+
+            var zoneProtoId = args[1];
+
+            WarZoneComponent? foundComp = null;
+            foreach (var (_, wzComp) in warZoneSystem.GetAllWarZones())
+            {
+                if (wzComp.ZoneProto == zoneProtoId)
+                {
+                    foundComp = wzComp;
+                    break;
+                }
+            }
+
+            if (foundComp == null)
+            {
+                shell.WriteLine($"Warzone with proto id {zoneProtoId} not found.");
+                return;
+            }
+
+            foundComp.DefendingBandId = null;
+            foundComp.DefendingFactionId = null;
+            foundComp.CooldownEndTime = null;
+
+            await _dbManager.SetStalkerZoneOwnershipAsync(zoneProtoId, null, null);
+
+            shell.WriteLine($"Cleared ownership of warzone {zoneProtoId}");
             return;
         }
 
