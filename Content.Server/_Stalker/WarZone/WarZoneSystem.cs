@@ -166,7 +166,7 @@ public sealed partial class WarZoneSystem : EntitySystem
                 {
                     string attackerName = GetAttackerName(comp.CurrentAttackerBandProtoId, comp.CurrentAttackerFactionProtoId);
                     _chatManager.DispatchServerAnnouncement(Loc.GetString(
-                        "warzone-capture-abandoned",
+                        "st-warzone-capture-abandoned",
                         ("zone", comp.PortalName ?? "Unknown"),
                         ("attacker", attackerName)));
                 }
@@ -208,7 +208,7 @@ public sealed partial class WarZoneSystem : EntitySystem
 
             string attackerName = GetAttackerName(attackerBand, attackerFaction);
             _chatManager.DispatchServerAnnouncement(Loc.GetString(
-                "warzone-capture-started",
+                "st-warzone-capture-started",
                 ("attacker", attackerName),
                 ("zone", comp.PortalName ?? "Unknown")));
         }
@@ -297,7 +297,7 @@ public sealed partial class WarZoneSystem : EntitySystem
 
         string defenderName = GetAttackerName(comp.DefendingBandProtoId, comp.DefendingFactionProtoId);
         _chatManager.DispatchServerAnnouncement(Loc.GetString(
-            "warzone-captured",
+            "st-warzone-captured",
             ("zone", comp.PortalName ?? "Unknown"),
             ("attacker", defenderName)));
 
@@ -407,7 +407,7 @@ public sealed partial class WarZoneSystem : EntitySystem
             var remainingTime = component.CooldownEndTime.Value - now;
             var portalName = component.PortalName ?? "Unknown Zone";
             var message = Loc.GetString(
-                "warzone-cooldown",
+                "st-warzone-cooldown",
                 ("zone", portalName),
                 ("minutes", $"{remainingTime.TotalMinutes:F1}"));
             _popup.PopupEntity(message, other);
@@ -495,7 +495,7 @@ public sealed partial class WarZoneSystem : EntitySystem
                 {
                     string attackerName = GetAttackerName(wzComp.CurrentAttackerBandProtoId, wzComp.CurrentAttackerFactionProtoId);
                     _chatManager.DispatchServerAnnouncement(Loc.GetString(
-                        "warzone-capture-abandoned",
+                        "st-warzone-capture-abandoned",
                         ("zone", wzComp.PortalName ?? "Unknown"),
                         ("attacker", attackerName)));
                 }

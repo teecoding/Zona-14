@@ -2,18 +2,18 @@
 - type: stWarZone
   id: KordonVillage
   rewardPointsPerPeriod: 1
-  rewardPeriod: 10
+  rewardPeriod: 30
   requirements:
     - !type:ZoneOwnershipRequirenment
       requiredZones: []
     - !type:CaptureTimeRequirenment
-      captureTime: 10
+      captureTime: 900
 
 # Entity prototype referencing the above meta-prototype
 - type: entity
   id: WarZoneEntity_Kordon
   parent: MarkerBase
-  name: Kordon War Zone Entity
+  name: Kordon Village War Zone
   description: A physical marker for the Kordon War Zone.
   components:
     - type: WarZone
@@ -23,8 +23,8 @@
       bodyType: Static
       canCollide: true
     - type: Fixtures
-      fixtures: # This should now be a dictionary
-        trigger: # Replaced list '-' with a key 'trigger'
+      fixtures:
+        trigger:
           shape:
             !type:PhysShapeCircle
             radius: 3
@@ -33,12 +33,8 @@
             - MobMask
           layer:
             - MidImpassable
-          # mask:
-          #   - MobMask
-          # layer:
-          #   - MidImpassable # Changed from WorldLayer to an existing layer
     - type: PointLight
       enabled: true
-      radius: 3.5
+      radius: 4
       color: Cyan
       energy: 1
