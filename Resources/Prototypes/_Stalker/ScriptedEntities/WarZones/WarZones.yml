@@ -3,11 +3,12 @@
   id: KordonVillage
   rewardPointsPerPeriod: 1
   rewardPeriod: 30
+  captureCooldownHours: 2
   requirements:
     - !type:ZoneOwnershipRequirenment
       requiredZones: []
     - !type:CaptureTimeRequirenment
-      captureTime: 30
+      captureTime: 1800
 
 # Entity prototype referencing the above meta-prototype
 - type: entity
