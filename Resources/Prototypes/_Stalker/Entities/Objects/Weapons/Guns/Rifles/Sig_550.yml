@@ -69,9 +69,6 @@
   id: STWeaponRifleSigSniper
   description: Немецкая винтовка СИГ, модифицированная в карабин под советский 7.62х39. Имеет встроенный оптический прицел.
   components:
-  - type: Scope
-    zoom: 1.2
-    offset: 8
   - type: STWeight
     self: 5
   - type: Item
@@ -117,3 +114,6 @@
         whitelist:
           tags:
           - Cartridge739
+  - type: Scope
+    zoom: 1.4
+    offset: 12
