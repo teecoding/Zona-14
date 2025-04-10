@@ -40,14 +40,14 @@
   categories: [ HideSpawnMenu ]
   components:
     - type: Projectile
-      projectileClass: 5
+      projectileClass: 4
       damage:
         types:
-          Blunt: 25
+          Blunt: 20
     - type: Sprite
-      sprite: /Textures/_Stalker/Mobs/Mutants/Old_boar.rsi
+      sprite: _Stalker/Objects/Decoration/boxes.rsi
       layers:
-        - state: boar
+        - state: 1
     - type: Ammo
       muzzleFlash: null
 
