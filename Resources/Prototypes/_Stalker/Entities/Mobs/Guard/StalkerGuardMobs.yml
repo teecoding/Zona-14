@@ -1,6 +1,6 @@
 - type: entity
   name: Сталкер Ополченец
-  suffix: Stalker, Т6
+  suffix: Stalker, Т6, NPC
   parent: MobStalkerBaseGuard
   id: MobStalkerGuard
   description: Ополченец с неплохим снаряжением, стоящий на защите сталкерства.

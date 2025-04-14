@@ -1,6 +1,6 @@
 - type: entity
   name: постовой базовый
-  suffix: Stalker, Т5
+  suffix: Stalker, Т5, NPC
   parent: BaseMobMutant
   id: MobStalkerBaseGuard
   description:
