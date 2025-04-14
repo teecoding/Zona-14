@@ -133,3 +133,7 @@ job-tulpari-supervisor = Вы никому не подчиняетесь...
 job-un = Представитель ООН
 job-un-desc = Представитель высот.
 job-un-supervisor = Вы не кому не подчиняетесь...
+
+job-Opolchenec = Боец ополчения
+job-opolchenec-desc = Сталкерское ополчение.
+job-opolchenec-supervisor = Вы подчиняетесь своему лидеру.

@@ -67,6 +67,8 @@
   id: JobClearSky
 - type: playTimeTracker
   id: JobJaba
+- type: playTimeTracker
+  id: JobOpolchenec
 
 - type: playTimeTracker
   id: JobDoctor

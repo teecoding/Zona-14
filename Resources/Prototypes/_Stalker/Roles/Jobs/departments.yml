@@ -41,6 +41,7 @@
   - StalkerNeutral
   - StalkerPoisk
   - StalkerJournalist
+  - StalkerOpolchenec
 
 - type: department
   id: StalkerBrigands

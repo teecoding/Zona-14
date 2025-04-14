@@ -1,0 +1,56 @@
+- type: job
+  id: StalkerOpolchenec
+  name: job-Opolchenec
+  icon: opolchenie
+  description: job-opolchenec-desc
+  playTimeTracker: JobOpolchenec
+  whitelisted: true
+  requirements:
+    # - !type:RoleTimeRequirement
+    #   role: JobOpolchenec
+    #   time: 1
+    - !type:SpeciesRequirement
+      species:
+      - Human
+      - Dwarf
+  startingGear: OpolcheniyeGear
+  supervisors: job-opolchenec-supervisor
+  canBeAntag: false
+  special:
+    - !type:AddComponentSpecial
+      components:
+        - type: Access
+          tags:
+            - OpolchenciAcces
+            - Stalker
+        - type: Bands
+          band: Stalker
+          bandIcon: opolchenie
+          bandProto: STOpolchenyeBand
+          bandRankId: 2
+        - type: BlockTackingHolyItems
+        - type: TeethPull
+          teethProto: ToothStalker
+          pullingItemTag: PliersStalker
+          teethCount: 3
+          initialTeeth: 3
+
+
+- type: startingGear
+  id: OpolcheniyeGear
+  equipment:
+    id: StalkerPDA
+    belt: ClothingBeltStorageWaistbag
+    torso: ClothingTorsoSweaterStalkerGreen
+    legs: ClothingLegsJeansStalker
+    shoes: ClothingShoesBootsCombat
+
+- type: stBand
+  id: STOpolchenyeBand
+  name: opolchenye
+  factionId: Opolchenci
+  maxMembers: 10
+  managingRankId: 3
+  hierarchy:
+    1: StalkerOpolchenec
+
