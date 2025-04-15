@@ -10,3 +10,18 @@ bands-managing-window-player-name-placeholder = Enter player name...
 bands-managing-window-add-button = Add
 bands-managing-window-remove-button = Fire
 bands-managing-window-band-name-unknown = Unknown band
+
+# New Strings for Tabs and War Zone Info
+bands-managing-window-members-tab-title = Members
+bands-managing-window-warzone-tab-title = War Zones
+bands-managing-window-warzone-list-header = War Zone Status
+bands-managing-window-no-warzones-text = No active war zones found.
+bands-managing-window-band-points-header = Band Points
+bands-managing-window-no-band-points-text = No band points recorded yet.
+bands-managing-window-warzone-zone = Zone: {$zoneId}
+bands-managing-window-warzone-owner = Owner: {$owner}
+bands-managing-window-warzone-cooldown = Cooldown: {$seconds}s
+bands-managing-window-warzone-attacker = Attacker: {$attacker}
+bands-managing-window-warzone-defender = Defender: {$defender}
+bands-managing-window-warzone-progress = Progress: {$progress}%
+bands-managing-window-band-points-entry = {$bandName}: {$points} points

@@ -81,15 +81,66 @@ namespace Content.Shared._Stalker.Bands
         public int MaxMembers { get; }
         public List<BandMemberInfo> Members { get; }
         public bool CanManage { get; }
+        public List<WarZoneInfo> WarZones { get; } // Added
+        public List<BandPointsInfo> BandPoints { get; } // Added
 
-        public BandsManagingBoundUserInterfaceState(string? bandName, int maxMembers, List<BandMemberInfo> members, bool canManage)
+        public BandsManagingBoundUserInterfaceState(
+            string? bandName,
+            int maxMembers,
+            List<BandMemberInfo> members,
+            bool canManage,
+            List<WarZoneInfo>? warZones, // Added, nullable for safety during construction
+            List<BandPointsInfo>? bandPoints) // Added, nullable for safety during construction
         {
             BandName = bandName;
             MaxMembers = maxMembers;
-            Members = members;
+            Members = members; // Assuming members is never null based on existing code
             CanManage = canManage;
+            // Initialize new lists - ensure they are never null
+            WarZones = warZones ?? new List<WarZoneInfo>();
+            BandPoints = bandPoints ?? new List<BandPointsInfo>();
         }
     }
+
+    // --- New Data Structures for War Zone Tab ---
+
+    [Serializable, NetSerializable]
+    public sealed class WarZoneInfo
+    {
+        public string ZoneId { get; }
+        public string Owner { get; }
+        public float Cooldown { get; } // In seconds
+        public string Attacker { get; }
+        public string Defender { get; }
+        public float Progress { get; } // 0.0 to 1.0
+
+        public WarZoneInfo(string zoneId, string owner, float cooldown, string attacker, string defender, float progress)
+        {
+            ZoneId = zoneId;
+            Owner = owner;
+            Cooldown = cooldown;
+            Attacker = attacker;
+            Defender = defender;
+            Progress = progress;
+        }
+    }
+
+    [Serializable, NetSerializable]
+    public sealed class BandPointsInfo
+    {
+        public string BandProtoId { get; }
+        public string BandName { get; }
+        public float Points { get; }
+
+        public BandPointsInfo(string bandProtoId, string bandName, float points)
+        {
+            BandProtoId = bandProtoId;
+            BandName = bandName;
+            Points = points;
+        }
+    }
+
+    // --- Existing Data Structures ---
 
     [Serializable, NetSerializable]
     public sealed class BandMemberInfo

@@ -19,6 +19,10 @@ namespace Content.Client._Stalker.Bands.UI
         {
             RobustXamlLoader.Load(this);
             IoCManager.InjectDependencies(this);
+
+            Tabs.SetTabTitle(0, Loc.GetString("bands-managing-window-members-tab-title"));
+            Tabs.SetTabTitle(1, Loc.GetString("bands-managing-window-warzone-tab-title"));
+
             AddMemberButton.OnPressed += OnAddMemberPressed;
         }
 
@@ -33,10 +37,13 @@ namespace Content.Client._Stalker.Bands.UI
             BandNameLabel.Text = state.BandName ?? Loc.GetString("bands-managing-window-band-name-unknown");
             BandMemberCountLabel.Text = $"{state.Members.Count} / {state.MaxMembers}";
 
+            // --- Clear Lists ---
             MembersList.Children.Clear();
+            WarZoneList.Children.Clear();
+            BandPointsList.Children.Clear();
 
+            // --- Update Members Tab ---
             var canManage = state.CanManage;
-
             if (state.Members.Count == 0)
             {
                 MembersList.Children.Add(NoMembersLabel);
@@ -79,6 +86,71 @@ namespace Content.Client._Stalker.Bands.UI
             }
             AddMemberLineEdit.Editable = canManage;
             AddMemberButton.Disabled = !canManage;
+
+            // --- Update War Zone Tab ---
+
+            // Populate War Zones List
+            if (state.WarZones.Count == 0)
+            {
+                WarZoneList.Children.Add(NoWarZonesLabel);
+                NoWarZonesLabel.Visible = true;
+            }
+            else
+            {
+                NoWarZonesLabel.Visible = false;
+                foreach (var wz in state.WarZones)
+                {
+                    var wzBox = new BoxContainer
+                    {
+                        Orientation = BoxContainer.LayoutOrientation.Vertical,
+                        HorizontalExpand = true,
+                        Margin = new Thickness(0, 4)
+                    };
+
+                    wzBox.AddChild(new Label { Text = Loc.GetString("bands-managing-window-warzone-zone", ("zoneId", wz.ZoneId)) });
+                    wzBox.AddChild(new Label { Text = Loc.GetString("bands-managing-window-warzone-owner", ("owner", wz.Owner)), StyleClasses = { "LabelSecondaryColor" } });
+                    wzBox.AddChild(new Label { Text = Loc.GetString("bands-managing-window-warzone-cooldown", ("seconds", $"{wz.Cooldown:F0}")), StyleClasses = { "LabelSecondaryColor" } });
+                    wzBox.AddChild(new Label { Text = Loc.GetString("bands-managing-window-warzone-attacker", ("attacker", wz.Attacker)), StyleClasses = { "LabelSecondaryColor" } });
+                    wzBox.AddChild(new Label { Text = Loc.GetString("bands-managing-window-warzone-defender", ("defender", wz.Defender)), StyleClasses = { "LabelSecondaryColor" } });
+                    // wzBox.AddChild(new Label { Text = Loc.GetString("bands-managing-window-warzone-progress", ("progress", $"{wz.Progress * 100:F1}")), StyleClasses = { "LabelSecondaryColor" } });
+
+                    WarZoneList.AddChild(wzBox);
+                    // Add a separator for readability, except after the last item
+                    if (state.WarZones.IndexOf(wz) < state.WarZones.Count - 1)
+                    {
+                         WarZoneList.AddChild(new PanelContainer { StyleClasses = { "LowDivider" }});
+                    }
+                }
+            }
+
+            // Populate Band Points List
+            if (state.BandPoints.Count == 0)
+            {
+                BandPointsList.Children.Add(NoBandPointsLabel);
+                NoBandPointsLabel.Visible = true;
+            }
+            else
+            {
+                NoBandPointsLabel.Visible = false;
+                foreach (var bp in state.BandPoints)
+                {
+                     var bpBox = new BoxContainer
+                    {
+                        Orientation = BoxContainer.LayoutOrientation.Horizontal,
+                        HorizontalExpand = true,
+                        Margin = new Thickness(0, 2)
+                    };
+
+                    var nameLabel = new Label
+                    {
+                        Text = Loc.GetString("bands-managing-window-band-points-entry", ("bandName", bp.BandName), ("points", bp.Points)),
+                        HorizontalExpand = true,
+                    };
+
+                    bpBox.AddChild(nameLabel);
+                    BandPointsList.AddChild(bpBox);
+                }
+            }
         }
 
         protected override void Dispose(bool disposing)

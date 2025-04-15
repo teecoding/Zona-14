@@ -11,14 +11,16 @@ using Robust.Server.GameObjects;
 using Robust.Server.Player;
 using Robust.Shared.Network;
 using Robust.Shared.Prototypes;
-using Content.Shared.Actions; // Added
-using Content.Shared.Mobs.Systems; // Added
-using Content.Shared.StatusIcon; // Added
-using Content.Shared.StatusIcon.Components; // Added
-using Robust.Shared.Player; // Added for ICommonSession
-using Content.Server.Players.JobWhitelist; // Added for JobWhitelistManager
-using Robust.Shared.Log; // Added for Logger
+using Content.Shared.Actions;
+using Content.Shared.Mobs.Systems;
+using Content.Shared.StatusIcon;
+using Content.Shared.StatusIcon.Components;
+using Robust.Shared.Player;
+using Content.Server.Players.JobWhitelist;
+using Robust.Shared.Log;
 using Content.Shared._Stalker.Bands.Components;
+using Content.Server._Stalker.WarZone;
+using Content.Shared._Stalker.WarZone;
 
 namespace Content.Server._Stalker.Bands
 {
@@ -29,9 +31,10 @@ namespace Content.Server._Stalker.Bands
         [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
         [Dependency] private readonly IPlayerManager _playerManager = default!;
         [Dependency] private readonly UserInterfaceSystem _uiSystem = default!;
-        [Dependency] private readonly SharedActionsSystem _actions = default!; // Added
-        [Dependency] private readonly MobStateSystem _mobState = default!; // Added
-        [Dependency] private readonly JobWhitelistManager _jobWhitelistManager = default!; // Added based on new info
+        [Dependency] private readonly SharedActionsSystem _actions = default!;
+        [Dependency] private readonly MobStateSystem _mobState = default!;
+        [Dependency] private readonly JobWhitelistManager _jobWhitelistManager = default!;
+        [Dependency] private readonly WarZoneSystem _warZoneSystem = default!;
 
         // Define a server-side representation combining prototype and potentially DB info
         private sealed record ServerBandInfo(STBandPrototype Prototype, StalkerBand? DbBand = null);
@@ -39,10 +42,8 @@ namespace Content.Server._Stalker.Bands
 
         public override void Initialize()
         {
-            // Call base initialize to subscribe to events handled in SharedBandsSystem (OnInit, OnRemove, OnToggle, OnChange for BandsComponent)
             base.Initialize();
 
-            // Subscribe to events specific to the server-side management UI
             SubscribeLocalEvent<BandsManagingComponent, BoundUIOpenedEvent>(HandleBoundUIOpen);
             SubscribeLocalEvent<BandsManagingComponent, ComponentStartup>(SubscribeUpdateUiState);
             SubscribeLocalEvent<BandsManagingComponent, BandsManagingAddMemberMessage>(OnAddMember);
@@ -59,7 +60,6 @@ namespace Content.Server._Stalker.Bands
             UpdateUiState(ent);
         }
 
-        // Explicit handler for BoundUIOpenedEvent to pass the actor correctly
         private void HandleBoundUIOpen(Entity<BandsManagingComponent> ent, ref BoundUIOpenedEvent args)
         {
             UpdateUiState(ent, args.Actor);
@@ -76,7 +76,8 @@ namespace Content.Server._Stalker.Bands
 
             if (!_mindSystem.TryGetMind(actor.Value, out _, out var mindComp) || !_mindSystem.TryGetSession(mindComp, out var session))
             {
-                _uiSystem.SetUiState(uid, BandsUiKey.Key, new BandsManagingBoundUserInterfaceState(null, 0, new(), false));
+                // Send empty state if session cannot be found
+                _uiSystem.SetUiState(uid, BandsUiKey.Key, new BandsManagingBoundUserInterfaceState(null, 0, new(), false, new(), new()));
                 return;
             }
 
@@ -84,29 +85,71 @@ namespace Content.Server._Stalker.Bands
             if (session.UserId == null)
             {
                  Logger.ErrorS("bands", $"Failed to obtain NetUserId for BandsManaging UI update on {ToPrettyString(uid)}.");
-                _uiSystem.SetUiState(uid, BandsUiKey.Key, new BandsManagingBoundUserInterfaceState(null, 0, new(), false));
+                 // Send empty state if UserId is null
+                _uiSystem.SetUiState(uid, BandsUiKey.Key, new BandsManagingBoundUserInterfaceState(null, 0, new(), false, new(), new()));
                  return;
             }
 
 
             var bandInfo = await GetPlayerBandInfoAsync(session.UserId);
             // Don't return early if bandInfo is null, send state indicating no band or not manageable.
-            List<BandMemberInfo> members = new(); // Use BandMemberInfo directly
+            List<BandMemberInfo> members = new();
             string? bandName = null;
             int maxMembers = 0;
             bool canManage = false;
 
             if (bandInfo != null)
             {
-                members = await GetBandMembersAsync(bandInfo.Prototype); // This now returns List<BandMemberInfo>
+                members = await GetBandMembersAsync(bandInfo.Prototype);
                 bandName = bandInfo.Prototype.Name;
                 maxMembers = bandInfo.Prototype.MaxMembers;
                 canManage = await CanPlayerManageBandAsync(session.UserId);
             }
 
-            // No longer need to convert, members is already List<BandMemberInfo>
-            // var memberInfos = members.Select(m => new BandMemberInfo(m.UserId, m.LastSeenUserName, m.PrimaryRoleId)).ToList();
-            var state = new BandsManagingBoundUserInterfaceState(bandName, maxMembers, members, canManage); // Use members directly
+            // --- Gather War Zone Data ---
+            var warZoneInfos = new List<WarZoneInfo>();
+            foreach (var (wzUid, wzComp) in _warZoneSystem.GetAllWarZones())
+            {
+                var zoneId = wzComp.ZoneProto;
+                var owner = "None";
+                if (!string.IsNullOrEmpty(wzComp.DefendingBandProtoId))
+                    owner = $"Band {wzComp.DefendingBandProtoId}";
+                else if (!string.IsNullOrEmpty(wzComp.DefendingFactionProtoId))
+                    owner = $"Faction {wzComp.DefendingFactionProtoId}";
+
+                var cooldown = wzComp.CooldownEndTime.HasValue
+                    ? (float)Math.Max(0, (wzComp.CooldownEndTime.Value - _warZoneSystem.CurrentTime).TotalSeconds)
+                    : 0f;
+
+                string attacker = "None";
+                 if (!string.IsNullOrEmpty(wzComp.CurrentAttackerBandProtoId))
+                     attacker = $"Band {wzComp.CurrentAttackerBandProtoId}";
+                 else if (!string.IsNullOrEmpty(wzComp.CurrentAttackerFactionProtoId))
+                     attacker = $"Faction {wzComp.CurrentAttackerFactionProtoId}";
+
+                string defender = "None";
+                if (!string.IsNullOrEmpty(wzComp.DefendingBandProtoId))
+                    defender = $"Band {wzComp.DefendingBandProtoId}";
+                else if (!string.IsNullOrEmpty(wzComp.DefendingFactionProtoId))
+                    defender = $"Faction {wzComp.DefendingFactionProtoId}";
+
+                float progress = 0f;
+
+                warZoneInfos.Add(new WarZoneInfo(zoneId, owner, cooldown, attacker, defender, progress));
+            }
+
+            // --- Gather Band Points Data ---
+            var bandPointsInfos = new List<BandPointsInfo>();
+            foreach (var kvp in _warZoneSystem.BandPoints)
+            {
+                string name = kvp.Key;
+                if (_prototypeManager.TryIndex<STBandPrototype>(kvp.Key, out var bandProto))
+                    name = bandProto.Name;
+                bandPointsInfos.Add(new BandPointsInfo(kvp.Key, name, kvp.Value));
+            }
+
+            // --- Create and Send State ---
+            var state = new BandsManagingBoundUserInterfaceState(bandName, maxMembers, members, canManage, warZoneInfos, bandPointsInfos);
 
             // Use the correct SetUiState overload - no session needed here.
             _uiSystem.SetUiState(uid, BandsUiKey.Key, state);
@@ -192,7 +235,7 @@ namespace Content.Server._Stalker.Bands
 
             var leaderUserId = session.UserId;
 
-            if (!await CanPlayerManageBandAsync(leaderUserId)) // Use helper
+            if (!await CanPlayerManageBandAsync(leaderUserId))
                 return;
 
             // Prevent leader from removing themselves via this UI (they should leave the band differently)
@@ -201,7 +244,7 @@ namespace Content.Server._Stalker.Bands
 
             var leaderBandInfo = await GetPlayerBandInfoAsync(leaderUserId);
             if (leaderBandInfo == null)
-                return; // Leader isn't in a band?
+                return;
 
             // Construct a set of all role IDs associated with this band prototype's hierarchy
             var bandRoleIds = leaderBandInfo.Prototype.Hierarchy.Values
@@ -256,7 +299,7 @@ namespace Content.Server._Stalker.Bands
                 return;
 
             component.Enabled = !component.Enabled;
-            Dirty(uid, component); // Ensure component state is synced
+            Dirty(uid, component);
 
             args.Handled = true;
         }
@@ -271,11 +314,11 @@ namespace Content.Server._Stalker.Bands
                 return;
 
             (comp.BandStatusIcon, comp.AltBand) = (comp.AltBand, comp.BandStatusIcon);
-            Dirty(entity); // Ensure component state is synced
+            Dirty(entity);
             args.Handled = true;
         }
 
-        // --- Helper Methods (Refined based on new info) ---
+        // --- Helper Methods
 
         /// <summary>
         /// Gets the band prototype and potentially related DB info for a player based on their primary role.
@@ -406,12 +449,4 @@ namespace Content.Server._Stalker.Bands
             return rankId >= bandProto.ManagingRankId;
         }
     }
-
-    // --- Helper Structs/Classes (Ensure these match definitions elsewhere) ---
-
-    // BandMemberInfo is defined in Content.Shared._Stalker.Bands.SharedBandsSystem.cs
-
-    // Assuming StalkerBand is defined in Content.Server.Database.Model
-    // public sealed class StalkerBand { ... }
-
 }
