@@ -27,11 +27,7 @@ namespace Content.Shared._Stalker.Bands
         public override void Initialize()
         {
             base.Initialize();
-
-            SubscribeLocalEvent<BandsComponent, ComponentInit>(OnInit);
-            SubscribeLocalEvent<BandsComponent, ComponentRemove>(OnRemove);
-            SubscribeLocalEvent<BandsComponent, ToggleBandsEvent>(OnToggle);
-            SubscribeLocalEvent<BandsComponent, ChangeBandEvent>(OnChange);
+            // Subscriptions for BandsComponent events are now handled in the concrete client/server systems to avoid duplicate subscriptions.
         }
 
         private void OnInit(EntityUid uid, BandsComponent component, ComponentInit args)
@@ -135,5 +131,4 @@ namespace Content.Shared._Stalker.Bands
             PlayerUserId = playerUserId;
         }
     }
-
 }

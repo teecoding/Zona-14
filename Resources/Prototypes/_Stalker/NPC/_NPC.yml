@@ -84,8 +84,9 @@
   - type: Physics
     bodyType: Static
   - type: Advertise
-    pack: NPCStalkerSidorAds    
+    pack: NPCStalkerSidorAds
     # test start
+  - type: BandsManaging
   - type: ActivatableUI
     key: enum.BandsUiKey.Key
   - type: UserInterface

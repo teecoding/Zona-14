@@ -39,18 +39,14 @@ namespace Content.Server._Stalker.Bands
 
         public override void Initialize()
         {
+            // Call base initialize to subscribe to events handled in SharedBandsSystem (OnInit, OnRemove, OnToggle, OnChange for BandsComponent)
             base.Initialize();
-            // SubscribeLocalEvent<BandsManagingComponent, BoundUIOpenedEvent>(OnUiOpen); // Replaced by UpdateUiState triggered by base event
-            SubscribeLocalEvent<BandsManagingComponent, BoundUIOpenedEvent>(HandleBoundUIOpen); // New handler to call UpdateUiState
-            SubscribeLocalEvent<BandsManagingComponent, ComponentStartup>(SubscribeUpdateUiState); // Add startup subscription
+
+            // Subscribe to events specific to the server-side management UI
+            SubscribeLocalEvent<BandsManagingComponent, BoundUIOpenedEvent>(HandleBoundUIOpen);
+            SubscribeLocalEvent<BandsManagingComponent, ComponentStartup>(SubscribeUpdateUiState);
             SubscribeLocalEvent<BandsManagingComponent, BandsManagingAddMemberMessage>(OnAddMember);
             SubscribeLocalEvent<BandsManagingComponent, BandsManagingRemoveMemberMessage>(OnRemoveMember);
-
-            // Added subscriptions from SharedBandsSystem
-            SubscribeLocalEvent<BandsComponent, ComponentInit>(OnInit);
-            SubscribeLocalEvent<BandsComponent, ComponentRemove>(OnRemove);
-            SubscribeLocalEvent<BandsComponent, ToggleBandsEvent>(OnToggle);
-            SubscribeLocalEvent<BandsComponent, ChangeBandEvent>(OnChange);
         }
 
         // --- UI Update Subscription & Handling ---

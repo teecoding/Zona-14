@@ -9,6 +9,7 @@ namespace Content.Server._Stalker.Bands.Components
     /// Component attached to entities that can open the Band Management UI.
     /// </summary>
     [RegisterComponent, NetworkedComponent]
+    [Access(typeof(SharedBandsSystem))]
     public sealed partial class BandsManagingComponent : Component
     {
         /// <summary>
