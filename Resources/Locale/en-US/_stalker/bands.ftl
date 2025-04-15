@@ -8,4 +8,5 @@ bands-managing-window-add-member-header = Add Member
 bands-managing-window-player-name-label = Player Name:
 bands-managing-window-player-name-placeholder = Enter player name...
 bands-managing-window-add-button = Add
+bands-managing-window-remove-button = Fire
 bands-managing-window-band-name-unknown = Unknown band

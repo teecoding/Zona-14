@@ -321,27 +321,56 @@ namespace Content.Server._Stalker.Bands
         /// <summary>
         /// Gets members of a band defined by the given prototype, returning BandMemberInfo objects.
         /// </summary>
-        private async Task<List<BandMemberInfo>> GetBandMembersAsync(STBandPrototype bandProto) // Return List<BandMemberInfo>
+        private async Task<List<BandMemberInfo>> GetBandMembersAsync(STBandPrototype bandProto)
         {
-            var members = new List<BandMemberInfo>(); // Create List<BandMemberInfo>
+            var members = new List<BandMemberInfo>();
+            
+            // Collect all role IDs associated with this band
             var bandRoleIds = bandProto.Hierarchy.Values.Select(p => p.ToString()).ToHashSet();
             bandRoleIds.Add(bandProto.ID.ToString()); // Include the base/leader role
-
-            // Find all players whitelisted for any role in this band's hierarchy
-            // This likely requires a DB method like GetPlayersWithAnyRoleWhitelistAsync(roleIds)
-            // There is no direct DB method for this; you may need to filter all players or use a custom query.
-            // For now, this will be left as a placeholder.
-            var memberRecords = new List<PlayerRecord>(); // TODO: Implement actual lookup for all players with any of these whitelisted jobs.
-
-            foreach (var record in memberRecords)
+            
+            // Get all players who have any of these roles whitelisted
+            var playersWithRoles = await _dbManager.GetPlayersWithRoleWhitelistAsync(bandRoleIds);
+            
+            // Convert database players to PlayerRecords and create BandMemberInfo for each
+            foreach (var player in playersWithRoles)
             {
-                // Determine the primary role *within the band context* if needed, or just use overall primary
-                // Use the first whitelisted job as the "role" for display, or "Unknown"
-                var jobs = await _dbManager.GetJobWhitelists(record.UserId);
-                var displayRole = jobs.FirstOrDefault() ?? "Unknown";
-                members.Add(new BandMemberInfo(record.UserId, record.LastSeenUserName, displayRole));
+                var userId = new NetUserId(player.UserId);
+                
+                // Get all whitelisted jobs for this player
+                var whitelistedJobs = await _dbManager.GetJobWhitelists(player.UserId);
+                
+                // Filter to only jobs relevant to this band
+                var bandJobs = whitelistedJobs.Where(job => bandRoleIds.Contains(job)).ToList();
+                
+                if (!bandJobs.Any())
+                    continue; // Skip if no relevant jobs (shouldn't happen due to our query, but just in case)
+                
+                // Find the highest rank role this player has in the band's hierarchy
+                string displayRole = "Unknown";
+                int highestRank = -1;
+                
+                foreach (var job in bandJobs)
+                {
+                    // If job is the band leader role
+                    if (job == bandProto.ID)
+                    {
+                        displayRole = job;
+                        break; // Leader role takes precedence
+                    }
+                    
+                    // Find the rank in the hierarchy
+                    var rankEntry = bandProto.Hierarchy.FirstOrDefault(h => h.Value == job);
+                    if (rankEntry.Value != default && rankEntry.Key > highestRank)
+                    {
+                        highestRank = rankEntry.Key;
+                        displayRole = job;
+                    }
+                }
+                
+                members.Add(new BandMemberInfo(userId, player.LastSeenUserName, displayRole));
             }
-
+            
             return members;
         }
 

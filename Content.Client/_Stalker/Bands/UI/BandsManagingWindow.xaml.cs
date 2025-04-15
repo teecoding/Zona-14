@@ -35,6 +35,8 @@ namespace Content.Client._Stalker.Bands.UI
 
             MembersList.Children.Clear();
 
+            var canManage = state.CanManage;
+
             if (state.Members.Count == 0)
             {
                 MembersList.Children.Add(NoMembersLabel);
@@ -62,7 +64,8 @@ namespace Content.Client._Stalker.Bands.UI
                     {
                         Text = Loc.GetString("bands-managing-window-remove-button"),
                         MinWidth = 80,
-                        HorizontalAlignment = HAlignment.Right
+                        HorizontalAlignment = HAlignment.Right,
+                        Disabled = !canManage
                     };
 
                     var memberId = member.UserId;
@@ -74,8 +77,6 @@ namespace Content.Client._Stalker.Bands.UI
                     MembersList.AddChild(memberBox);
                 }
             }
-
-            var canManage = state.CanManage;
             AddMemberLineEdit.Editable = canManage;
             AddMemberButton.Disabled = !canManage;
         }
