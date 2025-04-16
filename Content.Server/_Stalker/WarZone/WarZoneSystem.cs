@@ -1,23 +1,13 @@
-using System;
-using System.Collections.Generic;
 using System.Threading.Tasks;
-using Content.Server._Stalker.WarZone;
 using Content.Shared._Stalker.WarZone.Requirenments;
-using Robust.Shared.Player; // Added for Filter
+using Robust.Shared.Player;
 using Content.Server.Database;
 using Content.Shared._Stalker.WarZone;
-using Content.Shared.Physics;
-using Robust.Server.GameObjects;
-using Robust.Shared.GameObjects;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
 using Robust.Shared.Physics.Events;
-using Robust.Shared.Map; // Added for MapCoordinates
-using Robust.Shared.GameStates; // Added for SharedTransformSystem
 using Content.Server.Chat.Managers;
-// Removed ChatSystem using
 using Content.Server.Popups;
-using Content.Shared.Mobs;
 using Content.Shared._Stalker.Bands;
 using Content.Shared.NPC.Prototypes;
 using Content.Shared.Chat;
@@ -33,9 +23,7 @@ public sealed partial class WarZoneSystem : EntitySystem
     [Dependency] private readonly IServerDbManager _dbManager = default!;
     [Dependency] private readonly IChatManager _chatManager = default!;
     [Dependency] private readonly PopupSystem _popup = default!;
-    [Dependency] private readonly SharedTransformSystem _transformSystem = default!; // Added TransformSystem
-    // Removed ChatSystem dependency
-
+    [Dependency] private readonly SharedTransformSystem _transformSystem = default!;
     private readonly Dictionary<string, float> _bandPoints = new();
     private readonly Dictionary<string, float> _factionPoints = new();
     private readonly Dictionary<EntityUid, TimeSpan> _lastRewardTimes = new();
@@ -158,7 +146,6 @@ public sealed partial class WarZoneSystem : EntitySystem
         }
     }
 
-    // Added effectiveFrameTime parameter
     private async Task UpdateCaptureAsync(EntityUid zone, WarZoneComponent comp, TimeSpan now, float effectiveFrameTime)
     {
         if (!_prototypeManager.TryIndex<STWarZonePrototype>(comp.ZoneProto, out var wzProto))
@@ -178,7 +165,7 @@ public sealed partial class WarZoneSystem : EntitySystem
             ResetCaptureProgress(comp);
 
             if (comp.CurrentAttackerBandProtoId != null || comp.CurrentAttackerFactionProtoId != null)
-                AnnounceCaptureAbandonedLocal(zone, comp); // Announce abandonment locally
+                AnnounceCaptureAbandonedLocal(zone, comp);
             return;
         }
 
@@ -189,7 +176,7 @@ public sealed partial class WarZoneSystem : EntitySystem
         EntityUid? attackerEntity = null;
         if (comp.PresentEntities.Count == 1)
         {
-            attackerEntity = GetFirstEntity(comp.PresentEntities); // Helper needed
+            attackerEntity = GetFirstEntity(comp.PresentEntities);
         }
 
         if (comp.PresentBandProtoIds.Count == 1)
@@ -224,7 +211,6 @@ public sealed partial class WarZoneSystem : EntitySystem
             return; // Block capture attempt due to cooldown
         }
 
-        // --- BEGIN Check and Announce Capture Start ---
         // Check if it's a new, valid, non-defending attacker starting the capture.
         bool isNewAttacker = (attackerBand != comp.CurrentAttackerBandProtoId || attackerFaction != comp.CurrentAttackerFactionProtoId);
         bool isValidAttacker = (attackerBand != null || attackerFaction != null);
@@ -232,13 +218,10 @@ public sealed partial class WarZoneSystem : EntitySystem
 
         if (comp.InitialLoadComplete && isValidAttacker && isNotDefender && isNewAttacker)
         {
-            // Update the current attacker *before* announcing
             comp.CurrentAttackerBandProtoId = attackerBand;
             comp.CurrentAttackerFactionProtoId = attackerFaction;
-            // Announce locally
             AnnounceCaptureStartedLocal(zone, comp, attackerBand, attackerFaction);
         }
-        // --- END Check and Announce Capture Start ---
 
         // Prepare data for requirement checks
         var ownerships = new Dictionary<ProtoId<STWarZonePrototype>, (string? BandProtoId, string? FactionProtoId)>();
@@ -294,9 +277,9 @@ public sealed partial class WarZoneSystem : EntitySystem
                     lastCaptureTimes,
                     zonePrototypes,
                     comp.ZoneProto,
-                    effectiveFrameTime, // Use the effective frame time (1.0f)
-                    attackerEntity, // Pass the potential attacker entity
-                    feedbackCallback); // Pass the feedback callback
+                    effectiveFrameTime,
+                    attackerEntity,
+                    feedbackCallback);
                 if (blockReason != CaptureBlockReason.None)
                 {
                     allMet = false;
@@ -313,7 +296,7 @@ public sealed partial class WarZoneSystem : EntitySystem
         // Update capture progress using the prototype's CaptureTime
         comp.CaptureProgressTime += effectiveFrameTime;
         comp.CaptureProgress = Math.Clamp(comp.CaptureProgressTime / wzProto.CaptureTime, 0f, 1f);
-        
+
         // If we haven't reached the required capture time yet, return
         if (comp.CaptureProgressTime < wzProto.CaptureTime)
             return;
@@ -359,17 +342,15 @@ public sealed partial class WarZoneSystem : EntitySystem
 
         _lastRewardTimes[zone] = _gameTiming.CurTime;
 
-        // Set capture progress to 100% on successful capture
         comp.CaptureProgress = 1f;
     }
 
     private void ResetCaptureProgress(WarZoneComponent comp)
     {
-        // Reset capture progress
         comp.CaptureProgressTime = 0f;
         comp.CaptureProgress = 0f;
     }
-    
+
     private void ResetAllRequirements(EntityUid zone)
     {
         if (!_entityManager.TryGetComponent(zone, out WarZoneComponent? wzComp))
@@ -381,10 +362,6 @@ public sealed partial class WarZoneSystem : EntitySystem
         if (wzProto.Requirements == null)
             return;
 
-        // Simply iterate through requirements - CaptureTime is now handled at the prototype level
-        // No longer need to handle individual requirements here
-
-        // Reset capture progress
         ResetCaptureProgress(wzComp);
     }
 
@@ -441,7 +418,6 @@ public sealed partial class WarZoneSystem : EntitySystem
         return null;
     }
 
-    // Helper to get the first EntityUid from a HashSet
     private static EntityUid? GetFirstEntity(HashSet<EntityUid> set)
     {
         foreach (var entity in set)
@@ -470,7 +446,6 @@ public sealed partial class WarZoneSystem : EntitySystem
             }
         }
 
-        // Initialize collections if null (safety check)
         if (component.PresentBandProtoIds == null)
             component.PresentBandProtoIds = new();
         if (component.PresentFactionProtoIds == null)
@@ -482,7 +457,7 @@ public sealed partial class WarZoneSystem : EntitySystem
             component.PresentBandProtoIds.Add(bandId);
         if (factionId != null)
             component.PresentFactionProtoIds.Add(factionId);
-        component.PresentEntities.Add(other); // Add entity to the set
+        component.PresentEntities.Add(other);
     }
 
     private void OnEndCollide(EntityUid uid, WarZoneComponent component, ref readonly EndCollideEvent args)
@@ -513,7 +488,7 @@ public sealed partial class WarZoneSystem : EntitySystem
             component.PresentBandProtoIds.Remove(bandId);
         if (factionId != null)
             component.PresentFactionProtoIds.Remove(factionId);
-        component.PresentEntities.Remove(other); // Remove entity from the set
+        component.PresentEntities.Remove(other);
     }
 
     private void OnEntityTerminating(EntityUid uid, MetaDataComponent component, ref EntityTerminatingEvent args)
@@ -544,24 +519,23 @@ public sealed partial class WarZoneSystem : EntitySystem
         {
             bool changed = false;
 
-            // Remove from tracking sets
             if (wzComp.PresentBandProtoIds != null && bandId != null && wzComp.PresentBandProtoIds.Remove(bandId))
                 changed = true;
             if (wzComp.PresentFactionProtoIds != null && factionId != null && wzComp.PresentFactionProtoIds.Remove(factionId))
                 changed = true;
-            if (wzComp.PresentEntities != null && wzComp.PresentEntities.Remove(uid)) // Remove specific entity
+            if (wzComp.PresentEntities != null && wzComp.PresentEntities.Remove(uid))
                 changed = true;
 
             if (changed &&
                 wzComp.PresentBandProtoIds != null &&
                 wzComp.PresentFactionProtoIds != null &&
-                wzComp.PresentEntities != null && // Check PresentEntities too
+                wzComp.PresentEntities != null &&
                 wzComp.PresentBandProtoIds.Count == 0 &&
                 wzComp.PresentFactionProtoIds.Count == 0 &&
                 wzComp.PresentEntities.Count == 0) // Only reset/announce if zone is truly empty
             {
                 ResetAllRequirements(zoneUid);
-                AnnounceCaptureAbandonedLocal(zoneUid, wzComp); // Announce abandonment locally
+                AnnounceCaptureAbandonedLocal(zoneUid, wzComp);
             }
         }
     }
@@ -587,15 +561,13 @@ public sealed partial class WarZoneSystem : EntitySystem
         if (wzComp == null || (wzComp.CurrentAttackerBandProtoId == null && wzComp.CurrentAttackerFactionProtoId == null))
             return;
 
-        // Only announce if the abandoner was not the defender
         if (wzComp.CurrentAttackerBandProtoId != wzComp.DefendingBandProtoId || wzComp.CurrentAttackerFactionProtoId != wzComp.DefendingFactionProtoId)
         {
             string attackerName = GetAttackerName(wzComp.CurrentAttackerBandProtoId, wzComp.CurrentAttackerFactionProtoId);
             var message = Loc.GetString("st-warzone-capture-abandoned", ("zone", wzComp.PortalName ?? "Unknown"), ("attacker", attackerName));
-            // Use ChatManager.ChatMessageToManyFiltered for local announcement
-            var mapCoords = _transformSystem.GetMapCoordinates(zoneUid); // Convert to MapCoordinates
+            var mapCoords = _transformSystem.GetMapCoordinates(zoneUid);
             var filter = Filter.Empty().AddInRange(mapCoords, ChatSystem.VoiceRange);
-            _chatManager.ChatMessageToManyFiltered(filter, ChatChannel.Emotes, message, message, zoneUid, false, true, colorOverride: null); // Added colorOverride
+            _chatManager.ChatMessageToManyFiltered(filter, ChatChannel.Emotes, message, message, zoneUid, false, true, colorOverride: null);
         }
 
         // Reset attacker info
@@ -603,8 +575,6 @@ public sealed partial class WarZoneSystem : EntitySystem
         wzComp.CurrentAttackerFactionProtoId = null;
     }
 
-    // --- BEGIN NEW METHOD ---
-    // Helper to announce capture start locally
     private void AnnounceCaptureStartedLocal(EntityUid zoneUid, WarZoneComponent wzComp, string? attackerBand, string? attackerFaction)
     {
         // We assume the checks for validity (new attacker, not defender, etc.) are done before calling this.
@@ -612,10 +582,8 @@ public sealed partial class WarZoneSystem : EntitySystem
         var message = Loc.GetString("st-warzone-capture-started", ("attacker", attackerName), ("zone", wzComp.PortalName ?? "Unknown"));
         var mapCoords = _transformSystem.GetMapCoordinates(zoneUid); // Convert to MapCoordinates
         var filter = Filter.Empty().AddInRange(mapCoords, ChatSystem.VoiceRange);
-        // Send on Emotes channel, hideChat=false, recordReplay=true (standard for environmental messages)
         _chatManager.ChatMessageToManyFiltered(filter, ChatChannel.Emotes, message, message, zoneUid, false, true, colorOverride: null);
     }
-    // --- END NEW METHOD ---
 
     private async Task LoadInitialZoneStateAsync(EntityUid zoneUid, WarZoneComponent component)
     {
