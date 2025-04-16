@@ -104,7 +104,7 @@
         BaseTEC9Mag: 120
         BaseGlockMag10: 100
         TTMag: 98
-        SpeedLoader45ACPEmpty: 98
+        STSpeedLoader45ACPEmpty: 98
         Vz61Mag: 360
         BaseAPSMag: 150
     - name: shop-category-ammunition

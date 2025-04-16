@@ -50,11 +50,11 @@
             - STModuleAutoSear
       gun_chamber:
         name: Chamber
-        startingItem: Cartridge918PGJ
+        startingItem: STCartridge918PGJ
         priority: 1
         whitelist:
           tags:
-            - Cartridge918
+            - STCartridge918
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot

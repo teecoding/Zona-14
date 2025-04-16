@@ -102,7 +102,7 @@
           # Other
         GlockMag24: 120
         GlockMag33: 440
-        SpeedLoader45ACPEmpty: 100
+        STSpeedLoader45ACPEmpty: 100
         BaseAPSMag: 100
         SpeedLoaderRemingtonMagnumEmpty: 100
     - name: shop-category-ammunition

@@ -1,89 +1,75 @@
 - type: entity
-  name: ВПО-129 7,62х54
-  suffix: ST
+  abstract: true
   parent: STBaseWeaponSniper
+  id: STVBaseWeaponRifleStalkerVepr
+  components:
+  - type: STWeight
+    self: 3.2
+  - type: Clothing
+    sprite: _Stalker/Objects/Weapons/Guns/Rifles/vepr.rsi
+  - type: Item
+    sprite: _Stalker/Objects/Weapons/Guns/Rifles/vepr.rsi
+  - type: Sprite
+    sprite: _Stalker/Objects/Weapons/Guns/Rifles/vepr.rsi
+  - type: Gun
+    soundGunshot:
+      path: /Audio/_Stalker/Effects/Guns/svd.ogg
+    minAngle: 50
+    maxAngle: 140
+    angleDecay: 65
+    angleIncrease: 2
+    fireRate: 0.65
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: 754Mag10
+        insertSound: /Audio/_Stalker/Weapons/Guns/RifleGen/MagIn/rifle_magin.ogg
+        ejectSound: /Audio/_Stalker/Weapons/Guns/RifleGen/MagOut/rifle_magout.ogg
+        priority: 4
+        whitelist:
+          tags:
+          - Magazine754
+      gun_module_scope:
+        name: Scope
+        priority: 3
+        whitelist:
+          tags:
+          - STWeaponModuleSniperSight
+      gun_module_muzzle:
+        name: Muzzle
+        priority: 2
+        whitelist:
+          tags:
+          - STWeaponModuleSniperSilencer
+      gun_chamber:
+        name: Chamber
+        startingItem:
+        priority: 1
+        whitelist:
+          tags:
+          - STCartridge754
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_module_muzzle: !type:ContainerSlot
+      gun_module_scope: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: Scope
+    zoom: 1.2
+    offset: 8
+
+- type: entity
+  parent: STVBaseWeaponRifleStalkerVepr
   id: STWeaponRifleStalkerVepr
-  description: Карабин ВПО-129 Вепрь-1В является гражданским охотничьим оружием с нарезным стволом созданным по мотивам легендарного ручного пулемёта Советской Армии.
-  components:
-    - type: STWeight
-      self: 3.2
-    - type: Clothing
-      sprite: _Stalker/Objects/Weapons/Guns/Rifles/vepr.rsi
-    - type: Item
-      sprite: _Stalker/Objects/Weapons/Guns/Rifles/vepr.rsi
-    - type: Sprite
-      sprite: _Stalker/Objects/Weapons/Guns/Rifles/vepr.rsi
-      layers:
-      - state: base
-        map: ["enum.GunVisualLayers.Base"]
-      - state: mag-0
-        map: ["enum.GunVisualLayers.Mag"]
-      - state: muzzle
-        map: ["enum.GunVisualLayers.Muzzle"]
-      - state: sight
-        map: ["enum.GunVisualLayers.Scope"]
-    - type: Gun
-      soundGunshot:
-        path: /Audio/_Stalker/Effects/Guns/svd.ogg
-      projectileSpeed: 50
-      minAngle: 50
-      maxAngle: 140
-      angleDecay: 65
-      angleIncrease: 2
-      fireRate: 0.65
-      selectedMode: SemiAuto
-      availableModes:
-        - SemiAuto
-    - type: ItemSlots
-      slots:
-        gun_magazine:
-          name: Magazine
-          startingItem: 754Mag10
-          insertSound: /Audio/_Stalker/Weapons/Guns/RifleGen/MagIn/rifle_magin.ogg
-          ejectSound: /Audio/_Stalker/Weapons/Guns/RifleGen/MagOut/rifle_magout.ogg
-          priority: 4
-          whitelist:
-            tags:
-              - Magazine754
-        gun_module_scope:
-          name: Scope
-          priority: 3
-          whitelist:
-            tags:
-              - STWeaponModuleSniperSight
-        gun_module_muzzle:
-          name: Muzzle
-          priority: 2
-          whitelist:
-            tags:
-              - STWeaponModuleSniperSilencer
-        gun_chamber:
-          name: Chamber
-          startingItem:
-          priority: 1
-          whitelist:
-            tags:
-              - Cartridge754
-    - type: ContainerContainer
-      containers:
-        gun_magazine: !type:ContainerSlot
-        gun_module_muzzle: !type:ContainerSlot
-        gun_module_scope: !type:ContainerSlot
-        gun_chamber: !type:ContainerSlot
-    - type: MagazineVisuals
-      magState: mag
-      steps: 1
-      zeroVisible: true
-    - type: Scope
-      zoom: 1.2
-      offset: 8
+  name: VPO-129 "Vepr" 7.62x54mm
+  description: The VPO-129 Vepr-1V is a civilian hunting carbine with rifled barrel, based on the legendary Soviet Army light machine gun design. Chambered in powerful 7.62x54mmR, it's a favorite among Zone marksmen for its reliability.
 
 - type: entity
-  name: Тактический ВПО-129 Серафимов
-  suffix: ST, Скин
-  parent: STWeaponRifleStalkerVepr
+  parent: STVBaseWeaponRifleStalkerVepr
   id: STWeaponRifleStalkerVeprSerafim
-  description: Тактический ВПО в раскраске Серафимов.
+  name: Tactical VPO-129 "Seraphim"
+  description: Custom tactical VPO-129 variant with distinctive Seraphim faction markings and modifications. The white finish provides both visibility and intimidation factor in Zone operations.
   components:
     - type: Clothing
       sprite: _Stalker/Objects/Weapons/Guns/Rifles/_Skins/vepr_seraphim.rsi
@@ -93,11 +79,10 @@
       sprite: _Stalker/Objects/Weapons/Guns/Rifles/_Skins/vepr_seraphim.rsi
 
 - type: entity
-  name: ВПО-129 "Трава"
-  suffix: ST, Скин, Кастомка
-  parent: STWeaponRifleStalkerVepr
+  parent: STVBaseWeaponRifleStalkerVepr
   id: STWeaponRifleStalkerVeprFarforik
-  description: Чудесное решение для кустового кемпера.
+  name: VPO-129 "Grass" Camo
+  description: A bushman's dream - this Vepr variant features custom camouflage netting and vegetation attachments for maximum concealment in the Zone's wilderness.
   components:
     - type: Clothing
       sprite: _Stalker/Objects/Weapons/Guns/Rifles/_Skins/vepr-trava.rsi

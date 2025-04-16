@@ -1,14 +1,17 @@
 - type: entity
-  name: STBaseWeaponSniper
+  abstract: true
   parent: STBaseWeaponGun
   id: STBaseWeaponSniper
+  name: sniper
   description: A rooty tooty point and shooty.
-  abstract: true
+  suffix: ST, Weapon, Sniper
   components:
   - type: Sprite
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
     - state: muzzle
       map: ["enum.GunVisualLayers.Muzzle"]
     - state: sight
@@ -32,6 +35,7 @@
     - suitStorage
   - type: AmmoCounter
   - type: Gun
+    projectileSpeed: 75
     fireRate: 0.75
     selectedMode: SemiAuto
     availableModes:
@@ -74,3 +78,7 @@
     requireWielding: true
     offset: 9
     useInHand: false
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true

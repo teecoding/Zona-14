@@ -196,7 +196,7 @@
         751Mag20: 350
         BaseTEC9Mag: 120
         TTMag: 100
-        SpeedLoader45ACPEmpty: 200
+        STSpeedLoader45ACPEmpty: 200
         BaseAPSMag: 100
     - name: shop-category-ammunition
       priority: 3

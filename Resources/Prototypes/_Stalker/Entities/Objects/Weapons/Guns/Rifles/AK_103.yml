@@ -50,7 +50,7 @@
         priority: 1
         whitelist:
           tags:
-            - Cartridge739
+            - STCartridge739
 
 - type: entity
   parent: STWeaponRifleStalkerAK103

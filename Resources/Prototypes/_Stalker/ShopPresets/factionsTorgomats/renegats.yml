@@ -107,7 +107,7 @@
           # Other
         SpeedLoaderRemingtonMagnumEmpty: 150
         BaseTEC9Mag: 60
-        SpeedLoader45ACPEmpty: 150
+        STSpeedLoader45ACPEmpty: 150
         BaseAPSMag: 100
         Vz61Mag: 150
     - name: shop-category-ammunition

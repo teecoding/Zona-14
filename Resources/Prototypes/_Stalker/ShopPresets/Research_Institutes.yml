@@ -23,7 +23,7 @@
         BaseGlockMag10: 100
         GlockMag17: 200
         GlockMag24: 400
-        SpeedLoader45ACPEmpty: 75
+        STSpeedLoader45ACPEmpty: 75
         Base545Mag10: 50 #T1
         545Mag20: 100 #T2
         545Mag30: 220 #T3

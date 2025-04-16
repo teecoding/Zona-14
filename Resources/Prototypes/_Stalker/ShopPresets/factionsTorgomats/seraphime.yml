@@ -477,7 +477,7 @@
         BaseGlockMag10: 43
         BaseGSH-18Mag10: 43
         BaseAPSMag: 60
-        SpeedLoader45ACPEmpty: 38
+        STSpeedLoader45ACPEmpty: 38
         545Mag20: 63
         545Mag30: 88
         556Mag20: 63
@@ -648,7 +648,7 @@
         BaseTEC9Mag: 120
         BaseGlockMag10: 100
         TTMag: 98
-        SpeedLoader45ACPEmpty: 98
+        STSpeedLoader45ACPEmpty: 98
         BaseAPSMag: 100
         P90Mag: 300
     - name: shop-category-ammunition

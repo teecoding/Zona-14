@@ -35,7 +35,7 @@
           priority: 1
           whitelist:
             tags:
-              - Cartridge739
+              - STCartridge739
     - type: GunWieldBonus
       minAngle: -70
       maxAngle: -60

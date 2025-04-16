@@ -89,7 +89,7 @@
         BaseGlockMag10: 135
         BaseGSH-18Mag10: 135
         BaseAPSMag: 225
-        SpeedLoader45ACPEmpty: 120
+        STSpeedLoader45ACPEmpty: 120
         545Mag20: 175
         545Mag30: 275
         556Mag20: 200

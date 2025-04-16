@@ -43,7 +43,7 @@
         priority: 1
         whitelist:
           tags:
-            - Cartridge545
+            - STCartridge545
   - type: Clothing
     sprite: _Stalker/Objects/Weapons/Guns/Rifles/aks74.rsi
   - type: Item

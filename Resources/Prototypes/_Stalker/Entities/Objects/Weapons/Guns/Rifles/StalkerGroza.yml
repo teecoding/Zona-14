@@ -56,8 +56,8 @@
               - STWeaponModuleRifleScopeRu
         gun_chamber:
           name: Chamber
-          startingItem: Cartridge545FMJ
+          startingItem: STCartridge545FMJ
           priority: 1
           whitelist:
             tags:
-              - Cartridge545
+              - STCartridge545

@@ -1,103 +1,75 @@
 - type: entity
+  abstract: true
   parent: STBaseWeaponSniper
+  id: STBaseWeaponRifleSVDS
+  components:
+  - type: STWeight
+    self: 4.8
+  - type: Clothing
+    sprite: _Stalker/Objects/Weapons/Guns/Snipers/svd/svd.rsi
+  - type: Item
+    sprite: _Stalker/Objects/Weapons/Guns/Snipers/svd/svd.rsi
+  - type: Sprite
+    sprite: _Stalker/Objects/Weapons/Guns/Snipers/svd/svd.rsi
+  - type: Gun
+    soundGunshot:
+      path: /Audio/_Stalker/Effects/Guns/svd.ogg
+    minAngle: 50
+    maxAngle: 120
+    angleDecay: 60
+    angleIncrease: 2
+    fireRate: 1
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: 754Mag10
+        insertSound: /Audio/_Stalker/Weapons/Guns/RifleGen/MagIn/rifle_magin.ogg
+        ejectSound: /Audio/_Stalker/Weapons/Guns/RifleGen/MagOut/rifle_magout.ogg
+        priority: 4
+        whitelist:
+          tags:
+          - Magazine754
+      gun_module_scope:
+        name: Scope
+        priority: 3
+        whitelist:
+          tags:
+          - STWeaponModuleSniperSight
+      gun_module_muzzle:
+        name: Muzzle
+        priority: 2
+        whitelist:
+          tags:
+          - STWeaponModuleSniperSilencer
+      gun_chamber:
+        name: Chamber
+        startingItem:
+        priority: 1
+        whitelist:
+          tags:
+          - STCartridge754
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_module_muzzle: !type:ContainerSlot
+      gun_module_scope: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: Scope
+    zoom: 1.2
+    offset: 8
+
+- type: entity
+  parent: STBaseWeaponRifleSVDS
   id: STWeaponRifleSVDS
-  name: СВДС
-  description: Снайперская Винтовка Драгунова Складная, улучшенная версия СВД под тот же 7,62х54 с прицелом средней дальности.
-  suffix: ST, Sniper
-  components:
-    - type: STWeight
-      self: 4.8
-    - type: Clothing
-      sprite: _Stalker/Objects/Weapons/Guns/Snipers/svd/svd.rsi
-    - type: Item
-      sprite: _Stalker/Objects/Weapons/Guns/Snipers/svd/svd.rsi
-    - type: Sprite
-      sprite: _Stalker/Objects/Weapons/Guns/Snipers/svd/svd.rsi
-      layers:
-      - state: base
-        map: ["enum.GunVisualLayers.Base"]
-      - state: mag-0
-        map: ["enum.GunVisualLayers.Mag"]
-      - state: muzzle
-        map: ["enum.GunVisualLayers.Muzzle"]
-      - state: sight
-        map: ["enum.GunVisualLayers.Scope"]
-    - type: Gun
-      soundGunshot:
-        path: /Audio/_Stalker/Effects/Guns/svd.ogg
-      projectileSpeed: 55
-      minAngle: 50
-      maxAngle: 120
-      angleDecay: 60
-      angleIncrease: 2
-      fireRate: 1
-    - type: ItemSlots
-      slots:
-        gun_magazine:
-          name: Magazine
-          startingItem: 754Mag10
-          insertSound: /Audio/_Stalker/Weapons/Guns/RifleGen/MagIn/rifle_magin.ogg
-          ejectSound: /Audio/_Stalker/Weapons/Guns/RifleGen/MagOut/rifle_magout.ogg
-          priority: 4
-          whitelist:
-            tags:
-              - Magazine754
-        gun_module_scope:
-          name: Scope
-          priority: 3
-          whitelist:
-            tags:
-              - STWeaponModuleSniperSight
-        gun_module_muzzle:
-          name: Muzzle
-          priority: 2
-          whitelist:
-            tags:
-              - STWeaponModuleSniperSilencer
-        gun_chamber:
-          name: Chamber
-          startingItem:
-          priority: 1
-          whitelist:
-            tags:
-              - Cartridge754
-    - type: ContainerContainer
-      containers:
-        gun_magazine: !type:ContainerSlot
-        gun_module_muzzle: !type:ContainerSlot
-        gun_module_scope: !type:ContainerSlot
-        gun_chamber: !type:ContainerSlot
-    - type: MagazineVisuals
-      magState: mag
-      steps: 1
-      zeroVisible: true
-    - type: Scope
-      zoom: 1.2
-      offset: 8
-
-#
-# Скины
-#
-- type: entity
-  name: СВДС Завета
-  parent: STWeaponRifleSVDS
-  id: STWeaponRifleCovenantSVDS
-  description: Снайперская Винтовка Драгунова Складная Завета, улучшенная версия СВД под тот же 7,62x54 с прицелом средней дальности.
-  suffix: ST, Sniper, Завет, Скин
-  components:
-    - type: Clothing
-      sprite: _Stalker/Objects/Weapons/Guns/Snipers/svd/covenant_svd.rsi
-    - type: Item
-      sprite: _Stalker/Objects/Weapons/Guns/Snipers/svd/covenant_svd.rsi
-    - type: Sprite
-      sprite: _Stalker/Objects/Weapons/Guns/Snipers/svd/covenant_svd.rsi
+  name: SVDS (Dragunov Sniper Rifle)
+  description: A modernized folding version of the legendary SVD sniper rifle, chambered in 7.62x54mmR. Features improved ergonomics and comes equipped with a medium-range scope. A favorite among Zone marksmen for its reliability and stopping power.
 
 - type: entity
-  parent: STWeaponRifleSVDS
+  parent: STBaseWeaponRifleSVDS
   id: STWeaponRifleSVDSGrass
-  name: СВДС маскировочный
-  description: Снайперская Винтовка Драгунова Складная, улучшенная версия СВД под тот же 7,62х54 с прицелом средней дальности. С камуфляжной сеткой и небольшим напиллингом.
-  suffix: ST, Скин
+  name: SVDS Ghillie Sniper Rifle
+  description: A carefully modified SVDS with camouflage netting and minor tuning for maximum concealment in the Zone's wilderness. The 7.62x54mmR rounds ensure no mutant walks away from a well-placed shot.
   components:
   - type: Clothing
     sprite: _Stalker/Objects/Weapons/Guns/Snipers/svd/srdcGrass.rsi
@@ -107,11 +79,23 @@
     sprite: _Stalker/Objects/Weapons/Guns/Snipers/svd/srdcGrass.rsi
 
 - type: entity
-  parent: STWeaponRifleSVDS
+  parent: STBaseWeaponRifleSVDS
+  id: STWeaponRifleCovenantSVDS
+  name: Covenant SVDS Sniper Rifle
+  description: A custom SVDS variant used by Covenant faction snipers. Features unique camouflage and faction markings while retaining all the deadly precision of the original. Chambered in 7.62x54mmR.
+  components:
+  - type: Clothing
+    sprite: _Stalker/Objects/Weapons/Guns/Snipers/svd/covenant_svd.rsi
+  - type: Item
+    sprite: _Stalker/Objects/Weapons/Guns/Snipers/svd/covenant_svd.rsi
+  - type: Sprite
+    sprite: _Stalker/Objects/Weapons/Guns/Snipers/svd/covenant_svd.rsi
+
+- type: entity
+  parent: STBaseWeaponRifleSVDS
   id: STWeaponRifleSVU
-  name: СВУ
-  description: Снайперская Винтовка Укороченная, улучшенная версия СВД под тот же 7,62х54 с прицелом средней дальности.
-  suffix: ST, Скин
+  name: SVU Compact Sniper Rifle
+  description: A bullpup conversion of the SVDS designed for urban operations in the Zone. The shortened barrel reduces range but improves handling in tight spaces, while still delivering 7.62x54mmR stopping power.
   components:
   - type: Clothing
     sprite: _Stalker/Objects/Weapons/Guns/Snipers/svd/svu.rsi
@@ -121,11 +105,10 @@
     sprite: _Stalker/Objects/Weapons/Guns/Snipers/svd/svu.rsi
 
 - type: entity
-  parent: STWeaponRifleSVDS
+  parent: STBaseWeaponRifleSVDS
   id: STWeaponRifleSVUSera
-  name: СВУ серафимов
-  description: Снайперская Винтовка Укороченная, улучшенная версия СВД под тот же 7,62х54 с прицелом средней дальности.
-  suffix: ST, Скин
+  name: Seraphim SVU Sniper Rifle
+  description: An elite SVU variant used by the mysterious Seraphim faction. Features advanced modifications and distinctive white finish, making it both deadly and recognizable in the Zone's harsh environment.
   components:
   - type: Clothing
     sprite: _Stalker/Objects/Weapons/Guns/Snipers/svd/svusera.rsi

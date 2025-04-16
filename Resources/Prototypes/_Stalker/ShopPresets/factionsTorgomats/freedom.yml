@@ -107,7 +107,7 @@
         BaseGlockMag10: 100
         GlockMag24: 280
         GlockMag33: 440
-        SpeedLoader45ACPEmpty: 98
+        STSpeedLoader45ACPEmpty: 98
     - name: shop-category-ammunition
       priority: 3
       items:

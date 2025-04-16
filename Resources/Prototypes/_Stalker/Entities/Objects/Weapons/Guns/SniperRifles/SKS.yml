@@ -1,30 +1,40 @@
 - type: entity
-  name: СКС
-  suffix: ST
+  abstract: true
   parent: STBaseWeaponSniper
-  id: STWeaponRifleSKS
-  description: Самозарядный карабин Симонова под 7.62х39 с базовым неотъёмным магазином на 10 патрон. Мощный калибр за небольшие деньги со своими ограничениями.
+  id: STBaseWeaponRifleSKS
   components:
-  - type: Clothing
-    sprite: _Stalker/Objects/Weapons/Guns/Snipers/sks.rsi
   - type: STWeight
     self: 3.75
+  - type: Clothing
+    sprite: _Stalker/Objects/Weapons/Guns/Snipers/sks.rsi
   - type: Item
     sprite: _Stalker/Objects/Weapons/Guns/Snipers/sks.rsi
-  - type: BallisticAmmoProvider
-    capacity: 10
-    proto: Cartridge739PC
-    whitelist:
-      tags:
-      - Cartridge739
   - type: Sprite
     sprite: _Stalker/Objects/Weapons/Guns/Snipers/sks.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: muzzle
+      map: ["enum.GunVisualLayers.Muzzle"]
+    - state: sight
+      map: ["enum.GunVisualLayers.Scope"]
   - type: Gun
     soundGunshot:
       path: /Audio/_Stalker/Effects/Guns/sks_shoot.ogg
-    projectileSpeed: 35
     minAngle: 62
     maxAngle: 80
     angleIncrease: 5.5
     angleDecay: 27.5
     fireRate: 2
+  - type: BallisticAmmoProvider
+    capacity: 10
+    proto: STCartridge739PC
+    whitelist:
+      tags:
+      - STCartridge739
+
+- type: entity
+  parent: STBaseWeaponRifleSKS
+  id: STWeaponRifleSKS
+  name: SKS Carbine
+  description: The Simonov self-loading carbine chambered in 7.62x39mm with fixed 10-round magazine. Offers powerful caliber at low cost, though with certain limitations in Zone conditions.

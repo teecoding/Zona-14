@@ -98,7 +98,7 @@
 #       ammo:
 #         maxVol: 15
 #   - type: CartridgeAmmo
-#     proto: Cartridge918Tranq
+#     proto: STCartridge918Tranq
 #     count: 1
 #   - type: RefillableSolution
 #     solution: ammo
@@ -109,9 +109,9 @@
 #     solution: ammo
 
 # - type: entity
-#   id: Cartridge918Tranq
+#   id: STCartridge918Tranq
 #   name: Патрон (9х18) tranq
-#   parent: BaseCartridge918
+#   parent: BaseSTCartridge918
 #   components:
 #   - type: CartridgeAmmo
 #     proto: Bullet918Tranquilizer
@@ -141,7 +141,7 @@
 #       ammo:
 #         maxVol: 150
 #   - type: CartridgeAmmo
-#     proto: Cartridge918Freezing
+#     proto: STCartridge918Freezing
 #     count: 1
 #   - type: RefillableSolution
 #     solution: ammo
@@ -152,9 +152,9 @@
 #     solution: ammo
 
 # - type: entity
-#   id: Cartridge918Freezing
+#   id: STCartridge918Freezing
 #   name: Патрон (9х18) freeze
-#   parent: BaseCartridge918
+#   parent: BaseSTCartridge918
 #   components:
 #   - type: CartridgeAmmo
 #     proto: Bullet918Tranquilizer
