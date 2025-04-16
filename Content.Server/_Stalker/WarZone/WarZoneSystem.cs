@@ -151,43 +151,49 @@ public sealed partial class WarZoneSystem : EntitySystem
         if (!_prototypeManager.TryIndex<STWarZonePrototype>(comp.ZoneProto, out var wzProto))
             return;
 
-        // If multiple entities/factions are present, reset capture progress and attacker info.
-        if (comp.PresentEntities.Count > 1)
-        {
-            // Announce abandonment if there was a single attacker before
-            AnnounceCaptureAbandonedLocal(zone, comp);
-            ResetCaptureProgress(comp);
-            // Keep track of who is present, but don't allow capture progress.
-        }
+        // --- Capture Logic Overhaul ---
 
-        if (comp.PresentBandProtoIds.Count == 0 && comp.PresentFactionProtoIds.Count == 0)
+        // 1. If no bands are present, no capture progress by bands. Reset if needed.
+        //    (Future enhancement could handle faction-only captures here if desired)
+        if (comp.PresentBandProtoIds.Count == 0)
         {
+            AnnounceCaptureAbandonedLocal(zone, comp); // Announce if there *was* an attacker
             ResetCaptureProgress(comp);
-
-            if (comp.CurrentAttackerBandProtoId != null || comp.CurrentAttackerFactionProtoId != null)
-                AnnounceCaptureAbandonedLocal(zone, comp);
+            // Reset attacker info as well, since no band is present
+            comp.CurrentAttackerBandProtoId = null;
+            comp.CurrentAttackerFactionProtoId = null;
             return;
         }
 
-        string? attackerBand = null;
-        string? attackerFaction = null;
-
-        // Determine the single attacker's band/faction if only one entity is present
-        EntityUid? attackerEntity = null;
-        if (comp.PresentEntities.Count == 1)
+        // 2. Check for conflict: More than one *different* band present.
+        if (comp.PresentBandProtoIds.Count > 1)
         {
-            attackerEntity = GetFirstEntity(comp.PresentEntities);
+            AnnounceCaptureAbandonedLocal(zone, comp); // Announce abandonment due to conflict
+            ResetCaptureProgress(comp);
+            // Reset attacker info due to conflict
+            comp.CurrentAttackerBandProtoId = null;
+            comp.CurrentAttackerFactionProtoId = null;
+            return; // Stop capture progress due to conflict
         }
 
-        if (comp.PresentBandProtoIds.Count == 1)
-            attackerBand = GetFirst(comp.PresentBandProtoIds);
-        if (comp.PresentFactionProtoIds.Count == 1)
-            attackerFaction = GetFirst(comp.PresentFactionProtoIds);
+        // 3. At this point, PresentBandProtoIds.Count == 1. Identify the single attacker band.
+        //    Multiple entities from the *same* band are allowed.
+        string? attackerBand = GetFirst(comp.PresentBandProtoIds); // Should not be null due to check 1
 
-        // If the only present entity is the defender, do nothing.
+        // Determine the associated faction based *only* on the single present band.
+        // This avoids issues if stray faction IDs somehow remain in PresentFactionProtoIds.
+        string? associatedFaction = null;
+        if (attackerBand != null && _prototypeManager.TryIndex<STBandPrototype>(attackerBand, out var bandProto))
+        {
+            associatedFaction = bandProto.FactionId; // Get faction directly from the band prototype
+        }
 
-        if ((attackerBand != null && attackerBand == comp.DefendingBandProtoId) ||
-            (attackerFaction != null && attackerFaction == comp.DefendingFactionProtoId))
+        // Get *an* entity for potential popups/feedback. Doesn't matter which one if they are from the same band.
+        EntityUid? attackerEntity = GetFirstEntity(comp.PresentEntities);
+
+
+        // 4. Check if the single present band is the defender.
+        if (attackerBand != null && attackerBand == comp.DefendingBandProtoId)
         {
             ResetAllRequirements(zone);
             return;
@@ -210,19 +216,24 @@ public sealed partial class WarZoneSystem : EntitySystem
             return; // Block capture attempt due to cooldown
         }
 
-        // Check if it's a new, valid, non-defending attacker starting the capture.
-        bool isNewAttacker = (attackerBand != comp.CurrentAttackerBandProtoId || attackerFaction != comp.CurrentAttackerFactionProtoId);
-        bool isValidAttacker = (attackerBand != null || attackerFaction != null);
-        bool isNotDefender = !((attackerBand != null && attackerBand == comp.DefendingBandProtoId) || (attackerFaction != null && attackerFaction == comp.DefendingFactionProtoId));
+        // 6. Check if it's a new attacker *band* starting the capture.
+        //    isValidAttacker is implicitly true because attackerBand is not null here.
+        //    isNotDefender was checked in step 4.
+        bool isNewAttacker = (attackerBand != comp.CurrentAttackerBandProtoId); // Only check band change
 
-        if (comp.InitialLoadComplete && isValidAttacker && isNotDefender && isNewAttacker)
+        if (comp.InitialLoadComplete && isNewAttacker) // Simplified condition
         {
-            comp.CurrentAttackerBandProtoId = attackerBand;
-            comp.CurrentAttackerFactionProtoId = attackerFaction;
-            AnnounceCaptureStartedLocal(zone, comp, attackerBand, attackerFaction);
-        }
+            // If it's a new attacker, reset progress before starting announcement/capture
+            // This prevents inheriting progress from a previous, different attacker.
+            ResetCaptureProgress(comp);
 
-        // Prepare data for requirement checks
+            comp.CurrentAttackerBandProtoId = attackerBand;
+            comp.CurrentAttackerFactionProtoId = associatedFaction; // Store associated faction
+            AnnounceCaptureStartedLocal(zone, comp, attackerBand, associatedFaction); // Announce with both
+        }
+        // If it's the *same* attacker band continuing the capture, we don't reset progress or re-announce.
+
+        // 7. Prepare data for requirement checks
         var ownerships = new Dictionary<ProtoId<STWarZonePrototype>, (string? BandProtoId, string? FactionProtoId)>();
         var lastCaptureTimes = new Dictionary<ProtoId<STWarZonePrototype>, DateTime?>();
         var zonePrototypes = new Dictionary<ProtoId<STWarZonePrototype>, STWarZonePrototype>();
@@ -270,8 +281,8 @@ public sealed partial class WarZoneSystem : EntitySystem
             foreach (var req in wzProto.Requirements)
             {
                 var blockReason = req.Check(
-                    attackerBand,
-                    attackerFaction,
+                    attackerBand,       // The single capturing band
+                    associatedFaction,  // The faction associated with that band
                     ownerships,
                     lastCaptureTimes,
                     zonePrototypes,
@@ -303,29 +314,26 @@ public sealed partial class WarZoneSystem : EntitySystem
         // Requirements and capture time met! Set the new defender.
         // Local announcement moved earlier and into its own method.
 
+        // 9. Capture complete! Set the new defender band and its associated faction.
         comp.DefendingBandProtoId = attackerBand;
-        comp.DefendingFactionProtoId = attackerFaction;
+        comp.DefendingFactionProtoId = associatedFaction; // Use the associated faction
 
-        ProtoId<STBandPrototype>? bandProtoId = null;
-        ProtoId<NpcFactionPrototype>? factionProtoId = null;
-
+        // Prepare ProtoIds for DB update
+        ProtoId<STBandPrototype>? defendingBandProtoId = null;
         if (attackerBand != null)
-        {
-            bandProtoId = attackerBand;
-        }
+            defendingBandProtoId = new ProtoId<STBandPrototype>(attackerBand);
 
-        if (attackerFaction != null)
-        {
-            factionProtoId = attackerFaction;
-        }
+        ProtoId<NpcFactionPrototype>? defendingFactionProtoId = null;
+        if (associatedFaction != null)
+            defendingFactionProtoId = new ProtoId<NpcFactionPrototype>(associatedFaction);
 
-        if (bandProtoId != null && factionProtoId != null)
-            bandProtoId = null;
-
+        // Update ownership in the database
+        // Store the BandId if a band captured it. Store the FactionId only if no band captured it (e.g., future NPC capture).
+        // This prioritizes band ownership as per the apparent design intent.
         await _dbManager.SetStalkerZoneOwnershipAsync(
             comp.ZoneProto,
-            bandProtoId,
-            factionProtoId);
+            defendingBandProtoId, // Pass the band proto ID (will be null if attackerBand was null)
+            defendingBandProtoId == null ? defendingFactionProtoId : null); // Pass faction only if band is null
 
         if (wzProto.CaptureCooldownHours > 0)
         {
@@ -435,7 +443,7 @@ public sealed partial class WarZoneSystem : EntitySystem
         string? bandId = null;
         string? factionId = null;
 
-        if (_prototypeManager.TryIndex<STBandPrototype>(bandProtoId, out var bandProto))
+        if (bandProtoId != default && _prototypeManager.TryIndex<STBandPrototype>(bandProtoId, out var bandProto))
         {
             bandId = bandProto.ID;
 
