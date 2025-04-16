@@ -121,7 +121,7 @@
         STWeaponRifleStalkerAK12Sera: 900
         STWeaponRifleStalkerAK12: 900
         # Smg
-        STWeaponSMGMp5: 360
+        STWeaponSMGMP5: 360
         STWeaponSMGStalkerCP2VereskSera: 300
         STWeaponSMGStalkerCP2Veresk: 300
         # Other
@@ -619,7 +619,7 @@
         STWeaponRifleStalkerAK12Sera: 6190
         STWeaponRifleSVUSera: 7900
           # Smg
-        STWeaponSMGMp5: 1100
+        STWeaponSMGMP5: 1100
         STWeaponSMGStalkerCP2VereskSera: 1800
           # Other
         WeaponPistolStalkerTT: 550

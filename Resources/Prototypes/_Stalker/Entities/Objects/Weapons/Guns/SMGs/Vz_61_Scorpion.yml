@@ -1,7 +1,7 @@
 - type: entity
   name: vz. 61 "Скорпион"
   suffix: ST
-  parent: STBaseWeaponSubMachineGun
+  parent: STBaseWeaponSMG
   id: STWeaponSMGViper
   description: Иконический чешский компактный ПП под 9х18, который можно использовать как вторичное оружие, ибо спокойно контролируется одной рукой.
   components:

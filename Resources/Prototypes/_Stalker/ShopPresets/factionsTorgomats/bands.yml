@@ -126,15 +126,15 @@
     WeaponPistolStalkerGlock: 100
     WeaponStalkerPistolTec9: 125
     STWeaponSMGMP40: 150
-    STWeaponSMGMp5: 850
+    STWeaponSMGMP5: 850
     STWeaponSMGPP91: 375
-    WeaponSubMachineGunStalkerTommyGun: 2500
+    STWeaponSMGThompson: 2500
     STWeaponSMGStalkerCP2Veresk: 750
     STWeaponSubMachineGunVityaz: 750
 
     #7.62x25
     WeaponPistolStalkerTT: 125
-    STWeaponPPsh: 600
+    STWeaponSMGPPSh41: 600
 
     #9x39
     STWeaponRifleStalkerVAL: 7500
@@ -165,9 +165,9 @@
         STWeaponGunAKS74U: 2000
         STWeaponRifleStalkerAKS74: 4000
         # Smg
-        STWeaponSMGMp5: 1200
+        STWeaponSMGMP5: 1200
         STWeaponSMGViper: 500
-        STWeaponPPsh: 1000
+        STWeaponSMGPPSh41: 1000
         # Other
         WeaponPistolStalkerTT: 250
         WeaponStalkerPistolTec9: 250

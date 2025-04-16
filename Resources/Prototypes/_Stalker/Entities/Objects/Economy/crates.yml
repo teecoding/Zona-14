@@ -1340,7 +1340,7 @@
         - id: BaseMP5Mag
         - id: BaseMP5Mag
         - id: BaseMP5Mag
-        - id: STWeaponSMGMp5
+        - id: STWeaponSMGMP5
         - id: WeaponPistolStalkerPM
         - id: 918PSTBox
         - id: BasePMMag

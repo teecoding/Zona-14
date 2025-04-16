@@ -32,7 +32,7 @@
         STWeaponRifleStalkerVepr: 9800
         STWeaponRifleVSS: 8700
         STWeaponSniperMosin: 2450
-        STWeaponSMGMp5: 2450
+        STWeaponSMGMP5: 2450
         STWeaponSMGBizon: 3400
     - name: Магазины
       priority: 2

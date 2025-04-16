@@ -2,7 +2,7 @@
 - type: entity
   name: СР-2 «Вереск»
   suffix: ST, Скин
-  parent: STBaseWeaponSubMachineGun
+  parent: STBaseWeaponSMG
   id: STWeaponSMGStalkerCP2Veresk
   description: Компактный пистолет-пулемет, разработанный под мощный бронебойный патрон 9x21мм по заказу ФСБ и ФСО РФ. Этот пистолет-пулемёт является кустарной модификацией, позволяющей вести огонь калибром 9х19 Парабеллум.
   components:
@@ -39,11 +39,11 @@
               - MagazineVityaz
         gun_chamber:
           name: Chamber
-          startingItem: Cartridge919PSOGJ
+          startingItem: STCartridge919PSOGJ
           priority: 1
           whitelist:
             tags:
-              - Cartridge919
+              - STCartridge919
 
 - type: entity
   name: СР-2 «Вереск» серафимов
@@ -72,8 +72,8 @@
               - MagazineVityaz
         gun_chamber:
           name: Chamber
-          startingItem: Cartridge919PSOGJ
+          startingItem: STCartridge919PSOGJ
           priority: 1
           whitelist:
             tags:
-              - Cartridge919
+              - STCartridge919

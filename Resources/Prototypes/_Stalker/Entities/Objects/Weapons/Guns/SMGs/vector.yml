@@ -3,7 +3,7 @@
 - type: entity
   name: KRISS Vector-9
   suffix: ST, Спонсор
-  parent: STWeaponSMGMp5
+  parent: STWeaponSMGMP5
   id: STWeaponSMGVector9
   description: ПП нового поколения с свободным затвором, а значит огромной скорострельностью.
   components:
@@ -55,11 +55,11 @@
           - MagazineMP5
         gun_chamber:
           name: Chamber
-          startingItem: Cartridge919PSOGJ
+          startingItem: STCartridge919PSOGJ
           priority: 1
           whitelist:
             tags:
-            - Cartridge919
+            - STCartridge919
       gun_module_muzzle:
         name: Muzzle
         priority: 3

@@ -1,22 +1,16 @@
 - type: entity
-  name: BaseSMG
-  parent: STBaseWeaponGun
-  id: STBaseWeaponSubMachineGun
-  description: A rooty tooty point and shooty.
   abstract: true
+  parent: STBaseWeaponGun
+  id: STBaseWeaponSMG
+  name: smg
+  description: A rooty tooty point and shooty.
+  suffix: Weapon, SMG
   components:
-  - type: RepositoryItem
-    categoryName: Оружие
   - type: Clothing
     sprite: Objects/Weapons/Guns/SMGs/atreides.rsi
-    quickEquip: false
-    slots:
-    - Back
-    - suitStorage
   - type: Item
-    size: Large
     shape:
-      - 0,0,4,1
+    - 0,0,4,1
   - type: Sprite
     layers:
     - state: base
@@ -33,8 +27,8 @@
     maxAngle: -40
   - type: PullDoAfter
     pullTime: 1.5
-  - type: Craftable
   - type: Gun
+    projectileSpeed: 50
     selectedMode: FullAuto
     availableModes:
     - FullAuto
@@ -43,7 +37,6 @@
   - type: ChamberMagazineAmmoProvider
     soundRack:
       path: /Audio/_Stalker/Weapons/Guns/RifleGen/Cock/rifle_cock.ogg
-  - type: STWeaponModuleContainer
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -54,7 +47,3 @@
     muzzleState: muzzle
   - type: STUnderbarrelVisuals
     underbarrelState: grip
-  - type: MagazineVisuals
-    magState: mag
-    steps: 1
-    zeroVisible: true

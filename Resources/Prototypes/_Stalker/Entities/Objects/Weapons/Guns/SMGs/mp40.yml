@@ -1,35 +1,38 @@
 - type: entity
   abstract: true
   parent: STBaseWeaponSMG
-  id: STBaseWeaponSMGFNP90
+  id: STBaseWeaponSMGMP40
   components:
   - type: STWeight
-    self: 2.9
+    SelfWeight: 3.2
   - type: Item
-    sprite: _Stalker/Objects/Weapons/Guns/SMGs/p90.rsi
+    sprite: _Stalker/Objects/Weapons/Guns/SMGs/mp40.rsi
+    shape:
+      - 0,0,6,1
   - type: Sprite
-    sprite: _Stalker/Objects/Weapons/Guns/SMGs/p90.rsi
+    sprite: _Stalker/Objects/Weapons/Guns/SMGs/mp40.rsi
   - type: Clothing
-    sprite: _Stalker/Objects/Weapons/Guns/SMGs/p90.rsi
+    sprite: _Stalker/Objects/Weapons/Guns/SMGs/mp40.rsi
+    equipDelay: 1
   - type: Gun
-    minAngle: 45
-    maxAngle: 80
-    angleIncrease: 2
-    angleDecay: 10
-    fireRate: 10
+    minAngle: 52
+    maxAngle: 70
+    angleIncrease: 3.5
+    angleDecay: 17.5
+    fireRate: 4
     soundGunshot:
-      path: /Audio/_Stalker/Effects/Guns/919.ogg
+      path: /Audio/_Stalker/Effects/Guns/mp40.ogg
   - type: ItemSlots
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: P90Mag
+        startingItem: MP40Mag
         insertSound: /Audio/_Stalker/Weapons/Guns/RifleGen/MagIn/rifle_magin.ogg
         ejectSound: /Audio/_Stalker/Weapons/Guns/RifleGen/MagOut/rifle_magout.ogg
         priority: 4
         whitelist:
           tags:
-          - P90Magazin
+          - MagazineMP40
       gun_module_muzzle:
         name: Muzzle
         priority: 3
@@ -51,7 +54,7 @@
           - STCartridge919
 
 - type: entity
-  parent: STBaseWeaponSMGFNP90
-  id: STWeaponSMGFNP90
-  name: FN P90 PDW
-  description: The FN P90 personal defense weapon, chambered in 5.7x28mm FN. Its compact bullpup design and 50-round top-mounted magazine make it ideal for close-quarters combat in Zone conditions.
+  parent: STBaseWeaponSMGMP40
+  id: STWeaponSMGMP40
+  name: MP-40 Submachine Gun
+  description: The iconic German MP-40 submachine gun chambered in 9x19mm Parabellum. While outdated by modern standards, its simple design and reliability make it surprisingly effective in Zone conditions.

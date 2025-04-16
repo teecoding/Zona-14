@@ -81,9 +81,9 @@
           prob: 0.25
         - id: STWeaponShotgunProtecta
           prob: 0.05
-        - id: STWeaponSMGMp5
+        - id: STWeaponSMGMP5
           prob: 0.2
-        - id: STWeaponSMGMp5
+        - id: STWeaponSMGMP5
           prob: 0.2
         - id: STWeaponRifleSig550
           prob: 0.2
@@ -177,7 +177,7 @@
         - id: 7mmBuckshotBox
           prob: 0.15
         - id: 7mmBuckshotBox
-          prob: 0.15   
+          prob: 0.15
         - id: 919PSTBox
           prob: 0.3
         - id: 919PSTBox

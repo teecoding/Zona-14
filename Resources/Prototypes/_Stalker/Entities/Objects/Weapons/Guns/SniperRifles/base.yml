@@ -4,7 +4,7 @@
   id: STBaseWeaponSniper
   name: sniper
   description: A rooty tooty point and shooty.
-  suffix: ST, Weapon, Sniper
+  suffix: Weapon, Sniper
   components:
   - type: Sprite
     layers:
@@ -16,7 +16,6 @@
       map: ["enum.GunVisualLayers.Muzzle"]
     - state: sight
       map: ["enum.GunVisualLayers.Scope"]
-  - type: Craftable
   - type: Item
     size: Large
     shape:
@@ -78,7 +77,3 @@
     requireWielding: true
     offset: 9
     useInHand: false
-  - type: MagazineVisuals
-    magState: mag
-    steps: 1
-    zeroVisible: true

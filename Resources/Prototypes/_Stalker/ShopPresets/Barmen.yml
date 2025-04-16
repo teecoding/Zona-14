@@ -79,7 +79,7 @@
         STWeaponRifleStalkerAKM: 3750
         STWeaponSniperMosin: 1300
         STWeaponRifleStalkerFAL: 2125
-        STWeaponSMGMp5: 2600
+        STWeaponSMGMP5: 2600
         STWeaponSMGBizon: 2300
     - name: shop-category-magazines
       priority: 2

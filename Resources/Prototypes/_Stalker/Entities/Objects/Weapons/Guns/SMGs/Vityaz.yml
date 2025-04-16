@@ -1,7 +1,7 @@
 - type: entity
   name: ПП-19-01 "Витязь"
   suffix: ST
-  parent: STBaseWeaponSubMachineGun
+  parent: STBaseWeaponSMG
   id: STWeaponSubMachineGunVityaz
   description: Довольно свежий ПП российского производства под НАТОВский 9х19.
   components:
@@ -47,8 +47,8 @@
               - STWeaponModuleSMGGrip
         gun_chamber:
           name: Chamber
-          startingItem: Cartridge919PSOGJ
+          startingItem: STCartridge919PSOGJ
           priority: 1
           whitelist:
             tags:
-              - Cartridge919
+              - STCartridge919
