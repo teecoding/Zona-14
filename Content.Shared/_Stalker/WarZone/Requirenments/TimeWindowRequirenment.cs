@@ -22,7 +22,9 @@ public sealed partial class TimeWindowRequirenment : BaseWarZoneRequirenment
         Dictionary<ProtoId<STWarZonePrototype>, DateTime?> lastCaptureTimes,
         Dictionary<ProtoId<STWarZonePrototype>, STWarZonePrototype> zonePrototypes,
         ProtoId<STWarZonePrototype> currentZoneId,
-        float frameTime)
+        float frameTime,
+        EntityUid? attackerEntity,
+        Action<EntityUid, string, (string, object)[]?>? feedbackCallback) // Added attackerEntity and feedbackCallback
     {
         var currentUtcTime = DateTime.UtcNow;
         var currentHour = currentUtcTime.Hour;
@@ -54,6 +56,12 @@ public sealed partial class TimeWindowRequirenment : BaseWarZoneRequirenment
         }
 
         // If we reach here, the time is outside the allowed window
-        return CaptureBlockReason.TimeWindow; // Need to define this enum value
+        if (attackerEntity.HasValue && feedbackCallback != null)
+        {
+            // Provide feedback using the callback
+            var args = new (string, object)[] { ("startHour", StartHourUtc), ("endHour", EndHourUtc) };
+            feedbackCallback(attackerEntity.Value, "st-warzone-timewindow-fail", args);
+        }
+        return CaptureBlockReason.TimeWindow;
     }
 }
