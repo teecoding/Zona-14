@@ -4,12 +4,12 @@
   id: STBaseModuleSilencerSniper
   name: silencer
   components:
-    - type: Sprite
-      sprite: _Stalker/Objects/Weapons/Guns/Snipers/Modules/silencer.rsi
-      scale: 0.5, 0.5
-    - type: Icon
-      sprite: _Stalker/Objects/Weapons/Guns/Snipers/Modules/silencer.rsi
-      scale: 0.5, 0.5
+  - type: Sprite
+    sprite: _Stalker/Objects/Weapons/Guns/Snipers/Modules/silencer.rsi
+    scale: 0.5, 0.5
+  - type: Icon
+    sprite: _Stalker/Objects/Weapons/Guns/Snipers/Modules/silencer.rsi
+    scale: 0.5, 0.5
 
 
 - type: entity
@@ -18,16 +18,16 @@
   name: makeshift sniper rifle silencer RU
   suffix: ST, silencer, T1
   components:
-    - type: Tag
-      tags:
-        - STWeaponModuleSniperSilencer
-    - type: STWeaponModule
-      effect:
-        soundGunshotVolumeAddition: -7
-    - type: Sprite
-      state: sniper_silencer_T1
-    - type: Icon
-      state: sniper_silencer_T1
+  - type: Tag
+    tags:
+      - STWeaponModuleSniperSilencer
+  - type: STWeaponModule
+    effect:
+      soundGunshotVolumeAddition: -7
+  - type: Sprite
+    state: sniper_silencer_T1
+  - type: Icon
+    state: sniper_silencer_T1
 
 - type: entity
   parent: STBaseModuleSilencerSniper
@@ -35,13 +35,13 @@
   name: legal sniper rifle silencer
   suffix: ST, silencer, T2
   components:
-    - type: Tag
-      tags:
-        - STWeaponModuleSniperSilencer
-    - type: STWeaponModule
-      effect:
-        soundGunshotVolumeAddition: -14
-    - type: Sprite
-      state: sniper_silencer_T2
-    - type: Icon
-      state: sniper_silencer_T2
+  - type: Tag
+    tags:
+      - STWeaponModuleSniperSilencer
+  - type: STWeaponModule
+    effect:
+      soundGunshotVolumeAddition: -14
+  - type: Sprite
+    state: sniper_silencer_T2
+  - type: Icon
+    state: sniper_silencer_T2

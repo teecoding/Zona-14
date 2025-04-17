@@ -15,7 +15,7 @@
         WeaponRifleStalkerGroza545: 3500
         STSTWeaponRifleStalkerAK74M: 4800
           # Smg
-        STWeaponSubMachineGunVityaz: 2500
+        STWeaponSMGPP1901: 2500
           # Other
         STWeaponSniperMosin: 1300
     - name: shop-category-magazines

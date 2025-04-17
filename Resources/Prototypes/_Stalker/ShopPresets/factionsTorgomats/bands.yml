@@ -130,7 +130,7 @@
     STWeaponSMGPP91: 375
     STWeaponSMGThompson: 2500
     STWeaponSMGStalkerCP2Veresk: 750
-    STWeaponSubMachineGunVityaz: 750
+    STWeaponSMGPP1901: 750
 
     #7.62x25
     WeaponPistolStalkerTT: 125
@@ -166,7 +166,7 @@
         STWeaponRifleStalkerAKS74: 4000
         # Smg
         STWeaponSMGMP5: 1200
-        STWeaponSMGViper: 500
+        STWeaponSMGVZ61: 500
         STWeaponSMGPPSh41: 1000
         # Other
         WeaponPistolStalkerTT: 250

@@ -199,7 +199,7 @@
           # Smg
         STWeaponSMGPP91: 750
         STWeaponSMGBizon: 1700
-        STWeaponSubMachineGunVityaz: 1500
+        STWeaponSMGPP1901: 1500
           # Other
         STWeaponRifleStalkerAK103: 5000
         WeaponPistolStalkerPM: 100 #T1

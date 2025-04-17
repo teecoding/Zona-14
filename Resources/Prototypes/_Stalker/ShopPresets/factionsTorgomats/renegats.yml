@@ -90,7 +90,7 @@
         STWeaponSMGMP5: 1800
         STWeaponRifleSKS: 1700
         WeaponGameRevolverMateba: 300
-        STWeaponSMGViper: 600
+        STWeaponSMGVZ61: 600
     - name: shop-category-magazines
       priority: 2
       items:

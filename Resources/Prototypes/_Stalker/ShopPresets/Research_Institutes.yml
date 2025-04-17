@@ -14,7 +14,7 @@
         STWeaponShotgunStalkerSPAS: 1350
         STWeaponRevolverSWModel625: 1650
         STWeaponGunAKS74U: 1750
-        STWeaponSubMachineGunVityaz: 2250
+        STWeaponSMGPP1901: 2250
         STWeaponRifleM16: 3000
         STWeaponRifleStalkerAKS74: 3500
     - name: shop-category-magazines

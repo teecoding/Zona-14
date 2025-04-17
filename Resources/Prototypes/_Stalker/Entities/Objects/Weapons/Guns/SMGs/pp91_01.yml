@@ -1,9 +1,7 @@
 - type: entity
-  name: ПП-19-01 "Витязь"
-  suffix: ST
+  abstract: true
   parent: STBaseWeaponSMG
-  id: STWeaponSubMachineGunVityaz
-  description: Довольно свежий ПП российского производства под НАТОВский 9х19.
+  id: STBaseWeaponSMGPP1901
   components:
     - type: STWeight
       self: 2.9
@@ -32,23 +30,29 @@
           priority: 2
           whitelist:
             tags:
-              - MagazineVityaz
+            - MagazineVityaz
         gun_module_muzzle:
           name: Muzzle
           priority: 3
           whitelist:
             tags:
-              - STWeaponModuleSMGSilencer
+            - STWeaponModuleSMGSilencer
         gun_module_underbarrel:
           name: Underbarrel
           priority: 2
           whitelist:
             tags:
-              - STWeaponModuleSMGGrip
+            - STWeaponModuleSMGGrip
         gun_chamber:
           name: Chamber
           startingItem: STCartridge919PSOGJ
           priority: 1
           whitelist:
             tags:
-              - STCartridge919
+            - STCartridge919
+
+- type: entity
+  parent: STBaseWeaponSMGPP1901
+  id: STWeaponSMGPP1901
+  name: PP-19-01 "Vityaz" submachine gun
+  description: A modern Russian submachine gun chambered in 9x19mm Parabellum. Features polymer furniture and folding stock, making it compact yet effective for urban combat scenarios in the Zone.
