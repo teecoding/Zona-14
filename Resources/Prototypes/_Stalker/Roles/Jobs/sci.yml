@@ -35,7 +35,7 @@
         initialTeeth: 3
       - type: NpcFactionMember
         factions:
-        - Military
+        - Sci
 
 - type: job
   id: StalkerISSG

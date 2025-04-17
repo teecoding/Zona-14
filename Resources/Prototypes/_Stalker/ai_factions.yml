@@ -49,6 +49,12 @@
   - Hostile
 
 - type: npcFaction
+  id: Sci
+  hostile:
+  - Mutated
+  - MutatedHunter
+
+- type: npcFaction
   id: Military
   hostile:
   - Mutated
