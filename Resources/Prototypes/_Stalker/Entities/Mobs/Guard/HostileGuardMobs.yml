@@ -36,8 +36,8 @@
     fireRate: 3
     useKey: false
     selectedMode: FullAuto
-    minAngle: 0
-    maxAngle: 35
+    minAngle: 5
+    maxAngle: 50
     angleIncrease: 2
     angleDecay: 20
     availableModes:
