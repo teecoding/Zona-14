@@ -30,6 +30,11 @@
     ZoneArtifactStuntman: 4800
     ZoneArtifactDistorter: 4800
     ZoneArtifactSoul: 3600
+    # Food
+    FoodMeatDogCooked: 50
+    STFoodMeatSpiderCooked: 25
+    FoodMeatBoarCooked: 80
+    
     # Acidic group - 1
     ZoneArtifactBlood: 1200
     ZoneArtifactMeat: 2400

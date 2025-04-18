@@ -9,6 +9,9 @@ public sealed class STCategoryFilterSystem : EntitySystem
 
     public override void Initialize()
     {
-        _cfg.SetCVar(CVars.EntitiesCategoryFilter, "ForkFiltered");
+        // This will remove all vanilla items and all ìtems which are not 
+        // inheriting STBaseEntity (spoiler, about 5% of stalker's items inheriting that
+        // Don't turn it on until you fix that please)
+        // _cfg.SetCVar(CVars.EntitiesCategoryFilter, "ForkFiltered");
     }
 }
