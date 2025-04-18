@@ -32,3 +32,10 @@
     Cartridge545BP: STCartridge545BP
     Cartridge545BS: STCartridge545BS
     Cartridge545NE: STCartridge545NE
+    STWeaponShotgunSaiga12Sera: STWeaponShotgunSaiga12Seraphim
+    STWeaponSMGBizon: STWeaponSMGPP19
+    STWeaponRifleSVDS: STWeaponSniperSVDS
+    STWeaponRifleCovenantSVDS: STWeaponSniperSVDSCovenant
+    STWeaponRifleSVDSGrass: STWeaponSniperSVDSGrass
+    STWeaponRifleSVU: STWeaponSniperSVU
+    STWeaponRifleSVUSera: STWeaponSniperSVUSeraphim
