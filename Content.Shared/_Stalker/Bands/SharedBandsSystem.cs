@@ -39,6 +39,7 @@ namespace Content.Shared._Stalker.Bands
         public bool CanManage { get; }
         public List<WarZoneInfo> WarZones { get; }
         public List<BandPointsInfo> BandPoints { get; }
+        public List<BandShopItem> ShopItems { get; } // Added shop items
 
         public BandsManagingBoundUserInterfaceState(
             string? bandName,
@@ -46,7 +47,8 @@ namespace Content.Shared._Stalker.Bands
             List<BandMemberInfo> members,
             bool canManage,
             List<WarZoneInfo>? warZones,
-            List<BandPointsInfo>? bandPoints)
+            List<BandPointsInfo>? bandPoints,
+            List<BandShopItem>? shopItems) // Added shop items
         {
             BandName = bandName;
             MaxMembers = maxMembers;
@@ -54,6 +56,7 @@ namespace Content.Shared._Stalker.Bands
             CanManage = canManage;
             WarZones = warZones ?? new List<WarZoneInfo>();
             BandPoints = bandPoints ?? new List<BandPointsInfo>();
+            ShopItems = shopItems ?? new List<BandShopItem>(); // Added shop items
         }
     }
 
@@ -134,5 +137,17 @@ namespace Content.Shared._Stalker.Bands
         {
             PlayerUserId = playerUserId;
         }
+    }
+}
+
+// --- New Message for Buying Items ---
+[Serializable, NetSerializable]
+public sealed class BandsManagingBuyItemMessage : BoundUserInterfaceMessage
+{
+    public string ItemId { get; } // The ProductEntity ID of the item to buy
+
+    public BandsManagingBuyItemMessage(string itemId)
+    {
+        ItemId = itemId;
     }
 }
