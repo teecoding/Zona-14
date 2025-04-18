@@ -24,7 +24,7 @@ namespace Content.Client._Stalker.Bands.UI
             {
                 _window.OnAddMemberButtonPressed += AddMember;
                 _window.OnRemoveMemberButtonPressed += RemoveMember;
-                _window.OnBuyItemButtonPressed += BuyItem; // Connect the buy event
+                _window.OnBuyItemButtonPressed += BuyItem;
             }
         }
 
@@ -58,7 +58,7 @@ namespace Content.Client._Stalker.Bands.UI
             {
                 _window.OnAddMemberButtonPressed -= AddMember;
                 _window.OnRemoveMemberButtonPressed -= RemoveMember;
-                _window.OnBuyItemButtonPressed -= BuyItem; // Disconnect the buy event
+                _window.OnBuyItemButtonPressed -= BuyItem;
                 _window.Dispose();
             }
         }

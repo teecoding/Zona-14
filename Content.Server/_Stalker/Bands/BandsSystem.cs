@@ -31,12 +31,10 @@ namespace Content.Server._Stalker.Bands
         [Dependency] private readonly JobWhitelistManager _jobWhitelistManager = default!;
         [Dependency] private readonly WarZoneSystem _warZoneSystem = default!;
         [Dependency] private readonly SharedHandsSystem _hands = default!;
-        [Dependency] private readonly IEntityManager _entityManager = default!; // Added for Spawn
+        [Dependency] private readonly IEntityManager _entityManager = default!;
 
-        // Define a server-side representation combining prototype and potentially DB info
         private sealed record ServerBandInfo(STBandPrototype Prototype, StalkerBand? DbBand = null);
 
-        // Store loaded shop items per managing component instance
         private Dictionary<EntityUid, List<BandShopItem>> _loadedShopItems = new();
 
 
@@ -567,11 +565,7 @@ namespace Content.Server._Stalker.Bands
             Logger.InfoS("bands", $"Player {buyerUserId} (Band: {bandProtoId}) bought item {msg.ItemId} for {itemToBuy.Price} points.");
 
             // 8. Update UI state for all clients viewing this UI
-            UpdateUiState((uid, component), buyer); // Update for the buyer
-                                                    // Consider if you need to update for others viewing the same UI instance.
-                                                    // If multiple people can view the *same* managing UI (e.g., a terminal),
-                                                    // you might need a way to update all subscribed sessions.
-                                                    // For now, just updating the buyer's UI.
+            UpdateUiState((uid, component), buyer);
         }
     }
 }
