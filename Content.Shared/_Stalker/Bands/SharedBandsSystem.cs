@@ -8,6 +8,7 @@ using Robust.Shared.Prototypes;
 using Content.Shared.Actions;
 using Robust.Shared.Serialization;
 using Robust.Shared.Network;
+using Content.Shared._Stalker.Bands;
 
 namespace Content.Shared._Stalker.Bands
 {
@@ -138,16 +139,17 @@ namespace Content.Shared._Stalker.Bands
             PlayerUserId = playerUserId;
         }
     }
-}
 
-// --- New Message for Buying Items ---
-[Serializable, NetSerializable]
-public sealed class BandsManagingBuyItemMessage : BoundUserInterfaceMessage
-{
-    public string ItemId { get; } // The ProductEntity ID of the item to buy
-
-    public BandsManagingBuyItemMessage(string itemId)
+    // --- New Message for Buying Items ---
+    [Serializable, NetSerializable]
+    public sealed class BandsManagingBuyItemMessage : BoundUserInterfaceMessage
     {
-        ItemId = itemId;
+        public string ItemId { get; } // The ProductEntity ID of the item to buy
+
+        public BandsManagingBuyItemMessage(string itemId)
+        {
+            ItemId = itemId;
+        }
     }
 }
+

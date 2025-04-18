@@ -6,7 +6,7 @@ using Robust.Shared.ViewVariables;
 
 namespace Content.Shared._Stalker.Bands
 {
-    [Prototype("stBandShopListings")]
+    [Prototype("stBandShopListings"), Serializable, NetSerializable] // Corrected prototype name to match YAML
     public sealed class BandShopListingsPrototype : IPrototype
     {
         [ViewVariables]
