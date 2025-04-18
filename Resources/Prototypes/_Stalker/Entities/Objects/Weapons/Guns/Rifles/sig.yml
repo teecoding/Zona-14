@@ -60,7 +60,6 @@
           - STCartridge556
 
 - type: entity
-  abstract: true
   parent: STBaseWeaponRifleSIG
   id: STWeaponRifleSIG550
   name: SIG-550

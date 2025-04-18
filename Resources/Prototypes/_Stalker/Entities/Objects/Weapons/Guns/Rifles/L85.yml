@@ -51,3 +51,22 @@
         whitelist:
           tags:
           - STCartridge556
+
+- type: entity
+  parent: STBaseWeaponRifleL85
+  id: STWeaponRifleL85
+  name: L85
+  description: British bullpup assault rifle with unique layout. Extremely rare in the Zone, usually brought by UN military observers. Notable for exceptional accuracy but finicky maintenance.
+
+- type: entity
+  parent: STBaseWeaponRifleL85
+  id: STWeaponRifleL85WhiteStrawberry
+  name: L85 (Raspberry Tea)
+  description: Exotic version in raspberry camouflage. Allegedly custom-ordered for urban operations. In the Zone considered either a sign of bad taste or subtle irony.
+  components:
+  - type: Clothing
+    sprite: _Stalker/Objects/Weapons/Guns/Rifles/_Skins/l85_straberry.rsi
+  - type: Item
+    sprite: _Stalker/Objects/Weapons/Guns/Rifles/_Skins/l85_straberry.rsi
+  - type: Sprite
+    sprite: _Stalker/Objects/Weapons/Guns/Rifles/_Skins/l85_straberry.rsi

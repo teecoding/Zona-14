@@ -53,7 +53,6 @@
           - STCartridge556
 
 - type: entity
-  abstract: true
   parent: STBaseWeaponRifleM16
   id: STWeaponRifleM16
   name: M16
