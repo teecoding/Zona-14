@@ -286,36 +286,46 @@ public sealed class StalkerStorageSystem : SharedStalkerStorageSystem
 
     public void LoadStalkerItemsByEntityUid(EntityUid inputEntity)
     {
-        var deserializedFromJson = new List<IItemStalkerStorage>(0);
-        if (!TryComp(inputEntity, out StalkerRepositoryComponent? _stalkerRepositoryComponent) ||
-            _stalkerRepositoryComponent.LoadedDbJson == string.Empty)
+        var deserializedFromJson = new List<IItemStalkerStorage>();
+        if (!TryComp(inputEntity, out StalkerRepositoryComponent? stalkerRepositoryComponent) || stalkerRepositoryComponent.LoadedDbJson == string.Empty)
             return;
 
-        var fromDbPlayerInventory = InventoryFromJson(_stalkerRepositoryComponent.LoadedDbJson);
+        var fromDbPlayerInventory = InventoryFromJson(stalkerRepositoryComponent.LoadedDbJson);
 
-        foreach (var toCast in fromDbPlayerInventory.AllItems)
+        foreach (var item in fromDbPlayerInventory.AllItems)
         {
-            if (toCast is not IItemStalkerStorage castedItem)
+            if (item is not IItemStalkerStorage storageItem)
                 continue;
 
-            var prototype = castedItem.PrototypeName;
-            if (_mapping.TryGetValue(prototype, out var newPrototype))
-                prototype = newPrototype;
+            storageItem.PrototypeName = MapPrototype(storageItem.PrototypeName);
 
-            if (!_prototype.HasIndex(prototype))
-                Log.Error($"A non-existent prototype entity in the stash {prototype}");
+            if (item is AmmoContainerStalker ammoContainer)
+                ammoContainer.EntProtoIds = MapPrototype(ammoContainer.EntProtoIds);
 
-            castedItem.PrototypeName = prototype;
-            deserializedFromJson.Add(castedItem);
+            deserializedFromJson.Add(storageItem);
         }
 
-        // Добавление предметов в схрон
         foreach (var itemConverted in deserializedFromJson)
         {
-            AddToVendingMachineProtoByName(itemConverted.Identifier(), itemConverted.PrototypeName, _stalkerRepositoryComponent, itemConverted);
-
-            // AddToVendingMachineProtoByName(itemConverted.Identifier(), itemConverted.PrototypeName,vendingComponent,itemConverted);
+            AddToVendingMachineProtoByName(itemConverted.Identifier(), itemConverted.PrototypeName, stalkerRepositoryComponent, itemConverted);
         }
+    }
+
+    private List<EntProtoId> MapPrototype(in List<EntProtoId> protoIds)
+    {
+        return protoIds.Select(MapPrototype).ToList();
+    }
+
+    private EntProtoId MapPrototype(EntProtoId protoId)
+    {
+        var prototype = protoId;
+        if (_mapping.TryGetValue(prototype, out var newPrototype))
+            prototype = newPrototype;
+
+        if (!_prototype.HasIndex(prototype))
+            Log.Error($"A non-existent prototype entity in the stash {prototype}");
+
+        return prototype;
     }
 
     public void SpawnedItem(EntityUid inputItemUid, IItemStalkerStorage? nextSpawnOptions)
