@@ -302,6 +302,9 @@ public sealed class StalkerStorageSystem : SharedStalkerStorageSystem
             if (_mapping.TryGetValue(prototype, out var newPrototype))
                 prototype = newPrototype;
 
+            if (!_prototype.HasIndex(prototype))
+                Log.Error($"A non-existent prototype entity in the stash {prototype}");
+
             castedItem.PrototypeName = prototype;
             deserializedFromJson.Add(castedItem);
         }
