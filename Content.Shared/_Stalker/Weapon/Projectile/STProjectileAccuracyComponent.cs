@@ -12,10 +12,10 @@ public sealed partial class STProjectileAccuracyComponent : Component
     /// This lists all the thresholds and their falloff values.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public List<AccuracyFalloffThreshold> Thresholds =
-    [
+    public List<AccuracyFalloffThreshold> Thresholds = new()
+    {
         new AccuracyFalloffThreshold(5f, 0.1f, false),
-    ];
+    };
 
     [DataField, AutoNetworkedField]
     public float TargetOccluded = -0.15f;

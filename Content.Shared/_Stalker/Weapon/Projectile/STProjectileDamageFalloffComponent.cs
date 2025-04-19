@@ -11,11 +11,11 @@ public sealed partial class STProjectileDamageFalloffComponent : Component
     /// This lists all the thresholds and their falloff values.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public List<DamageFalloffThreshold> Thresholds =
-    [
+    public List<DamageFalloffThreshold> Thresholds = new()
+    {
         new DamageFalloffThreshold(0f, 1, false),
         new DamageFalloffThreshold(22f, 9999, true),
-    ];
+    };
 
     /// <summary>
     /// This determines the minimum fraction of the projectile's original damage that must remain after falloff is applied.
