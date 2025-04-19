@@ -50,7 +50,7 @@
 
 - type: entity
   parent: STBaseBullet
-  id: BaseBulletTrigger
+  id: STBaseBulletTrigger
   categories: [ HideSpawnMenu ]
   components:
   - type: TriggerOnCollide
