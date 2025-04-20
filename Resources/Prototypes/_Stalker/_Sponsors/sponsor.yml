@@ -109,7 +109,7 @@
         ClothingCloakFoma: 1000
         STClothingHandsGlovesFoma: 150
         ClothingEyesGlassesFoma: 250
-    samura1:
+    Samura1:
     - name: Персональная категория
       items:
-        STWeaponRifleAUG: 5000
+        STWeaponRifleAUG: 4000
