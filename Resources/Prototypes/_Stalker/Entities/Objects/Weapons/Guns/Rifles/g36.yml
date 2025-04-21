@@ -75,3 +75,17 @@
       sprite: _Stalker/Objects/Weapons/Guns/Rifles/_Skins/covenant_g36.rsi
     - type: Clothing
       sprite: _Stalker/Objects/Weapons/Guns/Rifles/_Skins/covenant_g36.rsi
+
+- type: entity
+  parent: STBaseWeaponRifleG36
+  id: STWeaponRifleAUG
+  name: AUG
+  description: Australian assault rifle with integrated scope.
+  tags: ST, Sponsor
+  components:
+    - type: Item
+      sprite: _Stalker/Objects/Weapons/Guns/Rifles/aug.rsi
+    - type: Sprite
+      sprite: _Stalker/Objects/Weapons/Guns/Rifles/aug.rsi
+    - type: Clothing
+      sprite: _Stalker/Objects/Weapons/Guns/Rifles/aug.rsi
