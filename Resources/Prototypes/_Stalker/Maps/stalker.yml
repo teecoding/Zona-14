@@ -35,6 +35,7 @@
             StalkerHeadFreedom: [ 0, -1 ]
             # Brigades
             StalkerBandit: [ 0, -1 ]
+            StalkerHeadBandit: [0, -1]
             StalkerJaba: [ 0, -1 ]
             # Avangard
             StalkerDolg: [ 0, -1 ]
