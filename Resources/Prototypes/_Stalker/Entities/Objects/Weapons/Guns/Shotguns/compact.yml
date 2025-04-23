@@ -12,8 +12,6 @@
     size: Small
     shape:
     - 0,0,1,1
-  - type: BallisticAmmoProvider
-    capacity: 1
   - type: Gun
     minAngle: 50
     maxAngle: 100
@@ -25,6 +23,7 @@
       ballistic-ammo: !type:Container
         ents: []
   - type: BallisticAmmoProvider
+    capacity: 1
     whitelist:
       tags:
       - ShellShotgun
