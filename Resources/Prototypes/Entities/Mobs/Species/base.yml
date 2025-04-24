@@ -319,7 +319,7 @@
     useMinRange: true
   - type: BlowoutTarget
   - type: STEvasion
-    evasion: 1
+    evasion: 0.01
     # stalker-changes-end
 
 - type: entity

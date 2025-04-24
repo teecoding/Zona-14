@@ -173,7 +173,7 @@
     - type: Trash
       time: 900
     - type: STEvasion
-      evasion: 1
+      evasion: 0.01
 
 # временно так, до перевода всех мобов на новые HTN
 
@@ -345,4 +345,4 @@
     - type: Trash
       time: 900
     - type: STEvasion
-      evasion: 1
+      evasion: 0.01
