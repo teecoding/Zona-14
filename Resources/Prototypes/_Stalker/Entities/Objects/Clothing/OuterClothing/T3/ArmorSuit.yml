@@ -15,14 +15,12 @@
     maxItemsize: Large
     grid:
       - 0,2,0,3
-      - 0,-2,0,0
       - 2,2,2,3
-      - 2,-1,3,-0
       - 4,2,4,3
-      - 5,-1,6,-0
+      - 6,-1,8,-0
       - 6,2,6,3
       - 8,2,8,3
-      - 8,-2,8,0
+      - 10,2,10,3
   - type: Armor
     armorClass: 3
     modifiers:
@@ -40,6 +38,10 @@
   - type: ExplosionResistance
     damageCoefficient: 0.8
   - type: Craftable
+  - type: Tag
+    tags:
+    - BlockBack
+    - BlockCloak
 
 # stalker
 - type: entity
@@ -89,25 +91,6 @@
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHatHoodMercBandit
     slot: head
-# bonus
-  - type: Storage
-    maxItemsize: Large
-    grid:
-      - 0,2,0,3
-      - 0,-2,0,0
-      - 2,2,2,3
-      - 2,-1,3,-0
-      - 4,2,4,3
-      - 5,-1,6,-0
-      - 6,2,6,3
-      - 8,2,8,3
-      - 8,-2,8,0
-      - 10,2,10,3
-      - -2,2,-2,3
-  - type: Tag
-    tags:
-    - BlockBack
-    - BlockCloak
 
 
 - type: entity
@@ -146,10 +129,6 @@
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHatHoodMerc
     slot: head
-  - type: Tag
-    tags:
-    - BlockBack
-    - BlockCloak
 
 - type: entity
   parent: STClothingHeadHatHoodBase
@@ -175,10 +154,6 @@
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHatHoodMerc2
     slot: head
-  - type: Tag
-    tags:
-    - BlockBack
-    - BlockCloak
 
 - type: entity
   parent: STClothingHeadHatHoodBase
