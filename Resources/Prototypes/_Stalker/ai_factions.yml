@@ -19,6 +19,7 @@
     - Military
     - Bandit
     - Hostile
+    - Sci
 
 - type: npcFaction
   id: Hostile
@@ -30,6 +31,7 @@
   - NanoTrasen
   - Military
   - Bandit
+  - Sci
 
 - type: npcFaction
   id: Stalker
@@ -38,15 +40,6 @@
     - Military
     - MutatedHunter
     - Hostile
-
-- type: npcFaction
-  id: Milita
-  hostile:
-  - Mutated
-  - Military
-  - MutatedHunter
-  - Bandit
-  - Hostile
 
 - type: npcFaction
   id: Sci
