@@ -83,9 +83,12 @@
   description: Дешёвый и защищающий от мутантов с сталкерами комбез бандитов. Обеспечивает 3 класс защиты.
   components:
   - type: Sprite
-    sprite: _Stalker/Objects/Clothing/outerClothing/Bandit_armor.rsi
+    sprite: _Stalker/Objects/Clothing/outerClothing/merc_armor_bandit.rsi
   - type: Clothing
-    sprite: _Stalker/Objects/Clothing/outerClothing/Bandit_armor.rsi
+    sprite: _Stalker/Objects/Clothing/outerClothing/merc_armor_bandit.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHatHoodMercBandit
+    slot: head
 # bonus
   - type: Storage
     maxItemsize: Large
@@ -101,6 +104,22 @@
       - 8,-2,8,0
       - 10,2,10,3
       - -2,2,-2,3
+  - type: Tag
+    tags:
+    - BlockBack
+    - BlockCloak
+
+
+- type: entity
+  parent: STClothingHeadHatHoodBase
+  id: ClothingHeadHatHoodMercBandit
+  categories: [ HideSpawnMenu ]
+  name: капюшон
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/hood_merc_bandit.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/hood_merc_bandit.rsi
 
 - type: entity
   parent: STClothingOuterArmorBase
@@ -125,9 +144,52 @@
   - type: Clothing
     sprite: _Stalker/Objects/Clothing/outerClothing/merc_armor.rsi
   - type: ToggleableClothing
-    clothingPrototype: ClothingHeadHatHoodJacketMerc
+    clothingPrototype: ClothingHeadHatHoodMerc
     slot: head
+  - type: Tag
+    tags:
+    - BlockBack
+    - BlockCloak
 
+- type: entity
+  parent: STClothingHeadHatHoodBase
+  id: ClothingHeadHatHoodMerc
+  categories: [ HideSpawnMenu ]
+  name: капюшон
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/hood_merc_1.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/hood_merc_1.rsi
+
+- type: entity
+  parent: STClothingOuterArmorBase
+  id: ClothingOuterArmorMerc2
+  name: бронекомбез наёмника
+  description: Имеет камуфляж «Берёзка» в серой расскраске. За основу взяты образцы экипировки спецназа западных армий. За счёт специальной обработки ткани усилена устойчивость брони при физическом смещении пластин. По защитным характеристикам немного превосходит армейские бронежилеты. Обеспечивает 3 класс защиты.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/merc_armor_2.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/merc_armor_2.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHatHoodMerc2
+    slot: head
+  - type: Tag
+    tags:
+    - BlockBack
+    - BlockCloak
+
+- type: entity
+  parent: STClothingHeadHatHoodBase
+  id: ClothingHeadHatHoodMerc2
+  categories: [ HideSpawnMenu ]
+  name: капюшон
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/hats/hood_merc_2.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/hats/hood_merc_2.rsi
 
 - type: entity
   parent: STClothingOuterArmorBase
