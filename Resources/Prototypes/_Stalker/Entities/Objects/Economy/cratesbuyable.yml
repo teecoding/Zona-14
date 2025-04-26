@@ -158,6 +158,34 @@
       sound:
         path: /Audio/Effects/unwrap.ogg
 
+################# Заря
+
+#Сталкерская 1
+
+- type: entity
+  parent: BaseItem
+  id: SetZaryaStalkerBuyableCrate
+  name: комплект «Заря»
+  description: В комплекте комбинезон, противогаз, рюкзак и поясная сумка с кобурой.
+  suffix: Stalker, т2
+  components:
+    - type: STWeight
+      self: 10
+    - type: Item
+      size: Ginormous
+    - type: MultiHandedItem
+    - type: Sprite
+      sprite: _Stalker/Structures/Furniture/Sets/zarya.rsi
+      state: icon
+    - type: SpawnItemsOnUse
+      items:
+        - id: ClothingOuterArmorZaryaStalker
+        - id: ClothingMaskGasZarya
+        - id: ClothingBackpackStalkerZaryaGreen
+        - id: ClothingBeltWebbingHolsterStalkerZarya
+      sound:
+        path: /Audio/Effects/unwrap.ogg
+
 #Комбинезон Наёмника
 
 #Наёмник
