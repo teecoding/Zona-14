@@ -167,7 +167,7 @@
   id: SetZaryaStalkerBuyableCrate
   name: комплект «Заря»
   description: В комплекте комбинезон, противогаз, рюкзак и поясная сумка с кобурой.
-  suffix: Stalker, т2
+  suffix: ST, T2, Cache
   components:
     - type: STWeight
       self: 10
