@@ -3,7 +3,7 @@
 #Брезентовая
 
 - type: entity
-  parent: BaseItem
+  parent: STBaseItem
   id: SetJacketNoviceBrezentBuyableCrate
   name: комплект куртки новичка
   description: В комплекте куртка новичка, марлевая повязка, чёрный городской рюкзак и набор подсумков новичка.
@@ -29,7 +29,7 @@
 #Белая
 
 - type: entity
-  parent: BaseItem
+  parent: STBaseItem
   id: SetJacketNoviceWhiteBuyableCrate
   name: комплект белой куртки новичка
   description: В комплекте белая куртка новичка, марлевая повязка, чёрный городской рюкзак и набор подсумков новичка.
@@ -55,7 +55,7 @@
 #Бандитская
 
 - type: entity
-  parent: BaseItem
+  parent: STBaseItem
   id: SetJacketBanditBuyableCrate
   name: комплект кожаной куртки бандита
   description: В комплекте куртка бандита, марлевая повязка, белый городской рюкзак и набор подсумков новичка.
@@ -83,7 +83,7 @@
 #Брезентовая
 
 - type: entity
-  parent: BaseItem
+  parent: STBaseItem
   id: SetArmourJacketNoviceBrezentBuyableCrate
   name: комплект кольчужной куртки сталкера
   description: В комплекте кольчужная куртка, марлевая повязка, чёрный городской рюкзак и набор подсумков новичка.
@@ -109,7 +109,7 @@
 #Белая
 
 - type: entity
-  parent: BaseItem
+  parent: STBaseItem
   id: SetArmourJacketNoviceWhiteBuyableCrate
   name: комплект кольчужной куртки сталкера
   description: В комплекте белая кольчужная куртка, марлевая повязка, чёрный городской рюкзак и набор подсумков новичка.
@@ -135,7 +135,7 @@
 #Бандитская
 
 - type: entity
-  parent: BaseItem
+  parent: STBaseItem
   id: SetArmoutJacketBanditBuyableCrate
   name: комплект кольчужной куртки бандита
   description: В комплекте кольчужная куртка бандита, марлевая повязка, белый городской рюкзак и набор подсумков новичка.
@@ -163,11 +163,11 @@
 #Сталкерская 1
 
 - type: entity
-  parent: BaseItem
+  parent: STBaseItem
   id: SetZaryaStalkerBuyableCrate
   name: комплект «Заря»
   description: В комплекте комбинезон, противогаз, рюкзак и поясная сумка с кобурой.
-  suffix: Stalker, т2
+  suffix: ST, T2, Cache
   components:
     - type: STWeight
       self: 10
@@ -191,7 +191,7 @@
 #Наёмник
 
 - type: entity
-  parent: BaseItem
+  parent: STBaseItem
   id: SetMercBuyableCrate
   name: комплект бронекомбеза наёмника
   description: В комплекте бронекомбенизон, противогаз и поясная сумка с кобурой.
@@ -214,7 +214,7 @@
         path: /Audio/Effects/unwrap.ogg
 
 - type: entity
-  parent: BaseItem
+  parent: STBaseItem
   id: SetMerc2BuyableCrate
   name: комплект бронекомбеза наёмника
   description: В комплекте бронекомбенизон, марлевая повязка и поясная сумка с кобурой.
@@ -237,7 +237,7 @@
         path: /Audio/Effects/unwrap.ogg
 
 - type: entity
-  parent: BaseItem
+  parent: STBaseItem
   id: SetMercBanditBuyableCrate
   name: комплект бронекомбеза «Валет»
   description: В комплекте бронекомбенизон, марлевая повязка и поясная сумка с кобурой.
