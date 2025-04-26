@@ -842,6 +842,7 @@ public sealed partial class WarZoneSystem : EntitySystem
 
             if (ownership != null)
             {
+                Logger.InfoS("warzone", $"Zone '{component.PortalName}' ({component.ZoneProto}): Loading ownership. BandProtoId from DB record: '{ownership.Band?.BandProtoId ?? "NULL"}', FactionProtoId from DB record: '{ownership.Faction?.FactionProtoId ?? "NULL"}'");
                 component.DefendingBandProtoId = ownership.Band?.BandProtoId;
                 component.DefendingFactionProtoId = ownership.Faction?.FactionProtoId;
                 Logger.InfoS("warzone", $"Zone '{component.PortalName}' ({component.ZoneProto}): Loaded ownership from init. Assigned DefendingBandProtoId: '{component.DefendingBandProtoId ?? "NULL"}', DefendingFactionProtoId: '{component.DefendingFactionProtoId ?? "NULL"}'");
