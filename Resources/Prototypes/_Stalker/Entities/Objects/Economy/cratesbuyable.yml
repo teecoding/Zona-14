@@ -7,7 +7,7 @@
   id: SetJacketNoviceBrezentBuyableCrate
   name: комплект куртки новичка
   description: В комплекте куртка новичка, марлевая повязка, чёрный городской рюкзак и набор подсумков новичка.
-  suffix: Stalker, т1
+  suffix: ST, T1, Cache
   components:
     - type: STWeight
       self: 10
@@ -33,7 +33,7 @@
   id: SetJacketNoviceWhiteBuyableCrate
   name: комплект белой куртки новичка
   description: В комплекте белая куртка новичка, марлевая повязка, чёрный городской рюкзак и набор подсумков новичка.
-  suffix: Stalker, т1
+  suffix: ST, T1, Cache
   components:
     - type: STWeight
       self: 10
@@ -59,7 +59,7 @@
   id: SetJacketBanditBuyableCrate
   name: комплект кожаной куртки бандита
   description: В комплекте куртка бандита, марлевая повязка, белый городской рюкзак и набор подсумков новичка.
-  suffix: Stalker, т1
+  suffix: ST, T1, Cache
   components:
     - type: STWeight
       self: 10
@@ -87,7 +87,7 @@
   id: SetArmourJacketNoviceBrezentBuyableCrate
   name: комплект кольчужной куртки сталкера
   description: В комплекте кольчужная куртка, марлевая повязка, чёрный городской рюкзак и набор подсумков новичка.
-  suffix: Stalker, т2
+  suffix: ST, T2, Cache
   components:
     - type: STWeight
       self: 10
@@ -113,7 +113,7 @@
   id: SetArmourJacketNoviceWhiteBuyableCrate
   name: комплект кольчужной куртки сталкера
   description: В комплекте белая кольчужная куртка, марлевая повязка, чёрный городской рюкзак и набор подсумков новичка.
-  suffix: Stalker, т2
+  suffix: ST, T2, Cache
   components:
     - type: STWeight
       self: 10
@@ -139,7 +139,7 @@
   id: SetArmoutJacketBanditBuyableCrate
   name: комплект кольчужной куртки бандита
   description: В комплекте кольчужная куртка бандита, марлевая повязка, белый городской рюкзак и набор подсумков новичка.
-  suffix: Stalker, т2
+  suffix: ST, T2, Cache
   components:
     - type: STWeight
       self: 10
@@ -195,7 +195,7 @@
   id: SetMercBuyableCrate
   name: комплект бронекомбеза наёмника
   description: В комплекте бронекомбенизон, противогаз и поясная сумка с кобурой.
-  suffix: Stalker, т3
+  suffix: ST, T3, Cache
   components:
     - type: STWeight
       self: 10
@@ -218,7 +218,7 @@
   id: SetMerc2BuyableCrate
   name: комплект бронекомбеза наёмника
   description: В комплекте бронекомбенизон, марлевая повязка и поясная сумка с кобурой.
-  suffix: Stalker, т3
+  suffix: ST, T3, Cache
   components:
     - type: STWeight
       self: 10
@@ -241,7 +241,7 @@
   id: SetMercBanditBuyableCrate
   name: комплект бронекомбеза «Валет»
   description: В комплекте бронекомбенизон, марлевая повязка и поясная сумка с кобурой.
-  suffix: Stalker, т3
+  suffix: ST, T3, Cache
   components:
     - type: STWeight
       self: 10
