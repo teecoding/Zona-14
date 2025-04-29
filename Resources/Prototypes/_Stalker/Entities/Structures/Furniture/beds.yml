@@ -11,10 +11,10 @@
   - type: HealOnBuckle
     damage:
       groups:
-        Brute: -1
-        Burn: -1
-        Airloss: -1
-        Toxin: -1
+        Brute: -2
+        Burn: -2
+        Airloss: -2
+        Toxin: -2
 
 
 - type: entity

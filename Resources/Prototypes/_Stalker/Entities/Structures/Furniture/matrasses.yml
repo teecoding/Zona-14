@@ -12,10 +12,10 @@
   - type: HealOnBuckle
     damage:
       groups:
-        Brute: -0.5
-        Burn: -0.5
-        Airloss: -0.5
-        Toxin: -0.5
+        Brute: -1
+        Burn: -1
+        Airloss: -1
+        Toxin: -1
 
 - type: entity
   parent: STMatrassBedBase
