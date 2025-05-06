@@ -31,6 +31,10 @@
   - type: ExplosionResistance
     damageCoefficient: 0.90
   - type: Craftable
+  - type: Tag
+    tags:
+    - BlockGloves
+    - BlockCloak
 
 # Stalker №1 - 1
 
@@ -59,6 +63,10 @@
       sprite: _Stalker/Objects/Clothing/hats/zarya_helm_stalker.rsi
     - type: Clothing
       sprite: _Stalker/Objects/Clothing/hats/zarya_helm_stalker.rsi
+    - type: HideLayerClothing
+      slots:
+      - Hair
+      hideOnToggle: true
 
 # Stalker №2
 
@@ -98,9 +106,9 @@
   description: «Заря» жаб, чуть-чуть легче обычной
   components:
   - type: Sprite
-    sprite: _Stalker/Objects/Clothing/OuterClothing/zarya_jab.rsi
+    sprite: _Stalker/Objects/Clothing/outerClothing/zarya_jab.rsi
   - type: Clothing
-    sprite: _Stalker/Objects/Clothing/OuterClothing/zarya_jab.rsi
+    sprite: _Stalker/Objects/Clothing/outerClothing/zarya_jab.rsi
   # Bonus
 
 # Military - 3 +
@@ -112,9 +120,9 @@
   description: «Заря» 'Военных', с усиленной бронёй и увеличенными защитами вообще от всего - эталон модификации бандитских умельцев.
   components:
   - type: Sprite
-    sprite: _Stalker/Objects/Clothing/OuterClothing/zarya_military.rsi
+    sprite: _Stalker/Objects/Clothing/outerClothing/zarya_military.rsi
   - type: Clothing
-    sprite: _Stalker/Objects/Clothing/OuterClothing/zarya_military.rsi
+    sprite: _Stalker/Objects/Clothing/outerClothing/zarya_military.rsi
 
 
 # Renegates - 4 +
@@ -141,9 +149,9 @@
   description: комбинезон «Рассвет», используемый группировкой «Серафимы» для выполнения тактических задач с повышенной защитой от агрессивной фауны.
   components:
     - type: Sprite
-      sprite: _Stalker/Objects/Clothing/OuterClothing/_Sera/rassvet.rsi
+      sprite: _Stalker/Objects/Clothing/outerClothing/_Sera/rassvet.rsi
     - type: Clothing
-      sprite: _Stalker/Objects/Clothing/OuterClothing/_Sera/rassvet.rsi
+      sprite: _Stalker/Objects/Clothing/outerClothing/_Sera/rassvet.rsi
     - type: ToggleableClothing
       clothingPrototype: ClothingHeadCapoSera
       slot: head
@@ -212,9 +220,9 @@
   description: Легкий и мобильный комбинезон «Заря» группировки «Поиск» представляет собой усовершенствованную версию стандартного костюма.
   components:
   - type: Sprite
-    sprite: _Stalker/Objects/Clothing/OuterClothing/zarya_poisk.rsi
+    sprite: _Stalker/Objects/Clothing/outerClothing/zarya_poisk.rsi
   - type: Clothing
-    sprite: _Stalker/Objects/Clothing/OuterClothing/zarya_poisk.rsi
+    sprite: _Stalker/Objects/Clothing/outerClothing/zarya_poisk.rsi
 # Bandits - 5
 
 

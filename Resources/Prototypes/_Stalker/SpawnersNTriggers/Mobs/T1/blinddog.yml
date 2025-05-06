@@ -6,9 +6,13 @@
   components:
     - type: SpawnOnApproach
       prototypes:
-        - MobMutantBlindDog
+        - MobMutantBlindDogRed
+        - MobMutantBlindDogTall
+        - MobMutantBlindDogSmall
       restricted:
-        - MobMutantBlindDog
+        - MobMutantBlindDogRed
+        - MobMutantBlindDogTall
+        - MobMutantBlindDogSmall
 
 - type: entity
   name: триггер слепых псов (1-4) (50%)
@@ -18,9 +22,13 @@
   components:
     - type: SpawnOnApproach
       prototypes:
-        - MobMutantBlindDog
+        - MobMutantBlindDogRed
+        - MobMutantBlindDogTall
+        - MobMutantBlindDogSmall
       restricted:
-        - MobMutantBlindDog
+        - MobMutantBlindDogRed
+        - MobMutantBlindDogTall
+        - MobMutantBlindDogSmall
 
 - type: entity
   name: триггер слепых псов (1-2) (10%)
@@ -30,9 +38,13 @@
   components:
     - type: SpawnOnApproach
       prototypes:
-        - MobMutantBlindDog
+        - MobMutantBlindDogRed
+        - MobMutantBlindDogTall
+        - MobMutantBlindDogSmall
       restricted:
-        - MobMutantBlindDog
+        - MobMutantBlindDogRed
+        - MobMutantBlindDogTall
+        - MobMutantBlindDogSmall
 
 - type: entity
   name: триггер слепых псов (1-2) (50%)
@@ -42,6 +54,10 @@
   components:
     - type: SpawnOnApproach
       prototypes:
-        - MobMutantBlindDog
+        - MobMutantBlindDogRed
+        - MobMutantBlindDogTall
+        - MobMutantBlindDogSmall
       restricted:
-        - MobMutantBlindDog
+        - MobMutantBlindDogRed
+        - MobMutantBlindDogTall
+        - MobMutantBlindDogSmall

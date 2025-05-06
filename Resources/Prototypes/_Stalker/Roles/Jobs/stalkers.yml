@@ -6,27 +6,30 @@
   playTimeTracker: JobStalker
   whitelisted: false
   requirements:
-    - !type:DepartmentTimeRequirement
-      department: StalkerAdvanced
-      time: 1
-      inverted: true
-    - !type:DepartmentTimeRequirement
-      department: StalkerBrigands
-      time: 1
-      inverted: true
-    - !type:DepartmentTimeRequirement
-      department: StalkerOfficials
-      time: 1
-      inverted: true
-    - !type:DepartmentTimeRequirement
-      department: StalkerReligius
-      time: 1
-      inverted: true
     - !type:SpeciesRequirement
       species:
       - Human
       - Dwarf
       - Gingerbread
+    # Обнулил требования, так как люди не могут зайти за сталкера когда их турнули
+    # c ГП. И по сути не могут играть вообще. Я хз как это сделать лучше, но то что есть сейчас
+    # не даёт людям вообще играть.
+    # - !type:DepartmentTimeRequirement
+    #   department: StalkerAdvanced
+    #   time: 1
+    #   inverted: true
+    # - !type:DepartmentTimeRequirement
+    #   department: StalkerBrigands
+    #   time: 1
+    #   inverted: true
+    # - !type:DepartmentTimeRequirement
+    #   department: StalkerOfficials
+    #   time: 1
+    #   inverted: true
+    # - !type:DepartmentTimeRequirement
+    #   department: StalkerReligius
+    #   time: 1
+    #   inverted: true
     # - !type:DepartmentTimeRequirement
     #   department: StalkerAnomalists
     #   time: 1
@@ -56,13 +59,16 @@
   id: StalkerGear
   equipment:
     id: StalkerPDA
-    belt: ClothingBeltStorageWaistbag
+    belt: ClothingBeltBandolierStalker
     torso: ClothingTorsoSweaterStalkerGreen
-    legs: ClothingLegsJeansStalker
-    shoes: ClothingShoesBootsCombat
-    back: STWeaponShotgunMP155T
+    legs: ClothingLegsJeansBlue
+    shoes: ClothingShoesNovice
+    back: ClothingBackpackTownBlackStalker
     pocket1: Cartridge7mmBuckshot
     pocket2: Cartridge7mmBuckshot
+    outerClothing: ClothingOuterJacketStalker
+    mask: ClothingMaskGasMarlya
+    suitstorage: STWeaponShotgunMP155T
 
 - type: stBand
   id: STStalkerBand

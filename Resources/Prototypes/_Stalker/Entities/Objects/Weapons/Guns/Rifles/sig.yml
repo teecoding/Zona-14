@@ -19,8 +19,7 @@
         volume: -2
     minAngle: 50
     maxAngle: 90
-    angleIncrease: 3
-    angleDecay: 15
+    angleIncrease: 1.5
     shotsPerBurst: 3
     ShotsPerBurstModified: 3
     selectedMode: Burst
@@ -118,3 +117,7 @@
   - type: Scope
     zoom: 1.4
     offset: 12
+  - type: STWeaponDamageFalloff
+    falloffMultiplier: 0.2
+  - type: STWeaponAccuracy
+    accuracyMultiplier: 3

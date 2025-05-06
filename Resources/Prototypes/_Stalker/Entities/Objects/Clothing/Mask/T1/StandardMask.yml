@@ -35,6 +35,29 @@
     sprite: _Stalker/Objects/Clothing/mask/gasmask_stalker.rsi
   - type: Clothing
     sprite: _Stalker/Objects/Clothing/mask/gasmask_stalker.rsi
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - Snout
+    - FacialHair
+    hideOnToggle: true
+
+- type: entity
+  parent: STClothingMaskGasStandardT1Base
+  id: ClothingMaskGasZaryaMono
+  name: монолинзовый противогаз сталкера
+  description: Дешёвый и эффективный.  Защищает от радиации. Отличается монолинзой.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/mask/gasmask_stalker_mono.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/mask/gasmask_stalker_mono.rsi
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - Snout
+    - FacialHair
+    hideOnToggle: true
 
 - type: entity
   parent: STClothingMaskGasStandardT1Base
@@ -57,6 +80,23 @@
     sprite: _Stalker/Objects/Clothing/mask/gasmask_monolith.rsi
   - type: Clothing
     sprite: _Stalker/Objects/Clothing/mask/gasmask_monolith.rsi
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - Snout
+    - FacialHair
+    hideOnToggle: true
+
+- type: entity
+  parent: STClothingMaskGasStandardT1Base
+  id: ClothingMaskGasMercStalker
+  name: стандартный противогаз наёмников
+  description: Скрывает глаза и злые помыслы. Защищает от радиации.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/mask/gasmask_merc.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/mask/gasmask_merc.rsi
 
 - type: entity
   parent: STClothingMaskGasStandardT1Base
@@ -96,6 +136,12 @@
     sprite: _Stalker/Objects/Clothing/mask/gasmask_dolg1.rsi
   - type: Clothing
     sprite: _Stalker/Objects/Clothing/mask/gasmask_dolg1.rsi
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - Snout
+    - FacialHair
+    hideOnToggle: true
 
 - type: entity
   parent: STClothingMaskGasStandardT1Base
@@ -107,6 +153,12 @@
     sprite: _Stalker/Objects/Clothing/mask/gasmask_freedom.rsi
   - type: Clothing
     sprite: _Stalker/Objects/Clothing/mask/gasmask_freedom.rsi
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - Snout
+    - FacialHair
+    hideOnToggle: true
 
 - type: entity
   parent: STClothingMaskGasStandardT1Base

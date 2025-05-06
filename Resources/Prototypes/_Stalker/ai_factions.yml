@@ -8,6 +8,8 @@
     - Military
     - Bandit
     - Hostile
+    - Duty
+    - Freedom
 
 - type: npcFaction
   id: Mutated
@@ -19,6 +21,9 @@
     - Military
     - Bandit
     - Hostile
+    - Sci
+    - Duty
+    - Freedom
 
 - type: npcFaction
   id: Hostile
@@ -30,6 +35,9 @@
   - NanoTrasen
   - Military
   - Bandit
+  - Sci
+  - Duty
+  - Freedom
 
 - type: npcFaction
   id: Stalker
@@ -38,15 +46,6 @@
     - Military
     - MutatedHunter
     - Hostile
-
-- type: npcFaction
-  id: Milita
-  hostile:
-  - Mutated
-  - Military
-  - MutatedHunter
-  - Bandit
-  - Hostile
 
 - type: npcFaction
   id: Sci
@@ -65,6 +64,8 @@
   - Passive
   - Bandit
   - Hostile
+  - Freedom
+  - Duty
 
 - type: npcFaction
   id: Bandit
@@ -74,3 +75,25 @@
   - Military
   - Milita
   - Hostile
+  - Duty
+  - Freedom
+
+- type: npcFaction
+  id: Freedom
+  hostile:
+  - Mutated
+  - MutatedHunter
+  - Bandit
+  - Hostile
+  - Military
+  - Duty
+
+- type: npcFaction
+  id: Duty
+  hostile:
+  - Mutated
+  - MutatedHunter
+  - Bandit
+  - Hostile
+  - Military
+  - Freedom

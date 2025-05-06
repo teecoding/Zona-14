@@ -199,14 +199,15 @@
   - type: Speech
     speechSounds: Alto
   - type: DamageForceSay
-  - type: Vocal
-    sounds:
-      Male: MaleHuman
-      Female: FemaleHuman
-      Unsexed: MaleHuman
+  - type: STVocal # STODO: Make custom doll and specs
+  # - type: Vocal stalker14-no-screams
+  #   sounds:
+  #     Male: MaleHuman
+  #     Female: FemaleHuman
+  #     Unsexed: MaleHuman
   - type: Emoting
   - type: BodyEmotes
-    soundsId: GeneralBodyEmotes
+    soundsId: STBodyEmotes # stalker14-no-vanila-emotes
   - type: Grammar
     attributes:
       proper: true
@@ -316,6 +317,9 @@
     range: 30
     minRange: 20
     useMinRange: true
+  - type: BlowoutTarget
+  - type: STEvasion
+    evasion: 0.01
     # stalker-changes-end
 
 - type: entity
