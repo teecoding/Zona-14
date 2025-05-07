@@ -32,7 +32,7 @@
   icon: tec
   description: job-anomalist-guardian-desc
   playTimeTracker: StalkerAnomalistGuardian
-  `: true
+  whitelisted: true
   startingGear: AnomalistGear
   supervisors: Вы работаете сами на себя
   canBeAntag: false
