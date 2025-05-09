@@ -1,5 +1,5 @@
 - type: entity
-  parent: BaseStructure
+  parent: STBaseStructure
   id: STlatticefenceBase
   abstract: true
   components:

@@ -1,6 +1,6 @@
 - type: entity
   id: STStatueLenin
-  parent: BaseStructure
+  parent: STBaseStructure
   name: Статуя Ленина
   suffix: ST, mapping  
   components:

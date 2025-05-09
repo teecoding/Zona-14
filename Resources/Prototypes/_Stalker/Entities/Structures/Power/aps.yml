@@ -144,7 +144,7 @@
 
 - type: entity
   id: STCRustyElectroShieldOff
-  parent: BaseStructure
+  parent: STBaseStructure
   name: A rusty electrical panel
   suffix: ST, Mapping
   description: A rusty electrical panel. It is unlikely that it will be able to power something.

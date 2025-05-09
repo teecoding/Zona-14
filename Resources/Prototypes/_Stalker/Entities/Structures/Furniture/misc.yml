@@ -101,7 +101,7 @@
 
 - type: entity
   id: STComputer
-  parent: BaseStructure
+  parent: STBaseStructure
   name: Computer
   suffix: ST, Mapping
   description: An old computer for office work.

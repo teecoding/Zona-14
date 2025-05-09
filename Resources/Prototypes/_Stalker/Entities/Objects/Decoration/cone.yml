@@ -1,6 +1,6 @@
 - type: entity
   id: STcone
-  parent: BaseStructure
+  parent: STBaseStructure
   name: Дорожный конус
   description: Just an ordinary traffic cone.
   suffix: ST, Mapping

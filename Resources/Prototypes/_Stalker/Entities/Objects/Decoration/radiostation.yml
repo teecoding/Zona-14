@@ -1,6 +1,6 @@
 - type: entity
   id: STRadiostation
-  parent: BaseStructure
+  parent: STBaseStructure
   name: Radio station
   suffix: ST, Mapping
   description: A device for transmitting information via radio waves.

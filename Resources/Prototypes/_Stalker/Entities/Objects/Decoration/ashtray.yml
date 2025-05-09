@@ -1,6 +1,6 @@
 - type: entity
   id: STashtray
-  parent: BaseStructure
+  parent: STBaseStructure
   name: Ashtray
   suffix: ST, Mapping
   description: A tabletop ashtray. Apparently, someone has been smoking here recently.
