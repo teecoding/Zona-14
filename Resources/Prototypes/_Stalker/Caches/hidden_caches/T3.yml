@@ -202,19 +202,30 @@
         - id: CigPackKosmos
           prob: 0.06
         - id: IngotGold1
-          prob: 0.15
+          prob: 0.08
+        - id: IngotGold1
+          prob: 0.08
         - id: IngotSilver1
-          prob: 0.15
+          prob: 0.08
+        - id: IngotSilver1
+          prob: 0.08
         - id: MaterialDiamond1
-          prob: 0.15
+          prob: 0.08
+        - id: MaterialDiamond1
+          prob: 0.08
         - id: DrinkGoldenCup
-          prob: 0.15
+          prob: 0.08
+        - id: DrinkGoldenCup
+          prob: 0.08
         - id: CraftMaterialGunpowder
-          prob: 0.02
-        - id: CraftCardboardTube
-          prob: 0.02
-        - id: CraftFitil
-          prob: 0.02
+          prob: 0.12
+        - id: CraftLeatherbox
+          prob: 0.007
+        - id: ToolkitTearOne
+          prob: 0.006
+        - id: ToolkitTearTwo
+          prob: 0.005
+
 - type: entity
   parent: [STBaseHiddenCache, STHiddenCacheStorageFillT3, BirchTreeNew02]
   id: STHiddenCache1T3
