@@ -133,3 +133,25 @@
     sprite: _Stalker/Objects/Decoration/Other/mapping.rsi
     drawdepth: SmallObjects
     state: phone
+
+- type: entity
+  id: WoodenBench2
+  name: Деревянная скамейка
+  suffix: ST, Mapping
+  parent: ChairBase
+  description: Простая деревянная скамейка с потертой до блеска поверхностью. Годы использования сгладили все углы и придали дереву особый, теплый оттенок. На ней удобно отдохнуть уставшим путникам.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Decoration/Other/mapping.rsi
+    state: bench
+
+- type: entity
+  id: RustySlide
+  name: Ржавая горка
+  suffix: ST, Mapping
+  description: Яркая детская горка с потёртыми от многочисленных спусков боковинами. Ступеньки давно стёрлись от тысяч маленьких ножек, а пластик местами выцвел на солнце, но весёлый скрип при скатывании остался неизменным.
+  parent: WoodenYaschik1
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Decoration/Other/gorka.rsi
+    state: gorka

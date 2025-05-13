@@ -16,6 +16,10 @@
       },
       {
           "name": "phone"
+      },
+      {
+          "name": "bench",
+          "directions": 4
       }
   ]
 }
