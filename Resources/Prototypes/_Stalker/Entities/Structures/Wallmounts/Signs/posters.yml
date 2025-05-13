@@ -778,3 +778,13 @@
   components:
   - type: Sprite
     state: poster69_sh5
+
+- type: entity
+  parent: PosterBaseStalker
+  id: PosterKarta
+  name: "Старая карта"
+  description: "Потрёпанная временем карта местности. Большая часть пометок выцвела, а некоторые участки и вовсе истёрлись. Однако кое-где ещё можно разглядеть схематичные изображения аномальных зон и опасных территорий."
+  suffix: ST, Mapping
+  components:
+  - type: Sprite
+    state: karta
