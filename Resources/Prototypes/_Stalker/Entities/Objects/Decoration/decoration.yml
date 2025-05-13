@@ -99,3 +99,37 @@
       - !type:PlaySoundBehavior
         sound:
           path: /Audio/Effects/metal_break1.ogg
+
+- type: entity
+  id: WoodenCrib
+  name: Детская кроватка
+  suffix: ST, Mapping
+  description: Винтажная детская кроватка с потемневшими от времени бортиками и скрипучими креплениями. На изголовье заметны следы зубов и царапины — свидетели первых детских шагов и попыток выбраться на свободу.
+  parent: WoodenYaschik1
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Decoration/Other/mapping.rsi
+    state: crib
+
+- type: entity
+  id: WoodenPiano
+  name: Фортопиано
+  suffix: ST, Mapping
+  description: Советское пианино марки 'Беларусь' с характерным звучанием и прямыми линиями корпуса. Клавиши из слоновой кости местами потрескались, педали поскрипывают, но душа инструмента всё ещё жива в его глубоких басах и звонких верхних нотах.
+  parent: WoodenYaschik1
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Decoration/Other/mapping.rsi
+    state: piano
+
+- type: entity
+  id: PhoneStalker
+  name: Стационарный телефон
+  parent: FanStalker
+  suffix: ST, Mapping
+  description: Массивный стационарный телефон советских времён с витым шнуром и пожелтевшей от времени трубкой. Несмотря на внешний вид, механизм внутри кажется вполне исправным. Символ эпохи, когда звонки были редкими и дорогими.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Decoration/Other/mapping.rsi
+    drawdepth: SmallObjects
+    state: phone
