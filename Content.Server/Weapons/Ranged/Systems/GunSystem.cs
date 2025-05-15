@@ -272,7 +272,7 @@ public sealed partial class GunSystem : SharedGunSystem
                 shotProjectiles.Add(ammoEnt);
 
                 // stalker-changes-start
-                var farSoundEvent = new FargunshotEvent(gunUid);
+                var farSoundEvent = new FargunshotEvent(gunUid.Id);
                 RaiseLocalEvent(gunUid, farSoundEvent);
                 // stalker-changes-end
 

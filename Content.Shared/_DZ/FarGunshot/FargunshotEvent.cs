@@ -2,12 +2,12 @@
 
 namespace Content.Shared._DZ.FarGunshot;
 
-[NetSerializable]
+[Serializable, NetSerializable]
 public sealed class FargunshotEvent : EntityEventArgs
 {
-    public EntityUid GunUid { get; set; }
+    public int GunUid { get; set; }
 
-    public FargunshotEvent(EntityUid gunUid)
+    public FargunshotEvent(int gunUid)
     {
         GunUid = gunUid;
     }

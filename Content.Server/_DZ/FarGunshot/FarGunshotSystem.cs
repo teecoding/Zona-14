@@ -22,7 +22,7 @@ public sealed class FarGunshotSystem : EntitySystem
 
     public void OnFarGunshot(EntityUid uid, FarGunshotComponent component, FargunshotEvent args)
     {
-        if (uid == EntityUid.Invalid || args.GunUid != uid)
+        if (uid == EntityUid.Invalid || args.GunUid != uid.Id)
             return;
 
         var shootPos = _transform.GetMapCoordinates(uid);

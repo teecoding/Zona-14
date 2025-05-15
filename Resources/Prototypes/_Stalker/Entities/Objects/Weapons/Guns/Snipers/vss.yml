@@ -3,7 +3,7 @@
   parent: STBaseWeaponSniper
   id: STBaseWeaponSniperVSS
   components:
-  - type: FarGunshots
+  - type: FarGunshot
     isSilenced: true
     silencerDecrease: 0.5
   - type: Clothing
