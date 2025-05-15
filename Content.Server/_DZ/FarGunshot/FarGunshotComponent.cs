@@ -15,8 +15,14 @@ public sealed partial class FarGunshotComponent : Component
     /// <summary>
     /// The base sound to use when the gun is fired from far dist.
     /// </summary>
-    [DataField]
-    public SoundSpecifier? Sound = new SoundPathSpecifier("/Audio/_DZ/Weapons/Guns/Gunshots/gunshot-far.ogg");
+    [DataField, ViewVariables(VVAccess.ReadOnly)]
+    public SoundSpecifier? Sound = new SoundPathSpecifier("/Audio/_DZ/Effects/FarGunshots/rifle1.ogg");
+
+    /// <summary>
+    /// Gun with integrated silencer (vss, vsk, as-val etc)
+    /// </summary>
+    [DataField, ViewVariables(VVAccess.ReadWrite)]
+    public bool IsIntegredSilencer = false;
 
     // TODO: silencer impl
 }

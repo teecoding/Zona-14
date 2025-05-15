@@ -1,5 +1,4 @@
-﻿using Content.Shared.Coordinates;
-using Content.Shared.Weapons.Ranged.Events;
+﻿using Content.Shared.Weapons.Ranged.Events;
 using Robust.Server.GameObjects;
 using Robust.Shared.Audio;
 using Robust.Shared.Audio.Systems;
@@ -23,7 +22,7 @@ public sealed class FarGunshotSystem : EntitySystem
     public void OnFarGunshot(EntityUid uid, FarGunshotComponent component, AmmoShotEvent args)
     {
 
-        if (uid == EntityUid.Invalid || component.Range <= 14f)
+        if (uid == EntityUid.Invalid || component.Range <= 14f || component.IsIntegredSilencer)
             return;
 
         var shootPos = _transform.GetMapCoordinates(uid);

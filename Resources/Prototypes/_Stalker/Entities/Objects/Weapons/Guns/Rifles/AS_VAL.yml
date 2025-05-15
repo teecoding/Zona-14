@@ -3,6 +3,8 @@
   parent: STBaseWeaponRifle
   id: STBaseWeaponRifleASVAL
   components:
+  - type: FarGunshots
+    isIntegredSilencer: true
   - type: STWeight
     self: 3
   - type: Clothing
