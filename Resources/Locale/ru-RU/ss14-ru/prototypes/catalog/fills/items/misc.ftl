@@ -1,6 +1,6 @@
-ent-STClothingShoesBootsCombatFilled = { ent-STClothingShoesBootsCombat }
-    .suffix = ST, Заполненный
-    .desc = { ent-STClothingShoesBootsCombat.desc }
+ent-ClothingShoesBootsCombatFilled = { ent-ClothingShoesBootsCombat }
+    .suffix = Заполненный
+    .desc = { ent-ClothingShoesBootsCombat.desc }
 ent-ClothingShoesBootsJackFilled = { ent-ClothingShoesBootsJack }
     .desc = { ent-ClothingShoesBootsJack.desc }
 ent-ClothingShoesBootsWinterSecFilled = { ent-ClothingShoesBootsWinterSec }

@@ -1,7 +1,7 @@
 - type: entity
   name: AN-94 «Абакан»
   suffix: ST
-  parent: STBaseWeaponRifle
+  parent: STWeaponRifleAK74M
   id: STWeaponRifleStalkerAbakan
   description: Оружие элитных войск советской армии. Был разработан в качестве замены устаревшему АКС. В «Абакане» подвижны не только внутренние механизмы, но и вся ствольная коробка вместе со стволом, что позволяет снизить отдачу, тем самым значительно повысив точность боя.
   components:
@@ -13,43 +13,10 @@
     sprite: _Stalker/Objects/Weapons/Guns/Rifles/abakan.rsi
   - type: Sprite
     sprite: _Stalker/Objects/Weapons/Guns/Rifles/abakan.rsi
-  - type: STWeaponDamageFalloff
-    falloffMultiplier: 0.8
-  - type: STWeaponAccuracy
-    accuracyMultiplier: 1.2
   - type: Gun
     soundGunshot:
       path: /Audio/_Stalker/Effects/Guns/n_abakan_shot.ogg
     minAngle: 50
     maxAngle: 90
     angleIncrease: 1
-    fireRate: 10
-  - type: ItemSlots
-    slots:
-      gun_magazine:
-        name: Magazine
-        startingItem: Base545Mag10
-        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
-        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
-        priority: 4
-        whitelist:
-          tags:
-            - Magazine545
-      gun_module_muzzle:
-        name: Muzzle
-        priority: 3
-        whitelist:
-          tags:
-            - STWeaponModuleRifleSilencerRu
-      gun_module_scope:
-        name: Scope
-        priority: 2
-        whitelist:
-          tags:
-            - STWeaponModuleRifleScopeRu
-      gun_chamber:
-        name: Chamber
-        priority: 1
-        whitelist:
-          tags:
-            - STCartridge545
+    fireRate: 8.5
