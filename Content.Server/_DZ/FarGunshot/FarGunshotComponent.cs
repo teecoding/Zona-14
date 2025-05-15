@@ -19,16 +19,10 @@ public sealed partial class FarGunshotComponent : Component
     public SoundSpecifier? Sound = new SoundPathSpecifier("/Audio/_DZ/Effects/FarGunshots/rifle1.ogg");
 
     /// <summary>
-    /// Gun with silencer (vss, vsk, as-val or module)
-    /// </summary>
-    [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public bool IsSilenced = false;
-
-    /// <summary>
     /// How much should silencer decrease range (by miltiply)
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public float SilencerDecrease = 0.4f;
+    public float SilencerDecrease = 1f;
 
     // TODO: silencer impl
 }

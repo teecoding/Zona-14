@@ -1,3 +1,4 @@
+using Content.Server._DZ.FarGunshot;
 using Content.Server._Stalker.Weapon.Scoping;
 using Content.Shared._Stalker.Weapon.Module;
 using Content.Shared._Stalker.Weapon.Module.Effects;
@@ -78,6 +79,11 @@ public sealed class STWeaponModuleSystem : STSharedWeaponModuleSystem
         // not only one volume reducing module
         audioParams.Volume += effect.SoundGunshotVolumeAddition;
         args.SoundGunshot!.Params = audioParams;
+
+        if (TryComp(entity.Owner, out FarGunshotComponent? farGunshotComponent))
+        {
+            farGunshotComponent.SilencerDecrease = effect.FarshotSoundDecrease;
+        }
     }
 
     private void UpdateContainerEffect(BaseContainer container)
