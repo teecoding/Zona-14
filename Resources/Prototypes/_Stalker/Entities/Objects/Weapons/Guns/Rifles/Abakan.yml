@@ -5,8 +5,6 @@
   id: STWeaponRifleStalkerAbakan
   description: Оружие элитных войск советской армии. Был разработан в качестве замены устаревшему АКС. В «Абакане» подвижны не только внутренние механизмы, но и вся ствольная коробка вместе со стволом, что позволяет снизить отдачу, тем самым значительно повысив точность боя.
   components:
-  - type: STWeight
-    self: 4.22
   - type: Clothing
     sprite: _Stalker/Objects/Weapons/Guns/Rifles/abakan.rsi
   - type: Item
