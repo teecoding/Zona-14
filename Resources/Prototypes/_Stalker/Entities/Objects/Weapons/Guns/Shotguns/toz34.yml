@@ -40,6 +40,7 @@
     self: 2.8
   - type: Item
     sprite: _Stalker/Objects/Weapons/Guns/Shotguns/toz/anomaly_toz_34.rsi
+    scale: 0.8
   - type: Sprite
     sprite: _Stalker/Objects/Weapons/Guns/Shotguns/toz/anomaly_toz_34.rsi
   - type: Clothing
@@ -47,3 +48,25 @@
     equipDelay: 2
   - type: BallisticAmmoProvider
     capacity: 4
+
+- type: entity
+  parent: STBaseWeaponShotgunTOZ34
+  id: STWeaponShotgunShizoToz34
+  name: Wierd TOZ
+  description: Wierd TOZ, modified by someone really mad.
+  suffix: ST, Weapon, Shotgun, Sponsor
+  components:
+  - type: STWeight
+    self: 5
+  - type: Item
+    sprite: _Stalker/Objects/Weapons/Guns/Shotguns/toz/toz_shiza.rsi
+    scale: 0.8
+  - type: Sprite
+    sprite: _Stalker/Objects/Weapons/Guns/Shotguns/toz/toz_shiza.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Weapons/Guns/Shotguns/toz/toz_shiza.rsi
+  - type: BallisticAmmoProvider
+    capacity: 3
+  - type: Scope
+    zoom: 1.4
+    offset: 10
