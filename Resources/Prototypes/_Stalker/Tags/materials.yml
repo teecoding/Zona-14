@@ -1,8 +1,8 @@
-- type: tag
+- type: Tag
   id: STMaterialWood
 
-- type: tag
+- type: Tag
   id: STMaterialMetal
 
-- type: tag
+- type: Tag
   id: STMaterialOrganic
