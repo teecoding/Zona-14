@@ -275,7 +275,7 @@
   parent: MarkerBase
   abstract: true
   components:
-	  - type: ApproachTrigger
+    - type: ApproachTrigger
     - type: Sprite
       layers:
         - state: blue
