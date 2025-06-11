@@ -424,6 +424,10 @@
               items:
                 STWeaponRifleAKS74UWhite: 650
                 STWeaponRifleSVDSWood: 800
+          3:
+            - name: О-сознание
+              items:
+                STWeaponRifleSVDSWood: 800
   contributorCategories:
           - name: contributor
             items:
