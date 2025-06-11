@@ -125,11 +125,11 @@
     - type: STWeight
       self: 4.8
     - type: Clothing
-      sprite: _Stalker/Objects/Weapons/Guns/Snipers/SVDS/base.rsi
+      sprite: _Stalker/Objects/Weapons/Guns/Snipers/SVDS/wood.rsi
     - type: Item
-      sprite: _Stalker/Objects/Weapons/Guns/Snipers/SVDS/base.rsi
+      sprite: _Stalker/Objects/Weapons/Guns/Snipers/SVDS/wood.rsi
     - type: Sprite
-      sprite: _Stalker/Objects/Weapons/Guns/Snipers/SVDS/base.rsi
+      sprite: _Stalker/Objects/Weapons/Guns/Snipers/SVDS/wood.rsi
     - type: Gun
       soundGunshot:
         path: /Audio/_Stalker/Effects/Guns/svd.ogg
