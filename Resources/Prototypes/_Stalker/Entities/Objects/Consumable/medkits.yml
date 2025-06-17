@@ -523,3 +523,39 @@
     state: medkit-5
   spawn: MedkitLAR
   maxCount: 4
+
+- type: entity
+  name: упаковка йодорадина
+  description: Упаковка таблеток йодорадина, каждая таблетка весит 10 грамм. Поможет вывести радионуклиды из организма. Принимать до 30 грамм за раз!
+  parent: PillCanister
+  id: STPillboxAntirad
+  suffix: ST, T1
+  components:
+  - type: StorageFill
+    contents:
+    - id: antiradpill
+      amount: 10
+
+- type: entity
+  name: упаковка пробудофилина
+  description: Упаковка таблеток пробудофилина, каждая таблетка весит 10 грамм. Поможет возоновить кровообращения и дыхание. Принимать до 20 грамм за раз!
+  parent: PillCanister
+  id: STPillboxProbud
+  suffix: ST, T2
+  components:
+  - type: StorageFill
+    contents:
+    - id: wakeuppill
+      amount: 10
+
+- type: entity
+  name: упаковка фуфломицина
+  description: Упаковка таблеток фуфломицина, каждая таблетка весит 10 грамм. Поможет уверить себя в своей неуязвимости для пси-волн. Принимать до 10 грамм за раз!
+  parent: PillCanister
+  id: STPillboxShiza
+  suffix: ST, T5
+  components:
+  - type: StorageFill
+    contents:
+    - id: shizopill
+      amount: 10
