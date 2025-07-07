@@ -59,7 +59,7 @@
 - type: entity
   parent: STClothingOuterArmorLightPlateVestBaseANAgreen
   id: STClothingOuterArmorLightPlateVestBaseANABlue
-  name: ANA Tactical 'Чистого Неба'
+  name: «Степь-4» 'Чистого Неба'
   description: Надёжный бронеразгруз 3 класса брони, вмещающий любого размера магазины.
   components:
   - type: Sprite
@@ -95,3 +95,14 @@
     slot: head
     requiredSlot: NECK
     clothingPrototype: ClothingHeadCassock
+
+- type: entity
+  parent: STClothingOuterArmorLightPlateVestBaseANAgreen
+  id: STClothingOuterArmorLightPlateVestSera
+  name: Бронеразгрузка «Заступник»
+  description: Надёжный бронеразгруз 3 класса брони, полный аналог «Степи-4», единственное различие - наличие напашника.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Clothing/outerClothing/_Sera/zastupnik.rsi
+  - type: Clothing
+    sprite: _Stalker/Objects/Clothing/outerClothing/_Sera/zastupnik.rsi
