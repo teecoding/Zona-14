@@ -83,8 +83,8 @@
       damageContainers:
         - Biological
       damage:
-      bloodlossModifier: -20
-      delay: 0.5
+        bloodlossModifier: -20
+        delay: 0.5
       healingBeginSound:
         path: "/Audio/Items/Medical/brutepack_begin.ogg"
       healingEndSound:
@@ -539,7 +539,7 @@
     areaInsertRadius: 1
     storageInsertSound: /Audio/Effects/pill_insert.ogg
     storageRemoveSound: /Audio/Effects/pill_remove.ogg
-    whitelist: 
+    whitelist:
       tags:
       - Pill
   - type: Dumpable
