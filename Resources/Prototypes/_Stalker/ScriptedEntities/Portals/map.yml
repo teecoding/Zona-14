@@ -1127,3 +1127,51 @@
       cooldownEnabled: true
       cooldownTime: 5
       godmodeCooldown: 5
+######################################################### глобал апдате 2025
+- type: entity
+  parent: MapTeleportBase
+  id: VhodNaTopi
+  name: Вход на Топи
+  components:
+    - type: NewMapTeleport
+      portalName: VhodNaTopi
+      allowAll: false
+      cooldownEnabled: true
+      cooldownTime: 5
+      godmodeCooldown: 5
+
+- type: entity
+  parent: MapTeleportBaseUncollide
+  id: VhodNaTopiUncollide
+  name: Вход на Топи Uncollide
+  components:
+    - type: NewMapTeleport
+      portalName: VhodNaTopi
+      allowAll: false
+      cooldownEnabled: true
+      cooldownTime: 5
+      godmodeCooldown: 5
+
+- type: entity
+  parent: MapTeleportBase
+  id: Topi-RedForestOdnstor
+  name: Топи - Рыжий лес
+  components:
+    - type: NewMapTeleport
+      portalName: Topi-RedForestOdnstor
+      allowAll: false
+      cooldownEnabled: true
+      cooldownTime: 5
+      godmodeCooldown: 5
+
+- type: entity
+  parent: MapTeleportBaseUncollide
+  id: Topi-RedForestOdnstorUncollide
+  name: Топи - Рыжий лес Uncollide
+  components:
+    - type: NewMapTeleport
+      portalName: Topi-RedForestOdnstor
+      allowAll: false
+      cooldownEnabled: true
+      cooldownTime: 5
+      godmodeCooldown: 5
