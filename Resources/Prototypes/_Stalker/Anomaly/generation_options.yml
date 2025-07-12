@@ -171,7 +171,7 @@
 - type: stAnomalyGenerationOptions
   id: STTopiGenerationOptions
   options:
-    totalCount: 450
+    totalCount: 900
     anomalyEntries:
     # Electrical
     - protoId: ZoneAnomalySource
