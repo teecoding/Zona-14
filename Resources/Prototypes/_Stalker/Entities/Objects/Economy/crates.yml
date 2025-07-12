@@ -1477,8 +1477,7 @@
   parent: BaseItem
   id: MonolithCrateBasicTools
   name: ящик с базовыми инструментами «Монолита»
-  description: Базовый армейский комплект, содержащий детектор аномалий, рацию, бинокль, нож, фонарик, батарейку и мешки для болтов.
-  suffix: Stalker
+  suffix: Stalker, T3
   components:
     - type: STWeight
       self: 47.2
@@ -1505,9 +1504,8 @@
 - type: entity
   parent: BaseItem
   id: MonolithCrateMedkit
-  name: ящик аптечек «Монолита»
-  description: Базовый армейский комплект, содержащий армейские аптечки, предназначенный для солдат С.О.П.
-  suffix: Stalker
+  name: ящик медицины «Монолита»
+  suffix: Stalker, T3
   components:
     - type: STWeight
       self: 47.2
@@ -1524,8 +1522,10 @@
         - id: MedkitMilitary
         - id: MedkitMilitary
         - id: MedkitMilitary
-        - id: MedkitMilitary
-        - id: MedkitMilitary
+        - id: STTourniquet
+        - id: STTourniquet
+        - id: STTourniquet
+        - id: STGauze
       sound:
         path: /Audio/Effects/unwrap.ogg
 
@@ -1533,8 +1533,7 @@
   parent: BaseItem
   id: MonolithCrate545Mag30
   name: ящик обойм 5.45 «Монолита»
-  description: Базовый армейский комплект, содержащий обоймы на 30 патрон под калибр 5.45 х 39, предназначенный для солдат С.О.П.
-  suffix: Stalker
+  suffix: Stalker, T3
   components:
     - type: STWeight
       self: 47.2
@@ -1561,7 +1560,6 @@
   parent: BaseItem
   id: MonolithCrate545PC
   name: ящик ПС патронов 5.45х39 «Монолита»
-  description: Базовый армейский комплект, содержащий ПС патроны калибра 5.45 х 39, предназначенный для солдат С.О.П.
   suffix: Stalker, T3
   components:
     - type: STWeight
@@ -1589,8 +1587,7 @@
   parent: BaseItem
   id: MonolithCrate754Mag10
   name: ящик обойм 7.62х54 «Монолита»
-  description: Базовый армейский комплект, содержащий обоймы на 30 патрон под калибр 5.45 х 39, предназначенный для солдат С.О.П.
-  suffix: Stalker
+  suffix: Stalker, T3
   components:
     - type: STWeight
       self: 47.2
@@ -1613,7 +1610,6 @@
   parent: BaseItem
   id: MonolithCrate754FMJ
   name: ящик FMJ патронов 7.62х54 «Монолита»
-  description: Базовый армейский комплект, содержащий ПС патроны калибра 5.45 х 39, предназначенный для солдат С.О.П.
   suffix: Stalker, T3
   components:
     - type: STWeight
