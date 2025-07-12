@@ -319,7 +319,7 @@
           STWeaponRifleAKS74UWhite: 1350
           STHatchetSponsor: 150
           STSpanishKnife: 100
-    3:
+    SponsorOMind:
       - name: О-сознание
         items:
           STWeaponRifleSVDSWood: 800
