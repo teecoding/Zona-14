@@ -44,7 +44,7 @@
       - Biological
     damage:
       groups:
-        Brute: -8
+        Brute: -24
     delay: 4
     healingBeginSound:
       path: "/Audio/Items/Medical/brutepack_begin.ogg"
@@ -172,10 +172,10 @@
       - Biological
     damage:
       types:
-        Cold: -20
-        Heat: -20
-        Caustic: -10
-        Shock: -10
+        Cold: -25
+        Heat: -25
+        Caustic: -15
+        Shock: -15
     delay: 4
   - type: Stack
     stackType: STOintmentGoodstack
@@ -413,8 +413,8 @@
   - type: Healing
     damage:
       groups:
-        Burn: -30
-        Airloss: -30
+        Burn: -75
+        Airloss: -75
       types:
         Compression: -30
     delay: 6
@@ -458,8 +458,8 @@
   - type: Healing
     damage:
       groups:
-        Toxin: -30
-        Genetic: -30
+        Toxin: -80
+        Genetic: -80
       types:
         Psy: -30
     delay: 9
@@ -509,8 +509,8 @@
       - Biological
     damage:
       groups:
-        Burn: -50
-        Genetic: -50
+        Burn: -95
+        Genetic: -70
       types:
         Poison: -75
         Caustic: -65
