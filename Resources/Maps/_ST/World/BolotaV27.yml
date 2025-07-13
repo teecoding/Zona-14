@@ -43640,6 +43640,8 @@ entities:
     - type: NavMap
     - type: ZoneArtifactSpawnerMapTier
       maxTier: 1
+    - type: STMapKey
+      value: Boloto
 - proto: Banner14
   entities:
   - uid: 2
