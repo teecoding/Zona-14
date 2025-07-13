@@ -181,8 +181,8 @@
         - MobLayer
         - LowImpassable
   - type: Sprite
-    sprite: Structures/Power/Generation/Tesla/generator.rsi
-    state: icon
+    sprite: _Stalker/Objects/Anomalies/bubble2.rsi
+    state: idle
 
 - type: entity
   id: STAnomalyBubbleExit
