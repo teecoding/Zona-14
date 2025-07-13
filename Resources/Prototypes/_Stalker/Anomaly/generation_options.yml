@@ -19,6 +19,7 @@
     # Gravity
     - protoId: ZoneAnomalyBurden
       weight: 0.95
+    - protoId: STAnomalyBubbleExit
     - protoId: ZoneAnomalyGravi
       weight: 4
     - protoId: ZoneAnomalySpringboard
@@ -66,6 +67,7 @@
       weight: 2
     - protoId: ZoneAnomalyGazirovka
       weight: 5
+    - protoId: STAnomalyBubbleExit
     - protoId: ZoneAnomalyKissel
       weight: 3
     # Gravity
@@ -210,6 +212,7 @@
     totalCount: 400
     anomalyEntries:
     - protoId: ZoneAnomalyKissel
+    - protoId: STAnomalyBubble
     - protoId: ZoneAnomalyNoGravity
     - protoId: ZoneAnomalyElectra
     - protoId: ZoneAnomalyGravi
