@@ -209,7 +209,7 @@
 - type: stAnomalyGenerationOptions
   id: STRedForestGenerationOptions
   options:
-    totalCount: 500
+    totalCount: 400
     anomalyEntries:
     - protoId: ZoneAnomalyKissel
     - protoId: STAnomalyBubble
@@ -273,7 +273,7 @@
 - type: stAnomalyGenerationOptions
   id: STLimaGenerationOptions
   options:
-    totalCount: 500
+    totalCount: 100
     anomalyEntries:
     - protoId: ZoneAnomalyKissel
     - protoId: ZoneAnomalyNoGravity
