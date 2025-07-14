@@ -280,6 +280,7 @@
     anomalyEntries:
     - protoId: ZoneAnomalyKissel
     - protoId: ZoneAnomalyNoGravity
+      weight: 0.2
     - protoId: STAnomalyBubbleLima
       weight: 0.35
     - protoId: ZoneAnomalyElectra
