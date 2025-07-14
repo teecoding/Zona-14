@@ -87,6 +87,7 @@
     - name: Персональная категория
       items:
         STWeaponSniperVeprGrass: 8000
+        STWeaponShotgunShizoToz34: 800
 
 - type: personalShop
   id: PersonalRet4Shop
