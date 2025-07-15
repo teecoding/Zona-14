@@ -4,7 +4,7 @@ using Robust.Server.GameObjects;
 
 namespace Content.Server._Stalker.Anomaly.Effects.Systems;
 
-public sealed class STAnomalyGenericVisualizerEffectSystem : EntitySystem
+public sealed class STAnomalyEffectGenericVisualizerSystem : EntitySystem
 {
     [Dependency] private readonly AppearanceSystem _appearance = default!;
 
@@ -12,10 +12,10 @@ public sealed class STAnomalyGenericVisualizerEffectSystem : EntitySystem
     {
         base.Initialize();
 
-        SubscribeLocalEvent<STAnomalyGenericVisualizerEffectComponent, STAnomalyTriggerEvent>(OnTriggered);
+        SubscribeLocalEvent<STAnomalyEffectGenericVisualizerComponent, STAnomalyTriggerEvent>(OnTriggered);
     }
 
-    private void OnTriggered(Entity<STAnomalyGenericVisualizerEffectComponent> effect, ref STAnomalyTriggerEvent args)
+    private void OnTriggered(Entity<STAnomalyEffectGenericVisualizerComponent> effect, ref STAnomalyTriggerEvent args)
     {
         foreach (var group in args.Groups)
         {

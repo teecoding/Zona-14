@@ -4,7 +4,7 @@ using Robust.Server.Audio;
 
 namespace Content.Server._Stalker.Anomaly.Effects.Systems;
 
-public sealed class STAnomalySoundEffectSystem : EntitySystem
+public sealed class STAnomalyEffectSoundSystem : EntitySystem
 {
     [Dependency] private readonly AudioSystem _audio = default!;
 
@@ -12,10 +12,10 @@ public sealed class STAnomalySoundEffectSystem : EntitySystem
     {
         base.Initialize();
 
-        SubscribeLocalEvent<STAnomalySoundEffectComponent, STAnomalyTriggerEvent>(OnTriggered);
+        SubscribeLocalEvent<STAnomalyEffectSoundComponent, STAnomalyTriggerEvent>(OnTriggered);
     }
 
-    private void OnTriggered(Entity<STAnomalySoundEffectComponent> effect, ref STAnomalyTriggerEvent args)
+    private void OnTriggered(Entity<STAnomalyEffectSoundComponent> effect, ref STAnomalyTriggerEvent args)
     {
         foreach (var group in args.Groups)
         {

@@ -6,7 +6,7 @@ using Content.Shared.Whitelist;
 
 namespace Content.Server._Stalker.Anomaly.Effects.Systems;
 
-public sealed class STAnomalyEnterDimensionEffectSystem : EntitySystem
+public sealed class STAnomalyEffectEnterDimensionSystem : EntitySystem
 {
     [Dependency] private readonly STDimensionSystem _dimension = default!;
     [Dependency] private readonly EntityLookupSystem _entityLookup = default!;
@@ -16,10 +16,10 @@ public sealed class STAnomalyEnterDimensionEffectSystem : EntitySystem
     {
         base.Initialize();
 
-        SubscribeLocalEvent<STAnomalyEnterDimensionEffectComponent, STAnomalyTriggerEvent>(OnTriggered);
+        SubscribeLocalEvent<STAnomalyEffectEnterDimensionComponent, STAnomalyTriggerEvent>(OnTriggered);
     }
 
-    private void OnTriggered(Entity<STAnomalyEnterDimensionEffectComponent> effect, ref STAnomalyTriggerEvent args)
+    private void OnTriggered(Entity<STAnomalyEffectEnterDimensionComponent> effect, ref STAnomalyTriggerEvent args)
     {
         foreach (var group in args.Groups)
         {

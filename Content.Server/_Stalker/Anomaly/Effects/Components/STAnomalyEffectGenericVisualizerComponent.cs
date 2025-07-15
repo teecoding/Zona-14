@@ -1,7 +1,7 @@
 ﻿namespace Content.Server._Stalker.Anomaly.Effects.Components;
 
 [RegisterComponent]
-public sealed partial class STAnomalyGenericVisualizerEffectComponent : Component
+public sealed partial class STAnomalyEffectGenericVisualizerComponent : Component
 {
     [DataField]
     public Dictionary<string, STAnomalyGenericVisualizerEffectOptions> Options = new();

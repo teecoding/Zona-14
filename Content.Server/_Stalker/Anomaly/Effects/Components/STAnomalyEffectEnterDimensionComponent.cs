@@ -5,7 +5,7 @@ using Robust.Shared.Prototypes;
 namespace Content.Server._Stalker.Anomaly.Effects.Components;
 
 [RegisterComponent]
-public sealed partial class STAnomalyEnterDimensionEffectComponent : Component
+public sealed partial class STAnomalyEffectEnterDimensionComponent : Component
 {
     [DataField]
     public Dictionary<string, STAnomalyEnterDimensionEffectOptions> Options = new();

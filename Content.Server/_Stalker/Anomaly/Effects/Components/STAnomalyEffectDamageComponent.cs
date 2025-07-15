@@ -3,7 +3,7 @@
 namespace Content.Server._Stalker.Anomaly.Effects.Components;
 
 [RegisterComponent]
-public sealed partial class STAnomalyDamageEffectComponent : Component
+public sealed partial class STAnomalyEffectDamageComponent : Component
 {
     [DataField]
     public Dictionary<string, STAnomalyDamageEffectOptions> Options = new();

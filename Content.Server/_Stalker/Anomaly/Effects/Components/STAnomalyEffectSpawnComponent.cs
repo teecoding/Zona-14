@@ -1,10 +1,10 @@
-﻿using Content.Shared.Explosion;
+﻿using System.Numerics;
 using Robust.Shared.Prototypes;
 
 namespace Content.Server._Stalker.Anomaly.Effects.Components;
 
 [RegisterComponent]
-public sealed partial class STAnomalyExplosionEffectComponent : Component
+public sealed partial class STAnomalyEffectSpawnComponent : Component
 {
     [DataField]
     public Dictionary<string, Option> Options = new();
@@ -13,15 +13,15 @@ public sealed partial class STAnomalyExplosionEffectComponent : Component
     public partial struct Option
     {
         [DataField]
-        public ProtoId<ExplosionPrototype> Id = "Son";
+        public EntProtoId Id;
 
         [DataField]
-        public float Intensity = 500f;
+        public ComponentRegistry Components;
 
         [DataField]
-        public float Slope = 4f;
+        public float Range;
 
         [DataField]
-        public float MaxIntensity = 1000f;
+        public Vector2 Offset;
     }
 }

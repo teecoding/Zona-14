@@ -4,7 +4,7 @@ using Content.Shared._Stalker.Anomaly.Triggers.Events;
 
 namespace Content.Server._Stalker.Anomaly.Effects.Systems;
 
-public sealed class STAnomalyExplosionEffectSystem : EntitySystem
+public sealed class STAnomalyEffectExplosionSystem : EntitySystem
 {
     [Dependency] private readonly ExplosionSystem _explosion = default!;
 
@@ -12,10 +12,10 @@ public sealed class STAnomalyExplosionEffectSystem : EntitySystem
     {
         base.Initialize();
 
-        SubscribeLocalEvent<STAnomalyExplosionEffectComponent, STAnomalyTriggerEvent>(OnTriggered);
+        SubscribeLocalEvent<STAnomalyEffectExplosionComponent, STAnomalyTriggerEvent>(OnTriggered);
     }
 
-    private void OnTriggered(Entity<STAnomalyExplosionEffectComponent> effect, ref STAnomalyTriggerEvent args)
+    private void OnTriggered(Entity<STAnomalyEffectExplosionComponent> effect, ref STAnomalyTriggerEvent args)
     {
         foreach (var group in args.Groups)
         {
