@@ -111,6 +111,7 @@
       ZoneArtifactDetectorHunter: 25 # T2
       ZoneArtifactDetectorResponse: 25 # T2
       STZoneArtifactDetectorBearBlueprint: 150
+      STPsyHelm1: 10
   - name: shop-category-medicine
     priority: 10
     items:
