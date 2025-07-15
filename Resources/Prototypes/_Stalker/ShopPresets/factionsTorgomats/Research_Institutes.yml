@@ -41,10 +41,10 @@
         7mmBuckshotBox: 45
         545FMJBox: 170
         545HPBox: 640
-        545PCBox: 425
+        545PCBox: 2000
         556FMJBox: 300
-        556WarmagBox: 1115
-        556M855Box: 745
+        556WarmagBox: 400
+        556M855Box: 3000
     - name: shop-category-armor
       priority: 4
       items:
@@ -52,7 +52,7 @@
         STClothingHeadTinfoil: 200
           # OuterClothing #
         ClothingOuterJacketSCI: 60 # T1 - PVE
-        ClothingOuterArmorSSP99Amber: 1750
+        ClothingOuterArmorSSP99Amber: 1000
         ClothingOuterArmorSSP99: 2100
         ClothingOuterArmorSSP99White: 2750
         ClothingOuterArmorSSP24Sapfire: 3250
@@ -60,8 +60,6 @@
         ClothingOuterArmorSevaSciRed: 1750
         ClothingOuterArmorSSP24Ruby: 2750
         ClothingOuterArmorSSP24Topaz: 2750
-        STClothingOuterArmorLightPlateVestBaseANAgray: 2750
-        STClothingOuterArmorLightPlateVestBaseANAgreen: 2750
         STClothingNeckExoskeletonSci: 10000
 
     - name: shop-category-storage-and-containers
@@ -91,16 +89,14 @@
         STBoltBagFilled: 50
         BoxArtcont: 250 # T1
         ZoneAnomalyDetectorAD1: 250 # T1
-        ZoneAnomalyDetectorAD2: 650 # T2
-        ZoneAnomalyDetectorAD3: 1000 # Т3
+        ZoneAnomalyDetectorAD2: 1000 # T2
+        ZoneAnomalyDetectorAD3: 2400 # Т3
           # Detectors
         ZoneArtifactDetectorPulse: 50 # T1
         ZoneArtifactDetectorHunter: 100 # T2
-        ZoneArtifactDetectorResponse: 300 # T2
-        ZoneArtifactDetectorSpruce: 1200 # T2
-        ZoneArtifactDetectorBarracuda: 2100 # T3
-        ZoneArtifactDetectorBear: 3200 # T4
-        ZoneArtifactDetectorWolfhound: 5000
+        ZoneArtifactDetectorResponse: 700 # T2
+        ZoneArtifactDetectorSpruce: 2200 # T2
+        ZoneArtifactDetectorBarracuda: 3500 # T3
           #RP Shit
         BaseMachineAnomalyDestructorFolded: 500
         BaseMachineAnomalyDestructorFolded1: 500
@@ -169,10 +165,10 @@
         MedkitScience: 150
         MedkitMilitary: 75
         Defibrillator: 700
+        MedkitElite: 400
+        MedkitLAR: 450
         # Crates
-        AntiradCrate: 200
-        SanitarCrate: 430
-        ResearcherCrate: 1350
+        SanitarCrate: 800
         SaviorCrate: 1500
         PolevoyVrachCrate: 1740
     - name: shop-category-customization
