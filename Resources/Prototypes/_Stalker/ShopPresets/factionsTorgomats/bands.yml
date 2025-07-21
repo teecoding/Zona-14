@@ -292,9 +292,6 @@
         TrashDetectorTier1: 200
         TrashDetectorTier2: 400
         TrashDetectorTier3: 800
-        TrashDetectorTier4: 1600
-
-
     - name: shop-category-utilities
       priority: 8
       items:

@@ -83,6 +83,7 @@
             # Melee
         StalkerBallBat: 50
         STThrowingknifeBlue: 250
+        RGD5Grenade: 500
             # Guns
           # 7mm
         STWeaponShotgunTOZ34: 250 # T1
