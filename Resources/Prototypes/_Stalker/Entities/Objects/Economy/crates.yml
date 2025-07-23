@@ -1519,9 +1519,11 @@
       items:
         - id: MedkitMilitary
         - id: MedkitMilitary
-        - id: MedkitScience
-        - id: MedkitAI2
-        - id: STOintmentGood
+        - id: MedkitMilitary
+        - id: MedkitMilitary
+        - id: MedkitMilitary
+        - id: STTourniquet
+        - id: STTourniquet
         - id: STTourniquet
         - id: STGauze
       sound:
