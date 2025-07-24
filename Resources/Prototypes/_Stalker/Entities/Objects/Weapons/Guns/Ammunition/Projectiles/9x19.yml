@@ -38,8 +38,8 @@
     projectileClass: 0
     damage:
       types:
-        Mutant: 10
-        Piercing: 35
+        Mutant: 15
+        Piercing: 20
 
 - type: entity
   id: Bullet919PBM

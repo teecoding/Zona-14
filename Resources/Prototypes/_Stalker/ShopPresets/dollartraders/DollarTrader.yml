@@ -60,7 +60,7 @@
       STWeaponSniperSVDS: 250
       STWeaponSniperVepr: 150
       STWeaponShotgunSaiga12: 25
-      STWeaponSniperVSS: 300
+      STWeaponSniperVSS: 600
   - name: shop-category-magazines
     priority: 2
     items:
@@ -82,7 +82,7 @@
       751M80BoxCink: 35
       545PCBoxCink: 25
       725PSTBoxCink: 20
-      8mmBuckshotBoxCink: 10
+      8mmBuckshotBoxCink: 40
       754PCBox: 5
       STBox9x39PSO: 15
       ShotgunBulletBoxRIP: 5
@@ -90,13 +90,11 @@
     priority: 4
     items:
       ClothingHeadHelmetBerill5MMilitary: 20
-      STClothingOuterArmorIOTVBlack: 150
       ClothingHeadHelmetUlach: 75
-      ClothingOuterArmor6B13: 120
       ClothingOuterArmorAborigineStalker: 75
       ClothingOuterArmorStalkerCombat: 200
       STClothingOuterArmorVeryHeavy: 350
-      ClothingOuterArmorUzk5: 500
+      ClothingOuterArmorHazmatRf: 500
   - name: shop-category-storage-and-containers
     priority: 5
     items:
@@ -111,7 +109,7 @@
       ZoneAnomalyDetectorAD3: 20
       ZoneArtifactDetectorSpruce: 25
       ZoneArtifactDetectorBear: 350
-      STZoneArtifactDetectorWolfhoundBlueprint: 500
+      ZoneArtifactDetectorWolfhound: 1000
       STPsyHelm2: 20
       BoxArtcont1: 20
       BoxArtcont: 5

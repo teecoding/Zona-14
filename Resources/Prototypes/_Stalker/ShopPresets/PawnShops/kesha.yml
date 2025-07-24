@@ -239,6 +239,10 @@
         ClothingOuterArmor6B2: 3000
         ClothingHeadHelmetInfantry: 400
         STClothingHeadHelmetMakeshiftTacticalT3: 1500
+        ClothingOuterArmorSpark: 1500
+        ClothingOuterArmorZaryaStalkerModifedType2: 2000
+        ClothingOuterArmorZaryaStalkerModifedType1: 3500
+        ClothingOuterArmorZaryaHunter: 2000
     - name: shop-category-storage-and-containers
       priority: 5
       items:

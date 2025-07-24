@@ -64,7 +64,6 @@
      #Weapons and armour ---- min cost / 2
 
     #12x70
-    STWeaponShotgunMP155T: 20
     STWeaponShotgunTOZ34: 100
     STWeaponShotgunMP133: 170
     STWeaponShotgunMP153: 400
@@ -166,7 +165,6 @@
         StalkerBallBat: 180
             # Guns
           # 7mm
-        STWeaponShotgunMP155T: 45 #T0.5
         STWeaponShotgunTOZ34: 100 # T2
         STWeaponShotgunMP133: 385 # T1.5
         STWeaponShotgunMossbergM88: 630 # T2
@@ -176,8 +174,8 @@
         STWeaponRifleAKS74U: 2000
         # Smg
         STWeaponSMGMP5: 1650
-        STWeaponSMGVZ61: 750
         STWeaponSMGPPSh41: 1250
+        STWeaponSMGMP40: 600
         # Other
         WeaponPistolStalkerTT: 250
         WeaponStalkerPistolTec9: 250
@@ -193,10 +191,9 @@
         545Mag20: 100 #T2
           # 7,62x54 and 39
         Base739Mag10: 100
-        Base754Mag5: 250 #T1
           # Smg
+        MP40Mag: 100
         BaseMP5Mag: 200
-        Vz61Mag: 100
         PPSHDrum: 1000
         BasePPSHMag: 250
           # Other

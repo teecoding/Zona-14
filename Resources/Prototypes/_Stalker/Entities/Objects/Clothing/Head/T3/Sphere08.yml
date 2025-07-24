@@ -12,8 +12,8 @@
     armorClass: 3
     modifiers:
       flatReductions:
-        Blunt: 4
-        Slash: 4
+        Blunt: 5
+        Slash: 5
         Piercing: 4
       coefficients:
         Blunt: 0.80
@@ -22,7 +22,7 @@
   - type: ExplosionResistance
     damageCoefficient: 0.90
   - type: Reflect
-    reflectProb: 0.10
+    reflectProb: 0.08
     spread: 360
     reflects:
       - NonEnergy

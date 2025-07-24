@@ -69,10 +69,10 @@
         STWeaponShotgunSaiga12: 40
           # 5,45x39
         STWeaponRifleAK74M: 140
-        STWeaponRifleStalkerAK12: 175
+        STWeaponRifleStalkerAK12: 200
         STWeaponRifleASVAL: 500
         STWeaponRifleAK103: 300
-        STWeaponRifleOC14: 200
+        STWeaponRifleOC14: 150
         KhattabkaGrenade: 1
         DG05SmokeGrenade: 2
         TearGasGrenadeStalker: 7
@@ -81,212 +81,50 @@
       priority: 2
       items:
           # 5,45x39
-        545Mag30: 400 #T3
-          # 7,62x54 and 39
-        Base739Mag10: 200
-        739Mag30: 500
-          # Smg
-        BizonMag: 1100
-        VityazMag: 210
+        545Mag45: 30 #T3
+        739Mag45: 30
+        939Mag20: 30
           # Other
-        Saiga1270Drum: 20
+        Saiga1270Drum: 30
         Saiga1270Mag10: 10
         Base1270Mag: 5
     - name: shop-category-ammunition
       priority: 3
       items:
-        6mmBuckshotBox: 100
-        7mmBuckshotBox: 40
-        8mmBuckshotBox: 170
-        # 7.25
-        725PBox: 90
-        725LRNPCBox: 100
-        # 9.19
-        919PSOGJBox: 80
-        919PSTBox: 500
-        919PBMBox: 1000
-        919RIPBox: 200
-        # 5.45
-        545FMJBox: 500
-        545HPBox: 100
-        545PCBox: 2000
-        # 7.39
-        739FMJBox: 1540
-        739HPBox: 400
-        # 7.54
-        754FMJBox: 1675
-        754HPBox: 1015
+        8mmBuckshotBoxCink: 35
+        545BPBoxCink: 80
+        739PCBoxCink: 120
+        939BPBoxCink: 150
 
     - name: shop-category-armor
       priority: 4
       items:
-          # Helmets #
-        ClothingHeadHelmetDolg: 200 # T1 - PVE
-        ClothingHeadHelmetInfantry: 650 # T2 - PVP
-        ClothingHeadHelmetVityaz1M: 2000
-          # OuterClothing #
-        ClothingOuterJacketDolg: 60 # T1 - PVE
-        STClothingOuterArmorLightPlateVestBaseDolg: 1000 # T2 - PvP
-        ClothingOuterArmorRCBZDolg: 1700 # T2 - ENV
-        ClothingOuterArmorZaryaDolg: 2000 # T2 - universal
-        ClothingOuterArmorSevaDolgRed: 10000 # T3 - ENV
+        ClothingOuterArmorDolgPS5M: 20
+        ClothingOuterArmorPSZ9D: 300
+        ClothingHeadHelmetBerill5MDolg: 30
+        ClothingHeadAssaultHelmetDolg: 45
+        ClothingHeadHelmetUlach: 80
+        STPsyHelm2: 20
+
     - name: shop-category-storage-and-containers
       priority: 5
       items:
-          # BackPacks
-        ClothingBackpackTownBlackStalker: 100 # T1
-        ##-------------------------------------------
-        ClothingBackpackTacticBlackRadStalker: 400 # T2
-        ##-------------------------------------------
-        ClothingBackpackMercStalker: 799 # T3 |pve backpack
-        ClothingBackpackStalkerZaryaBlack: 300 # T3 |pvp backpack
-        ##-------------------------------------------
-        ClothingBackpackDuffelBlackMilitaryTacticStalker: 1550 # T4
-        ClothingBackpackDuffelBlackTacticStalker: 1500 # T4
-          # Belts
-        ClothingBeltBandolierStalker: 20 # T1 - PVE
-        ClothingBeltWebbingHolsterDolgPS5M: 700 # t3 belt
+        ClothingBackpackDuffelBlackTacticStalker: 40
+        ClothingBackpackDuffelBlackMilitaryTacticStalker: 40
+        ClothingBeltWebbingDoubleStalkerZaryaSmall: 10
+
     - name: shop-category-raincoats-and-gasmasks
       priority: 6
       items:
           # Gasmasks
-        ClothingMaskGasDolg1: 100 # T1
-        ClothingMaskGasDolg2: 100 # T2
-        ClothingMaskGP21: 1200 # T3
-    - name: shop-category-research-equipment
+        ClothingMaskunix5000: 40
+        ClothingMaskRCBZ2: 30
+
+    - name: shop-category-modules
       priority: 7
       items:
-        STBoltBagFilled: 50
-        BoxArtcont: 750
-        ZoneAnomalyDetectorAD1: 450 # T1
-        ZoneAnomalyDetectorAD2: 1000 # T2
-    - name: shop-category-utilities
-      priority: 8
-      items:
-        STSkinsKitDolg: 500
-        STCombatKnife: 25
-        LgbtKnife: 30
-        BoxZiptie: 50
-        BoxSafebox: 300
-        CheapLighter: 5
-        GeigerCounter: 50
-        BaseRadio: 50
-        STFlashlightSeclite: 50
-        PowerCellHyper: 50
-        HandheldGPSBasic: 50
-        Paper: 2
-        Pen: 5
-        Binocularus1: 1000
-        BoxFlare: 60
-        ClothingBackpackDuffelGreenStalkerHydroponic: 500
-        Beaker: 40
-        Syringe: 20
-        ClothingGoPro: 250
-        ExtendedEmergencyOxygenTankFilledStalker: 50
-        TrashDetectorTier1: 200
-        Matchbox: 10
-        HatchetStalker: 150
-    - name: shop-category-provisions
-      priority: 9
-      items:
-        STEnergyDrink: 150
-        STEnergyDrinkMonster: 150
-        STEnergyDrinkRevo: 200
-        STDrinkBeerCanBaltic: 90
-        DrinkVodkaBottleFull: 55
-        STFoodBreadPlain: 35
-        DrinkFlaskOld: 30
-        DrinkWaterBottleFull: 45
-        FoodTinMRE: 120
-        DrinkLemonadehBottleFull: 50
-        STFoodMeatSalami: 350
-    - name: shop-category-medicine
-      priority: 10
-      items:
-        STPillboxAntirad: 350
-        STGauze: 65
-        STOintment: 85
-        STBrutepack: 55
-        Bloodpack: 450
-        MedkitAI2: 200
-        Defibrillator: 700
-        AntiRadMedipen: 200
-        STPillboxProbud: 300
-        MedkitMilitary: 250
-        MedkitScience: 450
-        MedkitElite: 750
-        MedkitLAR: 700
-    - name: shop-category-modules
-      priority: 11
-      items:
-        STModuleScopeRiflesT1Ru: 600
-        STModuleScopeRiflesT1Nato: 600
-        STModuleShotgunChokeT1: 200
-        STModuleSniperSightT1: 600
-        STModuleSilencerSniperT1: 600
-        STModuleSMGGripT1: 600
-    - name: shop-category-customization
-      priority: 12
-      items:
-        ClothingBandageStalkerRed: 5
-        ClothingBandageStalkerRus: 25
-        ClothingBandageStalkerUk: 25
-        ClothingBandageStalkerPeace: 25
-        ClothingBandageStalkerJid: 35
-        ClothingHeadHatBeaniehat: 10
-        ClothingMaskNeckFacemask: 10
-        ClothingMaskNeckBalaklava1: 10
-        ClothingMaskNeckBalaklava2: 10
-        ClothingMaskNeckBalaklava3: 10
-        ClothingHeadBandMerc: 30
-        ClothingHeadBandSkull: 30
-        ClothingHeadHatUshanka: 30
-        ClothingHandsGlovesFingerless: 30
-        ClothingHandsGlovesMercFingerless: 60
-        ClothingShoesColorBlack: 30
-        ClothingShoesBootsWork: 30
-        ClothingShoesLeather: 30
-        ClothingShoesBootsMerc: 30
-        ClothingShoesSwat: 35
-        ClothingHeadHatBlacksoft: 10
-        ClothingHeadHatGreysoft: 10
-        ClothingHeadHatSovietUshankaStalker: 40
-        ClothingCloakStalker: 30
-        ClothingLegsJeansBlue: 10
-        ClothingLegsJeansStalker: 10
-        ClothingLegsJeansGreenCargo: 10
-        ClothingLegsJeansGreyCargo: 10
-        ClothingLegsJeansBlackCargo: 10
-        ClothingLegsJeansBrownCargo: 10
-        ClothingLegsJeansSandCargo: 10
-        ClothingLegsJeansRussianPixel: 20
-        ClothingLegsJeansBlackNew: 20
-        ClothingLegsJeansGorka: 20
-        ClothingShoesBootsCombat: 30
-        ClothingTorsoTShirtPivozavr: 30
-        ClothingTorsoTShirtSailorSuit: 30
-        ClothingTorsoTShirtColorBlack: 30
-        ClothingTorsoTurtlenecksBlack: 90
-        ClothingTorsoTurtlenecksGorka: 90
-        ClothingTorsoTurtlenecksGorka6: 90
-        ClothingTorsoTurtlenecksBereza: 90
-        ClothingLegsJeansBereza: 20
-        ClothingLegsJeansGorka6: 20
-        ClothingTorsoTurtlenecksGorkaRus: 90
-        ClothingOuterCoatKKK: 67
-        # new shit
-        ClothingLegsBattlePantsBlack: 50
-        ClothingLegsVeryBlueJenas: 50
-        ClothingLegsCombatForest: 50
-        ClothingLegsGorka5: 50
-        ClothingLegsGorka6b: 50
-        ClothingLegsNavyPants: 50
-        ClothingLegsRussianNumber: 50
-        ClothingTorsoTurtlenecksBattleTurtleneckbBlack: 50
-        ClothingTorsoTurtlenecksBlackTurtleneck: 50
-        ClothingTorsoTurtlenecksCombatForest: 50
-        ClothingTorsoTurtlenecksGorka5: 50
-        ClothingTorsoTurtlenecksGorka6B: 50
-        ClothingTorsoTurtlenecksKhakiTurtleneck: 50
-        ClothingTorsoTurtlenecksMatrosska: 50
-        STClothingHeadBeretDolg: 80
+        STModuleAutoSear: 50
+        STModuleSMGGripT2: 60
+        STModuleSniperSightT2: 30
+        STModuleScopeRiflesT2Nato: 50
+        STModuleScopeRiflesT2Ru: 50
