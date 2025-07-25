@@ -113,7 +113,9 @@
       STPsyHelm2: 20
       BoxArtcont1: 20
       BoxArtcont: 5
-      STBoltBagOliveGrayFilledGolden: 300 
+      STBoltBagOliveGrayFilledGolden: 300
+      TrashDetectorTier4: 100
+      TrashDetectorTier5: 200
   - name: shop-category-medicine
     priority: 10
     items:

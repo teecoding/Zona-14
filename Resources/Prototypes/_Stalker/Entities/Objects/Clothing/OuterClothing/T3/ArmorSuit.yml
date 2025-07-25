@@ -51,7 +51,7 @@
     sprite: _Stalker/Objects/Clothing/outerClothing/stalker_barsuk.rsi
   - type: Tag
     tags:
-    - BlockBack
+    - BlockCloak
   - type: Storage
     maxItemsize: Large
     grid:
@@ -288,9 +288,6 @@
       - 6,3,6,4
   - type: Armor
     armorClass: 2
-# bonus
-  - type: STWeight
-    self: -3.5
 
 - type: entity
   parent: STClothingHeadHatBase

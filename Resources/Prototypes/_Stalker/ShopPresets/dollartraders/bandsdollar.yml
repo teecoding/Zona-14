@@ -102,6 +102,7 @@
         DG05SmokeGrenade: 2
         HydrocyanicGrenadeStalker: 7
         StielhandgranateM24Bundle: 10
+        TrashDetectorTier4: 100
     - name: shop-category-magazines
       priority: 2
       items:
