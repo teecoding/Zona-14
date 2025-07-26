@@ -51,17 +51,17 @@
     FoodMeatSpiderLeg: 0
 
     #T2 -------- Health * 1.8
-    MutantPartLeshiyRoot: 20
-    MutantPartPseudodogTail: 5
-    MutantPartSnorkFoot: 5
+    MutantPartLeshiyRoot: 0
+    MutantPartPseudodogTail: 0
+    MutantPartSnorkFoot: 0
 
     #T3 -------- Health * 3
-    MutantPartBloodsuckerTentacles: 40
-    MutantPartOraculeEye: 50
-    MutantPartPseudogiantHeart: 80
-    MutantPartZombieHand: 2
+    MutantPartBloodsuckerTentacles: 0
+    MutantPartOraculeEye: 0
+    MutantPartPseudogiantHeart: 0
+    MutantPartZombieHand: 0
 
-        #values
+    #values
     ClothingNeckBronzeheart: 0
     ClothingNeckCargomedal: 0
     ClothingNeckEngineermedal: 0
