@@ -1212,6 +1212,7 @@
      godmodeCooldown: 5
      time: 5
 
+
 - type: entity
   parent: MapTeleportBase
   id: Bar-Topi
