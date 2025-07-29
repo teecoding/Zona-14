@@ -30,7 +30,7 @@
             # Guns
           # 7mm
         STWeaponShotgunTOZ34: 200
-        STWeaponShotgunMP133: 340 
+        STWeaponShotgunMP133: 340
         STWeaponShotgunMP153: 800
           # 5,45x39
         STWeaponRifleSaiga545: 1000
@@ -43,6 +43,7 @@
           # Other
         WeaponPistolStalkerAPS: 500 #T2
         WeaponPistolStalkerTT: 250
+        STWeaponSniperMosin: 1200
     - name: shop-category-magazines
       priority: 2
       items:
@@ -90,7 +91,7 @@
       items:
           # Helmets #
         ClothingHeadHelmetDolg: 200 # T1 - PVE
-        ClothingHeadHelmetInfantry: 650 # T2 - PVP
+        ClothingHeadHelmetInfantryDolg: 650 # T2 - PVP
         ClothingHeadHelmetVityaz1M: 2000
           # OuterClothing #
         ClothingOuterJacketDolg: 60 # T1 - PVE
