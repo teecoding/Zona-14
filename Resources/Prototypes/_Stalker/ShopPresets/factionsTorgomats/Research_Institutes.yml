@@ -43,11 +43,9 @@
         7mmBuckshotBox: 45
         545HPBox: 200
         545FMJBox: 170
-        545HPBox: 640
         545PCBox: 2000
         556WarmagBox: 200
         556FMJBox: 300
-        556WarmagBox: 400
         556M855Box: 3000
     - name: shop-category-armor
       priority: 4
