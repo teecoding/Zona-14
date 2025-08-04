@@ -11,6 +11,7 @@ namespace Content.Client._Stalker.Bands;
 /// </summary>
 public sealed class BandsSystem : SharedBandsSystem
 {
+    [Dependency] private readonly IPlayerManager _player = default!;
     [Dependency] private readonly IPrototypeManager _proto = default!;
     public override void Initialize()
     {
@@ -21,7 +22,16 @@ public sealed class BandsSystem : SharedBandsSystem
 
     private void OnGetStatusIcon(EntityUid uid, BandsComponent component, ref GetStatusIconsEvent args)
     {
+        var ent = _player.LocalSession?.AttachedEntity;
+
+        // Check if band of local entity is equal to other's entity band
+        if (!TryComp<BandsComponent>(ent, out var band))
+            return;
+
         if (!component.Enabled)
+            return;
+
+        if (component.BandName != band.BandName)
             return;
 
         args.StatusIcons.Add(_proto.Index<JobIconPrototype>(component.BandStatusIcon));

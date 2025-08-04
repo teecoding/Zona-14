@@ -34,7 +34,7 @@ public sealed partial class BandsComponent : Component
 
     [DataField] public EntityUid? ActionEntity;
 
-    [AutoNetworkedField, ViewVariables(VVAccess.ReadWrite)]
+    [AutoNetworkedField]
     public bool Enabled = true;
 
     [DataField("bandProto"), ViewVariables(VVAccess.ReadWrite)]
