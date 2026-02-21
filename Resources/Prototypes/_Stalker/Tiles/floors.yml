@@ -7,7 +7,7 @@
   footstepSounds:
     collection: STFootstepWood
   heatCapacity: 10000
-  weather: false
+  weather: truee
   indestructible: true
 
 - type: tile
@@ -19,7 +19,7 @@
   footstepSounds:
     collection: STFootstepWood
   heatCapacity: 10000
-  weather: false
+  weather: true
   indestructible: true
 
 - type: tile
@@ -31,7 +31,7 @@
   footstepSounds:
     collection: STFootstepWood
   heatCapacity: 10000
-  weather: false
+  weather: true
   indestructible: true
 
 - type: tile
@@ -43,7 +43,7 @@
   footstepSounds:
     collection: STFootstepWood
   heatCapacity: 10000
-  weather: false
+  weather: true
   indestructible: true
 
 - type: tile
@@ -55,7 +55,7 @@
   footstepSounds:
     collection: STFootstepWood
   heatCapacity: 10000
-  weather: false
+  weather: true
   indestructible: true
 
 - type: tile
@@ -67,7 +67,7 @@
   footstepSounds:
     collection: STFootstepWood
   heatCapacity: 10000
-  weather: false
+  weather: true
   indestructible: true
 
 - type: tile
@@ -79,7 +79,7 @@
   footstepSounds:
     collection: STFootstepWood
   heatCapacity: 10000
-  weather: false
+  weather: true
   indestructible: true
 
 - type: tile
@@ -91,7 +91,7 @@
   footstepSounds:
     collection: STFootstepWood
   heatCapacity: 10000
-  weather: false
+  weather: true
   indestructible: true
 
 - type: tile
@@ -103,7 +103,7 @@
   footstepSounds:
     collection: STFootstepWood
   heatCapacity: 1000
-  weather: false
+  weather: true
   indestructible: true
 
   # moved to _Stalker
