@@ -232,8 +232,8 @@
   description: A physical marker for the Depo War Zone.
   components:
   - type: WarZone
-    proto: KordonFerma
-    portalName: Ferma
+    proto: KordonATP
+    portalName: KordonATP
   - type: Physics
     bodyType: Static
     canCollide: true
