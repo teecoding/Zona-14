@@ -9,7 +9,7 @@
       allowAll: false
       portalName: Cordon-DerebasStalker
     - type: AccessReader
-      access: [["Stalker"]]
+      access: [["Stalker"], ["Rookie"]]
 - type: entity
   parent: MapTeleportBaseUncollide
   id: Cordon-DerebasStalkerUncollide
@@ -37,7 +37,8 @@
     - type: NewMapTeleport
       allowAll: false
       portalName: Bar-BarStalker
-
+    - type: AccessReader
+      access: [["Stalker"], ["Sci"], ["Renegat"], ["Dolg"], ["CN"] ]
 ####################################Монолит
 
 - type: entity
