@@ -9,6 +9,7 @@
     - MobAnomalyTarget
     - MobPolymorphable
     - StripableInventoryBase
+    - MobFirePat # stalker-changes - fire patting
   id: BaseMobSpecies
   abstract: true
   components:

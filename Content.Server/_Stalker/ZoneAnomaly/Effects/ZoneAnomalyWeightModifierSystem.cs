@@ -1,5 +1,4 @@
-﻿using Content.Server._Stalker.Weight;
-using Content.Shared._Stalker.Weight;
+﻿using Content.Shared._Stalker.Weight;
 using Content.Shared._Stalker.ZoneAnomaly.Effects;
 
 namespace Content.Server._Stalker.ZoneAnomaly.Effects;
