@@ -159,10 +159,10 @@
       items:
         ClothingOuterCoatDoshdevik: 1000 # T1
           # Gasmasks
-        ClothingMaskGasRenegats: 90  
+        ClothingMaskGasRenegats: 90
         ClothingMaskGP5: 350 # T2
         ClothingMaskGP7: 900  # T3
-        ClothingNeckScarfRenegade:: 100
+        ClothingNeckScarfRenegade: 100
         ClothingCapeRenegat: 100
         ClothingOuterCoatRenegat: 1800
     - name: shop-category-research-equipment
