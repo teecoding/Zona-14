@@ -1,4 +1,4 @@
-# Stalker-TODO: Перевести это
+# Stalker-TODO: Translate this
 reagent-name-st-taurine = taurine
 reagent-desc-st-taurine = Often used by stalkers on multi-day hikes when there is no opportunity to stop and rest. The drink contains easily digestible carbohydrates, as well as drugs that cause the release of adrenaline into the blood.
 reagent-name-nocturne-serum = Nocturne Serum

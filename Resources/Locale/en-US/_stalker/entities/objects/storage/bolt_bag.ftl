@@ -9,7 +9,7 @@ ent-STBoltBagOliveGray = { ent-STBoltBag }
 ent-STBoltBagOliveGrayFilled = { ent-STBoltBagOliveGray }
     .desc = { ent-STBoltBagOliveGray.desc }
     .suffix = stalker, filled
-#золотые bolts, they are sold at the sidor for 5k
+#gold bolts, they are sold at the sidor for 5k
 ent-STBoltBagGolden = bolt bag
     .desc = Allows you to carry your 3 tons of GOLD bolts to identify anomalies in the zone. The best friend of a rich stalker who will always lead you out of a difficult situation.
     .suffix = Stalker, Filled, Gold

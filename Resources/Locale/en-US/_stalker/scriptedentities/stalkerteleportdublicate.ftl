@@ -1,6 +1,6 @@
-ent-StalkerDublicateWipeSafe = Сохранение чертежей
-    .desc = С помощью этого подвала вы сможете сохранить свои чертежи от вайпа
-    .suffix = Teleport, Portal, Duplicate, Вайп, Teleport
+ent-StalkerDublicateWipeSafe = Blueprint Save
+    .desc = With this cellar, you can save your blueprints from the wipe.
+    .suffix = Teleport, Portal, Duplicate, Wipe, Teleport
 ent-StalkerDublicateKordon = Personal Storage
     .desc = Store items in your repository to save them between rounds. Also starting 2k roubles inside!
     .suffix = Teleport, Portal, Duplicate, Kordon

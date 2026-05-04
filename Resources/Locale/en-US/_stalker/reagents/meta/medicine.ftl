@@ -1,32 +1,32 @@
-reagent-name-radioprotect = радпротектор
-reagent-desc-radioprotect = Таблетка содеращая смесь препаратов для защиты организма от радиации.
-reagent-name-antirad = йодорадин
-reagent-desc-antirad = Смесь препаратов для нейтрализации и вывода радионуклидов.
-reagent-name-wakeupper = пробудофилин
-reagent-desc-wakeupper = Смесь препаратов для восстановления кровообращения и дыхания.
-reagent-name-antishiz = фуфломицин
-reagent-desc-antishiz = Смесь препаратов для того, чтобы уверять мозг, что ему всё равно на пси-излучение.
-reagent-name-experimental-stimulants-stalker = эксперементальный стимулятор монолита
-reagent-desc-experimental-stimulants-stalker = Мощнейший стимулятор, который абсолютно не имеет побочных эффектов.
-reagent-name-fermented-glands = ферментизированные железы
-reagent-desc-fermented-glands = Ферментизированные железы кабана, эффект неизвестен.
-reagent-name-stalker-morphine = морфин
-reagent-desc-stalker-morphine = Морфин относится к группе алкалоидов. Крайне популярен среди сталкеров ведь помогает от тупых ударов, однако передозировка влечёт за собой быструю смерть.
-reagent-name-stalker-adrenalina = адреналин
-reagent-desc-stalker-adrenalina = Это биологически активное вещество, преимущественно гормоном и нейромедиатором, вырабатываемым надпочечниками человека и животных в стрессовых ситуациях или во время физической активности. Химическое название адреналина - эпинефрин.
-reagent-name-stalker-aqua-tabs = активированый уголь
-reagent-desc-stalker-aqua-tabs = Таблетки, предназначенные для обеззараживания воды от вредных бактерий и вирусов. Приём по 2 таблетки.
-reagent-name-self-steampack = стимулятор тип I
-reagent-desc-self-steampack = Стимуляторный стимпак первого поколения.
-reagent-name-military-steampack = стимулятор тип II
-reagent-desc-military-steampack = Стимуляторный стимпак второго поколения.
-reagent-name-sci-steampack = стимулятор тип III
-reagent-desc-sci-steampack = Стимуляторный стимпак третьего поколения.
+reagent-name-radioprotect = radioprotector
+reagent-desc-radioprotect = A pill containing a mixture of compounds for protecting the body from radiation.
+reagent-name-antirad = iodoradin
+reagent-desc-antirad = A mixture of compounds for neutralizing and flushing radionuclides from the body.
+reagent-name-wakeupper = wakeupophilin
+reagent-desc-wakeupper = A mixture of compounds for restoring blood circulation and breathing.
+reagent-name-antishiz = fuflomycin
+reagent-desc-antishiz = A mixture of compounds that convinces the brain it doesn't care about psi-radiation.
+reagent-name-experimental-stimulants-stalker = experimental Monolith stimulant
+reagent-desc-experimental-stimulants-stalker = An incredibly powerful stimulant that has absolutely no side effects.
+reagent-name-fermented-glands = fermented glands
+reagent-desc-fermented-glands = Fermented boar glands, effect unknown.
+reagent-name-stalker-morphine = morphine
+reagent-desc-stalker-morphine = Morphine belongs to the alkaloid group. Extremely popular among stalkers as it helps with blunt-force trauma, however an overdose leads to swift death.
+reagent-name-stalker-adrenalina = adrenaline
+reagent-desc-stalker-adrenalina = A biologically active substance, primarily a hormone and neurotransmitter, produced by the adrenal glands of humans and animals during stressful situations or physical activity. The chemical name for adrenaline is epinephrine.
+reagent-name-stalker-aqua-tabs = activated charcoal
+reagent-desc-stalker-aqua-tabs = Tablets designed for purifying water from harmful bacteria and viruses. Take 2 tablets per dose.
+reagent-name-self-steampack = stimulant type I
+reagent-desc-self-steampack = First-generation stim-pack stimulant.
+reagent-name-military-steampack = stimulant type II
+reagent-desc-military-steampack = Second-generation stim-pack stimulant.
+reagent-name-sci-steampack = stimulant type III
+reagent-desc-sci-steampack = Third-generation stim-pack stimulant.
 
-reagent-name-dexalin-plus-stalker = дексалин плюс
-reagent-desc-dexalin-plus-stalker = Используется для лечения кислородного голодания и потери крови. Выводит синильную кислоту из кровеносной системы.
+reagent-name-dexalin-plus-stalker = dexalin plus
+reagent-desc-dexalin-plus-stalker = Used to treat oxygen deprivation and blood loss. Removes hydrocyanic acid from the bloodstream.
 
-# EN-Секция
+# EN section
 reagent-name-cossack = cossack
 reagent-desc-cossack = It's the Cossack part of Cossack vodka!
 

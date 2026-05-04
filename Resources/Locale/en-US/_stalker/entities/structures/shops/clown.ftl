@@ -1,3 +1,3 @@
-ent-StalkerShopClown = Торгомат, Циркачи
-    .desc = Хахахахахаха хотя нет не смешно.
-    .suffix = ST, Mapping, Циркачи
+ent-StalkerShopClown = Vendomat, Circus
+    .desc = Hahahahahaha actually no, not funny.
+    .suffix = ST, Mapping, Circus

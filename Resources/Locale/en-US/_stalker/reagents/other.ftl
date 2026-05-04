@@ -1,3 +1,3 @@
-reagent-name-navoz = навоз
-reagent-desc-navoz = Органическое удобрение, состоящее из экскрементов сельскохозяйственных животных
-reagent-physical-desc-brux = жидкое
+reagent-name-navoz = manure
+reagent-desc-navoz = Organic fertilizer consisting of the excrement of farm animals.
+reagent-physical-desc-brux = liquid

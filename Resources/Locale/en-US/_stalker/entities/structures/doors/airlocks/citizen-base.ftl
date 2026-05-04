@@ -1,6 +1,6 @@
 ent-MetalGrateDoorFalloutMayorClosed = Reinforced lattice door
     .desc = A strong lattice door with a reliable lock.
-    .suffix = ST, mapping, Мэр
+    .suffix = ST, mapping, Mayor
 ent-MetalDoorFalloutMayorClosed = steel door
     .desc = Strong steel door with a secure lock.
     .suffix = { ent-MetalGrateDoorFalloutMayorClosed.suffix }

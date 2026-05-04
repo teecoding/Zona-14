@@ -1,1 +1,1 @@
-ent-BulletRocketRPO = Выстрел РПО Шмель
+ent-BulletRocketRPO = RPO Shmel rocket

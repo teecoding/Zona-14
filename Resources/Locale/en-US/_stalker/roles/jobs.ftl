@@ -210,9 +210,9 @@ job-evolver-archon-supervisor = Protect the zone and preserve the psyfield
 
 # Other
 
-job-clown-supervisor = Смех продлевает жизнь. Буквально.
-job-doctor-supervisor = Вы подчиняетесь Главному Врачу.
-job-head-doctor-supervisor = Вы подчиняетесь мэру города "Чернобыль - 4".
-job-supervisor-mayor = Вы подчиняетесь мэру города "Чернобыль - 4".
-job-mayor-city-supervisor = Нет никого главнее вас. Все гражданские структуры подчиняются вам.
+job-clown-supervisor = Laughter prolongs life. Literally.
+job-doctor-supervisor = You answer to the Chief Physician.
+job-head-doctor-supervisor = You answer to the mayor of the city of "Chernobyl - 4".
+job-supervisor-mayor = You answer to the mayor of the city of "Chernobyl - 4".
+job-mayor-city-supervisor = No one ranks above you. All civilian structures answer to you.
 

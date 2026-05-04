@@ -1,2 +1,2 @@
-ent-STSeraBombImplant = самоуничтожение
-    .desc = Подрыв вашего кпк с гарантированным раздвоением вашего Я во имя Сына Звезды на целых две части!
+ent-STSeraBombImplant = self-destruct
+    .desc = Detonate your PDA with a guaranteed splitting of your Self into two whole parts in the name of the Son of the Star!

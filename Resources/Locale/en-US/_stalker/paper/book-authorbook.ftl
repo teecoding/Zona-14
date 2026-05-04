@@ -9,11 +9,8 @@ book-text-cooking-stalker =
 
 
 
-
-                                                 Руководство
-                                                по кулинарии
-                                                для чайников
-                                                    
+                                                 Cooking Guide
+                                                for Dummies
 
 
 
@@ -27,62 +24,62 @@ book-text-cooking-stalker =
 
 
         ---------------------------------------------------------------------------
-                                                               Глава 1
-                                                        ВСТУПЛЕНИЕ
-        
-                Дорогие читатели,
-        
-                  Готовка – это не просто процесс; это искусство, которое проникает в самые глубины нашей души. Каждый раз, когда я стою у плиты, я чувствую огромную любовь и страсть к созданию вкусных блюд. 
-        		  Это моя форма самовыражения, способ поделиться своим сердцем и радостью с другими.
-        
+                                                               Chapter 1
+                                                        INTRODUCTION
+
+                Dear readers,
+
+                  Cooking is not just a process; it is an art that reaches into the deepest parts of our soul. Every time I stand at the stove, I feel an enormous love and passion for creating delicious dishes.
+        		  This is my form of self-expression, a way to share my heart and joy with others.
+
         ---------------------------------------------------------------------------
-                                                               Глава 2
-                                                              Основы
-        
-                  Итак, вы взяли продукты. И тут возникает вопрос: "Что же теперь мне делать?"
-        
-                  Для начала, я предлагаю Вам ознакомиться с вашим рабочим местом. Для начала вам нужно понять, что готовить еду можно почти везде, например, на костре или газовой плите.
-        
-                  Самое главное в готовке - это не передержать еду, иначе она может превратиться в пепел!
-                Готовить можно как для себя, так и на продажу. Не забывайте, что специи делают  еду вкуснее!
+                                                               Chapter 2
+                                                              Basics
+
+                  So, you've got the ingredients. And then the question arises: "What do I do now?"
+
+                  To start, I suggest you familiarize yourself with your workspace. First, you need to understand that food can be cooked almost anywhere, for example, on a campfire or a gas stove.
+
+                  The most important thing in cooking is not to overcook the food, otherwise it may turn to ash!
+                You can cook for yourself or for sale. Don't forget that spices make food tastier!
         ---------------------------------------------------------------------------
-                                                               Глава 3
-                                                              Рецепты
-        
-                 Готовка на костре:
-        
-                  На данный момент на костре можно готовить следующие блюда:
-        		  
-        		  мясо + костёр = стейк
-        		  сырая котлета + костёр = котлета
-        		  картофель + костёр = печёный картофель
-        		  сосиска + костёр = жареная сосиска
-        		  мясо слепого пса + костёр = стейк из мяса слепого пса
-        		  мясо кабана + костёр = стейк из мяса кабана
-        		  
-                 Готовка на газовой плите:
-        
-                  На данный момент на газовой плите можно готовить следующие блюда:
-        		  
-        		  мясо + костёр = стейк
-        		  сырая котлета + костёр = котлета
-        		  мясо слепого пса + костёр = стейк из мяса слепого пса
-        		  мясо кабана + костёр = стейк из мяса кабана
-        		  
-        		Готовка в микроволновке:
-        
-                  На данный момент в микроволновке плите можно готовить следующие блюда:
-        		  
-        		  тесто + микроволновка (x10 секунд) = хлеб
-        		  кусок теста (x2) + сосиска + микроволновка (x5 секунд) = сосиска в тесте
-        		  ломтик хлеба + масло + микроволновка (x5 секунд) = тост с маслом
-        		  ломтик хлеба + масло + чеснок + микроволновка (x5 секунд) = чесночный хлеб
-        		  кусок теста + микроволновка (x5 секунд) = булочка
-        		  булочка + котлета + микроволновка (x10 секунд) = бургер
-        		  булочка + стейк из мяса слепого пса + микроволновка (x10 секунд) = бургер из мяса слепого пса
-        		  булочка + стейк из мяса кабана + микроволновка (x10 секунд) = бургер из мяса кабана
-        		  булочка + котлета + ломтик сыра + микроволновка (x10 секунд) = чизбургер
-        		  ломтик лука + микроволновка (x15 секунд) = луковые кольца
-        		  мука (x5) + сахар (x5) + масло +  плитка шоколада + микроволновка (x5 секунд) = печенье
+                                                               Chapter 3
+                                                              Recipes
+
+                 Cooking on a campfire:
+
+                  At the moment, the following dishes can be cooked on a campfire:
+
+        		  meat + campfire = steak
+        		  raw cutlet + campfire = cutlet
+        		  potato + campfire = baked potato
+        		  sausage + campfire = fried sausage
+        		  blind dog meat + campfire = blind dog meat steak
+        		  boar meat + campfire = boar meat steak
+
+        		 Cooking on a gas stove:
+
+                  At the moment, the following dishes can be cooked on a gas stove:
+
+        		  meat + campfire = steak
+        		  raw cutlet + campfire = cutlet
+        		  blind dog meat + campfire = blind dog meat steak
+        		  boar meat + campfire = boar meat steak
+
+        		Cooking in a microwave:
+
+                  At the moment, the following dishes can be cooked in the microwave:
+
+        		  dough + microwave (x10 seconds) = bread
+        		  piece of dough (x2) + sausage + microwave (x5 seconds) = sausage in dough
+        		  slice of bread + butter + microwave (x5 seconds) = buttered toast
+        		  slice of bread + butter + garlic + microwave (x5 seconds) = garlic bread
+        		  piece of dough + microwave (x5 seconds) = bun
+        		  bun + cutlet + microwave (x10 seconds) = burger
+        		  bun + blind dog meat steak + microwave (x10 seconds) = blind dog meat burger
+        		  bun + boar meat steak + microwave (x10 seconds) = boar meat burger
+        		  bun + cutlet + slice of cheese + microwave (x10 seconds) = cheeseburger
+        		  slice of onion + microwave (x15 seconds) = onion rings
+        		  flour (x5) + sugar (x5) + butter + chocolate bar + microwave (x5 seconds) = cookies
         ---------------------------------------------------------------------------
 
