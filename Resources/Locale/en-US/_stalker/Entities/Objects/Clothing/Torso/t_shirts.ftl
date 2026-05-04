@@ -1,0 +1,1 @@
+ent-ClothingTorsoTShirtZavet = Covenant uniform

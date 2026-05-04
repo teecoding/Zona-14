@@ -1,0 +1,14 @@
+ent-STTriggerSeer121030 = seer trigger (1-2) (10%) 30m
+    .suffix = ST, T2, Trigger
+ent-STTriggerSeer122530 = seer trigger (1-2) (25%) 30m
+    .suffix = ST, T2, Trigger
+ent-STTriggerSeer125030 = seer trigger (1-2) (50%) 30m
+    .suffix = ST, T2, Trigger
+ent-STTriggerSeer127530 = seer trigger (1-2) (75%) 30m
+    .suffix = ST, T2, Trigger
+ent-STTriggerSeer142530 = seer trigger (1-4) (25%) 30m
+    .suffix = ST, T2, Trigger
+ent-STTriggerSeer145030 = seer trigger (1-4) (50%) 30m
+    .suffix = ST, T2, Trigger
+ent-STTriggerSeer145070 = seer trigger (1-4) (75%) 30m
+    .suffix = ST, T2, Trigger

@@ -1,0 +1,10 @@
+ent-ClothingHeadHelmetVityaz1Zavet = "Vityaz 1M" helmet of the Covenant
+    .desc = The "Vityaz-M" impact-resistant helmet was manufactured at the Steel Research Institute. Development began in the late 1980s. The helmet received a visor, though it ended up rather bulky.
+ent-ClothingHeadHelmetVityazSkull1 = horned skull
+    .desc = The skull of a horned animal with steel plates inside.
+ent-ClothingHeadHelmetVityazSkull2 = horned skull
+    .desc = A steel skull of a horned animal.
+ent-ClothingHeadHelmetVityazSkull3 = horned skull
+    .desc = The skull of a horned animal with steel plates inside.
+ent-ClothingHeadHelmetVityazSkull4 = horned skull
+    .desc = A steel skull of a horned animal.

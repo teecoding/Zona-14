@@ -1,0 +1,11 @@
+ent-STClothingOuterArmorVeryHeavySci = KSN-13-M
+    .desc = The "Begemot" Special Purpose Suit, used by government operatives within the Zone of Exclusion.
+    .suffix = ST, T4, PvE
+ent-STClothingOuterArmorVeryHeavyFreedom = KSN-13 "Begemot" of Freedom
+    .desc = The "Begemot" Special Purpose Suit, reworked by the Freedom faction.
+    .suffix = ST, T4, PvE
+ent-STClothingOuterArmorGonchiy = "Gonchiy" armor suit
+    .desc = A suit with camouflage elements, designed for fast and comfortable movement through the Zone, at the cost of protective qualities.
+    .suffix = ST, T4, PvE
+ent-STClothingHeadHardsuitGonchiy = gonchiy helmet #base
+    .desc = A helmet from the "Gonchiy" set.

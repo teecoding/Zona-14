@@ -1,0 +1,14 @@
+ent-BaseFenceBrick = brick fence
+    .desc = A fence made of brick.
+ent-FenceBrickBroken1 = broken brick fence
+    .desc = A fence made of brick. Wonder who managed to break it?
+    .suffix = ST, Mapping
+ent-FenceBrickBroken2 = broken brick fence
+    .desc = A fence made of brick. Wonder who managed to break it?
+    .suffix = ST, Mapping
+ent-FenceBrickBroken3 = broken brick fence
+    .desc = A fence made of brick. Wonder who managed to break it?
+    .suffix = ST, Mapping
+ent-FenceBrickBroken4 = broken brick fence
+    .desc = A fence made of brick. Wonder who managed to break it?
+    .suffix = ST, Mapping

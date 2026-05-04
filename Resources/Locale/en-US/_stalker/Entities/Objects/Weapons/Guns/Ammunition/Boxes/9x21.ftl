@@ -1,0 +1,16 @@
+ent-921PGJBox = ammo pack (9x21) P (steel case)
+    .desc = For SR-1 and SR-2M, 30 rounds per pack. Penetrates class 2 armor.
+ent-921PEGJBox = ammo pack (9x21) PE (steel case)
+    .desc = For SR-1 and SR-2M, 30 rounds per pack. Won't pierce armor, but deals massive damage to unarmored targets.
+ent-921BTGJBox = ammo pack (9x21) BT (steel case)
+    .desc = For SR-1 and SR-2M, 30 rounds per pack. Penetrates class 3 armor.
+ent-9217N42Box = ammo pack (9x21) 7N42 "Zubilo"
+    .desc = For SR-1 and SR-2M, 30 rounds per pack. Penetrates class 4 armor.
+ent-921PGJBoxCink = ammo box (9x21) P (steel case)
+    .desc = For SR-1 and SR-2M, 300 rounds per box. Penetrates class 2 armor.
+ent-921PEGJBoxCink = ammo box (9x21) PE (steel case)
+    .desc = Hollow-point rounds for SR-1 and SR-2M. Won't pierce armor, but deal massive damage to lightly armored or unarmored targets.
+ent-921BTGJBoxCink = ammo box (9x21) BT (steel case)
+    .desc = For SR-1 and SR-2M, 300 rounds per box. Penetrates class 3 armor.
+ent-9217N42BoxCink = ammo box (9x21) 7N42 "Zubilo"
+    .desc = For SR-1 and SR-2M, 300 rounds per box. Penetrates class 4 armor.

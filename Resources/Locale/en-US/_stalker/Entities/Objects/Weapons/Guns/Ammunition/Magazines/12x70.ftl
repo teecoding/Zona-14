@@ -1,0 +1,9 @@
+ent-Base1270OriginMag = Origin-12 12x70 magazine (5)
+    .desc = Origin-12 12x70 magazine. Holds 5 shells. Sold empty.
+    .suffix = Stalker
+ent-Origin1270Mag10 = Origin-12 12x70 magazine (10)
+    .desc = Origin-12 12x70 magazine. Holds 10 shells. Sold empty.
+    .suffix = Stalker
+ent-Origin1270Drum = Origin-12 12x70 drum (20)
+    .desc = Origin-12 12x70 drum magazine. Holds 20 shells. Sold empty.
+    .suffix = Stalker

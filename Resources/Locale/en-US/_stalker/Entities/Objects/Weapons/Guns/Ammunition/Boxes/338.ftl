@@ -1,0 +1,9 @@
+ent-338FMJBox = ammo box (.338 Lapua Magnum) FMJ
+    .desc = For sniper rifles, 10 rounds per box. Provides class 4 armor penetration.
+    .suffix = Stalker
+ent-338PartitionBox = ammo box (.338 Lapua Magnum) Partition
+    .desc = For sniper rifles, 10 rounds per box. Useless against armor.
+    .suffix = Stalker
+ent-338FMJBTBox = ammo box (.338 Lapua Magnum) FMJ BT
+    .desc = For sniper rifles, 10 rounds per box. Provides class 5 armor penetration.
+    .suffix = Stalker

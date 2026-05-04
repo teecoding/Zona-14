@@ -1,0 +1,9 @@
+ent-STWeaponShotgunOrigin12 = Origin-12
+    .desc = A semi-automatic shotgun based on the AK platform. Chambered in 12 gauge, ideal for fighting mutants.
+ent-STBaseWeaponShotgunVepr12De21Base = Vepr-12
+    .desc = A Russian smoothbore self-loading shotgun developed on the basis of the Kalashnikov light machine gun design.
+    .suffix = ST, custom
+ent-STBaseWeaponShotgunVepr12De21 = Vepr-12
+    .desc = A Russian smoothbore self-loading shotgun developed on the basis of the Kalashnikov light machine gun design.
+ent-STBaseWeaponShotgunVepr12Molot = Vepr-12 "Molot"
+    .desc = A Russian smoothbore self-loading shotgun developed on the basis of the Kalashnikov light machine gun design.

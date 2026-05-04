@@ -1,0 +1,10 @@
+ent-STTriggerBayun117530 = bayun (1-1) (75%) 30m
+    .suffix = ST, T1, Trigger
+ent-STTriggerBayun127530 = bayun (1-2) (75%) 30m
+    .suffix = ST, T1, Trigger
+ent-STTriggerBayun122530 = bayun (1-2) (25%) 30m
+    .suffix = ST, T1, Trigger
+ent-STTriggerBayun142530 = bayun (1-4) (25%) 30m
+    .suffix = ST, T1, Trigger
+ent-STTriggerBayun1410030 = bayun (1-4) (100%) 30m
+    .suffix = ST, T1, Trigger

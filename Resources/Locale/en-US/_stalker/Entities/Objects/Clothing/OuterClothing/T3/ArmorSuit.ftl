@@ -1,0 +1,11 @@
+ent-ClothingOuterArmorFirstbornSeraphimes = Firstborn suit
+    .desc = An old worn-out Monolith suit. Such suits were worn by the first Seraphim, who later named themselves the Firstborn.
+ent-ClothingHeadHelmetHatFirstbornSeraphimes = Firstborn hood
+ent-STClothingOuterArmorPeresvet = "Peresvet" armor suit
+    .desc = An armor suit made by some craftsman with a peculiar appearance.
+    .suffix = ST, T4, PvP
+ent-STClothingHeadPeresvet = "Peresvet" armor suit helmet #base
+    .desc = Helmet from the "Peresvet" set.
+ent-STClothingOuterArmorKrava = "Valkyrie" camo Ratnik
+    .desc = Russian combat soldier gear, designed to improve the effectiveness and survivability of a serviceman on the battlefield. This particular model looks extremely worn out, but is still wearable.
+    .suffix = ST, T3, custom

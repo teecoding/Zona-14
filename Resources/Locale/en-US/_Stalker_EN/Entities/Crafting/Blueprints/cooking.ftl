@@ -1,0 +1,12 @@
+ent-STCookingKebabVeggie = veggie kebab recipe
+ent-STCookingPickledCherries = pickled cherries recipe
+ent-STCookingFermentedEel = fermented eel recipe
+ent-STCookingPreservedEel = preserved eel recipe
+ent-STCookingPickledEggs = pickled eggs recipe
+ent-STCookingPreservedFishSteak = fish patties recipe
+ent-STCookingBerryJam = berry jam recipe
+ent-STCookingKvass = beet kvass recipe
+ent-STCookingLiverTartare = liver tartare recipe
+ent-STCookingRenderedSalo = rendered salo recipe
+ent-STCookingPickledSausage = pickled sausages recipe
+ent-STCookingPreservedFishFillets = preserved fish fillets recipe

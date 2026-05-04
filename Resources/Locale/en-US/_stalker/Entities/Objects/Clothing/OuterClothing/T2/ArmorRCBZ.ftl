@@ -1,0 +1,2 @@
+ent-ClothingOuterArmorRCBZJournalists = "RCBZ" Journalists suit
+    .desc = Designed for working in conditions requiring radiation, chemical and biological protection (RCBZ). Used in expeditions to dangerous chemical zones to ensure the safety of the wearer. Not intended for combat operations, but specialized for providing protection and safety in conditions of threats from radiation, chemical and biological substances.
