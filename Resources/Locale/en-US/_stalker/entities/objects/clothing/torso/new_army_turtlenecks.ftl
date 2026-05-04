@@ -1,4 +1,4 @@
-ent-STClothingTosroTurtlenecksCZ = Сzechoslovakia army turtlenecks
+ent-STClothingTosroTurtlenecksCZ = Czechoslovakia army turtlenecks
 ent-STClothingTosroTurtlenecksFr = France army turtlenecks
 ent-STClothingTosroTurtlenecksKz = Kazakhstan army turtlenecks
 ent-STClothingTosroTurtlenecksLit = Litva army turtlenecks

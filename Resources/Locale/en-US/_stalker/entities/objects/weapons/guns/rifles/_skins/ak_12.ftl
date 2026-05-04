@@ -1,4 +1,4 @@
-ent-STWeaponRifleStalkerAK12 = АК-12
+ent-STWeaponRifleStalkerAK12 = AK-12
     .desc = This model is the pinnacle of the development of the AK system and differs from previous generations in well-thought-out ergonomics, adaptation to all-day use and increased accuracy and accuracy of fire.
     .suffix = ST, Skin
 ent-STWeaponRifleStalkerAK12Sera = AK-12 Seraphim
