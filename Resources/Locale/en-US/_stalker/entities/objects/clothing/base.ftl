@@ -3,6 +3,7 @@ ent-STClothingOuterArmorStorageBasic = Armor Suit Base with Pouches
     .suffix = ST
     .desc = { ClothingOuterArmorBase.desc }
 ent-ClothingOuterArmorStorageToggleableBasic = { ent-STClothingOuterArmorStorageBasic }
+    .desc = A standard Type I armored vest that provides decent protection against most types of damage.
     .suffix = { ent-STClothingOuterArmorStorageBasic.suffix }
 ent-STClothingHeadHatBase = Built-in head base
     .desc = Hoods, helmets etc theme

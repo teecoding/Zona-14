@@ -13,8 +13,10 @@ ent-Cartridge62mmBuckshot = 20x70 6.2mm Buckshot
 ent-Cartridge75mmBuckshot = 20x70 7.5mm Buckshot
 
 ent-Base2070Mag = TOZ-106 Magazine (2)
+    .desc = A magazine for TOZ-106. Can only holds 2 shells. They sell empty.
 
 ent-TOZ106Mag5 = TOZ-106 Magazine (5)
+    .desc = A magazine for TOZ-106. Can only holds 5 shells. They sell empty.
 
 ent-STPellet62mm = 6.2mm Pellet
 

@@ -1,4 +1,5 @@
 ent-STBaseModuleMuzzleShortgun = choke
+    .desc = A cleverly fucked-up contraption to create a wunderwaffle.
 ent-STModuleShotgunChokeT1 = makeshift shotgun choke
     .desc = A makeshift shotgun choke that tightens the shot spread.
     .suffix = ST, choke, T1

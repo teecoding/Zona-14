@@ -1,4 +1,5 @@
 ent-STBaseModuleSilencerRifles = makeshift rifle silencer
+    .desc = A cleverly fucked-up contraption to create a wunderwaffle.
     .suffix = ST, silencer, T1, RU
 ent-STModuleSilencerRiflesT1Ru = makeshift rifle silencer RU
     .desc = A makeshift rifle silencer. For Warsaw Pact weapons.

@@ -1,4 +1,5 @@
 ent-STClothingOuterArmorHeavyPlateVestBase = Heavy Body Armor
+    .desc = A standard Type II armored vest that provides decent protection against most types of damage.
     .suffix = ST, T5, PvP
 ent-STClothingOuterArmorLightPlateVestBaseHeavyMilitary = Military Citadel Body Armor
     .desc = Heavy body armor type V, providing decent protection against most types of damage.

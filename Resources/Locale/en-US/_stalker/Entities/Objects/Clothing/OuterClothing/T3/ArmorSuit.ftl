@@ -1,6 +1,7 @@
 ent-ClothingOuterArmorFirstbornSeraphimes = Firstborn suit
     .desc = An old worn-out Monolith suit. Such suits were worn by the first Seraphim, who later named themselves the Firstborn.
 ent-ClothingHeadHelmetHatFirstbornSeraphimes = Firstborn hood
+    .desc = Hoods, helmets and the like.
 ent-STClothingOuterArmorPeresvet = "Peresvet" armor suit
     .desc = An armor suit made by some craftsman with a peculiar appearance.
     .suffix = ST, T4, PvP

@@ -1,4 +1,5 @@
 ent-STClothingMaskGasStandardT1Base = T1 Standard Radiation Mask Base
+    .desc = A face-covering mask that can be connected to an air supply.
     .suffix = ST, T1, Rad
 ent-ClothingMaskGasZarya = standard stalker gas mask
     .desc = Cheap and efficient.  Protects against radiation.

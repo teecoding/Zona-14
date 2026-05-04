@@ -1,4 +1,5 @@
 ent-STClothingOuterArmorSSP99Base = SSP-99
+    .desc = A standard Type I armored vest that provides decent protection against most types of damage.
     .suffix = ST, T4, Env
 ent-STClothingHeadHelmetSSP99Base = Green Ecologist's helmet
     .desc = Protects against anomalies and radiation, but definitely not against bullets.

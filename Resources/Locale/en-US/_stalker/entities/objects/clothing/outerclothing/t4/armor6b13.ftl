@@ -1,4 +1,5 @@
 ent-STClothingOuterArmor6B13Base = 6B13
+    .desc = A standard Type I armored vest that provides decent protection against most types of damage.
     .suffix = ST, T4, PvP
 ent-ClothingOuterArmor6B13 = 6B13 Military
     .desc = Standard Type IV body armor, providing decent protection against most types of damage

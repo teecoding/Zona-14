@@ -22,6 +22,7 @@ ent-ClothingOuterArmorZaryaNeutral = Luminary Jumpsuit
 ent-ClothingOuterArmorZaryaDolg = Overalls "Patrol"
     .desc = It is a combination of a two-layer rubberized fabric with a plexiglass padding and a built-in body armor. In fact, the same "Sunrise" jumpsuit is only modified by the craftsmen of the "Dolg" group for safer sorties in the conditions of the Zone.
 ent-ClothingHeadHelmetZaryaDolg = Sunrise of Duty Hood
+    .desc = Hoods, helmets and the like.
 ent-ClothingOuterArmorZaryaPoisk = Dex Jumpsuit
     .desc = The Poisk Group's Lightweight and Mobile Sunrise Jumpsuit is an improved version of the Standard Suit.
 ent-ClothingOuterArmorZaryaStalkerModifedType1 = Sunrise-3 overalls

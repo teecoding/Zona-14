@@ -1,4 +1,5 @@
 ent-STBaseModuleScopeRifles = makeshift rifle scope
+    .desc = A cleverly fucked-up contraption to create a wunderwaffle.
     .suffix = ST, scope, T1, RU
 ent-STModuleScopeRiflesT1Ru = makeshift rifle scope RU
     .desc = A makeshift rifle scope, not particularly accurate. For Warsaw Pact weapons.

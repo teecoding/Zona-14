@@ -1,4 +1,5 @@
 ent-STClothingOuterArmorBulatBase = damask
+    .desc = A standard Type I armored vest that provides decent protection against most types of damage.
     .suffix = ST, T5, PvE
 ent-ClothingOuterArmorBulatCovenant = Covenant Damask
     .desc = Type V Damask material, which provides decent protection against most types of damage.

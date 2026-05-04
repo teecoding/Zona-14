@@ -12,6 +12,7 @@ ent-ClothingHeadHelmetPahanCoat = hood of the pahan's cloak
 ent-ClothingOuterCoatPoisk = explorer's cloak
     .desc = This cape is not just a piece of jewelry, it symbolizes the desire for adventure and the thirst for discovery.
 ent-ClothingHeadHatHoodCoatPoisk = hood
+    .desc = Hoods, helmets and the like.
 ent-ClothingNeckCloakCassock = pilgrim's cassock
     .desc = made of coarse gray cloth, helps to renounce worldly things
     .suffix = ST, pilgrims

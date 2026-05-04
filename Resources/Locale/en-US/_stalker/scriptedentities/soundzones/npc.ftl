@@ -1,6 +1,11 @@
 ﻿ent-STSidorTrigger = Sidorovich vendor detection
 ent-STBarmenTrigger = Barman vendor detection
+    .desc = Make a Sound and Text.
 ent-STDolgTrigger = Duty vendor detection
+    .desc = Make a Sound and Text.
 ent-STSvobodaTrigger = Freedom vendor detection
+    .desc = Make a Sound and Text.
 ent-STBanditTrigger = Bandit vendor detection
+    .desc = Make a Sound and Text.
 ent-STSciTrigger = Ecologist vendor detection
+    .desc = Make a Sound and Text.

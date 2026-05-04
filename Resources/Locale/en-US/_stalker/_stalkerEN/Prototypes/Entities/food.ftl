@@ -117,6 +117,7 @@ ent-FoodMeatSTBearCooked = roasted bear meat
     .desc = Roasted bear meat.
 
 ent-FoodMeatSTRottenFish = rotten fish
+    .desc = Halfway to becoming fertilizer for your garden.
 
 ent-FoodMeatSTFishFilletRaw = raw fish fillet
     .desc = Raw fish.

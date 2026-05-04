@@ -7,3 +7,4 @@ ent-ClothingHeadHelmetYeger = Jaeger Helmet
 ent-ClothingOuterArmorYegerFreedom = Kikimora costume
     .desc = Kikimora's versatile costume is made by craftsmen from a variety of protective suits. Allows the wearer to feel comfortable in areas with abnormal activity. It has bullet protection. A camouflage net is sewn on top.
 ent-ClothingHeadHelmetYegerFreedom = Kikimora Helmet
+    .desc = Protects against anomalies and radiation, but definitely not against bullets.

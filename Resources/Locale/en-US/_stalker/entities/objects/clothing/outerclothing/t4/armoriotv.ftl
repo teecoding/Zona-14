@@ -1,4 +1,5 @@
 ent-STClothingOuterArmorIOTVBase = IOTV Body Armor
+    .desc = A standard Type I armored vest that provides decent protection against most types of damage.
     .suffix = ST, T4, PvE
 ent-STClothingOuterArmorIOTVBlack = Khokhloma-Ch body armor
     .desc = Body armor of the fourth class of protection in stylish Black, looks impressive.

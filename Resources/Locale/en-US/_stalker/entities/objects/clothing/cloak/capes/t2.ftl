@@ -18,6 +18,7 @@ ent-STClothingHeadHelmetTihiy = Camouflage Hood
 ent-ClothingOuterCoatStalker = leather raincoat
     .desc = Normal black leather cloak. It does not provide noticeable protection to the carrier. Except that it will not let you freeze at night and soften the bite of a blind dog. Quite inconvenient in the conditions of the Zone, but, nevertheless, it is often used by bandits - perhaps solely because of its appearance.
 ent-ClothingHeadHatHoodCoatStalker = hood
+    .desc = Hoods, helmets and the like.
 ent-STClothingOuterCoatNovember = Camouflage Cloak November
     .desc = Sturdy cloak with thick lining and late autumn forest camouflage
     .suffix = ST, Skin

@@ -1,4 +1,5 @@
 ent-STBaseModuleUnderbarrelSMG = grip
+    .desc = A cleverly fucked-up contraption to create a wunderwaffle.
 ent-STModuleSMGGripT1 = makeshift SMG grip
     .desc = A makeshift underbarrel grip for submachine guns.
     .suffix = ST, grip, T1

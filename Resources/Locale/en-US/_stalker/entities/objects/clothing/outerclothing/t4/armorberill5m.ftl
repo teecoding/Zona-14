@@ -1,4 +1,5 @@
 ent-STClothingOuterArmorBerill5MBase = Beryl-5M Armored Suit
+    .desc = A standard Type I armored vest that provides decent protection against most types of damage.
     .suffix = ST, T4, Universal
 ent-STClothingOuterArmorBerill5M = Beryl-5M armored suit
     .desc = Modified to work in the conditions of the Zone, the equipment of the army special forces is Beryl-5M.

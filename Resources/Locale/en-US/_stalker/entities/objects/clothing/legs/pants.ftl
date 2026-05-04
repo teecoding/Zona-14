@@ -1,5 +1,7 @@
 ent-ClothingLegsJeansBlue = blue jeans
+    .desc = They look discreet to create the right image for business meetings or serious events.
 ent-ClothingLegsJeansStalker = stalker jeans
+    .desc = An essential piece of equipment for any experienced Zone explorer, these rugged trousers and pants are designed for survival in conditions where this piece of clothing must be as practical as possible.
 ent-ClothingLegsJeansRussianPixel = russian pixel jeans
 ent-ClothingLegsJeansBlackNew = black jeans
 ent-ClothingLegsJeansGorka = gorka 4 jeans
