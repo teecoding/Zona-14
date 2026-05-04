@@ -1,8 +1,12 @@
 ent-StalkerPdaPart1 = PDA case
+    .desc = { "" }
     .suffix = Stalker
 ent-StalkerPdaPart2 = PDA screen
+    .desc = { "" }
     .suffix = { ent-StalkerPdaPart1.suffix }
 ent-StalkerPdaPart3 = PDA chip
+    .desc = { "" }
     .suffix = { ent-StalkerPdaPart1.suffix }
 ent-RandomSpawnerPdaPartStalker = Trash Spawner
+    .desc = { "" }
     .suffix = { ent-StalkerPdaPart1.suffix }

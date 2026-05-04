@@ -1,4 +1,5 @@
 ent-STClothingCapeT2Base = T2 raincoat base
+    .desc = { "" }
     .suffix = ST, T2
 ent-ClothingOuterCoatBolotniy = "swamp" raincoat
     .desc = a thick cloak with a camouflage of leaves, grass, and sticks applied to the top.

@@ -1,4 +1,5 @@
 ent-STClothingCapeT1Base = T1 raincoat base
+    .desc = { "" }
     .suffix = ST, T1
 ent-ClothingOuterCoatDoshdevik = raincoat
     .desc = a thick raincoat that protects you from rain and certain chemicals.

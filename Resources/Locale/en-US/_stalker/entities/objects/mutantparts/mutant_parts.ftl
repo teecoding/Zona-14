@@ -1,4 +1,5 @@
 ent-BaseMutantPart = mutant part
+    .desc = { "" }
     .suffix = Stalker, Part of the mutant
 ent-MutantPartBlindDogTail = Blind Dog's Tail
     .desc = A rough, torn tail that once belonged to a mutated dog. Scientists are studying its resistance to chemical and electrical influences. In the hands of a craftsman, it can serve as the basis for amulets or primitive artifacts.

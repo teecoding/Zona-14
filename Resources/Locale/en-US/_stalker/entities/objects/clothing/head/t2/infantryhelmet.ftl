@@ -1,4 +1,5 @@
 ent-STClothingHeadHelmetCombatT2Base = T2 Combat Helmet Base
+    .desc = { "" }
     .suffix = ST, T2, Combat
 ent-ClothingHeadHelmetInfantry = East Helmet
     .desc = Vostok brand infantry helmet of the second class of protection, manufacturer unknown.

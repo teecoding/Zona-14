@@ -1,4 +1,5 @@
 ent-STClothingHeadHelmetCombatT3Base = T3 Combat Helmet Base
+    .desc = { "" }
     .suffix = ST, T3, Combat
 ent-ClothingHeadAssaultHelmet = Zenith helmet
     .desc = Zenith combat helmet of the third class of protection.

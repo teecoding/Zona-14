@@ -1,4 +1,5 @@
 ent-STClothingHeadHelmetEnvironmentT3Base = T3 Environment Protection Helmet Base
+    .desc = { "" }
     .suffix = ST, T3, Env
 ent-ClothingHeadHelmetBerill5MMilitary = Sphere-08 helmet
     .desc = Sphere-08 helmet used by the Ukrainian Military. Lighter than other Class 3 helmets, it trades some ballistic protection for limited psi-shielding. Modified with a small headlamp.

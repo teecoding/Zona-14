@@ -1,4 +1,5 @@
 ent-STClothingHeadHelmetTacticalT1Base = T1 Tactical Helmet Base
+    .desc = { "" }
     .suffix = ST, T1, Tactical
 ent-ClothingHeadHelmetLight = Sieve Helmet
     .desc = A lightweight helmet, which is the thinnest piece of metal that can protect your skull from buckshot.

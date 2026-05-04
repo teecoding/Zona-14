@@ -1,4 +1,5 @@
 ent-STClothingHeadHelmetEnvironmentT4Base = T4 Environment Protection Helmet Base
+    .desc = { "" }
     .suffix = ST, T4, Env
 ent-ClothingHeadHelmetBulatMercenary = Mercenary Sphere-12 Helmet
     .desc = This is a helmet specifically designed to protect against stabbing attacks. There is resistance to other types of damage.

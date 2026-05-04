@@ -97,7 +97,7 @@
     endHourUtc: 17   # End hour in UTC (e.g., 18:00 UTC = 18)
 
 - type: entity
-  id: WarZoneEntity_Svalka_Сemetery
+  id: WarZoneEntity_Svalka_Cemetery
   parent: MarkerBase
   name: Сemetery War Zone
   description: A physical marker for the Depo War Zone.

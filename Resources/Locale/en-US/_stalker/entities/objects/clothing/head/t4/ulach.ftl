@@ -1,4 +1,5 @@
 ent-STClothingHeadHelmetTacticalT4Base = T4 Tactical Helmet Base
+    .desc = { "" }
     .suffix = ST, T4, Tactical
 ent-ClothingHeadHelmetUlach = ulach
     .desc = This is a helmet specifically designed to protect against stabbing attacks.

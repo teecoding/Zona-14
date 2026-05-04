@@ -1,6 +1,9 @@
 ent-STTriggerIzlom11030 = izlom (1) (10%) 30m
+    .desc = { ent-STBaseTrigger111030.desc }
     .suffix = ST, T4, Trigger
 ent-STTriggerIzlom12530 = izlom (1) (25%) 30m
+    .desc = { ent-STBaseTrigger112530.desc }
     .suffix = ST, T4, Trigger
 ent-STTriggerIzlom110030 = izlom (1) (100%) 30m
+    .desc = { ent-STBaseTrigger1110030.desc }
     .suffix = ST, T4, Trigger

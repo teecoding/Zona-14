@@ -1,4 +1,5 @@
 ent-FlexibleMarkerTrigger50 =
+    .desc = { "" }
     .suffix = ST, CD 40 MINUTES
 ent-STBaseTrigger1420 = base trigger (1-4) (20%)
 ent-STBaseTrigger142010 = base trigger (1-4) (20%) 20m

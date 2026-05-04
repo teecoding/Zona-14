@@ -1,4 +1,5 @@
 ent-STClothingHeadHelmetTacticalT3Base = T3 Tactical Helmet Base
+    .desc = { "" }
     .suffix = ST, T3, Tactical
 ent-ClothingHeadHelmetVityaz1C = Vityaz 1C helmet
     .desc = The Vityaz-S shockproof helmet was manufactured at the Steel Research Institute. Development of the helmet began in the late 1980s. The helmet received a visor, although it turned out to be massive.

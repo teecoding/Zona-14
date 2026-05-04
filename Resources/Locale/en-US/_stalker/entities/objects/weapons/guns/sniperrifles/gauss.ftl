@@ -8,6 +8,7 @@ ent-STCartridgeGauss = Electro-magnetic charge
     .suffix = { ent-STWeaponRifleGauss.suffix }
 ent-STCartridgeGauss2 = Overloaded electro-magnetic charge
 ent-STBulletGauss = bullet gauss
+    .desc = { "" }
     .suffix = { ent-STWeaponRifleGauss.suffix }
 ent-STBulletGauss2 = bullet gauss 2
 ent-STMagazineGauss = Gauss Battery Gun
