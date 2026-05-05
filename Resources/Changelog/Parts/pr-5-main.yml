@@ -1,0 +1,14 @@
+author: teecoding
+time: '2026-05-05T11:20:08Z'
+url: https://github.com/Zona-14/Zona-14/pull/5
+changes:
+- type: Add
+  message: English translations for _Stalker entity prototypes (around 500 entities).
+- type: Fix
+  message: English clients no longer see Russian text leaked through the fluent fallback.
+- type: Fix
+  message: replaced Cyrillic look-alike characters in legacy en-US locale files.
+- type: Tweak
+  message: dropped the ru-RU cross-culture fallback so missing en-US keys are now
+    visible as raw fluent IDs.
+category: Main
