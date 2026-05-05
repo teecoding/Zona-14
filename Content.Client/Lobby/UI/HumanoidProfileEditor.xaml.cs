@@ -18,6 +18,7 @@ using Content.Shared.Guidebook;
 using Content.Shared.Humanoid;
 using Content.Shared.Humanoid.Markings;
 using Content.Shared._Stalker_EN.Portraits; // stalker-en-changes
+using Content.Shared._Zona14.Humanoid; // Zona14
 using Content.Shared.Humanoid.Prototypes;
 using Content.Shared.Preferences;
 using Content.Shared.Preferences.Loadouts;
@@ -300,7 +301,7 @@ namespace Content.Client.Lobby.UI
                 if (Profile is null)
                     return;
                 Profile = Profile.WithCharacterAppearance(
-                    Profile.Appearance.WithHairColor(newColor.marking.MarkingColors[0]));
+                    Profile.Appearance.WithHairColor(StalkerHairPalette.Clamp(newColor.marking.MarkingColors[0]))); // Zona14: clamp to Stalker palette
                 UpdateCMarkingsHair();
                 ReloadPreview();
             };
@@ -319,7 +320,7 @@ namespace Content.Client.Lobby.UI
                 if (Profile is null)
                     return;
                 Profile = Profile.WithCharacterAppearance(
-                    Profile.Appearance.WithFacialHairColor(newColor.marking.MarkingColors[0]));
+                    Profile.Appearance.WithFacialHairColor(StalkerHairPalette.Clamp(newColor.marking.MarkingColors[0]))); // Zona14: clamp to Stalker palette
                 UpdateCMarkingsFacialHair();
                 ReloadPreview();
             };
@@ -412,7 +413,7 @@ namespace Content.Client.Lobby.UI
                 if (Profile is null)
                     return;
                 Profile = Profile.WithCharacterAppearance(
-                    Profile.Appearance.WithEyeColor(newColor));
+                    Profile.Appearance.WithEyeColor(StalkerHairPalette.Clamp(newColor))); // Zona14: clamp to Stalker palette
                 Markings.CurrentEyeColor = Profile.Appearance.EyeColor;
                 ReloadProfilePreview();
             };
