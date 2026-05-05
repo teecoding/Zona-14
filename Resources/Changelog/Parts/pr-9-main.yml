@@ -1,0 +1,9 @@
+author: teecoding
+time: '2026-05-05T18:42:21Z'
+url: https://github.com/Zona-14/Zona-14/pull/9
+changes:
+- type: Add
+  message: Particle system, with welder sparks, fire, and gib mist visuals.
+- type: Add
+  message: Particle Quality option in graphics settings.
+category: Main
