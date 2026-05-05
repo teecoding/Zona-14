@@ -1,5 +1,6 @@
 ﻿using System.Linq;
 using System.Numerics;
+using Content.Shared._Zona14.Humanoid; // Zona14
 using Content.Shared.Humanoid.Markings;
 using Content.Shared.Humanoid.Prototypes;
 using Robust.Shared.Prototypes;
@@ -180,6 +181,13 @@ public sealed partial class HumanoidCharacterAppearance : ICharacterAppearance, 
         var hairColor = ClampColor(appearance.HairColor);
         var facialHairColor = ClampColor(appearance.FacialHairColor);
         var eyeColor = ClampColor(appearance.EyeColor);
+
+        // Zona14: enforce Stalker palette on player profiles (server-authoritative).
+        // Auto-clamps stored neon hair from pre-restriction characters on next load.
+        hairColor = StalkerHairPalette.Clamp(hairColor);
+        facialHairColor = StalkerHairPalette.Clamp(facialHairColor);
+        eyeColor = StalkerHairPalette.Clamp(eyeColor);
+        // End Zona14
 
         var proto = IoCManager.Resolve<IPrototypeManager>();
         var markingManager = IoCManager.Resolve<MarkingManager>();
