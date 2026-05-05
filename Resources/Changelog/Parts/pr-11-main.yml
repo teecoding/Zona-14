@@ -1,0 +1,8 @@
+author: teecoding
+time: '2026-05-05T19:20:48Z'
+url: https://github.com/Zona-14/Zona-14/pull/11
+changes:
+- type: Fix
+  message: Mono-downmixed positional SFX (sear, mutants, guns, footsteps, doors, far
+    gunshots) so they no longer spam audio assertions when played in-world.
+category: Main
