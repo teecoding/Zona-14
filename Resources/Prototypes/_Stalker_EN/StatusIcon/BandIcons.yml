@@ -6,3 +6,13 @@
     sprite: /Textures/_Stalker_EN/Icons/Patches/band.rsi
     hideOnStealth: true
     state: rookie
+#Zona-14-start
+- type: jobIcon
+  id: nodata
+  locationPreference: Right
+  isShaded: true
+  icon:
+    sprite: /Textures/_Stalker_EN/Icons/Patches/band.rsi
+    hideOnStealth: true
+    state: nodata
+#Zona-14-end
