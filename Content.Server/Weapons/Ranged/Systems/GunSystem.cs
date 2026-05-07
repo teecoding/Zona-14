@@ -1,5 +1,7 @@
 using System.Numerics;
 using Content.Server.Cargo.Systems;
+using Content.Server.Movement.Components; // Zona14: lag-comp lookup
+using Content.Server._Zona14.Movement; // Zona14
 using Content.Server.Weapons.Ranged.Components;
 using Content.Shared.Cargo;
 using Content.Shared._DZ.FarGunshot; // Stalker-using
@@ -26,6 +28,7 @@ public sealed partial class GunSystem : SharedGunSystem
 {
     [Dependency] private readonly PricingSystem _pricing = default!;
     [Dependency] private readonly SharedMapSystem _map = default!;
+    [Dependency] private readonly RMCLagCompensationSystem _rmcLagCompensation = default!; // Zona14
 
     private const float DamagePitchVariation = 0.05f;
 
@@ -176,10 +179,28 @@ public sealed partial class GunSystem : SharedGunSystem
                     if (ent == null)
                         break;
 
+                    // Zona14: rewind target to firer's perceived tick. If target has a LagCompensationComponent
+                    //         and we have a shooter session, recompute the trace direction toward where the
+                    //         target was at the firer's last-real-tick. The raycast still resolves against
+                    //         current physics — the rewind only re-aims the ray, so partial-rewind cases
+                    //         (target near rewound position) still benefit from the args.Target filter match.
+                    var hitscanDirection = mapDirection;
+                    if (gun.Target is { } laggedTargetEnt && HasComp<LagCompensationComponent>(laggedTargetEnt))
+                    {
+                        var laggedCoords = _rmcLagCompensation.GetCoordinates(laggedTargetEnt, userSession);
+                        if (laggedCoords.IsValid(EntityManager))
+                        {
+                            var laggedMap = TransformSystem.ToMapCoordinates(laggedCoords);
+                            if (laggedMap.MapId == fromMap.MapId)
+                                hitscanDirection = laggedMap.Position - fromMap.Position;
+                        }
+                    }
+                    // End Zona14
+
                     var hitscanEv = new HitscanTraceEvent
                     {
                         FromCoordinates = fromCoordinates,
-                        ShotDirection = mapDirection.Normalized(),
+                        ShotDirection = hitscanDirection.Normalized(), // Zona14: was mapDirection.Normalized()
                         Gun = gunUid,
                         Shooter = user,
                         Target = gun.Target,
