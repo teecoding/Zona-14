@@ -1,0 +1,16 @@
+author: teecoding
+time: '2026-05-07T21:43:57Z'
+url: https://github.com/Zona-14/Zona-14/pull/16
+changes:
+- type: Fix
+  message: Bullets now appear on the firer's screen instantly instead of waiting for
+    the server.
+- type: Fix
+  message: Shots fired toward off-screen targets no longer fail to register.
+- type: Fix
+  message: Hitscan weapons now compensate for your ping when aimed at moving targets,
+    so accurate shots land.
+- type: Fix
+  message: Fixed action-cancel snap-backs ("ghost shots") when firing inside sniper-cancel
+    zones.
+category: Main
