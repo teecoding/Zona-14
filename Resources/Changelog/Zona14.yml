@@ -85,4 +85,23 @@
   id: 9
   time: '2026-05-07T21:43:57Z'
   url: https://github.com/Zona-14/Zona-14/pull/16
+- author: LaCumbiaDelCoronavirus
+  changes:
+  - message: Fixed some mispredicts involving slowdown from stamina. Notably, you
+      should no longer stutter when entering/exiting water.
+    type: Fix
+  - message: Potentially fixed stuttering when interacting with your inventory, such
+      as by picking-up/dropping items and putting-on/taking-off clothing.
+    type: Fix
+  id: 10
+  time: '2026-05-08T12:50:24Z'
+  url: https://github.com/Zona-14/Zona-14/pull/17
+- author: teecoding
+  changes:
+  - message: Bullets and muzzle flash now spawn at the gun's actual position when
+      firing while moving on high ping.
+    type: Fix
+  id: 11
+  time: '2026-05-08T17:29:00Z'
+  url: https://github.com/Zona-14/Zona-14/pull/18
 Order: 0

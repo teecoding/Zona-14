@@ -1,8 +1,0 @@
-author: teecoding
-time: '2026-05-08T17:29:00Z'
-url: https://github.com/Zona-14/Zona-14/pull/18
-changes:
-- type: Fix
-  message: Bullets and muzzle flash now spawn at the gun's actual position when firing
-    while moving on high ping.
-category: Main
