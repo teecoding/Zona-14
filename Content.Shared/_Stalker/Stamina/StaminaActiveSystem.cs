@@ -31,7 +31,6 @@ public sealed class StaminaActiveSystem : EntitySystem
             if (!active.Slowed)
             {
                 active.SprintModifier = modifier.BaseWalkSpeed / modifier.BaseSprintSpeed;
-                DirtyField(uid, active, nameof(active.SprintModifier)); // Zona14: Network this
             }
 
             if (!TryComp<PhysicsComponent>(uid, out var phys))
