@@ -1,8 +1,0 @@
-author: LaCumbiaDelCoronavirus
-time: '2026-05-11T10:19:58Z'
-url: https://github.com/Zona-14/Zona-14/pull/19
-changes:
-- type: Fix
-  message: Fixed reagents that give you speed buffs (notably, taurine contained within
-    energy-drinks) making your movement speed mispredict.
-category: Main
