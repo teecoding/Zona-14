@@ -112,4 +112,11 @@
   id: 12
   time: '2026-05-11T10:19:58Z'
   url: https://github.com/Zona-14/Zona-14/pull/19
+- author: Roland410
+  changes:
+  - message: More map and prototype changes for intial release.
+    type: Tweak
+  id: 13
+  time: '2026-05-12T14:57:24Z'
+  url: https://github.com/Zona-14/Zona-14/pull/20
 Order: 0
